@@ -73,3 +73,27 @@ directly.
 
 No route file is required for an individual city; the dynamic route families consume the shared
 record automatically.
+
+## Situation pages
+
+Standalone situation routes live at the site root and are defined in `data/situations.ts`:
+
+- `/sell-fire-damaged-house`
+- `/sell-house-before-foreclosure`
+- `/sell-inherited-probate-house`
+- `/sell-vacant-house`
+- `/sell-house-with-code-violations`
+- `/sell-house-with-tenants`
+- `/sell-hoarder-house`
+
+Fire-damaged and foreclosure pages also exist for Auburn, Kent, Federal Way, Tacoma, and Puyallup:
+
+- `/areas/{slug}/sell-fire-damaged-house`
+- `/areas/{slug}/sell-house-before-foreclosure`
+
+Those ten pages are generated only for those five slugs. Content is in `data/cityFirePages.ts` and
+`data/cityForeclosurePages.ts`. City hubs link to them when a page exists. Milton and Edgewood do
+not have these extra routes.
+
+Blog posts live in `data/blogPosts.ts` and render at `/blog` and `/blog/{slug}`.
+`public/llms.txt` summarizes the business for answer engines.

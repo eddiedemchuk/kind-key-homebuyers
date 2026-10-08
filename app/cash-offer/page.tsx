@@ -17,9 +17,9 @@ const companyName = 'KindKey Home Buyers';
 const defaultHeroImage = '/logo.avif';
 
 export const metadata: Metadata = {
-  title: 'Get Cash Offer - Receive Your Offer Within 24 Hours | KindKey Home Buyers',
+  title: 'Get a Cash Offer on Your Washington House',
   description:
-    'Get your no-obligation cash offer within 24 hours. Fast, fair, and transparent cash offers for houses throughout Washington State. No repairs needed.',
+    'Request a no-obligation cash offer from KindKey Home Buyers LLC, an Auburn principal buyer for King and Pierce County. No repairs are required before you ask.',
   keywords: [
     'get cash offer',
     'cash offer for house',
@@ -29,16 +29,19 @@ export const metadata: Metadata = {
     'no obligation cash offer',
     'Washington State',
   ],
+  alternates: { canonical: 'https://kindkeyhomebuyers.com/cash-offer' },
   openGraph: {
-    title: 'Get Cash Offer - Receive Your Offer Within 24 Hours',
+    title: 'Get a Cash Offer on Your Washington House | KindKey Home Buyers',
     description:
-      'Get your no-obligation cash offer within 24 hours. Fast, fair, and transparent cash offers for houses throughout Washington State.',
+      'Request a no-obligation cash offer from KindKey Home Buyers LLC, an Auburn principal buyer for King and Pierce County. No repairs are required before you ask.',
+    images: [{ url: 'https://kindkeyhomebuyers.com/logo.avif', alt: 'KindKey Home Buyers logo' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Get Cash Offer - Receive Your Offer Within 24 Hours',
+    title: 'Get a Cash Offer on Your Washington House | KindKey Home Buyers',
     description:
-      'Get your no-obligation cash offer within 24 hours. Fast, fair, and transparent cash offers for houses throughout Washington State.',
+      'Request a no-obligation cash offer from KindKey Home Buyers LLC, an Auburn principal buyer for King and Pierce County. No repairs are required before you ask.',
+    images: ['https://kindkeyhomebuyers.com/logo.avif'],
   },
 };
 
@@ -106,6 +109,8 @@ export default function CashOfferPage() {
         backgroundImageSrc="/logo2.avif"
         hasVideoBackground={hasVideoBackground}
         companyName={companyName}
+        heading="Get a Cash Offer on Your House"
+        subheading="KindKey is an Auburn-based principal buyer for King and Pierce County. Ask for a written cash offer. You do not have to accept it."
       />
 
       <section className="bg-secondary py-12">

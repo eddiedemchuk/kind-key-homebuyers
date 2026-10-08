@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 import LeadForm from '@/components/LeadForm';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Contact Us - Get Your Cash Offer Today',
   description:
     'Contact KindKey Home Buyers to get your cash offer. Submit your property information or reach out via phone or text.',
+  alternates: { canonical: `${SITE_URL}/contact` },
 };
 
 export default function ContactPage() {

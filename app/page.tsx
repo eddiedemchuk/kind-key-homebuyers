@@ -7,6 +7,8 @@ import TrustBadges from '@/components/TrustBadges';
 import StepTimeline from '@/components/StepTimeline';
 import { caseStudies } from '@/data/cases';
 import { faqData } from '@/data/faq';
+import { situations } from '@/data/situations';
+import { SITE_URL } from '@/lib/site';
 
 // Lazy load below-the-fold components
 const CityGrid = dynamic(() => import('@/components/CityGrid'), {
@@ -48,28 +50,32 @@ function getYouTubeId(url: string): string | null {
 }
 
 export const metadata: Metadata = {
-  title: `${companyName} — Sell Your House Fast & Fair Throughout Washington State`,
-  description: `${companyName}. ${companyTagline}. Buying houses throughout Washington State with transparent, as-is cash offers. Primary areas: Kent, Federal Way, Auburn, Milton, Tacoma, Edgewood, Puyallup, WA.`,
+  title: {
+    absolute: 'Sell Your House Fast for Cash in Auburn and South Puget Sound | KindKey Home Buyers',
+  },
+  description:
+    'Request a cash offer from KindKey Home Buyers LLC, a principal buyer based in Auburn. We buy houses as-is in King and Pierce County, including Kent, Federal Way, Tacoma, and Puyallup.',
+  alternates: {
+    canonical: SITE_URL,
+  },
   openGraph: {
-    title: `${companyName} — Sell Your House Fast & Fair Throughout Washington State`,
-    description: `${companyName}. ${companyTagline}. Buying houses throughout Washington State with transparent, as-is cash offers. Primary areas: Kent, Federal Way, Auburn, Milton, Tacoma, Edgewood, Puyallup, WA.`,
+    title: 'Sell Your House Fast for Cash in Auburn and South Puget Sound | KindKey Home Buyers',
+    description:
+      'Request a cash offer from KindKey Home Buyers LLC, a principal buyer based in Auburn. We buy houses as-is in King and Pierce County, including Kent, Federal Way, Tacoma, and Puyallup.',
+    url: SITE_URL,
     images: [
       {
-        url: defaultHeroImage,
+        url: `${SITE_URL}${defaultHeroImage}`,
         alt: `${companyName} logo with a golden retriever holding a key`,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${companyName} — Sell Your House Fast & Fair Throughout Washington State`,
-    description: `${companyName}. ${companyTagline}. Buying houses throughout Washington State with transparent, as-is cash offers. Primary areas: Kent, Federal Way, Auburn, Milton, Tacoma, Edgewood, Puyallup, WA.`,
-    images: [
-      {
-        url: defaultHeroImage,
-        alt: `${companyName} logo with a golden retriever holding a key`,
-      },
-    ],
+    title: 'Sell Your House Fast for Cash in Auburn and South Puget Sound | KindKey Home Buyers',
+    description:
+      'Request a cash offer from KindKey Home Buyers LLC, a principal buyer based in Auburn. We buy houses as-is in King and Pierce County, including Kent, Federal Way, Tacoma, and Puyallup.',
+    images: [`${SITE_URL}${defaultHeroImage}`],
   },
 };
 
@@ -190,6 +196,30 @@ export default function HomePage() {
             to buy your house fast for cash.
           </p>
           <CityGrid />
+        </div>
+      </section>
+
+      <section className="bg-secondary py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="mb-4 text-center text-3xl font-bold text-text-primary md:text-4xl">
+            Difficult situations we buy
+          </h2>
+          <p className="mx-auto mb-12 max-w-3xl text-center text-lg text-text-secondary">
+            KindKey buys houses as-is when a listing is a poor fit. Start with the situation that
+            matches the house, then request a cash offer.
+          </p>
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-2">
+            {situations.map((situation) => (
+              <Link
+                key={situation.path}
+                href={situation.path}
+                className="rounded-lg border border-divider bg-white p-6 transition-colors hover:border-accent"
+              >
+                <h3 className="mb-2 text-xl font-semibold text-text-primary">{situation.h1}</h3>
+                <p className="text-text-secondary">{situation.description}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

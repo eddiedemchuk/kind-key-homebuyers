@@ -3,11 +3,13 @@ import StepTimeline from '@/components/StepTimeline';
 import CTASection from '@/components/CTASection';
 import FAQAccordion from '@/components/FAQAccordion';
 import { APPROVED_TRANSACTION_DISCLOSURE } from '@/data/disclosures';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'How It Works - Simple 4-Step Process',
   description:
     'Learn how our simple 4-step process works. Submit your info, get a walkthrough, receive a transparent cash offer, and close on your timeline.',
+  alternates: { canonical: `${SITE_URL}/how-it-works` },
 };
 
 export default function HowItWorksPage() {

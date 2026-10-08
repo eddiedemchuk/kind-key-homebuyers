@@ -7,8 +7,8 @@ export default function Footer() {
   return (
     <footer className="border-t border-divider bg-secondary">
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-          <div className="col-span-1 md:col-span-2">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-6">
+          <div className="lg:col-span-2">
             <h3 className="mb-4 text-xl font-bold text-text-primary">
               {process.env.NEXT_PUBLIC_BRAND_NAME || 'KindKey Home Buyers'}
             </h3>
@@ -40,6 +40,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/blog"
+                  className="text-text-secondary transition-colors hover:text-divider"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/about"
                   className="text-text-secondary transition-colors hover:text-divider"
                 >
@@ -52,6 +60,68 @@ export default function Footer() {
                   className="text-text-secondary transition-colors hover:text-divider"
                 >
                   Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="mb-4 font-semibold text-text-primary">Situations</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/sell-fire-damaged-house"
+                  className="text-text-secondary transition-colors hover:text-divider"
+                >
+                  Fire-damaged houses
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/sell-house-before-foreclosure"
+                  className="text-text-secondary transition-colors hover:text-divider"
+                >
+                  Before foreclosure
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/sell-inherited-probate-house"
+                  className="text-text-secondary transition-colors hover:text-divider"
+                >
+                  Inherited or probate
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/sell-vacant-house"
+                  className="text-text-secondary transition-colors hover:text-divider"
+                >
+                  Vacant houses
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/sell-house-with-code-violations"
+                  className="text-text-secondary transition-colors hover:text-divider"
+                >
+                  Code violations
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/sell-house-with-tenants"
+                  className="text-text-secondary transition-colors hover:text-divider"
+                >
+                  Houses with tenants
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/sell-hoarder-house"
+                  className="text-text-secondary transition-colors hover:text-divider"
+                >
+                  Hoarder or heavy repair
                 </Link>
               </li>
             </ul>

@@ -34,11 +34,13 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
+      images: [{ url: 'https://kindkeyhomebuyers.com/logo.avif', alt: 'KindKey Home Buyers logo' }],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
+      images: ['https://kindkeyhomebuyers.com/logo.avif'],
     },
     alternates: {
       canonical: `${siteUrl}/areas/${slug}/sell-house-as-is`,

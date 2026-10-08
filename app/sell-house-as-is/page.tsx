@@ -16,9 +16,9 @@ const companyName = 'KindKey Home Buyers';
 const defaultHeroImage = '/logo.avif';
 
 export const metadata: Metadata = {
-  title: 'Sell House As-Is - No Repairs Needed | KindKey Home Buyers',
+  title: 'Sell Your House As-Is in Washington — No Repairs Needed',
   description:
-    'Sell your house as-is in any condition. No repairs or cleaning needed. We buy houses in any condition throughout Washington State. Get your cash offer today.',
+    'Sell your Washington house as-is to KindKey, an Auburn principal buyer. Fire damage, heavy repairs, code issues, and vacant houses are eligible. No agent commission charged by KindKey.',
   keywords: [
     'sell house as-is',
     'we buy houses as-is',
@@ -28,16 +28,19 @@ export const metadata: Metadata = {
     'sell house in any condition',
     'Washington State',
   ],
+  alternates: { canonical: 'https://kindkeyhomebuyers.com/sell-house-as-is' },
   openGraph: {
-    title: 'Sell House As-Is - No Repairs Needed | KindKey Home Buyers',
+    title: 'Sell Your House As-Is in Washington — No Repairs Needed | KindKey Home Buyers',
     description:
-      'Sell your house as-is in any condition. No repairs or cleaning needed. We buy houses in any condition throughout Washington State.',
+      'Sell your Washington house as-is to KindKey, an Auburn principal buyer. Fire damage, heavy repairs, code issues, and vacant houses are eligible. No agent commission charged by KindKey.',
+    images: [{ url: 'https://kindkeyhomebuyers.com/logo.avif', alt: 'KindKey Home Buyers logo' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sell House As-Is - No Repairs Needed',
+    title: 'Sell Your House As-Is in Washington — No Repairs Needed | KindKey Home Buyers',
     description:
-      'Sell your house as-is in any condition. No repairs or cleaning needed. We buy houses in any condition throughout Washington State.',
+      'Sell your Washington house as-is to KindKey, an Auburn principal buyer. Fire damage, heavy repairs, code issues, and vacant houses are eligible. No agent commission charged by KindKey.',
+    images: ['https://kindkeyhomebuyers.com/logo.avif'],
   },
 };
 
@@ -101,6 +104,8 @@ export default function SellHouseAsIsPage() {
         backgroundImageSrc="/logo2.avif"
         hasVideoBackground={hasVideoBackground}
         companyName={companyName}
+        heading="Sell Your House As-Is in Washington"
+        subheading="KindKey buys houses in their current condition across King and Pierce County. No repairs and no clean-out are required before you ask for a cash offer."
       />
 
       <section className="bg-secondary py-12">

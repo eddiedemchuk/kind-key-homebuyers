@@ -11,9 +11,17 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/how-it-works', label: 'How It Works' },
   { href: '/success', label: 'Success Stories' },
+  { href: '/blog', label: 'Blog' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
+
+function isActivePath(pathname: string, href: string) {
+  if (href === '/') {
+    return pathname === '/';
+  }
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
 
 export default function Header() {
   const pathname = usePathname();
@@ -113,7 +121,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 className={`text-sm font-medium transition-colors ${
-                  pathname === link.href
+                  isActivePath(pathname, link.href)
                     ? 'text-divider'
                     : 'text-text-secondary hover:text-text-primary'
                 }`}
@@ -183,7 +191,7 @@ export default function Header() {
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className={`block text-base font-medium transition-colors ${
-                  pathname === link.href
+                  isActivePath(pathname, link.href)
                     ? 'text-divider'
                     : 'text-text-secondary hover:text-text-primary'
                 }`}
