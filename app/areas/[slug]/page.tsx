@@ -2,7 +2,9 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import { getCityBySlug, cities } from '@/data/cities';
+import { getCitySituationLinks } from '@/data/citySituations';
 import CityPageClient from '@/components/CityPageClient';
+import { BUSINESS, localBusinessJsonLd } from '@/lib/site';
 
 export async function generateStaticParams() {
   return cities.map((city) => ({
@@ -26,14 +28,17 @@ export async function generateMetadata({
   return {
     title: `Sell Your House in ${city.name}, WA - Cash Offer | Washington State`,
     description: `${city.description} Buying houses in ${city.name} and throughout Washington State.`,
+    alternates: { canonical: `${BUSINESS.url}/areas/${city.slug}` },
     openGraph: {
       title: `Sell Your House in ${city.name}, WA - Cash Offer`,
       description: `${city.description} Buying houses in ${city.name} and throughout Washington State.`,
+      images: [{ url: BUSINESS.logo, alt: 'KindKey Home Buyers logo' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: `Sell Your House in ${city.name}, WA - Cash Offer`,
       description: `${city.description} Buying houses in ${city.name} and throughout Washington State.`,
+      images: [BUSINESS.logo],
     },
   };
 }
@@ -59,30 +64,7 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
         type="application/ld+json"
         id="local-business-schema"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'LocalBusiness',
-            name: 'KindKey Home Buyers LLC',
-            description: `Principal real estate investor and cash home buyer purchasing houses in ${city.name}, WA and throughout Washington State`,
-            url: siteUrl,
-            areaServed: [
-              {
-                '@type': 'State',
-                name: 'Washington',
-                addressRegion: 'WA',
-              },
-              {
-                '@type': 'City',
-                name: city.name,
-                addressRegion: 'WA',
-              },
-            ],
-            serviceType: 'Cash Home Buyer',
-            address: {
-              '@type': 'PostalAddress',
-              addressRegion: 'WA',
-            },
-          }),
+          __html: JSON.stringify(localBusinessJsonLd()).replace(/</g, '\\u003c'),
         }}
       />
       <Script
@@ -129,6 +111,7 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
         hasVideoBackground={hasVideoBackground}
         companyName="KindKey Home Buyers"
         siteUrl={siteUrl}
+        situationLinks={getCitySituationLinks(city.slug)}
       />
     </>
   );

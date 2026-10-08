@@ -11,6 +11,8 @@ interface HeroSectionProps {
   backgroundImageSrc?: string;
   hasVideoBackground: boolean;
   companyName: string;
+  heading?: string;
+  subheading?: string;
 }
 
 export default function HeroSection({
@@ -19,6 +21,8 @@ export default function HeroSection({
   backgroundImageSrc,
   hasVideoBackground,
   companyName,
+  heading = 'Sell Your House Fast & Fair — For Cash, As-Is',
+  subheading = 'Buying houses throughout Washington State. Primary areas: Kent, Federal Way, Auburn, Milton, Tacoma, Edgewood, Puyallup. No repairs. No agent commission charged by KindKey. Simple, transparent cash offer.',
 }: HeroSectionProps) {
   const [scrollY, setScrollY] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
@@ -125,13 +129,9 @@ export default function HeroSection({
                 minHeight: '1.2em',
               }}
             >
-              Sell Your House Fast & Fair — For Cash, As-Is
+              {heading}
             </h1>
-            <p className="mb-8 text-balance text-xl text-text-secondary">
-              Buying houses throughout Washington State. Primary areas: Kent, Federal Way, Auburn,
-              Milton, Tacoma, Edgewood, Puyallup. No repairs. No agent commission charged by
-              KindKey. Simple, transparent cash offer.
-            </p>
+            <p className="mb-8 text-balance text-xl text-text-secondary">{subheading}</p>
             <div className="mb-6 flex flex-col gap-4 sm:flex-row">
               <Link
                 href="#form"

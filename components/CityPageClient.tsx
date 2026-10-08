@@ -18,6 +18,43 @@ const ReviewsSection = dynamic(() => import('@/components/ReviewsSection'), {
   ssr: true,
 });
 
+interface SituationLink {
+  href: string;
+  label: string;
+  description: string;
+}
+
+function CitySituationLinks({ cityName, links }: { cityName: string; links: SituationLink[] }) {
+  if (links.length === 0) {
+    return null;
+  }
+
+  return (
+    <section className="bg-white py-16">
+      <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <h2 className="mb-4 text-center text-3xl font-bold text-text-primary md:text-4xl">
+          Common situations in {cityName}
+        </h2>
+        <p className="mb-8 text-center text-lg text-text-secondary">
+          These {cityName} pages cover fire damage and foreclosure in more local detail.
+        </p>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="rounded-lg border border-divider bg-secondary p-6 transition-colors hover:border-accent"
+            >
+              <h3 className="mb-2 text-xl font-semibold text-text-primary">{link.label}</h3>
+              <p className="text-text-secondary">{link.description}</p>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 interface CityPageClientProps {
   city: {
     name: string;
@@ -26,6 +63,7 @@ interface CityPageClientProps {
     intro: string;
     faq: Array<{ question: string; answer: string }>;
   };
+  situationLinks?: SituationLink[];
   heroVideoSrc?: string;
   heroPosterSrc: string;
   backgroundImageSrc: string;
@@ -42,6 +80,7 @@ export default function CityPageClient({
   hasVideoBackground,
   companyName,
   siteUrl,
+  situationLinks = [],
 }: CityPageClientProps) {
   const [adsMode, setAdsMode] = useState(false);
 
@@ -65,6 +104,8 @@ export default function CityPageClient({
           cityIntro={city.intro}
           cityDescription={city.description}
         />
+
+        <CitySituationLinks cityName={city.name} links={situationLinks} />
 
         <CTASection
           title={`Ready to Sell Your ${city.name} Home?`}
@@ -196,6 +237,8 @@ export default function CityPageClient({
           </div>
         </div>
       </section>
+
+      <CitySituationLinks cityName={city.name} links={situationLinks} />
 
       <section className="bg-secondary py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

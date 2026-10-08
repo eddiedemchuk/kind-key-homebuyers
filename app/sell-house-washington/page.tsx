@@ -6,6 +6,7 @@ import AdsFAQ from '@/components/AdsFAQ';
 import SEOContentAccordion from '@/components/SEOContentAccordion';
 import CTASection from '@/components/CTASection';
 import Link from 'next/link';
+import { localBusinessJsonLd } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Sell Your House FAST Anywhere in Washington — Cash Offer in 24 Hours',
@@ -15,12 +16,14 @@ export const metadata: Metadata = {
     title: 'Sell Your House FAST Anywhere in Washington — Cash Offer',
     description:
       'Sell your house as-is directly to a principal buyer across Washington State. No repairs required before sale. Close in 7–14 days.',
+    images: [{ url: 'https://kindkeyhomebuyers.com/logo.avif', alt: 'KindKey Home Buyers logo' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Sell Your House FAST Anywhere in Washington — Cash Offer',
     description:
       'Sell your house as-is directly to a principal buyer across Washington State. No repairs required before sale. Close in 7–14 days.',
+    images: ['https://kindkeyhomebuyers.com/logo.avif'],
   },
   alternates: {
     canonical: 'https://kindkeyhomebuyers.com/sell-house-washington',
@@ -56,37 +59,13 @@ const washingtonSEOContent = {
 };
 
 export default function SellHouseWashingtonPage() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://kindkeyhomebuyers.com';
-
   return (
     <>
       <Script
         type="application/ld+json"
         id="local-business-schema"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'LocalBusiness',
-            name: 'KindKey Home Buyers LLC',
-            description:
-              'Principal real estate investor and cash home buyer purchasing houses throughout Washington State',
-            url: siteUrl,
-            areaServed: {
-              '@type': 'State',
-              name: 'Washington',
-              addressRegion: 'WA',
-            },
-            serviceType: 'Cash Home Buyer',
-            address: {
-              '@type': 'PostalAddress',
-              addressLocality: 'Milton',
-              addressRegion: 'WA',
-              postalCode: '98354',
-              addressCountry: 'US',
-            },
-            telephone: '+12535183638',
-            email: 'info@kindkeyhomebuyers.com',
-          }),
+          __html: JSON.stringify(localBusinessJsonLd()).replace(/</g, '\\u003c'),
         }}
       />
 

@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MobileStickyButton from '@/components/MobileStickyButton';
 import CookieConsent from '@/components/CookieConsent';
+import { localBusinessJsonLd, SITE_URL } from '@/lib/site';
 import './globals.css';
 
 const inter = Inter({
@@ -15,13 +16,19 @@ const inter = Inter({
   fallback: ['system-ui', 'sans-serif'],
 });
 
+const shareImage = {
+  url: `${SITE_URL}/logo.avif`,
+  alt: 'KindKey Home Buyers logo',
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: 'KindKey Home Buyers - Sell Your House Fast & Fair Throughout Washington State',
+    default: 'KindKey Home Buyers — Auburn Cash Home Buyer for King and Pierce County',
     template: '%s | KindKey Home Buyers',
   },
   description:
-    'Sell your house directly to a local principal buyer throughout Washington State. No repairs required before sale. Get a fair, transparent cash offer from KindKey Home Buyers.',
+    'KindKey Home Buyers LLC is a principal buyer based in Auburn, Washington. Sell your King or Pierce County house as-is with a transparent cash offer.',
   keywords: [
     'cash home buyer Washington',
     'we buy houses Washington',
@@ -37,22 +44,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     siteName: 'KindKey Home Buyers',
-    title: 'KindKey Home Buyers - Sell Your House Fast & Fair Throughout Washington State',
+    url: SITE_URL,
+    title: 'KindKey Home Buyers — Auburn Cash Home Buyer for King and Pierce County',
     description:
-      'Sell your house directly to a local principal buyer throughout Washington State. No repairs required before sale. Get a fair, transparent cash offer.',
+      'KindKey Home Buyers LLC is a principal buyer based in Auburn, Washington. Sell your King or Pierce County house as-is with a transparent cash offer.',
+    images: [shareImage],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'KindKey Home Buyers - Sell Your House Fast & Fair Throughout Washington State',
+    title: 'KindKey Home Buyers — Auburn Cash Home Buyer for King and Pierce County',
     description:
-      'Sell your house directly to a local principal buyer throughout Washington State. No repairs required before sale. Get a fair, transparent cash offer.',
+      'KindKey Home Buyers LLC is a principal buyer based in Auburn, Washington. Sell your King or Pierce County house as-is with a transparent cash offer.',
+    images: [shareImage.url],
   },
   robots: {
     index: true,
     follow: true,
-  },
-  alternates: {
-    canonical: 'https://kindkeyhomebuyers.com',
   },
   icons: {
     icon: [
@@ -195,53 +202,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'LocalBusiness',
-              name: 'KindKey Home Buyers LLC',
-              description:
-                'Principal real estate investor and cash home buyer purchasing houses throughout Washington State. Primary areas: Kent, Federal Way, Auburn, Milton, Tacoma, Edgewood, Puyallup, WA',
-              url: 'https://kindkeyhomebuyers.com',
-              address: {
-                '@type': 'PostalAddress',
-                streetAddress: '2825 Milton Way Unit 212',
-                addressLocality: 'Milton',
-                addressRegion: 'WA',
-                postalCode: '98354',
-                addressCountry: 'US',
-              },
-              email: 'info@kindkeyhomebuyers.com',
-              telephone: '+12535183638',
-              image: 'https://kindkeyhomebuyers.com/logo.avif',
-              logo: 'https://kindkeyhomebuyers.com/logo.avif',
-              priceRange: '$$',
-              areaServed: [
-                {
-                  '@type': 'State',
-                  name: 'Washington',
-                  addressRegion: 'WA',
-                },
-                {
-                  '@type': 'City',
-                  name: 'Kent',
-                  addressRegion: 'WA',
-                },
-                {
-                  '@type': 'City',
-                  name: 'Federal Way',
-                  addressRegion: 'WA',
-                },
-                {
-                  '@type': 'City',
-                  name: 'Auburn',
-                  addressRegion: 'WA',
-                },
-              ],
-              serviceType: 'Cash Home Buyer',
-              sameAs: [
-                // Add verified social profile URLs here when available.
-              ],
-            }),
+            __html: JSON.stringify(localBusinessJsonLd()).replace(/</g, '\\u003c'),
           }}
         />
       </head>

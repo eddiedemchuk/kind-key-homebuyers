@@ -1,11 +1,13 @@
 import type { Metadata } from 'next';
 import CTASection from '@/components/CTASection';
 import CityGrid from '@/components/CityGrid';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'About Us - Your Local Home Buyer in Kent & Federal Way',
+  title: 'About KindKey Home Buyers, Based in Auburn, WA',
   description:
-    'Learn about KindKey Home Buyers LLC, your trusted local home buyer in Kent and Federal Way, WA.',
+    'KindKey Home Buyers LLC is a principal cash home buyer based at 640 1st St SW, Auburn, WA 98001, serving homeowners in King and Pierce County.',
+  alternates: { canonical: `${SITE_URL}/about` },
 };
 
 export default function AboutPage() {
@@ -17,19 +19,20 @@ export default function AboutPage() {
             <h1 className="mb-6 text-4xl font-bold text-text-primary md:text-5xl">About Us</h1>
             <div className="space-y-6 text-lg text-text-secondary">
               <p>
-                KindKey Home Buyers LLC is a local real estate investment company buying houses in
-                Kent, Federal Way, and throughout Washington State. We specialize in purchasing
-                houses directly from homeowners who need to sell quickly. KindKey enters into
-                purchase and sale agreements as a principal buyer and is not acting as the seller's
-                real estate agent.
+                KindKey Home Buyers LLC is based in Auburn, Washington, at 640 1st St SW, Auburn, WA
+                98001. We are a local real estate investment company and a principal buyer. We
+                purchase houses directly from homeowners in King County and Pierce County, including
+                Kent, Federal Way, Auburn, Milton, Tacoma, Edgewood, and Puyallup. KindKey enters
+                into purchase and sale agreements as the buyer and is not acting as the seller's
+                real estate agent or broker.
               </p>
 
               <p>
                 We're not a tiny startup, and we're not a giant corporation. We're a family business
-                based right here in Auburn, Washington. As a local company, we understand our
-                community and treat every homeowner like a neighbor. Our family-run approach means
-                you get personal attention, direct communication, and decisions made by people who
-                care—not a faceless corporation.
+                that works from Auburn. As a local company, we understand our community and treat
+                every homeowner like a neighbor. Our family-run approach means you get personal
+                attention, direct communication, and decisions made by people who care—not a
+                faceless corporation.
               </p>
 
               <p>
@@ -43,9 +46,9 @@ export default function AboutPage() {
 
               <ul className="ml-4 list-inside list-disc space-y-4">
                 <li>
-                  <strong className="text-text-primary">Local Expertise:</strong> We know the Kent
-                  and Federal Way markets inside and out. Our local knowledge helps us provide fair
-                  offers that reflect true market value.
+                  <strong className="text-text-primary">Local Expertise:</strong> We are based in
+                  Auburn and buy houses across King and Pierce County, including Kent, Federal Way,
+                  Tacoma, and Puyallup. Our local knowledge helps us provide fair offers.
                 </li>
                 <li>
                   <strong className="text-text-primary">No Repairs Needed:</strong> We buy homes and

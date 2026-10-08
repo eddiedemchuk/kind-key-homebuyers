@@ -3,11 +3,13 @@ import Script from 'next/script';
 import VideoCase from '@/components/VideoCase';
 import CTASection from '@/components/CTASection';
 import { caseStudies } from '@/data/cases';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Success Stories - Real Results from Kent & Federal Way',
   description:
     'See real success stories from homeowners in Kent and Federal Way who sold their houses fast for cash. No repairs, no hassle.',
+  alternates: { canonical: `${SITE_URL}/success` },
 };
 
 function getYouTubeId(url: string): string | null {
