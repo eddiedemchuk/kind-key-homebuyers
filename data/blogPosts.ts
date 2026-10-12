@@ -9,21 +9,105 @@ function post(
   slug: string,
   data: Omit<BlogPost, 'slug' | 'path' | 'publishedAt' | 'updatedAt' | 'breadcrumbs'> & {
     breadcrumbName: string;
+    publishedAt?: string;
   }
 ): BlogPost {
   const path = `/blog/${slug}`;
-  const { breadcrumbName, ...rest } = data;
+  const { breadcrumbName, publishedAt: date = publishedAt, ...rest } = data;
   return {
     ...rest,
     slug,
     path,
-    publishedAt,
-    updatedAt: publishedAt,
+    publishedAt: date,
+    updatedAt: date,
     breadcrumbs: [home, blog, { name: breadcrumbName, path }],
   };
 }
 
 export const blogPosts: BlogPost[] = [
+  post('sell-house-with-code-violations-tacoma', {
+    breadcrumbName: 'Code violations in Tacoma',
+    title: 'How to Sell a House with Code Violations in Tacoma, WA',
+    description:
+      'How Tacoma owners sell a house with an open code violation without finishing the city’s repairs first. KindKey is an Auburn principal buyer, not an agent.',
+    h1: 'How to Sell a House with Code Violations in Tacoma, WA',
+    publishedAt: '2026-10-12',
+    intro: [
+      'You sell a house with code violations in Tacoma by pricing it as it sits and closing through a title company, without finishing the city’s repair list first. KindKey Home Buyers LLC does that as a principal buyer. The office is at 640 1st St SW, Auburn, WA 98001. KindKey is not a real estate agent or broker, and KindKey does not clear the citation for you.',
+      'Tacoma is in Pierce County. A notice about grass, debris, an unpermitted room, a boarded window, or an unsafe structure does not have to be cured before you ask for an offer. The agency that wrote the letter still controls the case. This article is not legal advice. If the notice has a hearing, a fine, or a vacate order, talk with a Washington attorney before you rely on a sale to solve it.',
+    ],
+    sections: [
+      {
+        heading: 'What the Tacoma notice changes',
+        paragraphs: [
+          'The letter tells you which agency is involved. A City of Tacoma notice is not a Pierce County notice, and it is not a King County notice from Auburn, Kent, or Federal Way. University Place and Fircrest are separate cities beside Tacoma. If the header does not say Tacoma, do not treat this page as if it did. The closing agent and the title report confirm the parcel.',
+          'An open case does not, by itself, stop a deed. It also does not close because you requested an offer. Until recording, deadlines on the notice are still yours. Do not skip a hearing because a buyer is looking at the house. KindKey will not tell you how to contest a citation or what a hearing officer will decide.',
+        ],
+      },
+      {
+        heading: 'Tacoma houses this sale fits',
+        paragraphs: [
+          'Older houses in the North End, the Proctor district, and the Stadium District are a different product from mid-century houses on the Eastside and in South Tacoma. Hilltop’s lots are tighter, so a yard, a vehicle, or a boarded opening is easy to see from the street. A notice can be about any of those, or about an unpermitted room, a stopped repair, or a structure the city says is not safe. The offer follows that house and that open case. Anyone who quotes a Tacoma-wide discount without seeing the notice and the house is guessing.',
+          'You do not need a contractor bid, a clean-out, or a final inspection before KindKey will look. Photos of the posting and of the condition are enough to start. If the structure is not safe to enter, say so. An exterior look can begin the conversation. KindKey may repair, hold, or resell after closing. You are selling the house, not hiring someone to fight the case.',
+        ],
+      },
+      {
+        heading: 'Fines, liens, and a foreclosure overlap',
+        paragraphs: [
+          'Some cities record liens for unpaid fines or for the cost of abating a property. KindKey does not promise that every Tacoma fine disappears when you sign. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement, prepared by the closing agent, is where you see them. KindKey does not negotiate the citation for you. KindKey does not charge an agent commission or a separate assignment fee.',
+          'If the code case is also sitting next to a foreclosure notice or an estate, talk with a Washington attorney before you sign a purchase agreement. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not tell you it does not apply because the immediate problem is a city letter. Requesting an offer does not lock you in.',
+        ],
+      },
+      {
+        heading: 'Why owners sell instead of curing the notice',
+        paragraphs: [
+          'Curing a small yard notice can be the right choice if you want to keep the house. It is a poor fit when the letter requires a new roof, removal of an unpermitted unit, or a full clean-out you cannot staff, and you already live somewhere else. A listing still means showings, disclosures, and buyers who may ask for repairs before they close. A financed buyer may not be able to close while the case is open. KindKey will not run that listing. Hire a licensed broker if you want one.',
+          'A direct sale is a walkthrough, a written offer, and a closing date you help choose. The offer reflects the remaining work, so it can be less than a retail price for a violation-free house. Compare the number with the calendar and the repair budget you actually have. You can say no after you see it.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell a Tacoma house before the code case is closed?',
+        answer:
+          'Yes. KindKey buys Tacoma houses with open violations and does not require you to finish the city’s repair list first. The city still controls its case until it says otherwise.',
+      },
+      {
+        question: 'Does KindKey speak to the City of Tacoma for me?',
+        answer:
+          'No. KindKey is the buyer of the house, not a code consultant and not a real estate agent. Bring the notice to the conversation, and take legal questions to a Washington attorney.',
+      },
+      {
+        question: 'What if the Tacoma notice overlaps a foreclosure?',
+        answer:
+          'Ask a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34 that KindKey will not interpret. You can still request a cash offer while you get that advice.',
+      },
+    ],
+    related: [
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'The main service page for King and Pierce County.',
+      },
+      {
+        href: '/areas/tacoma',
+        label: 'Sell a house in Tacoma',
+        description: 'Pierce County, where KindKey buys directly.',
+      },
+      {
+        href: '/areas/tacoma/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Tacoma',
+        description: 'Unsafe-structure postings often follow a fire.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'No repair bid required.',
+      },
+    ],
+    ctaTitle: 'Ask for a Tacoma offer while the notice is open',
+    ctaSubtitle: 'Share the address and what the City of Tacoma letter says. You can say no.',
+  }),
   post('how-to-sell-my-house-fast-for-cash-auburn', {
     breadcrumbName: 'Sell fast for cash in Auburn',
     title: 'How to Sell a House Fast for Cash in Auburn, WA',
