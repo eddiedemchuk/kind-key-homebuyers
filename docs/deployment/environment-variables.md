@@ -69,6 +69,16 @@ TELEGRAM_CHAT_ID=your_chat_or_group_id
 
 Both values are required for Telegram delivery.
 
+### GoHighLevel
+
+```env
+GHL_WEBHOOK_URL=https://services.leadconnectorhq.com/hooks/your_location/webhook-trigger/your_id
+```
+
+The URL comes from a GHL workflow's Inbound Webhook trigger. Each lead is posted as flat JSON
+(tagged `website lead`, source `Website`) with a 10-second timeout. Delivery is skipped when unset;
+Telegram and email continue as backup notifications.
+
 ### SMTP email
 
 ```env
