@@ -30,8 +30,9 @@ export default function BlogIndexPage() {
         </h1>
         <p className="mb-10 text-lg text-text-secondary">
           KindKey Home Buyers LLC is a principal buyer based at 640 1st St SW in Auburn. These
-          guides answer common questions about selling as-is in King County and Pierce County.
-          KindKey is not a real estate agent, and the articles are not legal or tax advice.
+          guides answer common questions about selling as-is in King County and Pierce County,
+          including Edgewood, Milton, Federal Way, and Auburn. KindKey is not a real estate agent,
+          and the articles are not legal or tax advice.
         </p>
         <ul className="divide-y divide-divider border-y border-divider">
           {blogPosts.map((post) => (

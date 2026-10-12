@@ -206,7 +206,7 @@ export const cityForeclosurePages: CitySituationPage[] = [
     h1: 'Sell a House Before Foreclosure in Federal Way',
     intro: [
       'You may be able to sell a Federal Way house before foreclosure if your notice still leaves a lawful window to close. KindKey Home Buyers LLC buys Federal Way houses as a principal, from an office in Auburn. We are not a real estate agent and we do not run a foreclosure-rescue program.',
-      'Federal Way is in King County, between Auburn and Tacoma along I-5 and SR-18. Twin Lakes, Steel Lake, Marine Hills, Dash Point, and Redondo are neighborhoods inside that city, not different counties. Milton and Edgewood, immediately south, are Pierce County. If your paperwork says Federal Way, do not use a Pierce County checklist you found for Tacoma. If you are unsure, your attorney or the title company should confirm the parcel.',
+      'Federal Way is in King County, between Auburn and Tacoma along I-5 and SR-18. Twin Lakes, Steel Lake, Marine Hills, Dash Point, and Redondo are neighborhoods inside that city, not different counties. Edgewood, immediately south, is in Pierce County. Milton is in both King County and Pierce County. If your paperwork says Federal Way, do not use a Pierce County checklist you found for Tacoma. If you are unsure, your attorney or the title company should confirm the parcel.',
       attorneyNote,
     ],
     sections: [
@@ -248,7 +248,7 @@ export const cityForeclosurePages: CitySituationPage[] = [
       {
         question: 'Is Federal Way in Pierce County because it is near Tacoma?',
         answer:
-          'No. Federal Way is in King County. Tacoma, Milton, and Edgewood are in Pierce County. The county on the parcel controls the records.',
+          'No. Federal Way is in King County. Tacoma and Edgewood are in Pierce County. Milton is in both counties. The county on the parcel controls the records.',
       },
       {
         question: 'Do you buy in Twin Lakes and Dash Point?',
@@ -280,7 +280,7 @@ export const cityForeclosurePages: CitySituationPage[] = [
       {
         href: '/areas/milton',
         label: 'Milton',
-        description: 'Nearby Pierce County city. No separate foreclosure page.',
+        description: 'Nearby city in both King and Pierce County. No separate foreclosure page.',
       },
     ],
     breadcrumbs: [
