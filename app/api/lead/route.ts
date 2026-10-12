@@ -6,6 +6,7 @@ import { verifyRecaptcha } from '@/lib/captcha';
 import { postToCRM } from '@/lib/crm';
 import { sendTelegramMessage, formatLeadForTelegram } from '@/lib/telegram';
 import { sendLeadEmail } from '@/lib/mailer';
+import { sendLeadToGHL } from '@/lib/ghl';
 
 // Rate limiting is optional so local development and deployments without the
 // complete Upstash credential pair can still accept leads.
@@ -100,6 +101,9 @@ export async function POST(request: NextRequest) {
       }),
       sendLeadEmail(crmData).catch((error) => {
         console.error('Email error:', error);
+      }),
+      sendLeadToGHL(crmData).catch((error) => {
+        console.error('GHL error:', error);
       }),
     ];
 
