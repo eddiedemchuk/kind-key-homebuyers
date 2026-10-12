@@ -223,7 +223,7 @@ export const cityFirePages: CitySituationPage[] = [
       {
         heading: 'Federal Way houses we will make an offer on',
         paragraphs: [
-          'We buy partial burns, garage fires, smoke damage, and houses with a tarp after a roof fire. We buy when the insurance repair stalled. We buy vacant houses that owners cannot watch from Milton, Edgewood, or farther away. Milton and Edgewood are the next cities to the south and are in Pierce County; if your mailbox says Federal Way, stay on this page.',
+          'We buy partial burns, garage fires, smoke damage, and houses with a tarp after a roof fire. We buy when the insurance repair stalled. We buy vacant houses that owners cannot watch from Milton, Edgewood, or farther away. Edgewood, to the south, is in Pierce County. Milton is in both Pierce County and King County. If your mailbox says Federal Way, stay on this page.',
           'KindKey does not advise you on the claim, on a City of Federal Way posting, or on whether to finish a public adjuster’s scope. Ask your insurer and a Washington attorney about those papers. The cash offer is for the real estate in its current condition.',
         ],
         bullets: [
@@ -251,7 +251,7 @@ export const cityFirePages: CitySituationPage[] = [
       {
         question: 'Is Federal Way in King County or Pierce County?',
         answer:
-          'Federal Way is in King County. Nearby Milton and Edgewood are in Pierce County. Use the city on the address, and let the title report confirm the parcel.',
+          'Federal Way is in King County. Nearby Edgewood is in Pierce County, and Milton is in both counties. Use the city on the address, and let the title report confirm the parcel.',
       },
       {
         question: 'Do I have to repair hillside or deck damage first?',

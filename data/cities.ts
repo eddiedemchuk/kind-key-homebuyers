@@ -83,12 +83,12 @@ export const cities: CityInfo[] = [
     slug: 'milton',
     description:
       'Selling your house in Milton, WA? Get a fast, fair cash offer from your local principal buyer. No repairs required before sale.',
-    intro: `Milton is a charming community in Pierce County, offering a peaceful residential atmosphere with easy access to major highways and urban centers. Whether you're dealing with an inherited property, facing foreclosure, or need to relocate quickly, we understand the Milton market and can provide a transparent cash offer for your home.`,
+    intro: `Milton sits in both Pierce County and King County. The county line runs through the city, so the parcel decides which records apply. Whether you're dealing with an inherited property, facing foreclosure, or need to relocate quickly, we understand the Milton market and can provide a transparent cash offer for your home.`,
     faq: [
       {
         question: 'Do you buy houses in Milton?',
         answer:
-          'Yes, we actively buy houses in Milton and throughout Pierce County. We understand the local market dynamics and can provide fair cash offers for properties in any condition.',
+          'Yes, we actively buy houses in Milton, in both the Pierce County and King County parts of the city. We understand the local market dynamics and can provide fair cash offers for properties in any condition.',
       },
       {
         question: 'What types of properties do you buy in Milton?',

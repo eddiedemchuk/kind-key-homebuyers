@@ -154,7 +154,7 @@ export const situations: LongformContent[] = [
       {
         heading: 'King County and Pierce County are not the same office',
         paragraphs: [
-          'A King County house and a Pierce County house are not processed by the same recorder, treasurer, or superior court. That matters when a payoff, a tax lien, or a court case has to be cleared before a deed can record. Federal Way and Kent are in King County. Tacoma, Puyallup, Milton, and Edgewood are in Pierce County. Auburn sits on the county line, so the parcel — not the neighborhood name — controls which county records apply.',
+          'A King County house and a Pierce County house are not processed by the same recorder, treasurer, or superior court. That matters when a payoff, a tax lien, or a court case has to be cleared before a deed can record. Federal Way and Kent are in King County. Tacoma, Puyallup, and Edgewood are in Pierce County. Milton is in both counties. Auburn sits on the county line, so the parcel — not the neighborhood name — controls which county records apply.',
           'We buy in all of those cities. Local pages for Auburn, Kent, Federal Way, Tacoma, and Puyallup cover the housing and the county context in more detail. None of those pages is a substitute for advice about your notice.',
         ],
       },
@@ -242,7 +242,7 @@ export const situations: LongformContent[] = [
     intro: [
       'You can sell an inherited house in Washington without repairing it, emptying every room, or moving back to manage a listing. KindKey Home Buyers LLC buys houses directly from people who have the authority to sell. We are based at 640 1st St SW in Auburn and we purchase in King County and Pierce County. KindKey is not a real estate agent, a probate lawyer, or a tax advisor.',
       'Whether a sale can happen now depends on the estate. Some families already have a personal representative with letters from the superior court. Some are still opening probate. Some houses were in a living trust or passed by a transfer-on-death deed, which is a different path. KindKey will not tell you which path you are on. A Washington attorney, and the closing agent once title is opened, are the right people to confirm who can sign the deed.',
-      'King County estates and Pierce County estates are filed in different superior courts. A house in Kent, Federal Way, or most of Auburn is commonly a King County matter. A house in Tacoma, Puyallup, Milton, or Edgewood is commonly a Pierce County matter. Auburn’s southern edge crosses into Pierce County, so the parcel controls. Do not rely on the mailing city alone.',
+      'King County estates and Pierce County estates are filed in different superior courts. A house in Kent, Federal Way, or most of Auburn is commonly a King County matter. A house in Tacoma, Puyallup, or Edgewood is commonly a Pierce County matter. A Milton house follows the county where the decedent lived, because the city is in both King and Pierce. Auburn’s southern edge crosses into Pierce County, so the parcel controls. Do not rely on the mailing city alone.',
     ],
     sections: [
       {
