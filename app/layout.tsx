@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MobileStickyButton from '@/components/MobileStickyButton';
 import CookieConsent from '@/components/CookieConsent';
+import ChatWidgetOffset from '@/components/ChatWidgetOffset';
 import { localBusinessJsonLd, SITE_URL } from '@/lib/site';
 import './globals.css';
 
@@ -212,6 +213,14 @@ export default function RootLayout({
         <Footer />
         <MobileStickyButton />
         <CookieConsent />
+        <ChatWidgetOffset />
+        <Script
+          id="leadconnector-chat-widget"
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          strategy="lazyOnload"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="6abd7b3db9739b95923d98c3"
+        />
       </body>
     </html>
   );

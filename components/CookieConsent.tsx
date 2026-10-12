@@ -29,6 +29,7 @@ export default function CookieConsent() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
           transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+          data-bottom-dock="cookies"
           className="fixed bottom-0 left-0 right-0 z-[100] border-t-2 border-divider bg-white shadow-2xl"
         >
           <div className="container mx-auto px-4 py-6 sm:px-6 lg:px-8">
