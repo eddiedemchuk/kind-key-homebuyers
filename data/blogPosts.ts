@@ -1722,6 +1722,929 @@ export const blogPosts: BlogPost[] = [
     ctaTitle: 'Tell KindKey the house is vacant or inherited',
     ctaSubtitle: 'You do not have to clean it out before you ask for a number.',
   }),
+  post('selling-a-house-during-divorce-edgewood-wa', {
+    breadcrumbName: 'Divorce sales in Edgewood',
+    title: 'Selling Your House During a Divorce in Edgewood, WA',
+    description:
+      'How Edgewood spouses sell a Pierce County house during a divorce once an attorney confirms who can sign. KindKey is a buyer, not a divorce lawyer.',
+    h1: 'Selling Your House During a Divorce in Edgewood, WA',
+    publishedAt: '2026-10-13',
+    intro: [
+      'Selling a house during a divorce in Edgewood starts with who is allowed to sign the deed, not with paint or a listing photo. KindKey Home Buyers LLC can buy the house as a principal once that question is answered. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form on this site. KindKey is not a divorce attorney, a mediator, or a real estate agent. This article is not legal advice.',
+      'Edgewood is in Pierce County, between Milton, Fife, Puyallup, and Sumner. A North Hill house, a house in the Puyallup River valley, and a parcel the city’s plans place inside the Puyallup Indian Reservation boundary can share an Edgewood address and still be different title files. The divorce case and the deed do not always live in the same office. Your attorney and the closing agent sort that. KindKey will not.',
+    ],
+    sections: [
+      {
+        heading: 'Where an Edgewood divorce is filed',
+        paragraphs: [
+          'RCW 26.09.010 says a proceeding for dissolution of marriage, legal separation, or a declaration about the validity of a marriage may be filed in the superior court of the county where the petitioner resides. If you still live in Edgewood, that county is Pierce County. Filings go to the Clerk of the Superior Court at the County-City Building, 930 Tacoma Ave S, Room 110, Tacoma, WA 98402. The clerk’s phone number is (253) 798-7455, and the public counter is open Monday through Friday, 8:30 a.m. to 4:30 p.m. KindKey will not file the petition, serve your spouse, or choose the courthouse.',
+          'The other spouse may already be in Milton, Fife, Puyallup, Sumner, Federal Way, or on the King County side of Auburn. If that person is the petitioner and no longer lives in Pierce County, the case may be in a different superior court. The house does not move with them. An Edgewood deed is recorded with the Pierce County Auditor. King County Superior Court, in Seattle or at the Maleng Regional Justice Center in Kent, is not the recording office for this parcel. Tell the closing agent where the case is filed and where the house sits. Those can be two counties.',
+        ],
+      },
+      {
+        heading: 'Who has to sign an Edgewood deed',
+        paragraphs: [
+          'Community property is defined in RCW 26.16.030. The same statute says neither spouse shall sell, convey, or encumber community real property unless the other spouse joins in the deed or other instrument, and both spouses acknowledge it. A handshake, a text message, or one signature on a purchase agreement is not that joinder. A Pierce County title company asks for the missing signature or for a court order that removes the need for it. KindKey cannot waive the requirement because both of you want the sale to be simple.',
+          'A different statute covers a transfer from one spouse to the other. RCW 26.16.050 allows one spouse to deed a community interest directly to the other, and the grantor signs without the grantee joining. That deed changes who owns the house as between the two of you. It is not a sale to KindKey. A decree under RCW 26.09.080 can also award the house. The statute tells the court to divide property and liabilities in a way that is just and equitable, after considering the community property, the separate property, the length of the marriage, and each spouse’s economic circumstances, including whether the family home should go for a time to the parent the children live with most of the time. Just and equitable is not a promise of an even split. KindKey will not predict what a judge will do.',
+        ],
+      },
+      {
+        heading: 'Temporary orders, and transfers to avoid',
+        paragraphs: [
+          'RCW 26.09.060 allows temporary orders while the case is open, including orders about property. Read the petition and every order before you sign a purchase agreement. If an order restrains a sale or a new loan, a cash offer does not lift it. Do not deed the Edgewood house to a relative, or into one name, to keep it away from the other spouse or from the court. KindKey will not take part in that transfer.',
+          'The house itself is often the fight. On North Hill the lot may hold a shop, a long driveway, and furniture neither person has sorted. In the valley the lot is different and the argument is the same. Meridian Avenue E, which is State Route 161, and Jovita Boulevard are the roads people use to reach those houses. You do not have to repair the roof, empty the shop, or stage a living room before you ask for a number. You do have to know whether you are allowed to accept it. Request the offer while your attorney works. Accept it only when your attorney says the signer is clear.',
+        ],
+      },
+      {
+        heading: 'What a direct sale does, and what it leaves alone',
+        paragraphs: [
+          'KindKey buys as a principal and does not charge an agent commission or a separate assignment fee. Closing-cost responsibility is written in the purchase agreement and can vary. A mortgage payoff, a Pierce County tax bill, or a City of Edgewood notice can reduce what is left. The closing agent prepares a settlement statement before anyone signs a deed. KindKey does not divide those proceeds between spouses. The decree, a written agreement your lawyers approve, or the closing instructions do that work.',
+          'A listing can still fit a house that is already in good shape and able to wait through showings, if both of you can cooperate on access. Hire a licensed broker for that path. KindKey will not run the listing. If the loan is also behind, read the Edgewood foreclosure guide and talk with a Washington attorney about the distressed-property rules in RCW 61.34 before you sign. KindKey does not interpret that statute. If a parent has died and the divorce is tangled with an estate, the probate guide is the other file to read, because letters from the court are a different signature problem. Cash means KindKey is not waiting on a buyer’s mortgage approval. It does not mean the divorce is finished.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can we sell the Edgewood house before the divorce is final?',
+        answer:
+          'Sometimes, if both spouses can sign or a court order allows the sale. KindKey does not make that call. Ask your attorney, then use the cash-offer form or call (206) 519-5463 if a sale is allowed. You can decline the offer.',
+      },
+      {
+        question: 'Does one signature work if the deed is only in one name?',
+        answer:
+          'Not by itself. RCW 26.16.030 requires both spouses to join in a deed of community real property, unless another statute or a court order applies. Ask your attorney. KindKey will not decide that from the face of the deed.',
+      },
+      {
+        question: 'Where do we file if we still live in Edgewood?',
+        answer:
+          'Pierce County Superior Court. The clerk is at 930 Tacoma Ave S in Tacoma, at (253) 798-7455. If the petitioner has moved to another county, ask a lawyer before you assume the case stays in Tacoma.',
+      },
+      {
+        question: 'Will KindKey negotiate with my spouse?',
+        answer:
+          'No. KindKey is the buyer of the house. Your lawyers handle the divorce. Call (206) 519-5463 when you want a written offer to review with them.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'The Edgewood city page, in Pierce County.',
+      },
+      {
+        href: '/blog/sell-my-house-fast-for-cash-edgewood',
+        label: 'Sell fast for cash in Edgewood',
+        description: 'How a direct Edgewood sale works when you are ready.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Inherited houses in Edgewood',
+        description: 'When a death and a divorce are in the same file.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'If the loan is behind while the case is open.',
+      },
+      {
+        href: '/blog/selling-a-house-during-divorce-auburn-wa',
+        label: 'Divorce sales in Auburn',
+        description: 'The same problem in KindKey’s home city, on the county line.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'The form. Asking does not obligate you to sell.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood number once you know who can sign',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. Your attorney confirms authority. You can say no.',
+  }),
+  post('sell-house-needing-repairs-edgewood-wa', {
+    breadcrumbName: 'Major repairs in Edgewood',
+    title: 'How to Sell a House That Needs Major Repairs in Edgewood, WA',
+    description:
+      'How to sell an Edgewood house with a failed roof, a stopped remodel, or other major repairs. KindKey buys as-is. The city permit counter is separate.',
+    h1: 'How to Sell a House That Needs Major Repairs in Edgewood, WA',
+    publishedAt: '2026-10-13',
+    intro: [
+      'You sell an Edgewood house that needs major repairs by pricing it in its current condition and closing through a title company, without finishing the roof, the foundation, or a stopped remodel first. KindKey Home Buyers LLC buys that house as a principal. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or send the address through the cash-offer form. KindKey is not a contractor, a building official, or a real estate agent.',
+      'Edgewood is in Pierce County. Most residents live on North Hill, in single-family houses with longer driveways and shops set back from the street. A smaller share of the city sits at the base of the hill in the Puyallup River valley, where drainage and access are a different problem. The offer is for the house you have. A citywide repair discount, quoted before anyone sees the property, is a guess.',
+    ],
+    sections: [
+      {
+        heading: 'The city’s permit counter is not the closing',
+        paragraphs: [
+          'If you did want to repair before a retail listing, the permits are a City of Edgewood matter. Community Development is at Edgewood City Hall, 10440 Dom Calata Way E, Edgewood, WA 98372. The permit line published by the city is (253) 952-3299, and City Hall’s posted hours are Monday through Thursday, 8:30 a.m. to 5:00 p.m. The city’s online permit center says plumbing, mechanical, and residential re-roof applications are generally issued within one week, and that the city tries to review other new applications within eight weeks and resubmittals within six weeks, depending on complexity. Those are the city’s stated targets. They are not a promise, and they are not a step KindKey requires.',
+          'The city’s permit page also posts construction hours: Monday through Friday, 7:00 a.m. to 7:00 p.m., Saturday 9:00 a.m. to 6:00 p.m., and no construction on Sunday or on city-observed holidays. A contractor following those hours is doing city work. KindKey’s purchase does not depend on that schedule. You can ask for an offer while a permit is open, expired, or never pulled. Bring the paperwork if you have it. If you do not, say so.',
+        ],
+      },
+      {
+        heading: 'North Hill repairs and valley repairs are different jobs',
+        paragraphs: [
+          'A North Hill house often needs a roof, a failing deck, a shop that was wired years ago, or a bathroom that was started and abandoned. A valley house may have drainage trouble, a soft floor, or access that a retail buyer’s lender will not like. The City of Edgewood’s stormwater materials describe Jovita Creek, in the northeast of the city, flowing through a steep-sided canyon, with hill slopes the city says are subject to slides from runoff, tree falls, unstable ground, and high water. That is a description of the basin, not a diagnosis of your lot. If your house is along Jovita Boulevard, say what you have seen. KindKey prices the property in front of us.',
+          'Day-to-day travel runs on Meridian Avenue E, State Route 161, and on Jovita Boulevard. Jovita is an older local name, not a separate city. Milton is west, Fife is farther west, and Puyallup and Sumner are the neighbors people drive to for errands. If the mailing city on the tax bill is one of those, use that city’s records. The closing agent confirms the Edgewood parcel. East Pierce Fire & Rescue is the fire agency: Edgewood’s former Fire District 8 joined East Pierce in 2010, and East Pierce’s 2022 standards of cover list Station 118 at 10105 24th Street E in Edgewood. A fire on top of an old repair is a different article. The countywide fire-damage guide covers insurance and condition. KindKey still does not advise you on a claim.',
+        ],
+      },
+      {
+        heading: 'Open permits, code letters, and a lender’s appraisal',
+        paragraphs: [
+          'An unfinished addition, a garage turned into a bedroom, or a roof that was replaced without a final inspection can sit in a City of Edgewood file. A letter about that work is a code case, not a reason you must hire the contractor before you sell. The general code-violations page explains how KindKey buys houses with an open notice. The city still controls its file until the city closes it. KindKey will not pull the permit, pass the inspection, or tell a hearing officer what to do.',
+          'A retail buyer using a mortgage may not be able to close while the house fails an appraisal or an inspection. That is a common reason Edgewood owners with major repairs ask for a direct offer. Cash, in this sale, means KindKey is not waiting on that buyer’s loan. It does not mean a suitcase of money, and it does not erase a mortgage, a Pierce County tax lien, or a contractor’s lien. Those amounts show on the settlement statement. KindKey does not charge an agent commission or a separate assignment fee. Closing costs are whatever the purchase agreement states.',
+        ],
+      },
+      {
+        heading: 'When repairing, listing, or selling as-is each fits',
+        paragraphs: [
+          'Finishing the repair can fit if you have the money, the time, and a house you want to show. A listing can fit after that, or even before it, if a broker will take the condition and you can host access. Hire a licensed broker for a listing. KindKey will not run one and will not tell you a listing is a mistake.',
+          'A direct sale fits when the repair bid is larger than the cash you have, when you already live in Puyallup or Tacoma, or when a deadline is closer than the city’s review time. Photos of the roof, the shop, and the stopped room are enough to start. If a floor is not safe, say so. You can leave unwanted furniture. Take personal papers. If the house is also in probate, or a foreclosure notice is posted on a quiet Edgewood street, read those Edgewood guides before you sign. Washington’s distressed-property rules under RCW 61.34 are a lawyer’s statute. KindKey does not interpret them. You can say no after you see the offer.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do I need an Edgewood building permit before KindKey will look?',
+        answer:
+          'No. KindKey buys Edgewood houses with open, expired, or missing permits. The city’s permit counter at 10440 Dom Calata Way E is for owners who choose to repair. Call (206) 519-5463 or use the cash-offer form to start a purchase.',
+      },
+      {
+        question: 'Will a failed roof or a half-finished bathroom block a cash offer?',
+        answer:
+          'No. The offer reflects the remaining work, so it can be less than a retail price for a finished house. You do not have to complete the repair to see the number.',
+      },
+      {
+        question: 'Is a City of Edgewood repair notice the same as a foreclosure?',
+        answer:
+          'No. A city letter and a trustee’s notice are different documents. Read the header. If both exist, talk with a Washington attorney before you sign. KindKey can still look at the house.',
+      },
+      {
+        question: 'Are you a contractor who will fix the house for me?',
+        answer:
+          'No. KindKey is a principal buyer. KindKey may repair after closing for its own account. That work is not a service you hire, and it is not a real estate listing.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'Pierce County city page.',
+      },
+      {
+        href: '/blog/sell-my-house-fast-for-cash-edgewood',
+        label: 'Sell fast for cash in Edgewood',
+        description: 'The direct-sale path when repairs make a listing a poor fit.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Inherited houses in Edgewood',
+        description: 'Estates often inherit the deferred repair too.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'When the repair bill and the mortgage are both behind.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices in King and Pierce County.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-king-pierce-county',
+        label: 'Fire-damaged houses in King or Pierce County',
+        description: 'When the major repair started as a fire.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'No contractor bid required.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood offer on the house as it sits',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. Describe the repair. You can say no after you see the number.',
+  }),
+  post('behind-on-property-taxes-edgewood-wa', {
+    breadcrumbName: 'Property taxes in Edgewood',
+    title: 'Behind on Property Taxes in Edgewood? Your Options in Pierce County',
+    description:
+      'Pierce County options when an Edgewood property-tax bill is behind, including payment, deferral, and a sale. KindKey is a buyer, not the treasurer.',
+    h1: 'Behind on Property Taxes in Edgewood? Your Options in Pierce County',
+    publishedAt: '2026-10-13',
+    intro: [
+      'If you are behind on property taxes on an Edgewood house, the bill is a Pierce County bill, and the options still open to you are the ones the treasurer and your own timeline allow: pay what is due, ask the county about a program you might qualify for, or sell before a tax foreclosure if a sale can pay the lien. KindKey Home Buyers LLC can make a cash offer on that third path. Call (206) 519-5463 or use the cash-offer form. The office is at 640 1st St SW, Auburn, WA 98001. KindKey is not the Pierce County Treasurer, a tax advisor, or a real estate agent. This article is not tax or legal advice.',
+      'Edgewood is entirely in Pierce County. King County’s treasury, which covers Federal Way and most of Auburn, is the wrong counter. Milton, next door, can fall in either county. An Edgewood parcel does not. The Pierce County Assessor-Treasurer is at 2401 S 35th St, Room 142, Tacoma, WA 98409. The main phone number is (253) 798-6111. The foreclosure department’s published number is (253) 798-2728. The office is open Monday through Friday, 8:30 a.m. to 4:30 p.m.',
+    ],
+    sections: [
+      {
+        heading: 'What “behind” means on a Pierce County bill',
+        paragraphs: [
+          'Pierce County’s tax page, following RCW 84.56.020, says statements go out in February and that failure to receive one does not waive interest. If the tax due is $50 or less, the full amount is due by April 30. If it is over $50, the first half may be paid by April 30 and the balance by October 31. After those dates the unpaid amount is delinquent. For residential property with four or fewer units, Pierce County’s interest page says interest on taxes levied for 2023 and later is 9 percent a year, figured at 0.75 percent a month, and that those residential parcels are not charged the penalty that applies to other property. Other property is charged 12 percent a year, plus penalties the county describes as 3 percent on June 1 and 8 percent on December 1, capped at 11 percent. Your bill controls. KindKey will not calculate it.',
+          'Interest on a late first half is a different problem from a tax foreclosure. Many Edgewood owners on North Hill, or in the valley along the Puyallup River, are one installment behind and still years away from a treasurer’s sale. Call the Assessor-Treasurer with the ten-digit parcel number and ask for the amount. Do not guess from a neighbor’s bill on Meridian Avenue E or Jovita Boulevard. Lots on the hill and lots in the valley are not assessed alike, and KindKey does not set the assessment.',
+        ],
+      },
+      {
+        heading: 'When Pierce County starts a tax foreclosure',
+        paragraphs: [
+          'RCW 84.64.050 says that after three years from the date of delinquency, the county treasurer must issue certificates of delinquency for the taxes, interest, and costs, with a limited exception if the county legislative authority agrees to a shorter set of years. Pierce County’s foreclosure page describes the properties it proceeds on as those with tax of more than $100 cumulative that is three or more years delinquent. The treasurer files a certificate of delinquency with Pierce County Superior Court. That case is not a mortgage foreclosure under chapter 61.24 RCW, and it is not a City of Edgewood code letter. Read the caption on the paper.',
+          'The county publishes a sale date for the current foreclosure year. For 2026, Pierce County’s site says the sale is Monday, November 9, and that owners and others with a recorded interest may redeem until 4:30 p.m. the day before the sale, which the county lists as Friday, November 6, 2026. The county also says there is no right of redemption after the sale, with narrow exceptions for a minor or a person judged incompetent. Confirm those dates with the foreclosure department before you rely on them. A published auction date can be updated. KindKey cannot move it.',
+        ],
+      },
+      {
+        heading: 'County programs that are not a sale to KindKey',
+        paragraphs: [
+          'Pierce County tells seniors age 61 or older, and disabled homeowners, to call the Senior / Disabled Department at (253) 798-2169 about a property-tax deferral. The county says a home that qualifies may be removed from foreclosure. The same page says a household with income of $64,000 or less may qualify for a one-time waiver of interest and penalty on a primary residence, with supporting documents, through the foreclosure avoidance team at (253) 798-2728. KindKey does not decide eligibility and will not tell you that you qualify. Call the county.',
+          'If someone else is paying the tax on a parcel already in foreclosure, Pierce County says state law requires notarized proof of the relationship, on the county’s authorization form. The Assessor-Treasurer’s office says it does not have a notary. Bring the form already notarized. Paying the county is not the same as selling the house. A relative who pays the bill does not become the buyer unless a deed says so.',
+        ],
+      },
+      {
+        heading: 'Selling the Edgewood house while the taxes are open',
+        paragraphs: [
+          'A completed sale can use proceeds to pay the taxes and the other liens the title company requires, if the price covers them. If it does not, the sale may not close unless the lienholders agree to different numbers. KindKey will not negotiate those agreements as your representative. You should see a settlement statement before you sign a deed. You do not have to catch the taxes up, or repair the house, before you ask for an offer. A North Hill roof and a valley drainage problem are priced as they are.',
+          'KindKey does not charge an agent commission or a separate assignment fee. Cash means the purchase is not waiting on a retail buyer’s mortgage. It does not erase the tax. If a mortgage foreclosure notice is posted at the same time, you have two clocks. Read the Edgewood foreclosure guide and talk with a Washington attorney about RCW 61.34 before you sign. KindKey does not interpret that law. If the house is also in a parent’s estate, the personal representative’s authority is a separate question, covered in the Edgewood probate guide. Requesting an offer does not pause the treasurer’s date. You can say no after you see the number.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Are Edgewood property taxes paid to King County?',
+        answer:
+          'No. Edgewood is in Pierce County. Pay and ask questions at the Pierce County Assessor-Treasurer, 2401 S 35th St, Room 142, Tacoma, (253) 798-6111. Milton can be either county. Edgewood is not.',
+      },
+      {
+        question: 'Does one late installment mean the house is in tax foreclosure?',
+        answer:
+          'No. Pierce County describes tax foreclosure for taxes that are more than $100 and three or more years delinquent, and RCW 84.64.050 uses a three-year mark. Call the treasurer with your parcel number. KindKey does not track your account.',
+      },
+      {
+        question: 'Can I sell before the Pierce County tax sale?',
+        answer:
+          'You can request a cash offer while taxes are unpaid. A closing can pay the lien if the price and the title requirements allow it. Call (206) 519-5463 or use the cash-offer form. Confirm the county’s redemption deadline yourself. An offer does not extend it.',
+      },
+      {
+        question: 'Will KindKey tell me if I qualify for a senior deferral?',
+        answer:
+          'No. Call Pierce County’s Senior / Disabled Department at (253) 798-2169. KindKey only offers to buy the house, and only if you decide to sell.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'The Edgewood city page.',
+      },
+      {
+        href: '/blog/sell-my-house-fast-for-cash-edgewood',
+        label: 'Sell fast for cash in Edgewood',
+        description: 'A direct sale when the tax bill is part of a larger deadline.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Inherited houses in Edgewood',
+        description: 'Estates often inherit the delinquent tax account too.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'Mortgage foreclosure is a different notice from a tax sale.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'How a direct sale differs from a rescue program.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'The form. It does not pay the treasurer by itself.',
+      },
+    ],
+    ctaTitle: 'Bring the Edgewood tax bill, then ask for a number',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. Confirm amounts and dates with Pierce County. You can say no.',
+  }),
+
+  post('sell-rental-property-with-tenants-milton-wa', {
+    breadcrumbName: 'Rentals with tenants in Milton',
+    title: 'Tired Landlord? Selling a Rental with Tenants in Milton, WA',
+    description:
+      'How Milton landlords sell a rented house with the tenant still there. Washington tenancy rules stay with your attorney. KindKey is a buyer.',
+    h1: 'Tired Landlord? Selling a Rental with Tenants in Milton, WA',
+    publishedAt: '2026-10-13',
+    intro: [
+      'You can sell a Milton rental with the tenants still living there. KindKey Home Buyers LLC buys houses as a principal, including occupied rentals, and does not require you to empty the house first. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form. KindKey is not a property manager, a landlord-tenant lawyer, or a real estate agent. This article is not legal advice.',
+      'Milton sits in both Pierce County and King County. The county line runs through the city, and a Milton, WA 98354 address does not tell you which county holds the deed. Surprise Lake houses, older houses along Milton Way, and houses on the northern streets are different rentals. The tenant’s rights come from the lease and from Washington law on both sides of the line. The recording office follows the parcel.',
+    ],
+    sections: [
+      {
+        heading: 'A sale does not end the tenancy',
+        paragraphs: [
+          'Chapter 59.18 RCW is Washington’s Residential Landlord-Tenant Act. Selling the house does not, by itself, cancel a lease or a month-to-month tenancy. The tenant can still be in the house on the day the deed records. The buyer takes the property subject to that tenancy unless a lawful end to the tenancy has already happened. KindKey’s offer can assume the tenant stays. You do not have to stage the living room or promise that it will be vacant at closing.',
+          'City Hall is at 1000 Laurel Street, Milton, WA 98354, phone (253) 922-8733, with posted hours Monday through Thursday, 7:30 a.m. to 4:30 p.m. The city maintains streets, parks, and its own permits. It does not hear evictions, and it does not become your property manager because you are tired of calls. Fife is west, Edgewood is east, Pacific is north, and Federal Way is the larger King County city past the line. None of those city halls ends a Milton tenancy either.',
+        ],
+      },
+      {
+        heading: 'Why “I’m selling” is not a notice you should copy',
+        paragraphs: [
+          'Landlords sometimes hear that selling is a legal reason to end a tenancy. RCW 59.18.650(2)(e) is narrower than that. It describes a cause when the owner elects to sell a single-family residence and has given at least 90 days’ written notice. The statute says an owner “elects to sell” by making reasonable attempts to sell within 30 days after the tenant has vacated, including, at a minimum, listing the house at a reasonable price with a realty agency or advertising it on the multiple listing service. A rebuttable presumption says the owner did not intend to sell if that listing does not happen. Subsection (5) of the same statute says this cause does not end a fixed-term tenancy early unless the landlord and the tenant agree in writing and the tenant has at least 60 days to leave.',
+          'KindKey does not list houses. A purchase by KindKey is not a listing with a realty agency and it is not an MLS advertisement. Do not serve a notice under that subsection in order to empty a Milton house for a cash sale. KindKey will not write the notice, serve it, or tell you that it fits your lease. A Washington landlord-tenant attorney should read the lease, the statute, and any local rule together. If you want the tenant to stay through closing, say that when you ask for the offer. That is the path KindKey can actually price.',
+        ],
+      },
+      {
+        heading: 'What to bring to the conversation',
+        paragraphs: [
+          'Bring the address, which county you believe the parcel is in, the lease if you have it, the rent amount, the deposit amount, and whether rent is current. The closing agent needs those facts because unpaid rent, a deposit, and prepaid rent can show up in the settlement. KindKey does not calculate what the tenant is owed and does not hold the deposit for you before closing. If you do not know the county, say so. Guessing from the school the tenant’s children attend, or from a neighbor in Edgewood, can send the title order to the wrong auditor.',
+          'A Pierce County Milton parcel records with the Pierce County Auditor. A King County Milton parcel records with the King County Recorder. Taxes follow the same split. King County’s map of Milton shows the county line inside the corporate boundary, including the northern part of the city, with I-5 along the west side of that King County portion. The closing agent confirms the parcel. Tell us about pets, a non-paying occupant, a garage converted to a room, or a repair you stopped making. The offer follows that house. A Milton-wide price, quoted before anyone sees the lease and the lot, is a guess.',
+        ],
+      },
+      {
+        heading: 'Listing, managing, or selling with the tenant in place',
+        paragraphs: [
+          'You can keep managing the rental. You can also hire a licensed broker to list it, if the tenant will allow the access a listing needs and a retail buyer will accept an occupied house. KindKey will not run that listing and will not tell you it is a mistake. Showings are the part many tired landlords cannot face. A direct sale is one walkthrough, arranged with whatever notice your attorney says the lease and chapter 59.18 require. KindKey will not tell you to enter without that notice.',
+          'KindKey does not charge an agent commission or a separate assignment fee. Cash means the purchase is not waiting on a buyer’s mortgage approval. It does not erase a mortgage, a tax bill, or money the tenant is due. Those figures belong on the settlement statement before you sign. If the loan is in default, read the Milton foreclosure guide and talk with a Washington attorney about RCW 61.34. KindKey does not interpret that statute. If you inherited the rental and are not sure you can sign, read the Milton probate guide first. You can say no after you see the offer. Call (206) 519-5463 when you want the number.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell a Milton rental without evicting the tenant?',
+        answer:
+          'Yes. KindKey buys Milton houses with tenants in place. A sale does not, by itself, end the tenancy. Call (206) 519-5463 or use the cash-offer form and say the house is occupied.',
+      },
+      {
+        question: 'Should I give a 90-day “I’m selling” notice before I call KindKey?',
+        answer:
+          'Do not use RCW 59.18.650(2)(e) as a plan to empty the house for a cash buyer. That subsection is written around a listing with a realty agency or on the MLS, and KindKey does not list houses. Ask a landlord-tenant attorney before you serve any notice.',
+      },
+      {
+        question: 'Does it matter which county the Milton rental is in?',
+        answer:
+          'Yes for the deed and the taxes. Milton is in both Pierce County and King County. The tenant’s state-law rights exist on either side. Tell KindKey which county you think applies, if you know.',
+      },
+      {
+        question: 'Will KindKey collect the rent or return the deposit?',
+        answer:
+          'KindKey is the buyer, not your property manager. Bring the lease, the deposit, and the rent status to the closing conversation. The settlement statement is where charges are shown. KindKey does not calculate the tenant’s claim.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description: 'The Milton city page, in two counties.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'The service page for occupied rentals.',
+      },
+      {
+        href: '/blog/sell-my-house-fast-for-cash-milton',
+        label: 'Sell fast for cash in Milton',
+        description: 'How a direct Milton sale works once you are ready.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-milton',
+        label: 'Inherited houses in Milton',
+        description: 'When the rental came from an estate.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-milton-wa',
+        label: 'Avoiding foreclosure in Milton',
+        description: 'If the rental’s loan is also behind.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say the house is tenant-occupied on the form.',
+      },
+    ],
+    ctaTitle: 'Ask for a Milton offer with the tenant still there',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to empty the house first. You can say no.',
+  }),
+  post('selling-a-vacant-house-milton-wa', {
+    breadcrumbName: 'Vacant houses in Milton',
+    title: 'Selling a Vacant House in Milton, WA',
+    description:
+      'How to sell a vacant Milton house without a clean-out or a listing. The parcel may be in Pierce County or King County. KindKey buys as-is.',
+    h1: 'Selling a Vacant House in Milton, WA',
+    publishedAt: '2026-10-13',
+    intro: [
+      'You can sell a vacant house in Milton without cleaning it out, flying back for showings, or repairing it to listing condition. KindKey Home Buyers LLC buys vacant houses directly. Call (206) 519-5463 or use the cash-offer form. The office is at 640 1st St SW, Auburn, WA 98001. KindKey is not a real estate agent. If the vacant house is also in an estate, a Washington attorney still has to confirm who can sign. This article is not legal or tax advice.',
+      'Vacant means nobody lives there. It does not tell you the county. Milton is in both Pierce County and King County, and the line runs through the city. The city’s shoreline materials describe Milton as about 2.6 square miles, bordered by Federal Way and unincorporated King County on the north, Edgewood on the east and southeast, Fife on the southwest, and unincorporated Pierce County on the west. A shared ZIP code, 98354, does not put every empty house in the same auditor’s office.',
+    ],
+    sections: [
+      {
+        heading: 'What still has to be done while the house is empty',
+        paragraphs: [
+          'An empty house keeps costing money until the deed transfers. Insurance carriers ask questions once nobody lives there. Yards draw notices. Pipes and tarps fail in Western Washington rain. You do not have to solve all of that before an offer. You do have to keep meeting any duty you still have until closing. Ask your insurer what the policy requires. KindKey will not interpret the policy or promise that coverage continues.',
+          'Do not assume Auburn’s vacant-property rule applies in Milton. Auburn City Code 15.20.100 is an Auburn ordinance, including a registration requirement for property vacant more than 30 days, with exceptions the Auburn code spells out. A Milton notice, if you have one, will name the City of Milton or the county that wrote it. Read the header. City Hall is at 1000 Laurel Street if the letter is actually from Milton. KindKey does not answer the letter for you, and an offer does not close a code file the morning you call.',
+        ],
+      },
+      {
+        heading: 'Surprise Lake, Milton Way, and the King County streets',
+        paragraphs: [
+          'Surprise Lake is a 32-acre lake in the Puyallup River watershed inside Milton, which the city’s lake reporting describes with a maximum depth of about 40 feet. Houses around the lake, older houses along Milton Way, and houses on the northern streets near the county line are not one product. A small vacant house near the lake can be a different repair from a house that has sat empty since the owner moved toward Federal Way. KindKey prices the lot in front of us.',
+          'Access is the practical step. A lockbox, a relative in Fife or Edgewood, or one short visit works. Utilities can stay off. Leave the furniture you do not want. Take personal papers before closing day, not during it. Tell us about sheds, cars, and anything the offer should include. East Pierce Fire & Rescue lists Milton among the communities it serves. Milton’s fire department joined East Pierce in 2013. That fact does not make a vacant house safe to ignore. If a neighbor reports a problem, the notice still comes to the owner of record.',
+        ],
+      },
+      {
+        heading: 'The county line decides the paperwork',
+        paragraphs: [
+          'A Pierce County parcel records with the Pierce County Auditor and is taxed by Pierce County. A King County parcel records with the King County Recorder and is taxed by King County. King County’s map of Milton shows the line inside the city, including the northern part, with I-5 along the west side of that King County portion. Using the wrong county spends the time a vacant-house sale was supposed to save. If you do not know, say so. KindKey will not treat a guess as a fact.',
+          'The closing date is chosen with you. Owners who already live out of state often want a shorter window. Owners who still need to collect a few boxes can ask for longer. KindKey does not promise a fixed number of days. Cash means the purchase is not waiting on a buyer’s mortgage approval. It does not erase a mortgage payoff, a tax bill, or a lien. The settlement statement shows those figures. KindKey does not charge an agent commission or a separate assignment fee.',
+        ],
+      },
+      {
+        heading: 'When vacant also means inherited, listed, or in default',
+        paragraphs: [
+          'A vacant inherited house has two problems: the key, and the signature. You can request an offer while an attorney finishes authority. Do not accept and sign before that authority exists. The Milton probate guide covers Pierce County filings in Tacoma and King County filings in Seattle or Kent. Heirs do not have to fly home to host an open house. They do have to match the signer to the title file.',
+          'A listing can fit a vacant house that is clean, safe, and easy to finance, if someone local can handle showings. Hire a licensed broker for that. KindKey will not run the listing. If a foreclosure notice is also in the mail, read the Milton foreclosure guide and talk with a Washington attorney about RCW 61.34 before you sign. KindKey does not interpret that statute. You can say no after you see the number. The cash-offer form is the place to start if you want KindKey to look.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell a vacant Milton house from another state?',
+        answer:
+          'Yes, if you have authority to sign. Access can be a lockbox or a relative. Call (206) 519-5463 or use the cash-offer form. KindKey buys the house and does not list it.',
+      },
+      {
+        question: 'Do I have to clean the house out first?',
+        answer:
+          'No. Furniture you do not want can stay. Take personal papers and the items you want to keep before closing day.',
+      },
+      {
+        question: 'Which county handles a vacant Milton house?',
+        answer:
+          'The parcel’s county. Milton is in both Pierce County and King County. The ZIP code does not decide it. Tell KindKey if you already know which side of the line the house is on.',
+      },
+      {
+        question: 'Does Auburn’s vacant-house registration apply in Milton?',
+        answer:
+          'No. Auburn City Code 15.20.100 is an Auburn rule. A Milton letter will name the City of Milton or the county that sent it. Read the header, and do not skip a deadline because a buyer is looking.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description: 'The Milton city page.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The service page for empty houses.',
+      },
+      {
+        href: '/blog/selling-a-vacant-or-inherited-house',
+        label: 'Vacant or inherited houses',
+        description: 'The King and Pierce County overview.',
+      },
+      {
+        href: '/blog/sell-my-house-fast-for-cash-milton',
+        label: 'Sell fast for cash in Milton',
+        description: 'How a direct sale works in a two-county city.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-milton',
+        label: 'Inherited houses in Milton',
+        description: 'When the vacant house is also an estate.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-milton-wa',
+        label: 'Avoiding foreclosure in Milton',
+        description: 'If a notice arrived while the house sat empty.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'No clean-out required before you ask.',
+      },
+    ],
+    ctaTitle: 'Tell KindKey the Milton house is vacant',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to clean it out first. You can say no.',
+  }),
+  post('relocating-sell-house-fast-milton-wa', {
+    breadcrumbName: 'Relocating from Milton',
+    title: 'Relocating? How to Sell Your Milton House Fast',
+    description:
+      'How Milton homeowners sell during a move without waiting on showings. The house may be in Pierce County or King County. KindKey is a buyer.',
+    h1: 'Relocating? How to Sell Your Milton House Fast',
+    publishedAt: '2026-10-13',
+    intro: [
+      'To sell a Milton house during a move, you sell it directly to a buyer who can close without a retail mortgage, on a date you help choose, instead of listing it and flying back for showings. KindKey Home Buyers LLC does that as a principal buyer. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form. KindKey is not a real estate agent and does not list houses. KindKey does not promise a specific number of days.',
+      'The move can be a job in Tacoma or Seattle, orders connected to Joint Base Lewis-McChord, or a parent who needs you closer. The house you are leaving is still a Milton house. Milton is in both Pierce County and King County. The county line runs through the city. A fast sale that starts with the wrong county loses the time the move was supposed to save.',
+    ],
+    sections: [
+      {
+        heading: 'What “fast” means when you are already packing',
+        paragraphs: [
+          'The practical version is a walkthrough, a written offer, and a closing date set with you and the closing agent. Owners who have already started work out of state often want a shorter window. Owners who still need a week to box a Surprise Lake house, or a house along Milton Way, can ask for longer. The offer is not an obligation. You can say no after you see it, and you can still talk with a licensed broker about listing. Do not sign two conflicting contracts.',
+          'KindKey does not charge an agent commission or a separate assignment fee. Closing-cost responsibility is in the purchase agreement and can vary. A mortgage payoff, taxes, and liens reduce proceeds on either side of the county line. The settlement statement is the paper that shows the figure before you sign a deed. Cash means KindKey is not waiting on a buyer’s loan approval. It does not mean the moving truck is paid for, and it does not erase what you owe.',
+        ],
+      },
+      {
+        heading: 'Start with the county, then the calendar',
+        paragraphs: [
+          'Send the address, the condition, the date you need to be gone, and which county you believe the parcel is in. If you do not know the county, say so. King County’s map of Milton shows the line inside the corporate boundary, including the northern part of the city, with I-5 along the west side of that King County portion. Edgewood, next door, is Pierce County. Federal Way is King County. A Milton address can be either. The closing agent confirms the parcel before anyone treats a guess as a fact.',
+          'A Pierce County deed records with the Pierce County Auditor. A King County deed records with the King County Recorder. Property taxes follow the same split. City Hall, at 1000 Laurel Street, can answer city questions. It does not record the deed, and it does not set your closing date. Utilities that are still on do not have to stay on through a long listing. Tell us the date they will be shut off. An empty house after you leave is a different problem, covered in the Milton vacant-house guide, including insurance questions that belong with your insurer.',
+        ],
+      },
+      {
+        heading: 'The house can stay lived-in until you go',
+        paragraphs: [
+          'You do not have to paint, replace the carpet, or haul every stick of furniture to a dump before KindKey will look. Take what you are moving. Leave what you are not. Personal papers should go with you, not into a box in the garage you might forget. If a tenant is still there, do not treat this article as the one to follow. Occupied rentals have Washington rules under chapter 59.18 RCW, and the Milton rental guide explains why a cash sale is not a reason to serve a homemade move-out notice.',
+          'Milton houses are often small and older. A hill of boxes in the living room does not stop a walkthrough. Photos from your phone are enough to start if you are already on the road. If a relative in Fife or Edgewood has a key, say so. KindKey’s office is in downtown Auburn, not at Milton City Hall, so the trip is local. KindKey may repair, hold, rent, or resell after closing. You are selling the house, not hiring a local agent who advertises speed.',
+        ],
+      },
+      {
+        heading: 'Deadlines that should not be ignored because of the move',
+        paragraphs: [
+          'A relocation can land on top of a foreclosure notice, a probate, or a code letter. Those are different problems from a start date at a new job. A foreclosure notice is a legal problem first. Read the Milton foreclosure guide, and talk with a Washington attorney about RCW 61.34 before you sign. KindKey does not interpret that statute and cannot order a trustee to wait because your moving truck is booked.',
+          'An inherited house you are leaving behind has the same county question twice: where the decedent lived, and where the parcel sits. The Milton probate guide walks through the clerk in Tacoma and the clerk in Seattle or Kent. Ask for the offer when you are ready. Accept it only if the signer and the county are clear. A listing remains an option if the house is updated and someone local can host showings while you are gone. Hire a broker for that path. KindKey will not run it, and KindKey will not tell you it is a mistake.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'How do I start a sale in Milton if I am about to move?',
+        answer:
+          'Use the cash-offer form or call (206) 519-5463. Include the address, the date you need to leave, and the county if you know it. You can decline the offer.',
+      },
+      {
+        question: 'Will KindKey promise to close before my start date?',
+        answer:
+          'No. The closing date is chosen with you and the closing agent. KindKey does not promise a fixed number of days. Tell us the date that matters so the offer can be planned around it, not assumed.',
+      },
+      {
+        question: 'Do I have to empty the house before the walkthrough?',
+        answer:
+          'No. Lived-in houses and half-packed houses are fine. Take personal papers with you. Leave what you do not want to move.',
+      },
+      {
+        question: 'Is every Milton house in Pierce County?',
+        answer:
+          'No. Milton is in both Pierce County and King County. The parcel controls the deed and the taxes. Edgewood is Pierce County. Federal Way is King County. Do not guess from the ZIP code.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description: 'The Milton city page.',
+      },
+      {
+        href: '/areas/milton/sell-my-house-fast',
+        label: 'Sell my house fast in Milton',
+        description: 'The Milton fast-sale page.',
+      },
+      {
+        href: '/blog/sell-my-house-fast-for-cash-milton',
+        label: 'Sell fast for cash in Milton',
+        description: 'The longer guide to a direct Milton sale.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-milton',
+        label: 'Inherited houses in Milton',
+        description: 'If the move is also an estate.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-milton-wa',
+        label: 'Avoiding foreclosure in Milton',
+        description: 'If a notice is running while you pack.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-milton-wa',
+        label: 'Selling a vacant house in Milton',
+        description: 'Once you have already left the keys behind.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'The form, including while you are out of town.',
+      },
+    ],
+    ctaTitle: 'Start a Milton offer around your move date',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. Tell KindKey when you need to be gone. You can say no.',
+  }),
+
+  post('sell-fire-damaged-house-auburn-wa', {
+    breadcrumbName: 'Fire damage in Auburn',
+    title: 'How to Sell a Fire-Damaged House in Auburn, WA',
+    description:
+      'How to sell a fire-damaged Auburn house as-is. Valley Regional Fire Authority covers the city. KindKey is a local principal buyer, not an agent.',
+    h1: 'How to Sell a Fire-Damaged House in Auburn, WA',
+    publishedAt: '2026-10-13',
+    intro: [
+      'You sell a fire-damaged house in Auburn by pricing it in its current condition and transferring it through a closing agent, without rebuilding the kitchen, the roof, or the smoke-stained rooms first. KindKey Home Buyers LLC buys that house as a principal. The office is at 640 1st St SW, Auburn, WA 98001, in the same city. Call (206) 519-5463 or use the cash-offer form. KindKey is not a real estate agent, a fire investigator, or an insurance adjuster. This article does not tell you how to handle a claim.',
+      'Auburn sits mostly in King County, with a southern portion in Pierce County. The mailing city being Auburn is enough to start. It is not enough to pick the auditor. Algona and Pacific are neighboring cities, not Auburn neighborhoods, even though the same fire authority answers calls there. Lea Hill, Lakeland Hills, the valley floor, and West Valley are different houses. The offer follows the one that burned.',
+    ],
+    sections: [
+      {
+        heading: 'Who responds, and who does not rebuild it for you',
+        paragraphs: [
+          'Valley Regional Fire Authority serves the cities of Algona, Auburn, and Pacific. The authority was established on January 1, 2007. Its published station list includes Station 31 at 1101 D Street NE and Station 35 at 2905 C Street SW, both in Auburn. A kitchen fire, a garage fire, an attic fire, or a house that is mostly smoke can all start with that response. The fire marshal’s office does inspections and investigations under the fire code. KindKey does not replace that office, and KindKey does not decide whether the structure is safe to enter.',
+          'If you wanted to rebuild instead of sell, building permits are a City of Auburn matter. The permit center’s published line is (253) 931-3090, option 2, or permitcenter@auburnwa.gov. Auburn City Code adopts the International Fire Code with local amendments, and it says a reference to the fire department includes Valley Regional Fire Authority. Those permits are for an owner who is repairing. They are not a prerequisite for asking KindKey to look. If the house is not safe to walk through, say so. Photos and an exterior look can start the conversation. Do not enter a structure that is not safe just to satisfy a buyer.',
+        ],
+      },
+      {
+        heading: 'The claim and the house are separate',
+        paragraphs: [
+          'You are selling the real estate as it sits, not a restored house and not your insurance claim, unless a lawyer tells you a document does that. Keep those ideas separate. Talk with your insurer before you assign proceeds or sign claim paperwork you do not understand. Talk with a Washington attorney if a contractor or another buyer asks you to sign that paperwork. KindKey will not tell you whether to accept a claim payment.',
+          'Western Washington rain makes tarps fail. Auburn City Code 15.20.100, the vacant-property rule, says tarps are not allowed as a way to secure or screen a damaged roof, door, window, or wall, except as a temporary measure before a permanent repair. That ordinance also says property vacant more than 30 days must be registered, with exceptions for a current rental business license under chapter 5.22 ACC and for a house the owner inhabits part-time. If the fire left the house empty, read that section and the city’s code compliance page. KindKey does not file the registration. The general fire-damage guide for King and Pierce County covers the same separation of claim and sale across both counties. The Auburn fire page on this site is the local service page.',
+        ],
+      },
+      {
+        heading: 'Hill houses, valley houses, and the county line',
+        paragraphs: [
+          'A newer house on Lea Hill or Lakeland Hills can look ordinary from the street and still hold smoke in the attic and the crawlspace. An older house downtown, near the Green River valley, or in West Valley can show the damage from the sidewalk. KindKey is based downtown, so a walkthrough in Auburn does not depend on a drive from another county. Describe what you know. The price reflects the repair, the lot, and the location. It will not match a retail price for a finished house, because that house does not exist yet.',
+          'Most Auburn deeds record in King County. A southern parcel can record in Pierce County. The closing agent orders the correct title. Fire does not change that. Algona and Pacific have their own city halls even when Valley Regional Fire Authority answered the call. If the address is actually in one of those cities, say so. Unincorporated land outside Auburn is not this page. KindKey may repair, hold, or resell after closing. You are not charged an agent commission or a separate assignment fee for the purchase. Closing costs are whatever the purchase agreement states. Liens and the mortgage payoff come out of the price and show on the settlement statement.',
+        ],
+      },
+      {
+        heading: 'When a code letter or a loan notice arrives after the fire',
+        paragraphs: [
+          'A fire often produces a city letter: an unsafe structure, an open building, or a nuisance condition under Auburn’s code. That letter is a code case. The Auburn code-violations guide and the general code-violations page explain a sale with the notice still open. The city controls its file until the city closes it. KindKey will not attend a hearing for you or promise the fine disappears at signing. Amounts that must be paid can reduce proceeds the same way a payoff can.',
+          'A fire plus a missed mortgage payment, or a fire in a probate house, needs an attorney before you sign. Washington’s distressed-property rules under RCW 61.34 may matter when money pressure is part of the sale. KindKey does not interpret the statute. You can still ask for an offer while you get that advice. A listing remains possible if you would rather market the damage and negotiate repairs with retail buyers. Hire a broker. Expect disclosures and a longer calendar. Many owners choose the direct sale because they cannot fund the rebuild or they are already living somewhere else. You can say no after you see the number.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell an Auburn house before the insurance claim is paid?',
+        answer:
+          'Yes. You can request a cash offer while a claim is open. KindKey will not tell you how to handle the claim. Ask your insurer and, if needed, an attorney. Call (206) 519-5463 or use the cash-offer form.',
+      },
+      {
+        question: 'Do I have to rebuild before KindKey will make an offer?',
+        answer:
+          'No. KindKey buys fire-damaged and smoke-damaged Auburn houses as they sit. You do not need a permit, a drywall bid, or a final inspection first.',
+      },
+      {
+        question: 'Which fire department covers Auburn?',
+        answer:
+          'Valley Regional Fire Authority serves Auburn, and also Algona and Pacific. It was established on January 1, 2007. KindKey is not the fire department and does not investigate the fire.',
+      },
+      {
+        question: 'What if the house is unsafe to enter?',
+        answer:
+          'Say so. Photos and an exterior look can start the conversation. Do not walk a structure that is not safe. The offer can still be discussed from what is known.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/auburn/sell-fire-damaged-house',
+        label: 'Auburn fire-damaged houses',
+        description: 'The Auburn service page for fire damage.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The main service page for both counties.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-king-pierce-county',
+        label: 'Fire damage in King or Pierce County',
+        description: 'The general guide. Auburn can be either county.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Unsafe-structure letters often follow a fire.',
+      },
+      {
+        href: '/blog/how-to-sell-my-house-fast-for-cash-auburn',
+        label: 'Sell fast for cash in Auburn',
+        description: 'The direct-sale steps in KindKey’s home city.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-auburn',
+        label: 'Inherited houses in Auburn',
+        description: 'When the fire was in a parent’s house.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-auburn-wa',
+        label: 'Avoiding foreclosure in Auburn',
+        description: 'If the loan is behind after the fire.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'No repair bid required.',
+      },
+    ],
+    ctaTitle: 'Ask for an Auburn offer on the damaged house',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You can keep talking with your insurer. You can say no.',
+  }),
+  post('sell-house-with-code-violations-auburn-wa', {
+    breadcrumbName: 'Code violations in Auburn',
+    title: 'Selling a House with Code Violations in Auburn, WA',
+    description:
+      'How Auburn owners sell a house with an open code case without finishing the city’s list first. KindKey is a principal buyer, not code enforcement.',
+    h1: 'Selling a House with Code Violations in Auburn, WA',
+    publishedAt: '2026-10-13',
+    intro: [
+      'You sell a house with code violations in Auburn by pricing it as it sits and closing through a title company, without finishing the city’s repair list first. KindKey Home Buyers LLC does that as a principal buyer. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form. KindKey is not code enforcement, a permit expediter, or a real estate agent. This article is not legal advice.',
+      'A notice about tall grass, junk, an inoperable vehicle, an unpermitted room, or an unsafe structure does not have to be cured before you ask for an offer. The agency that wrote the letter still controls the case. If the notice has a hearing, a fine, or an order to vacate, talk with a Washington attorney before you rely on a sale to solve it. KindKey will not appear at the hearing for you.',
+    ],
+    sections: [
+      {
+        heading: 'Read the header before you assume it is Auburn',
+        paragraphs: [
+          'City of Auburn Code Compliance is a division of Community Development. The city’s code compliance page says it enforces ordinances on public nuisances, including junked vehicles on private property, tall grass and weeds, and junk, and that it checks permits for construction, land clearing, grading, signs, and zoning. The published report line is (253) 931-3090, option 5, or codeenforcement@auburnwa.gov. The city’s neighborhood page also points people to the customer service center at 1 E Main Street, second floor. Parking and animal issues are directed to the Auburn Police non-emergency line at (253) 288-2121. KindKey is none of those offices.',
+          'Auburn City Code Title 8 is the health and safety title the city cites for public-nuisance conditions such as excessive vegetation, garbage, litter, inoperable vehicles, and junk. A letter under that title is not a King County letter and not a Pierce County letter. The city’s own FAQ tells people to contact King County code enforcement or Pierce County code enforcement for unincorporated property. Algona and Pacific are separate cities. If the header does not say Auburn, do not treat this page as if it did. Inside the Auburn city limits, the city code can apply even when the parcel is one of the southern lots that record in Pierce County. The deed and the taxes follow the county. The notice follows the letterhead.',
+        ],
+      },
+      {
+        heading: 'Vacant houses and unpermitted work',
+        paragraphs: [
+          'Auburn takes vacant property seriously enough to put it in the city code. ACC 15.20.100 says vacant properties must be registered when they remain vacant for more than 30 days. Failure to register is a violation under chapter 1.25 ACC. The section does not apply to property with a current rental business license under chapter 5.22 ACC, or to a house the owner inhabits part-time. The same section requires the property to be kept free of code violations, secured, with doors and windows in place, and it says tarps are not a lasting way to cover a damaged roof, door, window, or wall. It also calls for water service to be disconnected, vegetation to be maintained, a visible contact notice, and registration with the Auburn police trespass program. The city clerk’s office has the official code. KindKey does not submit the form.',
+          'Unpermitted additions and garage conversions show up on Lea Hill, on Lakeland Hills, in the valley, and in West Valley. A retail buyer’s lender may not close while that work is open. You do not need a contractor bid or a final inspection before KindKey will look. Photos of the posting and of the condition are enough to start. If the structure is not safe to enter, say so. An exterior look can begin the conversation. KindKey may repair, hold, or resell after closing. You are selling the house, not hiring someone to fight the case.',
+        ],
+      },
+      {
+        heading: 'Fines, liens, and a fire or foreclosure beside the letter',
+        paragraphs: [
+          'An open case does not, by itself, stop a deed. It also does not close because you requested an offer. Until recording, deadlines on the notice are still yours. Do not skip a hearing because a buyer is looking. Some cities record liens for unpaid fines or for the cost of abating a property. KindKey does not promise that every Auburn fine disappears when you sign. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement, prepared by the closing agent, is where you see them. KindKey does not negotiate the citation. KindKey does not charge an agent commission or a separate assignment fee.',
+          'A fire often produces the code letter. The Auburn fire guide and the general King and Pierce County fire guide cover that overlap, including the insurance claim, which stays with your insurer. If the code case is also sitting next to a foreclosure notice or an estate, talk with a Washington attorney before you sign a purchase agreement. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not tell you it does not apply because the immediate problem is a city letter. The Auburn foreclosure guide and the Auburn probate guide are the local pages for those other clocks.',
+        ],
+      },
+      {
+        heading: 'Curing the notice, listing, or selling as-is',
+        paragraphs: [
+          'Curing a small yard notice can be the right choice if you want to keep the house and the work is actually small. It is a poor fit when the letter requires a new roof, removal of an unpermitted unit, or a clean-out you cannot staff, and you already live somewhere else. A listing still means showings, disclosures, and buyers who may ask for repairs before they close. Hire a licensed broker if you want that path. KindKey will not run the listing.',
+          'A direct sale is a walkthrough, a written offer, and a closing date you help choose. The offer reflects the remaining work, so it can be less than a retail price for a violation-free house. Compare the number with the calendar and the repair budget you actually have. You can say no after you see it. The general code-violations page describes the same purchase across King and Pierce County. Auburn is simply the city where the buyer’s office already is. Call (206) 519-5463 or use the cash-offer form and attach what the letter says.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell an Auburn house before the code case is closed?',
+        answer:
+          'Yes. KindKey buys Auburn houses with open violations and does not require you to finish the city’s list first. The city still controls its case until it says otherwise. Call (206) 519-5463 or use the cash-offer form.',
+      },
+      {
+        question: 'Does KindKey speak to Auburn code enforcement for me?',
+        answer:
+          'No. KindKey is the buyer. Code compliance can be reached at (253) 931-3090, option 5. Bring the notice to your conversation with KindKey, and take legal questions to a Washington attorney.',
+      },
+      {
+        question: 'My Auburn house is in Pierce County. Whose code applies?',
+        answer:
+          'If the house is inside Auburn city limits, read the letterhead. City of Auburn notices are city cases even when the deed records in Pierce County. Unincorporated land is a county case. The closing agent confirms the parcel.',
+      },
+      {
+        question: 'Does a vacant Auburn house have to be registered?',
+        answer:
+          'ACC 15.20.100 says property vacant more than 30 days must be registered, with exceptions for a current rental business license and for part-time owner occupancy. Read the code and the city’s form. KindKey does not file it, and a sale does not erase a fine already assessed.',
+      },
+    ],
+    related: [
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'The general page for King and Pierce County.',
+      },
+      {
+        href: '/areas/auburn',
+        label: 'Sell a house in Auburn',
+        description: 'KindKey’s home city.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-king-pierce-county',
+        label: 'Fire damage in King or Pierce County',
+        description: 'Fires often leave an open code case behind.',
+      },
+      {
+        href: '/blog/how-to-sell-my-house-fast-for-cash-auburn',
+        label: 'Sell fast for cash in Auburn',
+        description: 'The direct-sale steps when a notice is open.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-auburn',
+        label: 'Inherited houses in Auburn',
+        description: 'Estates often inherit the code letter too.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-auburn-wa',
+        label: 'Avoiding foreclosure in Auburn',
+        description: 'When a trustee’s notice sits next to the city letter.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'No repair bid required.',
+      },
+    ],
+    ctaTitle: 'Ask for an Auburn offer while the notice is open',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. Share what the City of Auburn letter says. You can say no.',
+  }),
+  post('selling-a-house-during-divorce-auburn-wa', {
+    breadcrumbName: 'Divorce sales in Auburn',
+    title: 'Selling a House During Divorce in Auburn, WA',
+    description:
+      'How Auburn spouses sell a house during a divorce once an attorney confirms who can sign. The parcel may be in King or Pierce County.',
+    h1: 'Selling a House During Divorce in Auburn, WA',
+    publishedAt: '2026-10-13',
+    intro: [
+      'Selling a house during a divorce in Auburn starts with who is allowed to sign the deed. KindKey Home Buyers LLC can buy the house as a principal once that question is answered. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form. KindKey is not a divorce attorney, a mediator, or a real estate agent. This article is not legal advice.',
+      'Auburn is mostly in King County, with a southern portion in Pierce County. A Lea Hill house, a Lakeland Hills house, a valley house near the Green River, and a West Valley house can share an Auburn mailing address and still be different title files. The divorce case follows the petitioner’s residence. The deed follows the parcel. Your attorney and the closing agent sort that. KindKey will not.',
+    ],
+    sections: [
+      {
+        heading: 'Which courthouse, and which recording office',
+        paragraphs: [
+          'RCW 26.09.010 says a dissolution, a legal separation, or a declaration about the validity of a marriage may be filed in the superior court of the county where the petitioner resides. If you live in the King County part of Auburn, that points to King County. King County filings are handled by the Superior Court Clerk at the King County Courthouse, 516 Third Avenue, Room E-609, Seattle, and at the Maleng Regional Justice Center, 401 Fourth Avenue North, Room 2C, Kent. Ask the clerk or your attorney which office and which case-assignment area apply. KindKey will not file the petition or pick the courthouse.',
+          'If you live on a southern Auburn parcel that is actually in Pierce County, Pierce County can be the residence county. Those filings go to the Clerk of the Superior Court, 930 Tacoma Ave S, Room 110, Tacoma, WA 98402, phone (253) 798-7455. The other spouse may already be in Kent, Federal Way, Milton, or Edgewood. If that person is the petitioner and lives in a different county, the case may be filed there. The house does not move with them. A King County Auburn deed records with the King County Recorder. A Pierce County Auburn deed records with the Pierce County Auditor. Algona and Pacific are separate cities. Do not assume a house just outside the Auburn line is this file.',
+        ],
+      },
+      {
+        heading: 'Both spouses, the decree, and the family home',
+        paragraphs: [
+          'RCW 26.16.030 says neither spouse shall sell, convey, or encumber community real property unless the other spouse joins in the deed or other instrument, and both acknowledge it. One signature, a text message, or an agreement in a kitchen on Lea Hill is not that joinder. Title will ask for the missing signature or for a court order. KindKey cannot waive it because you want the sale to move.',
+          'RCW 26.16.050 is the different path: one spouse may deed a community interest directly to the other, and the grantor signs without the grantee joining. That transfer is between the two of you. It is not a sale to KindKey. A decree under RCW 26.09.080 can award the house. The statute tells the court to divide property and liabilities in a way that is just and equitable, considering the community property, the separate property, the length of the marriage, and each spouse’s economic circumstances, including whether the family home should go for a time to the parent the children live with most of the time. KindKey will not predict that division or tell you what “equitable” means in your case.',
+        ],
+      },
+      {
+        heading: 'Orders you have to read before you sign',
+        paragraphs: [
+          'RCW 26.09.060 allows temporary orders while the case is open, including orders about property. Read every order before you sign a purchase agreement. If an order restrains a sale, a cash offer does not lift it. Do not deed the Auburn house to a relative, or into one name, to keep it out of the case. KindKey will not participate in a transfer meant to hide the house from the other spouse or from the court.',
+          'The house is often the largest asset, whether it is a larger place on Lakeland Hills or a smaller house in the valley. You do not have to repair it, empty it, or stage it before you ask for a number. You do have to know whether you may accept the number. Request the offer while your attorney works. Accept it only when your attorney says the signer is clear. If one spouse has already moved and the other is still in the house, do not force a move-out so the house looks vacant. Occupancy belongs with your lawyers and with any order already entered.',
+        ],
+      },
+      {
+        heading: 'A purchase is not a side in the divorce',
+        paragraphs: [
+          'KindKey buys as a principal and does not charge an agent commission or a separate assignment fee. The closing agent prepares a settlement statement before closing. A mortgage, a tax bill in the parcel’s county, or a City of Auburn notice can reduce what is left. KindKey does not divide the proceeds. The decree, an agreement your lawyers approve, or the closing instructions do that. Cash means the purchase is not waiting on a buyer’s mortgage approval. It does not mean the divorce is over.',
+          'A listing can fit a house that is in good condition if both of you can cooperate on showings. Hire a licensed broker. KindKey will not run the listing. If the loan is behind, read the Auburn foreclosure guide and talk with a Washington attorney about RCW 61.34 before you sign. KindKey does not interpret that statute. If a death in the family is part of the same mess, the Auburn probate guide is the signature question to solve first. The Edgewood divorce guide is the neighboring Pierce County version of this problem, for spouses who have a house on that side of the line instead. You can say no after you see the offer.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can we sell the Auburn house before the divorce is final?',
+        answer:
+          'Sometimes, if both spouses can sign or a court order allows it. KindKey does not decide that. Ask your attorney, then call (206) 519-5463 or use the cash-offer form if a sale is allowed. You can decline.',
+      },
+      {
+        question: 'Where is an Auburn divorce filed?',
+        answer:
+          'In the superior court of the county where the petitioner resides, under RCW 26.09.010. That is often King County, at the clerk’s offices in Seattle or Kent. A spouse who lives on a Pierce County Auburn parcel may be in Pierce County. Ask a lawyer. KindKey will not choose the court.',
+      },
+      {
+        question: 'Does one name on the deed mean only one signature?',
+        answer:
+          'Not by itself. RCW 26.16.030 requires both spouses to join in a deed of community real property unless another statute or a court order applies. Your attorney and the title company make that call.',
+      },
+      {
+        question: 'Will KindKey talk to my spouse or my lawyer as my representative?',
+        answer:
+          'No. KindKey is the buyer. Your lawyers handle the divorce. Call (206) 519-5463 when you want a written number to review with them.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/auburn',
+        label: 'Sell a house in Auburn',
+        description: 'The Auburn city page.',
+      },
+      {
+        href: '/blog/how-to-sell-my-house-fast-for-cash-auburn',
+        label: 'Sell fast for cash in Auburn',
+        description: 'How a direct Auburn sale works once you can sign.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-auburn',
+        label: 'Inherited houses in Auburn',
+        description: 'When a death and a divorce are in the same file.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-auburn-wa',
+        label: 'Avoiding foreclosure in Auburn',
+        description: 'If the loan is behind while the case is open.',
+      },
+      {
+        href: '/blog/selling-a-house-during-divorce-edgewood-wa',
+        label: 'Divorce sales in Edgewood',
+        description: 'The Pierce County version, one city south.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'The form. Asking does not obligate you to sell.',
+      },
+    ],
+    ctaTitle: 'Ask for an Auburn number once you know who can sign',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. Your attorney confirms authority. You can say no.',
+  }),
 ];
 
 export function getBlogPost(slug: string) {
