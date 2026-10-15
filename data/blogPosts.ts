@@ -25,6 +25,143 @@ function post(
 }
 
 export const blogPosts: BlogPost[] = [
+  post('sell-house-during-divorce-without-listing-washington', {
+    breadcrumbName: 'Sell privately during a divorce',
+    title: 'Getting a Divorce? How to Sell Your House Privately Without Listing It in Washington',
+    description:
+      'How Washington spouses can sell a house during a divorce without listing it. KindKey buys off market and as-is. Not legal advice.',
+    h1: 'Getting a Divorce? How to Sell Your House Privately Without Listing It in Washington',
+    publishedAt: '2026-10-15',
+    intro: [
+      'Getting a divorce in Washington is already a lot. The house is often the largest thing you own together, and a public listing can make a private season feel exposed. You do not have to list it. KindKey Home Buyers LLC is a cash home buyer at 640 1st St SW, Auburn, WA 98001, serving King County and Pierce County. Call (206) 519-5463 or use the cash-offer form. KindKey buys as a principal and is not a divorce attorney, a mediator, or a real estate agent.',
+      'This article is not legal advice. Talk with your family law attorney before you sign. Your deed, your case, and any orders already entered decide the next step. Edgewood and Auburn have their own guides for the local courthouse. This page stays with the private sale.',
+    ],
+    callout:
+      'You do not have to list the house. KindKey can buy it off market and as-is, so there are no showings, no open houses, no public listing, and no repairs. The sale stays private between you, your spouse, and your attorneys.',
+    sections: [
+      {
+        heading: 'Washington is a community property state',
+        paragraphs: [
+          'Washington is a community property state. In general, a house acquired during the marriage belongs to both spouses, even if only one name is on the deed. A house owned before the marriage, or received by gift or inheritance, may be separate property. Shared payments can blur that line. Your family law attorney reads the deed.',
+          'When the house is community real estate, both of you are part of the sale unless a court order says otherwise. A calm conversation at home is a good start. Bring your lawyer the deed, the mortgage statement, and the orders in the file.',
+        ],
+      },
+      {
+        heading: 'Both spouses need to agree, and to sign',
+        paragraphs: [
+          'For a house the marriage owns, both spouses generally sign the deed and acknowledge it. One name on the deed does not let that spouse sell alone. A text, a verbal yes, or one signature on a purchase agreement is not what gets recorded. If an order already allows one signer, the closing agent will ask for it. KindKey cannot waive a signature the title company requires.',
+          'You do not have to be on warm terms to sign. Many people let their attorneys exchange the offer, the date, and the instructions for the money. KindKey is the buyer and will not pressure your spouse or take a side. Call (206) 519-5463 or use the cash-offer form when you want a written number both lawyers can read. Asking does not obligate you to accept.',
+        ],
+      },
+      {
+        heading: 'When one spouse wants to stay',
+        paragraphs: [
+          'One spouse often wants to keep the house, and the other wants to be finished. That is common, and it does not make either of you difficult. A court can award the home to one of you, including for a time when the children live there most of the time. A buyout, often by refinancing, is another path. KindKey does not choose for you and does not predict a judge.',
+          'If a buyout is not realistic, a sale turns the house into money your attorneys can divide. The offer can wait on the table while you decide. The spouse who still lives there does not have to leave for showings, and the house does not have to be repaired first. Occupancy stays with your lawyers and with any order already entered.',
+        ],
+      },
+      {
+        heading: 'The mortgage can still be in both names',
+        paragraphs: [
+          'A decree can assign the monthly payment to one spouse. The promissory note is a contract with the lender, and the decree does not rewrite it. Until the loan is paid off, refinanced, or assumed with the lender’s agreement, both names can remain on the debt. Confirm that with your attorney and the servicer. KindKey will not interpret the note.',
+          'When the price covers the payoff and the other amounts due, closing pays the loan. If it does not, your lawyers and the lender need to resolve the gap before a deed is signed. If payments are already late, talk with a Washington attorney before you sign. KindKey does not interpret the state’s distressed-property rules.',
+        ],
+      },
+      {
+        heading: 'Splitting the proceeds',
+        paragraphs: [
+          'KindKey buys the house. KindKey does not split the proceeds. The closing agent follows the decree, a written agreement your attorneys approve, or closing instructions they provide. Put the division in one of those papers.',
+          'Read the settlement statement with your lawyer before you sign. It shows the price, the payoff, liens, taxes, and the costs the purchase agreement assigns. KindKey does not charge an agent commission or a separate assignment fee. Each of you receives what the decree or the attorney agreement directs.',
+        ],
+      },
+      {
+        heading: 'Timing the sale around the divorce',
+        paragraphs: [
+          'Some couples sell while the case is open, once both can sign or an order allows it. Others wait until the decree orders the sale. A temporary order can restrain a transfer, so read every order before you accept. A cash offer does not lift a court order.',
+          'Ask for the number while your attorney confirms who can sign, and accept it only when that is clear. You and the closing agent choose the date. KindKey does not promise how many days it will take. Cash means the purchase is not waiting on a retail buyer’s loan. The divorce follows its own calendar.',
+        ],
+      },
+      {
+        heading: 'How a cash offer can lower the conflict',
+        paragraphs: [
+          'A listing asks you to agree on price, photos, repairs, and the days strangers walk through the house. An off-market sale sets that list aside. There is no yard sign, no open house, no public listing, and no repair list to finish first. The house can sell as it sits.',
+          'You, your spouse, your attorneys, and the closing agent are the people in the sale. A recorded deed is a public record. The marketing stays private. If you would rather list, hire a licensed broker. KindKey will not run that listing. Guides linked below cover a cash buyer compared with a listing, a death in the family, and the Edgewood and Auburn courthouses.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do we have to list the house to sell it during a Washington divorce?',
+        answer:
+          'No. KindKey can buy it off market and as-is. Your family law attorney still confirms who can sign. Call (206) 519-5463 or use the cash-offer form. You can decline the offer.',
+      },
+      {
+        question: 'Can we sell before the divorce is final?',
+        answer:
+          'Sometimes, if both spouses can sign or a court order allows the sale. KindKey does not make that call. Ask your family law attorney, then request an offer if a sale is allowed.',
+      },
+      {
+        question: 'What if one of us wants to keep living there?',
+        answer:
+          'That choice stays with you and your lawyers. A cash offer is a number you can review while you decide. KindKey will not ask the spouse who wants to stay to move out for showings.',
+      },
+      {
+        question: 'Does a divorce decree take a name off the mortgage?',
+        answer:
+          'A decree can assign the payment between spouses. The lender’s documents control the loan until it is paid off, refinanced, or assumed with the lender’s agreement. Ask your attorney and the servicer.',
+      },
+      {
+        question: 'Who splits the proceeds?',
+        answer:
+          'Your decree, or a written agreement your attorneys approve. KindKey does not divide the money. The closing agent follows those instructions and shows them on a settlement statement before closing.',
+      },
+      {
+        question: 'Will the sale be advertised?',
+        answer:
+          'There is no public listing and no open house. The conversation is you, your spouse, your attorneys, and the closing agent. The recorded deed is a public record.',
+      },
+    ],
+    related: [
+      {
+        href: '/blog/selling-a-house-during-divorce-edgewood-wa',
+        label: 'Divorce sales in Edgewood',
+        description: 'The Pierce County city guide, including where that case is filed.',
+      },
+      {
+        href: '/blog/selling-a-house-during-divorce-auburn-wa',
+        label: 'Divorce sales in Auburn',
+        description: 'KindKey’s home city, where the parcel may be in King or Pierce County.',
+      },
+      {
+        href: '/blog/cash-buyer-vs-listing-with-an-agent',
+        label: 'Cash buyer vs. listing with an agent',
+        description: 'Both paths, without a slogan.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Selling before foreclosure in Washington',
+        description: 'If the loan is already behind while the divorce is open.',
+      },
+      {
+        href: '/blog/selling-a-house-in-probate-washington',
+        label: 'Probate sales in Washington',
+        description: 'When a death and a divorce are in the same house.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'No repairs before a direct sale.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'The form. Asking does not obligate you to sell.',
+      },
+    ],
+    ctaTitle: 'You do not have to list the house',
+    ctaSubtitle:
+      'KindKey can buy it off market and as-is. There are no showings, no open houses, no public listing, and no repairs, and the sale stays private between you, your spouse, and your attorneys. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+  }),
   post('how-to-sell-an-estate-house-in-washington', {
     breadcrumbName: 'Estate house steps',
     title: 'How to Sell an Estate House in Washington: A Step-by-Step Guide for Executors',
@@ -2556,6 +2693,11 @@ export const blogPosts: BlogPost[] = [
         description: 'The same problem in KindKey’s home city, on the county line.',
       },
       {
+        href: '/blog/sell-house-during-divorce-without-listing-washington',
+        label: 'Selling privately in a Washington divorce',
+        description: 'The statewide guide, without the Edgewood courthouse detail.',
+      },
+      {
         href: '/cash-offer',
         label: 'Request a cash offer',
         description: 'The form. Asking does not obligate you to sell.',
@@ -3378,6 +3520,11 @@ export const blogPosts: BlogPost[] = [
         href: '/blog/selling-a-house-during-divorce-edgewood-wa',
         label: 'Divorce sales in Edgewood',
         description: 'The Pierce County version, one city south.',
+      },
+      {
+        href: '/blog/sell-house-during-divorce-without-listing-washington',
+        label: 'Selling privately in a Washington divorce',
+        description: 'The statewide guide, without the Auburn courthouse detail.',
       },
       {
         href: '/cash-offer',
