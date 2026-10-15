@@ -26,7 +26,7 @@ export interface LongformContent {
   description: string;
   h1: string;
   intro: string[];
-  /** Short invitation shown after the intro. Used on estate-sale guides. */
+  /** Short invitation shown after the intro on guides that use it. */
   callout?: string;
   sections: ContentSection[];
   faqs: FaqItem[];
