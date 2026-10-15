@@ -25,6 +25,220 @@ function post(
 }
 
 export const blogPosts: BlogPost[] = [
+  post('sell-house-with-code-violations-washington', {
+    breadcrumbName: 'Code violations in Washington',
+    title: 'Sell a House with Code Violations in Washington',
+    description:
+      'How owners in King and Pierce County sell a house with open code violations without fixing them first. KindKey buys as-is. Not legal advice.',
+    h1: 'Sell a House with Code Violations in Washington',
+    publishedAt: '2026-10-15',
+    intro: [
+      'You can sell a house with open code violations in Washington without finishing the city’s repair list first. KindKey Home Buyers LLC buys those houses as a principal in King County and Pierce County. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form. KindKey is not code enforcement, a permit expediter, or a real estate agent. This article is not legal advice.',
+      'A notice about unpermitted work, junk and overgrowth, an unsafe structure, or a fine that keeps accruing does not have to be cured before you ask for an offer. The city or county that wrote the letter still controls the case. If the notice has a hearing, a large fine, or an order to vacate, talk with a Washington attorney before you rely on a sale to solve it. KindKey will not appear at the hearing for you.',
+    ],
+    callout:
+      'Tired of dealing with the city, fines, inspectors, and deadlines? We will buy that problem from you. You do not have to fix anything. We buy the house as-is, violations and all.',
+    sections: [
+      {
+        heading: 'Violations owners ask us to take with the house',
+        paragraphs: [
+          'Unpermitted work is the case we hear about most often: an addition, a deck, a garage converted to a room, or a remodel that never had a final inspection. The work can be finished, half-finished, or red-tagged. A retail lender often will not close while that file is open. You do not need a contractor bid or a permit in hand before KindKey will look.',
+          'Junk, debris, tall grass, and inoperable vehicles are the other frequent letter, especially on a house that has been vacant. Overgrowth and a yard the neighbors reported are a maintenance problem, not a reason you have to haul everything away before a walkthrough. Unsafe structures are the serious version of the same idea: a failed roof, boarded windows, a posting after a fire, or an order that says the house is not safe to occupy. If it is not safe to enter, say so. Photos and an exterior look can start the conversation.',
+          'Fines can accrue while the case stays open, and some cities record a lien for unpaid penalties or for the cost of abating the property. KindKey does not promise that every fine disappears when you sign. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement, prepared by the closing agent, is where you see them. KindKey does not negotiate the citation for you.',
+        ],
+      },
+      {
+        heading: 'Why listing a house with an open notice is hard',
+        paragraphs: [
+          'A listing still means showings, a disclosure of material problems, and buyers who often ask for the violation to be cured before they will close. A buyer using a retail mortgage may not get that loan while a permit is open, a structure is posted unsafe, or a fine is still accruing. The city’s calendar does not pause for an open house. Owners who already live somewhere else, or who cannot fund a new roof or a tear-out of an unpermitted unit, run out of time before a retail sale can finish.',
+          'Curing a small yard notice can be the right choice if you want to keep the house and the work is actually small. Hire a licensed broker if you want a listing and the house can wait. KindKey will not run that listing and will not tell you a listed sale is a mistake. A direct sale is the fit when you want the notice, the condition, and the deadline to go with the house.',
+        ],
+      },
+      {
+        heading: 'How an as-is sale works, and what we handle',
+        paragraphs: [
+          'Send the address, photos if you have them, and what the letter says, including which city or county is on the header. Auburn, Kent, Federal Way, Tacoma, Puyallup, Milton, and Edgewood each have their own codes, and unincorporated King County and Pierce County are county cases. A mailing city is not always the enforcing city. South Hill addresses that say Puyallup can be Pierce County jurisdiction. Read the letterhead. The Auburn guide and the Tacoma guide cover those two cities in more detail. The closing agent confirms the parcel.',
+          'KindKey looks at the house as it sits and writes an offer that assumes the violation is still open. The offer is not an obligation. It reflects the remaining work, so it can be less than a retail price for a violation-free house. KindKey does not charge an agent commission or a separate assignment fee. Closing-cost responsibility is in the purchase agreement and can vary. Compare the number with the repair budget and the fine calendar you actually have. You can say no.',
+          'After the deed records, the house is KindKey’s to deal with. That includes repairs, permits KindKey chooses to pull, and the open case that came with the property. We handle that as the new owner. We do not clear the citation as your representative, and we do not guarantee what a hearing officer, an inspector, or a code official will do. Until recording, deadlines on the notice are still yours. Do not skip a hearing because a buyer is looking.',
+        ],
+      },
+      {
+        heading: 'The timeline, from the first call to closing',
+        paragraphs: [
+          'The sequence is a call or the cash-offer form, a walkthrough, a written offer, and a closing date you help choose with the closing agent. KindKey is based in downtown Auburn, so a look at a King County or Pierce County house can be scheduled without a listing calendar. KindKey does not promise a specific number of days for every file. Owners who have already moved often want a shorter window. Owners who still need to take belongings can ask for longer.',
+          'The city’s deadline and KindKey’s closing date are two different clocks. A conversation about an offer does not extend a compliance date, stop a daily fine, or vacate an order. If a foreclosure notice or an estate is sitting next to the code letter, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. The guide on selling before foreclosure and the guide on tax-delinquent houses cover those other deadlines. A fire often produces the unsafe-structure letter. The King and Pierce County fire guide covers that overlap, including the insurance claim, which stays with your insurer.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell a Washington house before the code case is closed?',
+        answer:
+          'Yes. KindKey buys houses in King County and Pierce County with open violations and does not require you to finish the repair list first. The city or county still controls its case until it says otherwise. Call (206) 519-5463 or use the cash-offer form.',
+      },
+      {
+        question: 'Do I have to fix unpermitted work, junk, or overgrowth first?',
+        answer:
+          'No. KindKey buys the house as-is, including unpermitted rooms, debris, tall grass, and structures that are not safe to enter. Tell us if a walkthrough has to stay outside.',
+      },
+      {
+        question: 'Will the fines stop the day I call?',
+        answer:
+          'No. Calling does not close the case or guarantee a dismissal. Liens that must be paid show on the settlement statement. After closing, KindKey handles the property as the owner. Until then, the notice is still yours.',
+      },
+      {
+        question: 'What if I do not know whether the city or the county wrote the notice?',
+        answer:
+          'Read the letterhead. Inside a city limit, the city usually wrote it. Unincorporated land is a county case. Auburn and Tacoma each have a local guide if the header names those cities. The closing agent confirms the parcel.',
+      },
+    ],
+    related: [
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'The service page for King and Pierce County.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-auburn-wa',
+        label: 'Code violations in Auburn',
+        description: 'City of Auburn letters, including vacant-property registration.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-tacoma',
+        label: 'Code violations in Tacoma',
+        description: 'Pierce County’s largest city, and what a Tacoma notice changes.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-king-pierce-county',
+        label: 'Fire-damaged houses in King or Pierce County',
+        description: 'Unsafe-structure postings often follow a fire.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'When a county tax bill is accruing beside the city letter.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Selling before foreclosure in Washington',
+        description: 'A trustee’s notice is a different deadline from a code case.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'No repair bid required.',
+      },
+    ],
+    ctaTitle: 'We will buy the house as-is, violations and all',
+    ctaSubtitle:
+      'Tired of the city, the fines, the inspectors, and the deadlines? Call (206) 519-5463 or use the cash-offer form. You do not have to fix anything. You can say no.',
+  }),
+  post('sell-tax-delinquent-house-washington', {
+    breadcrumbName: 'Tax-delinquent houses in Washington',
+    title: 'Sell a Tax-Delinquent House in Washington',
+    description:
+      'Behind on property taxes in King or Pierce County? A direct sale can pay back taxes at closing. KindKey works to close before a tax sale and does not guarantee it.',
+    h1: 'Sell a Tax-Delinquent House in Washington',
+    publishedAt: '2026-10-15',
+    intro: [
+      'If you are behind on property taxes in Washington, you can sell the house directly, and the taxes the title company requires can be paid from the proceeds at closing. KindKey Home Buyers LLC buys houses that way as a principal in King County and Pierce County. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form. KindKey is not the county treasurer, a tax advisor, or a real estate agent. This article is not tax or legal advice.',
+      'One late installment is not the same thing as a tax foreclosure. King County and Pierce County both follow Washington’s tax-foreclosure statute, and both generally start that process after taxes have been delinquent for three years. Your bill, and the treasurer who issued it, control the amount and the date. KindKey will not calculate the interest, and an offer does not extend a redemption deadline.',
+    ],
+    callout:
+      'Behind on property taxes? We can buy the house directly and help you avoid tax foreclosure. We work to close before it happens. We do not guarantee that a foreclosure will stop.',
+    sections: [
+      {
+        heading: 'A late bill and a tax foreclosure are different steps',
+        paragraphs: [
+          'Property-tax statements go out on the county’s calendar. After the due date, the unpaid amount is delinquent and interest applies. The rate, and any penalty, are on the bill and in the statute for that type of property. KindKey will not compute them from a neighbor’s statement. Call the treasurer with the parcel number and ask for the amount due. A house in Kent or Federal Way is a King County account. A house in Tacoma, Puyallup, or Edgewood is a Pierce County account. Auburn and Milton can fall in either county, so the letterhead matters more than the city name.',
+          'Many owners are one installment behind and still years away from a treasurer’s sale. That is a cash-flow problem. It is not yet a foreclosure. Paying the county, asking the treasurer about a program you might qualify for, or selling the house are different choices. Counties publish deferral and exemption programs for some seniors and people with disabilities. KindKey does not decide eligibility. The Edgewood guide lists the Pierce County counter for owners in that city. If your bill is from King County, call the King County Treasurer named on the statement.',
+        ],
+      },
+      {
+        heading: 'How King County and Pierce County tax foreclosure works',
+        paragraphs: [
+          'RCW 84.64.050 says that after three years from the date of delinquency, when property remains on the tax rolls and no certificate of delinquency has been issued, the county treasurer must issue certificates of delinquency for the taxes, interest, and costs. The statute also lets the treasurer, with the consent of the county legislative authority, issue a certificate for fewer than all years, down to the earliest year. King County’s treasury page describes the start in practical terms: the foreclosure process on real property is initiated when any one tax, assessment, fee, or lien becomes a full three years delinquent. Pierce County’s foreclosure page describes the properties it proceeds on as those with tax of more than $100 cumulative that is three or more years delinquent.',
+          'The treasurer files the certificate of delinquency in superior court. In King County that court is King County Superior Court. In Pierce County it is Pierce County Superior Court. The case is not a mortgage foreclosure under chapter 61.24 RCW, and it is not a city code letter. Read the caption on the paper. To come off a King County tax foreclosure, the county says the owner must pay all taxes, fees, interest, penalties, and foreclosure costs. Pierce County publishes a redemption deadline before its sale. Both counties describe limited exceptions after a sale, including for a minor or a person judged incompetent. Confirm the current date with the treasurer. A published auction date can be updated. KindKey cannot move it.',
+        ],
+      },
+      {
+        heading: 'How back taxes get paid out of closing',
+        paragraphs: [
+          'You do not have to bring the taxes current before you ask for an offer, and you do not have to repair the house first. If you accept, the closing agent orders title. Delinquent property taxes are a lien. Amounts that have to be paid to deliver the title the contract requires are commonly paid from the purchase price at closing, the same way a mortgage payoff is paid. Interest and costs the treasurer requires through closing are part of that figure. You see them on the settlement statement before you sign the deed.',
+          'If the price does not cover the taxes and the other liens, the sale may not close unless those lienholders agree to different numbers. KindKey will not negotiate with the treasurer, or with a lender, as your representative. A relative who pays the bill does not become the buyer unless a deed says so. KindKey does not charge an agent commission or a separate assignment fee. Cash means the purchase is not waiting on a retail buyer’s mortgage approval. It does not erase the tax.',
+        ],
+      },
+      {
+        heading: 'We work to close before the sale. That is not a guarantee.',
+        paragraphs: [
+          'Tell KindKey the date on the notice, if you have one, and which county issued the bill. KindKey can aim for a closing date a title company can meet before that date. That is a plan. It is not a promise that the foreclosure will stop. Requesting an offer does not pause the treasurer, and a signed purchase agreement does not, by itself, remove a parcel from a certificate of delinquency. The county’s account changes when the county receives the payment it requires, including a payment made through closing. If the file cannot finish in time, you should hear that early. Do not skip a redemption deadline because a buyer is looking at the house.',
+          'A mortgage foreclosure can be running at the same time. That notice has its own clock. Read the statewide guide on selling before foreclosure, and talk with a Washington attorney about RCW 61.34 before you sign under that kind of pressure. KindKey does not interpret that statute. A city code case can be open too. The Washington code-violations guide covers fines and inspectors, which are not the treasurer’s sale. If the delinquent account came with a parent’s house, authority to sign is a separate question, covered in the estate guide on repairs, mortgages, taxes, and liens. You can say no after you see the offer.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does one late property-tax installment mean the house is in foreclosure?',
+        answer:
+          'No. King County describes tax foreclosure as starting when a tax is a full three years delinquent. Pierce County describes it for taxes of more than $100 that are three or more years delinquent. RCW 84.64.050 uses a three-year mark, with a limited shorter option. Call the treasurer with your parcel number. KindKey does not track your account.',
+      },
+      {
+        question: 'Will KindKey stop a Washington tax foreclosure?',
+        answer:
+          'KindKey does not guarantee that. We work to close before the treasurer’s sale when title and the calendar allow it. An offer, by itself, does not stop the county. Only a payment the treasurer accepts, including one made through closing, changes the account. Call (206) 519-5463 or use the cash-offer form, and confirm the county’s deadline yourself.',
+      },
+      {
+        question: 'Do I have to pay the back taxes before I ask for an offer?',
+        answer:
+          'No. Delinquent taxes that must be paid to close are commonly paid from the sale proceeds and listed on the settlement statement. If the price does not cover them, the sale may not close. KindKey will not calculate the treasurer’s payoff.',
+      },
+      {
+        question: 'Is a tax foreclosure the same as a mortgage foreclosure?',
+        answer:
+          'No. A county tax sale follows chapter 84.64 RCW. A trustee’s sale on a deed of trust follows chapter 61.24 RCW. Read the caption. KindKey does not interpret either statute. You can ask for a cash offer while you talk with a Washington attorney.',
+      },
+    ],
+    related: [
+      {
+        href: '/blog/behind-on-property-taxes-edgewood-wa',
+        label: 'Behind on property taxes in Edgewood',
+        description: 'Pierce County’s treasurer, interest, and the local foreclosure page.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Selling before foreclosure in Washington',
+        description: 'Mortgage foreclosure is a different notice from a tax sale.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'How a direct sale differs from a rescue program.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-washington',
+        label: 'Code violations in Washington',
+        description: 'City fines and inspectors, which are not the treasurer’s case.',
+      },
+      {
+        href: '/blog/estate-house-repairs-mortgage-taxes-liens',
+        label: 'Estate houses with taxes or liens',
+        description: 'When the delinquent account came with a parent’s house.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-auburn-wa',
+        label: 'Avoiding foreclosure in Auburn',
+        description: 'KindKey’s home city, where the parcel can be King or Pierce County.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'The form. It does not pay the treasurer by itself.',
+      },
+    ],
+    ctaTitle: 'Behind on property taxes? Ask for a direct offer',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. We can buy the house directly. We work to close before a tax foreclosure, and we do not guarantee the county will stop. You can say no.',
+  }),
   post('how-to-sell-an-estate-house-in-washington', {
     breadcrumbName: 'Estate house steps',
     title: 'How to Sell an Estate House in Washington: A Step-by-Step Guide for Executors',
@@ -698,6 +912,11 @@ export const blogPosts: BlogPost[] = [
         href: '/blog/behind-on-property-taxes-edgewood-wa',
         label: 'Behind on property taxes in Edgewood',
         description: 'A Pierce County tax example on one city’s houses.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'King and Pierce County tax foreclosure, and payment at closing.',
       },
       {
         href: '/blog/sell-house-needing-repairs-edgewood-wa',
@@ -1897,6 +2116,11 @@ export const blogPosts: BlogPost[] = [
         description: 'The main service page for King and Pierce County.',
       },
       {
+        href: '/blog/sell-house-with-code-violations-washington',
+        label: 'Code violations across Washington',
+        description: 'King and Pierce County, when the notice is not only a Tacoma letter.',
+      },
+      {
         href: '/areas/tacoma',
         label: 'Sell a house in Tacoma',
         description: 'Pierce County, where KindKey buys directly.',
@@ -2218,6 +2442,11 @@ export const blogPosts: BlogPost[] = [
         href: '/blog/avoiding-foreclosure-in-auburn-wa',
         label: 'Avoiding foreclosure in Auburn',
         description: 'Most parcels are King County. The south end can be Pierce.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A county tax sale is a different case from a trustee’s notice.',
       },
     ],
     ctaTitle: 'Get an offer you can take to your attorney',
@@ -2739,6 +2968,11 @@ export const blogPosts: BlogPost[] = [
         description: 'The Edgewood city page.',
       },
       {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'King County and Pierce County, and how back taxes are paid at closing.',
+      },
+      {
         href: '/blog/sell-my-house-fast-for-cash-edgewood',
         label: 'Sell fast for cash in Edgewood',
         description: 'A direct sale when the tax bill is part of a larger deadline.',
@@ -3254,6 +3488,11 @@ export const blogPosts: BlogPost[] = [
         href: '/sell-house-with-code-violations',
         label: 'Sell a house with code violations',
         description: 'The general page for King and Pierce County.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-washington',
+        label: 'Code violations across Washington',
+        description: 'King and Pierce County, when the notice is not only an Auburn letter.',
       },
       {
         href: '/areas/auburn',
