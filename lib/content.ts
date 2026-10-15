@@ -26,7 +26,7 @@ export interface LongformContent {
   description: string;
   h1: string;
   intro: string[];
-  /** Short invitation shown after the intro. Used on estate-sale guides. */
+  /** Short note shown after the intro. The page adds the phone number and cash-offer form. */
   callout?: string;
   sections: ContentSection[];
   faqs: FaqItem[];
