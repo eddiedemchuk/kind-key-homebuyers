@@ -36,6 +36,8 @@ export const blogPosts: BlogPost[] = [
       'You sell an estate house in Washington by confirming the house is an estate asset, getting the right person appointed, reading whether that person has nonintervention powers, and then transferring the house through a closing agent. KindKey Home Buyers LLC can buy the house as a principal once that person is ready to sign. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form on this site. KindKey is not a probate attorney, and KindKey does not list houses.',
       'Washington calls the person in charge a personal representative. A will may call that person an executor. The word in the will does not replace letters from superior court. This article is general information, not legal advice. Talk with a Washington probate attorney before you sign a purchase agreement or a deed.',
     ],
+    callout:
+      'If you would like a hand, KindKey will help with the whole estate sale from start to finish. We have done hundreds of these, and we will walk through yours at whatever pace the family needs. Your attorney still confirms who can sign.',
     sections: [
       {
         heading: 'Step 1: Confirm the house belongs in the probate',
@@ -132,9 +134,9 @@ export const blogPosts: BlogPost[] = [
         description: 'The form. Asking does not obligate you to sell.',
       },
     ],
-    ctaTitle: 'Ask for an offer once you know who can sign',
+    ctaTitle: 'KindKey can help from the first call through closing',
     ctaSubtitle:
-      'Call (206) 519-5463 or use the cash-offer form. Your attorney confirms authority. You can say no after you see the number.',
+      'We will help with the whole estate sale from start to finish. KindKey has done hundreds of these. Call (206) 519-5463 or use the cash-offer form. Your attorney confirms who can sign, and you can say no.',
   }),
   post('estate-sale-vs-selling-the-house-as-is', {
     breadcrumbName: 'Estate sale vs. the house',
@@ -147,6 +149,8 @@ export const blogPosts: BlogPost[] = [
       'An estate sale and a sale of the house are two different transactions, and people use the same phrase for both. One sells furniture, clothes, tools, and household goods. The other transfers the real estate. KindKey Home Buyers LLC buys the house. KindKey is not an estate sale company, a junk hauler, or a probate attorney. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form if you want a number on the house.',
       'You can clear the house, hire a company to sell the contents, leave the contents for a buyer, or mix those choices. The personal representative still has duties over personal property as well as the house. This article is general information, not legal advice. Talk with a Washington probate attorney about who may sell the contents and who may sign the deed.',
     ],
+    callout:
+      'If the belongings and the house both feel like a lot, you can reach out. KindKey will help with the whole estate sale from start to finish. We have done hundreds of these, and you can take the next step when you are ready.',
     sections: [
       {
         heading: 'What people mean by an estate sale',
@@ -243,9 +247,9 @@ export const blogPosts: BlogPost[] = [
         description: 'Ask while the family is still sorting belongings.',
       },
     ],
-    ctaTitle: 'Ask for an offer with the belongings still there',
+    ctaTitle: 'We can help with the house and what is left inside',
     ctaSubtitle:
-      'Call (206) 519-5463 or use the cash-offer form. You can remove keepsakes before closing. You do not have to empty the house first.',
+      'KindKey will help with the whole estate sale from start to finish. We have done hundreds of these. Call (206) 519-5463 or use the cash-offer form. You can leave belongings, and you can say no.',
   }),
   post('selling-an-estate-house-in-king-county', {
     breadcrumbName: 'Estate houses in King County',
@@ -258,6 +262,8 @@ export const blogPosts: BlogPost[] = [
       'You sell an estate house in King County by using King County Superior Court for the probate, then deeding the house once the person with authority can sign. KindKey Home Buyers LLC buys houses in this county as a principal. The office is in Auburn, at 640 1st St SW, Auburn, WA 98001, not at the courthouse. Call (206) 519-5463 or use the cash-offer form. KindKey is not a probate attorney. This article is general information, not legal advice. Talk with a Washington probate attorney about your letters before you sign.',
       'Kent, Federal Way, Seattle, and most of Auburn are in King County. Part of Milton is in King County. A southern portion of Auburn is in Pierce County even when the mailing city says Auburn. The city guides for inherited houses in Auburn, Federal Way, and Milton go into those parcels. This page is the county picture, including Kent and the Seattle area, which do not have their own inherited-house articles on this site.',
     ],
+    callout:
+      'If the King County house is yours to sort out, you are welcome to call. KindKey will help with the whole estate sale from start to finish. We have done hundreds of these, and we will meet you where you are.',
     sections: [
       {
         heading: 'Where a King County estate is opened',
@@ -358,9 +364,9 @@ export const blogPosts: BlogPost[] = [
         description: 'The form used across the site.',
       },
     ],
-    ctaTitle: 'Request a King County offer once authority is clear',
+    ctaTitle: 'Talk with KindKey about the King County house',
     ctaSubtitle:
-      'Call (206) 519-5463 or use the cash-offer form. Tell us the city. Your attorney confirms who can sign.',
+      'We will help with the whole estate sale from start to finish. KindKey has done hundreds of these. Call (206) 519-5463 or use the cash-offer form. Tell us the city. Your attorney confirms who can sign.',
   }),
   post('selling-an-estate-house-in-pierce-county', {
     breadcrumbName: 'Estate houses in Pierce County',
@@ -373,6 +379,8 @@ export const blogPosts: BlogPost[] = [
       'You sell an estate house in Pierce County by opening the probate, when one is required, with the Pierce County Superior Court Clerk in Tacoma, then transferring the house once the person with authority can sign. KindKey Home Buyers LLC buys these houses as a principal from an office in Auburn, at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form. Being based on the King County side of Auburn does not make a Tacoma estate a King County case. KindKey is not a probate attorney. This article is general information, not legal advice.',
       'Tacoma, Edgewood, and Puyallup are in Pierce County. Milton is in both Pierce County and King County. A southern slice of Auburn is in Pierce County too. The Edgewood and Milton inherited-house guides cover those cities in detail. This page is the county file those cities share, plus Tacoma and Puyallup, which do not have their own probate articles on this site.',
     ],
+    callout:
+      'When you are ready, KindKey will help with the whole estate sale from start to finish. We have done hundreds of these. Asking a question does not commit the estate to sell.',
     sections: [
       {
         heading: 'The clerk is in Tacoma',
@@ -472,9 +480,9 @@ export const blogPosts: BlogPost[] = [
         description: 'The form. Asking does not obligate you to sell.',
       },
     ],
-    ctaTitle: 'Ask for a Pierce County offer after you know the signer',
+    ctaTitle: 'KindKey can help with the Pierce County estate sale',
     ctaSubtitle:
-      'Call (206) 519-5463 or use the cash-offer form. The Tacoma clerk and your attorney handle the case. KindKey prices the house.',
+      'We will help with the whole estate sale from start to finish. KindKey has done hundreds of these. Call (206) 519-5463 or use the cash-offer form. The Tacoma clerk and your attorney handle the case.',
   }),
   post('selling-an-estate-house-when-heirs-disagree', {
     breadcrumbName: 'Heirs who disagree',
@@ -487,6 +495,8 @@ export const blogPosts: BlogPost[] = [
       'Heirs can disagree about a house and still have a personal representative who is allowed to sell it. Heirs can also live in another state and still be part of the estate. Neither fact, by itself, signs the deed or blocks the deed. KindKey Home Buyers LLC can buy the house once the person with authority is ready. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form. KindKey is not a mediator, a probate attorney, or a real estate agent.',
       'This article is general information about Washington estates, not legal advice. Talk with a Washington probate attorney before you sign, especially if someone has already objected or if a court petition is pending. KindKey will not referee the family or tell you that an objection does not matter.',
     ],
+    callout:
+      'A disagreement does not mean you have to handle the sale alone. KindKey will help with the whole estate sale from start to finish. We have done hundreds of these, and we will not take sides in the family.',
     sections: [
       {
         heading: 'Disagreement is not the same thing as authority',
@@ -582,9 +592,9 @@ export const blogPosts: BlogPost[] = [
         description: 'One written number for the attorney to review.',
       },
     ],
-    ctaTitle: 'Get one offer the family can review with a lawyer',
+    ctaTitle: 'Reach out, even if the family is not in agreement',
     ctaSubtitle:
-      'Call (206) 519-5463 or use the cash-offer form. KindKey does not take sides. Your attorney says whether anyone may sign.',
+      'KindKey will help with the whole estate sale from start to finish. We have done hundreds of these. Call (206) 519-5463 or use the cash-offer form. We do not take sides. Your attorney says whether anyone may sign.',
   }),
   post('estate-house-repairs-mortgage-taxes-liens', {
     breadcrumbName: 'Repairs, loans, and liens',
@@ -597,6 +607,8 @@ export const blogPosts: BlogPost[] = [
       'Repairs, a mortgage, back taxes, and liens change the numbers on an estate house. They do not, by themselves, decide who may sign the deed. KindKey Home Buyers LLC buys houses in that condition as a principal, in King County and Pierce County. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form. KindKey is not a probate attorney, a lender, a tax advisor, or a contractor.',
       'This article is general information, not legal advice. Talk with a Washington probate attorney about authority to sell, and with a tax professional about basis and gains. If the loan is in default, ask the attorney about Washington’s distressed-property rules under RCW 61.34 before you sign. KindKey does not interpret that statute.',
     ],
+    callout:
+      'Repairs, a loan, or a tax bill do not have to be solved before you talk with someone. KindKey will help with the whole estate sale from start to finish. We have done hundreds of these, and we can look at the house as it sits.',
     sections: [
       {
         heading: 'Condition and authority are separate questions',
@@ -703,9 +715,9 @@ export const blogPosts: BlogPost[] = [
         description: 'Include the mortgage, the taxes, and the condition.',
       },
     ],
-    ctaTitle: 'Get an offer that accounts for the repairs and the liens',
+    ctaTitle: 'We can help even when the house needs work or has a lien',
     ctaSubtitle:
-      'Call (206) 519-5463 or use the cash-offer form. Your attorney confirms who can sign. The settlement statement shows what gets paid.',
+      'KindKey will help with the whole estate sale from start to finish. We have done hundreds of these. Call (206) 519-5463 or use the cash-offer form. Your attorney confirms who can sign, and the settlement statement shows what gets paid.',
   }),
   post('sell-my-house-fast-for-cash-edgewood', {
     breadcrumbName: 'Sell fast for cash in Edgewood',
