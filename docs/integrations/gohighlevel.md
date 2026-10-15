@@ -5,9 +5,14 @@ The chat widget is a separate, GHL-hosted path and does not use this webhook.
 
 ## How a form lead is submitted
 
-1. Every cash-offer form is `components/LeadForm.tsx`. It is the form on the homepage, `/cash-offer`,
-   `/contact`, city pages, and situation pages. There is no embedded GHL form and no direct browser
-   call to the LeadConnector API.
+1. Cash-offer forms post through `components/LeadForm.tsx` (homepage, `/cash-offer`, `/contact`,
+   city pages, and situation pages) or `components/OfferLeadForm.tsx` on the paid-ads page
+   `/offer`. There is no embedded GHL form and no direct browser call to the LeadConnector API.
+   `/offer` collects name, phone, property address, optional email, and the same SMS consent
+   checkboxes. City, condition, timeframe, and preferred contact stay required on `LeadForm` and
+   are optional in the API so the short form can submit without filling them in. A `/offer` visit
+   is stored as Google Ads, or as Facebook Ads when the URL has `?src=fb`, unless a real click id
+   or explicit UTM source is already present. The first stored paid click still wins.
 2. On each full page load, `components/AttributionCapture.tsx` stores the landing touch. On submit,
    the form reads that stored touch again so a later page without campaign parameters still sends
    the original click.

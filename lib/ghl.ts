@@ -15,10 +15,10 @@ interface GHLLeadInput {
   email?: string;
   reasonForSelling?: string;
   propertyAddress: string;
-  city: string;
-  condition: string;
-  timeframe: string;
-  preferredContact: string;
+  city?: string;
+  condition?: string;
+  timeframe?: string;
+  preferredContact?: string;
   smsNonMarketingConsent?: boolean;
   smsMarketingConsent?: boolean;
   utm?: string;
@@ -72,12 +72,12 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
     phone: normalizePhone(data.phone),
     email: data.email?.trim() ?? '',
     address1: data.propertyAddress,
-    city: data.city,
+    city: data.city ?? '',
     state: 'WA',
     country: 'US',
-    condition: data.condition,
-    timeframe: data.timeframe,
-    preferred_contact: data.preferredContact,
+    condition: data.condition ?? '',
+    timeframe: data.timeframe ?? '',
+    preferred_contact: data.preferredContact ?? '',
     reason_for_selling: data.reasonForSelling ?? '',
     sms_non_marketing_consent: data.smsNonMarketingConsent ?? false,
     sms_marketing_consent: data.smsMarketingConsent ?? false,

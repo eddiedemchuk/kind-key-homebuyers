@@ -4,6 +4,7 @@ import {
   ATTRIBUTION_COOKIE_NAME,
   ATTRIBUTION_MAX_AGE_SECONDS,
   ATTRIBUTION_STORAGE_KEY,
+  type AdsLandingChannel,
   type AttributionTouch,
   attributionToPayload,
   decodeStoredAttribution,
@@ -11,6 +12,7 @@ import {
   mergeAttribution,
   preferStoredTouch,
   touchFromLanding,
+  withAdsLandingDefaults,
 } from '@/lib/attribution';
 
 function readLocal(now: number): AttributionTouch | null {
@@ -69,15 +71,47 @@ function currentLandingTouch(now: Date): AttributionTouch {
 }
 
 /** Reads the current URL, merges it with the stored first touch, and persists the winner. */
-export function captureAttribution(now = new Date()): AttributionTouch {
+export function captureAttribution(
+  now = new Date(),
+  incoming?: AttributionTouch
+): AttributionTouch {
   const timestamp = now.getTime();
   const existing = preferStoredTouch(readLocal(timestamp), readBrowserCookie(timestamp), timestamp);
-  const merged = mergeAttribution(existing, currentLandingTouch(now), timestamp);
+  const merged = mergeAttribution(existing, incoming ?? currentLandingTouch(now), timestamp);
   writeLocal(merged);
   writeBrowserCookie(merged);
   return merged;
 }
 
+/**
+ * Records /offer as Google Ads or Facebook Ads when the visit has no campaign
+ * params of its own. A stored paid click still wins, and gclid / fbclid on this
+ * URL are kept.
+ */
+export function captureOfferLandingAttribution(
+  channel: AdsLandingChannel,
+  now = new Date()
+): AttributionTouch {
+  const url = new URL(window.location.href);
+  url.hash = '';
+  return captureAttribution(
+    now,
+    touchFromLanding({
+      search: withAdsLandingDefaults(url.search, channel),
+      referrer: document.referrer,
+      landingPage: url.origin + url.pathname + url.search,
+      capturedAt: now.toISOString(),
+    })
+  );
+}
+
 export function attributionFieldsForSubmit(now = new Date()): Record<string, string> {
   return attributionToPayload(captureAttribution(now));
+}
+
+export function offerAttributionFieldsForSubmit(
+  channel: AdsLandingChannel,
+  now = new Date()
+): Record<string, string> {
+  return attributionToPayload(captureOfferLandingAttribution(channel, now));
 }

@@ -43,10 +43,10 @@ export function formatLeadForTelegram(lead: {
   email?: string;
   reasonForSelling?: string;
   propertyAddress: string;
-  city: string;
-  condition: string;
-  timeframe: string;
-  preferredContact: string;
+  city?: string;
+  condition?: string;
+  timeframe?: string;
+  preferredContact?: string;
   smsNonMarketingConsent?: boolean;
   smsMarketingConsent?: boolean;
   pagePath?: string;
@@ -77,12 +77,10 @@ export function formatLeadForTelegram(lead: {
 ${lead.email ? `📧 <b>Email:</b> ${lead.email}` : ''}
 
 📍 <b>Property:</b>
-${lead.propertyAddress}
-${lead.city}
-
-🏚️ <b>Condition:</b> ${conditionLabels[lead.condition] || lead.condition}
-⏰ <b>Timeframe:</b> ${timeframeLabels[lead.timeframe] || lead.timeframe}
-📱 <b>Contact:</b> ${contactLabels[lead.preferredContact] || lead.preferredContact}
+${lead.propertyAddress}${lead.city ? `\n${lead.city}` : ''}
+${lead.condition ? `\n🏚️ <b>Condition:</b> ${conditionLabels[lead.condition] || lead.condition}` : ''}
+${lead.timeframe ? `\n⏰ <b>Timeframe:</b> ${timeframeLabels[lead.timeframe] || lead.timeframe}` : ''}
+${lead.preferredContact ? `\n📱 <b>Contact:</b> ${contactLabels[lead.preferredContact] || lead.preferredContact}` : ''}
 ${lead.smsNonMarketingConsent !== undefined ? `\n📱 <b>SMS non-marketing:</b> ${lead.smsNonMarketingConsent ? 'yes' : 'no'}` : ''}
 ${lead.smsMarketingConsent !== undefined ? `\n📣 <b>SMS marketing:</b> ${lead.smsMarketingConsent ? 'yes' : 'no'}` : ''}
 

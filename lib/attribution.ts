@@ -272,6 +272,26 @@ export function formatAttributionNotes(touch: AttributionTouch, leadSource: Lead
   ].join('\n');
 }
 
+export type AdsLandingChannel = 'google' | 'facebook';
+
+/**
+ * Fills a paid source and medium when the ads landing URL did not bring its own.
+ * Existing utm_source and utm_medium values are left unchanged, and click ids
+ * already in the query are preserved.
+ */
+export function withAdsLandingDefaults(search: string, channel: AdsLandingChannel): string {
+  const query = search.startsWith('?') ? search.slice(1) : search;
+  const params = new URLSearchParams(query);
+  if (!params.get('utm_source')?.trim()) {
+    params.set('utm_source', channel === 'facebook' ? 'facebook' : 'google');
+  }
+  if (!params.get('utm_medium')?.trim()) {
+    params.set('utm_medium', 'cpc');
+  }
+  const next = params.toString();
+  return next ? `?${next}` : '';
+}
+
 export function touchFromLanding(input: {
   search: string;
   referrer: string;

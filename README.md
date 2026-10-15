@@ -99,8 +99,10 @@ the current differences between source usage and `render.yaml` declarations.
 
 ### Lead submission
 
-1. `components/LeadForm.tsx` validates input with the shared Zod schema and requests a reCAPTCHA
-   token when the public key is configured.
+1. `components/LeadForm.tsx` and the `/offer` short form (`components/OfferLeadForm.tsx`) validate
+   input and request a reCAPTCHA token when the public key is configured. The short form leaves
+   city, condition, timeframe, and preferred contact unset; those fields stay required on the
+   full form.
 2. The browser posts the lead, page path, and available campaign attribution to `POST /api/lead`.
 3. The route applies the Upstash limit when both Redis variables exist, validates the payload, and
    verifies any supplied reCAPTCHA token server-side.

@@ -9,7 +9,30 @@ const optionalPhoneSchema = z.string().refine(
   { message: 'Invalid phone number format. Use +1(XXX) XXX-XXXX or leave blank.' }
 );
 
-export const leadFormSchema = z.object({
+const requiredPhoneSchema = z
+  .string()
+  .regex(/^\+1\(\d{3}\) \d{3}-\d{4}$/, 'Enter a valid phone number.');
+
+const optionalCitySchema = z.union([z.string().trim().min(2).max(100), z.literal('')]).optional();
+
+const conditionSchema = z.enum(['as-is', 'cosmetic', 'major-repair'], {
+  required_error: 'Please select property condition',
+});
+
+const timeframeSchema = z.enum(['asap', '7-14-days', '30-plus'], {
+  required_error: 'Please select timeframe',
+});
+
+const preferredContactSchema = z.enum(['call', 'sms', 'email'], {
+  required_error: 'Please select a contact method',
+});
+
+/**
+ * API schema. City, condition, timeframe, and preferred contact are optional so
+ * the /offer short form can submit without inventing answers. The full-site
+ * form still requires those fields through leadFormSchema.
+ */
+export const leadApiSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters').max(100),
   phone: optionalPhoneSchema,
   email: z
@@ -17,17 +40,25 @@ export const leadFormSchema = z.object({
     .optional(),
   reasonForSelling: z.string().optional(),
   propertyAddress: z.string().min(5, 'Address is required').max(200),
-  city: z.string().min(2).max(100),
-  condition: z.enum(['as-is', 'cosmetic', 'major-repair'], {
-    required_error: 'Please select property condition',
-  }),
-  timeframe: z.enum(['asap', '7-14-days', '30-plus'], {
-    required_error: 'Please select timeframe',
-  }),
-  preferredContact: z.enum(['call', 'sms', 'email']),
+  city: optionalCitySchema,
+  condition: conditionSchema.optional(),
+  timeframe: timeframeSchema.optional(),
+  preferredContact: preferredContactSchema.optional(),
   smsNonMarketingConsent: z.boolean().default(false),
   smsMarketingConsent: z.boolean().default(false),
   recaptchaToken: z.string().optional(),
+});
+
+export const leadFormSchema = leadApiSchema.extend({
+  city: z.string().min(2).max(100),
+  condition: conditionSchema,
+  timeframe: timeframeSchema,
+  preferredContact: preferredContactSchema,
+});
+
+/** Paid-ads short form. Phone is required here; other site forms may omit it. */
+export const offerLeadFormSchema = leadApiSchema.extend({
+  phone: requiredPhoneSchema,
 });
 
 export const extendedLeadFormSchema = leadFormSchema.extend({
@@ -41,4 +72,5 @@ export const extendedLeadFormSchema = leadFormSchema.extend({
 });
 
 export type LeadFormData = z.infer<typeof leadFormSchema>;
+export type OfferLeadFormData = z.infer<typeof offerLeadFormSchema>;
 export type ExtendedLeadFormData = z.infer<typeof extendedLeadFormSchema>;

@@ -12,6 +12,7 @@ import {
   readAttributionFromCookieHeader,
   resolveSubmissionAttribution,
   touchFromLanding,
+  withAdsLandingDefaults,
 } from './attribution';
 import { buildGhlPayload } from './ghl';
 
@@ -223,6 +224,46 @@ describe('submission resolution', () => {
   });
 });
 
+describe('withAdsLandingDefaults', () => {
+  it('marks a bare offer visit as Google Ads and keeps a click id', () => {
+    const search = withAdsLandingDefaults('?gclid=abc', 'google');
+    const landed = touchFromLanding({
+      search,
+      referrer: '',
+      landingPage: 'https://kindkeyhomebuyers.com/offer?gclid=abc',
+      capturedAt: CAPTURED,
+    });
+    assert.equal(landed.gclid, 'abc');
+    assert.equal(landed.utm_source, 'google');
+    assert.equal(landed.utm_medium, 'cpc');
+    assert.equal(deriveLeadSource(landed), 'Google Ads');
+    assert.equal(ghlTagsForLeadSource(deriveLeadSource(landed)), 'website lead, google ads');
+  });
+
+  it('marks a src=fb visit as Facebook Ads', () => {
+    const search = withAdsLandingDefaults('?src=fb', 'facebook');
+    const landed = touchFromLanding({
+      search,
+      referrer: '',
+      landingPage: 'https://kindkeyhomebuyers.com/offer?src=fb',
+      capturedAt: CAPTURED,
+    });
+    assert.equal(landed.utm_source, 'facebook');
+    assert.equal(landed.utm_medium, 'cpc');
+    assert.equal(landed.landing_page, 'https://kindkeyhomebuyers.com/offer?src=fb');
+    assert.equal(deriveLeadSource(landed), 'Facebook Ads');
+    assert.equal(ghlTagsForLeadSource(deriveLeadSource(landed)), 'website lead, facebook ads');
+  });
+
+  it('does not overwrite an explicit source or medium', () => {
+    const params = new URLSearchParams(
+      withAdsLandingDefaults('?utm_source=newsletter&utm_medium=email', 'google').slice(1)
+    );
+    assert.equal(params.get('utm_source'), 'newsletter');
+    assert.equal(params.get('utm_medium'), 'email');
+  });
+});
+
 describe('buildGhlPayload', () => {
   const lead = {
     name: 'Ada Lovelace',
@@ -286,6 +327,29 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.source, 'Direct/Website');
     assert.equal(payload.source_tag, 'website');
     assert.equal(payload.tags, 'website lead, website');
+  });
+
+  it('labels an offer-page lead that omits the long-form fields', () => {
+    const payload = buildGhlPayload({
+      name: 'Ada Lovelace',
+      phone: '+1(253) 555-0100',
+      propertyAddress: '123 Main St',
+      smsNonMarketingConsent: false,
+      smsMarketingConsent: false,
+      pagePath: '/offer',
+      attribution: touch({
+        utm_source: 'google',
+        utm_medium: 'cpc',
+        landing_page: 'https://kindkeyhomebuyers.com/offer',
+      }),
+    });
+    assert.equal(payload.lead_source, 'Google Ads');
+    assert.equal(payload.tags, 'website lead, google ads');
+    assert.equal(payload.city, '');
+    assert.equal(payload.condition, '');
+    assert.equal(payload.timeframe, '');
+    assert.equal(payload.preferred_contact, '');
+    assert.equal(payload.page_path, '/offer');
   });
 
   it('labels a Facebook click', () => {
