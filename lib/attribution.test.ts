@@ -277,6 +277,7 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.form_origin, 'website');
     assert.equal(payload.source_tag, 'website');
     assert.equal(payload.tags, 'website lead, website');
+    assert.equal(payload.listed_with_agent, '');
     assert.equal(payload.channel, 'Website');
     assert.equal(payload.gclid, 'gclid-1');
     assert.equal(payload.utm_campaign, 'brand');
@@ -332,6 +333,8 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.timeframe, '');
     assert.equal(payload.preferred_contact, '');
     assert.equal(payload.page_path, '/offer');
+    assert.equal(payload.listed_with_agent, '');
+    assert.doesNotMatch(String(payload.attribution_notes), /Listed with agent/);
   });
 
   it('keeps a Facebook click on the website form as click_source only', () => {
@@ -363,5 +366,32 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.form_name, 'Facebook Ads Landing Page');
     assert.equal(payload.click_source, 'Google Ads');
     assert.equal(payload.gclid, 'gclid-1');
+  });
+
+  it('adds the listed-with-agent tag and note when the offer answer is yes', () => {
+    const payload = buildGhlPayload({
+      ...lead,
+      pagePath: '/offer',
+      formOrigin: 'google_ads_landing',
+      listedWithAgent: 'yes',
+    });
+    assert.equal(payload.listed_with_agent, 'yes');
+    assert.equal(payload.tags, 'website lead, google ads, listed with agent');
+    assert.equal(payload.source, 'Google Ads');
+    assert.match(String(payload.attribution_notes), /Listed with agent: yes/);
+  });
+
+  it('records a no answer without the listed-with-agent tag', () => {
+    const payload = buildGhlPayload({
+      ...lead,
+      pagePath: '/offer',
+      formOrigin: 'facebook_ads_landing',
+      listedWithAgent: 'no',
+    });
+    assert.equal(payload.listed_with_agent, 'no');
+    assert.equal(payload.tags, 'website lead, facebook ads');
+    assert.equal(payload.source, 'Facebook Ads');
+    assert.match(String(payload.attribution_notes), /Listed with agent: no/);
+    assert.doesNotMatch(String(payload.tags), /listed with agent/);
   });
 });

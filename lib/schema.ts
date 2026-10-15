@@ -27,6 +27,11 @@ const preferredContactSchema = z.enum(['call', 'sms', 'email'], {
   required_error: 'Please select a contact method',
 });
 
+const listedWithAgentSchema = z.enum(['yes', 'no'], {
+  required_error: 'Please choose yes or no.',
+  invalid_type_error: 'Please choose yes or no.',
+});
+
 /**
  * API schema. City, condition, timeframe, and preferred contact are optional so
  * the /offer short form can submit without inventing answers. The full-site
@@ -46,6 +51,8 @@ export const leadApiSchema = z.object({
   preferredContact: preferredContactSchema.optional(),
   smsNonMarketingConsent: z.boolean().default(false),
   smsMarketingConsent: z.boolean().default(false),
+  /** Optional so website forms can omit it. The /offer form requires yes or no. */
+  listed_with_agent: listedWithAgentSchema.optional(),
   recaptchaToken: z.string().optional(),
 });
 
@@ -56,9 +63,10 @@ export const leadFormSchema = leadApiSchema.extend({
   preferredContact: preferredContactSchema,
 });
 
-/** Paid-ads short form. Phone is required here; other site forms may omit it. */
+/** Paid-ads short form. Phone and the listing question are required here. */
 export const offerLeadFormSchema = leadApiSchema.extend({
   phone: requiredPhoneSchema,
+  listed_with_agent: listedWithAgentSchema,
 });
 
 export const extendedLeadFormSchema = leadFormSchema.extend({

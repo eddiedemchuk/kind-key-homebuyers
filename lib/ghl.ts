@@ -26,7 +26,11 @@ interface GHLLeadInput {
   attribution?: AttributionTouch;
   /** Allowlisted form that created the lead. Missing values are the website form. */
   formOrigin?: FormOrigin;
+  /** Present only when the /offer form asked the listing question. */
+  listedWithAgent?: 'yes' | 'no';
 }
+
+const LISTED_WITH_AGENT_TAG = 'listed with agent';
 
 const GHL_TIMEOUT_MS = 10_000;
 
@@ -65,6 +69,8 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
   const attribution = attributionForLead(data);
   const clickSource = deriveLeadSource(attribution);
   const form = formOriginLabel(resolveFormOrigin(data.formOrigin));
+  const listedWithAgent = data.listedWithAgent;
+  const tags = listedWithAgent === 'yes' ? `${form.tags}, ${LISTED_WITH_AGENT_TAG}` : form.tags;
 
   return {
     first_name: firstName,
@@ -102,9 +108,10 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
     form_name: form.formName,
     form_origin: resolveFormOrigin(data.formOrigin),
     channel: 'Website',
-    tags: form.tags,
+    listed_with_agent: listedWithAgent ?? '',
+    tags,
     source_tag: form.sourceTag,
-    attribution_notes: formatAttributionNotes(attribution, form, clickSource),
+    attribution_notes: formatAttributionNotes(attribution, form, clickSource, listedWithAgent),
   };
 }
 
