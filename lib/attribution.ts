@@ -238,25 +238,19 @@ export function deriveLeadSource(touch: AttributionTouch): LeadSource {
   return 'Direct/Website';
 }
 
-export function sourceTagForLeadSource(
-  leadSource: LeadSource
-): 'google ads' | 'facebook ads' | 'website' {
-  if (leadSource === 'Google Ads') return 'google ads';
-  if (leadSource === 'Facebook Ads') return 'facebook ads';
-  return 'website';
-}
-
 export const GHL_BASE_TAG = 'website lead';
 
-export function ghlTagsForLeadSource(leadSource: LeadSource): string {
-  return `${GHL_BASE_TAG}, ${sourceTagForLeadSource(leadSource)}`;
-}
-
-export function formatAttributionNotes(touch: AttributionTouch, leadSource: LeadSource): string {
+export function formatAttributionNotes(
+  touch: AttributionTouch,
+  form: { leadSource: string; sourceTag: string; formName: string },
+  clickSource: LeadSource
+): string {
   const line = (label: string, value: string) => `${label}: ${value || '—'}`;
   return [
-    `Lead source: ${leadSource}`,
-    `Tag: ${sourceTagForLeadSource(leadSource)}`,
+    `Form: ${form.formName}`,
+    `Lead source: ${form.leadSource}`,
+    `Tag: ${form.sourceTag}`,
+    `Click source: ${clickSource}`,
     line('Landing page', touch.landing_page),
     line('Referrer', touch.referrer),
     line('utm_source', touch.utm_source),
@@ -270,26 +264,6 @@ export function formatAttributionNotes(touch: AttributionTouch, leadSource: Lead
     line('fbclid', touch.fbclid),
     line('Captured', touch.captured_at),
   ].join('\n');
-}
-
-export type AdsLandingChannel = 'google' | 'facebook';
-
-/**
- * Fills a paid source and medium when the ads landing URL did not bring its own.
- * Existing utm_source and utm_medium values are left unchanged, and click ids
- * already in the query are preserved.
- */
-export function withAdsLandingDefaults(search: string, channel: AdsLandingChannel): string {
-  const query = search.startsWith('?') ? search.slice(1) : search;
-  const params = new URLSearchParams(query);
-  if (!params.get('utm_source')?.trim()) {
-    params.set('utm_source', channel === 'facebook' ? 'facebook' : 'google');
-  }
-  if (!params.get('utm_medium')?.trim()) {
-    params.set('utm_medium', 'cpc');
-  }
-  const next = params.toString();
-  return next ? `?${next}` : '';
 }
 
 export function touchFromLanding(input: {

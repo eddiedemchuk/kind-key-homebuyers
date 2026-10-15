@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import OfferLeadForm from '@/components/OfferLeadForm';
-import type { AdsLandingChannel } from '@/lib/attribution';
+import OfferLeadForm, { type OfferChannel } from '@/components/OfferLeadForm';
 
 export const metadata: Metadata = {
   title: 'Sell Your House As-Is for Cash',
@@ -73,7 +72,7 @@ export default async function OfferPage({
   searchParams: Promise<{ src?: string | string[] }>;
 }) {
   const params = await searchParams;
-  const channel: AdsLandingChannel = firstQueryValue(params.src) === 'fb' ? 'facebook' : 'google';
+  const channel: OfferChannel = firstQueryValue(params.src) === 'fb' ? 'facebook' : 'google';
   const phone = PHONES[channel];
 
   return (

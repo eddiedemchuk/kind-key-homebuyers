@@ -107,7 +107,8 @@ the current differences between source usage and `render.yaml` declarations.
 3. The route applies the Upstash limit when both Redis variables exist, validates the payload, and
    verifies any supplied reCAPTCHA token server-side.
 4. The validated lead is offered independently to GoHighLevel, the CRM, Telegram, and SMTP.
-   GoHighLevel receives the derived traffic source and the stored UTM / click-id fields.
+   GoHighLevel receives the form origin as `source` and `lead_source`, and still stores the UTM
+   values and click ids. `click_source` keeps the click-derived label for reference.
 5. `Promise.allSettled` prevents one delivery failure from cancelling the other providers.
 6. A successful response triggers analytics, queues the Google Ads submit conversion, and either
    calls the form's success handler or redirects to `/thank-you`.

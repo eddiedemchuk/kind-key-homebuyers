@@ -6,13 +6,19 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
 import { offerLeadFormSchema, type OfferLeadFormData } from '@/lib/schema';
 import { trackLeadSubmit } from '@/lib/analytics';
-import { offerAttributionFieldsForSubmit } from '@/lib/attribution-client';
-import type { AdsLandingChannel } from '@/lib/attribution';
+import { attributionFieldsForSubmit } from '@/lib/attribution-client';
+import type { FormOrigin } from '@/lib/form-origin';
 import { useRecaptcha } from '@/lib/useRecaptcha';
 
+export type OfferChannel = 'google' | 'facebook';
+
 interface OfferLeadFormProps {
-  channel: AdsLandingChannel;
+  channel: OfferChannel;
   idPrefix: string;
+}
+
+function formOriginForChannel(channel: OfferChannel): FormOrigin {
+  return channel === 'facebook' ? 'facebook_ads_landing' : 'google_ads_landing';
 }
 
 const fieldClass =
@@ -61,14 +67,6 @@ export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps)
   useEffect(() => {
     setValue('phone', '+1', { shouldValidate: false });
   }, [setValue]);
-
-  useEffect(() => {
-    try {
-      offerAttributionFieldsForSubmit(channel);
-    } catch (error) {
-      console.error('Attribution capture failed:', error);
-    }
-  }, [channel]);
 
   const handlePhoneChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = event.target.value;
@@ -124,7 +122,7 @@ export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps)
       const recaptchaToken = await executeRecaptcha('submit_lead');
       let attributionFields: Record<string, string> = {};
       try {
-        attributionFields = offerAttributionFieldsForSubmit(channel);
+        attributionFields = attributionFieldsForSubmit();
       } catch (error) {
         console.error('Attribution capture failed:', error);
       }
@@ -142,6 +140,7 @@ export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps)
           recaptchaToken,
           pagePath: window.location.pathname,
           ...attributionFields,
+          form_origin: formOriginForChannel(channel),
         }),
       });
 

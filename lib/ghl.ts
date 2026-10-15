@@ -1,13 +1,11 @@
 import {
   type AttributionTouch,
-  type LeadSource,
   deriveLeadSource,
   emptyTouch,
   formatAttributionNotes,
-  ghlTagsForLeadSource,
   normalizeTouch,
-  sourceTagForLeadSource,
 } from '@/lib/attribution';
+import { type FormOrigin, formOriginLabel, resolveFormOrigin } from '@/lib/form-origin';
 
 interface GHLLeadInput {
   name: string;
@@ -26,6 +24,8 @@ interface GHLLeadInput {
   pagePath?: string;
   ip?: string;
   attribution?: AttributionTouch;
+  /** Allowlisted form that created the lead. Missing values are the website form. */
+  formOrigin?: FormOrigin;
 }
 
 const GHL_TIMEOUT_MS = 10_000;
@@ -63,7 +63,8 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
   const fullName = data.name.trim();
   const [firstName = '', ...restName] = fullName.split(/\s+/);
   const attribution = attributionForLead(data);
-  const leadSource: LeadSource = deriveLeadSource(attribution);
+  const clickSource = deriveLeadSource(attribution);
+  const form = formOriginLabel(resolveFormOrigin(data.formOrigin));
 
   return {
     first_name: firstName,
@@ -95,12 +96,15 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
     attribution_captured_at: attribution.captured_at,
     page_path: data.pagePath ?? '',
     ip: data.ip ?? '',
-    source: leadSource,
-    lead_source: leadSource,
+    source: form.source,
+    lead_source: form.leadSource,
+    click_source: clickSource,
+    form_name: form.formName,
+    form_origin: resolveFormOrigin(data.formOrigin),
     channel: 'Website',
-    tags: ghlTagsForLeadSource(leadSource),
-    source_tag: sourceTagForLeadSource(leadSource),
-    attribution_notes: formatAttributionNotes(attribution, leadSource),
+    tags: form.tags,
+    source_tag: form.sourceTag,
+    attribution_notes: formatAttributionNotes(attribution, form, clickSource),
   };
 }
 

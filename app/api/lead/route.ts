@@ -12,6 +12,7 @@ import {
   resolveSubmissionAttribution,
   touchFromRequestBody,
 } from '@/lib/attribution';
+import { resolveFormOrigin } from '@/lib/form-origin';
 
 // Rate limiting is optional so local development and deployments without the
 // complete Upstash credential pair can still accept leads.
@@ -79,6 +80,7 @@ export async function POST(request: NextRequest) {
       touchFromRequestBody(body),
       readAttributionFromCookieHeader(request.headers.get('cookie'))
     );
+    const formOrigin = resolveFormOrigin(body.form_origin);
 
     const crmData = {
       name: data.name,
@@ -98,6 +100,7 @@ export async function POST(request: NextRequest) {
       recaptchaScore: 0.9, // Used when verification is skipped.
       ip,
       attribution,
+      formOrigin,
     };
 
     // Delivery channels are independent and optional. A provider failure is
