@@ -26,7 +26,7 @@ export interface LongformContent {
   description: string;
   h1: string;
   intro: string[];
-  /** Short note shown after the intro. The page adds the phone number and cash-offer form. */
+  /** Short note shown after the intro and again before the closing call to action. The page adds the phone number and cash-offer form. */
   callout?: string;
   sections: ContentSection[];
   faqs: FaqItem[];

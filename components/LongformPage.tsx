@@ -15,6 +15,25 @@ function formatPublishedDate(isoDate: string) {
   }).format(new Date(`${isoDate}T00:00:00Z`));
 }
 
+function GuideCallout({ text }: { text: string }) {
+  return (
+    <aside className="rounded-lg border border-divider bg-primary px-5 py-4 text-text-primary">
+      <p className="text-lg leading-relaxed">{text}</p>
+      <p className="mt-3 text-base text-text-secondary">
+        Call{' '}
+        <a href="tel:+12065195463" className="font-semibold text-divider hover:underline">
+          (206) 519-5463
+        </a>{' '}
+        or use the{' '}
+        <Link href="/cash-offer" className="font-semibold text-divider hover:underline">
+          cash-offer form
+        </Link>
+        . You can reach out whenever you are ready, and asking does not obligate you to sell.
+      </p>
+    </aside>
+  );
+}
+
 export default function LongformPage({
   content,
   article,
@@ -63,21 +82,9 @@ export default function LongformPage({
               ))}
             </div>
             {content.callout ? (
-              <aside className="mt-8 rounded-lg border border-divider bg-primary px-5 py-4 text-text-primary">
-                <p className="text-lg leading-relaxed">{content.callout}</p>
-                <p className="mt-3 text-base text-text-secondary">
-                  Call{' '}
-                  <a href="tel:+12065195463" className="font-semibold text-divider hover:underline">
-                    (206) 519-5463
-                  </a>{' '}
-                  or use the{' '}
-                  <Link href="/cash-offer" className="font-semibold text-divider hover:underline">
-                    cash-offer form
-                  </Link>
-                  . You can reach out whenever you are ready, and asking does not obligate you to
-                  sell.
-                </p>
-              </aside>
+              <div className="mt-8">
+                <GuideCallout text={content.callout} />
+              </div>
             ) : null}
             <Link
               href="/cash-offer"
@@ -141,6 +148,11 @@ export default function LongformPage({
               Frequently asked questions
             </h2>
             <FAQAccordion items={content.faqs} />
+            {content.callout ? (
+              <div className="mt-12">
+                <GuideCallout text={content.callout} />
+              </div>
+            ) : null}
           </div>
         </section>
 
