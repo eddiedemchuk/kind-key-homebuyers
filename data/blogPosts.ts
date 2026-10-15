@@ -25,6 +25,700 @@ function post(
 }
 
 export const blogPosts: BlogPost[] = [
+  post('how-to-sell-an-estate-house-in-washington', {
+    breadcrumbName: 'Estate house steps',
+    title: 'How to Sell an Estate House in Washington: A Step-by-Step Guide for Executors',
+    description:
+      'A step-by-step guide for Washington executors selling a house that is part of an estate. Letters, nonintervention powers, and when court approval is required. Not legal advice.',
+    h1: 'How to Sell an Estate House in Washington: A Step-by-Step Guide for Executors',
+    publishedAt: '2026-10-14',
+    intro: [
+      'You sell an estate house in Washington by confirming the house is an estate asset, getting the right person appointed, reading whether that person has nonintervention powers, and then transferring the house through a closing agent. KindKey Home Buyers LLC can buy the house as a principal once that person is ready to sign. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form on this site. KindKey is not a probate attorney, and KindKey does not list houses.',
+      'Washington calls the person in charge a personal representative. A will may call that person an executor. The word in the will does not replace letters from superior court. This article is general information, not legal advice. Talk with a Washington probate attorney before you sign a purchase agreement or a deed.',
+    ],
+    callout:
+      'If you would like a hand, KindKey will help with the whole estate sale from start to finish. We have done hundreds of these, and we will walk through yours at whatever pace the family needs. Your attorney still confirms who can sign.',
+    sections: [
+      {
+        heading: 'Step 1: Confirm the house belongs in the probate',
+        paragraphs: [
+          'Some houses the family thinks of as “the estate house” never enter probate. A house titled in a living trust is administered under the trust. A transfer-on-death deed recorded under chapter 64.80 RCW can pass the house outside probate. Washington is a community property state, so a surviving spouse or domestic partner may already own an interest. Your attorney and the title company read the deed. KindKey will not.',
+          'When the house is a probate asset, a small-estate affidavit is not a substitute for a deed. Pierce County’s probate page says a case is needed when the decedent’s assets exceed $100,000 and/or include any real property. A house is real property. Ask your attorney whether your county asks the same question before you rely on an affidavit. KindKey will not decide that a filing is unnecessary because the family agrees.',
+        ],
+      },
+      {
+        heading: 'Step 2: Get appointed and obtain letters',
+        paragraphs: [
+          'The superior court appoints the personal representative. If the will is admitted and the person named in it is appointed, the clerk issues letters testamentary. If there is no will, the clerk issues letters of administration. If there is a will but the named person does not serve, the clerk may issue letters of administration with will annexed. The appointment is a court order. The letters are the document the closing agent expects to see. The original will has to reach the clerk in the way that court requires. KindKey cannot issue letters or file the petition.',
+          'RCW 11.96A.050, in the Washington Trust and Estate Dispute Resolution Act, chapter 11.96A RCW, lets a petitioner start in a Washington county they select. Another party can ask the court to move the case to the decedent’s county of residence. King County filings go to the Superior Court Clerk at the King County Courthouse, 516 Third Avenue, Room E-609, Seattle, and at the Maleng Regional Justice Center, 401 Fourth Avenue North, Room 2C, Kent. Pierce County filings go to the Clerk of the Superior Court, 930 Tacoma Ave S, Room 110, Tacoma, WA 98402, phone (253) 798-7455, Monday through Friday, 8:30 a.m. to 4:30 p.m. Ask your attorney which counter applies. City hall does not probate estates.',
+        ],
+      },
+      {
+        heading: 'Step 3: Read whether nonintervention powers were granted',
+        paragraphs: [
+          'Letters and nonintervention powers are related, and they are not the same line on the order. A personal representative may petition for nonintervention powers whether or not there is a will. Under RCW 11.68.011, unless the will tells the court not to grant those powers, the court grants them when it finds the estate is solvent, counting probate and nonprobate assets, and the petitioner fits a path in the statute. One path is the person named in the probated will. Other paths exist, and some appointed people may not petition. Notice of the hearing is not required in the situations RCW 11.68.041 exempts. Otherwise, heirs, will beneficiaries, and others entitled to notice may object. Your attorney matches the order to the statute.',
+          'Once the powers are granted, RCW 11.68.090 lets the personal representative sell the decedent’s real and personal property without a further court order and without notice, approval, confirmation, or intervention of the court. There is no duty to follow the court-sale procedures in chapter 11.56 RCW. Discretionary powers still have to be used in good faith, with honest judgment, and in line with the will and the interests of the beneficiaries. The will can restrict a sale. If the powers were not granted, or a later order restricts them, the sale may have to follow chapter 11.56 RCW. You can ask KindKey for an offer while your attorney reads the order. Do not accept and sign until the attorney says the signer has authority.',
+        ],
+      },
+      {
+        heading: 'Step 4: Decide how the house will be sold',
+        paragraphs: [
+          'An estate sale of furniture is a sale of personal property. A sale of the house is a transfer of real estate. The guide on estate sales versus selling as-is covers contents. For the house itself, KindKey’s path is a walkthrough, a written offer, and a closing date you help choose with the closing agent. KindKey does not charge an agent commission or a separate assignment fee. The offer is not an obligation. If you want retail exposure, hire a licensed broker. Do not sign a listing and a purchase agreement for the same house without understanding both. KindKey will not run the listing.',
+        ],
+      },
+      {
+        heading: 'Step 5: Close in the estate’s name',
+        paragraphs: [
+          'When a personal representative has letters, the seller on the purchase agreement is often that representative, not every heir. Heirs who live in another state can still receive a share later. They do not all have to sign the deed unless your attorney and the title company say they do. Sale proceeds are estate funds. A mortgage payoff, delinquent taxes, other liens, and closing costs can reduce what the estate receives. The settlement statement shows those figures before the deed is signed.',
+          'Distribution to heirs comes after expenses and valid claims. That work belongs to the personal representative and the attorney. KindKey does not write a separate check to each sibling, and KindKey does not give tax advice about basis or gains. Guides linked below cover heir disputes, repairs and liens, and the King County and Pierce County courthouses.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Is an executor the same person as a personal representative in Washington?',
+        answer:
+          'A will often says “executor.” Washington statutes say “personal representative” for the person the court appoints. Letters testamentary or letters of administration are what the closing agent asks to see.',
+      },
+      {
+        question:
+          'If I have nonintervention powers, does the court still have to approve the sale?',
+        answer:
+          'Under RCW 11.68.090, a personal representative with those powers may sell without a further court order, subject to the will and the representative’s duties. If the powers were not granted, or a later order restricts them, chapter 11.56 RCW may apply. Ask your attorney.',
+      },
+      {
+        question: 'Can the house be sold before the estate is closed?',
+        answer:
+          'Sometimes the sale happens during the estate, once the person with authority can sign and any required court step is done. Your attorney sets that order. Call (206) 519-5463 or use the cash-offer form when you want a number to take to that conversation.',
+      },
+      {
+        question: 'Will KindKey open the probate or prepare the letters?',
+        answer:
+          'No. A probate attorney and the superior court clerk handle the case. The closing agent handles the settlement statement. KindKey buys the house. Sign only after your attorney says you may.',
+      },
+    ],
+    related: [
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'How KindKey buys once someone has authority to sign.',
+      },
+      {
+        href: '/blog/selling-a-house-in-probate-washington',
+        label: 'Probate sales in Washington',
+        description: 'What families should expect before the step-by-step.',
+      },
+      {
+        href: '/blog/estate-sale-vs-selling-the-house-as-is',
+        label: 'Estate sale vs. selling the house as-is',
+        description: 'Contents, estate sale companies, and leaving belongings.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-king-county',
+        label: 'Estate houses in King County',
+        description: 'Seattle and Kent courthouses, and south King County cities.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-pierce-county',
+        label: 'Estate houses in Pierce County',
+        description: 'Tacoma, Edgewood, Milton, and Puyallup.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-when-heirs-disagree',
+        label: 'When heirs disagree or live out of state',
+        description: 'Objections, TEDRA, and signing from another state.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'The form. Asking does not obligate you to sell.',
+      },
+    ],
+    ctaTitle: 'KindKey can help from the first call through closing',
+    ctaSubtitle:
+      'We will help with the whole estate sale from start to finish. KindKey has done hundreds of these. Call (206) 519-5463 or use the cash-offer form. Your attorney confirms who can sign, and you can say no.',
+  }),
+  post('estate-sale-vs-selling-the-house-as-is', {
+    breadcrumbName: 'Estate sale vs. the house',
+    title: 'Estate Sale vs. Selling the House As-Is',
+    description:
+      'How executors handle a loved one’s belongings: an estate sale company, a clean-out, or selling the Washington house as-is with items left behind. Not legal advice.',
+    h1: 'Estate Sale vs. Selling the House As-Is: What to Do With a Loved One’s Home and Belongings',
+    publishedAt: '2026-10-14',
+    intro: [
+      'An estate sale and a sale of the house are two different transactions, and people use the same phrase for both. One sells furniture, clothes, tools, and household goods. The other transfers the real estate. KindKey Home Buyers LLC buys the house. KindKey is not an estate sale company, a junk hauler, or a probate attorney. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form if you want a number on the house.',
+      'You can clear the house, hire a company to sell the contents, leave the contents for a buyer, or mix those choices. The personal representative still has duties over personal property as well as the house. This article is general information, not legal advice. Talk with a Washington probate attorney about who may sell the contents and who may sign the deed.',
+    ],
+    callout:
+      'If the belongings and the house both feel like a lot, you can reach out. KindKey will help with the whole estate sale from start to finish. We have done hundreds of these, and you can take the next step when you are ready.',
+    sections: [
+      {
+        heading: 'What people mean by an estate sale',
+        paragraphs: [
+          'In ordinary speech, an estate sale is a sale of a person’s belongings, usually held at the house over a short run of days. An estate sale company prices the items, advertises the sale, staffs the door, and takes a share of what the personal property brings. The company is not selling you a deed, and a successful weekend of tables and tools does not appoint a personal representative. If the belongings are estate property, the person who hires that company needs authority to sell them. Ask your attorney before you sign the company’s contract.',
+          'Those companies usually need time on a calendar, a house people can walk through, and enough saleable goods to justify the setup. A house with a failed roof, a hoarding condition, or no safe path through the rooms may not fit their model. That is a practical limit. It is not a legal rule. KindKey does not rate estate sale companies and will not tell you which contract to sign.',
+        ],
+      },
+      {
+        heading: 'Clearing the house yourself',
+        paragraphs: [
+          'Some families would rather have relatives take what they want, donate what a charity will accept, and hire a hauler for the rest. That work is real. It takes keys, weekends, and someone local enough to meet the truck. Heirs in another state often cannot do it. A clean, empty house can be easier to list with a broker. It is not a requirement for a sale to KindKey.',
+          'Take the items the family will regret losing, and take them before closing day. Photographs, letters, jewelry, medications, and personal papers belong in that first pass. Firearms are a legal question of their own. Ask your attorney how they may be transferred. Do not leave a safe combination as a mystery for the closing. Tell the buyer what you already know you will remove, so the walkthrough matches the house that will be deeded.',
+        ],
+      },
+      {
+        heading: 'Selling the house as-is with belongings left behind',
+        paragraphs: [
+          'KindKey buys the real estate in its current condition, including houses that still hold furniture, boxed closets, a shop full of tools, or a garage that has not been opened in years. You do not have to empty the rooms, hold a tag sale, or paint before asking for an offer. Take what the family wants to keep. Leave the rest. After closing, the belongings that were left are no longer the estate’s project to haul.',
+          'The offer reflects the house as it sits, including the work of dealing with what remains. KindKey does not promise that leftover furniture has resale value, and KindKey does not pay a separate price for a household inventory. If a relative still lives in the house, do not force that person out so the rooms look vacant. Occupancy is a question for your attorney. Washington law generally gives a personal representative a right to possession of estate property so the estate can be administered. That does not, by itself, tell you whether a surviving spouse, a tenant, or a relative has to move.',
+        ],
+      },
+      {
+        heading: 'How the two sales can be sequenced',
+        paragraphs: [
+          'One order is keepsakes first, then an estate sale of what a company will sell, then a transfer of the house once the personal property sale is over. Another order is a sale of the house with the contents still inside, because the family does not want to manage a weekend of shoppers. Both can be legitimate. The personal representative’s authority has to cover whichever sale is happening. RCW 11.68.090 gives a personal representative who has nonintervention powers the power to sell the decedent’s real and personal property without a further court order, subject to the will and the representative’s duties. Without those powers, a sale of either the house or the goods may need the court process your attorney describes.',
+          'Do not schedule a public contents sale and a buyer’s walkthrough on top of each other without a plan for access. Shoppers and a purchase walkthrough can share a week if someone is in charge of the key. They cannot share a locked house that nobody can enter. If you accept a KindKey offer, say whether a contents sale will finish before closing or whether the contents stay. The purchase agreement should match that plan. KindKey will not list the house while an estate sale company is also marketing the furniture.',
+        ],
+      },
+      {
+        heading: 'What does not change because the rooms are full',
+        paragraphs: [
+          'Full rooms do not create authority to sign, and empty rooms do not either. The closing agent still wants letters testamentary or letters of administration, and the order that says whether nonintervention powers were granted. If those powers were not granted, chapter 11.56 RCW may apply to the real estate. The will can restrict a sale of the house or of specific items. A family vote about a piano is not a deed.',
+          'KindKey does not charge an agent commission or a separate assignment fee for the purchase of the house. Liens, a mortgage payoff, taxes, and the closing costs in the agreement can reduce proceeds. The settlement statement shows the figures. The step-by-step guide for executors covers letters and court approval. The guides for King County and Pierce County cover where the case is filed. Call (206) 519-5463 or use the cash-offer form when you want the house priced with the belongings still there.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Will KindKey run an estate sale of the furniture?',
+        answer:
+          'No. KindKey buys the house as a principal. An estate sale company, a charity, or the family handles belongings if you want them sold or donated before closing. You can also leave them.',
+      },
+      {
+        question: 'Does the house have to be empty before KindKey will make an offer?',
+        answer:
+          'No. Belongings can stay. Remove what the family wants to keep before closing, and tell us what will remain so the offer matches the property. Call (206) 519-5463 or use the cash-offer form.',
+      },
+      {
+        question: 'Can we hold an estate sale and still sell the house to KindKey?',
+        answer:
+          'Yes, if the person with authority wants that order and the calendar is clear. Finish the contents sale you care about, or leave the rest. Do not sign two contracts that fight over the same access without reading both.',
+      },
+      {
+        question: 'Who is allowed to sell the contents?',
+        answer:
+          'If the belongings are estate property, the personal representative’s authority covers them, subject to the will and any court limit. KindKey does not decide that. Talk with a probate attorney before you hire an estate sale company or give items away.',
+      },
+    ],
+    related: [
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'The service page for the real estate, not the furniture.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'Condition and contents do not have to be fixed first.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Hoarder and heavy-cleanout houses',
+        description: 'When the contents are more than a normal household.',
+      },
+      {
+        href: '/blog/how-to-sell-an-estate-house-in-washington',
+        label: 'Step-by-step for executors',
+        description: 'Letters and nonintervention powers, before the clean-out.',
+      },
+      {
+        href: '/blog/selling-a-vacant-or-inherited-house',
+        label: 'Vacant or inherited houses',
+        description: 'When the house is empty, full, or both.',
+      },
+      {
+        href: '/blog/selling-a-house-in-probate-washington',
+        label: 'Probate sales in Washington',
+        description: 'What to expect from the court file.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Ask while the family is still sorting belongings.',
+      },
+    ],
+    ctaTitle: 'We can help with the house and what is left inside',
+    ctaSubtitle:
+      'KindKey will help with the whole estate sale from start to finish. We have done hundreds of these. Call (206) 519-5463 or use the cash-offer form. You can leave belongings, and you can say no.',
+  }),
+  post('selling-an-estate-house-in-king-county', {
+    breadcrumbName: 'Estate houses in King County',
+    title: 'Selling an Estate House in King County',
+    description:
+      'How executors sell an estate house in King County, including Auburn, Kent, Federal Way, and the Seattle area. Courthouse, letters, and nonintervention powers. Not legal advice.',
+    h1: 'Selling an Estate House in King County, Washington',
+    publishedAt: '2026-10-14',
+    intro: [
+      'You sell an estate house in King County by using King County Superior Court for the probate, then deeding the house once the person with authority can sign. KindKey Home Buyers LLC buys houses in this county as a principal. The office is in Auburn, at 640 1st St SW, Auburn, WA 98001, not at the courthouse. Call (206) 519-5463 or use the cash-offer form. KindKey is not a probate attorney. This article is general information, not legal advice. Talk with a Washington probate attorney about your letters before you sign.',
+      'Kent, Federal Way, Seattle, and most of Auburn are in King County. Part of Milton is in King County. A southern portion of Auburn is in Pierce County even when the mailing city says Auburn. The city guides for inherited houses in Auburn, Federal Way, and Milton go into those parcels. This page is the county picture, including Kent and the Seattle area, which do not have their own inherited-house articles on this site.',
+    ],
+    callout:
+      'If the King County house is yours to sort out, you are welcome to call. KindKey will help with the whole estate sale from start to finish. We have done hundreds of these, and we will meet you where you are.',
+    sections: [
+      {
+        heading: 'Where a King County estate is opened',
+        paragraphs: [
+          'Probate is a superior court case. King County District Court and the municipal courts in Auburn, Kent, Federal Way, and Seattle do not appoint personal representatives. The Superior Court Clerk has offices at the King County Courthouse, 516 Third Avenue, Room E-609, Seattle, and at the Maleng Regional Justice Center, 401 Fourth Avenue North, Room 2C, Kent. King County uses a probate case-assignment cover sheet. The Kent counter is closer than downtown Seattle for many south King County families. Ask your attorney or the clerk which office and which case-assignment area apply. KindKey will not choose the courthouse or file the petition.',
+          'RCW 11.96A.050, part of the Washington Trust and Estate Dispute Resolution Act, lets a petitioner start in a Washington county they select and lets another party ask to move the case. If the decedent lived in Washington, the transfer rule points to the county of residence. A person who lived in Kent, Federal Way, or Seattle resided in King County. A person who lived in Auburn resided in King County or Pierce County depending on the parcel. A person who lived in Milton may have resided in either county. The residence county and the county where the deed is recorded can be discussed with the closing agent as two facts. Do not pick a courthouse from the return address on the mail.',
+        ],
+      },
+      {
+        heading: 'Letters and when the court has to approve the sale',
+        paragraphs: [
+          'The closing agent will ask for letters testamentary or letters of administration, and for the order on nonintervention powers. Washington uses “personal representative” for the person the court appoints. A will may call that person an executor. If the court granted nonintervention powers, RCW 11.68.090 lets the personal representative sell the decedent’s real property without a further court order and without the sale procedures in chapter 11.56 RCW, subject to the will and the representative’s duties. Those duties include using discretionary power in good faith, with honest judgment, and in line with the will and the interests of the beneficiaries.',
+          'RCW 11.68.011 is the statute on granting the powers. Unless the will tells the court not to grant them, the court grants them when it finds the estate is solvent, counting probate and nonprobate assets, and the petitioner fits a path in the statute. One path is being the person named in the probated will. The step-by-step guide for executors walks through the petition, the notice rules in RCW 11.68.041, and the cases where a sale still needs a court order. If the powers were not granted, or if a later order restricts them, chapter 11.56 RCW may apply. KindKey cannot waive that because the house is in King County.',
+        ],
+      },
+      {
+        heading: 'Auburn, Kent, Federal Way, and Seattle',
+        paragraphs: [
+          'Auburn is KindKey’s home city. Downtown, Lea Hill, and Lakeland Hills are commonly King County. A parcel toward the southern edge can come back as Pierce County at title. Use the Auburn inherited-house guide for that split, and use this page for the King County side. The deed, once you have authority to sign, records with the King County Recorder when the parcel is in King County. Property-tax questions on that parcel go to King County, not to Pierce County.',
+          'Kent is in King County, from East Hill and West Hill down to the valley floor. There is no separate Kent probate article on this site because the court file is the county file described above. Federal Way is also a King County residence question for a person who lived there. The Federal Way inherited-house guide covers the neighborhoods and the difference between superior court and municipal court. This page is the clerk’s offices those families share with Seattle and Kent.',
+          'Seattle is in King County, and the downtown courthouse is there. A decedent who lived in Seattle has a King County residence under the venue rule. This site’s city pages are Auburn, Kent, Federal Way, Milton, Tacoma, Edgewood, and Puyallup. The authority rules on this page are the same for a Seattle house. Call (206) 519-5463 and describe the property if you want to know whether KindKey will make an offer. KindKey is not a listing broker.',
+        ],
+      },
+      {
+        heading: 'The house, the contents, and the county line next door',
+        paragraphs: [
+          'King County estate houses are often full of a long occupancy: a Kent rambler with a deferred roof, a Federal Way house that has been vacant since the funeral, an Auburn house with a shop still locked. You do not have to empty them or repair them before KindKey looks. The guide comparing an estate sale of belongings with an as-is sale of the house covers clean-out companies and what to remove. Take keepsakes. Leave the rest. If someone still lives there, ask your attorney before you change the locks.',
+          'Milton sits on the county line. A King County Milton parcel belongs in this conversation. A Pierce County Milton parcel belongs in the Pierce County estate guide and in the Milton inherited-house guide. Southern Auburn belongs in the Pierce County article when the parcel is on that side. The closing agent confirms the parcel. KindKey does not charge an agent commission or a separate assignment fee. The settlement statement shows payoffs, liens, taxes, and closing costs before you deed the house.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do I file a Kent or Federal Way probate at King County Superior Court?',
+        answer:
+          'If the decedent lived in Kent or Federal Way, King County is the residence county under the transfer rule in RCW 11.96A.050. The clerk’s offices are in downtown Seattle and at the Maleng Regional Justice Center in Kent. City hall does not open estates. Ask an attorney before you file.',
+      },
+      {
+        question: 'Is a Seattle estate filed in a different court from an Auburn estate?',
+        answer:
+          'Both are King County when the decedent lived on a King County parcel. Auburn’s southern edge can be Pierce County. Seattle is not split that way. The same superior court clerk serves the county. KindKey will not pick the case-assignment area.',
+      },
+      {
+        question: 'Does nonintervention power mean no court is involved at all?',
+        answer:
+          'The court is involved in the appointment and in the order granting the powers. RCW 11.68.090 then lets the personal representative sell without a further order approving the sale, subject to the will and the representative’s duties. Talk with a probate attorney about your order. This article is not legal advice.',
+      },
+      {
+        question: 'How do I ask KindKey for a King County offer?',
+        answer:
+          'Call (206) 519-5463 or use the cash-offer form. You can ask while letters are being prepared. Accept and sign only after your attorney says the signer has authority.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/kent',
+        label: 'Sell a house in Kent',
+        description: 'East Hill, West Hill, and the valley.',
+      },
+      {
+        href: '/areas/federal-way',
+        label: 'Sell a house in Federal Way',
+        description: 'The Federal Way city page.',
+      },
+      {
+        href: '/areas/auburn',
+        label: 'Sell a house in Auburn',
+        description: 'KindKey’s home city, on the county line.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-auburn',
+        label: 'Inherited houses in Auburn',
+        description: 'Most parcels are King County. The south end can be Pierce.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-federal-way',
+        label: 'Inherited houses in Federal Way',
+        description: 'King County Superior Court, not municipal court.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-milton',
+        label: 'Inherited houses in Milton',
+        description: 'The King County side of a two-county city.',
+      },
+      {
+        href: '/blog/how-to-sell-an-estate-house-in-washington',
+        label: 'Step-by-step for executors',
+        description: 'Letters, RCW 11.68, and the order of work.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-pierce-county',
+        label: 'Estate houses in Pierce County',
+        description: 'The other superior court, in Tacoma.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'The form used across the site.',
+      },
+    ],
+    ctaTitle: 'Talk with KindKey about the King County house',
+    ctaSubtitle:
+      'We will help with the whole estate sale from start to finish. KindKey has done hundreds of these. Call (206) 519-5463 or use the cash-offer form. Tell us the city. Your attorney confirms who can sign.',
+  }),
+  post('selling-an-estate-house-in-pierce-county', {
+    breadcrumbName: 'Estate houses in Pierce County',
+    title: 'Selling an Estate House in Pierce County',
+    description:
+      'How executors sell an estate house in Pierce County, including Tacoma, Edgewood, Milton, and Puyallup. Letters, nonintervention powers, and the Tacoma clerk. Not legal advice.',
+    h1: 'Selling an Estate House in Pierce County, Washington',
+    publishedAt: '2026-10-14',
+    intro: [
+      'You sell an estate house in Pierce County by opening the probate, when one is required, with the Pierce County Superior Court Clerk in Tacoma, then transferring the house once the person with authority can sign. KindKey Home Buyers LLC buys these houses as a principal from an office in Auburn, at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form. Being based on the King County side of Auburn does not make a Tacoma estate a King County case. KindKey is not a probate attorney. This article is general information, not legal advice.',
+      'Tacoma, Edgewood, and Puyallup are in Pierce County. Milton is in both Pierce County and King County. A southern slice of Auburn is in Pierce County too. The Edgewood and Milton inherited-house guides cover those cities in detail. This page is the county file those cities share, plus Tacoma and Puyallup, which do not have their own probate articles on this site.',
+    ],
+    callout:
+      'When you are ready, KindKey will help with the whole estate sale from start to finish. We have done hundreds of these. Asking a question does not commit the estate to sell.',
+    sections: [
+      {
+        heading: 'The clerk is in Tacoma',
+        paragraphs: [
+          'Pierce County probate is opened with the Clerk of the Superior Court at the County-City Building, 930 Tacoma Ave S, Room 110, Tacoma, WA 98402. The clerk’s phone number is (253) 798-7455, and the public counter is open Monday through Friday, 8:30 a.m. to 4:30 p.m. Pierce County’s probate page says a case is needed when the decedent’s assets exceed $100,000 and/or include any real property. A house is real property. Do not assume a small-estate affidavit can take the place of a deed. The same page lists opening papers and a filing fee. Confirm the current fee with the clerk before you go, because the fee schedule can change. KindKey will not file the case or stand in line for you.',
+          'RCW 11.96A.050, in the Washington Trust and Estate Dispute Resolution Act, lets a petitioner begin in a Washington county they select and lets another party ask the court to move the case. If the decedent lived in Tacoma, Edgewood, or Puyallup, the residence county under that transfer rule is Pierce County. King County Superior Court, in Seattle or at the Maleng Regional Justice Center in Kent, is the wrong residence county for those decedents. Milton and the southern edge of Auburn can go either way. The city guides for those two places explain the split. The City of Tacoma, the City of Puyallup, and the City of Edgewood do not appoint personal representatives.',
+        ],
+      },
+      {
+        heading: 'Letters, nonintervention powers, and the deed',
+        paragraphs: [
+          'Whatever city is on the mailbox, the closing agent wants letters testamentary or letters of administration, and the order that says whether the personal representative has nonintervention powers. A will may say “executor.” Washington law uses “personal representative” for the appointed person. If the powers were granted, RCW 11.68.090 gives that person authority to sell the decedent’s real property without a further court order, and without following chapter 11.56 RCW, subject to the will and the representative’s duties. The duties include good faith, honest judgment, and the interests of the beneficiaries. The will can restrict the sale.',
+          'RCW 11.68.011 is the grant statute. Unless the will tells the court not to grant nonintervention powers, the court grants them when it finds the estate is solvent, counting probate and nonprobate assets, and the petitioner fits a path in the statute, including the path for the person named in the will. If the powers were not granted, a sale may have to follow the court process in chapter 11.56 RCW. The step-by-step guide for executors explains the petition and when a hearing is required under RCW 11.68.041. An agreement among heirs in Tacoma and heirs out of state is not a substitute for the signature title requires. The deed records with the Pierce County Auditor when the parcel is in Pierce County.',
+        ],
+      },
+      {
+        heading: 'Tacoma and Puyallup',
+        paragraphs: [
+          'Tacoma estate houses show up across the city: older houses in the North End and Hilltop, houses on the Eastside, and houses in South Tacoma that have been vacant since the funeral. KindKey buys them as they sit. You do not have to repair plaster, empty a lifetime of belongings, or host showings for KindKey to make an offer. The Tacoma city page is the general sale page. This article is the probate overlay. Occupancy stays with your attorney if a relative still lives there.',
+          'Puyallup is in Pierce County. Downtown Puyallup and the neighborhoods inside the city limits are city matters for code letters and city services. South Hill addresses that people call Puyallup are sometimes unincorporated Pierce County. The letterhead on a tax bill or a code notice tells you who wrote it. The closing agent confirms the parcel. KindKey does not treat “Puyallup” on an envelope as a legal description. There is a Puyallup city page for the sale itself. There is not a separate Puyallup probate article, because the clerk, the letters, and RCW 11.68 are the county process on this page.',
+        ],
+      },
+      {
+        heading: 'Edgewood, Milton, and the belongings',
+        paragraphs: [
+          'Edgewood is in Pierce County, between Milton, Fife, Puyallup, and Sumner. The Edgewood inherited-house guide covers North Hill, the valley, and the Puyallup Indian Reservation boundary question. Read that guide before you assume a King County checklist fits. Milton’s Pierce County side belongs in the Milton inherited-house guide as well as here. If the Milton parcel is on the King County side, use the King County estate guide. KindKey will not decide the side from a street name.',
+          'Contents are the other half of the work. You can hire an estate sale company, clear the house, or leave the belongings. The comparison of an estate sale and an as-is house sale explains those choices. KindKey is the buyer of the house, not the company that runs a tag sale. KindKey does not charge an agent commission or a separate assignment fee. Payoffs and liens can reduce proceeds, and the settlement statement shows them. Call (206) 519-5463 or use the cash-offer form when the signer is known, or while your attorney is still confirming the signer. Sign only after that confirmation.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Where do I open a Tacoma, Edgewood, or Puyallup probate?',
+        answer:
+          'If the decedent lived in one of those cities, Pierce County is the residence county. Filings go to the Clerk of the Superior Court at 930 Tacoma Ave S in Tacoma. Ask a probate attorney before you file. KindKey will not file for you.',
+      },
+      {
+        question: 'Does a Pierce County estate need court approval to sell the house?',
+        answer:
+          'It depends on the order. With nonintervention powers, RCW 11.68.090 allows a sale without a further court order, subject to the will and the representative’s duties. Without those powers, chapter 11.56 RCW may apply. This is not legal advice. Your attorney reads the letters.',
+      },
+      {
+        question: 'Is Milton always a Pierce County estate?',
+        answer:
+          'No. Milton is in both counties. Edgewood is not split that way. The Milton inherited-house guide and the King County estate guide cover the other side of the line.',
+      },
+      {
+        question: 'Can I ask for a cash offer before the Tacoma clerk issues letters?',
+        answer:
+          'You can request a number. Call (206) 519-5463 or use the cash-offer form. Do not accept and sign until the person title will accept has authority to sell.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/tacoma',
+        label: 'Sell a house in Tacoma',
+        description: 'North End, Hilltop, Eastside, and South Tacoma.',
+      },
+      {
+        href: '/areas/puyallup',
+        label: 'Sell a house in Puyallup',
+        description: 'Downtown and the surrounding Pierce County area.',
+      },
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'The Edgewood city page.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Inherited houses in Edgewood',
+        description: 'North Hill, the valley, and Pierce County probate.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-milton',
+        label: 'Inherited houses in Milton',
+        description: 'Pierce County or King County, depending on the parcel.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-king-county',
+        label: 'Estate houses in King County',
+        description: 'The other courthouse, in Seattle and Kent.',
+      },
+      {
+        href: '/blog/how-to-sell-an-estate-house-in-washington',
+        label: 'Step-by-step for executors',
+        description: 'How letters and nonintervention powers fit together.',
+      },
+      {
+        href: '/blog/selling-a-house-in-probate-washington',
+        label: 'Probate sales in Washington',
+        description: 'The statewide “what to expect” guide.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'The form. Asking does not obligate you to sell.',
+      },
+    ],
+    ctaTitle: 'KindKey can help with the Pierce County estate sale',
+    ctaSubtitle:
+      'We will help with the whole estate sale from start to finish. KindKey has done hundreds of these. Call (206) 519-5463 or use the cash-offer form. The Tacoma clerk and your attorney handle the case.',
+  }),
+  post('selling-an-estate-house-when-heirs-disagree', {
+    breadcrumbName: 'Heirs who disagree',
+    title: 'Selling an Estate House When Heirs Disagree or Live Out of State',
+    description:
+      'What Washington executors can do when heirs disagree or live out of state. Nonintervention powers, TEDRA petitions, and signing from afar. Not legal advice.',
+    h1: 'Selling an Estate House When Heirs Disagree or Live Out of State',
+    publishedAt: '2026-10-14',
+    intro: [
+      'Heirs can disagree about a house and still have a personal representative who is allowed to sell it. Heirs can also live in another state and still be part of the estate. Neither fact, by itself, signs the deed or blocks the deed. KindKey Home Buyers LLC can buy the house once the person with authority is ready. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form. KindKey is not a mediator, a probate attorney, or a real estate agent.',
+      'This article is general information about Washington estates, not legal advice. Talk with a Washington probate attorney before you sign, especially if someone has already objected or if a court petition is pending. KindKey will not referee the family or tell you that an objection does not matter.',
+    ],
+    callout:
+      'A disagreement does not mean you have to handle the sale alone. KindKey will help with the whole estate sale from start to finish. We have done hundreds of these, and we will not take sides in the family.',
+    sections: [
+      {
+        heading: 'Disagreement is not the same thing as authority',
+        paragraphs: [
+          'Washington appoints a personal representative. A will may call that person an executor. Letters testamentary or letters of administration are the appointment the closing agent asks to see. If the court also granted nonintervention powers, RCW 11.68.090 lets the personal representative sell the decedent’s real property without a further court order and without the confirmation steps in chapter 11.56 RCW. The sale is still subject to the will. A discretionary power has to be used in good faith, with honest judgment, and in line with the will and the interests of the beneficiaries.',
+          'A family vote is not what that statute requires, unless the will or a court order says consent is required. One heir’s objection does not, by itself, rewrite the letters. One heir’s enthusiasm does not, by itself, create letters. If nonintervention powers were never granted, the sale may have to follow chapter 11.56 RCW even when everyone agrees. Agreement and authority are separate. The step-by-step guide for executors explains how the powers are granted under RCW 11.68.011.',
+        ],
+      },
+      {
+        heading: 'How an heir asks the court to step in',
+        paragraphs: [
+          'Chapter 11.96A RCW is the Washington Trust and Estate Dispute Resolution Act, often called TEDRA. It is the procedure chapter for estate and trust disputes. RCW 11.68.070 lets a party, as that word is defined for these cases, petition the court under TEDRA for a determination that the personal representative breached a fiduciary duty, exceeded the representative’s authority, abused the representative’s discretion, otherwise failed to execute the trust faithfully, violated a statute or common law affecting the estate, or is subject to removal for a reason in RCW 11.28.250. The petition has to allege facts. It has to be verified or supported by an affidavit.',
+          'If the court finds one of those grounds, it can order a remedy. The statute’s list includes directing the personal representative to take a specific action, restricting the powers, and removing the personal representative. When powers are restricted, the restriction and the date are endorsed on the order and on the letters. A buyer and a title company will ask whether that endorsement exists. Until a court enters an order, the objection is a dispute, not a new set of letters. KindKey will not predict how a judge will rule, and KindKey will not tell you to ignore a petition that has already been filed.',
+          'If a petition is pending, ask your attorney whether the personal representative may still sign. Do not accept a purchase offer and sign a deed in the middle of that question because a buyer is ready. You can request a written offer so the family can see a number. Accepting it is a different step. KindKey will send one offer to the person who asked, for the estate. KindKey will not make separate side agreements with individual heirs for the same house.',
+        ],
+      },
+      {
+        heading: 'Out-of-state heirs and an out-of-state representative',
+        paragraphs: [
+          'Heirs do not have to live in Washington to inherit, to receive notice, or to be heard. A personal representative can live out of state and still serve if the court appointed that person and the letters are in effect. The closing agent is the one who says how a signature is taken where that person lives. KindKey does not choose notary rules and does not require a trip back to Auburn for a signing. Someone local, a lockbox, or a scheduled visit can handle a walkthrough. A listed sale is the path that usually needs more showings. KindKey does not list the house.',
+          'Distance makes contents harder, not the deed. The guide on estate sales versus selling the house as-is covers leaving belongings when nobody can fly home to empty the rooms. Take what someone can carry or ship. Leave the rest if the buyer has agreed the contents stay. Put the offer in front of the people your attorney says should see it. A group text is a poor place to amend a will.',
+        ],
+      },
+      {
+        heading: 'Occupancy, a surviving spouse, and a will that gives the house to one person',
+        paragraphs: [
+          'A relative who still lives in the house is not a problem a buyer solves by scheduling a closing. Washington law generally gives a personal representative a right to possession of estate property so the estate can be administered. A surviving spouse or domestic partner may already own a community property interest. A tenant may have a rental agreement. Ask your attorney before anyone changes the locks or tells a sibling to be out by Friday. KindKey will not take on that conversation as if it were a property manager.',
+          'A will can leave the house to one person and the rest of the estate to others. It can also direct that the house be sold. It can restrict nonintervention powers. Those sentences point in different directions, and only the document and your attorney can say which sentence controls. Do not assume a sale is forbidden because one heir was promised the house in a conversation, and do not assume a sale is allowed because the personal representative would rather have cash to divide. The King County and Pierce County estate guides cover where the case is filed if you are still choosing a courthouse. Call (206) 519-5463 when you want one number the attorney can review with the people who disagree.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can a personal representative sell if one heir objects?',
+        answer:
+          'If the representative has nonintervention powers and the will does not require consent, RCW 11.68.090 allows a sale without heir approval and without a further court order. The representative still owes duties to the beneficiaries. An heir can petition under RCW 11.68.070. Ask a probate attorney. This is not legal advice.',
+      },
+      {
+        question: 'Do all the heirs have to sign the deed?',
+        answer:
+          'Not automatically. When a personal representative has letters, that representative is often the signer. Title and your attorney decide. Heirs who are not the representative may still be entitled to notice or to a share of the proceeds. A handshake is not a deed.',
+      },
+      {
+        question: 'Can an heir who lives out of state sign?',
+        answer:
+          'Yes, if that heir is the person who must sign. The closing agent coordinates the signing where that person lives. Out-of-state heirs who are not the signer do not have to fly to Washington for a KindKey walkthrough. Call (206) 519-5463 or use the cash-offer form to start.',
+      },
+      {
+        question: 'Will KindKey negotiate between heirs?',
+        answer:
+          'No. KindKey makes one purchase offer for the house. Your attorney handles objections, TEDRA petitions, and who is allowed to accept. You can say no after you see the offer.',
+      },
+    ],
+    related: [
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign comes before an offer is accepted.',
+      },
+      {
+        href: '/blog/how-to-sell-an-estate-house-in-washington',
+        label: 'Step-by-step for executors',
+        description: 'How nonintervention powers are granted.',
+      },
+      {
+        href: '/blog/selling-a-house-in-probate-washington',
+        label: 'Probate sales in Washington',
+        description: 'What families should expect from the process.',
+      },
+      {
+        href: '/blog/estate-sale-vs-selling-the-house-as-is',
+        label: 'Estate sale vs. selling the house as-is',
+        description: 'Belongings, when the fight is about contents too.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-auburn',
+        label: 'Inherited houses in Auburn',
+        description: 'King County or Pierce County, by parcel.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-federal-way',
+        label: 'Inherited houses in Federal Way',
+        description: 'Out-of-state children and a King County estate.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Inherited houses in Edgewood',
+        description: 'A Pierce County probate for heirs who live elsewhere.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'One written number for the attorney to review.',
+      },
+    ],
+    ctaTitle: 'Reach out, even if the family is not in agreement',
+    ctaSubtitle:
+      'KindKey will help with the whole estate sale from start to finish. We have done hundreds of these. Call (206) 519-5463 or use the cash-offer form. We do not take sides. Your attorney says whether anyone may sign.',
+  }),
+  post('estate-house-repairs-mortgage-taxes-liens', {
+    breadcrumbName: 'Repairs, loans, and liens',
+    title: 'Estate House With Repairs, a Mortgage, Back Taxes, or Liens',
+    description:
+      'What to do with a Washington estate house that needs repairs or has a mortgage, back taxes, or liens. Authority to sign is separate from condition. Not legal advice.',
+    h1: 'What to Do With an Estate House That Needs Repairs or Has a Mortgage, Back Taxes, or Liens',
+    publishedAt: '2026-10-14',
+    intro: [
+      'Repairs, a mortgage, back taxes, and liens change the numbers on an estate house. They do not, by themselves, decide who may sign the deed. KindKey Home Buyers LLC buys houses in that condition as a principal, in King County and Pierce County. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form. KindKey is not a probate attorney, a lender, a tax advisor, or a contractor.',
+      'This article is general information, not legal advice. Talk with a Washington probate attorney about authority to sell, and with a tax professional about basis and gains. If the loan is in default, ask the attorney about Washington’s distressed-property rules under RCW 61.34 before you sign. KindKey does not interpret that statute.',
+    ],
+    callout:
+      'Repairs, a loan, or a tax bill do not have to be solved before you talk with someone. KindKey will help with the whole estate sale from start to finish. We have done hundreds of these, and we can look at the house as it sits.',
+    sections: [
+      {
+        heading: 'Condition and authority are separate questions',
+        paragraphs: [
+          'A leaking roof, a stopped remodel, or a house full of deferred maintenance can be sold as it sits. The personal representative still needs letters testamentary or letters of administration, and the order on nonintervention powers. If those powers were granted, RCW 11.68.090 lets the personal representative sell the decedent’s real property without a further court order, subject to the will and the representative’s duties. If they were not granted, or if a later order restricts them, chapter 11.56 RCW may require court involvement. A bad roof does not skip that reading. A new roof does not create letters.',
+          'RCW 11.68.011 is the statute on granting nonintervention powers. Unless the will tells the court not to grant them, the grant turns on solvency, counting probate and nonprobate assets, and on whether the petitioner fits a path in the statute. One path is the person named in the probated will. The step-by-step guide for executors covers the petition and the notice rules. The King County and Pierce County estate guides cover which clerk gets the filing. KindKey will not open the estate because the house needs work.',
+        ],
+      },
+      {
+        heading: 'Selling without repairing first',
+        paragraphs: [
+          'You can ask for a cash offer without a contractor bid or a pre-inspection. KindKey prices the house you have. An offer on a house that needs a roof is not a retail price for a repaired house. KindKey may repair, hold, rent, or resell after closing. You are not charged an agent commission or a separate assignment fee. A countywide discount quoted before anyone sees the property is a guess.',
+          'A listing is the other path, if a broker and your attorney think retail buyers will wait through the repairs or buy the project. Hire a licensed broker for that. KindKey will not list the house. The Edgewood guide on houses that need major repairs is a city-level look at permits and North Hill houses. The as-is page and the hoarder-house page cover condition more broadly. Belongings left in a rough house are covered in the estate-sale comparison. You can leave them.',
+        ],
+      },
+      {
+        heading: 'A mortgage on the estate house',
+        paragraphs: [
+          'A mortgage does not disappear because the borrower died. The closing agent orders a payoff. If the purchase price covers that payoff and the other amounts that have to be paid to deliver the title the contract requires, those amounts are commonly paid at closing from the proceeds. The settlement statement shows the figures before you sign. If the price does not cover them, the sale may not close unless the lender agrees to a different number. KindKey will not negotiate with the lender as the estate’s representative.',
+          'A missed payment adds a second clock to the probate calendar. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret them and will not tell you an estate is exempt. The statewide guide on selling before foreclosure, and the city guides for Auburn, Federal Way, Milton, and Edgewood, describe the notice side of that problem. Read them with your attorney if a trustee’s notice has already arrived. An offer from KindKey does not, by itself, stop a foreclosure sale.',
+        ],
+      },
+      {
+        heading: 'Back taxes and other liens',
+        paragraphs: [
+          'Delinquent property taxes are a title issue the closing agent will list. On a King County parcel, the tax questions go to King County. On a Pierce County parcel, they go to Pierce County. Auburn and Milton can fall in either county, so the bill’s letterhead matters more than the city name. If the sale price covers the taxes that have to be paid to close, they are commonly paid from proceeds and shown on the settlement statement. KindKey does not give advice about penalties, interest, or a county tax-foreclosure process, and KindKey does not give advice about the income-tax basis of an inherited house.',
+          'Other liens show up the same way: a judgment, a homeowners association claim, a municipal utility balance, a child-support lien, or a tax lien recorded against the owner. The title report is the list. A creditor claim filed in the estate is not automatically the same thing as a lien on the house. The personal representative and the attorney handle claims. A recorded lien that title requires to be paid still has to be paid or otherwise resolved before the deed the buyer expects can be delivered. A sale does not erase a lien that the settlement statement did not pay.',
+        ],
+      },
+      {
+        heading: 'A practical order',
+        paragraphs: [
+          'Ask the attorney who can sign and whether court approval of the sale is required. Tell KindKey about the roof, the mortgage, the tax bill, and any lien you already know about, so the offer is built on the real file. You can request that offer while title is being opened and while letters are still being prepared. Review the settlement statement before you sign. Reject the offer if the net number is wrong for the estate. The personal representative’s duty to the beneficiaries includes looking at that number honestly. KindKey’s duty is the buyer’s duty in the contract.',
+          'Code letters from a city do not appoint a personal representative, and they do not have to be cured before an as-is offer. The city still controls its own file. If heirs disagree about whether to sell a house that needs work, use the guide on heirs who disagree or live out of state. Call (206) 519-5463 or use the cash-offer form when you want the condition and the liens priced together.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does the estate have to repair the house before selling it?',
+        answer:
+          'No. KindKey buys estate houses as they sit, including heavy repairs. The offer reflects that condition. A listing with a broker is available if you hire one. KindKey will not list the house.',
+      },
+      {
+        question: 'Can an estate house with a mortgage be sold?',
+        answer:
+          'Yes, when the person with authority can sign and the closing can pay what title requires, or the lender agrees to something else. KindKey does not negotiate the payoff for you. The settlement statement shows the numbers. Call (206) 519-5463 or use the cash-offer form to ask for an offer.',
+      },
+      {
+        question: 'Who pays back property taxes?',
+        answer:
+          'Delinquent taxes that must be paid to close are commonly paid from the sale proceeds and listed on the settlement statement. Which county is owed the tax depends on the parcel. KindKey does not give tax advice. Talk with a tax professional about basis and gains, and with your attorney about authority.',
+      },
+      {
+        question: 'Do liens or repairs change whether the court must approve the sale?',
+        answer:
+          'The approval question comes from the letters, the will, and any later order restricting nonintervention powers. RCW 11.68.090 and chapter 11.56 RCW are the places your attorney starts. A repair list does not replace that reading. This article is not legal advice.',
+      },
+    ],
+    related: [
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'The service page for estate sales.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'Repairs do not have to be finished first.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'When the estate loan is also in default.',
+      },
+      {
+        href: '/blog/how-to-sell-an-estate-house-in-washington',
+        label: 'Step-by-step for executors',
+        description: 'Letters and when court approval is required.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Selling before foreclosure in Washington',
+        description: 'The notice, the payoff, and RCW 61.34.',
+      },
+      {
+        href: '/blog/behind-on-property-taxes-edgewood-wa',
+        label: 'Behind on property taxes in Edgewood',
+        description: 'A Pierce County tax example on one city’s houses.',
+      },
+      {
+        href: '/blog/sell-house-needing-repairs-edgewood-wa',
+        label: 'Major repairs in Edgewood',
+        description: 'Permits and condition on North Hill and in the valley.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-when-heirs-disagree',
+        label: 'When heirs disagree',
+        description: 'If the family cannot agree to sell a house that needs work.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Include the mortgage, the taxes, and the condition.',
+      },
+    ],
+    ctaTitle: 'We can help even when the house needs work or has a lien',
+    ctaSubtitle:
+      'KindKey will help with the whole estate sale from start to finish. We have done hundreds of these. Call (206) 519-5463 or use the cash-offer form. Your attorney confirms who can sign, and the settlement statement shows what gets paid.',
+  }),
   post('sell-my-house-fast-for-cash-edgewood', {
     breadcrumbName: 'Sell fast for cash in Edgewood',
     title: 'Sell My House Fast for Cash in Edgewood, WA',
@@ -196,6 +890,11 @@ export const blogPosts: BlogPost[] = [
         href: '/blog/selling-a-house-in-probate-washington',
         label: 'Probate sales in Washington',
         description: 'Authority to sign, before any city detail.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-pierce-county',
+        label: 'Estate houses in Pierce County',
+        description: 'The county guide for Tacoma, Edgewood, Milton, and Puyallup.',
       },
       {
         href: '/blog/selling-an-inherited-or-probate-house-milton',
@@ -488,6 +1187,11 @@ export const blogPosts: BlogPost[] = [
         href: '/blog/selling-a-house-in-probate-washington',
         label: 'Probate sales in Washington',
         description: 'What families should expect before the local details.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-when-heirs-disagree',
+        label: 'When heirs disagree or live out of state',
+        description: 'When heirs live across the county line or out of state.',
       },
       {
         href: '/blog/selling-an-inherited-or-probate-house-edgewood',
@@ -786,6 +1490,11 @@ export const blogPosts: BlogPost[] = [
         description: 'Who can sign, before the city details.',
       },
       {
+        href: '/blog/selling-an-estate-house-in-king-county',
+        label: 'Estate houses in King County',
+        description: 'The county guide Federal Way shares with Kent, Auburn, and Seattle.',
+      },
+      {
         href: '/blog/selling-an-inherited-or-probate-house-edgewood',
         label: 'Inherited houses in Edgewood',
         description: 'Pierce County Superior Court in Tacoma.',
@@ -982,6 +1691,16 @@ export const blogPosts: BlogPost[] = [
         href: '/blog/selling-a-house-in-probate-washington',
         label: 'Probate sales in Washington',
         description: 'The statewide explanation of who can sign.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-king-county',
+        label: 'Estate houses in King County',
+        description: 'Auburn’s King County side, plus Kent, Federal Way, and Seattle.',
+      },
+      {
+        href: '/blog/estate-house-repairs-mortgage-taxes-liens',
+        label: 'Repairs, mortgages, taxes, and liens',
+        description: 'When the Auburn estate house also has a loan or a tax bill.',
       },
       {
         href: '/blog/how-to-sell-my-house-fast-for-cash-auburn',
@@ -1359,6 +2078,21 @@ export const blogPosts: BlogPost[] = [
         description: 'When the practical problem is the property, not only the court file.',
       },
       {
+        href: '/blog/how-to-sell-an-estate-house-in-washington',
+        label: 'Step-by-step for executors',
+        description: 'Letters, nonintervention powers, and the order of work.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-king-county',
+        label: 'Estate houses in King County',
+        description: 'Seattle and Kent courthouses, Auburn, Kent, and Federal Way.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-pierce-county',
+        label: 'Estate houses in Pierce County',
+        description: 'Tacoma, Edgewood, Milton, and Puyallup.',
+      },
+      {
         href: '/cash-offer',
         label: 'Request a cash offer',
         description: 'After you know who can sign.',
@@ -1717,6 +2451,16 @@ export const blogPosts: BlogPost[] = [
         href: '/blog/selling-a-house-in-probate-washington',
         label: 'Probate in Washington',
         description: 'What families should expect from the process.',
+      },
+      {
+        href: '/blog/estate-sale-vs-selling-the-house-as-is',
+        label: 'Estate sale vs. selling the house as-is',
+        description: 'Contents, estate sale companies, and leaving belongings behind.',
+      },
+      {
+        href: '/blog/how-to-sell-an-estate-house-in-washington',
+        label: 'Step-by-step for executors',
+        description: 'Who can sign, before the clean-out.',
       },
     ],
     ctaTitle: 'Tell KindKey the house is vacant or inherited',

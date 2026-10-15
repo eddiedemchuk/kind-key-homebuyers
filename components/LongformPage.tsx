@@ -62,6 +62,23 @@ export default function LongformPage({
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
+            {content.callout ? (
+              <aside className="mt-8 rounded-lg border border-divider bg-primary px-5 py-4 text-text-primary">
+                <p className="text-lg leading-relaxed">{content.callout}</p>
+                <p className="mt-3 text-base text-text-secondary">
+                  Call{' '}
+                  <a href="tel:+12065195463" className="font-semibold text-divider hover:underline">
+                    (206) 519-5463
+                  </a>{' '}
+                  or use the{' '}
+                  <Link href="/cash-offer" className="font-semibold text-divider hover:underline">
+                    cash-offer form
+                  </Link>
+                  . You can reach out whenever you are ready, and asking does not obligate you to
+                  sell.
+                </p>
+              </aside>
+            ) : null}
             <Link
               href="/cash-offer"
               className="mt-8 inline-block rounded-lg bg-divider px-6 py-3 font-semibold text-white transition-colors hover:bg-divider/90"
