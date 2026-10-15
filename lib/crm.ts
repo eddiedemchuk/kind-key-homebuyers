@@ -4,10 +4,10 @@ interface CRMInput {
   email?: string;
   reasonForSelling?: string;
   propertyAddress: string;
-  city: string;
-  condition: string;
-  timeframe: string;
-  preferredContact: string;
+  city?: string;
+  condition?: string;
+  timeframe?: string;
+  preferredContact?: string;
   smsNonMarketingConsent?: boolean;
   smsMarketingConsent?: boolean;
   utm?: string;
@@ -37,9 +37,9 @@ export async function postToCRM(data: CRMInput): Promise<boolean> {
   const lastName = restName.length ? restName.join(' ') : undefined;
 
   const noteLines = [
-    `Property condition: ${data.condition}`,
-    `Preferred contact: ${data.preferredContact}`,
-    `Timeframe to sell: ${data.timeframe}`,
+    data.condition ? `Property condition: ${data.condition}` : null,
+    data.preferredContact ? `Preferred contact: ${data.preferredContact}` : null,
+    data.timeframe ? `Timeframe to sell: ${data.timeframe}` : null,
     data.smsNonMarketingConsent !== undefined
       ? `SMS non-marketing consent: ${data.smsNonMarketingConsent ? 'yes' : 'no'}`
       : null,

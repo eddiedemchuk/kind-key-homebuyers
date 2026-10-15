@@ -7,12 +7,12 @@ import {
   deriveLeadSource,
   emptyTouch,
   encodeAttribution,
-  ghlTagsForLeadSource,
   mergeAttribution,
   readAttributionFromCookieHeader,
   resolveSubmissionAttribution,
   touchFromLanding,
 } from './attribution';
+import { resolveFormOrigin } from './form-origin';
 import { buildGhlPayload } from './ghl';
 
 const NOW = Date.parse('2026-10-15T16:00:00.000Z');
@@ -223,6 +223,19 @@ describe('submission resolution', () => {
   });
 });
 
+describe('resolveFormOrigin', () => {
+  it('accepts only the form allowlist', () => {
+    assert.equal(resolveFormOrigin('website'), 'website');
+    assert.equal(resolveFormOrigin('google_ads_landing'), 'google_ads_landing');
+    assert.equal(resolveFormOrigin('facebook_ads_landing'), 'facebook_ads_landing');
+    assert.equal(resolveFormOrigin('Google Ads'), 'website');
+    assert.equal(resolveFormOrigin('facebook'), 'website');
+    assert.equal(resolveFormOrigin('google ads'), 'website');
+    assert.equal(resolveFormOrigin(undefined), 'website');
+    assert.equal(resolveFormOrigin(['google_ads_landing']), 'website');
+  });
+});
+
 describe('buildGhlPayload', () => {
   const lead = {
     name: 'Ada Lovelace',
@@ -257,16 +270,19 @@ describe('buildGhlPayload', () => {
       }),
     });
 
-    assert.equal(payload.source, 'Google Ads');
-    assert.equal(payload.lead_source, 'Google Ads');
-    assert.equal(payload.source_tag, 'google ads');
-    assert.equal(payload.tags, ghlTagsForLeadSource('Google Ads'));
-    assert.equal(payload.tags, 'website lead, google ads');
+    assert.equal(payload.source, 'Website');
+    assert.equal(payload.lead_source, 'Website');
+    assert.equal(payload.click_source, 'Google Ads');
+    assert.equal(payload.form_name, 'Website Form');
+    assert.equal(payload.form_origin, 'website');
+    assert.equal(payload.source_tag, 'website');
+    assert.equal(payload.tags, 'website lead, website');
     assert.equal(payload.channel, 'Website');
     assert.equal(payload.gclid, 'gclid-1');
     assert.equal(payload.utm_campaign, 'brand');
     assert.equal(payload.utm_term, 'sell house fast');
-    assert.match(String(payload.attribution_notes), /Lead source: Google Ads/);
+    assert.match(String(payload.attribution_notes), /Lead source: Website/);
+    assert.match(String(payload.attribution_notes), /Click source: Google Ads/);
     assert.match(String(payload.attribution_notes), /gclid: gclid-1/);
     assert.equal(payload.phone, '+12535550100');
     assert.equal(payload.first_name, 'Ada');
@@ -281,20 +297,71 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.opportunity, undefined);
   });
 
-  it('labels a direct lead and still sends the original website lead tag', () => {
+  it('labels a direct website lead and still sends the original website lead tag', () => {
     const payload = buildGhlPayload({ ...lead, attribution: touch() });
-    assert.equal(payload.source, 'Direct/Website');
+    assert.equal(payload.source, 'Website');
+    assert.equal(payload.lead_source, 'Website');
+    assert.equal(payload.click_source, 'Direct/Website');
     assert.equal(payload.source_tag, 'website');
     assert.equal(payload.tags, 'website lead, website');
+    assert.equal(payload.form_name, 'Website Form');
   });
 
-  it('labels a Facebook click', () => {
+  it('labels an offer-page lead that omits the long-form fields', () => {
+    const payload = buildGhlPayload({
+      name: 'Ada Lovelace',
+      phone: '+1(253) 555-0100',
+      propertyAddress: '123 Main St',
+      smsNonMarketingConsent: false,
+      smsMarketingConsent: false,
+      pagePath: '/offer',
+      formOrigin: 'google_ads_landing',
+      attribution: touch({
+        landing_page: 'https://kindkeyhomebuyers.com/offer',
+      }),
+    });
+    assert.equal(payload.source, 'Google Ads');
+    assert.equal(payload.lead_source, 'Google Ads');
+    assert.equal(payload.source_tag, 'google ads');
+    assert.equal(payload.tags, 'website lead, google ads');
+    assert.equal(payload.form_name, 'Google Ads Landing Page');
+    assert.equal(payload.form_origin, 'google_ads_landing');
+    assert.equal(payload.click_source, 'Direct/Website');
+    assert.equal(payload.city, '');
+    assert.equal(payload.condition, '');
+    assert.equal(payload.timeframe, '');
+    assert.equal(payload.preferred_contact, '');
+    assert.equal(payload.page_path, '/offer');
+  });
+
+  it('keeps a Facebook click on the website form as click_source only', () => {
     const payload = buildGhlPayload({
       ...lead,
+      formOrigin: 'website',
       attribution: touch({ fbclid: 'fb-9', utm_source: 'facebook', utm_medium: 'paid' }),
     });
-    assert.equal(payload.source, 'Facebook Ads');
-    assert.equal(payload.tags, 'website lead, facebook ads');
+    assert.equal(payload.source, 'Website');
+    assert.equal(payload.lead_source, 'Website');
+    assert.equal(payload.source_tag, 'website');
+    assert.equal(payload.tags, 'website lead, website');
+    assert.equal(payload.click_source, 'Facebook Ads');
     assert.equal(payload.fbclid, 'fb-9');
+    assert.equal(payload.utm_source, 'facebook');
+  });
+
+  it('labels the Facebook ads landing form even when the click is from Google', () => {
+    const payload = buildGhlPayload({
+      ...lead,
+      pagePath: '/offer',
+      formOrigin: 'facebook_ads_landing',
+      attribution: touch({ gclid: 'gclid-1', utm_source: 'google', utm_medium: 'cpc' }),
+    });
+    assert.equal(payload.source, 'Facebook Ads');
+    assert.equal(payload.lead_source, 'Facebook Ads');
+    assert.equal(payload.source_tag, 'facebook ads');
+    assert.equal(payload.tags, 'website lead, facebook ads');
+    assert.equal(payload.form_name, 'Facebook Ads Landing Page');
+    assert.equal(payload.click_source, 'Google Ads');
+    assert.equal(payload.gclid, 'gclid-1');
   });
 });

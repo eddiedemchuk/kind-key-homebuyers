@@ -238,25 +238,19 @@ export function deriveLeadSource(touch: AttributionTouch): LeadSource {
   return 'Direct/Website';
 }
 
-export function sourceTagForLeadSource(
-  leadSource: LeadSource
-): 'google ads' | 'facebook ads' | 'website' {
-  if (leadSource === 'Google Ads') return 'google ads';
-  if (leadSource === 'Facebook Ads') return 'facebook ads';
-  return 'website';
-}
-
 export const GHL_BASE_TAG = 'website lead';
 
-export function ghlTagsForLeadSource(leadSource: LeadSource): string {
-  return `${GHL_BASE_TAG}, ${sourceTagForLeadSource(leadSource)}`;
-}
-
-export function formatAttributionNotes(touch: AttributionTouch, leadSource: LeadSource): string {
+export function formatAttributionNotes(
+  touch: AttributionTouch,
+  form: { leadSource: string; sourceTag: string; formName: string },
+  clickSource: LeadSource
+): string {
   const line = (label: string, value: string) => `${label}: ${value || '—'}`;
   return [
-    `Lead source: ${leadSource}`,
-    `Tag: ${sourceTagForLeadSource(leadSource)}`,
+    `Form: ${form.formName}`,
+    `Lead source: ${form.leadSource}`,
+    `Tag: ${form.sourceTag}`,
+    `Click source: ${clickSource}`,
     line('Landing page', touch.landing_page),
     line('Referrer', touch.referrer),
     line('utm_source', touch.utm_source),

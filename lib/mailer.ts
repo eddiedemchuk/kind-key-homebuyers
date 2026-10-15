@@ -34,10 +34,10 @@ export async function sendLeadEmail(lead: {
   email?: string;
   reasonForSelling?: string;
   propertyAddress: string;
-  city: string;
-  condition: string;
-  timeframe: string;
-  preferredContact: string;
+  city?: string;
+  condition?: string;
+  timeframe?: string;
+  preferredContact?: string;
   smsNonMarketingConsent?: boolean;
   smsMarketingConsent?: boolean;
   pagePath?: string;
@@ -75,10 +75,10 @@ export async function sendLeadEmail(lead: {
     <p><strong>Phone:</strong> ${lead.phone && lead.phone.trim() !== '+1' ? lead.phone : 'Not provided'}</p>
     ${lead.email ? `<p><strong>Email:</strong> ${lead.email}</p>` : ''}
     <hr>
-    <p><strong>Property Address:</strong><br>${lead.propertyAddress}<br>${lead.city}</p>
-    <p><strong>Condition:</strong> ${conditionLabels[lead.condition] || lead.condition}</p>
-    <p><strong>Timeframe:</strong> ${timeframeLabels[lead.timeframe] || lead.timeframe}</p>
-    <p><strong>Preferred Contact:</strong> ${contactLabels[lead.preferredContact] || lead.preferredContact}</p>
+    <p><strong>Property Address:</strong><br>${lead.propertyAddress}${lead.city ? `<br>${lead.city}` : ''}</p>
+    ${lead.condition ? `<p><strong>Condition:</strong> ${conditionLabels[lead.condition] || lead.condition}</p>` : ''}
+    ${lead.timeframe ? `<p><strong>Timeframe:</strong> ${timeframeLabels[lead.timeframe] || lead.timeframe}</p>` : ''}
+    ${lead.preferredContact ? `<p><strong>Preferred Contact:</strong> ${contactLabels[lead.preferredContact] || lead.preferredContact}</p>` : ''}
     ${lead.smsNonMarketingConsent !== undefined ? `<p><strong>SMS non-marketing consent:</strong> ${lead.smsNonMarketingConsent ? 'Yes' : 'No'}</p>` : ''}
     ${lead.smsMarketingConsent !== undefined ? `<p><strong>SMS marketing consent:</strong> ${lead.smsMarketingConsent ? 'Yes' : 'No'}</p>` : ''}
     ${lead.reasonForSelling ? `<p><strong>Reason for selling:</strong><br>${lead.reasonForSelling}</p>` : ''}

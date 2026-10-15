@@ -71,7 +71,7 @@ export default function ThankYouPage() {
                 We've received your information and will reach out within one business day.
               </p>
               <p className="mb-8 text-lg text-text-secondary">
-                Prefer Text? Text us at the number you provided, and we\'ll respond as soon as
+                Prefer Text? Text us at the number you provided, and we&apos;ll respond as soon as
                 possible.
               </p>
             </div>
@@ -79,8 +79,8 @@ export default function ThankYouPage() {
             <div className="mb-8 rounded-lg border border-divider bg-white p-8 shadow-lg">
               <h2 className="mb-4 text-2xl font-semibold text-text-primary">What's Next?</h2>
               <ol className="list-inside list-decimal space-y-3 text-left text-text-secondary">
-                <li>We\'ll review your property information</li>
-                <li>We\'ll contact you via your preferred method</li>
+                <li>We&apos;ll review your property information</li>
+                <li>We&apos;ll contact you via your preferred method</li>
                 <li>Schedule a quick walkthrough (virtual or in-person)</li>
                 <li>Receive your transparent, no-obligation cash offer</li>
               </ol>

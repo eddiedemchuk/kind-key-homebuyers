@@ -69,10 +69,13 @@ function currentLandingTouch(now: Date): AttributionTouch {
 }
 
 /** Reads the current URL, merges it with the stored first touch, and persists the winner. */
-export function captureAttribution(now = new Date()): AttributionTouch {
+export function captureAttribution(
+  now = new Date(),
+  incoming?: AttributionTouch
+): AttributionTouch {
   const timestamp = now.getTime();
   const existing = preferStoredTouch(readLocal(timestamp), readBrowserCookie(timestamp), timestamp);
-  const merged = mergeAttribution(existing, currentLandingTouch(now), timestamp);
+  const merged = mergeAttribution(existing, incoming ?? currentLandingTouch(now), timestamp);
   writeLocal(merged);
   writeBrowserCookie(merged);
   return merged;

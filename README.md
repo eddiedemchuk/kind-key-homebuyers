@@ -99,13 +99,16 @@ the current differences between source usage and `render.yaml` declarations.
 
 ### Lead submission
 
-1. `components/LeadForm.tsx` validates input with the shared Zod schema and requests a reCAPTCHA
-   token when the public key is configured.
+1. `components/LeadForm.tsx` and the `/offer` short form (`components/OfferLeadForm.tsx`) validate
+   input and request a reCAPTCHA token when the public key is configured. The short form leaves
+   city, condition, timeframe, and preferred contact unset; those fields stay required on the
+   full form.
 2. The browser posts the lead, page path, and available campaign attribution to `POST /api/lead`.
 3. The route applies the Upstash limit when both Redis variables exist, validates the payload, and
    verifies any supplied reCAPTCHA token server-side.
 4. The validated lead is offered independently to GoHighLevel, the CRM, Telegram, and SMTP.
-   GoHighLevel receives the derived traffic source and the stored UTM / click-id fields.
+   GoHighLevel receives the form origin as `source` and `lead_source`, and still stores the UTM
+   values and click ids. `click_source` keeps the click-derived label for reference.
 5. `Promise.allSettled` prevents one delivery failure from cancelling the other providers.
 6. A successful response triggers analytics, queues the Google Ads submit conversion, and either
    calls the form's success handler or redirects to `/thank-you`.

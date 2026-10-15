@@ -1,11 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Script from 'next/script';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import MobileStickyButton from '@/components/MobileStickyButton';
-import CookieConsent from '@/components/CookieConsent';
-import ChatWidgetOffset from '@/components/ChatWidgetOffset';
 import AttributionCapture from '@/components/AttributionCapture';
 import { localBusinessJsonLd, SITE_URL } from '@/lib/site';
 import './globals.css';
@@ -42,6 +37,7 @@ export const metadata: Metadata = {
     'sell house fast',
   ],
   authors: [{ name: 'KindKey Home Buyers LLC' }],
+  // Indexing defaults live on the marketing layout. /offer sets noindex itself.
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -58,10 +54,6 @@ export const metadata: Metadata = {
     description:
       'KindKey Home Buyers LLC is a principal buyer based in Auburn, Washington. Sell your King or Pierce County house as-is with a transparent cash offer.',
     images: [shareImage.url],
-  },
-  robots: {
-    index: true,
-    follow: true,
   },
   icons: {
     icon: [
@@ -193,14 +185,6 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.google.com" />
         <link rel="preconnect" href="https://www.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preload" as="image" href="/logo2.avif" fetchPriority="high" />
-        <link
-          rel="preload"
-          as="image"
-          href="/logo3.avif"
-          fetchPriority="high"
-          media="(max-width: 767px)"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -209,20 +193,8 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <Header />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
-        <MobileStickyButton />
-        <CookieConsent />
+        {children}
         <AttributionCapture />
-        <ChatWidgetOffset />
-        <Script
-          id="leadconnector-chat-widget"
-          src="https://widgets.leadconnectorhq.com/loader.js"
-          strategy="lazyOnload"
-          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-          data-widget-id="6abd7b3db9739b95923d98c3"
-        />
       </body>
     </html>
   );
