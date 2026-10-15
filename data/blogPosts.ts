@@ -5,6 +5,9 @@ const blog = { name: 'Blog', path: '/blog' };
 
 const publishedAt = '2026-10-08';
 
+const foreclosureProfessionals =
+  'KindKey Home Buyers are foreclosure professionals. We have bought hundreds of houses that were facing foreclosure, and we work fast to close on the house before the foreclosure sale date so you can protect your credit and walk away with your equity.';
+
 function post(
   slug: string,
   data: Omit<BlogPost, 'slug' | 'path' | 'publishedAt' | 'updatedAt' | 'breadcrumbs'> & {
@@ -238,6 +241,832 @@ export const blogPosts: BlogPost[] = [
     ctaTitle: 'Behind on property taxes? Ask for a direct offer',
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. We can buy the house directly. We work to close before a tax foreclosure, and we do not guarantee the county will stop. You can say no.',
+  }),
+  post('notice-of-default-washington', {
+    breadcrumbName: 'Notice of default',
+    title: 'Got a Notice of Default in Washington? What It Means and What to Do Next',
+    description:
+      'What a Washington notice of default means under the Deed of Trust Act, what the next 30 days are for, and how a cash sale compares. KindKey is a buyer. Not legal advice.',
+    h1: 'Got a Notice of Default in Washington? What It Means and What to Do Next',
+    publishedAt: '2026-10-15',
+    intro: [
+      'A notice of default is the Washington paper that says the beneficiary on your deed of trust has declared the loan in default. For many homeowners it is the first formal foreclosure letter, and it is a hard envelope to open. It is not the auction, and it is not a judgment that the house is already gone. King County and Pierce County use the same statute. The county on the deed is where a later notice of sale gets recorded.',
+      'KindKey Home Buyers LLC buys houses from people who have fallen behind. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form. We are not your lender, a housing counselor, or a law firm. This is general information about nonjudicial foreclosure, not legal advice. Talk with a Washington attorney or a HUD-approved housing counselor before you rely on a date.',
+    ],
+    callout:
+      foreclosureProfessionals +
+      ' A notice of default is early enough to ask what a sale would look like. We do not promise that any particular house will close by a set day.',
+    sections: [
+      {
+        heading: 'What this notice is saying',
+        paragraphs: [
+          'Most Washington home loans use a deed of trust. The usual foreclosure is nonjudicial, under the Deed of Trust Act, chapter 61.24 RCW, so a trustee can sell without filing a lawsuit. A judicial foreclosure under chapter 61.12 RCW arrives as a summons instead. If a summons is what you received, call a lawyer and do not use this timeline. A homeowners’ association letter can also look official and still follow different rules. Read the sender.',
+          'RCW 61.24.030(8) requires a written notice of default at least 30 days before a notice of sale is recorded, transmitted, or served, on the loans that subsection covers. For a house of up to four units, the notice should describe the property, name the recording county, state the default, and list the amount to reinstate before a notice of sale is recorded. Newer notices name the beneficiary, the servicer, and the trustee at the top. Write those three names down.',
+        ],
+      },
+      {
+        heading: 'The 30 days, then a longer sale notice',
+        paragraphs: [
+          'The form for a one-to-four unit house says that if you do nothing, a notice of sale may issue as soon as 30 days from the notice of default, and that the notice of sale gives a minimum of 120 days’ notice of the actual sale. If you already received a letter under RCW 61.24.031, one sentence in the statute uses 150 days. People call this a roughly 120-day timeline. It is a minimum in the law, not a date you should invent by counting forward on a calendar.',
+          'That earlier letter is how many foreclosures actually start. If you do not respond, a notice of default may follow 30 days after the contact rules are met. If you do respond, the statute allows 90 days from the first contact before the notice of default. Commercial loans and some seller-financed sales are outside that section. KindKey will not tell you which one you have. RCW 61.24.040 then says the notice of sale is recorded at least 90 days before the sale, or at least 120 days before it when the 61.24.031 letter was required.',
+        ],
+      },
+      {
+        heading: 'Mediation, a cure, and a counselor',
+        paragraphs: [
+          'Foreclosure Fairness Act mediation is RCW 61.24.163. You do not refer yourself. A housing counselor or a Washington attorney refers you after this notice, and no later than 90 days before the sale date on a notice of trustee’s sale. Some deeds of trust are excluded, and some smaller banks can certify an exemption. When a referral is proper, the trustee generally waits to record the notice of sale, or to hold the sale, until mediation is finished. The meeting can discuss a workout. It does not guarantee you keep the house.',
+          'Reinstatement is separate. This notice lists a cure amount for the period before a notice of sale is recorded. After a sale is scheduled, RCW 61.24.090 lets you discontinue it by curing the default before the eleventh day before the sale, or before the eleventh day before a continued sale. You pay the trustee, not a home buyer. The state Department of Commerce publishes a free counseling line at 1-877-894-HOME (4663). Your notice may print that number or a newer one. Use the number on the paper, or another HUD-approved counselor.',
+        ],
+      },
+      {
+        heading: 'Selling while the notice is still early',
+        paragraphs: [
+          'You can ask for a cash offer without catching up the mortgage or repairing the house. If you accept, the closing agent orders the payoff. Proceeds can pay the loan and other required liens when the price covers them. If it does not, the lender has to agree. You should see that on a settlement statement before you sign a deed. Equity is what remains after those amounts, and some houses have none. KindKey does not charge an agent commission or a separate assignment fee. An offer does not stop the notice.',
+          'A completed trustee’s sale is what this letter is pointing toward. Selling before that date is how many owners pay the loan, keep what is left, and try to avoid a foreclosure entry on a credit report. Late payments may already be there. KindKey cannot promise a score. Washington’s distressed-property rules are RCW 61.34. We do not interpret them. Do not deed the house away outside escrow. Guides for Auburn, Federal Way, Edgewood, and Milton, and the Kent foreclosure page, sit next to this one. Your notice still controls the dates.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Is a notice of default the same as a notice of trustee’s sale?',
+        answer:
+          'No. The notice of default comes first. For loans covered by RCW 61.24.030(8), it is sent at least 30 days before a notice of sale is recorded, transmitted, or served. The later notice is the one that sets a sale date.',
+      },
+      {
+        question: 'Does calling KindKey stop the foreclosure?',
+        answer:
+          'No. Call (206) 519-5463 or use the cash-offer form if you want a number to review with your attorney or a counselor. The call does not postpone a trustee. A completed sale might pay the loan if the payoff and the date allow it.',
+      },
+      {
+        question: 'Can I reinstate instead of selling?',
+        answer:
+          'Often, if you can pay the cure. The notice lists a figure for the period before a notice of sale is recorded. RCW 61.24.090 later puts the cure on the eleventh day before the sale. Confirm the amount with the trustee. KindKey does not collect it.',
+      },
+      {
+        question: 'Who else should I call?',
+        answer:
+          'A HUD-approved housing counselor or a Washington attorney. Commerce’s free line is 1-877-894-HOME (4663), and your notice may print the current hotline. This article is not legal advice.',
+      },
+    ],
+    related: [
+      {
+        href: '/blog/notice-of-trustee-sale-washington',
+        label: 'Notice of trustee sale in Washington',
+        description: 'What changes once a sale date is on the paper.',
+      },
+      {
+        href: '/blog/washington-foreclosure-mediation-vs-selling',
+        label: 'Mediation or a sale',
+        description: 'How the Foreclosure Fairness Act compares with selling.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Sell before foreclosure in Washington',
+        description: 'The statewide guide to a sale before the auction.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-auburn-wa',
+        label: 'Avoiding foreclosure in Auburn',
+        description: 'Most parcels are King County. The south end can be Pierce.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-federal-way-wa',
+        label: 'Avoiding foreclosure in Federal Way',
+        description: 'King County recording, west of Auburn.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'Pierce County recording for an Edgewood house.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-milton-wa',
+        label: 'Avoiding foreclosure in Milton',
+        description: 'The notice may be King County or Pierce County.',
+      },
+      {
+        href: '/areas/kent/sell-house-before-foreclosure',
+        label: 'Sell before foreclosure in Kent',
+        description: 'The Kent page for a sale before the auction.',
+      },
+    ],
+    ctaTitle: 'Ask what a sale would look like before the next notice',
+    ctaSubtitle:
+      foreclosureProfessionals +
+      ' Call (206) 519-5463 or use the cash-offer form. We work fast to close before your sale date, and we do not promise a close on a set number of days.',
+  }),
+  post('notice-of-trustee-sale-washington', {
+    breadcrumbName: 'Notice of trustee sale',
+    title:
+      'Notice of Trustee Sale in Washington: How Much Time You Have and How to Stop Losing Your Equity',
+    description:
+      'How much time a Washington notice of trustee’s sale gives you, the roughly 120-day timeline, and how owners protect equity. KindKey is a buyer. Not legal advice.',
+    h1: 'Notice of Trustee Sale in Washington: How Much Time You Have and How to Stop Losing Your Equity',
+    publishedAt: '2026-10-15',
+    intro: [
+      'A notice of trustee’s sale means a sale date is now on paper. That is further along than a notice of default, and it is reasonable to feel the room get smaller. The date, time, and place printed on your notice are the ones that matter. A blog can explain the statute. It cannot adjourn your sale. If the house is in King County or Pierce County, the recording office follows the deed, and the Deed of Trust Act is still the law.',
+      'KindKey Home Buyers LLC is an Auburn buyer at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form if you want a number to set next to that date. We are not the trustee and not your lawyer. This article is general information about nonjudicial foreclosure, not legal advice. Please talk with a Washington attorney or a HUD-approved housing counselor before you treat any day as your last day.',
+    ],
+    callout:
+      foreclosureProfessionals +
+      ' If a sale date is already printed, that is the date we plan around. We do not promise that any particular house will close by a set day.',
+    sections: [
+      {
+        heading: 'What the notice of sale actually does',
+        paragraphs: [
+          'This is still nonjudicial foreclosure under the Deed of Trust Act, chapter 61.24 RCW. A summons would be a judicial case under chapter 61.12 RCW instead. RCW 61.24.040 tells the trustee to record the notice where the deed of trust is recorded, mail it, and post it or serve an occupant. The trustee also publishes it in a legal newspaper, once between the 35th and 28th day before the sale, and once between the 14th and 7th day before the sale.',
+          'The notice of default came first. For the loans RCW 61.24.030(8) covers, it goes out at least 30 days before the notice of sale is recorded, transmitted, or served. The form describes a minimum of 120 days’ notice of the auction. If you are holding the sale notice, plan from the date printed on it.',
+        ],
+      },
+      {
+        heading: 'How much time the statute actually builds in',
+        paragraphs: [
+          'RCW 61.24.040 records the notice at least 90 days before the sale, or at least 120 days before it if a letter under RCW 61.24.031 was required. That 120-day rule is the timeline people repeat, and it is a minimum. The same section says the sale is not to be held less than 190 days after the date of default. Do not count 190 days from a missed payment. Ask your attorney, and use the printed sale date.',
+          'A trustee may postpone the sale for periods that together are not supposed to exceed 120 days. That is the trustee’s choice. KindKey cannot order it. If the sale is continued, RCW 61.24.090 runs the cure to the eleventh day before the continued sale. The auction is held at the time and place the notice states.',
+        ],
+      },
+      {
+        heading: 'The eleventh day, mediation, and a counselor',
+        paragraphs: [
+          'RCW 61.24.090 lets you discontinue the sale by curing the default before the eleventh day before the sale date. You pay the arrears and the trustee’s allowed costs, not the principal that would not yet be due, and you pay the trustee. After that eleventh day, ask your attorney what remains. KindKey does not calculate the cure or collect it.',
+          'Foreclosure Fairness Act mediation, RCW 61.24.163, is referred by a housing counselor or an attorney, not by you alone, and no later than 90 days before the sale date. If the sale is already inside that window, ask a counselor whether a referral is still open. Some loans are excluded, and some smaller banks can certify out under RCW 61.24.166. Commerce’s free line is 1-877-894-HOME (4663). Use the hotline on your notice if it differs.',
+        ],
+      },
+      {
+        heading: 'How owners try to keep the equity',
+        paragraphs: [
+          'The statute says a trustee’s sale deprives the owner of all interest in the property. Some auctions bring a surplus, which has its own claim process, and many do not. A sale you choose before the auction is how people try to pay the loan and keep what is left. That remainder is the equity, and it exists only if the price clears the payoff and the other required liens. If it does not, the lender has to agree.',
+          'Paying the loan off before a completed foreclosure is also how owners try to avoid a foreclosure entry on a credit report. Missed payments may already show. KindKey cannot promise what gets reported. You can ask for an as-is offer without reinstating. We do not charge an agent commission or a separate assignment fee. RCW 61.34 is the distressed-property law, and we do not interpret it. Do not deed the house away outside escrow.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does the notice of trustee’s sale always give me 120 days?',
+        answer:
+          'Not always. RCW 61.24.040 requires recording at least 90 days before the sale, or at least 120 days before the sale if a letter under RCW 61.24.031 was required. The date printed on your notice is the one to use. Ask an attorney before you count a different clock.',
+      },
+      {
+        question: 'When does the right to catch up the payments end?',
+        answer:
+          'RCW 61.24.090 puts reinstatement on the eleventh day before the sale date, or the eleventh day before a continued sale. The trustee states the amount. KindKey does not. Call a housing counselor or a Washington attorney if you are unsure which day you are on.',
+      },
+      {
+        question: 'Can a cash sale still happen after this notice is recorded?',
+        answer:
+          'Sometimes, if title can transfer in time and the closing can pay what has to be paid. Call (206) 519-5463 or use the cash-offer form to ask for a number. The offer itself does not stop the trustee. A finished closing might.',
+      },
+      {
+        question: 'Will I automatically lose every dollar of equity at the auction?',
+        answer:
+          'The sale ends your interest in the house. A surplus, if the auction brings one, has its own process, and many sales do not produce one you receive. A sale before the auction is how owners try to keep the equity above the payoff when the numbers work.',
+      },
+    ],
+    related: [
+      {
+        href: '/blog/notice-of-default-washington',
+        label: 'Notice of default in Washington',
+        description: 'The paper that comes before a sale date is set.',
+      },
+      {
+        href: '/blog/washington-foreclosure-mediation-vs-selling',
+        label: 'Mediation or a sale',
+        description: 'The referral deadline is counted back from the sale date.',
+      },
+      {
+        href: '/blog/foreclosure-in-king-county-washington',
+        label: 'Foreclosure in King County',
+        description: 'Kent, Auburn, Federal Way, Renton, and the Seattle area.',
+      },
+      {
+        href: '/blog/foreclosure-in-pierce-county-washington',
+        label: 'Foreclosure in Pierce County',
+        description: 'Tacoma, Puyallup, Lakewood, Spanaway, Edgewood, and Milton.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Sell before foreclosure in Washington',
+        description: 'What a completed sale can and cannot pay.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-auburn-wa',
+        label: 'Avoiding foreclosure in Auburn',
+        description: 'KindKey’s city. Confirm the county on the notice.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-federal-way-wa',
+        label: 'Avoiding foreclosure in Federal Way',
+        description: 'King County Recorder, including the contact rules.',
+      },
+      {
+        href: '/areas/kent/sell-house-before-foreclosure',
+        label: 'Sell before foreclosure in Kent',
+        description: 'The Kent service page.',
+      },
+    ],
+    ctaTitle: 'Bring the sale date. Ask for a number you can compare.',
+    ctaSubtitle:
+      foreclosureProfessionals +
+      ' Call (206) 519-5463 or use the cash-offer form. We work fast to close before your sale date, and we do not promise a close on a set number of days.',
+  }),
+  post('washington-foreclosure-mediation-vs-selling', {
+    breadcrumbName: 'Mediation or a sale',
+    title: 'Washington Foreclosure Mediation vs. Selling: Which Is Right for You',
+    description:
+      'How Washington foreclosure mediation under the Foreclosure Fairness Act compares with selling the house before a trustee sale. KindKey is a buyer, not a mediator. Not legal advice.',
+    h1: 'Washington Foreclosure Mediation vs. Selling: Which Is Right for You',
+    publishedAt: '2026-10-15',
+    intro: [
+      'Mediation and a sale answer different questions. Mediation asks whether you and the beneficiary can agree on a way to deal with the default. A sale asks whether you would rather turn the house into a payoff and, when the numbers work, keep what is left. Neither choice means you failed. Homeowners in King County and Pierce County face the same state program and the same kind of shame, and neither is useful. You can learn both options before you pick.',
+      'KindKey Home Buyers LLC buys houses. We do not mediate, we do not sit in the session as your advocate, and we do not call the servicer for you. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form if you want a price to compare. This article is general information about nonjudicial foreclosure under the Deed of Trust Act, not legal advice. A HUD-approved housing counselor or a Washington attorney should look at your notice with you.',
+    ],
+    callout:
+      foreclosureProfessionals +
+      ' You can ask what the house would sell for while you are still talking with a counselor. We do not promise that any particular house will close by a set day.',
+    sections: [
+      {
+        heading: 'What foreclosure mediation is in Washington',
+        paragraphs: [
+          'The Foreclosure Fairness Act put mediation in RCW 61.24.163. A housing counselor or an attorney has to refer you. You cannot sign yourself up. For a deed of trust, the referral comes after a notice of default and no later than 90 days before the sale date. An amended notice after a stay under RCW 61.24.130 can use a 25-day window. If you missed it, you and the beneficiary may still agree to mediate. Nobody has to.',
+          'RCW 61.24.165 covers residential property of up to four units, with exclusions for some commercial loans, seller-financed sales, and company-owned property. RCW 61.24.166 lets some smaller banks certify out. A counselor decides whether you can be referred. KindKey will not. Commerce runs the program and publishes a free line at 1-877-894-HOME (4663). Use the number on your notice if it differs.',
+        ],
+      },
+      {
+        heading: 'What a mediation session can change',
+        paragraphs: [
+          'The meeting covers reinstatement, a modification, a restructure, or another workout. Someone with authority to settle is supposed to be available for the beneficiary, and the statute requires good faith. If you were referred before the notice of sale was recorded, the trustee generally may not record it until mediation is done. If you were referred after, the sale generally waits for the mediator’s certification. That is not a promise of terms you can afford.',
+          'A mediator’s fee can apply. The statute caps the basic fee for a one-to-three hour session and splits it, unless it is waived or you agree otherwise. KindKey does not collect it. Mediation does not erase the debt. If there is no agreement, the beneficiary may go forward after the certification. Reinstatement under RCW 61.24.090 is still a payment to the trustee before the eleventh day before the sale.',
+        ],
+      },
+      {
+        heading: 'When selling is the comparison to make',
+        paragraphs: [
+          'A sale is a different tool. These loans are usually foreclosed without a lawsuit under chapter 61.24 RCW. The notice of default comes at least 30 days before a notice of sale, and the form describes a minimum of 120 days’ notice of the auction. RCW 61.24.040 records that notice at least 90 days before the sale, or 120 days before it if an RCW 61.24.031 letter was required. People call that the roughly 120-day timeline. If the referral window has closed, the lender is exempt, mediation ended with no deal, or you do not want to keep the house, a sale is still on the table.',
+          'Selling is also the comparison when you need equity out rather than a new payment. Equity is what remains after the payoff and other liens. If the price falls short, the lender has to agree, and there may be no check. A trustee’s sale deprives the owner of the interest in the property. Selling before that date is how owners try to pay the loan, keep what is left, and avoid a completed foreclosure on a credit report. KindKey cannot promise a score. An offer does not replace a counselor if you want to keep the house.',
+        ],
+      },
+      {
+        heading: 'You can price the house without skipping the counselor',
+        paragraphs: [
+          'Ask for a cash offer while you are still in counseling. The two talks do not cancel each other. KindKey looks at the house as it is and does not charge an agent commission or a separate assignment fee. If you accept, you see a settlement statement before you deed the house away. We work fast to close before a sale date, and we do not promise a particular day or postpone the trustee by writing an offer. If a listing might net more and your attorney thinks it can finish, hire a broker.',
+          'RCW 61.34 is the distressed-property law, and KindKey does not interpret it. Do not deed the house away outside escrow. Take the notice, the counselor’s notes, and any offer to your attorney, then decide. The Auburn, Federal Way, Edgewood, and Milton guides, and the Kent page, cover local sales. You are allowed to keep the house or to sell it. Both are legitimate.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sign up for Washington foreclosure mediation by myself?',
+        answer:
+          'No. RCW 61.24.163 says the program applies to borrowers referred by a housing counselor or an attorney. Call Commerce’s line at 1-877-894-HOME (4663), or the hotline on your notice, or a Washington attorney. KindKey cannot refer you.',
+      },
+      {
+        question: 'Does mediation stop the trustee sale?',
+        answer:
+          'A proper referral can keep the trustee from recording the notice of sale, or from holding the sale, until mediation is completed, in the situations the statute describes. It does not guarantee an agreement or that you keep the house. Ask a counselor whether your loan is in the program.',
+      },
+      {
+        question: 'Should I sell if I still want to keep the house?',
+        answer:
+          'Not as a substitute for counseling. Talk with a HUD-approved counselor or a Washington attorney about reinstatement, a workout, and mediation first if keeping the house is the goal. You can still ask KindKey what a sale would net, and you can say no.',
+      },
+      {
+        question: 'Can I ask for a cash offer during mediation?',
+        answer:
+          'Yes. Call (206) 519-5463 or use the cash-offer form. Asking does not obligate you to sell, and it does not pull you out of mediation. This article is not legal advice.',
+      },
+    ],
+    related: [
+      {
+        href: '/blog/notice-of-default-washington',
+        label: 'Notice of default in Washington',
+        description: 'Mediation is referred after this notice.',
+      },
+      {
+        href: '/blog/notice-of-trustee-sale-washington',
+        label: 'Notice of trustee sale in Washington',
+        description: 'The 90-day referral window is counted from the sale date.',
+      },
+      {
+        href: '/blog/behind-on-mortgage-payments-washington',
+        label: 'Behind on mortgage payments',
+        description: 'Options after a job loss, divorce, or medical bills.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Sell before foreclosure in Washington',
+        description: 'The statewide sale guide.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-auburn-wa',
+        label: 'Avoiding foreclosure in Auburn',
+        description: 'Local options, including a sale before the auction.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'Pierce County timeline for an Edgewood house.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-milton-wa',
+        label: 'Avoiding foreclosure in Milton',
+        description: 'Same program, and a county line inside the city.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The main service page for a direct sale.',
+      },
+    ],
+    ctaTitle: 'Get a sale number while you talk with a counselor',
+    ctaSubtitle:
+      foreclosureProfessionals +
+      ' Call (206) 519-5463 or use the cash-offer form. We work fast to close before your sale date, and we do not promise a close on a set number of days.',
+  }),
+  post('foreclosure-in-king-county-washington', {
+    breadcrumbName: 'King County foreclosure',
+    title:
+      'Foreclosure in King County: Selling Before the Trustee Sale (Kent, Auburn, Federal Way, Renton, Seattle Area)',
+    description:
+      'Selling a King County house before a trustee sale, including Kent, Auburn, Federal Way, Renton, and the Seattle area. KindKey buys from Auburn. Not legal advice.',
+    h1: 'Foreclosure in King County: Selling Before the Trustee Sale (Kent, Auburn, Federal Way, Renton, Seattle Area)',
+    publishedAt: '2026-10-15',
+    intro: [
+      'A King County foreclosure on a deed of trust is a Washington process with a King County file. Kent, Federal Way, Renton, Seattle, and most of Auburn are in that county. The notice still has to match the parcel. A mailing city is not the recording office. If you are behind and a sale date is coming, you are not the only person on the plateau or in the valley in that spot, and you do not have to sort it out alone or in a panic.',
+      'KindKey Home Buyers LLC buys across King County from 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form. We are a buyer, not a foreclosure consultant and not a law firm. This article is general information about nonjudicial foreclosure under the Deed of Trust Act, chapter 61.24 RCW. It is not legal advice. A Washington attorney or a HUD-approved housing counselor should read your notice with you.',
+    ],
+    callout:
+      foreclosureProfessionals +
+      ' If the house is in King County, we can look at it from Auburn while you sort the notice. We do not promise that any particular house will close by a set day.',
+    sections: [
+      {
+        heading: 'Where a King County notice lives',
+        paragraphs: [
+          'RCW 61.24.040 records the notice of sale where the deed of trust is of record. For a King County deed, that is the King County Recorder. Kent, Federal Way, Renton, and Seattle are King County. Most of Auburn is too. Part of southern Auburn is Pierce County, and Milton can fall in either county. The notice names the county. Do not guess from the neighborhood, and do not search the Pierce County Auditor just because Tacoma is nearby.',
+          'Closer guides on this site cover Auburn, Federal Way, and Kent. Renton and Seattle do not have separate foreclosure pages here. The statute does not change at the city line, and KindKey buys in those cities from Auburn. The auction is held at the time and place on the notice. A lawsuit to restrain a sale under RCW 61.24.130 is filed in superior court. KindKey will not prepare it.',
+        ],
+      },
+      {
+        heading: 'The state timeline, read in this county',
+        paragraphs: [
+          'Unless you were served with a lawsuit, this is nonjudicial foreclosure under chapter 61.24 RCW, not chapter 61.12 RCW. RCW 61.24.030(8) requires a notice of default at least 30 days before the notice of sale, for the loans it covers. The form says silence can bring a notice of sale in about 30 days, and that the sale notice gives a minimum of 120 days’ notice of the auction. Many loans also get a contact letter under RCW 61.24.031 first. KindKey will not tell you that step is finished.',
+          'The roughly 120-day timeline is the recording rule: at least 90 days before the sale, or at least 120 days if the 61.24.031 letter was required. The printed date controls, and a trustee can postpone. RCW 61.24.090 lets you cure until the eleventh day before the sale, or the eleventh day before a continued sale, by paying the trustee. There is also a 190-day floor from the date of default. Do not count that from a missed payment.',
+        ],
+      },
+      {
+        heading: 'Mediation and a housing counselor',
+        paragraphs: [
+          'Foreclosure Fairness Act mediation, RCW 61.24.163, starts with a referral from a housing counselor or a Washington attorney after the notice of default, and no later than 90 days before the sale date. You do not refer yourself. Some loans and some smaller banks are outside it. A proper referral can hold the notice of sale, or the sale itself, until mediation finishes. The meeting is about a workout. It does not guarantee you keep the house, and KindKey does not attend.',
+          'Commerce publishes a free counseling line at 1-877-894-HOME (4663). Use that number, the hotline on your notice, or another HUD-approved counselor. Bring the sale date and the eleventh-day cure date. A restraining case would be filed in King County Superior Court, in Seattle or at the Maleng Regional Justice Center in Kent. KindKey will not coach you on how to file.',
+        ],
+      },
+      {
+        heading: 'Selling before the King County sale',
+        paragraphs: [
+          'You can ask for an as-is offer in Kent, Auburn, Federal Way, Renton, or the Seattle area without catching up or repairing. If you accept, the closing agent orders the payoff. Proceeds can pay the loan and other required liens when the price covers them. If not, the lender has to agree. Equity is the remainder, and it is not guaranteed. KindKey does not charge an agent commission or a separate assignment fee. An offer does not stop the trustee.',
+          'Owners sell before the auction to pay the loan, try to avoid a foreclosure entry on a credit report, and keep equity when the numbers leave some. Missed payments may already show. We cannot promise a score or a closing on a named day. We work fast to close before the sale date when title and the payoff allow it. RCW 61.34 is your attorney’s statute. Do not deed the house away outside escrow.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Are Kent, Renton, Federal Way, and Seattle foreclosures King County recordings?',
+        answer:
+          'Yes, when the deed of trust is a King County deed. RCW 61.24.040 follows the deed’s county. Auburn is usually King County, and part of the south end can be Pierce. Milton can be either. Read the notice.',
+      },
+      {
+        question: 'Does KindKey buy in Renton and Seattle, or only in Auburn?',
+        answer:
+          'KindKey buys houses across King County, including Renton and the Seattle area, from the Auburn office. Call (206) 519-5463 or use the cash-offer form. There is no separate Renton or Seattle foreclosure page on this site. The notice is what controls the date.',
+      },
+      {
+        question: 'Can I reinstate a King County loan instead of selling?',
+        answer:
+          'RCW 61.24.090 allows a cure before the eleventh day before the sale, or before the eleventh day before a continued sale. The trustee sets the amount. A housing counselor or a Washington attorney can help you read it. KindKey does not collect a reinstatement.',
+      },
+      {
+        question: 'Will an offer stop the King County trustee sale?',
+        answer:
+          'No. A completed sale might pay the lender if the price, the liens, and the date work. The offer alone does not. This article is not legal advice. You can decline the offer after you see it.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/kent/sell-house-before-foreclosure',
+        label: 'Sell before foreclosure in Kent',
+        description: 'East Hill, West Hill, and the valley are all King County.',
+      },
+      {
+        href: '/areas/auburn/sell-house-before-foreclosure',
+        label: 'Sell before foreclosure in Auburn',
+        description: 'KindKey’s home city. Confirm King County or Pierce.',
+      },
+      {
+        href: '/areas/federal-way/sell-house-before-foreclosure',
+        label: 'Sell before foreclosure in Federal Way',
+        description: 'The Federal Way service page.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-auburn-wa',
+        label: 'Avoiding foreclosure in Auburn',
+        description: 'Timelines for an Auburn notice.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-federal-way-wa',
+        label: 'Avoiding foreclosure in Federal Way',
+        description: 'The pre-default contact rules, in King County.',
+      },
+      {
+        href: '/blog/foreclosure-in-pierce-county-washington',
+        label: 'Foreclosure in Pierce County',
+        description: 'The other side of the county line.',
+      },
+      {
+        href: '/blog/notice-of-trustee-sale-washington',
+        label: 'Notice of trustee sale in Washington',
+        description: 'How the 90-day and 120-day rules fit together.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Sell before foreclosure in Washington',
+        description: 'Statewide context for the notice in your hand.',
+      },
+    ],
+    ctaTitle: 'Ask for a King County number you can take to your attorney',
+    ctaSubtitle:
+      foreclosureProfessionals +
+      ' Call (206) 519-5463 or use the cash-offer form. We work fast to close before your sale date, and we do not promise a close on a set number of days.',
+  }),
+  post('foreclosure-in-pierce-county-washington', {
+    breadcrumbName: 'Pierce County foreclosure',
+    title:
+      'Foreclosure in Pierce County: Selling Before the Trustee Sale (Tacoma, Puyallup, Lakewood, Spanaway, Edgewood, Milton)',
+    description:
+      'Selling a Pierce County house before a trustee sale, including Tacoma, Puyallup, Lakewood, Spanaway, Edgewood, and Milton. KindKey is an Auburn buyer. Not legal advice.',
+    h1: 'Foreclosure in Pierce County: Selling Before the Trustee Sale (Tacoma, Puyallup, Lakewood, Spanaway, Edgewood, Milton)',
+    publishedAt: '2026-10-15',
+    intro: [
+      'A Pierce County foreclosure on a deed of trust uses Washington’s Deed of Trust Act and a Pierce County recording. Tacoma, Puyallup, Lakewood, Spanaway, and Edgewood sit in that county. Milton straddles the line, so a Milton address still has to be matched to the parcel. Falling behind on a house in any of those places is a practical problem with a legal clock. It is not a reason for anyone to talk down to you.',
+      'KindKey Home Buyers LLC buys Pierce County houses from 640 1st St SW in Auburn, just north of this county line. Call (206) 519-5463 or use the cash-offer form. We are not a trustee, a counselor, or a law firm. This article is general information about nonjudicial foreclosure, not legal advice. Talk with a Washington attorney or a HUD-approved housing counselor before you rely on a deadline printed anywhere except your own notice.',
+    ],
+    callout:
+      foreclosureProfessionals +
+      ' A Pierce County sale date is something we can plan a closing around. We do not promise that any particular house will close by a set day.',
+    sections: [
+      {
+        heading: 'Which Pierce County houses this covers',
+        paragraphs: [
+          'RCW 61.24.040 records the notice of sale with the auditor where the deed of trust is recorded. For these houses, that is the Pierce County Auditor. Tacoma, Puyallup, and Lakewood are cities in that county. Spanaway is unincorporated Pierce County. Edgewood is entirely in Pierce County. Milton is split with King County, and a slice of southern Auburn can be Pierce even when the mailing city says Auburn. The caption on the notice is the fact.',
+          'Guides on this site cover Edgewood and Milton, and Tacoma and Puyallup have foreclosure pages. Lakewood and Spanaway do not have their own pages here. KindKey can still look at the house. The auction is held where the notice says. A case to restrain the sale under RCW 61.24.130 is filed with the Pierce County Superior Court clerk in Tacoma. KindKey will not draft it.',
+        ],
+      },
+      {
+        heading: 'The Deed of Trust Act clock',
+        paragraphs: [
+          'Unless you were served with a summons, this is nonjudicial foreclosure under chapter 61.24 RCW, not chapter 61.12 RCW. A notice of default goes out at least 30 days before the notice of sale, for the loans RCW 61.24.030(8) covers. The form says silence can bring a sale notice in about 30 days, and that the sale notice gives a minimum of 120 days’ notice. A contact letter under RCW 61.24.031 often comes first. Your paper shows the stage you are in.',
+          'The roughly 120-day timeline is RCW 61.24.040: record at least 120 days before the sale if that letter was required, or at least 90 days if it was not. The printed date can be later, and a trustee may postpone. RCW 61.24.090 lets you cure until the eleventh day before the sale, or before a continued sale, by paying the trustee. A 190-day floor runs from the date of default. Do not count either number from memory.',
+        ],
+      },
+      {
+        heading: 'Mediation, counselors, and the cure',
+        paragraphs: [
+          'Foreclosure Fairness Act mediation is RCW 61.24.163. A housing counselor or a Washington attorney refers you after the notice of default, and no later than 90 days before the sale date. You do not refer yourself. Coverage is generally a house of up to four units, with exclusions, and some smaller banks can certify out. A proper referral can hold the notice of sale, or the sale, until mediation is done. It does not guarantee you keep the house.',
+          'Commerce publishes a free counseling line at 1-877-894-HOME (4663). Use that line or the hotline on your notice. Bring the sale date and the eleventh-day cure date. KindKey does not attend mediation or call your servicer for you. If you still want to keep the house, the counselor is the first call.',
+        ],
+      },
+      {
+        heading: 'Selling before the Pierce County auction',
+        paragraphs: [
+          'A direct sale can pay the mortgage and other required liens if the price covers them and the date is still open. If the payoff is higher, the lender has to agree, and there may be no equity check. KindKey will make an as-is offer in Tacoma, Puyallup, Lakewood, Spanaway, Edgewood, or Pierce County Milton without repairs and without you catching up first. We do not charge an agent commission or a separate assignment fee.',
+          'People sell before the auction to pay the loan, try to avoid a foreclosure on their credit, and keep equity when the math leaves some. We work fast to close before the sale date. We do not promise a particular day, and an offer does not postpone the trustee. RCW 61.34 is your attorney’s statute. Do not deed the house away outside escrow. If the notice is actually King County, use that guide instead.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Is an Edgewood or Spanaway foreclosure recorded in Pierce County?',
+        answer:
+          'Edgewood is in Pierce County, so the notice of sale is recorded with the Pierce County Auditor. Spanaway is unincorporated Pierce County. Milton can be Pierce or King. RCW 61.24.040 follows the deed. Check the notice.',
+      },
+      {
+        question: 'Does KindKey buy in Lakewood and Spanaway?',
+        answer:
+          'Yes. Both are in the Pierce County area KindKey buys. Call (206) 519-5463 or use the cash-offer form. There is not a separate Lakewood or Spanaway page on this site. The offer is on your house, not on a city slogan.',
+      },
+      {
+        question: 'How late can I catch up a Pierce County loan?',
+        answer:
+          'RCW 61.24.090 allows a cure until the eleventh day before the sale, or the eleventh day before a continued sale. The trustee states the amount. A HUD-approved counselor or a Washington attorney should confirm it. KindKey does not collect the cure.',
+      },
+      {
+        question: 'Does asking for an offer stop the trustee?',
+        answer:
+          'No. A finished sale might pay what title requires if the numbers and the date work. The request itself does not. This article is not legal advice, and you can say no after you see the offer.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/tacoma/sell-house-before-foreclosure',
+        label: 'Sell before foreclosure in Tacoma',
+        description: 'The Tacoma service page.',
+      },
+      {
+        href: '/areas/puyallup/sell-house-before-foreclosure',
+        label: 'Sell before foreclosure in Puyallup',
+        description: 'The Puyallup service page.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'Pierce County recording and the state timeline.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-milton-wa',
+        label: 'Avoiding foreclosure in Milton',
+        description: 'Match the notice to the parcel’s county.',
+      },
+      {
+        href: '/blog/foreclosure-in-king-county-washington',
+        label: 'Foreclosure in King County',
+        description: 'Kent, Auburn, Federal Way, Renton, and Seattle.',
+      },
+      {
+        href: '/blog/notice-of-trustee-sale-washington',
+        label: 'Notice of trustee sale in Washington',
+        description: 'The sale date, the 120-day rule, and reinstatement.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Sell before foreclosure in Washington',
+        description: 'What a direct sale can pay at closing.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-federal-way-wa',
+        label: 'Avoiding foreclosure in Federal Way',
+        description: 'King County, just north of Milton.',
+      },
+    ],
+    ctaTitle: 'Ask for a Pierce County offer you can review with counsel',
+    ctaSubtitle:
+      foreclosureProfessionals +
+      ' Call (206) 519-5463 or use the cash-offer form. We work fast to close before your sale date, and we do not promise a close on a set number of days.',
+  }),
+  post('behind-on-mortgage-payments-washington', {
+    breadcrumbName: 'Behind on payments',
+    title:
+      'Behind on Mortgage Payments After a Job Loss, Divorce, or Medical Bills: Your Options in Washington',
+    description:
+      'Options in Washington if you are behind on the mortgage after a job loss, divorce, or medical bills, including selling before foreclosure. Not legal advice.',
+    h1: 'Behind on Mortgage Payments After a Job Loss, Divorce, or Medical Bills: Your Options in Washington',
+    publishedAt: '2026-10-15',
+    intro: [
+      'Missing a payment after a layoff, a divorce, or medical bills is a common way people end up reading about foreclosure. It does not mean the house is already lost. Being behind is not the same thing as a trustee sale. You may still be in the weeks when a phone call changes the file, or you may already be holding a notice.',
+      'KindKey Home Buyers LLC buys houses in King and Pierce County from 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form when you want a sale in the comparison. We are not your servicer, your counselor, or your divorce lawyer. This is general information about nonjudicial foreclosure under chapter 61.24 RCW, not legal advice. Talk with a housing counselor or a Washington attorney before you rely on a date.',
+    ],
+    callout:
+      foreclosureProfessionals +
+      ' A job loss, a divorce, or medical bills is enough of an explanation. We do not promise that any particular house will close by a set day.',
+    sections: [
+      {
+        heading: 'You are allowed to be behind',
+        paragraphs: [
+          'A layoff removes the paycheck the loan was built on. A divorce can leave one person with the payment and the other person with the debt. Medical bills arrive on top of a mortgage that was already tight. None of those stories needs a confession before you ask for help. You also do not have to tell a home buyer the diagnosis, the name of the employer, or the details of the separation. What a buyer needs is the address, the condition of the house, and any date already printed on a notice.',
+          'Most Washington home loans are deeds of trust. If a foreclosure starts, it is usually nonjudicial under chapter 61.24 RCW, not a lawsuit. A summons would mean judicial foreclosure under chapter 61.12 RCW, and that belongs with a lawyer immediately. Until a notice exists, you are behind on a contract. That is serious, because fees and a foreclosure can follow. It is not yet an auction. Open the mail. The first official letter is often the one that tells you how to respond.',
+        ],
+      },
+      {
+        heading: 'What to do before a sale date exists',
+        paragraphs: [
+          'Call the servicer and ask what they will put in writing. A repayment plan, forbearance, or modification is their offer, not a KindKey program. On many loans of up to four units, RCW 61.24.031 requires contact before a notice of default. If you respond, the statute gives you time to meet. If you ignore the letter, the notice of default can follow. A housing counselor helps with that meeting. KindKey does not.',
+          'Commerce publishes a free counseling line at 1-877-894-HOME (4663). Call even if you are only a payment or two behind, and bring income, the hardship in a sentence, and the monthly payment. If you are in a divorce, ask your attorney who may talk to the servicer and who must sign a deed. The Auburn and Edgewood divorce guides describe that signature problem. KindKey will not negotiate between spouses.',
+        ],
+      },
+      {
+        heading: 'If a notice of default or a sale notice arrives',
+        paragraphs: [
+          'A notice of default under RCW 61.24.030(8) says the loan is in default. For the loans it covers, it goes out at least 30 days before a notice of sale. The form says silence can bring that sale notice in about 30 days, with a minimum of 120 days’ notice of the auction. RCW 61.24.040 records the sale notice at least 90 days before the sale, or 120 days before it if the contact letter was required. That is the roughly 120-day timeline. Once a sale date is printed, use that date.',
+          'Mediation under RCW 61.24.163 is referred by a counselor or an attorney after the notice of default, and no later than 90 days before the sale date. You cannot refer yourself. A proper referral can pause the next step. It does not guarantee a modification. RCW 61.24.090 lets you cure by paying the trustee before the eleventh day before the sale. That payment is not made to KindKey. Read the guide that matches the title on your paper.',
+        ],
+      },
+      {
+        heading: 'Selling as one of the options, not the only one',
+        paragraphs: [
+          'Keeping the house is fair if a counselor and the servicer can build a payment you can make. Selling is fair if the payment no longer fits, a divorce has tied up the house, or you need the equity more than the address. Equity is what is left after the payoff and other liens. If the loan is larger than the price, the lender has to agree. A sale that pays the loan off is a different credit event from a completed foreclosure. KindKey cannot promise a score.',
+          'You can ask for a cash offer without catching up, without repairs, and without explaining a diagnosis. We do not charge an agent commission or a separate assignment fee. We work fast to close before a sale date when you have one. We do not promise a particular day, and an offer does not stop a trustee. RCW 61.34 is your attorney’s statute. Do not deed the house away outside escrow. You can say no after you see the number.',
+        ],
+        bullets: [
+          'Call the servicer and ask which workout they will put in writing.',
+          'Call a HUD-approved housing counselor before you sign a new agreement.',
+          'If a notice of default arrives, ask the counselor about mediation right away.',
+          'If a sale date is printed, write down the eleventh day before it.',
+          'Ask KindKey for a cash offer you can decline. Use (206) 519-5463 or the cash-offer form.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does being behind on payments mean I am already in foreclosure?',
+        answer:
+          'Not by itself. Foreclosure paperwork, often a contact letter and then a notice of default under chapter 61.24 RCW, is what starts the nonjudicial process. Open every letter. A housing counselor can tell you which stage the paper is.',
+      },
+      {
+        question: 'Can I sell if the missed payments were caused by a divorce or medical bills?',
+        answer:
+          'Yes, you can ask for an offer without narrating the hardship. If a divorce is open, your attorney has to say who can sign. Call (206) 519-5463 or use the cash-offer form when that question is answered, or while your lawyer is still working on it. Do not accept until they say you may.',
+      },
+      {
+        question: 'Will KindKey modify my loan or negotiate with the servicer?',
+        answer:
+          'No. A modification or a repayment plan is between you, the servicer, and, if you want help, a HUD-approved counselor. KindKey only buys the house if you choose a sale and accept an offer.',
+      },
+      {
+        question: 'Where do I get free counseling in Washington?',
+        answer:
+          'The state Department of Commerce publishes 1-877-894-HOME (4663) for foreclosure counseling, and your notice may print the current hotline. You can also ask a Washington attorney. This article is not legal advice.',
+      },
+    ],
+    related: [
+      {
+        href: '/blog/notice-of-default-washington',
+        label: 'Notice of default in Washington',
+        description: 'What to do when that paper arrives.',
+      },
+      {
+        href: '/blog/washington-foreclosure-mediation-vs-selling',
+        label: 'Mediation or a sale',
+        description: 'How to compare a workout with selling.',
+      },
+      {
+        href: '/blog/selling-a-house-during-divorce-auburn-wa',
+        label: 'Divorce sales in Auburn',
+        description: 'Who has to sign an Auburn deed.',
+      },
+      {
+        href: '/blog/selling-a-house-during-divorce-edgewood-wa',
+        label: 'Divorce sales in Edgewood',
+        description: 'The Pierce County version of the same problem.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-auburn-wa',
+        label: 'Avoiding foreclosure in Auburn',
+        description: 'If the loan is already in a notice.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-federal-way-wa',
+        label: 'Avoiding foreclosure in Federal Way',
+        description: 'King County options and timelines.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Sell before foreclosure in Washington',
+        description: 'The statewide guide once a sale is the path.',
+      },
+      {
+        href: '/areas/kent/sell-house-before-foreclosure',
+        label: 'Sell before foreclosure in Kent',
+        description: 'The Kent page if that is the city on the deed.',
+      },
+    ],
+    ctaTitle: 'You can ask for a number without explaining the hardship',
+    ctaSubtitle:
+      foreclosureProfessionals +
+      ' Call (206) 519-5463 or use the cash-offer form. We work fast to close before your sale date, and we do not promise a close on a set number of days.',
+  }),
+  post('sell-house-during-divorce-without-listing-washington', {
+    breadcrumbName: 'Sell privately during a divorce',
+    title: 'Getting a Divorce? How to Sell Your House Privately Without Listing It in Washington',
+    description:
+      'How Washington spouses can sell a house during a divorce without listing it. KindKey buys off market and as-is. Not legal advice.',
+    h1: 'Getting a Divorce? How to Sell Your House Privately Without Listing It in Washington',
+    publishedAt: '2026-10-15',
+    intro: [
+      'Getting a divorce in Washington is already a lot. The house is often the largest thing you own together, and a public listing can make a private season feel exposed. You do not have to list it. KindKey Home Buyers LLC is a cash home buyer at 640 1st St SW, Auburn, WA 98001, serving King County and Pierce County. Call (206) 519-5463 or use the cash-offer form. KindKey buys as a principal and is not a divorce attorney, a mediator, or a real estate agent.',
+      'This article is not legal advice. Talk with your family law attorney before you sign. Your deed, your case, and any orders already entered decide the next step. Edgewood and Auburn have their own guides for the local courthouse. This page stays with the private sale.',
+    ],
+    callout:
+      'You do not have to list the house. KindKey can buy it off market and as-is, so there are no showings, no open houses, no public listing, and no repairs. The sale stays private between you, your spouse, and your attorneys.',
+    sections: [
+      {
+        heading: 'Washington is a community property state',
+        paragraphs: [
+          'Washington is a community property state. In general, a house acquired during the marriage belongs to both spouses, even if only one name is on the deed. A house owned before the marriage, or received by gift or inheritance, may be separate property. Shared payments can blur that line. Your family law attorney reads the deed.',
+          'When the house is community real estate, both of you are part of the sale unless a court order says otherwise. A calm conversation at home is a good start. Bring your lawyer the deed, the mortgage statement, and the orders in the file.',
+        ],
+      },
+      {
+        heading: 'Both spouses need to agree, and to sign',
+        paragraphs: [
+          'For a house the marriage owns, both spouses generally sign the deed and acknowledge it. One name on the deed does not let that spouse sell alone. A text, a verbal yes, or one signature on a purchase agreement is not what gets recorded. If an order already allows one signer, the closing agent will ask for it. KindKey cannot waive a signature the title company requires.',
+          'You do not have to be on warm terms to sign. Many people let their attorneys exchange the offer, the date, and the instructions for the money. KindKey is the buyer and will not pressure your spouse or take a side. Call (206) 519-5463 or use the cash-offer form when you want a written number both lawyers can read. Asking does not obligate you to accept.',
+        ],
+      },
+      {
+        heading: 'When one spouse wants to stay',
+        paragraphs: [
+          'One spouse often wants to keep the house, and the other wants to be finished. That is common, and it does not make either of you difficult. A court can award the home to one of you, including for a time when the children live there most of the time. A buyout, often by refinancing, is another path. KindKey does not choose for you and does not predict a judge.',
+          'If a buyout is not realistic, a sale turns the house into money your attorneys can divide. The offer can wait on the table while you decide. The spouse who still lives there does not have to leave for showings, and the house does not have to be repaired first. Occupancy stays with your lawyers and with any order already entered.',
+        ],
+      },
+      {
+        heading: 'The mortgage can still be in both names',
+        paragraphs: [
+          'A decree can assign the monthly payment to one spouse. The promissory note is a contract with the lender, and the decree does not rewrite it. Until the loan is paid off, refinanced, or assumed with the lender’s agreement, both names can remain on the debt. Confirm that with your attorney and the servicer. KindKey will not interpret the note.',
+          'When the price covers the payoff and the other amounts due, closing pays the loan. If it does not, your lawyers and the lender need to resolve the gap before a deed is signed. If payments are already late, talk with a Washington attorney before you sign. KindKey does not interpret the state’s distressed-property rules.',
+        ],
+      },
+      {
+        heading: 'Splitting the proceeds',
+        paragraphs: [
+          'KindKey buys the house. KindKey does not split the proceeds. The closing agent follows the decree, a written agreement your attorneys approve, or closing instructions they provide. Put the division in one of those papers.',
+          'Read the settlement statement with your lawyer before you sign. It shows the price, the payoff, liens, taxes, and the costs the purchase agreement assigns. KindKey does not charge an agent commission or a separate assignment fee. Each of you receives what the decree or the attorney agreement directs.',
+        ],
+      },
+      {
+        heading: 'Timing the sale around the divorce',
+        paragraphs: [
+          'Some couples sell while the case is open, once both can sign or an order allows it. Others wait until the decree orders the sale. A temporary order can restrain a transfer, so read every order before you accept. A cash offer does not lift a court order.',
+          'Ask for the number while your attorney confirms who can sign, and accept it only when that is clear. You and the closing agent choose the date. KindKey does not promise how many days it will take. Cash means the purchase is not waiting on a retail buyer’s loan. The divorce follows its own calendar.',
+        ],
+      },
+      {
+        heading: 'How a cash offer can lower the conflict',
+        paragraphs: [
+          'A listing asks you to agree on price, photos, repairs, and the days strangers walk through the house. An off-market sale sets that list aside. There is no yard sign, no open house, no public listing, and no repair list to finish first. The house can sell as it sits.',
+          'You, your spouse, your attorneys, and the closing agent are the people in the sale. A recorded deed is a public record. The marketing stays private. If you would rather list, hire a licensed broker. KindKey will not run that listing. Guides linked below cover a cash buyer compared with a listing, a death in the family, and the Edgewood and Auburn courthouses.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do we have to list the house to sell it during a Washington divorce?',
+        answer:
+          'No. KindKey can buy it off market and as-is. Your family law attorney still confirms who can sign. Call (206) 519-5463 or use the cash-offer form. You can decline the offer.',
+      },
+      {
+        question: 'Can we sell before the divorce is final?',
+        answer:
+          'Sometimes, if both spouses can sign or a court order allows the sale. KindKey does not make that call. Ask your family law attorney, then request an offer if a sale is allowed.',
+      },
+      {
+        question: 'What if one of us wants to keep living there?',
+        answer:
+          'That choice stays with you and your lawyers. A cash offer is a number you can review while you decide. KindKey will not ask the spouse who wants to stay to move out for showings.',
+      },
+      {
+        question: 'Does a divorce decree take a name off the mortgage?',
+        answer:
+          'A decree can assign the payment between spouses. The lender’s documents control the loan until it is paid off, refinanced, or assumed with the lender’s agreement. Ask your attorney and the servicer.',
+      },
+      {
+        question: 'Who splits the proceeds?',
+        answer:
+          'Your decree, or a written agreement your attorneys approve. KindKey does not divide the money. The closing agent follows those instructions and shows them on a settlement statement before closing.',
+      },
+      {
+        question: 'Will the sale be advertised?',
+        answer:
+          'There is no public listing and no open house. The conversation is you, your spouse, your attorneys, and the closing agent. The recorded deed is a public record.',
+      },
+    ],
+    related: [
+      {
+        href: '/blog/selling-a-house-during-divorce-edgewood-wa',
+        label: 'Divorce sales in Edgewood',
+        description: 'The Pierce County city guide, including where that case is filed.',
+      },
+      {
+        href: '/blog/selling-a-house-during-divorce-auburn-wa',
+        label: 'Divorce sales in Auburn',
+        description: 'KindKey’s home city, where the parcel may be in King or Pierce County.',
+      },
+      {
+        href: '/blog/cash-buyer-vs-listing-with-an-agent',
+        label: 'Cash buyer vs. listing with an agent',
+        description: 'Both paths, without a slogan.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Selling before foreclosure in Washington',
+        description: 'If the loan is already behind while the divorce is open.',
+      },
+      {
+        href: '/blog/selling-a-house-in-probate-washington',
+        label: 'Probate sales in Washington',
+        description: 'When a death and a divorce are in the same house.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'No repairs before a direct sale.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'The form. Asking does not obligate you to sell.',
+      },
+    ],
+    ctaTitle: 'You do not have to list the house',
+    ctaSubtitle:
+      'KindKey can buy it off market and as-is. There are no showings, no open houses, no public listing, and no repairs, and the sale stays private between you, your spouse, and your attorneys. Call (206) 519-5463 or use the cash-offer form. You can say no.',
   }),
   post('how-to-sell-an-estate-house-in-washington', {
     breadcrumbName: 'Estate house steps',
