@@ -256,6 +256,10 @@ export default function PrivacyPage() {
               <li>Remember your preferences</li>
               <li>Improve website functionality and user experience</li>
               <li>Measure the effectiveness of our services</li>
+              <li>
+                Remember how you reached our site (including UTM parameters and ad click IDs) for up
+                to 90 days so we can record the source of an inquiry
+              </li>
             </ul>
             <p className="mt-4">
               You may control cookies through your browser settings. Disabling cookies may limit

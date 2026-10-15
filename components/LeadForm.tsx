@@ -6,6 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
 import { leadFormSchema, type LeadFormData } from '@/lib/schema';
 import { trackLeadSubmit } from '@/lib/analytics';
+import { attributionFieldsForSubmit } from '@/lib/attribution-client';
 import { useRecaptcha } from '@/lib/useRecaptcha';
 
 interface LeadFormProps {
@@ -145,6 +146,13 @@ export default function LeadForm({
     try {
       const recaptchaToken = await executeRecaptcha('submit_lead');
 
+      let attributionFields: Record<string, string> = {};
+      try {
+        attributionFields = attributionFieldsForSubmit();
+      } catch (error) {
+        console.error('Attribution capture failed:', error);
+      }
+
       const response = await fetch('/api/lead', {
         method: 'POST',
         headers: {
@@ -154,8 +162,7 @@ export default function LeadForm({
           ...data,
           recaptchaToken,
           pagePath: window.location.pathname,
-          utm: new URLSearchParams(window.location.search).get('utm_source') || undefined,
-          gclid: new URLSearchParams(window.location.search).get('gclid') || undefined,
+          ...attributionFields,
         }),
       });
 

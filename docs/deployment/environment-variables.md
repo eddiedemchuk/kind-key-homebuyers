@@ -76,8 +76,15 @@ GHL_WEBHOOK_URL=https://services.leadconnectorhq.com/hooks/your_location/webhook
 ```
 
 The URL comes from a GHL workflow's Inbound Webhook trigger. Each lead is posted as flat JSON
-(tagged `website lead`, source `Website`) with a 10-second timeout. Delivery is skipped when unset;
-Telegram and email continue as backup notifications.
+with a 10-second timeout. `source` is the derived lead source (`Google Ads`, `Facebook Ads`,
+`Google Organic`, `Facebook Organic`, `Referral`, or `Direct/Website`). `tags` remains
+`website lead` plus a source tag (`google ads`, `facebook ads`, or `website`). UTM parameters,
+click ids, referrer, landing page, and `attribution_notes` are included for workflow mapping.
+Delivery is skipped when unset; Telegram and email continue as backup notifications. Pipeline
+**ALL LEADS** / stage **New Hot Lead** is still applied by the workflow, not by this payload.
+
+See [GoHighLevel lead delivery](../integrations/gohighlevel.md) for the field list and the
+sub-account mapping checklist.
 
 ### SMTP email
 

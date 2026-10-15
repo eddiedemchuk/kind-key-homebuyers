@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import MobileStickyButton from '@/components/MobileStickyButton';
 import CookieConsent from '@/components/CookieConsent';
 import ChatWidgetOffset from '@/components/ChatWidgetOffset';
+import AttributionCapture from '@/components/AttributionCapture';
 import { localBusinessJsonLd, SITE_URL } from '@/lib/site';
 import './globals.css';
 
@@ -213,6 +214,7 @@ export default function RootLayout({
         <Footer />
         <MobileStickyButton />
         <CookieConsent />
+        <AttributionCapture />
         <ChatWidgetOffset />
         <Script
           id="leadconnector-chat-widget"
