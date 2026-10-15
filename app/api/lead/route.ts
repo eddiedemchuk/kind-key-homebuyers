@@ -101,6 +101,7 @@ export async function POST(request: NextRequest) {
       ip,
       attribution,
       formOrigin,
+      listedWithAgent: data.listed_with_agent,
     };
 
     // Delivery channels are independent and optional. A provider failure is

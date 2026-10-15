@@ -243,7 +243,8 @@ export const GHL_BASE_TAG = 'website lead';
 export function formatAttributionNotes(
   touch: AttributionTouch,
   form: { leadSource: string; sourceTag: string; formName: string },
-  clickSource: LeadSource
+  clickSource: LeadSource,
+  listedWithAgent?: 'yes' | 'no'
 ): string {
   const line = (label: string, value: string) => `${label}: ${value || '—'}`;
   return [
@@ -251,6 +252,7 @@ export function formatAttributionNotes(
     `Lead source: ${form.leadSource}`,
     `Tag: ${form.sourceTag}`,
     `Click source: ${clickSource}`,
+    ...(listedWithAgent ? [`Listed with agent: ${listedWithAgent}`] : []),
     line('Landing page', touch.landing_page),
     line('Referrer', touch.referrer),
     line('utm_source', touch.utm_source),

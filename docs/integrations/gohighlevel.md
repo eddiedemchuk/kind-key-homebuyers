@@ -8,9 +8,12 @@ The chat widget is a separate, GHL-hosted path and does not use this webhook.
 1. Cash-offer forms post through `components/LeadForm.tsx` (homepage, `/cash-offer`, `/contact`,
    city pages, and situation pages) or `components/OfferLeadForm.tsx` on the paid-ads page
    `/offer`. There is no embedded GHL form and no direct browser call to the LeadConnector API.
-   `/offer` collects name, phone, property address, optional email, and the same SMS consent
-   checkboxes. City, condition, timeframe, and preferred contact stay required on `LeadForm` and
-   are optional in the API so the short form can submit without filling them in. Each form posts
+   `/offer` collects name, phone, property address, optional email, a required yes/no answer to
+   “Is your house currently listed with an agent?”, and the same SMS consent checkboxes. That
+   answer is posted as `listed_with_agent` (`yes` or `no`). `LeadForm` does not ask the question
+   and does not send the field. City, condition, timeframe, and preferred contact stay required on
+   `LeadForm` and are optional in the API so the short form can submit without filling them in.
+   Each form posts
    `form_origin`: `website` from `LeadForm`, `google_ads_landing` from `/offer`, and
    `facebook_ads_landing` from `/offer?src=fb`. The server accepts only those three values.
 2. On each full page load, `components/AttributionCapture.tsx` stores the landing touch. On submit,
@@ -102,27 +105,32 @@ sent unchanged. They do not change `source`, `lead_source`, or the tag.
 `lib/ghl.ts` POSTs flat JSON. Contact fields are unchanged except the source, tag, and the
 form and click labels below.
 
-| Payload key                                                           | Value                                                                     |
-| --------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| `first_name`, `last_name`, `full_name`, `phone`, `email`              | Lead contact                                                              |
-| `address1`, `city`, `state`, `country`                                | Property address, `WA`, `US`                                              |
-| `condition`, `timeframe`, `preferred_contact`, `reason_for_selling`   | Form answers                                                              |
-| `sms_non_marketing_consent`, `sms_marketing_consent`                  | Consent booleans                                                          |
-| `page_path`, `ip`                                                     | Path of the submit page, and client IP                                    |
-| `source`, `lead_source`                                               | Form origin: `Website`, `Google Ads`, or `Facebook Ads`                   |
-| `click_source`                                                        | Click-derived label, such as `Google Ads` or `Direct/Website`             |
-| `form_name`                                                           | `Website Form`, `Google Ads Landing Page`, or `Facebook Ads Landing Page` |
-| `form_origin`                                                         | Allowlisted key the server accepted                                       |
-| `channel`                                                             | Always `Website`, so a workflow can still recognize a site lead           |
-| `tags`                                                                | `website lead` plus the form's source tag, comma-separated                |
-| `source_tag`                                                          | `website`, `google ads`, or `facebook ads` from the form                  |
-| `utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, `utm_content` | Stored UTM values                                                         |
-| `gclid`, `gbraid`, `wbraid`, `fbclid`                                 | Stored click ids                                                          |
-| `referrer`, `landing_page`, `attribution_captured_at`                 | Landing context                                                           |
-| `attribution_notes`                                                   | Plain-text copy of the same values                                        |
+| Payload key                                                           | Value                                                                                                                   |
+| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `first_name`, `last_name`, `full_name`, `phone`, `email`              | Lead contact                                                                                                            |
+| `address1`, `city`, `state`, `country`                                | Property address, `WA`, `US`                                                                                            |
+| `condition`, `timeframe`, `preferred_contact`, `reason_for_selling`   | Form answers                                                                                                            |
+| `listed_with_agent`                                                   | `yes` or `no` from `/offer`; empty when the website form omitted it                                                     |
+| `sms_non_marketing_consent`, `sms_marketing_consent`                  | Consent booleans                                                                                                        |
+| `page_path`, `ip`                                                     | Path of the submit page, and client IP                                                                                  |
+| `source`, `lead_source`                                               | Form origin: `Website`, `Google Ads`, or `Facebook Ads`                                                                 |
+| `click_source`                                                        | Click-derived label, such as `Google Ads` or `Direct/Website`                                                           |
+| `form_name`                                                           | `Website Form`, `Google Ads Landing Page`, or `Facebook Ads Landing Page`                                               |
+| `form_origin`                                                         | Allowlisted key the server accepted                                                                                     |
+| `channel`                                                             | Always `Website`, so a workflow can still recognize a site lead                                                         |
+| `tags`                                                                | `website lead` plus the form's source tag, comma-separated. When `listed_with_agent` is `yes`, also `listed with agent` |
+| `source_tag`                                                          | `website`, `google ads`, or `facebook ads` from the form                                                                |
+| `utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, `utm_content` | Stored UTM values                                                                                                       |
+| `gclid`, `gbraid`, `wbraid`, `fbclid`                                 | Stored click ids                                                                                                        |
+| `referrer`, `landing_page`, `attribution_captured_at`                 | Landing context                                                                                                         |
+| `attribution_notes`                                                   | Plain-text copy of the same values                                                                                      |
 
 Example `tags` values: `website lead, google ads`, `website lead, facebook ads`, and
-`website lead, website`. The original `website lead` tag is always included.
+`website lead, website`. The original `website lead` tag is always included. A yes answer on
+`/offer` appends `listed with agent`, for example `website lead, google ads, listed with agent`.
+A no answer keeps the form tags unchanged and still sends `listed_with_agent` = `no`. The
+attribution note includes `Listed with agent: yes` or `Listed with agent: no` only when the field
+was answered.
 
 `source` and `lead_source` follow the form. `click_source` is the click-derived label. `channel`
 remains `Website`.
@@ -148,6 +156,7 @@ Do this in the KindKey Home Buyers sub-account, in the workflow that owns `GHL_W
    - `click_source`
    - `form_name`
    - `form_origin`
+   - `listed_with_agent`
    - `utm_source`
    - `utm_medium`
    - `utm_campaign`
@@ -169,7 +178,10 @@ Do this in the KindKey Home Buyers sub-account, in the workflow that owns `GHL_W
    `Website`, the tag is `website lead, website`, and `click_source` is `Google Ads` with the click
    id still stored. Submit one lead from `/offer` and one from `/offer?src=fb`. Confirm those are
    `Google Ads` / `google ads` / `Google Ads Landing Page` and `Facebook Ads` / `facebook ads` /
-   `Facebook Ads Landing Page`. Confirm the opportunity is in **ALL LEADS** / **New Hot Lead**.
+   `Facebook Ads Landing Page`. On `/offer`, answer “Is your house currently listed with an agent?”
+   Yes and confirm `listed_with_agent` is `yes`, the note includes `Listed with agent: yes`, and
+   the tags include `listed with agent`. Answer No and confirm `listed_with_agent` is `no` without
+   that extra tag. Confirm the opportunity is in **ALL LEADS** / **New Hot Lead**.
 
 No new environment variable is required. Attribution is captured in the browser and sent through
 the existing webhook.

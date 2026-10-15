@@ -46,6 +46,8 @@ export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps)
     phone: `${idPrefix}-phone`,
     address: `${idPrefix}-address`,
     email: `${idPrefix}-email`,
+    listedYes: `${idPrefix}-listed-yes`,
+    listedNo: `${idPrefix}-listed-no`,
     smsService: `${idPrefix}-sms-service`,
     smsMarketing: `${idPrefix}-sms-marketing`,
   };
@@ -137,6 +139,7 @@ export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps)
           propertyAddress: data.propertyAddress,
           smsNonMarketingConsent: data.smsNonMarketingConsent,
           smsMarketingConsent: data.smsMarketingConsent,
+          listed_with_agent: data.listed_with_agent,
           recaptchaToken,
           pagePath: window.location.pathname,
           ...attributionFields,
@@ -228,6 +231,43 @@ export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps)
         />
         {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>}
       </div>
+
+      <fieldset>
+        <legend className="mb-1 text-sm font-medium text-text-primary">
+          Is your house currently listed with an agent?
+        </legend>
+        <div className="flex gap-4">
+          <label
+            htmlFor={ids.listedYes}
+            className="flex items-center gap-2 text-sm text-text-primary"
+          >
+            <input
+              type="radio"
+              id={ids.listedYes}
+              value="yes"
+              {...register('listed_with_agent')}
+              className="h-4 w-4 border-gray-300 text-divider focus:ring-divider"
+            />
+            Yes
+          </label>
+          <label
+            htmlFor={ids.listedNo}
+            className="flex items-center gap-2 text-sm text-text-primary"
+          >
+            <input
+              type="radio"
+              id={ids.listedNo}
+              value="no"
+              {...register('listed_with_agent')}
+              className="h-4 w-4 border-gray-300 text-divider focus:ring-divider"
+            />
+            No
+          </label>
+        </div>
+        {errors.listed_with_agent && (
+          <p className="mt-1 text-sm text-red-600">{errors.listed_with_agent.message}</p>
+        )}
+      </fieldset>
 
       <div className="space-y-1.5">
         <div className="flex items-start">

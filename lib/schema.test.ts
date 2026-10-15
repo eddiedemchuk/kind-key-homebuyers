@@ -37,8 +37,45 @@ describe('lead schemas', () => {
   });
 
   it('requires a complete phone number on the offer form only', () => {
-    assert.equal(offerLeadFormSchema.safeParse({ ...shortOffer, phone: '+1' }).success, false);
-    assert.equal(offerLeadFormSchema.safeParse(shortOffer).success, true);
+    const withAnswer = { ...shortOffer, listed_with_agent: 'no' as const };
+    assert.equal(offerLeadFormSchema.safeParse({ ...withAnswer, phone: '+1' }).success, false);
+    assert.equal(offerLeadFormSchema.safeParse(withAnswer).success, true);
     assert.equal(leadApiSchema.safeParse({ ...shortOffer, phone: '' }).success, true);
+  });
+
+  it('requires a yes or no listing answer on the offer form only', () => {
+    assert.equal(offerLeadFormSchema.safeParse(shortOffer).success, false);
+    assert.equal(
+      offerLeadFormSchema.safeParse({ ...shortOffer, listed_with_agent: 'yes' }).success,
+      true
+    );
+    assert.equal(
+      offerLeadFormSchema.safeParse({ ...shortOffer, listed_with_agent: 'no' }).success,
+      true
+    );
+    assert.equal(
+      offerLeadFormSchema.safeParse({ ...shortOffer, listed_with_agent: 'maybe' }).success,
+      false
+    );
+    assert.equal(leadApiSchema.safeParse(shortOffer).success, true);
+    assert.equal(
+      leadApiSchema.safeParse({ ...shortOffer, listed_with_agent: 'yes' }).success,
+      true
+    );
+    assert.equal(
+      leadApiSchema.safeParse({ ...shortOffer, listed_with_agent: 'maybe' }).success,
+      false
+    );
+    assert.equal(
+      leadFormSchema.safeParse({
+        ...shortOffer,
+        phone: '+1',
+        city: 'Auburn',
+        condition: 'as-is',
+        timeframe: 'asap',
+        preferredContact: 'call',
+      }).success,
+      true
+    );
   });
 });
