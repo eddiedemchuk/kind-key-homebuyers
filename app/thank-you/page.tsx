@@ -1,6 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
+import {
+  GOOGLE_ADS_SUBMIT_CONVERSION_SEND_TO,
+  GOOGLE_ADS_SUBMIT_CONVERSION_STORAGE_KEY,
+  GOOGLE_ADS_THANK_YOU_CONVERSION_SEND_TO,
+} from '@/lib/analytics';
 
 export const metadata: Metadata = {
   title: "Thank You - We'll Reach Out Soon",
@@ -18,10 +23,30 @@ export default function ThankYouPage() {
           function gtag(){dataLayer.push(arguments);}
 
           gtag('event', 'conversion', {
-            'send_to': 'AW-17766515185/hcQZCKrs2swbEPGD3pdC',
+            'send_to': '${GOOGLE_ADS_THANK_YOU_CONVERSION_SEND_TO}',
             'value': 1.0,
             'currency': 'USD'
           });
+
+          try {
+            var pendingRaw = sessionStorage.getItem('${GOOGLE_ADS_SUBMIT_CONVERSION_STORAGE_KEY}');
+            if (pendingRaw) {
+              var pending = JSON.parse(pendingRaw);
+              if (
+                pending &&
+                pending.sendTo === '${GOOGLE_ADS_SUBMIT_CONVERSION_SEND_TO}' &&
+                pending.transactionId
+              ) {
+                gtag('event', 'conversion', {
+                  'send_to': pending.sendTo,
+                  'value': 1.0,
+                  'currency': 'USD',
+                  'transaction_id': pending.transactionId
+                });
+              }
+              sessionStorage.removeItem('${GOOGLE_ADS_SUBMIT_CONVERSION_STORAGE_KEY}');
+            }
+          } catch (e) {}
         `}
       </Script>
       <section className="flex min-h-screen items-center bg-primary py-20">

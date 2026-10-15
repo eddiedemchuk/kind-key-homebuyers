@@ -33,8 +33,13 @@ the state to `pending`, which displays the banner. Accepting dispatches the
   event.
 - The Google Ads tag is initialized separately in the root layout and is not gated by the GA4
   consent component.
-- Lead submission emits `generate_lead`; the thank-you route emits the configured Google Ads
-  conversion event.
+- Lead submission emits `generate_lead` and queues Google Ads conversion
+  `AW-17766515185/IeBJCKCujPIbEPGD3pdC` with a transaction id.
+- The thank-you route emits conversion `AW-17766515185/hcQZCKrs2swbEPGD3pdC`. It repeats the submit
+  conversion with the same transaction id when the submit page stored one, so Google Ads counts
+  that conversion once.
+- First-touch campaign parameters are stored separately from the GA4 consent record. See
+  [GoHighLevel lead delivery](gohighlevel.md).
 
 The Google Ads identifiers are currently stored in application code. The optional GA4 measurement
 ID comes from `NEXT_PUBLIC_GA_MEASUREMENT_ID`.

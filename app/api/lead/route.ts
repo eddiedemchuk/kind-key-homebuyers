@@ -7,6 +7,11 @@ import { postToCRM } from '@/lib/crm';
 import { sendTelegramMessage, formatLeadForTelegram } from '@/lib/telegram';
 import { sendLeadEmail } from '@/lib/mailer';
 import { sendLeadToGHL } from '@/lib/ghl';
+import {
+  readAttributionFromCookieHeader,
+  resolveSubmissionAttribution,
+  touchFromRequestBody,
+} from '@/lib/attribution';
 
 // Rate limiting is optional so local development and deployments without the
 // complete Upstash credential pair can still accept leads.
@@ -70,6 +75,10 @@ export async function POST(request: NextRequest) {
 
     const ip = getClientIP(request);
     const pagePath = body.pagePath || 'unknown';
+    const attribution = resolveSubmissionAttribution(
+      touchFromRequestBody(body),
+      readAttributionFromCookieHeader(request.headers.get('cookie'))
+    );
 
     const crmData = {
       name: data.name,
@@ -83,11 +92,12 @@ export async function POST(request: NextRequest) {
       preferredContact: data.preferredContact,
       smsNonMarketingConsent: data.smsNonMarketingConsent,
       smsMarketingConsent: data.smsMarketingConsent,
-      utm: body.utm,
-      gclid: body.gclid,
+      utm: attribution.utm_source || body.utm,
+      gclid: attribution.gclid || body.gclid,
       pagePath,
       recaptchaScore: 0.9, // Used when verification is skipped.
       ip,
+      attribution,
     };
 
     // Delivery channels are independent and optional. A provider failure is
