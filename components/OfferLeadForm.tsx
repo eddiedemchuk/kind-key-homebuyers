@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
@@ -9,6 +9,7 @@ import { trackLeadSubmit } from '@/lib/analytics';
 import { attributionFieldsForSubmit } from '@/lib/attribution-client';
 import type { FormOrigin } from '@/lib/form-origin';
 import { useRecaptcha } from '@/lib/useRecaptcha';
+import { formatPhoneChange, toE164 } from '@/lib/phone';
 
 export type OfferChannel = 'google' | 'facebook';
 
@@ -24,23 +25,14 @@ function formOriginForChannel(channel: OfferChannel): FormOrigin {
 const fieldClass =
   'w-full rounded-lg border border-gray-300 bg-white px-3 py-2.5 text-base text-text-primary placeholder-text-secondary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent';
 
-function formatPhoneNumber(value: string): string {
-  if (!value || !value.startsWith('+1')) {
-    return '+1';
-  }
-
-  const digits = value.slice(2).replace(/\D/g, '').slice(0, 10);
-  if (digits.length === 0) return '+1';
-  if (digits.length <= 3) return `+1(${digits}`;
-  if (digits.length <= 6) return `+1(${digits.slice(0, 3)}) ${digits.slice(3)}`;
-  return `+1(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
-}
+const submitButtonClass =
+  'flex min-h-14 w-full touch-manipulation items-center justify-center rounded-lg bg-divider px-6 py-3 text-lg font-bold text-white shadow-md transition-colors hover:bg-divider/90 disabled:cursor-not-allowed disabled:opacity-50';
 
 export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const formRef = useRef<HTMLFormElement>(null);
-  const { isReady, executeRecaptcha } = useRecaptcha(formRef);
+  const { executeRecaptcha } = useRecaptcha(formRef);
   const ids = {
     name: `${idPrefix}-name`,
     phone: `${idPrefix}-phone`,
@@ -57,63 +49,30 @@ export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps)
     handleSubmit,
     formState: { errors },
     setValue,
+    watch,
   } = useForm<OfferLeadFormData>({
     resolver: zodResolver(offerLeadFormSchema),
     defaultValues: {
-      phone: '+1',
+      phone: '',
       smsNonMarketingConsent: false,
       smsMarketingConsent: false,
     },
   });
+  const phoneValue = watch('phone') ?? '';
+  const phoneSelection = useRef<number | null>(null);
+  const phoneInputRef = useRef<HTMLInputElement | null>(null);
+  const { ref: phoneRef, ...phoneField } = register('phone');
 
-  useEffect(() => {
-    setValue('phone', '+1', { shouldValidate: false });
-  }, [setValue]);
+  useLayoutEffect(() => {
+    const input = phoneInputRef.current;
+    if (!input || document.activeElement !== input || phoneSelection.current == null) return;
+    input.setSelectionRange(phoneSelection.current, phoneSelection.current);
+  }, [phoneValue]);
 
   const handlePhoneChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const inputValue = event.target.value;
-
-    if (inputValue.length < 2 || !inputValue.startsWith('+1')) {
-      setValue('phone', '+1', { shouldValidate: false });
-      event.target.setSelectionRange(2, 2);
-      return;
-    }
-
-    const formatted = formatPhoneNumber(inputValue);
-    const cursorPosition = event.target.selectionStart || 0;
-    const digitsBeforeCursor = inputValue.slice(0, cursorPosition).replace(/\D/g, '').length;
-
-    setValue('phone', formatted, { shouldValidate: true });
-
-    setTimeout(() => {
-      let newCursorPos = 2;
-      if (digitsBeforeCursor > 0) {
-        let digitCount = 0;
-        for (let index = 2; index < formatted.length; index += 1) {
-          if (/\d/.test(formatted[index])) {
-            digitCount += 1;
-            if (digitCount === digitsBeforeCursor) {
-              newCursorPos = index + 1;
-              break;
-            }
-          }
-          if (digitCount < digitsBeforeCursor) {
-            newCursorPos = index + 1;
-          }
-        }
-      }
-      event.target.setSelectionRange(newCursorPos, newCursorPos);
-    }, 0);
-  };
-
-  const handlePhoneKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    const cursorPosition = event.currentTarget.selectionStart || 0;
-    if (
-      (event.key === 'Backspace' && cursorPosition <= 2) ||
-      (event.key === 'Delete' && cursorPosition < 2)
-    ) {
-      event.preventDefault();
-    }
+    const { value, selection } = formatPhoneChange(event.target.value, event.target.selectionStart);
+    phoneSelection.current = selection;
+    setValue('phone', value, { shouldValidate: value.length > 0 });
   };
 
   const onSubmit = async (data: OfferLeadFormData) => {
@@ -134,7 +93,7 @@ export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps)
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name: data.name,
-          phone: data.phone,
+          phone: toE164(data.phone),
           email: data.email,
           propertyAddress: data.propertyAddress,
           smsNonMarketingConsent: data.smsNonMarketingConsent,
@@ -164,7 +123,12 @@ export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps)
   };
 
   return (
-    <form ref={formRef} onSubmit={handleSubmit(onSubmit)} className="space-y-1.5" noValidate>
+    <form
+      ref={formRef}
+      onSubmit={handleSubmit(onSubmit)}
+      className="scroll-mb-[calc(65px+env(safe-area-inset-bottom,0px))] space-y-1.5 md:scroll-mb-0"
+      noValidate
+    >
       <div>
         <label htmlFor={ids.name} className="mb-1 block text-sm font-medium text-text-primary">
           Name
@@ -187,14 +151,17 @@ export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps)
         <input
           type="tel"
           id={ids.phone}
-          {...register('phone')}
+          {...phoneField}
+          ref={(element) => {
+            phoneInputRef.current = element;
+            phoneRef(element);
+          }}
+          value={phoneValue}
           onChange={handlePhoneChange}
-          onKeyDown={handlePhoneKeyDown}
           className={fieldClass}
-          placeholder="+1(253) 555-0100"
+          placeholder="(253) 555-0100"
           autoComplete="tel"
           inputMode="tel"
-          maxLength={17}
         />
         {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p>}
       </div>
@@ -312,13 +279,12 @@ export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps)
         </div>
       )}
 
-      <button
-        type="submit"
-        disabled={isSubmitting || !isReady}
-        className="w-full rounded-lg bg-divider px-6 py-3 text-lg font-semibold text-white transition-colors hover:bg-divider/90 disabled:cursor-not-allowed disabled:opacity-50"
-      >
-        {isSubmitting ? 'Submitting...' : 'Get My Cash Offer'}
+      <button type="submit" disabled={isSubmitting} className={submitButtonClass}>
+        {isSubmitting ? 'Submitting...' : 'Get My Free Cash Offer'}
       </button>
+      <p className="text-center text-xs font-medium text-text-secondary">
+        Free, no obligation, we never share your info
+      </p>
 
       <p className="text-center text-xs text-text-secondary">
         <Link href="/privacy" className="underline">

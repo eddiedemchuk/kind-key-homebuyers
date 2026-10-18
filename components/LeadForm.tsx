@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
@@ -8,6 +8,7 @@ import { leadFormSchema, type LeadFormData } from '@/lib/schema';
 import { trackLeadSubmit } from '@/lib/analytics';
 import { attributionFieldsForSubmit } from '@/lib/attribution-client';
 import { useRecaptcha } from '@/lib/useRecaptcha';
+import { formatPhoneChange, toE164 } from '@/lib/phone';
 
 interface LeadFormProps {
   variant?: 'short' | 'extended';
@@ -25,118 +26,37 @@ export default function LeadForm({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const formRef = useRef<HTMLFormElement>(null);
-  const { isReady, executeRecaptcha } = useRecaptcha(formRef);
+  const { executeRecaptcha } = useRecaptcha(formRef);
 
   const {
     register,
     handleSubmit,
     formState: { errors },
-    watch,
     setValue,
+    watch,
   } = useForm<LeadFormData>({
     resolver: zodResolver(leadFormSchema),
     defaultValues: {
-      phone: '+1',
+      phone: '',
       smsNonMarketingConsent: false,
       smsMarketingConsent: false,
     },
   });
+  const phoneValue = watch('phone') ?? '';
+  const phoneSelection = useRef<number | null>(null);
+  const phoneInputRef = useRef<HTMLInputElement | null>(null);
+  const { ref: phoneRef, ...phoneField } = register('phone');
 
-  useEffect(() => {
-    setValue('phone', '+1', { shouldValidate: false });
-  }, [setValue]);
+  useLayoutEffect(() => {
+    const input = phoneInputRef.current;
+    if (!input || document.activeElement !== input || phoneSelection.current == null) return;
+    input.setSelectionRange(phoneSelection.current, phoneSelection.current);
+  }, [phoneValue]);
 
-  // Keep +1 fixed while formatting at most ten national-number digits.
-  const formatPhoneNumber = (value: string): string => {
-    if (!value || !value.startsWith('+1')) {
-      return '+1';
-    }
-
-    const digits = value.slice(2).replace(/\D/g, '');
-
-    if (digits.length === 0) {
-      return '+1';
-    }
-
-    const limitedDigits = digits.slice(0, 10);
-
-    if (limitedDigits.length <= 3) {
-      return `+1(${limitedDigits}`;
-    } else if (limitedDigits.length <= 6) {
-      return `+1(${limitedDigits.slice(0, 3)}) ${limitedDigits.slice(3)}`;
-    } else {
-      return `+1(${limitedDigits.slice(0, 3)}) ${limitedDigits.slice(3, 6)}-${limitedDigits.slice(6)}`;
-    }
-  };
-
-  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const inputValue = e.target.value;
-
-    if (inputValue.length < 2 || !inputValue.startsWith('+1')) {
-      setValue('phone', '+1', { shouldValidate: false });
-      e.target.setSelectionRange(2, 2);
-      return;
-    }
-
-    const formatted = formatPhoneNumber(inputValue);
-
-    const cursorPosition = e.target.selectionStart || 0;
-    const digitsBeforeCursor = inputValue.slice(0, cursorPosition).replace(/\D/g, '').length;
-
-    setValue('phone', formatted, { shouldValidate: true });
-
-    // Preserve the logical digit position after punctuation is inserted.
-    setTimeout(() => {
-      let newCursorPos = 2;
-      const digitsInFormatted = formatted.slice(2).replace(/\D/g, '');
-
-      if (digitsBeforeCursor > 0) {
-        let digitCount = 0;
-        for (let i = 2; i < formatted.length; i++) {
-          if (/\d/.test(formatted[i])) {
-            digitCount++;
-            if (digitCount === digitsBeforeCursor) {
-              newCursorPos = i + 1;
-              break;
-            }
-          }
-          if (digitCount < digitsBeforeCursor) {
-            newCursorPos = i + 1;
-          }
-        }
-      }
-
-      e.target.setSelectionRange(newCursorPos, newCursorPos);
-    }, 0);
-  };
-
-  const handlePhoneKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    const input = e.currentTarget;
-    const cursorPosition = input.selectionStart || 0;
-
-    // The country-code prefix is an input invariant.
-    if (
-      (e.key === 'Backspace' && cursorPosition <= 2) ||
-      (e.key === 'Delete' && cursorPosition < 2)
-    ) {
-      e.preventDefault();
-      return;
-    }
-
-    if (
-      e.key.length === 1 &&
-      !/\d/.test(e.key) &&
-      e.key !== '(' &&
-      e.key !== ')' &&
-      e.key !== ' ' &&
-      e.key !== '-' &&
-      e.key !== '+' &&
-      e.key !== '1'
-    ) {
-      if (cursorPosition >= 2 && (e.key === '+' || e.key === '1')) {
-        e.preventDefault();
-      }
-    }
+  const handlePhoneChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { value, selection } = formatPhoneChange(event.target.value, event.target.selectionStart);
+    phoneSelection.current = selection;
+    setValue('phone', value, { shouldValidate: value.length > 0 });
   };
 
   const onSubmit = async (data: LeadFormData) => {
@@ -160,6 +80,7 @@ export default function LeadForm({
         },
         body: JSON.stringify({
           ...data,
+          phone: toE164(data.phone),
           recaptchaToken,
           pagePath: window.location.pathname,
           ...attributionFields,
@@ -260,13 +181,17 @@ export default function LeadForm({
           <input
             type="tel"
             id="phone"
-            {...register('phone')}
+            {...phoneField}
+            ref={(element) => {
+              phoneInputRef.current = element;
+              phoneRef(element);
+            }}
+            value={phoneValue}
             onChange={handlePhoneChange}
-            onKeyDown={handlePhoneKeyDown}
             className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-text-primary placeholder-text-secondary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent"
-            placeholder="+1(206) 555-1234"
+            placeholder="(253) 555-0100"
             autoComplete="tel"
-            maxLength={17}
+            inputMode="tel"
           />
           {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p>}
         </div>
@@ -425,8 +350,8 @@ export default function LeadForm({
 
       <button
         type="submit"
-        disabled={isSubmitting || !isReady}
-        className="w-full rounded-lg bg-divider px-6 py-3 font-semibold text-white transition-colors hover:bg-divider/90 disabled:cursor-not-allowed disabled:opacity-50"
+        disabled={isSubmitting}
+        className="flex min-h-12 w-full touch-manipulation items-center justify-center rounded-lg bg-divider px-6 py-3 font-semibold text-white transition-colors hover:bg-divider/90 disabled:cursor-not-allowed disabled:opacity-50"
       >
         {isSubmitting ? 'Submitting...' : 'Get My Cash Offer'}
       </button>

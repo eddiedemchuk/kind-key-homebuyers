@@ -1,17 +1,18 @@
 import { z } from 'zod';
+import { isCompleteUsPhone } from './phone';
 
 const optionalPhoneSchema = z.string().refine(
   (val) => {
     const v = (val ?? '').trim();
     if (v === '' || v === '+1') return true;
-    return /^\+1\(\d{3}\) \d{3}-\d{4}$/.test(v);
+    return isCompleteUsPhone(v);
   },
-  { message: 'Invalid phone number format. Use +1(XXX) XXX-XXXX or leave blank.' }
+  { message: 'Enter a valid US phone number, or leave this blank.' }
 );
 
 const requiredPhoneSchema = z
   .string()
-  .regex(/^\+1\(\d{3}\) \d{3}-\d{4}$/, 'Enter a valid phone number.');
+  .refine((val) => isCompleteUsPhone(val), { message: 'Enter a valid US phone number.' });
 
 const optionalCitySchema = z.union([z.string().trim().min(2).max(100), z.literal('')]).optional();
 
