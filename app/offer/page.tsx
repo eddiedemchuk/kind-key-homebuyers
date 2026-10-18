@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import OfferLeadForm, { type OfferChannel } from '@/components/OfferLeadForm';
+import OfferMobileBar, { OfferJumpButton } from '@/components/OfferMobileBar';
 
 export const metadata: Metadata = {
   title: 'Sell Your House As-Is for Cash',
@@ -77,7 +78,7 @@ export default async function OfferPage({
 
   return (
     <main className="min-h-screen bg-white text-text-primary">
-      <header className="border-b border-gray-200">
+      <header className="z-40 border-b border-gray-200 bg-white md:sticky md:top-0">
         <div className="mx-auto flex max-w-3xl items-center justify-between gap-3 px-4 py-2">
           <div className="flex items-center gap-2">
             <Image
@@ -92,13 +93,16 @@ export default async function OfferPage({
               KindKey Home Buyers
             </span>
           </div>
-          <a href={`tel:${phone.tel}`} className="shrink-0 text-base font-semibold text-divider">
-            {phone.display}
-          </a>
+          <div className="flex shrink-0 items-center gap-3">
+            <a href={`tel:${phone.tel}`} className="text-base font-semibold text-divider">
+              {phone.display}
+            </a>
+            <OfferJumpButton className="hidden min-h-12 items-center justify-center rounded-lg bg-divider px-4 text-sm font-bold text-white shadow-sm md:inline-flex" />
+          </div>
         </div>
       </header>
 
-      <div className="mx-auto max-w-3xl px-4 pb-12 pt-1">
+      <div className="mx-auto max-w-3xl px-4 pb-[calc(65px+env(safe-area-inset-bottom,0px))] pt-1 md:pb-12">
         <section>
           <h1 className="text-balance text-[1.7rem] font-bold leading-[1.15] sm:text-4xl">
             Sell Your House As-Is for Cash
@@ -113,7 +117,13 @@ export default async function OfferPage({
           >
             Call {phone.display}
           </a>
-          <div className="mt-2 rounded-xl border border-gray-200 bg-white p-2.5 shadow-sm">
+          <div
+            data-offer-form
+            className="mt-2 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-2.5 shadow-sm md:scroll-mt-20"
+          >
+            <p className="mb-2 text-sm font-semibold leading-snug text-text-primary">
+              Get your no-obligation cash offer: takes 30 seconds
+            </p>
             <OfferLeadForm channel={channel} idPrefix="hero" />
           </div>
         </section>
@@ -171,11 +181,18 @@ export default async function OfferPage({
           >
             Call {phone.display}
           </a>
-          <div className="mt-5 rounded-xl border border-gray-200 bg-white p-4">
+          <div
+            data-offer-form
+            className="mt-5 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-4 md:scroll-mt-20"
+          >
+            <p className="mb-2 text-sm font-semibold leading-snug text-text-primary">
+              Get your no-obligation cash offer: takes 30 seconds
+            </p>
             <OfferLeadForm channel={channel} idPrefix="repeat" />
           </div>
         </section>
       </div>
+      <OfferMobileBar phone={phone} />
     </main>
   );
 }

@@ -41,6 +41,11 @@ describe('lead schemas', () => {
     assert.equal(offerLeadFormSchema.safeParse({ ...withAnswer, phone: '+1' }).success, false);
     assert.equal(offerLeadFormSchema.safeParse(withAnswer).success, true);
     assert.equal(leadApiSchema.safeParse({ ...shortOffer, phone: '' }).success, true);
+    for (const phone of ['(253) 555-0100', '2535550100', '253-555-0100', '+12535550100']) {
+      assert.equal(offerLeadFormSchema.safeParse({ ...withAnswer, phone }).success, true, phone);
+      assert.equal(leadApiSchema.safeParse({ ...shortOffer, phone }).success, true, phone);
+    }
+    assert.equal(offerLeadFormSchema.safeParse({ ...withAnswer, phone: '253555' }).success, false);
   });
 
   it('requires a yes or no listing answer on the offer form only', () => {
