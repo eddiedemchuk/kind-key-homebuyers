@@ -208,6 +208,18 @@ function isMetaHost(host: string): boolean {
   );
 }
 
+/** Google Ads click: gclid, or a Google click id, or google + a paid medium. */
+export function isGoogleAdsTouch(
+  touch:
+    | Pick<AttributionTouch, 'gclid' | 'gbraid' | 'wbraid' | 'utm_source' | 'utm_medium'>
+    | null
+    | undefined
+): boolean {
+  if (!touch) return false;
+  if (touch.gclid.trim() || touch.gbraid.trim() || touch.wbraid.trim()) return true;
+  return isGoogleUtmSource(touch.utm_source) && isPaidMedium(touch.utm_medium);
+}
+
 export function deriveLeadSource(touch: AttributionTouch): LeadSource {
   const source = touch.utm_source;
   const medium = touch.utm_medium;

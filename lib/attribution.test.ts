@@ -5,6 +5,7 @@ import {
   type AttributionTouch,
   decodeStoredAttribution,
   deriveLeadSource,
+  isGoogleAdsTouch,
   emptyTouch,
   encodeAttribution,
   mergeAttribution,
@@ -223,11 +224,27 @@ describe('submission resolution', () => {
   });
 });
 
+describe('isGoogleAdsTouch', () => {
+  it('is true for a Google click id or a paid Google visit', () => {
+    assert.equal(isGoogleAdsTouch(touch({ gclid: 'abc' })), true);
+    assert.equal(isGoogleAdsTouch(touch({ gbraid: 'gb' })), true);
+    assert.equal(isGoogleAdsTouch(touch({ wbraid: 'wb' })), true);
+    assert.equal(isGoogleAdsTouch(touch({ utm_source: 'google', utm_medium: 'cpc' })), true);
+    assert.equal(isGoogleAdsTouch(touch({ utm_source: 'google', utm_medium: 'organic' })), false);
+    assert.equal(isGoogleAdsTouch(touch({ utm_source: 'facebook', utm_medium: 'cpc' })), false);
+    assert.equal(isGoogleAdsTouch(touch()), false);
+    assert.equal(isGoogleAdsTouch(null), false);
+  });
+});
+
 describe('resolveFormOrigin', () => {
   it('accepts only the form allowlist', () => {
     assert.equal(resolveFormOrigin('website'), 'website');
     assert.equal(resolveFormOrigin('google_ads_landing'), 'google_ads_landing');
     assert.equal(resolveFormOrigin('facebook_ads_landing'), 'facebook_ads_landing');
+    assert.equal(resolveFormOrigin('google_ads_foreclosure'), 'google_ads_foreclosure');
+    assert.equal(resolveFormOrigin('google_ads_inherited'), 'google_ads_inherited');
+    assert.equal(resolveFormOrigin('google_ads_as_is'), 'google_ads_as_is');
     assert.equal(resolveFormOrigin('Google Ads'), 'website');
     assert.equal(resolveFormOrigin('facebook'), 'website');
     assert.equal(resolveFormOrigin('google ads'), 'website');
@@ -366,6 +383,23 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.form_name, 'Facebook Ads Landing Page');
     assert.equal(payload.click_source, 'Google Ads');
     assert.equal(payload.gclid, 'gclid-1');
+  });
+
+  it('labels a situation landing page and keeps Google Ads as the contact source', () => {
+    const payload = buildGhlPayload({
+      ...lead,
+      pagePath: '/offer/foreclosure',
+      formOrigin: 'google_ads_foreclosure',
+      listedWithAgent: 'no',
+    });
+    assert.equal(payload.source, 'Google Ads');
+    assert.equal(payload.lead_source, 'Google Ads');
+    assert.equal(payload.source_tag, 'google ads');
+    assert.equal(payload.tags, 'website lead, google ads, foreclosure');
+    assert.equal(payload.form_name, 'Google Ads Foreclosure Page');
+    assert.equal(payload.form_origin, 'google_ads_foreclosure');
+    assert.equal(payload.page_path, '/offer/foreclosure');
+    assert.equal(payload.listed_with_agent, 'no');
   });
 
   it('adds the listed-with-agent tag and note when the offer answer is yes', () => {

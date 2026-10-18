@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import AttributionCapture from '@/components/AttributionCapture';
-import { localBusinessJsonLd, SITE_URL } from '@/lib/site';
+import { SITE_URL } from '@/lib/site';
 import './globals.css';
 
 const inter = Inter({
@@ -185,12 +185,6 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.google.com" />
         <link rel="preconnect" href="https://www.gstatic.com" crossOrigin="anonymous" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessJsonLd()).replace(/</g, '\\u003c'),
-          }}
-        />
       </head>
       <body>
         {children}

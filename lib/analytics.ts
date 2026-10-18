@@ -9,9 +9,6 @@ declare global {
   }
 }
 
-/** Existing thank-you conversion. Kept as its own destination. */
-export const GOOGLE_ADS_THANK_YOU_CONVERSION_SEND_TO = 'AW-17766515185/hcQZCKrs2swbEPGD3pdC';
-
 /** Fired after a successful lead submit. Thank-you repeats it with the same transaction id. */
 export const GOOGLE_ADS_SUBMIT_CONVERSION_SEND_TO = 'AW-17766515185/IeBJCKCujPIbEPGD3pdC';
 

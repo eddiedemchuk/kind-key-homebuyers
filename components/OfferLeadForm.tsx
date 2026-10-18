@@ -1,7 +1,7 @@
 'use client';
 
 import { useLayoutEffect, useRef, useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm, type UseFormRegisterReturn } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
 import { offerLeadFormSchema, type OfferLeadFormData } from '@/lib/schema';
@@ -11,24 +11,54 @@ import type { FormOrigin } from '@/lib/form-origin';
 import { useRecaptcha } from '@/lib/useRecaptcha';
 import { formatPhoneChange, toE164 } from '@/lib/phone';
 
-export type OfferChannel = 'google' | 'facebook';
-
 interface OfferLeadFormProps {
-  channel: OfferChannel;
+  formOrigin: FormOrigin;
   idPrefix: string;
 }
 
-function formOriginForChannel(channel: OfferChannel): FormOrigin {
-  return channel === 'facebook' ? 'facebook_ads_landing' : 'google_ads_landing';
+const SERVICE_SMS_CONSENT =
+  'By checking this box, I consent to receive non-marketing text messages including appointment confirmations, follow-ups, and service-related updates, from KindKey Home Buyers LLC. Message frequency varies, message & data rates may apply. Text HELP for assistance, reply STOP to opt out.';
+
+const MARKETING_SMS_CONSENT =
+  'By checking this box, I consent to receive marketing and promotional messages including special offers, discounts, new product updates among others from KindKey Home Buyers LLC at the phone number provided. Frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.';
+
+function ConsentField({
+  id,
+  shortLabel,
+  fullText,
+  registration,
+}: {
+  id: string;
+  shortLabel: string;
+  fullText: string;
+  registration: UseFormRegisterReturn;
+}) {
+  return (
+    <div className="flex items-start gap-2">
+      <input
+        type="checkbox"
+        id={id}
+        {...registration}
+        className="mt-0.5 h-4 w-4 rounded border-gray-300 bg-white text-divider focus:ring-divider"
+      />
+      <div className="text-[11px] leading-tight text-text-secondary">
+        <label htmlFor={id}>{shortLabel}</label>{' '}
+        <details className="inline">
+          <summary className="inline cursor-pointer font-medium text-divider">Details</summary>
+          <p className="mt-1">{fullText}</p>
+        </details>
+      </div>
+    </div>
+  );
 }
 
 const fieldClass =
-  'w-full rounded-lg border border-gray-300 bg-white px-3 py-2.5 text-base text-text-primary placeholder-text-secondary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent';
+  'w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-base text-text-primary placeholder-text-secondary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent';
 
 const submitButtonClass =
   'flex min-h-14 w-full touch-manipulation items-center justify-center rounded-lg bg-divider px-6 py-3 text-lg font-bold text-white shadow-md transition-colors hover:bg-divider/90 disabled:cursor-not-allowed disabled:opacity-50';
 
-export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps) {
+export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const formRef = useRef<HTMLFormElement>(null);
@@ -102,7 +132,7 @@ export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps)
           recaptchaToken,
           pagePath: window.location.pathname,
           ...attributionFields,
-          form_origin: formOriginForChannel(channel),
+          form_origin: formOrigin,
         }),
       });
 
@@ -183,22 +213,6 @@ export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps)
         )}
       </div>
 
-      <div>
-        <label htmlFor={ids.email} className="mb-1 block text-sm font-medium text-text-primary">
-          Email <span className="font-normal text-text-secondary">(optional)</span>
-        </label>
-        <input
-          type="email"
-          id={ids.email}
-          {...register('email')}
-          className={fieldClass}
-          placeholder="you@example.com"
-          autoComplete="email"
-          inputMode="email"
-        />
-        {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>}
-      </div>
-
       <fieldset>
         <legend className="mb-1 text-sm font-medium text-text-primary">
           Is your house currently listed with an agent?
@@ -236,41 +250,19 @@ export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps)
         )}
       </fieldset>
 
-      <div className="space-y-1.5">
-        <div className="flex items-start">
-          <input
-            type="checkbox"
-            id={ids.smsService}
-            {...register('smsNonMarketingConsent')}
-            className="mt-1 h-4 w-4 rounded border-gray-300 bg-white text-divider focus:ring-divider"
-          />
-          <label
-            htmlFor={ids.smsService}
-            className="ml-2 text-[11px] leading-tight text-text-secondary"
-          >
-            By checking this box, I consent to receive non-marketing text messages including
-            appointment confirmations, follow-ups, and service-related updates, from KindKey Home
-            Buyers LLC. Message frequency varies, message &amp; data rates may apply. Text HELP for
-            assistance, reply STOP to opt out.
-          </label>
-        </div>
-        <div className="flex items-start">
-          <input
-            type="checkbox"
-            id={ids.smsMarketing}
-            {...register('smsMarketingConsent')}
-            className="mt-1 h-4 w-4 rounded border-gray-300 bg-white text-divider focus:ring-divider"
-          />
-          <label
-            htmlFor={ids.smsMarketing}
-            className="ml-2 text-[11px] leading-tight text-text-secondary"
-          >
-            By checking this box, I consent to receive marketing and promotional messages including
-            special offers, discounts, new product updates among others from KindKey Home Buyers LLC
-            at the phone number provided. Frequency may vary. Message &amp; data rates may apply.
-            Text HELP for assistance, reply STOP to opt out.
-          </label>
-        </div>
+      <div className="space-y-1">
+        <ConsentField
+          id={ids.smsService}
+          shortLabel="Service texts. Msg & data rates may apply."
+          fullText={SERVICE_SMS_CONSENT}
+          registration={register('smsNonMarketingConsent')}
+        />
+        <ConsentField
+          id={ids.smsMarketing}
+          shortLabel="Marketing texts. Msg & data rates may apply."
+          fullText={MARKETING_SMS_CONSENT}
+          registration={register('smsMarketingConsent')}
+        />
       </div>
 
       {submitError && (
@@ -285,6 +277,22 @@ export default function OfferLeadForm({ channel, idPrefix }: OfferLeadFormProps)
       <p className="text-center text-xs font-medium text-text-secondary">
         Free, no obligation, we never share your info
       </p>
+
+      <div>
+        <label htmlFor={ids.email} className="mb-1 block text-sm font-medium text-text-primary">
+          Email <span className="font-normal text-text-secondary">(optional)</span>
+        </label>
+        <input
+          type="email"
+          id={ids.email}
+          {...register('email')}
+          className={fieldClass}
+          placeholder="you@example.com"
+          autoComplete="email"
+          inputMode="email"
+        />
+        {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>}
+      </div>
 
       <p className="text-center text-xs text-text-secondary">
         <Link href="/privacy" className="underline">

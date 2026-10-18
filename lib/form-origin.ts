@@ -4,7 +4,14 @@ import { GHL_BASE_TAG } from '@/lib/attribution';
  * Which form created the lead. The server accepts only these values.
  * Anything else is treated as the regular website form.
  */
-export const FORM_ORIGINS = ['website', 'google_ads_landing', 'facebook_ads_landing'] as const;
+export const FORM_ORIGINS = [
+  'website',
+  'google_ads_landing',
+  'facebook_ads_landing',
+  'google_ads_foreclosure',
+  'google_ads_inherited',
+  'google_ads_as_is',
+] as const;
 
 export type FormOrigin = (typeof FORM_ORIGINS)[number];
 
@@ -13,7 +20,7 @@ export interface FormOriginLabel {
   leadSource: 'Website' | 'Google Ads' | 'Facebook Ads';
   sourceTag: 'website' | 'google ads' | 'facebook ads';
   tags: string;
-  formName: 'Website Form' | 'Google Ads Landing Page' | 'Facebook Ads Landing Page';
+  formName: string;
 }
 
 const FORM_ORIGIN_LABELS: Record<FormOrigin, FormOriginLabel> = {
@@ -37,6 +44,27 @@ const FORM_ORIGIN_LABELS: Record<FormOrigin, FormOriginLabel> = {
     sourceTag: 'facebook ads',
     tags: `${GHL_BASE_TAG}, facebook ads`,
     formName: 'Facebook Ads Landing Page',
+  },
+  google_ads_foreclosure: {
+    source: 'Google Ads',
+    leadSource: 'Google Ads',
+    sourceTag: 'google ads',
+    tags: `${GHL_BASE_TAG}, google ads, foreclosure`,
+    formName: 'Google Ads Foreclosure Page',
+  },
+  google_ads_inherited: {
+    source: 'Google Ads',
+    leadSource: 'Google Ads',
+    sourceTag: 'google ads',
+    tags: `${GHL_BASE_TAG}, google ads, inherited`,
+    formName: 'Google Ads Inherited Page',
+  },
+  google_ads_as_is: {
+    source: 'Google Ads',
+    leadSource: 'Google Ads',
+    sourceTag: 'google ads',
+    tags: `${GHL_BASE_TAG}, google ads, as-is`,
+    formName: 'Google Ads As-Is Page',
   },
 };
 
