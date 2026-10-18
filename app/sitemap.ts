@@ -8,7 +8,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://kindkeyhomebuyers.com';
   const now = new Date();
 
-  // /offer is a paid-ads landing page. It is noindex and must stay off this list.
+  // /offer, /offer/foreclosure, /offer/inherited, and /offer/as-is are paid landing
+  // pages. They are noindex and must stay off this list.
   const routes = [
     '',
     '/how-it-works',

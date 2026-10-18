@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { APPROVED_TRANSACTION_DISCLOSURE } from '@/data/disclosures';
+import TrackingPhoneLink from '@/components/TrackingPhoneLink';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -131,12 +132,7 @@ export default function Footer() {
             <h4 className="mb-4 font-semibold text-text-primary">Contact</h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="tel:+12535183638"
-                  className="text-text-secondary transition-colors hover:text-divider"
-                >
-                  (253) 518-3638
-                </a>
+                <TrackingPhoneLink className="text-text-secondary transition-colors hover:text-divider" />
               </li>
               <li>
                 <a

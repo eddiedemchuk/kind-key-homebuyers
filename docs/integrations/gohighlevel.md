@@ -7,15 +7,17 @@ The chat widget is a separate, GHL-hosted path and does not use this webhook.
 
 1. Cash-offer forms post through `components/LeadForm.tsx` (homepage, `/cash-offer`, `/contact`,
    city pages, and situation pages) or `components/OfferLeadForm.tsx` on the paid-ads page
-   `/offer`. There is no embedded GHL form and no direct browser call to the LeadConnector API.
-   `/offer` collects name, phone, property address, optional email, a required yes/no answer to
+   `/offer` and the situation pages `/offer/foreclosure`, `/offer/inherited`, and `/offer/as-is`.
+   There is no embedded GHL form and no direct browser call to the LeadConnector API.
+   Those pages collect name, phone, property address, optional email, a required yes/no answer to
    “Is your house currently listed with an agent?”, and the same SMS consent checkboxes. That
    answer is posted as `listed_with_agent` (`yes` or `no`). `LeadForm` does not ask the question
    and does not send the field. City, condition, timeframe, and preferred contact stay required on
    `LeadForm` and are optional in the API so the short form can submit without filling them in.
-   Each form posts
-   `form_origin`: `website` from `LeadForm`, `google_ads_landing` from `/offer`, and
-   `facebook_ads_landing` from `/offer?src=fb`. The server accepts only those three values.
+   Each form posts `form_origin`: `website` from `LeadForm`, `google_ads_landing` from `/offer`,
+   `facebook_ads_landing` from `/offer?src=fb`, `google_ads_foreclosure` from `/offer/foreclosure`,
+   `google_ads_inherited` from `/offer/inherited`, and `google_ads_as_is` from `/offer/as-is`.
+   The server accepts only those values.
 2. On each full page load, `components/AttributionCapture.tsx` stores the landing touch. On submit,
    the form reads that stored touch again so a later page without campaign parameters still sends
    the original click.
@@ -30,9 +32,8 @@ The chat widget is a separate, GHL-hosted path and does not use this webhook.
    local copy of the lead.
 6. A successful response runs the existing `generate_lead` analytics event, queues Google Ads
    conversion `AW-17766515185/IeBJCKCujPIbEPGD3pdC`, and sends the visitor to `/thank-you`.
-   `/thank-you` still fires the original conversion `AW-17766515185/hcQZCKrs2swbEPGD3pdC`. It also
-   repeats the submit conversion with the same `transaction_id` so Google Ads counts that
-   conversion once if the first hit was lost during navigation.
+   `/thank-you` repeats that same conversion with the stored `transaction_id` so Google Ads counts
+   it once if the first hit was lost during navigation. It does not fire a second conversion label.
 
 The webhook URL is the Inbound Webhook trigger of a workflow in the KindKey Home Buyers
 sub-account. This app does not create the opportunity itself.
@@ -76,11 +77,14 @@ Rules:
 Contact source follows the form, not the click. `lib/form-origin.ts` maps the allowlisted
 `form_origin`:
 
-| `form_origin`          | `source` / `lead_source` | `source_tag`   | `form_name`                 |
-| ---------------------- | ------------------------ | -------------- | --------------------------- |
-| `website`              | `Website`                | `website`      | `Website Form`              |
-| `google_ads_landing`   | `Google Ads`             | `google ads`   | `Google Ads Landing Page`   |
-| `facebook_ads_landing` | `Facebook Ads`           | `facebook ads` | `Facebook Ads Landing Page` |
+| `form_origin`            | `source` / `lead_source` | `source_tag`   | `form_name`                   | `tags` (plus `website lead`) |
+| ------------------------ | ------------------------ | -------------- | ----------------------------- | ---------------------------- |
+| `website`                | `Website`                | `website`      | `Website Form`                | `website`                    |
+| `google_ads_landing`     | `Google Ads`             | `google ads`   | `Google Ads Landing Page`     | `google ads`                 |
+| `facebook_ads_landing`   | `Facebook Ads`           | `facebook ads` | `Facebook Ads Landing Page`   | `facebook ads`               |
+| `google_ads_foreclosure` | `Google Ads`             | `google ads`   | `Google Ads Foreclosure Page` | `google ads, foreclosure`    |
+| `google_ads_inherited`   | `Google Ads`             | `google ads`   | `Google Ads Inherited Page`   | `google ads, inherited`      |
+| `google_ads_as_is`       | `Google Ads`             | `google ads`   | `Google Ads As-Is Page`       | `google ads, as-is`          |
 
 A missing or unknown `form_origin` is `website`. A regular website form stays `Website` even when
 the visitor arrived from an ad.
@@ -110,12 +114,12 @@ form and click labels below.
 | `first_name`, `last_name`, `full_name`, `phone`, `email`              | Lead contact                                                                                                            |
 | `address1`, `city`, `state`, `country`                                | Property address, `WA`, `US`                                                                                            |
 | `condition`, `timeframe`, `preferred_contact`, `reason_for_selling`   | Form answers                                                                                                            |
-| `listed_with_agent`                                                   | `yes` or `no` from `/offer`; empty when the website form omitted it                                                     |
+| `listed_with_agent`                                                   | `yes` or `no` from an `/offer` page; empty when the website form omitted it                                             |
 | `sms_non_marketing_consent`, `sms_marketing_consent`                  | Consent booleans                                                                                                        |
 | `page_path`, `ip`                                                     | Path of the submit page, and client IP                                                                                  |
 | `source`, `lead_source`                                               | Form origin: `Website`, `Google Ads`, or `Facebook Ads`                                                                 |
 | `click_source`                                                        | Click-derived label, such as `Google Ads` or `Direct/Website`                                                           |
-| `form_name`                                                           | `Website Form`, `Google Ads Landing Page`, or `Facebook Ads Landing Page`                                               |
+| `form_name`                                                           | Form label from the allowlisted origin, such as `Google Ads Foreclosure Page`                                           |
 | `form_origin`                                                         | Allowlisted key the server accepted                                                                                     |
 | `channel`                                                             | Always `Website`, so a workflow can still recognize a site lead                                                         |
 | `tags`                                                                | `website lead` plus the form's source tag, comma-separated. When `listed_with_agent` is `yes`, also `listed with agent` |
@@ -125,9 +129,10 @@ form and click labels below.
 | `referrer`, `landing_page`, `attribution_captured_at`                 | Landing context                                                                                                         |
 | `attribution_notes`                                                   | Plain-text copy of the same values                                                                                      |
 
-Example `tags` values: `website lead, google ads`, `website lead, facebook ads`, and
-`website lead, website`. The original `website lead` tag is always included. A yes answer on
-`/offer` appends `listed with agent`, for example `website lead, google ads, listed with agent`.
+Example `tags` values: `website lead, google ads`, `website lead, google ads, foreclosure`,
+`website lead, facebook ads`, and `website lead, website`. Situation pages add `inherited` or
+`as-is` the same way. The original `website lead` tag is always included. A yes answer on an
+`/offer` page appends `listed with agent`, for example `website lead, google ads, listed with agent`.
 A no answer keeps the form tags unchanged and still sends `listed_with_agent` = `no`. The
 attribution note includes `Listed with agent: yes` or `Listed with agent: no` only when the field
 was answered.

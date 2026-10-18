@@ -4,7 +4,6 @@ import Script from 'next/script';
 import {
   GOOGLE_ADS_SUBMIT_CONVERSION_SEND_TO,
   GOOGLE_ADS_SUBMIT_CONVERSION_STORAGE_KEY,
-  GOOGLE_ADS_THANK_YOU_CONVERSION_SEND_TO,
 } from '@/lib/analytics';
 
 export const metadata: Metadata = {
@@ -21,12 +20,6 @@ export default function ThankYouPage() {
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
-
-          gtag('event', 'conversion', {
-            'send_to': '${GOOGLE_ADS_THANK_YOU_CONVERSION_SEND_TO}',
-            'value': 1.0,
-            'currency': 'USD'
-          });
 
           try {
             var pendingRaw = sessionStorage.getItem('${GOOGLE_ADS_SUBMIT_CONVERSION_STORAGE_KEY}');

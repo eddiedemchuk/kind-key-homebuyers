@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import LeadForm from './LeadForm';
+import { useTrackingPhone } from '@/components/TrackingPhoneLink';
 
 interface HeroSectionProps {
   heroVideoSrc: string | undefined;
@@ -26,6 +27,7 @@ export default function HeroSection({
 }: HeroSectionProps) {
   const [scrollY, setScrollY] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const phone = useTrackingPhone();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -149,7 +151,7 @@ export default function HeroSection({
             <div className="flex flex-wrap items-center gap-4 text-sm text-text-secondary">
               <span className="font-medium text-text-primary">Contact us:</span>
               <a
-                href="tel:+12535183638"
+                href={`tel:${phone.tel}`}
                 className="flex items-center gap-2 font-medium text-divider transition-colors hover:text-divider/80"
               >
                 <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -160,7 +162,7 @@ export default function HeroSection({
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                (253) 518-3638
+                {phone.display}
               </a>
               <a
                 href="mailto:info@kindkeyhomebuyers.com"

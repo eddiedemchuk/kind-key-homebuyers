@@ -35,9 +35,8 @@ the state to `pending`, which displays the banner. Accepting dispatches the
   consent component.
 - Lead submission emits `generate_lead` and queues Google Ads conversion
   `AW-17766515185/IeBJCKCujPIbEPGD3pdC` with a transaction id.
-- The thank-you route emits conversion `AW-17766515185/hcQZCKrs2swbEPGD3pdC`. It repeats the submit
-  conversion with the same transaction id when the submit page stored one, so Google Ads counts
-  that conversion once.
+- The thank-you route repeats that same conversion with the stored transaction id, so Google Ads
+  counts it once if the first hit was lost during navigation. It does not fire a second label.
 - First-touch campaign parameters are stored separately from the GA4 consent record. See
   [GoHighLevel lead delivery](gohighlevel.md).
 
