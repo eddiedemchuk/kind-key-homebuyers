@@ -3,7 +3,12 @@ import Link from 'next/link';
 import OfferLeadForm from '@/components/OfferLeadForm';
 import OfferMobileBar, { OfferJumpButton } from '@/components/OfferMobileBar';
 import type { OfferLandingContent } from '@/data/offerLandings';
-import { BBB_TRUST_LINE, shortCustomerStories, shortGoogleReviews } from '@/data/offerCredibility';
+import {
+  BBB_TRUST_LINE,
+  GOOGLE_REVIEWS_URL,
+  shortCustomerStories,
+  shortGoogleReviews,
+} from '@/data/offerCredibility';
 import type { FormOrigin } from '@/lib/form-origin';
 import { GOOGLE_ADS_PHONE } from '@/lib/phones';
 import { BUSINESS, localBusinessJsonLd } from '@/lib/site';
@@ -113,6 +118,11 @@ export default function OfferLanding({
               </li>
             ))}
           </ul>
+          <p className="text-sm">
+            <a href={GOOGLE_REVIEWS_URL} className="font-medium text-divider underline">
+              Read our reviews on Google
+            </a>
+          </p>
           <p className="text-base leading-relaxed text-text-primary">
             We&apos;re a local Auburn family business. We buy homes as-is for cash and keep most of
             them as long-term rentals; sometimes we renovate and resell them.
