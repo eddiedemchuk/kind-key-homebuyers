@@ -271,13 +271,6 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
         </div>
       )}
 
-      <button type="submit" disabled={isSubmitting} className={submitButtonClass}>
-        {isSubmitting ? 'Submitting...' : 'Get My Free Cash Offer'}
-      </button>
-      <p className="text-center text-xs font-medium text-text-secondary">
-        Free, no obligation, we never share your info
-      </p>
-
       <div>
         <label htmlFor={ids.email} className="mb-1 block text-sm font-medium text-text-primary">
           Email <span className="font-normal text-text-secondary">(optional)</span>
@@ -293,6 +286,13 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
         />
         {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>}
       </div>
+
+      <button type="submit" disabled={isSubmitting} className={submitButtonClass}>
+        {isSubmitting ? 'Submitting...' : 'Get My Free Cash Offer'}
+      </button>
+      <p className="text-center text-xs font-medium text-text-secondary">
+        Free, no obligation, we never share your info
+      </p>
 
       <p className="text-center text-xs text-text-secondary">
         <Link href="/privacy" className="underline">
