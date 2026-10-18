@@ -41,9 +41,8 @@ export const generalOffer: OfferLandingContent = {
   title: 'Sell Your House As-Is for Cash',
   description:
     'Local King & Pierce County home buyer. No repairs, no commissions, you pick the closing date.',
-  headline: 'Sell Your House As-Is for Cash',
-  subhead:
-    'Local King & Pierce County home buyer. No repairs, no commissions, you pick the closing date.',
+  headline: 'Sell your house as-is for cash',
+  subhead: 'No repairs. You choose the closing date.',
   cta: 'Get your no-obligation cash offer: takes 30 seconds',
   formOrigin: 'google_ads_landing',
   trustPoints: [
@@ -77,16 +76,14 @@ export const foreclosureOffer: OfferLandingContent = {
   title: 'Sell Before the Auction for Cash',
   description:
     'Behind on the mortgage in King or Pierce County? Request a cash offer and see if you can sell before the auction date. No repairs.',
-  headline: 'Sell before the auction, as-is for cash',
-  subhead:
-    'Behind on the mortgage? A cash offer can help you sell before the auction date. No repairs. You pick the closing date.',
+  headline: 'Sell before the auction for cash',
+  subhead: 'As-is, no repairs. Asking does not stop the auction.',
   cta: 'Get a cash offer before the auction date',
   formOrigin: 'google_ads_foreclosure',
   trustPoints: [
     'No repairs before you sell',
     'Tell us the auction date',
     'You choose the closing date',
-    'Local Auburn, WA company',
   ],
   steps: [
     {
@@ -99,7 +96,7 @@ export const foreclosureOffer: OfferLandingContent = {
     },
     {
       title: 'Close on a date you pick',
-      body: 'If the timeline works, you can schedule closing before the auction. We do not promise a specific outcome.',
+      body: 'You pick the date. We do not promise to stop the auction.',
     },
   ],
   faqs: [
@@ -128,17 +125,11 @@ export const inheritedOffer: OfferLandingContent = {
   title: 'Sell an Inherited House As-Is for Cash',
   description:
     'Sell an inherited or probate house in King or Pierce County as-is. No clean-out required. KindKey works with probate timelines and out-of-state heirs.',
-  headline: 'Sell an inherited house as-is for cash',
-  subhead:
-    'No need to clean it out. We work with probate timelines and heirs who live out of state.',
+  headline: 'Sell an inherited house for cash',
+  subhead: 'No clean-out. We can work with a probate timeline.',
   cta: 'Get a cash offer on the inherited house',
   formOrigin: 'google_ads_inherited',
-  trustPoints: [
-    'Leave belongings. No clean-out',
-    'We can work with a probate timeline',
-    'Out-of-state heirs can sell by phone',
-    "We've bought hundreds of homes",
-  ],
+  trustPoints: ['No clean-out', 'Works with a probate timeline', 'Out-of-state heirs can call'],
   steps: [
     {
       title: 'Tell us about the house',
@@ -180,17 +171,11 @@ export const asIsOffer: OfferLandingContent = {
   title: 'Sell a Damaged House As-Is for Cash',
   description:
     'Sell a house that needs major work in King or Pierce County. Fire, water, mold, hoarder houses, foundation issues, and code violations. No repairs first.',
-  headline: 'Sell a damaged house as-is for cash',
-  subhead:
-    'Fire, water, mold, a hoarder house, foundation trouble, or code violations. You do not have to fix anything first.',
+  headline: 'Sell a damaged house for cash',
+  subhead: 'Fire, water, mold, or major repairs. No fix-up first.',
   cta: 'Get a cash offer without making repairs',
   formOrigin: 'google_ads_as_is',
-  trustPoints: [
-    'Any condition, including major repairs',
-    'No cleaning and no repairs required',
-    "We've bought hundreds of homes",
-    'Local Auburn, WA company',
-  ],
+  trustPoints: ['Any condition', 'No repairs required', "We've bought hundreds of homes"],
   steps: [
     {
       title: 'Tell us the condition',

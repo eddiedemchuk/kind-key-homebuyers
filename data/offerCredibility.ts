@@ -15,6 +15,20 @@ export interface GoogleReview {
   text: string;
 }
 
+/** One verbatim sentence from Megan White, plus Mark Zhuk's full review. */
+export const shortGoogleReviews: GoogleReview[] = [
+  {
+    id: 'megan-white',
+    name: 'Megan White',
+    text: 'I was so impressed with Angie and her willingness to bring a buyer to solve the unique problems of these sellers.',
+  },
+  {
+    id: 'mark-zhuk',
+    name: 'Mark Zhuk',
+    text: 'Kind people who make selling easy!',
+  },
+];
+
 export const googleReviews: GoogleReview[] = [
   {
     id: 'megan-white',
@@ -34,6 +48,22 @@ export interface CustomerStory {
   location: string;
   text: string;
 }
+
+/** Two short verbatim lines for the compact landing trust block. */
+export const shortCustomerStories: CustomerStory[] = [
+  {
+    id: 'sarah-johnson',
+    name: 'Sarah Johnson',
+    location: 'Kent, WA',
+    text: 'KindKey Home Buyers made selling our house so easy.',
+  },
+  {
+    id: 'jennifer-martinez',
+    name: 'Jennifer Martinez',
+    location: 'Auburn, WA',
+    text: 'KindKey bought it as-is and closed quickly.',
+  },
+];
 
 export const customerStories: CustomerStory[] = [
   {
