@@ -28,7 +28,7 @@ export const SERVICE_AREA_CITIES = [
   'Puyallup',
 ] as const;
 
-export function localBusinessJsonLd() {
+export function localBusinessJsonLd(telephone: string = BUSINESS.telephone) {
   return {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
@@ -38,7 +38,7 @@ export function localBusinessJsonLd() {
     url: BUSINESS.url,
     image: BUSINESS.logo,
     logo: BUSINESS.logo,
-    telephone: BUSINESS.telephone,
+    telephone,
     email: BUSINESS.email,
     address: {
       '@type': 'PostalAddress',

@@ -10,7 +10,8 @@ import {
   googleReviews,
 } from '@/data/offerCredibility';
 import type { FormOrigin } from '@/lib/form-origin';
-import { BUSINESS } from '@/lib/site';
+import { GOOGLE_ADS_PHONE } from '@/lib/phones';
+import { BUSINESS, localBusinessJsonLd } from '@/lib/site';
 import { caseStudies } from '@/data/cases';
 
 function FiveStars() {
@@ -23,11 +24,6 @@ function FiveStars() {
       ))}
     </p>
   );
-}
-
-export interface OfferPhone {
-  display: string;
-  tel: string;
 }
 
 /**
@@ -66,12 +62,11 @@ function storySummary(id: string): { title: string; detail: string; text: string
 export default function OfferLanding({
   content,
   formOrigin,
-  phone,
 }: {
   content: OfferLandingContent;
   formOrigin: FormOrigin;
-  phone: OfferPhone;
 }) {
+  const phone = GOOGLE_ADS_PHONE;
   const stories = SUCCESS_STORY_IDS.map((id) => storySummary(id)).filter(
     (story): story is NonNullable<typeof story> => story !== null
   );
@@ -80,6 +75,12 @@ export default function OfferLanding({
 
   return (
     <main className="min-h-screen bg-white text-text-primary">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessJsonLd(phone.tel)).replace(/</g, '\\u003c'),
+        }}
+      />
       <header className="z-40 border-b border-gray-200 bg-white md:sticky md:top-0">
         <div className="mx-auto flex max-w-3xl items-center justify-between gap-3 px-4 py-1.5">
           <div className="flex min-w-0 items-center gap-2">
@@ -104,16 +105,13 @@ export default function OfferLanding({
 
       <div className="mx-auto max-w-3xl px-4 pb-[calc(65px+env(safe-area-inset-bottom,0px))] pt-1 md:pb-12">
         <section>
-          <h1 className="text-balance text-[1.55rem] font-bold leading-tight sm:text-4xl">
+          <h1
+            className="text-balance text-[1.55rem] font-bold leading-tight sm:text-4xl"
+            style={{ marginBottom: 0 }}
+          >
             {content.headline}
           </h1>
           <p className="mt-1 text-sm leading-snug text-text-secondary">{content.subhead}</p>
-          <a
-            href={`tel:${phone.tel}`}
-            className="mt-1.5 flex min-h-12 w-full items-center justify-center rounded-lg bg-accent px-4 py-2.5 text-center text-lg font-semibold text-white hover:bg-accent/90"
-          >
-            Call {phone.display}
-          </a>
           <div
             data-offer-form
             className="mt-1.5 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-2 shadow-sm md:scroll-mt-20"
@@ -128,6 +126,12 @@ export default function OfferLanding({
               Learn more about KindKey Home Buyers
             </Link>
           </p>
+          <a
+            href={`tel:${phone.tel}`}
+            className="mt-3 flex min-h-12 w-full items-center justify-center rounded-lg bg-accent px-4 py-2.5 text-center text-lg font-semibold text-white hover:bg-accent/90"
+          >
+            Call {phone.display}
+          </a>
         </section>
 
         <section className="mt-8" aria-label="Why homeowners sell to us">
@@ -275,6 +279,11 @@ export default function OfferLanding({
         <footer className="mt-8 border-t border-gray-200 py-6 text-sm text-text-secondary">
           <p className="font-semibold text-text-primary">{BUSINESS.legalName}</p>
           <p>{address}</p>
+          <p className="mt-2">
+            <a href={`tel:${phone.tel}`} className="font-semibold text-divider">
+              {phone.display}
+            </a>
+          </p>
           <nav className="mt-3 flex flex-wrap gap-x-4 gap-y-2">
             <Link href="/" className="font-medium text-divider underline">
               Learn more about KindKey Home Buyers

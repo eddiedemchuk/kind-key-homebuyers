@@ -16,12 +16,25 @@ export type { DisplayPhone };
 
 const trackingPaths = new Set<string>(GOOGLE_ADS_PHONE_PATHS);
 
-/** Organic number until a stored or current Google Ads visit is known on the two paid-swap pages. */
+function isOfferPath(pathname: string): boolean {
+  return pathname === '/offer' || pathname.startsWith('/offer/');
+}
+
+/**
+ * /offer and /offer/* always show the Google Ads number.
+ * /sell-house-as-is and /cash-offer switch to it after a paid Google visit.
+ * Every other page stays on the organic number.
+ */
 export function useTrackingPhone(): DisplayPhone {
-  const pathname = usePathname();
-  const [phone, setPhone] = useState<DisplayPhone>(ORGANIC_PHONE);
+  const pathname = usePathname() ?? '';
+  const offerPage = isOfferPath(pathname);
+  const [phone, setPhone] = useState<DisplayPhone>(offerPage ? GOOGLE_ADS_PHONE : ORGANIC_PHONE);
 
   useEffect(() => {
+    if (isOfferPath(pathname)) {
+      setPhone(GOOGLE_ADS_PHONE);
+      return;
+    }
     if (!trackingPaths.has(pathname)) {
       setPhone(ORGANIC_PHONE);
       return;

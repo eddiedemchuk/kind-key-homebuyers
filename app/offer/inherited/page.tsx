@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import OfferLanding from '@/components/OfferLanding';
 import { inheritedOffer } from '@/data/offerLandings';
-import { GOOGLE_ADS_PHONE } from '@/lib/phones';
 
 export const metadata: Metadata = {
   title: inheritedOffer.title,
@@ -17,11 +16,5 @@ export const metadata: Metadata = {
 };
 
 export default function InheritedOfferPage() {
-  return (
-    <OfferLanding
-      content={inheritedOffer}
-      formOrigin={inheritedOffer.formOrigin}
-      phone={GOOGLE_ADS_PHONE}
-    />
-  );
+  return <OfferLanding content={inheritedOffer} formOrigin={inheritedOffer.formOrigin} />;
 }

@@ -53,7 +53,7 @@ function ConsentField({
 }
 
 const fieldClass =
-  'w-full rounded-lg border border-gray-300 bg-white px-3 py-2.5 text-base text-text-primary placeholder-text-secondary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent';
+  'w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-base text-text-primary placeholder-text-secondary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent';
 
 const submitButtonClass =
   'flex min-h-14 w-full touch-manipulation items-center justify-center rounded-lg bg-divider px-6 py-3 text-lg font-bold text-white shadow-md transition-colors hover:bg-divider/90 disabled:cursor-not-allowed disabled:opacity-50';
@@ -253,13 +253,13 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
       <div className="space-y-1">
         <ConsentField
           id={ids.smsService}
-          shortLabel="Service texts from KindKey Home Buyers LLC. Msg & data rates may apply."
+          shortLabel="Service texts. Msg & data rates may apply."
           fullText={SERVICE_SMS_CONSENT}
           registration={register('smsNonMarketingConsent')}
         />
         <ConsentField
           id={ids.smsMarketing}
-          shortLabel="Marketing texts from KindKey Home Buyers LLC. Msg & data rates may apply."
+          shortLabel="Marketing texts. Msg & data rates may apply."
           fullText={MARKETING_SMS_CONSENT}
           registration={register('smsMarketingConsent')}
         />

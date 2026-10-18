@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import OfferLanding from '@/components/OfferLanding';
 import { generalOffer } from '@/data/offerLandings';
 import type { FormOrigin } from '@/lib/form-origin';
-import { FACEBOOK_ADS_PHONE, GOOGLE_ADS_PHONE } from '@/lib/phones';
 
 export const metadata: Metadata = {
   title: generalOffer.title,
@@ -29,7 +28,6 @@ export default async function OfferPage({
   const params = await searchParams;
   const facebook = firstQueryValue(params.src) === 'fb';
   const formOrigin: FormOrigin = facebook ? 'facebook_ads_landing' : generalOffer.formOrigin;
-  const phone = facebook ? FACEBOOK_ADS_PHONE : GOOGLE_ADS_PHONE;
 
-  return <OfferLanding content={generalOffer} formOrigin={formOrigin} phone={phone} />;
+  return <OfferLanding content={generalOffer} formOrigin={formOrigin} />;
 }
