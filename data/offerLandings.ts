@@ -167,6 +167,53 @@ export const inheritedOffer: OfferLandingContent = {
   ],
 };
 
+export const fireDamageOffer: OfferLandingContent = {
+  title: 'Sell a Fire-Damaged House As-Is for Cash',
+  description:
+    'Sell a fire- or smoke-damaged house in King or Pierce County as-is. No cleanup or repairs. KindKey can work with an open insurance claim.',
+  headline: 'Sell a fire-damaged house for cash',
+  subhead: 'As-is. No cleanup or repairs. We can work with an open insurance claim.',
+  cta: 'Get a cash offer on the fire-damaged house',
+  formOrigin: 'google_ads_fire_damage',
+  trustPoints: [
+    'Fire or smoke damage, bought as-is',
+    'Local King and Pierce County buyer',
+    'We keep most homes as rentals',
+  ],
+  steps: [
+    {
+      title: 'Tell us about the house',
+      body: 'Share the address. You do not need to clean up or repair the fire or smoke damage.',
+    },
+    {
+      title: 'Get a cash offer',
+      body: 'We review the house as-is and send a no-obligation cash offer. An open insurance claim is fine.',
+    },
+    {
+      title: 'Pick your closing date',
+      body: 'You choose the date. No cleanup and no repairs before closing.',
+    },
+  ],
+  faqs: [
+    {
+      question: 'Do I need to clean up or repair the damage?',
+      answer: 'No. We buy fire- and smoke-damaged houses as-is. Leave the cleanup and repairs.',
+    },
+    {
+      question: 'Can you work with an open insurance claim?',
+      answer: 'Yes. Tell us the claim is open. You do not have to finish repairs before you ask.',
+    },
+    {
+      question: 'Where do you buy?',
+      answer: 'King and Pierce County. We keep most of the houses as rentals.',
+    },
+    {
+      question: 'Am I obligated if I ask for an offer?',
+      answer: 'No. The cash offer is free, and you can say no.',
+    },
+  ],
+};
+
 export const asIsOffer: OfferLandingContent = {
   title: 'Sell a Damaged House As-Is for Cash',
   description:

@@ -245,6 +245,7 @@ describe('resolveFormOrigin', () => {
     assert.equal(resolveFormOrigin('google_ads_foreclosure'), 'google_ads_foreclosure');
     assert.equal(resolveFormOrigin('google_ads_inherited'), 'google_ads_inherited');
     assert.equal(resolveFormOrigin('google_ads_as_is'), 'google_ads_as_is');
+    assert.equal(resolveFormOrigin('google_ads_fire_damage'), 'google_ads_fire_damage');
     assert.equal(resolveFormOrigin('Google Ads'), 'website');
     assert.equal(resolveFormOrigin('facebook'), 'website');
     assert.equal(resolveFormOrigin('google ads'), 'website');
@@ -399,6 +400,23 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.form_name, 'Google Ads Foreclosure Page');
     assert.equal(payload.form_origin, 'google_ads_foreclosure');
     assert.equal(payload.page_path, '/offer/foreclosure');
+    assert.equal(payload.listed_with_agent, 'no');
+  });
+
+  it('labels a fire-damage landing with Google Ads and a fire damage tag', () => {
+    const payload = buildGhlPayload({
+      ...lead,
+      pagePath: '/offer/fire-damage',
+      formOrigin: 'google_ads_fire_damage',
+      listedWithAgent: 'no',
+    });
+    assert.equal(payload.source, 'Google Ads');
+    assert.equal(payload.lead_source, 'Google Ads');
+    assert.equal(payload.source_tag, 'google ads');
+    assert.equal(payload.tags, 'website lead, google ads, fire damage');
+    assert.equal(payload.form_name, 'Google Ads Fire Damage Page');
+    assert.equal(payload.form_origin, 'google_ads_fire_damage');
+    assert.equal(payload.page_path, '/offer/fire-damage');
     assert.equal(payload.listed_with_agent, 'no');
   });
 
