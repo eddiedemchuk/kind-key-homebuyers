@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import AttributionCapture from '@/components/AttributionCapture';
+import { COOKIE_CONSENT_STORAGE_KEY, GA4_MEASUREMENT_ID } from '@/lib/analytics';
 import { SITE_URL } from '@/lib/site';
 import './globals.css';
 
@@ -91,11 +92,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
   const googleAdsId = 'AW-17766515185';
-
-  // Prefer GA4 so Tag Assistant recognizes it; otherwise load the Ads tag.
-  const primaryTagId = gaMeasurementId || googleAdsId;
+  const configuredMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim();
+  const gaMeasurementId =
+    configuredMeasurementId && /^G-[A-Z0-9]+$/.test(configuredMeasurementId)
+      ? configuredMeasurementId
+      : GA4_MEASUREMENT_ID;
 
   return (
     <html lang="en" className={inter.variable}>
@@ -104,57 +106,40 @@ export default function RootLayout({
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              analytics_storage: 'granted',
+              ad_storage: 'granted',
+              ad_user_data: 'granted',
+              ad_personalization: 'granted'
+            });
+            try {
+              var stored = localStorage.getItem('${COOKIE_CONSENT_STORAGE_KEY}');
+              if (stored) {
+                var data = JSON.parse(stored);
+                if (data && data.consent === 'rejected' && new Date(data.expiry) > new Date()) {
+                  gtag('consent', 'update', {
+                    analytics_storage: 'denied',
+                    ad_storage: 'denied',
+                    ad_user_data: 'denied',
+                    ad_personalization: 'denied'
+                  });
+                }
+              }
+            } catch (e) {}
             gtag('js', new Date());
           `}
         </Script>
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${primaryTagId}`}
+          src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
           strategy="afterInteractive"
         />
         <Script id="google-tag-config" strategy="afterInteractive">
           {`
-            // Configure Google Ads (always loaded for conversion tracking)
             gtag('config', '${googleAdsId}');
-            
-            // Configure Google Analytics 4 (if ID provided)
-            ${
-              gaMeasurementId
-                ? `
-              // Check cookie consent before initializing GA4
-              function initGA4() {
-                const stored = localStorage.getItem('cookie-consent');
-                if (stored) {
-                  try {
-                    const data = JSON.parse(stored);
-                    const expiryDate = new Date(data.expiry);
-                    if (expiryDate > new Date() && data.consent === 'accepted') {
-                      gtag('config', '${gaMeasurementId}', {
-                        anonymize_ip: true,
-                        send_page_view: true
-                      });
-                      return;
-                    }
-                  } catch {}
-                }
-                // If no consent, wait for consent event
-                window.addEventListener('cookieConsentAccepted', function initAfterConsent() {
-                  gtag('config', '${gaMeasurementId}', {
-                    anonymize_ip: true,
-                    send_page_view: true
-                  });
-                  window.removeEventListener('cookieConsentAccepted', initAfterConsent);
-                }, { once: true });
-              }
-              
-              // Initialize GA4 when DOM is ready
-              if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', initGA4);
-              } else {
-                initGA4();
-              }
-            `
-                : ''
-            }
+            gtag('config', '${gaMeasurementId}', {
+              anonymize_ip: true,
+              send_page_view: true
+            });
           `}
         </Script>
         {/* Critical styles avoid render blocking during initial paint. */}

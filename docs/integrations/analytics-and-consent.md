@@ -1,15 +1,17 @@
 # Analytics and cookie consent
 
-The site uses Google Ads conversion tracking and optional Google Analytics 4. Consent handling for
-GA4 is implemented in the browser.
+The site uses one Google tag for Google Ads conversion tracking and Google Analytics 4 (property
+514584396, measurement ID `G-E2YKGLGN1S`). Consent Mode v2 defaults to granted so visitors are
+counted before they interact with the cookie banner. Offer landing pages do not show that banner.
 
 ## Responsibilities
 
-- `lib/useCookieConsent.ts` reads and writes the consent record.
-- `components/CookieConsent.tsx` displays the accept/reject banner.
-- `components/GoogleAnalytics.tsx` loads GA4 after accepted consent.
-- `app/layout.tsx` initializes the Google Ads tag and renders the consent/analytics components.
-- `lib/analytics.ts` provides the browser event helpers used by lead submission.
+- `lib/useCookieConsent.ts` reads and writes the consent record. Accept updates consent to granted.
+  Reject updates consent to denied.
+- `components/CookieConsent.tsx` displays the accept/reject banner on marketing pages.
+- `app/layout.tsx` loads one gtag.js, sets the consent default, and configures both the Ads tag and
+  GA4. A stored rejection updates consent to denied before either tag sends a hit.
+- `lib/analytics.ts` provides the browser event helpers used by lead submission and the offer pages.
 
 ## Consent record
 
@@ -23,33 +25,38 @@ The browser stores the decision in `localStorage` under `cookie-consent`:
 ```
 
 Accepted and rejected decisions expire after 365 days. Missing, expired, or invalid records return
-the state to `pending`, which displays the banner. Accepting dispatches the
-`cookieConsentAccepted` browser event so GA4 can load without a page refresh.
+the state to `pending`, which displays the banner on pages that include it. The default consent is
+granted either way, so GA4 still loads when the banner is absent.
 
 ## Tag behavior
 
-- GA4 is omitted unless `NEXT_PUBLIC_GA_MEASUREMENT_ID` is configured.
-- When configured, GA4 loads only after an unexpired accepted consent record or the acceptance
-  event.
-- The Google Ads tag is initialized separately in the root layout and is not gated by the GA4
-  consent component.
-- Lead submission emits `generate_lead` and queues Google Ads conversion
+- GA4 measurement ID `G-E2YKGLGN1S` is the web stream for property 514584396.
+  `NEXT_PUBLIC_GA_MEASUREMENT_ID` overrides it when set to a `G-` ID.
+- Consent Mode v2 defaults `analytics_storage`, `ad_storage`, `ad_user_data`, and
+  `ad_personalization` to `granted` for every visitor. US visitors, including Washington, are the
+  audience. Rejecting cookies calls `gtag('consent', 'update', …)` with those flags `denied`.
+- Google Ads `AW-17766515185` and GA4 share that one gtag loader. GA4 sends the page view. The Ads
+  config stays `gtag('config', 'AW-17766515185')` so the existing conversion can fire. There is no
+  second gtag loader and no second GA4 `config`.
+- Offer pages emit `form_start` (once per page load, with `form_origin`) on the first field focus
+  or input, `call_click` (with `link_location`) on a `tel:` tap, and `get_offer_click` on a Get My
+  Offer button.
+- Lead submission emits `lead_submit` and `generate_lead`, and queues Google Ads conversion
   `AW-17766515185/IeBJCKCujPIbEPGD3pdC` with a transaction id.
 - The thank-you route repeats that same conversion with the stored transaction id, so Google Ads
   counts it once if the first hit was lost during navigation. It does not fire a second label.
 - First-touch campaign parameters are stored separately from the GA4 consent record. See
   [GoHighLevel lead delivery](gohighlevel.md).
 
-The Google Ads identifiers are currently stored in application code. The optional GA4 measurement
-ID comes from `NEXT_PUBLIC_GA_MEASUREMENT_ID`.
-
 ## Verification
 
-1. Clear the `cookie-consent` localStorage entry and reload the site.
-2. Reject consent and confirm the GA4 script is not requested.
-3. Accept consent and confirm GA4 loads without a reload when a measurement ID is configured.
-4. Reload and confirm the accepted state is restored.
-5. Submit a controlled lead and inspect the expected analytics events.
+1. Open `/offer` with no `cookie-consent` entry and no banner click. A request to
+   `google-analytics.com/g/collect` should fire on load.
+2. Focus a form field and confirm one `form_start` event with `form_origin`.
+3. Tap a `tel:` link and confirm `call_click` with `link_location`.
+4. On a marketing page, reject cookies and confirm a consent update to denied. Reload and confirm
+   the stored rejection is applied before the next hit.
+5. Submit a controlled lead and confirm `lead_submit`, `generate_lead`, and the Ads conversion.
 6. Review the privacy page and consent copy whenever tracking behavior changes.
 
 This document describes application behavior only; legal and regulatory requirements must be

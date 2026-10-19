@@ -1,10 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { COOKIE_CONSENT_STORAGE_KEY, updateGoogleConsent } from '@/lib/analytics';
 
 export type CookieConsent = 'pending' | 'accepted' | 'rejected';
 
-const COOKIE_CONSENT_KEY = 'cookie-consent';
+const COOKIE_CONSENT_KEY = COOKIE_CONSENT_STORAGE_KEY;
 const COOKIE_CONSENT_EXPIRY_DAYS = 365;
 
 export function useCookieConsent() {
@@ -43,6 +44,7 @@ export function useCookieConsent() {
       })
     );
     setConsent('accepted');
+    updateGoogleConsent('granted');
 
     if (typeof window !== 'undefined' && window.dispatchEvent) {
       window.dispatchEvent(new Event('cookieConsentAccepted'));
@@ -61,6 +63,7 @@ export function useCookieConsent() {
       })
     );
     setConsent('rejected');
+    updateGoogleConsent('denied');
   };
 
   return {

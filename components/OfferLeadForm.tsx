@@ -1,11 +1,11 @@
 'use client';
 
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useForm, type UseFormRegisterReturn } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
 import { offerLeadFormSchema, type OfferLeadFormData } from '@/lib/schema';
-import { trackLeadSubmit } from '@/lib/analytics';
+import { trackEvent, trackLeadSubmit } from '@/lib/analytics';
 import { attributionFieldsForSubmit } from '@/lib/attribution-client';
 import type { FormOrigin } from '@/lib/form-origin';
 import { useRecaptcha } from '@/lib/useRecaptcha';
@@ -63,6 +63,27 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
   const [submitError, setSubmitError] = useState<string | null>(null);
   const formRef = useRef<HTMLFormElement>(null);
   const { executeRecaptcha } = useRecaptcha(formRef);
+
+  useEffect(() => {
+    const form = formRef.current;
+    if (!form) return;
+
+    let started = false;
+    const onStart = (event: Event) => {
+      if (started) return;
+      const target = event.target;
+      if (!(target instanceof Element) || !target.closest('input, textarea, select')) return;
+      started = true;
+      trackEvent('form_start', { form_origin: formOrigin });
+    };
+
+    form.addEventListener('focusin', onStart);
+    form.addEventListener('input', onStart);
+    return () => {
+      form.removeEventListener('focusin', onStart);
+      form.removeEventListener('input', onStart);
+    };
+  }, [formOrigin]);
   const ids = {
     name: `${idPrefix}-name`,
     phone: `${idPrefix}-phone`,

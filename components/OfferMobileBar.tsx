@@ -1,9 +1,13 @@
 'use client';
 
+import { trackCallClick, trackGetOfferClick } from '@/lib/analytics';
+
 interface OfferPhone {
   display: string;
   tel: string;
 }
+
+type OfferLinkLocation = 'header' | 'sticky_bar' | 'footer' | 'bottom';
 
 interface OfferMobileBarProps {
   phone: OfferPhone;
@@ -19,11 +23,42 @@ export function focusOfferForm(): void {
   }, 450);
 }
 
-export function OfferJumpButton({ className }: { className?: string }) {
+export function OfferJumpButton({
+  className,
+  location,
+}: {
+  className?: string;
+  location: OfferLinkLocation;
+}) {
   return (
-    <button type="button" onClick={focusOfferForm} className={className}>
+    <button
+      type="button"
+      onClick={() => {
+        trackGetOfferClick(location);
+        focusOfferForm();
+      }}
+      className={className}
+    >
       Get My Offer
     </button>
+  );
+}
+
+export function OfferPhoneLink({
+  phone,
+  className,
+  location,
+  children,
+}: {
+  phone: OfferPhone;
+  className?: string;
+  location: OfferLinkLocation;
+  children?: React.ReactNode;
+}) {
+  return (
+    <a href={`tel:${phone.tel}`} className={className} onClick={() => trackCallClick(location)}>
+      {children ?? phone.display}
+    </a>
   );
 }
 
@@ -35,13 +70,17 @@ export default function OfferMobileBar({ phone }: OfferMobileBarProps) {
       data-offer-mobile-bar
     >
       <div className="grid h-full w-full grid-cols-2 items-center gap-2">
-        <OfferJumpButton className="flex min-h-12 items-center justify-center rounded-lg bg-divider px-2 text-sm font-bold text-white" />
-        <a
-          href={`tel:${phone.tel}`}
+        <OfferJumpButton
+          location="sticky_bar"
+          className="flex min-h-12 items-center justify-center rounded-lg bg-divider px-2 text-sm font-bold text-white"
+        />
+        <OfferPhoneLink
+          phone={phone}
+          location="sticky_bar"
           className="flex min-h-12 items-center justify-center rounded-lg bg-accent px-2 text-center text-sm font-bold leading-tight text-white"
         >
           Call {phone.display}
-        </a>
+        </OfferPhoneLink>
       </div>
     </div>
   );
