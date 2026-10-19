@@ -11,6 +11,7 @@ export const FORM_ORIGINS = [
   'google_ads_foreclosure',
   'google_ads_inherited',
   'google_ads_as_is',
+  'google_ads_fire_damage',
 ] as const;
 
 export type FormOrigin = (typeof FORM_ORIGINS)[number];
@@ -65,6 +66,13 @@ const FORM_ORIGIN_LABELS: Record<FormOrigin, FormOriginLabel> = {
     sourceTag: 'google ads',
     tags: `${GHL_BASE_TAG}, google ads, as-is`,
     formName: 'Google Ads As-Is Page',
+  },
+  google_ads_fire_damage: {
+    source: 'Google Ads',
+    leadSource: 'Google Ads',
+    sourceTag: 'google ads',
+    tags: `${GHL_BASE_TAG}, google ads, fire damage`,
+    formName: 'Google Ads Fire Damage Page',
   },
 };
 

@@ -7,7 +7,8 @@ The chat widget is a separate, GHL-hosted path and does not use this webhook.
 
 1. Cash-offer forms post through `components/LeadForm.tsx` (homepage, `/cash-offer`, `/contact`,
    city pages, and situation pages) or `components/OfferLeadForm.tsx` on the paid-ads page
-   `/offer` and the situation pages `/offer/foreclosure`, `/offer/inherited`, and `/offer/as-is`.
+   `/offer` and the situation pages `/offer/foreclosure`, `/offer/inherited`, `/offer/as-is`,
+   and `/offer/fire-damage`.
    There is no embedded GHL form and no direct browser call to the LeadConnector API.
    Those pages collect name, phone, property address, optional email, a required yes/no answer to
    “Is your house currently listed with an agent?”, and the same SMS consent checkboxes. That
@@ -16,7 +17,8 @@ The chat widget is a separate, GHL-hosted path and does not use this webhook.
    `LeadForm` and are optional in the API so the short form can submit without filling them in.
    Each form posts `form_origin`: `website` from `LeadForm`, `google_ads_landing` from `/offer`,
    `facebook_ads_landing` from `/offer?src=fb`, `google_ads_foreclosure` from `/offer/foreclosure`,
-   `google_ads_inherited` from `/offer/inherited`, and `google_ads_as_is` from `/offer/as-is`.
+   `google_ads_inherited` from `/offer/inherited`, `google_ads_as_is` from `/offer/as-is`, and
+   `google_ads_fire_damage` from `/offer/fire-damage`.
    The server accepts only those values.
 2. On each full page load, `components/AttributionCapture.tsx` stores the landing touch. On submit,
    the form reads that stored touch again so a later page without campaign parameters still sends
@@ -85,6 +87,7 @@ Contact source follows the form, not the click. `lib/form-origin.ts` maps the al
 | `google_ads_foreclosure` | `Google Ads`             | `google ads`   | `Google Ads Foreclosure Page` | `google ads, foreclosure`    |
 | `google_ads_inherited`   | `Google Ads`             | `google ads`   | `Google Ads Inherited Page`   | `google ads, inherited`      |
 | `google_ads_as_is`       | `Google Ads`             | `google ads`   | `Google Ads As-Is Page`       | `google ads, as-is`          |
+| `google_ads_fire_damage` | `Google Ads`             | `google ads`   | `Google Ads Fire Damage Page` | `google ads, fire damage`    |
 
 A missing or unknown `form_origin` is `website`. A regular website form stays `Website` even when
 the visitor arrived from an ad.
@@ -130,8 +133,8 @@ form and click labels below.
 | `attribution_notes`                                                   | Plain-text copy of the same values                                                                                      |
 
 Example `tags` values: `website lead, google ads`, `website lead, google ads, foreclosure`,
-`website lead, facebook ads`, and `website lead, website`. Situation pages add `inherited` or
-`as-is` the same way. The original `website lead` tag is always included. A yes answer on an
+`website lead, facebook ads`, and `website lead, website`. Situation pages add `inherited`,
+`as-is`, or `fire damage` the same way. The original `website lead` tag is always included. A yes answer on an
 `/offer` page appends `listed with agent`, for example `website lead, google ads, listed with agent`.
 A no answer keeps the form tags unchanged and still sends `listed_with_agent` = `no`. The
 attribution note includes `Listed with agent: yes` or `Listed with agent: no` only when the field
