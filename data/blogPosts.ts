@@ -28,6 +28,123 @@ function post(
 }
 
 export const blogPosts: BlogPost[] = [
+  post('sell-house-with-code-violations-federal-way', {
+    breadcrumbName: 'Code violations in Federal Way',
+    title: 'Selling a House with Code Violations in Federal Way, WA',
+    description:
+      'How Federal Way owners sell a house with an open code case without finishing the city’s list first. KindKey buys as-is. Not legal advice.',
+    h1: 'Selling a House with Code Violations in Federal Way, WA',
+    publishedAt: '2026-10-19',
+    intro: [
+      'You can sell a house with open code violations in Federal Way without finishing the city’s repair list first. KindKey Home Buyers LLC buys that house as a principal. The office is at 640 1st St SW, Auburn, WA 98001. Call (206) 519-5463 or use the cash-offer form. KindKey is not code enforcement, a permit expediter, or a real estate agent. This article is not legal advice.',
+      'A notice about junk, an inoperable vehicle, unpermitted work, or a structure the city calls unfit does not have to be cured before you ask for an offer. The City of Federal Way still controls the case. If the notice has a hearing, a fine, or an order to vacate, talk with a Washington attorney before you rely on a sale to solve it. KindKey will not appear at the hearing for you.',
+    ],
+    callout:
+      'You do not have to fix the violations. KindKey buys the problem house as-is. Reach out, and KindKey will help you through the whole process from start to finish. We have done hundreds of these deals.',
+    sections: [
+      {
+        heading: 'Read the header before you assume it is Federal Way',
+        paragraphs: [
+          'Code Compliance is a division of the City of Federal Way Community Development Department. The city’s code compliance page says the division handles enforcement cases on private property on a complaint basis, and that it enforces land use and building code provisions to abate illegal or nuisance conditions. The page lists accumulated trash, junk, junk vehicles, zoning violations, work in environmentally critical areas, graffiti, sign violations, and other violations of the Federal Way Revised Code, the International Property Maintenance Code, or the building and construction codes. Complaints can be filed online or left on the city’s automated line at (253) 835-2617. Graffiti and abandoned shopping carts use (253) 835-2637. Junk vehicles in the road or on the sidewalk are directed to the Federal Way Police Department hotline at (253) 835-6775. That is a different call from a vehicle sitting in a private yard. City Hall is at 33325 8th Avenue South, Federal Way, WA 98003, and the published main line is (253) 835-7000. KindKey is none of those offices.',
+          'Federal Way is in King County. Milton, just south, sits in both King County and Pierce County. Auburn is east, and part of southern Auburn records in Pierce County. Unincorporated King County is a county case, not a Federal Way case. If the letterhead does not say City of Federal Way, do not treat this page as if it did. A mailing city is not always the enforcing city. The closing agent confirms the parcel. The deed for a Federal Way house records with the King County Recorder.',
+        ],
+      },
+      {
+        heading: 'What a Federal Way notice is actually doing',
+        paragraphs: [
+          'Chapter 1.15 of the Federal Way Revised Code is the city’s civil-enforcement chapter. FWRC 1.15.040 is the notice of violation and order to correct. It calls for a description of the violation, the correction the enforcement official wants, and a date to finish it. It also provides for a monetary penalty that can accrue for each day the violation continues past that date, and it says paying the penalty does not relieve the duty to correct. FWRC 1.15.060 lets a person appeal an order to cease activity or a notice and order to the hearing examiner by filing with the city clerk within 14 calendar days of service. Read the paper you were served. KindKey will not count the days for you, file the appeal, or tell you whether an appeal is worth making. Talk with a Washington attorney if the notice has a hearing or a fine you do not understand. Do not skip a hearing because a buyer is looking at the house.',
+          'A more serious letter can use the unfit-building process. FWRC 1.15.150 adopts chapter 35.80 RCW, the state unfit-dwellings statute, as it exists or is later amended. FWRC 1.15.160 designates the city’s building official as the improvement officer and the hearing examiner as the appeals commission. FWRC 1.15.170 and 1.15.175 define dangerous or unfit buildings and premises. Those definitions include fire damage, decay, trash, junk, unused and apparently inoperable vehicles, and developed premises with over 50 percent of the area in blackberries or other noxious weeds. KindKey will not decide whether your house meets them. If the city issues a complaint under FWRC 1.15.190, FWRC 1.15.200 says that complaint is served, posted, and filed with the King County auditor. FWRC 1.15.240 lets a person who has already appealed to the appeals commission petition King County Superior Court. That petition is a lawyer’s work. KindKey will not prepare it.',
+        ],
+      },
+      {
+        heading: 'Houses this sale fits, from the lakes to Dash Point',
+        paragraphs: [
+          'A Twin Lakes or Steel Lake house, a Marine Hills or Lakota rambler, a Dash Point or Redondo house, a Star Lake lot, and a house nearer The Commons are different properties. The notice can be about any of them: an unpermitted addition, a garage converted to a room, a yard full of debris, tall vegetation, or a structure posted after a fire. A retail lender often will not close while that file is open. You do not need a contractor bid, a permit in hand, or a clean-out before KindKey will look. Photos of the posting and of the condition are enough to start. If the structure is not safe to enter, say so. An exterior look can begin the conversation. Do not walk a house that is not safe just to satisfy a buyer.',
+          'After the deed records, the house is KindKey’s to deal with. That includes repairs, permits KindKey chooses to pull, and the open case that came with the property. We handle that as the new owner. We do not clear the citation as your representative, and we do not guarantee what a hearing examiner, an inspector, or a code official will do. Until recording, deadlines on the notice are still yours. KindKey does not charge an agent commission or a separate assignment fee. Closing-cost responsibility is in the purchase agreement and can vary. The offer reflects the remaining work, so it can be less than a retail price for a violation-free house. You can say no.',
+        ],
+      },
+      {
+        heading: 'Fines, another deadline, or selling the problem house as-is',
+        paragraphs: [
+          'An open case does not, by itself, stop a deed. It also does not close because you requested an offer. Some costs the city incurs can follow the property. FWRC 1.15.260 says the cost of action the building official takes under FWRC 1.15.250 is assessed against the property under chapter 35.80 RCW, and that after the city’s finance director certifies the amount, the King County treasurer enters it on the tax rolls under RCW 35.80.030. KindKey does not promise that every Federal Way fine disappears when you sign. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement, prepared by the closing agent, is where you see them. KindKey does not negotiate the citation, and KindKey will not calculate the treasurer’s number.',
+          'A fire often produces the unfit-building letter. The insurance claim stays with your insurer. The King and Pierce County fire guide, and the Federal Way fire-damage page, cover that overlap. If the code case is also sitting next to a foreclosure notice, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. The Federal Way foreclosure guide is the local page for the trustee’s date. A King County property-tax delinquency is a different clock from a city penalty. The Washington tax-delinquent guide covers the treasurer’s sale. You can still ask for an offer while you get advice on those other papers.',
+          'Curing a small yard notice can be the right choice if you want to keep the house and the work is actually small. It is a poor fit when the letter requires a new roof, removal of an unpermitted unit, or a clean-out you cannot staff, and you already live somewhere else. A listing still means showings, disclosures, and buyers who may ask for the violation to be cured before they close. Hire a licensed broker if you want that path. KindKey will not run the listing. You do not have to fix the violations. KindKey buys the problem house as-is. Reach out, and KindKey will help you through the whole process from start to finish, from the letter through the walkthrough, the written offer, and closing. We have done hundreds of these deals. KindKey does not promise a specific number of days. The city’s deadline and the closing date are two different clocks. Call (206) 519-5463 or use the cash-offer form and say what the letter says.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell a Federal Way house before the code case is closed?',
+        answer:
+          'Yes. KindKey buys Federal Way houses with open violations and does not require you to finish the city’s list first. The city still controls its case until it says otherwise. Call (206) 519-5463 or use the cash-offer form.',
+      },
+      {
+        question: 'Do I have to fix the violations before KindKey will look?',
+        answer:
+          'No. KindKey buys the problem house as-is. You do not need a contractor bid, a permit, or a clean-out first. Tell us if a walkthrough has to stay outside.',
+      },
+      {
+        question: 'Does KindKey speak to Federal Way code compliance for me?',
+        answer:
+          'No. KindKey is the buyer. Code compliance complaints can be left at (253) 835-2617. Bring the notice to your conversation with KindKey, and take legal questions to a Washington attorney.',
+      },
+      {
+        question: 'What if a foreclosure notice or a tax bill arrived with the city letter?',
+        answer:
+          'Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34 that KindKey will not interpret. A city penalty and a King County tax bill are different accounts. You can still request a cash offer while you get that advice.',
+      },
+    ],
+    related: [
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'The service page for King and Pierce County.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-washington',
+        label: 'Code violations in Washington',
+        description: 'King and Pierce County, when the notice is not only a Federal Way letter.',
+      },
+      {
+        href: '/areas/federal-way',
+        label: 'Sell a house in Federal Way',
+        description: 'The Federal Way city page.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-auburn-wa',
+        label: 'Code violations in Auburn',
+        description: 'KindKey’s home city, east of Federal Way.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-tacoma',
+        label: 'Code violations in Tacoma',
+        description: 'Pierce County, and a different city’s letter.',
+      },
+      {
+        href: '/areas/federal-way/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Federal Way',
+        description: 'Unfit-building letters often follow a fire.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-federal-way-wa',
+        label: 'Avoiding foreclosure in Federal Way',
+        description: 'A trustee’s notice is a different deadline from a code case.',
+      },
+      {
+        href: '/blog/sell-my-house-fast-for-cash-federal-way',
+        label: 'Sell fast for cash in Federal Way',
+        description: 'The direct-sale steps once you decide to sell as-is.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'No repair bid required.',
+      },
+    ],
+    ctaTitle: 'We will buy the Federal Way house as-is, violations and all',
+    ctaSubtitle:
+      'You do not have to fix the violations. Reach out, and KindKey will help you through the whole process from start to finish. We have done hundreds of these deals. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+  }),
   post('sell-house-with-code-violations-washington', {
     breadcrumbName: 'Code violations in Washington',
     title: 'Sell a House with Code Violations in Washington',
@@ -60,7 +177,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'How an as-is sale works, and what we handle',
         paragraphs: [
-          'Send the address, photos if you have them, and what the letter says, including which city or county is on the header. Auburn, Kent, Federal Way, Tacoma, Puyallup, Milton, and Edgewood each have their own codes, and unincorporated King County and Pierce County are county cases. A mailing city is not always the enforcing city. South Hill addresses that say Puyallup can be Pierce County jurisdiction. Read the letterhead. The Auburn guide and the Tacoma guide cover those two cities in more detail. The closing agent confirms the parcel.',
+          'Send the address, photos if you have them, and what the letter says, including which city or county is on the header. Auburn, Kent, Federal Way, Tacoma, Puyallup, Milton, and Edgewood each have their own codes, and unincorporated King County and Pierce County are county cases. A mailing city is not always the enforcing city. South Hill addresses that say Puyallup can be Pierce County jurisdiction. Read the letterhead. The Federal Way guide, the Auburn guide, and the Tacoma guide cover those cities in more detail. The closing agent confirms the parcel.',
           'KindKey looks at the house as it sits and writes an offer that assumes the violation is still open. The offer is not an obligation. It reflects the remaining work, so it can be less than a retail price for a violation-free house. KindKey does not charge an agent commission or a separate assignment fee. Closing-cost responsibility is in the purchase agreement and can vary. Compare the number with the repair budget and the fine calendar you actually have. You can say no.',
           'After the deed records, the house is KindKey’s to deal with. That includes repairs, permits KindKey chooses to pull, and the open case that came with the property. We handle that as the new owner. We do not clear the citation as your representative, and we do not guarantee what a hearing officer, an inspector, or a code official will do. Until recording, deadlines on the notice are still yours. Do not skip a hearing because a buyer is looking.',
         ],
@@ -92,7 +209,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: 'What if I do not know whether the city or the county wrote the notice?',
         answer:
-          'Read the letterhead. Inside a city limit, the city usually wrote it. Unincorporated land is a county case. Auburn and Tacoma each have a local guide if the header names those cities. The closing agent confirms the parcel.',
+          'Read the letterhead. Inside a city limit, the city usually wrote it. Unincorporated land is a county case. Federal Way, Auburn, and Tacoma each have a local guide if the header names those cities. The closing agent confirms the parcel.',
       },
     ],
     related: [
@@ -100,6 +217,12 @@ export const blogPosts: BlogPost[] = [
         href: '/sell-house-with-code-violations',
         label: 'Sell a house with code violations',
         description: 'The service page for King and Pierce County.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-federal-way',
+        label: 'Code violations in Federal Way',
+        description:
+          'City of Federal Way letters, including unfit-building complaints filed with King County.',
       },
       {
         href: '/blog/sell-house-with-code-violations-auburn-wa',
