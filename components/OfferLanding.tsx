@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import OfferLeadForm from '@/components/OfferLeadForm';
-import OfferMobileBar, { OfferJumpButton } from '@/components/OfferMobileBar';
+import OfferMobileBar, { OfferJumpButton, OfferPhoneLink } from '@/components/OfferMobileBar';
 import type { OfferLandingContent } from '@/data/offerLandings';
 import {
   BBB_TRUST_LINE,
@@ -57,10 +57,15 @@ export default function OfferLanding({
             <span className="truncate text-sm font-bold leading-tight">KindKey Home Buyers</span>
           </div>
           <div className="flex shrink-0 items-center gap-3">
-            <a href={`tel:${phone.tel}`} className="text-base font-semibold text-divider">
-              {phone.display}
-            </a>
-            <OfferJumpButton className="hidden min-h-12 items-center justify-center rounded-lg bg-divider px-4 text-sm font-bold text-white shadow-sm md:inline-flex" />
+            <OfferPhoneLink
+              phone={phone}
+              location="header"
+              className="text-base font-semibold text-divider"
+            />
+            <OfferJumpButton
+              location="header"
+              className="hidden min-h-12 items-center justify-center rounded-lg bg-divider px-4 text-sm font-bold text-white shadow-sm md:inline-flex"
+            />
           </div>
         </div>
       </header>
@@ -147,15 +152,20 @@ export default function OfferLanding({
         </section>
 
         <section className="mt-12">
-          <OfferJumpButton className="flex min-h-14 w-full items-center justify-center rounded-lg bg-divider px-6 text-lg font-bold text-white shadow-md" />
+          <OfferJumpButton
+            location="bottom"
+            className="flex min-h-14 w-full items-center justify-center rounded-lg bg-divider px-6 text-lg font-bold text-white shadow-md"
+          />
         </section>
 
         <footer className="mt-12 border-t border-gray-200 py-8 text-sm leading-relaxed text-text-secondary">
           <p>{address}</p>
           <p className="mt-3">
-            <a href={`tel:${phone.tel}`} className="text-base font-semibold text-divider">
-              {phone.display}
-            </a>
+            <OfferPhoneLink
+              phone={phone}
+              location="footer"
+              className="text-base font-semibold text-divider"
+            />
           </p>
           <p className="mt-3">
             <Link href="/" className="font-medium text-divider underline">

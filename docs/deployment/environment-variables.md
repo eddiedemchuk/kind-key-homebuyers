@@ -15,7 +15,7 @@ changed.
 | -------------------------------- | ---------------------------------------------------- | ------------------------------- |
 | `NEXT_PUBLIC_SITE_URL`           | Base origin for generated URLs and schema            | `https://kindkeyhomebuyers.com` |
 | `NEXT_PUBLIC_RECAPTCHA_SITE_KEY` | Loads reCAPTCHA v3 and requests form tokens          | reCAPTCHA is skipped            |
-| `NEXT_PUBLIC_GA_MEASUREMENT_ID`  | Configures GA4 after accepted cookie consent         | GA4 is omitted                  |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID`  | Overrides the GA4 measurement ID (`G-E2YKGLGN1S`)    | `G-E2YKGLGN1S`                  |
 | `NEXT_PUBLIC_HERO_VIDEO_SRC`     | Overrides hero video; supported routes accept `none` | `/hero-loop.mp4`                |
 | `NEXT_PUBLIC_HERO_IMAGE_SRC`     | Overrides hero poster imagery                        | route-specific local asset      |
 | `NEXT_PUBLIC_BRAND_NAME`         | Overrides header and footer brand name               | `KindKey Home Buyers`           |

@@ -2,11 +2,30 @@ declare global {
   interface Window {
     dataLayer?: unknown[];
     gtag?: (
-      command: 'config' | 'event' | 'js' | 'set',
+      command: 'config' | 'event' | 'js' | 'set' | 'consent',
       targetIdOrEventName: string,
       config?: Record<string, unknown>
     ) => void;
   }
+}
+
+/** GA4 web stream for property 514584396 (kindkeyhomebuyers.com). */
+export const GA4_MEASUREMENT_ID = 'G-E2YKGLGN1S';
+
+export const COOKIE_CONSENT_STORAGE_KEY = 'cookie-consent';
+
+export type GoogleConsentState = 'granted' | 'denied';
+
+/** Consent Mode v2 update. Decline sets every storage flag to denied. */
+export function updateGoogleConsent(state: GoogleConsentState): void {
+  if (typeof window === 'undefined' || !window.gtag) return;
+
+  window.gtag('consent', 'update', {
+    analytics_storage: state,
+    ad_storage: state,
+    ad_user_data: state,
+    ad_personalization: state,
+  });
 }
 
 /** Fired after a successful lead submit. Thank-you repeats it with the same transaction id. */
@@ -92,6 +111,10 @@ export function trackWhatsAppClick(): void {
   trackEvent('whatsapp_click');
 }
 
-export function trackCallClick(): void {
-  trackEvent('call_click');
+export function trackCallClick(linkLocation?: string): void {
+  trackEvent('call_click', linkLocation ? { link_location: linkLocation } : undefined);
+}
+
+export function trackGetOfferClick(linkLocation?: string): void {
+  trackEvent('get_offer_click', linkLocation ? { link_location: linkLocation } : undefined);
 }
