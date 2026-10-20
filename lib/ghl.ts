@@ -68,9 +68,14 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
   const [firstName = '', ...restName] = fullName.split(/\s+/);
   const attribution = attributionForLead(data);
   const clickSource = deriveLeadSource(attribution);
-  const form = formOriginLabel(resolveFormOrigin(data.formOrigin));
+  const formOrigin = resolveFormOrigin(data.formOrigin);
+  const form = formOriginLabel(formOrigin);
   const listedWithAgent = data.listedWithAgent;
   const tags = listedWithAgent === 'yes' ? `${form.tags}, ${LISTED_WITH_AGENT_TAG}` : form.tags;
+  const customFields = [
+    ...(listedWithAgent ? [{ key: 'listed_with_agent', field_value: listedWithAgent }] : []),
+    { key: 'form_origin', field_value: formOrigin },
+  ];
 
   return {
     first_name: firstName,
@@ -106,12 +111,19 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
     lead_source: form.leadSource,
     click_source: clickSource,
     form_name: form.formName,
-    form_origin: resolveFormOrigin(data.formOrigin),
+    form_origin: formOrigin,
+    page_tag: form.pageTag,
     channel: 'Website',
     listed_with_agent: listedWithAgent ?? '',
     tags,
     source_tag: form.sourceTag,
-    attribution_notes: formatAttributionNotes(attribution, form, clickSource, listedWithAgent),
+    customFields,
+    attribution_notes: formatAttributionNotes(
+      attribution,
+      { ...form, formOrigin },
+      clickSource,
+      listedWithAgent
+    ),
   };
 }
 
