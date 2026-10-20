@@ -12,15 +12,16 @@ export const FORM_ORIGINS = [
   'google_ads_inherited',
   'google_ads_as_is',
   'google_ads_fire_damage',
+  'facebook_ads_eddie',
 ] as const;
 
 export type FormOrigin = (typeof FORM_ORIGINS)[number];
 
 export interface FormOriginLabel {
-  source: 'Website' | 'Google Ads' | 'Facebook Ads';
-  leadSource: 'Website' | 'Google Ads' | 'Facebook Ads';
-  sourceTag: 'website' | 'google ads' | 'facebook ads';
-  /** Situation tag added beside the source tag. Empty on the regular website form. */
+  source: 'Website' | 'Google Ads' | 'Facebook Ads' | 'Facebook Leads (Eddie)';
+  leadSource: 'Website' | 'Google Ads' | 'Facebook Ads' | 'Facebook Leads (Eddie)';
+  sourceTag: 'website' | 'google ads' | 'facebook ads' | 'Facebook Leads (Eddie)';
+  /** Situation tag added beside the source tag. Empty on the website form and Facebook forms. */
   pageTag: string;
   tags: string;
   formName: string;
@@ -82,6 +83,14 @@ const FORM_ORIGIN_LABELS: Record<FormOrigin, FormOriginLabel> = {
     pageTag: 'fire damage',
     tags: `${GHL_BASE_TAG}, google ads, fire damage`,
     formName: 'Google Ads Fire Damage Page',
+  },
+  facebook_ads_eddie: {
+    source: 'Facebook Leads (Eddie)',
+    leadSource: 'Facebook Leads (Eddie)',
+    sourceTag: 'Facebook Leads (Eddie)',
+    pageTag: '',
+    tags: `${GHL_BASE_TAG}, Facebook Leads (Eddie)`,
+    formName: 'Facebook Leads (Eddie) Landing Page',
   },
 };
 

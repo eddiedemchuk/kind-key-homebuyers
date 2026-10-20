@@ -6,6 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
 import { offerLeadFormSchema, type OfferLeadFormData } from '@/lib/schema';
 import { trackEvent, trackLeadSubmit } from '@/lib/analytics';
+import { trackMetaLead } from '@/lib/meta-pixel';
 import { attributionFieldsForSubmit } from '@/lib/attribution-client';
 import type { FormOrigin } from '@/lib/form-origin';
 import { useRecaptcha } from '@/lib/useRecaptcha';
@@ -15,6 +16,8 @@ import { SMS_CONSENT_TEXT_VERSION } from '@/lib/sms-consent';
 interface OfferLeadFormProps {
   formOrigin: FormOrigin;
   idPrefix: string;
+  /** Fire the Meta Lead event after a successful submit. Only /offer/facebook sets this. */
+  trackMetaLead?: boolean;
 }
 
 const fieldClass =
@@ -23,7 +26,11 @@ const fieldClass =
 const submitButtonClass =
   'flex min-h-14 w-full touch-manipulation items-center justify-center rounded-lg bg-divider px-6 py-3 text-lg font-bold text-white shadow-md transition-colors hover:bg-divider/90 disabled:cursor-not-allowed disabled:opacity-50';
 
-export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormProps) {
+export default function OfferLeadForm({
+  formOrigin,
+  idPrefix,
+  trackMetaLead: shouldTrackMetaLead = false,
+}: OfferLeadFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const formRef = useRef<HTMLFormElement>(null);
@@ -131,6 +138,7 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
       }
 
       trackLeadSubmit({});
+      if (shouldTrackMetaLead) trackMetaLead();
       window.location.href = '/thank-you';
     } catch (error) {
       console.error('Form submission error:', error);
