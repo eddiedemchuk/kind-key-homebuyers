@@ -10,7 +10,7 @@ import {
   shortGoogleReviews,
 } from '@/data/offerCredibility';
 import type { FormOrigin } from '@/lib/form-origin';
-import { GOOGLE_ADS_PHONE } from '@/lib/phones';
+import { GOOGLE_ADS_PHONE, type DisplayPhone } from '@/lib/phones';
 import { BUSINESS, localBusinessJsonLd } from '@/lib/site';
 
 function FiveStars() {
@@ -29,13 +29,15 @@ export default function OfferLanding({
   content,
   formOrigin,
   trackMetaLead = false,
+  phone = GOOGLE_ADS_PHONE,
 }: {
   content: OfferLandingContent;
   formOrigin: FormOrigin;
   /** Passed through to the form. Only the Facebook page sets this. */
   trackMetaLead?: boolean;
+  /** Header, footer, and mobile call bar. Defaults to the Google Ads number. */
+  phone?: DisplayPhone;
 }) {
-  const phone = GOOGLE_ADS_PHONE;
   const address = `${BUSINESS.streetAddress}, ${BUSINESS.addressLocality}, ${BUSINESS.addressRegion} ${BUSINESS.postalCode}`;
 
   return (

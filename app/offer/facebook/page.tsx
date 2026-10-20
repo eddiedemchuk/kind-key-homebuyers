@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import MetaPixel from '@/components/MetaPixel';
 import OfferLanding from '@/components/OfferLanding';
 import { facebookEddieOffer } from '@/data/offerLandings';
+import { FACEBOOK_OFFER_PHONE } from '@/lib/phones';
 
 export const metadata: Metadata = {
   title: facebookEddieOffer.title,
@@ -24,6 +25,7 @@ export default function FacebookEddieOfferPage() {
         content={facebookEddieOffer}
         formOrigin={facebookEddieOffer.formOrigin}
         trackMetaLead
+        phone={FACEBOOK_OFFER_PHONE}
       />
     </>
   );

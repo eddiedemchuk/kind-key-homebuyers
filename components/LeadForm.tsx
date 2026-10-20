@@ -9,6 +9,7 @@ import { trackLeadSubmit } from '@/lib/analytics';
 import { attributionFieldsForSubmit } from '@/lib/attribution-client';
 import { useRecaptcha } from '@/lib/useRecaptcha';
 import { formatPhoneChange, toE164 } from '@/lib/phone';
+import { persistThankYouPhoneSource, thankYouHref } from '@/lib/phones';
 
 interface LeadFormProps {
   variant?: 'short' | 'extended';
@@ -99,10 +100,12 @@ export default function LeadForm({
         timeframe: data.timeframe,
       });
 
+      const pagePath = window.location.pathname;
+      persistThankYouPhoneSource(pagePath);
       if (onSuccess) {
         onSuccess();
       } else {
-        window.location.href = '/thank-you';
+        window.location.href = thankYouHref(pagePath);
       }
     } catch (error) {
       console.error('Form submission error:', error);
