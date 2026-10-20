@@ -28,9 +28,12 @@ function FiveStars() {
 export default function OfferLanding({
   content,
   formOrigin,
+  trackMetaLead = false,
 }: {
   content: OfferLandingContent;
   formOrigin: FormOrigin;
+  /** Passed through to the form. Only the Facebook page sets this. */
+  trackMetaLead?: boolean;
 }) {
   const phone = GOOGLE_ADS_PHONE;
   const address = `${BUSINESS.streetAddress}, ${BUSINESS.addressLocality}, ${BUSINESS.addressRegion} ${BUSINESS.postalCode}`;
@@ -83,7 +86,7 @@ export default function OfferLanding({
             data-offer-form
             className="mt-4 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-3 shadow-sm md:mt-6 md:scroll-mt-20 md:p-4"
           >
-            <OfferLeadForm idPrefix="hero" formOrigin={formOrigin} />
+            <OfferLeadForm idPrefix="hero" formOrigin={formOrigin} trackMetaLead={trackMetaLead} />
           </div>
         </section>
 

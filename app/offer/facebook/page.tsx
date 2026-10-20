@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import MetaPixel from '@/components/MetaPixel';
 import OfferLanding from '@/components/OfferLanding';
 import { facebookEddieOffer } from '@/data/offerLandings';
 
@@ -16,5 +17,14 @@ export const metadata: Metadata = {
 };
 
 export default function FacebookEddieOfferPage() {
-  return <OfferLanding content={facebookEddieOffer} formOrigin={facebookEddieOffer.formOrigin} />;
+  return (
+    <>
+      <MetaPixel />
+      <OfferLanding
+        content={facebookEddieOffer}
+        formOrigin={facebookEddieOffer.formOrigin}
+        trackMetaLead
+      />
+    </>
+  );
 }
