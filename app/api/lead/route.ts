@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Ratelimit } from '@upstash/ratelimit';
 import { Redis } from '@upstash/redis';
-import { leadApiSchema } from '@/lib/schema';
+import { leadSchemaForSubmission } from '@/lib/schema';
 import { verifyRecaptcha } from '@/lib/captcha';
 import { postToCRM } from '@/lib/crm';
 import { sendTelegramMessage, formatLeadForTelegram } from '@/lib/telegram';
@@ -54,8 +54,10 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json();
+    const formOrigin = resolveFormOrigin(body.form_origin);
+    const pagePath = typeof body.pagePath === 'string' ? body.pagePath : '';
 
-    const validationResult = leadApiSchema.safeParse(body);
+    const validationResult = leadSchemaForSubmission(formOrigin, pagePath).safeParse(body);
     if (!validationResult.success) {
       return NextResponse.json(
         { message: 'Invalid form data', errors: validationResult.error.errors },
@@ -75,12 +77,18 @@ export async function POST(request: NextRequest) {
     }
 
     const ip = getClientIP(request);
-    const pagePath = body.pagePath || 'unknown';
     const attribution = resolveSubmissionAttribution(
       touchFromRequestBody(body),
       readAttributionFromCookieHeader(request.headers.get('cookie'))
     );
-    const formOrigin = resolveFormOrigin(body.form_origin);
+    const smsConsent = 'sms_consent' in data && data.sms_consent === true;
+    const smsConsentAt = smsConsent ? new Date().toISOString() : undefined;
+    const smsConsentTextVersion =
+      smsConsent &&
+      'sms_consent_text_version' in data &&
+      typeof data.sms_consent_text_version === 'string'
+        ? data.sms_consent_text_version
+        : undefined;
 
     const crmData = {
       name: data.name,
@@ -96,12 +104,15 @@ export async function POST(request: NextRequest) {
       smsMarketingConsent: data.smsMarketingConsent,
       utm: attribution.utm_source || body.utm,
       gclid: attribution.gclid || body.gclid,
-      pagePath,
+      pagePath: pagePath || 'unknown',
       recaptchaScore: 0.9, // Used when verification is skipped.
       ip,
       attribution,
       formOrigin,
       listedWithAgent: data.listed_with_agent,
+      smsConsent,
+      smsConsentAt,
+      smsConsentTextVersion,
     };
 
     // Delivery channels are independent and optional. A provider failure is

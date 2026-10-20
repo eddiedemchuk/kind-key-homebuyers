@@ -552,6 +552,34 @@ describe('buildGhlPayload', () => {
       ]);
       assert.match(String(payload.attribution_notes), new RegExp(`Form origin: ${formOrigin}`));
       assert.match(String(payload.attribution_notes), new RegExp(`Page tag: ${pageTag}`));
+      assert.equal(payload.sms_consent, false);
+      assert.equal(payload.email, 'ada@example.com');
     }
+  });
+
+  it('sends the contact email and required consent on an offer lead', () => {
+    const payload = buildGhlPayload({
+      ...lead,
+      email: ' ada@example.com ',
+      pagePath: '/offer',
+      formOrigin: 'google_ads_landing',
+      listedWithAgent: 'no',
+      smsConsent: true,
+      smsConsentAt: '2026-10-20T15:00:00.000Z',
+      smsConsentTextVersion: 'a2p-v1',
+    });
+    assert.equal(payload.email, 'ada@example.com');
+    assert.equal(payload.sms_consent, true);
+    assert.equal(payload.sms_consent_at, '2026-10-20T15:00:00.000Z');
+    assert.equal(payload.sms_consent_text_version, 'a2p-v1');
+    assert.deepEqual(payload.customFields, [
+      { key: 'listed_with_agent', field_value: 'no' },
+      { key: 'form_origin', field_value: 'google_ads_landing' },
+      { key: 'sms_consent', field_value: 'true' },
+      { key: 'sms_consent_at', field_value: '2026-10-20T15:00:00.000Z' },
+      { key: 'sms_consent_text_version', field_value: 'a2p-v1' },
+    ]);
+    assert.match(String(payload.attribution_notes), /SMS consent: true/);
+    assert.match(String(payload.attribution_notes), /SMS consent text: a2p-v1/);
   });
 });

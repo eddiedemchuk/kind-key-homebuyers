@@ -1,5 +1,7 @@
 import { z } from 'zod';
+import { type FormOrigin, isOfferFormOrigin } from './form-origin';
 import { isCompleteUsPhone } from './phone';
+import { SMS_CONSENT_REQUIRED_MESSAGE, SMS_CONSENT_TEXT_VERSION } from './sms-consent';
 
 const optionalPhoneSchema = z.string().refine(
   (val) => {
@@ -64,11 +66,41 @@ export const leadFormSchema = leadApiSchema.extend({
   preferredContact: preferredContactSchema,
 });
 
-/** Paid-ads short form. Phone and the listing question are required here. */
+const requiredEmailSchema = z
+  .string({ required_error: 'Email is required.', invalid_type_error: 'Email is required.' })
+  .trim()
+  .min(1, 'Email is required.')
+  .email('Enter a valid email address.');
+
+const offerConsentSchema = z
+  .boolean()
+  .refine((value) => value === true, { message: SMS_CONSENT_REQUIRED_MESSAGE });
+
+/** Paid-ads short form. Email, phone, listing answer, and consent are required. */
 export const offerLeadFormSchema = leadApiSchema.extend({
   phone: requiredPhoneSchema,
+  email: requiredEmailSchema,
   listed_with_agent: listedWithAgentSchema,
+  sms_consent: offerConsentSchema,
 });
+
+/** Server schema for /offer submissions. Consent must be the current text version. */
+export const offerLeadApiSchema = offerLeadFormSchema.extend({
+  sms_consent: z.literal(true, {
+    errorMap: () => ({ message: SMS_CONSENT_REQUIRED_MESSAGE }),
+  }),
+  sms_consent_text_version: z.literal(SMS_CONSENT_TEXT_VERSION, {
+    errorMap: () => ({ message: SMS_CONSENT_REQUIRED_MESSAGE }),
+  }),
+});
+
+export function isOfferLeadSubmission(formOrigin: FormOrigin, pagePath: string): boolean {
+  return isOfferFormOrigin(formOrigin) || pagePath === '/offer' || pagePath.startsWith('/offer/');
+}
+
+export function leadSchemaForSubmission(formOrigin: FormOrigin, pagePath: string) {
+  return isOfferLeadSubmission(formOrigin, pagePath) ? offerLeadApiSchema : leadApiSchema;
+}
 
 export const extendedLeadFormSchema = leadFormSchema.extend({
   propertyType: z.string().optional(),
