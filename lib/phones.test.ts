@@ -83,6 +83,10 @@ describe('Facebook offer thank-you phone', () => {
     assert.equal(hasFacebookOfferThankYouFlag(storage), true);
     assert.equal(thankYouHref('/offer/facebook'), '/thank-you?from=facebook');
 
+    rememberThankYouPhoneSource('/offer', storage, true);
+    assert.equal(hasFacebookOfferThankYouFlag(storage), true);
+    assert.equal(thankYouHref('/offer', true), '/thank-you?from=facebook');
+
     rememberThankYouPhoneSource('/offer', storage);
     assert.equal(hasFacebookOfferThankYouFlag(storage), false);
     assert.equal(thankYouHref('/offer'), '/thank-you');

@@ -45,9 +45,12 @@ granted either way, so GA4 still loads when the banner is absent.
   `AW-17766515185/IeBJCKCujPIbEPGD3pdC` with a transaction id.
 - The thank-you route repeats that same conversion with the stored transaction id, so Google Ads
   counts it once if the first hit was lost during navigation. It does not fire a second label.
-- Meta pixel `1352513176647290` loads only on `/offer/facebook` (`components/MetaPixel.tsx`). It
-  sends `PageView` on load. A successful submit on that page also calls `fbq('track', 'Lead')`
-  before the redirect to `/thank-you`. Other pages, including `/thank-you`, do not load this pixel.
+- Meta pixel `1352513176647290` loads on `/offer/facebook` and on `/offer` when the URL has
+  `src=fb`, `src=fb_static`, or `utm_source=facebook`. That `/offer` match is stored for the
+  session, so a later `/offer` view in the same tab loads the pixel too. It sends `PageView` on
+  load. A successful submit on those visits calls `fbq('track', 'Lead')` before the redirect to
+  `/thank-you`. Other pages, including a plain `/offer` visit and `/thank-you`, do not load this
+  pixel.
 - First-touch campaign parameters are stored separately from the GA4 consent record. See
   [GoHighLevel lead delivery](gohighlevel.md).
 

@@ -32,6 +32,8 @@ interface GHLLeadInput {
   smsConsent?: boolean;
   smsConsentAt?: string;
   smsConsentTextVersion?: string;
+  /** src query from a Facebook /offer visit. Empty when only utm_source=facebook matched. */
+  src?: string;
 }
 
 const LISTED_WITH_AGENT_TAG = 'listed with agent';
@@ -80,6 +82,7 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
   const customFields = [
     ...(listedWithAgent ? [{ key: 'listed_with_agent', field_value: listedWithAgent }] : []),
     { key: 'form_origin', field_value: formOrigin },
+    ...(typeof data.src === 'string' ? [{ key: 'src', field_value: data.src }] : []),
     ...(smsConsent
       ? [
           { key: 'sms_consent', field_value: 'true' },
@@ -136,6 +139,7 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
     click_source: clickSource,
     form_name: form.formName,
     form_origin: formOrigin,
+    ...(typeof data.src === 'string' ? { src: data.src } : {}),
     page_tag: form.pageTag,
     channel: 'Website',
     listed_with_agent: listedWithAgent ?? '',

@@ -113,6 +113,7 @@ export async function POST(request: NextRequest) {
       smsConsent,
       smsConsentAt,
       smsConsentTextVersion,
+      ...(typeof data.src === 'string' ? { src: data.src } : {}),
     };
 
     // Delivery channels are independent and optional. A provider failure is
