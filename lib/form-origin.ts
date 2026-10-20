@@ -20,6 +20,8 @@ export interface FormOriginLabel {
   source: 'Website' | 'Google Ads' | 'Facebook Ads';
   leadSource: 'Website' | 'Google Ads' | 'Facebook Ads';
   sourceTag: 'website' | 'google ads' | 'facebook ads';
+  /** Situation tag added beside the source tag. Empty on the regular website form. */
+  pageTag: string;
   tags: string;
   formName: string;
 }
@@ -29,6 +31,7 @@ const FORM_ORIGIN_LABELS: Record<FormOrigin, FormOriginLabel> = {
     source: 'Website',
     leadSource: 'Website',
     sourceTag: 'website',
+    pageTag: '',
     tags: `${GHL_BASE_TAG}, website`,
     formName: 'Website Form',
   },
@@ -36,13 +39,15 @@ const FORM_ORIGIN_LABELS: Record<FormOrigin, FormOriginLabel> = {
     source: 'Google Ads',
     leadSource: 'Google Ads',
     sourceTag: 'google ads',
-    tags: `${GHL_BASE_TAG}, google ads`,
+    pageTag: 'general',
+    tags: `${GHL_BASE_TAG}, google ads, general`,
     formName: 'Google Ads Landing Page',
   },
   facebook_ads_landing: {
     source: 'Facebook Ads',
     leadSource: 'Facebook Ads',
     sourceTag: 'facebook ads',
+    pageTag: '',
     tags: `${GHL_BASE_TAG}, facebook ads`,
     formName: 'Facebook Ads Landing Page',
   },
@@ -50,6 +55,7 @@ const FORM_ORIGIN_LABELS: Record<FormOrigin, FormOriginLabel> = {
     source: 'Google Ads',
     leadSource: 'Google Ads',
     sourceTag: 'google ads',
+    pageTag: 'foreclosure',
     tags: `${GHL_BASE_TAG}, google ads, foreclosure`,
     formName: 'Google Ads Foreclosure Page',
   },
@@ -57,6 +63,7 @@ const FORM_ORIGIN_LABELS: Record<FormOrigin, FormOriginLabel> = {
     source: 'Google Ads',
     leadSource: 'Google Ads',
     sourceTag: 'google ads',
+    pageTag: 'inherited',
     tags: `${GHL_BASE_TAG}, google ads, inherited`,
     formName: 'Google Ads Inherited Page',
   },
@@ -64,6 +71,7 @@ const FORM_ORIGIN_LABELS: Record<FormOrigin, FormOriginLabel> = {
     source: 'Google Ads',
     leadSource: 'Google Ads',
     sourceTag: 'google ads',
+    pageTag: 'as-is',
     tags: `${GHL_BASE_TAG}, google ads, as-is`,
     formName: 'Google Ads As-Is Page',
   },
@@ -71,6 +79,7 @@ const FORM_ORIGIN_LABELS: Record<FormOrigin, FormOriginLabel> = {
     source: 'Google Ads',
     leadSource: 'Google Ads',
     sourceTag: 'google ads',
+    pageTag: 'fire damage',
     tags: `${GHL_BASE_TAG}, google ads, fire damage`,
     formName: 'Google Ads Fire Damage Page',
   },
