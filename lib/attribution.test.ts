@@ -246,6 +246,7 @@ describe('resolveFormOrigin', () => {
     assert.equal(resolveFormOrigin('google_ads_inherited'), 'google_ads_inherited');
     assert.equal(resolveFormOrigin('google_ads_as_is'), 'google_ads_as_is');
     assert.equal(resolveFormOrigin('google_ads_fire_damage'), 'google_ads_fire_damage');
+    assert.equal(resolveFormOrigin('facebook_ads_eddie'), 'facebook_ads_eddie');
     assert.equal(resolveFormOrigin('Google Ads'), 'website');
     assert.equal(resolveFormOrigin('facebook'), 'website');
     assert.equal(resolveFormOrigin('google ads'), 'website');
@@ -418,6 +419,41 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.form_origin, 'google_ads_fire_damage');
     assert.equal(payload.page_path, '/offer/fire-damage');
     assert.equal(payload.listed_with_agent, 'no');
+  });
+
+  it('labels the Eddie Facebook landing with its own source and tag', () => {
+    const payload = buildGhlPayload({
+      ...lead,
+      pagePath: '/offer/facebook',
+      formOrigin: 'facebook_ads_eddie',
+      listedWithAgent: 'no',
+    });
+    assert.equal(payload.source, 'Facebook Leads (Eddie)');
+    assert.equal(payload.lead_source, 'Facebook Leads (Eddie)');
+    assert.equal(payload.source_tag, 'Facebook Leads (Eddie)');
+    assert.equal(payload.tags, 'website lead, Facebook Leads (Eddie)');
+    assert.equal(payload.form_name, 'Facebook Leads (Eddie) Landing Page');
+    assert.equal(payload.form_origin, 'facebook_ads_eddie');
+    assert.equal(payload.page_path, '/offer/facebook');
+    assert.equal(payload.channel, 'Website');
+    assert.equal(payload.listed_with_agent, 'no');
+    assert.match(String(payload.attribution_notes), /Listed with agent: no/);
+    assert.equal(payload.pipeline, undefined);
+    assert.equal(payload.stage, undefined);
+  });
+
+  it('keeps the Eddie source when the house is listed with an agent', () => {
+    const payload = buildGhlPayload({
+      ...lead,
+      pagePath: '/offer/facebook',
+      formOrigin: 'facebook_ads_eddie',
+      listedWithAgent: 'yes',
+    });
+    assert.equal(payload.source, 'Facebook Leads (Eddie)');
+    assert.equal(payload.source_tag, 'Facebook Leads (Eddie)');
+    assert.equal(payload.tags, 'website lead, Facebook Leads (Eddie), listed with agent');
+    assert.equal(payload.listed_with_agent, 'yes');
+    assert.match(String(payload.attribution_notes), /Listed with agent: yes/);
   });
 
   it('adds the listed-with-agent tag and note when the offer answer is yes', () => {

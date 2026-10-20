@@ -72,6 +72,12 @@ export const generalOffer: OfferLandingContent = {
   ],
 };
 
+/** Same copy as /offer. The form origin is the only difference. */
+export const facebookEddieOffer: OfferLandingContent = {
+  ...generalOffer,
+  formOrigin: 'facebook_ads_eddie',
+};
+
 export const foreclosureOffer: OfferLandingContent = {
   title: 'Sell Before the Auction for Cash',
   description:
