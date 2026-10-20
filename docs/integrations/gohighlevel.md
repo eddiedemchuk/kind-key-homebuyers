@@ -19,10 +19,13 @@ The chat widget is a separate, GHL-hosted path and does not use this webhook.
    timeframe, and preferred contact stay required on
    `LeadForm` and are optional in the API so the short form can submit without filling them in.
    Each form posts `form_origin`: `website` from `LeadForm`, `google_ads_landing` from `/offer`,
-   `facebook_ads_landing` from `/offer?src=fb`, `google_ads_foreclosure` from `/offer/foreclosure`,
-   `google_ads_inherited` from `/offer/inherited`, `google_ads_as_is` from `/offer/as-is`,
-   `google_ads_fire_damage` from `/offer/fire-damage`, and `facebook_ads_eddie` from
-   `/offer/facebook`.
+   `facebook_ads_eddie` from `/offer/facebook` and from `/offer` when the URL has `src=fb`,
+   `src=fb_static`, or `utm_source=facebook` (that `/offer` match is remembered for the session),
+   `google_ads_foreclosure` from `/offer/foreclosure`, `google_ads_inherited` from
+   `/offer/inherited`, `google_ads_as_is` from `/offer/as-is`, and `google_ads_fire_damage` from
+   `/offer/fire-damage`. Those `/offer` Facebook visits also post `src` (`fb`, `fb_static`, or an
+   empty string when only `utm_source=facebook` matched). `facebook_ads_landing` remains an
+   allowlisted origin and is no longer chosen by `/offer`.
    The server accepts only those values.
 2. On each full page load, `components/AttributionCapture.tsx` stores the landing touch. On submit,
    the form reads that stored touch again so a later page without campaign parameters still sends
@@ -117,28 +120,29 @@ sent unchanged. They do not change `source`, `lead_source`, or the tag.
 `lib/ghl.ts` POSTs flat JSON. Contact fields are unchanged except the source, tag, and the
 form and click labels below.
 
-| Payload key                                                           | Value                                                                                                                                                                                   |
-| --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `first_name`, `last_name`, `full_name`, `phone`, `email`              | Lead contact. Email is required on `/offer` pages and optional on the website form                                                                                                      |
-| `address1`, `city`, `state`, `country`                                | Property address, `WA`, `US`                                                                                                                                                            |
-| `condition`, `timeframe`, `preferred_contact`, `reason_for_selling`   | Form answers                                                                                                                                                                            |
-| `listed_with_agent`                                                   | `yes` or `no` from an `/offer` page; empty when the website form omitted it                                                                                                             |
-| `sms_non_marketing_consent`, `sms_marketing_consent`                  | Consent booleans. Both are `true` when the offer checkbox is checked                                                                                                                    |
-| `sms_consent`, `sms_consent_at`, `sms_consent_text_version`           | `true`, the server timestamp, and `a2p-v1` when the offer checkbox was checked. Also copied into `customFields`                                                                         |
-| `page_path`, `ip`                                                     | Path of the submit page, and client IP                                                                                                                                                  |
-| `source`, `lead_source`                                               | Form origin: `Website`, `Google Ads`, `Facebook Ads`, or `Facebook Leads (Eddie)`                                                                                                       |
-| `click_source`                                                        | Click-derived label, such as `Google Ads` or `Direct/Website`                                                                                                                           |
-| `form_name`                                                           | Form label from the allowlisted origin, such as `Google Ads Foreclosure Page`                                                                                                           |
-| `form_origin`                                                         | Allowlisted key the server accepted. Also sent in `customFields` and in the attribution note                                                                                            |
-| `page_tag`                                                            | Situation tag for a Google offer page: `general`, `inherited`, `as-is`, `foreclosure`, or `fire damage`. Empty on the website form and both Facebook forms                              |
-| `channel`                                                             | Always `Website`, so a workflow can still recognize a site lead                                                                                                                         |
-| `tags`                                                                | `website lead`, the form's source tag, and `page_tag` when one exists, comma-separated. When `listed_with_agent` is `yes`, also `listed with agent`                                     |
-| `source_tag`                                                          | `website`, `google ads`, `facebook ads`, or `Facebook Leads (Eddie)`. Stays `google ads` on every Google offer page                                                                     |
-| `customFields`                                                        | `{ key, field_value }` entries for `form_origin`, for `listed_with_agent` whenever the offer form answered yes or no, and for the SMS consent fields when the offer checkbox is checked |
-| `utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, `utm_content` | Stored UTM values                                                                                                                                                                       |
-| `gclid`, `gbraid`, `wbraid`, `fbclid`                                 | Stored click ids                                                                                                                                                                        |
-| `referrer`, `landing_page`, `attribution_captured_at`                 | Landing context                                                                                                                                                                         |
-| `attribution_notes`                                                   | Plain-text copy of the same values, plus the SMS consent lines when the offer checkbox was checked                                                                                      |
+| Payload key                                                           | Value                                                                                                                                                                                                                           |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `first_name`, `last_name`, `full_name`, `phone`, `email`              | Lead contact. Email is required on `/offer` pages and optional on the website form                                                                                                                                              |
+| `address1`, `city`, `state`, `country`                                | Property address, `WA`, `US`                                                                                                                                                                                                    |
+| `condition`, `timeframe`, `preferred_contact`, `reason_for_selling`   | Form answers                                                                                                                                                                                                                    |
+| `listed_with_agent`                                                   | `yes` or `no` from an `/offer` page; empty when the website form omitted it                                                                                                                                                     |
+| `sms_non_marketing_consent`, `sms_marketing_consent`                  | Consent booleans. Both are `true` when the offer checkbox is checked                                                                                                                                                            |
+| `sms_consent`, `sms_consent_at`, `sms_consent_text_version`           | `true`, the server timestamp, and `a2p-v1` when the offer checkbox was checked. Also copied into `customFields`                                                                                                                 |
+| `page_path`, `ip`                                                     | Path of the submit page, and client IP                                                                                                                                                                                          |
+| `source`, `lead_source`                                               | Form origin: `Website`, `Google Ads`, `Facebook Ads`, or `Facebook Leads (Eddie)`                                                                                                                                               |
+| `click_source`                                                        | Click-derived label, such as `Google Ads` or `Direct/Website`                                                                                                                                                                   |
+| `form_name`                                                           | Form label from the allowlisted origin, such as `Google Ads Foreclosure Page`                                                                                                                                                   |
+| `form_origin`                                                         | Allowlisted key the server accepted. Also sent in `customFields` and in the attribution note                                                                                                                                    |
+| `src`                                                                 | Present on a Facebook `/offer` visit: `fb`, `fb_static`, or empty when only `utm_source=facebook` matched. Also copied into `customFields`                                                                                      |
+| `page_tag`                                                            | Situation tag for a Google offer page: `general`, `inherited`, `as-is`, `foreclosure`, or `fire damage`. Empty on the website form and both Facebook forms                                                                      |
+| `channel`                                                             | Always `Website`, so a workflow can still recognize a site lead                                                                                                                                                                 |
+| `tags`                                                                | `website lead`, the form's source tag, and `page_tag` when one exists, comma-separated. When `listed_with_agent` is `yes`, also `listed with agent`                                                                             |
+| `source_tag`                                                          | `website`, `google ads`, `facebook ads`, or `Facebook Leads (Eddie)`. Stays `google ads` on every Google offer page                                                                                                             |
+| `customFields`                                                        | `{ key, field_value }` entries for `form_origin`, for `listed_with_agent` whenever the offer form answered yes or no, for `src` on a Facebook `/offer` visit, and for the SMS consent fields when the offer checkbox is checked |
+| `utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, `utm_content` | Stored UTM values                                                                                                                                                                                                               |
+| `gclid`, `gbraid`, `wbraid`, `fbclid`                                 | Stored click ids                                                                                                                                                                                                                |
+| `referrer`, `landing_page`, `attribution_captured_at`                 | Landing context                                                                                                                                                                                                                 |
+| `attribution_notes`                                                   | Plain-text copy of the same values, plus the SMS consent lines when the offer checkbox was checked                                                                                                                              |
 
 Example `tags` values: `website lead, google ads, general`, `website lead, google ads, foreclosure`,
 `website lead, facebook ads`, `website lead, Facebook Leads (Eddie)`, and `website lead, website`.
@@ -168,8 +172,10 @@ remains `Website`.
 Do this in the KindKey Home Buyers sub-account, in the workflow that owns `GHL_WEBHOOK_URL`.
 
 1. Confirm the opportunity step still targets pipeline **ALL LEADS**, stage **New Hot Lead**.
-   Website forms send `source` = `Website`. The `/offer` form sends `Google Ads`, or `Facebook Ads`
-   when the URL has `?src=fb`. `/offer/facebook` sends `Facebook Leads (Eddie)`. A condition that
+   Website forms send `source` = `Website`. The `/offer` form sends `Google Ads`. It sends
+   `Facebook Leads (Eddie)` when the URL has `src=fb`, `src=fb_static`, or `utm_source=facebook`,
+   and that match stays for the browser session. `/offer/facebook` sends `Facebook Leads (Eddie)`.
+   A condition that
    requires `source` to equal `Website`, or to be only `Website`, `Google Ads`, or `Facebook Ads`,
    will skip that page. Point that condition at tag `website lead` or at `channel` equal to
    `Website` if every site lead should enter the pipeline. `channel` stays `Website`, and `tags`
@@ -181,8 +187,9 @@ Do this in the KindKey Home Buyers sub-account, in the workflow that owns `GHL_W
    `{{inboundWebhookRequest.page_tag}}` as a second tag so `/offer` is tagged `general`,
    `/offer/inherited` is `inherited`, `/offer/as-is` is `as-is`, `/offer/foreclosure` is
    `foreclosure`, and `/offer/fire-damage` is `fire damage`. Skip the extra tag when `page_tag`
-   is empty, which includes `/offer?src=fb` and `/offer/facebook`. `/offer/facebook` uses source tag
-   `Facebook Leads (Eddie)`. If the contact action maps the combined `tags` string and GoHighLevel splits on
+   is empty, which includes `/offer/facebook` and a Facebook visit to `/offer` (`src=fb`,
+   `src=fb_static`, or `utm_source=facebook`). Those visits use source tag `Facebook Leads (Eddie)`
+   and also send `src`. If the contact action maps the combined `tags` string and GoHighLevel splits on
    commas, `website lead`, `google ads`, and the page tag are applied together. If the contact
    shows one literal tag named `website lead, google ads, general`, keep using separate tag inputs
    instead of the combined string.
@@ -192,6 +199,7 @@ Do this in the KindKey Home Buyers sub-account, in the workflow that owns `GHL_W
    - `click_source`
    - `form_name`
    - `form_origin`
+   - `src`
    - `listed_with_agent`
    - `utm_source`
    - `utm_medium`
@@ -212,9 +220,12 @@ Do this in the KindKey Home Buyers sub-account, in the workflow that owns `GHL_W
 6. Submit one test lead from a website form opened with
    `?gclid=test-gclid&utm_source=google&utm_medium=cpc`. Confirm `source` and `lead_source` are
    `Website`, the tag is `website lead, website`, and `click_source` is `Google Ads` with the click
-   id still stored. Submit one lead from `/offer` and one from `/offer?src=fb`. Confirm those are
-   `Google Ads` / `google ads` / `Google Ads Landing Page`, with page tag `general`, and
-   `Facebook Ads` / `facebook ads` / `Facebook Ads Landing Page`, with no page tag. Submit one lead
+   id still stored. Submit one lead from `/offer` and confirm `Google Ads` / `google ads` /
+   `Google Ads Landing Page`, with page tag `general`. Submit one lead from `/offer?src=fb`,
+   one from `/offer?src=fb_static`, and one from `/offer?utm_source=facebook`. Confirm those match
+   `/offer/facebook`: `Facebook Leads (Eddie)` / `Facebook Leads (Eddie)` /
+   `Facebook Leads (Eddie) Landing Page`, empty `page_tag`, `form_origin` `facebook_ads_eddie`,
+   and `src` of `fb`, `fb_static`, or empty. Submit one lead
    from `/offer/facebook` and confirm `source` and `lead_source` are `Facebook Leads (Eddie)`,
    `source_tag` is `Facebook Leads (Eddie)`, `page_tag` is empty, `form_origin` is
    `facebook_ads_eddie`, and `form_name` is `Facebook Leads (Eddie) Landing Page`. On each `/offer`

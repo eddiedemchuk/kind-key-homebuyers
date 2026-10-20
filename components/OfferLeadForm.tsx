@@ -11,14 +11,16 @@ import { attributionFieldsForSubmit } from '@/lib/attribution-client';
 import type { FormOrigin } from '@/lib/form-origin';
 import { useRecaptcha } from '@/lib/useRecaptcha';
 import { formatPhoneChange, toE164 } from '@/lib/phone';
-import { persistThankYouPhoneSource, thankYouHref } from '@/lib/phones';
+import { FACEBOOK_OFFER_PATH, persistThankYouPhoneSource, thankYouHref } from '@/lib/phones';
 import { SMS_CONSENT_TEXT_VERSION } from '@/lib/sms-consent';
 
 interface OfferLeadFormProps {
   formOrigin: FormOrigin;
   idPrefix: string;
-  /** Fire the Meta Lead event after a successful submit. Only /offer/facebook sets this. */
+  /** Fire the Meta Lead event after a successful submit. Facebook offer visits set this. */
   trackMetaLead?: boolean;
+  /** Passed through to the webhook when this submit is a Facebook /offer visit. */
+  src?: string;
 }
 
 const fieldClass =
@@ -31,6 +33,7 @@ export default function OfferLeadForm({
   formOrigin,
   idPrefix,
   trackMetaLead: shouldTrackMetaLead = false,
+  src,
 }: OfferLeadFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -130,6 +133,7 @@ export default function OfferLeadForm({
           pagePath: window.location.pathname,
           ...attributionFields,
           form_origin: formOrigin,
+          ...(src !== undefined ? { src } : {}),
         }),
       });
 
@@ -141,8 +145,10 @@ export default function OfferLeadForm({
       trackLeadSubmit({});
       if (shouldTrackMetaLead) trackMetaLead();
       const pagePath = window.location.pathname;
-      persistThankYouPhoneSource(pagePath);
-      window.location.href = thankYouHref(pagePath);
+      const facebookThankYou =
+        pagePath === FACEBOOK_OFFER_PATH || formOrigin === 'facebook_ads_eddie';
+      persistThankYouPhoneSource(pagePath, facebookThankYou);
+      window.location.href = thankYouHref(pagePath, facebookThankYou);
     } catch (error) {
       console.error('Form submission error:', error);
       setSubmitError(

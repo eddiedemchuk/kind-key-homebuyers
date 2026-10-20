@@ -461,6 +461,7 @@ describe('buildGhlPayload', () => {
     assert.doesNotMatch(String(payload.attribution_notes), /Page tag:/);
     assert.equal(payload.pipeline, undefined);
     assert.equal(payload.stage, undefined);
+    assert.equal(payload.src, undefined);
   });
 
   it('keeps the Eddie source when the house is listed with an agent', () => {
@@ -481,6 +482,29 @@ describe('buildGhlPayload', () => {
     ]);
     assert.match(String(payload.attribution_notes), /Listed with agent: yes/);
     assert.match(String(payload.attribution_notes), /Form origin: facebook_ads_eddie/);
+  });
+
+  it('passes src through on a Facebook /offer visit with the Eddie attribution', () => {
+    for (const src of ['fb', 'fb_static', ''] as const) {
+      const payload = buildGhlPayload({
+        ...lead,
+        pagePath: '/offer',
+        formOrigin: 'facebook_ads_eddie',
+        listedWithAgent: 'no',
+        src,
+      });
+      assert.equal(payload.source, 'Facebook Leads (Eddie)', src || 'empty');
+      assert.equal(payload.lead_source, 'Facebook Leads (Eddie)', src || 'empty');
+      assert.equal(payload.source_tag, 'Facebook Leads (Eddie)', src || 'empty');
+      assert.equal(payload.form_origin, 'facebook_ads_eddie', src || 'empty');
+      assert.equal(payload.page_tag, '', src || 'empty');
+      assert.equal(payload.src, src);
+      assert.deepEqual(payload.customFields, [
+        { key: 'listed_with_agent', field_value: 'no' },
+        { key: 'form_origin', field_value: 'facebook_ads_eddie' },
+        { key: 'src', field_value: src },
+      ]);
+    }
   });
 
   it('adds the listed-with-agent tag and note when the offer answer is yes', () => {

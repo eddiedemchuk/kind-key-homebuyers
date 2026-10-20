@@ -57,6 +57,8 @@ export const leadApiSchema = z.object({
   /** Optional so website forms can omit it. The /offer form requires yes or no. */
   listed_with_agent: listedWithAgentSchema.optional(),
   recaptchaToken: z.string().optional(),
+  /** Optional src from /offer. Facebook visits send fb, fb_static, or an empty string. */
+  src: z.string().trim().max(40).optional(),
 });
 
 export const leadFormSchema = leadApiSchema.extend({

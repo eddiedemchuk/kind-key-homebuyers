@@ -30,23 +30,34 @@ export function offerLandingPhone(pathname: string): DisplayPhone {
   return pathname === FACEBOOK_OFFER_PATH ? FACEBOOK_OFFER_PHONE : GOOGLE_ADS_PHONE;
 }
 
-export function thankYouHref(pagePath: string): string {
-  return pagePath === FACEBOOK_OFFER_PATH ? '/thank-you?from=facebook' : '/thank-you';
+export function thankYouHref(
+  pagePath: string,
+  facebookOffer = pagePath === FACEBOOK_OFFER_PATH
+): string {
+  return facebookOffer ? '/thank-you?from=facebook' : '/thank-you';
 }
 
 /** Remember a Facebook offer submit, and clear that memory for every other form. */
-export function rememberThankYouPhoneSource(pagePath: string, storage: ThankYouPhoneStorage): void {
-  if (pagePath === FACEBOOK_OFFER_PATH) {
+export function rememberThankYouPhoneSource(
+  pagePath: string,
+  storage: ThankYouPhoneStorage,
+  facebookOffer = pagePath === FACEBOOK_OFFER_PATH
+): void {
+  if (facebookOffer) {
     storage.setItem(FACEBOOK_OFFER_THANK_YOU_KEY, FACEBOOK_OFFER_THANK_YOU_VALUE);
     return;
   }
   storage.removeItem(FACEBOOK_OFFER_THANK_YOU_KEY);
 }
 
-export function persistThankYouPhoneSource(pagePath: string): void {
+export function persistThankYouPhoneSource(pagePath: string, facebookOffer?: boolean): void {
   if (typeof sessionStorage === 'undefined') return;
   try {
-    rememberThankYouPhoneSource(pagePath, sessionStorage);
+    rememberThankYouPhoneSource(
+      pagePath,
+      sessionStorage,
+      facebookOffer ?? pagePath === FACEBOOK_OFFER_PATH
+    );
   } catch {
     // Storage can be blocked. A Facebook submit still adds ?from=facebook.
   }

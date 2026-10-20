@@ -30,13 +30,16 @@ export default function OfferLanding({
   formOrigin,
   trackMetaLead = false,
   phone = GOOGLE_ADS_PHONE,
+  src,
 }: {
   content: OfferLandingContent;
   formOrigin: FormOrigin;
-  /** Passed through to the form. Only the Facebook page sets this. */
+  /** Passed through to the form. Facebook offer visits set this. */
   trackMetaLead?: boolean;
   /** Header, footer, and mobile call bar. Defaults to the Google Ads number. */
   phone?: DisplayPhone;
+  /** Query src for a Facebook /offer visit. Empty when only utm_source=facebook matched. */
+  src?: string;
 }) {
   const address = `${BUSINESS.streetAddress}, ${BUSINESS.addressLocality}, ${BUSINESS.addressRegion} ${BUSINESS.postalCode}`;
 
@@ -88,7 +91,12 @@ export default function OfferLanding({
             data-offer-form
             className="mt-4 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-3 shadow-sm md:mt-6 md:scroll-mt-20 md:p-4"
           >
-            <OfferLeadForm idPrefix="hero" formOrigin={formOrigin} trackMetaLead={trackMetaLead} />
+            <OfferLeadForm
+              idPrefix="hero"
+              formOrigin={formOrigin}
+              trackMetaLead={trackMetaLead}
+              src={src}
+            />
           </div>
         </section>
 
