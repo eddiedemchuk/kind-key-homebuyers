@@ -10,10 +10,13 @@ The chat widget is a separate, GHL-hosted path and does not use this webhook.
    `/offer` and the situation pages `/offer/foreclosure`, `/offer/inherited`, `/offer/as-is`,
    and `/offer/fire-damage`.
    There is no embedded GHL form and no direct browser call to the LeadConnector API.
-   Those pages collect name, phone, property address, optional email, a required yes/no answer to
-   “Is your house currently listed with an agent?”, and the same SMS consent checkboxes. That
-   answer is posted as `listed_with_agent` (`yes` or `no`). `LeadForm` does not ask the question
-   and does not send the field. City, condition, timeframe, and preferred contact stay required on
+   Those pages collect name, phone, a required email, property address, a required yes/no answer to
+   “Is your house currently listed with an agent?”, and a required call/text consent checkbox that
+   starts unchecked. The listing answer is posted as `listed_with_agent` (`yes` or `no`). Email is
+   the contact email. Consent is posted as `sms_consent` = `true` with `sms_consent_text_version`
+   `a2p-v1`; the API records `sms_consent_at` when it accepts the lead. `LeadForm` does not ask the
+   listing question or the offer consent box, and email stays optional there. City, condition,
+   timeframe, and preferred contact stay required on
    `LeadForm` and are optional in the API so the short form can submit without filling them in.
    Each form posts `form_origin`: `website` from `LeadForm`, `google_ads_landing` from `/offer`,
    `facebook_ads_landing` from `/offer?src=fb`, `google_ads_foreclosure` from `/offer/foreclosure`,
@@ -118,7 +121,9 @@ form and click labels below.
 | `address1`, `city`, `state`, `country`                                | Property address, `WA`, `US`                                                                                                                        |
 | `condition`, `timeframe`, `preferred_contact`, `reason_for_selling`   | Form answers                                                                                                                                        |
 | `listed_with_agent`                                                   | `yes` or `no` from an `/offer` page; empty when the website form omitted it                                                                         |
-| `sms_non_marketing_consent`, `sms_marketing_consent`                  | Consent booleans                                                                                                                                    |
+| `email`                                                               | Contact email. Required on `/offer` pages; optional on the website form                                                                             |
+| `sms_non_marketing_consent`, `sms_marketing_consent`                  | Consent booleans. Both are `true` when the offer checkbox is checked                                                                                |
+| `sms_consent`, `sms_consent_at`, `sms_consent_text_version`           | `true`, the server timestamp, and `a2p-v1` when the offer checkbox was checked. Also copied into `customFields`                                     |
 | `page_path`, `ip`                                                     | Path of the submit page, and client IP                                                                                                              |
 | `source`, `lead_source`                                               | Form origin: `Website`, `Google Ads`, or `Facebook Ads`                                                                                             |
 | `click_source`                                                        | Click-derived label, such as `Google Ads` or `Direct/Website`                                                                                       |

@@ -94,3 +94,8 @@ export function resolveFormOrigin(value: unknown): FormOrigin {
 export function formOriginLabel(origin: FormOrigin): FormOriginLabel {
   return FORM_ORIGIN_LABELS[origin];
 }
+
+/** Paid offer landings, including the Facebook variant of /offer. */
+export function isOfferFormOrigin(origin: FormOrigin): boolean {
+  return origin !== 'website';
+}

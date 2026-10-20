@@ -28,6 +28,10 @@ interface GHLLeadInput {
   formOrigin?: FormOrigin;
   /** Present only when the /offer form asked the listing question. */
   listedWithAgent?: 'yes' | 'no';
+  /** True when the offer form's required call/text consent box was checked. */
+  smsConsent?: boolean;
+  smsConsentAt?: string;
+  smsConsentTextVersion?: string;
 }
 
 const LISTED_WITH_AGENT_TAG = 'listed with agent';
@@ -72,10 +76,27 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
   const form = formOriginLabel(formOrigin);
   const listedWithAgent = data.listedWithAgent;
   const tags = listedWithAgent === 'yes' ? `${form.tags}, ${LISTED_WITH_AGENT_TAG}` : form.tags;
+  const smsConsent = data.smsConsent === true;
   const customFields = [
     ...(listedWithAgent ? [{ key: 'listed_with_agent', field_value: listedWithAgent }] : []),
     { key: 'form_origin', field_value: formOrigin },
+    ...(smsConsent
+      ? [
+          { key: 'sms_consent', field_value: 'true' },
+          { key: 'sms_consent_at', field_value: data.smsConsentAt ?? '' },
+          { key: 'sms_consent_text_version', field_value: data.smsConsentTextVersion ?? '' },
+        ]
+      : []),
   ];
+  const attributionNotes = formatAttributionNotes(
+    attribution,
+    { ...form, formOrigin },
+    clickSource,
+    listedWithAgent
+  );
+  const consentNotes = smsConsent
+    ? `\nSMS consent: true\nSMS consent at: ${data.smsConsentAt ?? ''}\nSMS consent text: ${data.smsConsentTextVersion ?? ''}`
+    : '';
 
   return {
     first_name: firstName,
@@ -93,6 +114,9 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
     reason_for_selling: data.reasonForSelling ?? '',
     sms_non_marketing_consent: data.smsNonMarketingConsent ?? false,
     sms_marketing_consent: data.smsMarketingConsent ?? false,
+    sms_consent: smsConsent,
+    sms_consent_at: smsConsent ? (data.smsConsentAt ?? '') : '',
+    sms_consent_text_version: smsConsent ? (data.smsConsentTextVersion ?? '') : '',
     utm_source: attribution.utm_source,
     utm_medium: attribution.utm_medium,
     utm_campaign: attribution.utm_campaign,
@@ -118,12 +142,7 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
     tags,
     source_tag: form.sourceTag,
     customFields,
-    attribution_notes: formatAttributionNotes(
-      attribution,
-      { ...form, formOrigin },
-      clickSource,
-      listedWithAgent
-    ),
+    attribution_notes: `${attributionNotes}${consentNotes}`,
   };
 }
 

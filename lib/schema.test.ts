@@ -1,6 +1,13 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { leadApiSchema, leadFormSchema, offerLeadFormSchema } from './schema';
+import { SMS_CONSENT_TEXT_VERSION } from './sms-consent';
+import {
+  leadApiSchema,
+  leadFormSchema,
+  leadSchemaForSubmission,
+  offerLeadApiSchema,
+  offerLeadFormSchema,
+} from './schema';
 
 const shortOffer = {
   name: 'Ada Lovelace',
@@ -37,7 +44,12 @@ describe('lead schemas', () => {
   });
 
   it('requires a complete phone number on the offer form only', () => {
-    const withAnswer = { ...shortOffer, listed_with_agent: 'no' as const };
+    const withAnswer = {
+      ...shortOffer,
+      email: 'ada@example.com',
+      listed_with_agent: 'no' as const,
+      sms_consent: true,
+    };
     assert.equal(offerLeadFormSchema.safeParse({ ...withAnswer, phone: '+1' }).success, false);
     assert.equal(offerLeadFormSchema.safeParse(withAnswer).success, true);
     assert.equal(leadApiSchema.safeParse({ ...shortOffer, phone: '' }).success, true);
@@ -49,17 +61,18 @@ describe('lead schemas', () => {
   });
 
   it('requires a yes or no listing answer on the offer form only', () => {
+    const ready = { ...shortOffer, email: 'ada@example.com', sms_consent: true };
     assert.equal(offerLeadFormSchema.safeParse(shortOffer).success, false);
     assert.equal(
-      offerLeadFormSchema.safeParse({ ...shortOffer, listed_with_agent: 'yes' }).success,
+      offerLeadFormSchema.safeParse({ ...ready, listed_with_agent: 'yes' }).success,
       true
     );
     assert.equal(
-      offerLeadFormSchema.safeParse({ ...shortOffer, listed_with_agent: 'no' }).success,
+      offerLeadFormSchema.safeParse({ ...ready, listed_with_agent: 'no' }).success,
       true
     );
     assert.equal(
-      offerLeadFormSchema.safeParse({ ...shortOffer, listed_with_agent: 'maybe' }).success,
+      offerLeadFormSchema.safeParse({ ...ready, listed_with_agent: 'maybe' }).success,
       false
     );
     assert.equal(leadApiSchema.safeParse(shortOffer).success, true);
@@ -80,6 +93,59 @@ describe('lead schemas', () => {
         timeframe: 'asap',
         preferredContact: 'call',
       }).success,
+      true
+    );
+  });
+
+  it('requires a real email and checked consent on offer forms only', () => {
+    const offer = {
+      ...shortOffer,
+      email: 'ada@example.com',
+      listed_with_agent: 'no' as const,
+      sms_consent: true,
+    };
+    assert.equal(offerLeadFormSchema.safeParse(offer).success, true);
+    assert.equal(offerLeadFormSchema.safeParse({ ...offer, email: '' }).success, false);
+    assert.equal(offerLeadFormSchema.safeParse({ ...offer, email: 'not-an-email' }).success, false);
+    assert.equal(offerLeadFormSchema.safeParse({ ...offer, sms_consent: false }).success, false);
+    const missingConsent = offerLeadFormSchema.safeParse({ ...offer, sms_consent: false });
+    assert.equal(missingConsent.success, false);
+    if (!missingConsent.success) {
+      assert.equal(
+        missingConsent.error.issues.some((issue) => issue.path[0] === 'sms_consent'),
+        true
+      );
+    }
+
+    assert.equal(leadApiSchema.safeParse(shortOffer).success, true);
+    assert.equal(
+      leadFormSchema.safeParse({
+        ...shortOffer,
+        city: 'Auburn',
+        condition: 'as-is',
+        timeframe: 'asap',
+        preferredContact: 'call',
+      }).success,
+      true
+    );
+
+    const apiOffer = { ...offer, sms_consent_text_version: SMS_CONSENT_TEXT_VERSION };
+    assert.equal(offerLeadApiSchema.safeParse(apiOffer).success, true);
+    assert.equal(offerLeadApiSchema.safeParse(offer).success, false);
+    assert.equal(
+      offerLeadApiSchema.safeParse({ ...apiOffer, sms_consent_text_version: 'old' }).success,
+      false
+    );
+    assert.equal(offerLeadApiSchema.safeParse({ ...apiOffer, sms_consent: false }).success, false);
+
+    assert.equal(
+      leadSchemaForSubmission('google_ads_inherited', '/offer/inherited').safeParse(apiOffer)
+        .success,
+      true
+    );
+    assert.equal(leadSchemaForSubmission('website', '/offer').safeParse(shortOffer).success, false);
+    assert.equal(
+      leadSchemaForSubmission('website', '/contact').safeParse(shortOffer).success,
       true
     );
   });
