@@ -61,6 +61,22 @@ Generated canonical and sitemap URLs default to `https://kindkeyhomebuyers.com`.
 rebuild the application. DNS and certificate values are external service configuration and are not
 stored in this repository.
 
+## Memory
+
+The Render service is the `starter` plan in `render.yaml` (512 MB RAM). The production process is
+`npm run start` (`next start`), which is already what the live service runs. Do not change the
+dashboard start command to `next dev`, `npm run dev`, or a command that runs `next build` at boot.
+
+`next.config.js` serves the existing AVIF logos directly (`images.unoptimized`). The previous
+optimizer re-encoded those files on each cache miss, including a `w=3840` variant, and allowed any
+HTTPS URL through `images.remotePatterns`. That path loads sharp. On glibc the allocator does not
+return the native memory after the response is cached, so RSS stays high and the starter instance
+is restarted.
+
+No dashboard environment variable is required for this. Do not set
+`NODE_OPTIONS=--max-old-space-size=...` on the service. Render applies service env vars to the
+build as well, and the heap cap is not what keeps native image memory under the limit.
+
 ## Troubleshooting
 
 ### Build failures
