@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { useForm, type UseFormRegisterReturn } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
 import { offerLeadFormSchema, type OfferLeadFormData } from '@/lib/schema';
@@ -10,46 +10,11 @@ import { attributionFieldsForSubmit } from '@/lib/attribution-client';
 import type { FormOrigin } from '@/lib/form-origin';
 import { useRecaptcha } from '@/lib/useRecaptcha';
 import { formatPhoneChange, toE164 } from '@/lib/phone';
+import { SMS_CONSENT_TEXT_VERSION } from '@/lib/sms-consent';
 
 interface OfferLeadFormProps {
   formOrigin: FormOrigin;
   idPrefix: string;
-}
-
-const SERVICE_SMS_CONSENT =
-  'By checking this box, I consent to receive non-marketing text messages including appointment confirmations, follow-ups, and service-related updates, from KindKey Home Buyers LLC. Message frequency varies, message & data rates may apply. Text HELP for assistance, reply STOP to opt out.';
-
-const MARKETING_SMS_CONSENT =
-  'By checking this box, I consent to receive marketing and promotional messages including special offers, discounts, new product updates among others from KindKey Home Buyers LLC at the phone number provided. Frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.';
-
-function ConsentField({
-  id,
-  shortLabel,
-  fullText,
-  registration,
-}: {
-  id: string;
-  shortLabel: string;
-  fullText: string;
-  registration: UseFormRegisterReturn;
-}) {
-  return (
-    <div className="flex items-start gap-2">
-      <input
-        type="checkbox"
-        id={id}
-        {...registration}
-        className="mt-0.5 h-4 w-4 rounded border-gray-300 bg-white text-divider focus:ring-divider"
-      />
-      <div className="text-[11px] leading-tight text-text-secondary">
-        <label htmlFor={id}>{shortLabel}</label>{' '}
-        <details className="inline">
-          <summary className="inline cursor-pointer font-medium text-divider">Details</summary>
-          <p className="mt-1">{fullText}</p>
-        </details>
-      </div>
-    </div>
-  );
 }
 
 const fieldClass =
@@ -91,8 +56,7 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
     email: `${idPrefix}-email`,
     listedYes: `${idPrefix}-listed-yes`,
     listedNo: `${idPrefix}-listed-no`,
-    smsService: `${idPrefix}-sms-service`,
-    smsMarketing: `${idPrefix}-sms-marketing`,
+    smsConsent: `${idPrefix}-sms-consent`,
   };
 
   const {
@@ -105,6 +69,8 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
     resolver: zodResolver(offerLeadFormSchema),
     defaultValues: {
       phone: '',
+      email: '',
+      sms_consent: false,
       smsNonMarketingConsent: false,
       smsMarketingConsent: false,
     },
@@ -145,10 +111,12 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
         body: JSON.stringify({
           name: data.name,
           phone: toE164(data.phone),
-          email: data.email,
+          email: data.email.trim(),
           propertyAddress: data.propertyAddress,
-          smsNonMarketingConsent: data.smsNonMarketingConsent,
-          smsMarketingConsent: data.smsMarketingConsent,
+          sms_consent: true,
+          sms_consent_text_version: SMS_CONSENT_TEXT_VERSION,
+          smsNonMarketingConsent: true,
+          smsMarketingConsent: true,
           listed_with_agent: data.listed_with_agent,
           recaptchaToken,
           pagePath: window.location.pathname,
@@ -177,11 +145,11 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
     <form
       ref={formRef}
       onSubmit={handleSubmit(onSubmit)}
-      className="scroll-mb-[calc(65px+env(safe-area-inset-bottom,0px))] space-y-1.5 md:scroll-mb-0"
+      className="scroll-mb-[calc(65px+env(safe-area-inset-bottom,0px))] space-y-1 md:scroll-mb-0"
       noValidate
     >
       <div>
-        <label htmlFor={ids.name} className="mb-1 block text-sm font-medium text-text-primary">
+        <label htmlFor={ids.name} className="mb-0.5 block text-sm font-medium text-text-primary">
           Name
         </label>
         <input
@@ -196,7 +164,7 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
       </div>
 
       <div>
-        <label htmlFor={ids.phone} className="mb-1 block text-sm font-medium text-text-primary">
+        <label htmlFor={ids.phone} className="mb-0.5 block text-sm font-medium text-text-primary">
           Phone
         </label>
         <input
@@ -218,7 +186,24 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
       </div>
 
       <div>
-        <label htmlFor={ids.address} className="mb-1 block text-sm font-medium text-text-primary">
+        <label htmlFor={ids.email} className="mb-0.5 block text-sm font-medium text-text-primary">
+          Email
+        </label>
+        <input
+          type="email"
+          id={ids.email}
+          {...register('email')}
+          className={fieldClass}
+          placeholder="you@example.com"
+          autoComplete="email"
+          inputMode="email"
+          required
+        />
+        {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>}
+      </div>
+
+      <div>
+        <label htmlFor={ids.address} className="mb-0.5 block text-sm font-medium text-text-primary">
           Property Address
         </label>
         <input
@@ -235,7 +220,7 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
       </div>
 
       <fieldset>
-        <legend className="mb-1 text-sm font-medium text-text-primary">
+        <legend className="mb-0.5 text-sm font-medium text-text-primary">
           Is your house currently listed with an agent?
         </legend>
         <div className="flex gap-4">
@@ -271,19 +256,36 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
         )}
       </fieldset>
 
-      <div className="space-y-1">
-        <ConsentField
-          id={ids.smsService}
-          shortLabel="Service texts. Msg & data rates may apply."
-          fullText={SERVICE_SMS_CONSENT}
-          registration={register('smsNonMarketingConsent')}
-        />
-        <ConsentField
-          id={ids.smsMarketing}
-          shortLabel="Marketing texts. Msg & data rates may apply."
-          fullText={MARKETING_SMS_CONSENT}
-          registration={register('smsMarketingConsent')}
-        />
+      <div className="scroll-mb-[calc(80px+env(safe-area-inset-bottom,0px))]">
+        <div className="flex items-start gap-2">
+          <input
+            type="checkbox"
+            id={ids.smsConsent}
+            {...register('sms_consent')}
+            className="mt-0.5 h-5 w-5 shrink-0 rounded border-gray-300 bg-white text-divider focus:ring-divider"
+          />
+          <p className="text-[11px] leading-tight text-text-secondary">
+            <label htmlFor={ids.smsConsent}>I agree to the</label>{' '}
+            <Link href="/terms" className="font-medium text-divider underline">
+              Terms of Service
+            </Link>{' '}
+            <label htmlFor={ids.smsConsent}>and</label>{' '}
+            <Link href="/privacy" className="font-medium text-divider underline">
+              Privacy Policy
+            </Link>{' '}
+            <label htmlFor={ids.smsConsent}>
+              and consent to receive calls and text messages from KindKey Home Buyers at the number
+              provided, including automated messages. Consent is not a condition of purchase. Msg
+              &amp; data rates may apply. Msg frequency varies. Reply STOP to opt out, HELP for
+              help.
+            </label>
+          </p>
+        </div>
+        {errors.sms_consent && (
+          <p className="mt-1 text-sm text-red-600" role="alert">
+            {errors.sms_consent.message}
+          </p>
+        )}
       </div>
 
       {submitError && (
@@ -292,37 +294,15 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
         </div>
       )}
 
-      <div>
-        <label htmlFor={ids.email} className="mb-1 block text-sm font-medium text-text-primary">
-          Email <span className="font-normal text-text-secondary">(optional)</span>
-        </label>
-        <input
-          type="email"
-          id={ids.email}
-          {...register('email')}
-          className={fieldClass}
-          placeholder="you@example.com"
-          autoComplete="email"
-          inputMode="email"
-        />
-        {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>}
-      </div>
-
-      <button type="submit" disabled={isSubmitting} className={submitButtonClass}>
+      <button
+        type="submit"
+        disabled={isSubmitting}
+        className={`${submitButtonClass} scroll-mb-[calc(80px+env(safe-area-inset-bottom,0px))]`}
+      >
         {isSubmitting ? 'Submitting...' : 'Get My Free Cash Offer'}
       </button>
       <p className="text-center text-xs font-medium text-text-secondary">
         Free, no obligation, we never share your info
-      </p>
-
-      <p className="text-center text-xs text-text-secondary">
-        <Link href="/privacy" className="underline">
-          Privacy Policy
-        </Link>
-        {' · '}
-        <Link href="/terms" className="underline">
-          Terms
-        </Link>
       </p>
     </form>
   );

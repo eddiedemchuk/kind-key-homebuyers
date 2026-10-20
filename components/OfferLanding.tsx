@@ -70,7 +70,7 @@ export default function OfferLanding({
         </div>
       </header>
 
-      <div className="mx-auto max-w-xl px-5 pb-[calc(65px+env(safe-area-inset-bottom,0px))] pt-8 md:pb-16">
+      <div className="mx-auto max-w-xl px-5 pb-[calc(65px+env(safe-area-inset-bottom,0px))] pt-4 md:pb-16 md:pt-8">
         <section>
           <h1 className="text-balance text-3xl font-bold leading-tight" style={{ marginBottom: 0 }}>
             {content.headline}
@@ -81,7 +81,7 @@ export default function OfferLanding({
           </p>
           <div
             data-offer-form
-            className="mt-6 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm md:scroll-mt-20"
+            className="mt-4 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-3 shadow-sm md:mt-6 md:scroll-mt-20 md:p-4"
           >
             <OfferLeadForm idPrefix="hero" formOrigin={formOrigin} />
           </div>
