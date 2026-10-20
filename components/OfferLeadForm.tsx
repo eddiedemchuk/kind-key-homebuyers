@@ -145,11 +145,11 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
     <form
       ref={formRef}
       onSubmit={handleSubmit(onSubmit)}
-      className="scroll-mb-[calc(65px+env(safe-area-inset-bottom,0px))] space-y-1.5 md:scroll-mb-0"
+      className="scroll-mb-[calc(65px+env(safe-area-inset-bottom,0px))] space-y-1 md:scroll-mb-0"
       noValidate
     >
       <div>
-        <label htmlFor={ids.name} className="mb-1 block text-sm font-medium text-text-primary">
+        <label htmlFor={ids.name} className="mb-0.5 block text-sm font-medium text-text-primary">
           Name
         </label>
         <input
@@ -164,7 +164,7 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
       </div>
 
       <div>
-        <label htmlFor={ids.phone} className="mb-1 block text-sm font-medium text-text-primary">
+        <label htmlFor={ids.phone} className="mb-0.5 block text-sm font-medium text-text-primary">
           Phone
         </label>
         <input
@@ -186,7 +186,7 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
       </div>
 
       <div>
-        <label htmlFor={ids.email} className="mb-1 block text-sm font-medium text-text-primary">
+        <label htmlFor={ids.email} className="mb-0.5 block text-sm font-medium text-text-primary">
           Email
         </label>
         <input
@@ -203,7 +203,7 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
       </div>
 
       <div>
-        <label htmlFor={ids.address} className="mb-1 block text-sm font-medium text-text-primary">
+        <label htmlFor={ids.address} className="mb-0.5 block text-sm font-medium text-text-primary">
           Property Address
         </label>
         <input
@@ -220,7 +220,7 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
       </div>
 
       <fieldset>
-        <legend className="mb-1 text-sm font-medium text-text-primary">
+        <legend className="mb-0.5 text-sm font-medium text-text-primary">
           Is your house currently listed with an agent?
         </legend>
         <div className="flex gap-4">
@@ -256,7 +256,7 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
         )}
       </fieldset>
 
-      <div className="scroll-mb-[calc(80px+env(safe-area-inset-bottom,0px))] pt-1">
+      <div className="scroll-mb-[calc(80px+env(safe-area-inset-bottom,0px))]">
         <div className="flex items-start gap-2">
           <input
             type="checkbox"
@@ -264,7 +264,7 @@ export default function OfferLeadForm({ formOrigin, idPrefix }: OfferLeadFormPro
             {...register('sms_consent')}
             className="mt-0.5 h-5 w-5 shrink-0 rounded border-gray-300 bg-white text-divider focus:ring-divider"
           />
-          <p className="text-xs leading-snug text-text-secondary">
+          <p className="text-[11px] leading-tight text-text-secondary">
             <label htmlFor={ids.smsConsent}>I agree to the</label>{' '}
             <Link href="/terms" className="font-medium text-divider underline">
               Terms of Service
