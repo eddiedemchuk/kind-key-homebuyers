@@ -1,14 +1,18 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { isGoogleAdsTouch } from '@/lib/attribution';
 import { captureAttribution } from '@/lib/attribution-client';
 import {
+  FACEBOOK_OFFER_PATH,
+  FACEBOOK_OFFER_PHONE,
   GOOGLE_ADS_PHONE,
   GOOGLE_ADS_PHONE_PATHS,
   isAlwaysGoogleAdsPhonePath,
+  isFacebookOfferThankYou,
   ORGANIC_PHONE,
+  thankYouPhone,
   type DisplayPhone,
 } from '@/lib/phones';
 
@@ -17,17 +21,38 @@ export type { DisplayPhone };
 
 const trackingPaths = new Set<string>(GOOGLE_ADS_PHONE_PATHS);
 
+function phoneBeforeAttribution(pathname: string): DisplayPhone {
+  if (pathname === FACEBOOK_OFFER_PATH) return FACEBOOK_OFFER_PHONE;
+  if (isAlwaysGoogleAdsPhonePath(pathname)) return GOOGLE_ADS_PHONE;
+  return ORGANIC_PHONE;
+}
+
 /**
- * /offer, /offer/*, and /thank-you always show the Google Ads number.
- * /sell-house-as-is and /cash-offer switch to it after a paid Google visit.
+ * /offer/facebook shows the Facebook offer number.
+ * Other /offer pages show the Google Ads number.
+ * /thank-you shows the Facebook offer number only after a submit from /offer/facebook.
+ * /sell-house-as-is and /cash-offer switch to the Google Ads number after a paid Google visit.
  * Every other page stays on the organic number.
  */
 export function useTrackingPhone(): DisplayPhone {
   const pathname = usePathname() ?? '';
-  const adsPhonePage = isAlwaysGoogleAdsPhonePath(pathname);
-  const [phone, setPhone] = useState<DisplayPhone>(adsPhonePage ? GOOGLE_ADS_PHONE : ORGANIC_PHONE);
+  const [phone, setPhone] = useState<DisplayPhone>(phoneBeforeAttribution(pathname));
 
-  useEffect(() => {
+  useLayoutEffect(() => {
+    if (pathname === '/thank-you') {
+      let fromFacebookOffer = false;
+      try {
+        fromFacebookOffer = isFacebookOfferThankYou(window.location.search, sessionStorage);
+      } catch {
+        fromFacebookOffer = isFacebookOfferThankYou(window.location.search, null);
+      }
+      setPhone(thankYouPhone(fromFacebookOffer));
+      return;
+    }
+    if (pathname === FACEBOOK_OFFER_PATH) {
+      setPhone(FACEBOOK_OFFER_PHONE);
+      return;
+    }
     if (isAlwaysGoogleAdsPhonePath(pathname)) {
       setPhone(GOOGLE_ADS_PHONE);
       return;

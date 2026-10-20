@@ -11,6 +11,7 @@ import { attributionFieldsForSubmit } from '@/lib/attribution-client';
 import type { FormOrigin } from '@/lib/form-origin';
 import { useRecaptcha } from '@/lib/useRecaptcha';
 import { formatPhoneChange, toE164 } from '@/lib/phone';
+import { persistThankYouPhoneSource, thankYouHref } from '@/lib/phones';
 import { SMS_CONSENT_TEXT_VERSION } from '@/lib/sms-consent';
 
 interface OfferLeadFormProps {
@@ -139,7 +140,9 @@ export default function OfferLeadForm({
 
       trackLeadSubmit({});
       if (shouldTrackMetaLead) trackMetaLead();
-      window.location.href = '/thank-you';
+      const pagePath = window.location.pathname;
+      persistThankYouPhoneSource(pagePath);
+      window.location.href = thankYouHref(pagePath);
     } catch (error) {
       console.error('Form submission error:', error);
       setSubmitError(
