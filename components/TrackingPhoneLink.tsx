@@ -7,6 +7,7 @@ import { captureAttribution } from '@/lib/attribution-client';
 import {
   GOOGLE_ADS_PHONE,
   GOOGLE_ADS_PHONE_PATHS,
+  isAlwaysGoogleAdsPhonePath,
   ORGANIC_PHONE,
   type DisplayPhone,
 } from '@/lib/phones';
@@ -16,22 +17,18 @@ export type { DisplayPhone };
 
 const trackingPaths = new Set<string>(GOOGLE_ADS_PHONE_PATHS);
 
-function isOfferPath(pathname: string): boolean {
-  return pathname === '/offer' || pathname.startsWith('/offer/');
-}
-
 /**
- * /offer and /offer/* always show the Google Ads number.
+ * /offer, /offer/*, and /thank-you always show the Google Ads number.
  * /sell-house-as-is and /cash-offer switch to it after a paid Google visit.
  * Every other page stays on the organic number.
  */
 export function useTrackingPhone(): DisplayPhone {
   const pathname = usePathname() ?? '';
-  const offerPage = isOfferPath(pathname);
-  const [phone, setPhone] = useState<DisplayPhone>(offerPage ? GOOGLE_ADS_PHONE : ORGANIC_PHONE);
+  const adsPhonePage = isAlwaysGoogleAdsPhonePath(pathname);
+  const [phone, setPhone] = useState<DisplayPhone>(adsPhonePage ? GOOGLE_ADS_PHONE : ORGANIC_PHONE);
 
   useEffect(() => {
-    if (isOfferPath(pathname)) {
+    if (isAlwaysGoogleAdsPhonePath(pathname)) {
       setPhone(GOOGLE_ADS_PHONE);
       return;
     }

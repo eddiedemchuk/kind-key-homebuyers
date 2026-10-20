@@ -6,3 +6,8 @@ export const FACEBOOK_ADS_PHONE = { display: '(206) 519-5463', tel: '+1206519546
 export const GOOGLE_ADS_PHONE_PATHS = ['/sell-house-as-is', '/cash-offer'] as const;
 
 export type DisplayPhone = { display: string; tel: string };
+
+/** Offer landings and the post-submit thank-you page always show the ads number. */
+export function isAlwaysGoogleAdsPhonePath(pathname: string): boolean {
+  return pathname === '/thank-you' || pathname === '/offer' || pathname.startsWith('/offer/');
+}

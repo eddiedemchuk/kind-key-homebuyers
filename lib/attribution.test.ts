@@ -342,9 +342,13 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.source, 'Google Ads');
     assert.equal(payload.lead_source, 'Google Ads');
     assert.equal(payload.source_tag, 'google ads');
-    assert.equal(payload.tags, 'website lead, google ads');
+    assert.equal(payload.page_tag, 'general');
+    assert.equal(payload.tags, 'website lead, google ads, general');
     assert.equal(payload.form_name, 'Google Ads Landing Page');
     assert.equal(payload.form_origin, 'google_ads_landing');
+    assert.deepEqual(payload.customFields, [
+      { key: 'form_origin', field_value: 'google_ads_landing' },
+    ]);
     assert.equal(payload.click_source, 'Direct/Website');
     assert.equal(payload.city, '');
     assert.equal(payload.condition, '');
@@ -352,6 +356,8 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.preferred_contact, '');
     assert.equal(payload.page_path, '/offer');
     assert.equal(payload.listed_with_agent, '');
+    assert.match(String(payload.attribution_notes), /Form origin: google_ads_landing/);
+    assert.match(String(payload.attribution_notes), /Page tag: general/);
     assert.doesNotMatch(String(payload.attribution_notes), /Listed with agent/);
   });
 
@@ -380,6 +386,7 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.source, 'Facebook Ads');
     assert.equal(payload.lead_source, 'Facebook Ads');
     assert.equal(payload.source_tag, 'facebook ads');
+    assert.equal(payload.page_tag, '');
     assert.equal(payload.tags, 'website lead, facebook ads');
     assert.equal(payload.form_name, 'Facebook Ads Landing Page');
     assert.equal(payload.click_source, 'Google Ads');
@@ -396,11 +403,18 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.source, 'Google Ads');
     assert.equal(payload.lead_source, 'Google Ads');
     assert.equal(payload.source_tag, 'google ads');
+    assert.equal(payload.page_tag, 'foreclosure');
     assert.equal(payload.tags, 'website lead, google ads, foreclosure');
     assert.equal(payload.form_name, 'Google Ads Foreclosure Page');
     assert.equal(payload.form_origin, 'google_ads_foreclosure');
     assert.equal(payload.page_path, '/offer/foreclosure');
     assert.equal(payload.listed_with_agent, 'no');
+    assert.deepEqual(payload.customFields, [
+      { key: 'listed_with_agent', field_value: 'no' },
+      { key: 'form_origin', field_value: 'google_ads_foreclosure' },
+    ]);
+    assert.match(String(payload.attribution_notes), /Form origin: google_ads_foreclosure/);
+    assert.match(String(payload.attribution_notes), /Listed with agent: no/);
   });
 
   it('labels a fire-damage landing with Google Ads and a fire damage tag', () => {
@@ -428,9 +442,16 @@ describe('buildGhlPayload', () => {
       listedWithAgent: 'yes',
     });
     assert.equal(payload.listed_with_agent, 'yes');
-    assert.equal(payload.tags, 'website lead, google ads, listed with agent');
+    assert.equal(payload.page_tag, 'general');
+    assert.equal(payload.tags, 'website lead, google ads, general, listed with agent');
     assert.equal(payload.source, 'Google Ads');
+    assert.equal(payload.source_tag, 'google ads');
+    assert.deepEqual(payload.customFields, [
+      { key: 'listed_with_agent', field_value: 'yes' },
+      { key: 'form_origin', field_value: 'google_ads_landing' },
+    ]);
     assert.match(String(payload.attribution_notes), /Listed with agent: yes/);
+    assert.match(String(payload.attribution_notes), /Form origin: google_ads_landing/);
   });
 
   it('records a no answer without the listed-with-agent tag', () => {
@@ -441,9 +462,47 @@ describe('buildGhlPayload', () => {
       listedWithAgent: 'no',
     });
     assert.equal(payload.listed_with_agent, 'no');
+    assert.equal(payload.page_tag, '');
     assert.equal(payload.tags, 'website lead, facebook ads');
     assert.equal(payload.source, 'Facebook Ads');
+    assert.deepEqual(payload.customFields, [
+      { key: 'listed_with_agent', field_value: 'no' },
+      { key: 'form_origin', field_value: 'facebook_ads_landing' },
+    ]);
     assert.match(String(payload.attribution_notes), /Listed with agent: no/);
+    assert.match(String(payload.attribution_notes), /Form origin: facebook_ads_landing/);
+    assert.doesNotMatch(String(payload.attribution_notes), /Page tag:/);
     assert.doesNotMatch(String(payload.tags), /listed with agent/);
+  });
+
+  it('adds the page tag and saves a no answer on every Google offer page', () => {
+    const pages = [
+      ['google_ads_landing', '/offer', 'general'],
+      ['google_ads_inherited', '/offer/inherited', 'inherited'],
+      ['google_ads_as_is', '/offer/as-is', 'as-is'],
+      ['google_ads_foreclosure', '/offer/foreclosure', 'foreclosure'],
+      ['google_ads_fire_damage', '/offer/fire-damage', 'fire damage'],
+    ] as const;
+
+    for (const [formOrigin, pagePath, pageTag] of pages) {
+      const payload = buildGhlPayload({
+        ...lead,
+        pagePath,
+        formOrigin,
+        listedWithAgent: 'no',
+      });
+      assert.equal(payload.source, 'Google Ads', formOrigin);
+      assert.equal(payload.source_tag, 'google ads', formOrigin);
+      assert.equal(payload.page_tag, pageTag, formOrigin);
+      assert.equal(payload.tags, `website lead, google ads, ${pageTag}`, formOrigin);
+      assert.equal(payload.listed_with_agent, 'no', formOrigin);
+      assert.equal(payload.form_origin, formOrigin);
+      assert.deepEqual(payload.customFields, [
+        { key: 'listed_with_agent', field_value: 'no' },
+        { key: 'form_origin', field_value: formOrigin },
+      ]);
+      assert.match(String(payload.attribution_notes), new RegExp(`Form origin: ${formOrigin}`));
+      assert.match(String(payload.attribution_notes), new RegExp(`Page tag: ${pageTag}`));
+    }
   });
 });
