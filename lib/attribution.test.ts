@@ -160,11 +160,58 @@ describe('mergeAttribution', () => {
     assert.equal(deriveLeadSource(mergeAttribution(paid, direct, NOW)), 'Google Ads');
   });
 
-  it('keeps the first paid click when a second paid click arrives', () => {
+  it('lets a new gclid replace an earlier paid click and keeps the same gclid landing page', () => {
     const facebook = landing('?fbclid=fb-1&utm_source=facebook&utm_medium=paid');
-    const google = landing('?gclid=g-2&utm_source=google&utm_medium=cpc');
-    assert.equal(mergeAttribution(facebook, google, NOW).fbclid, 'fb-1');
-    assert.equal(mergeAttribution(facebook, google, NOW).gclid, '');
+    const google = landing('?gclid=g-2&utm_source=google&utm_medium=cpc&utm_campaign=new');
+    assert.equal(mergeAttribution(facebook, google, NOW).gclid, 'g-2');
+    assert.equal(mergeAttribution(facebook, google, NOW).utm_campaign, 'new');
+    assert.equal(mergeAttribution(facebook, google, NOW).fbclid, '');
+
+    const first = touchFromLanding({
+      search:
+        '?gclid=click-1&utm_source=google&utm_medium=cpc&utm_campaign=brand&keyword=sell+house&adgroupid=77',
+      referrer: 'https://www.google.com/',
+      landingPage: 'https://kindkeyhomebuyers.com/offer/as-is?gclid=click-1',
+      capturedAt: CAPTURED,
+    });
+    assert.equal(first.keyword, 'sell house');
+    assert.equal(first.adgroup, '77');
+    const sameClick = touchFromLanding({
+      search: '?gclid=click-1',
+      referrer: 'https://kindkeyhomebuyers.com/offer/as-is',
+      landingPage: 'https://kindkeyhomebuyers.com/offer?gclid=click-1',
+      capturedAt: new Date(NOW + 5000).toISOString(),
+    });
+    const kept = mergeAttribution(first, sameClick, NOW + 5000);
+    assert.equal(kept.gclid, 'click-1');
+    assert.equal(kept.landing_page, 'https://kindkeyhomebuyers.com/offer/as-is?gclid=click-1');
+    assert.equal(kept.utm_campaign, 'brand');
+    assert.equal(kept.keyword, 'sell house');
+
+    const nextClick = touchFromLanding({
+      search: '?gclid=click-2&utm_campaign=later&keyword=inherited',
+      referrer: 'https://www.google.com/',
+      landingPage: 'https://kindkeyhomebuyers.com/offer/inherited?gclid=click-2',
+      capturedAt: new Date(NOW + 9000).toISOString(),
+    });
+    const replaced = mergeAttribution(kept, nextClick, NOW + 9000);
+    assert.equal(replaced.gclid, 'click-2');
+    assert.equal(replaced.utm_campaign, 'later');
+    assert.equal(replaced.keyword, 'inherited');
+    assert.equal(
+      replaced.landing_page,
+      'https://kindkeyhomebuyers.com/offer/inherited?gclid=click-2'
+    );
+
+    const navigated = touchFromLanding({
+      search: '',
+      referrer: 'https://kindkeyhomebuyers.com/offer/inherited',
+      landingPage: 'https://kindkeyhomebuyers.com/offer',
+      capturedAt: new Date(NOW + 12000).toISOString(),
+    });
+    const survived = mergeAttribution(replaced, navigated, NOW + 12000);
+    assert.equal(survived.gclid, 'click-2');
+    assert.equal(survived.landing_page, replaced.landing_page);
   });
 
   it('lets a later paid click replace an earlier unpaid visit', () => {
@@ -299,6 +346,10 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.listed_with_agent, '');
     assert.equal(payload.channel, 'Website');
     assert.equal(payload.gclid, 'gclid-1');
+    assert.equal(payload.landing_page, 'https://kindkeyhomebuyers.com/?gclid=gclid-1');
+    assert.equal(payload.landing_page_url, 'https://kindkeyhomebuyers.com/?gclid=gclid-1');
+    assert.equal(payload.keyword, '');
+    assert.equal(payload.adgroup, '');
     assert.equal(payload.utm_campaign, 'brand');
     assert.equal(payload.utm_term, 'sell house fast');
     assert.match(String(payload.attribution_notes), /Lead source: Website/);
@@ -605,5 +656,46 @@ describe('buildGhlPayload', () => {
     ]);
     assert.match(String(payload.attribution_notes), /SMS consent: true/);
     assert.match(String(payload.attribution_notes), /SMS consent text: a2p-v1/);
+  });
+
+  it('sends the offer click, keyword, ad group, and landing page url', () => {
+    const payload = buildGhlPayload({
+      ...lead,
+      pagePath: '/offer',
+      formOrigin: 'google_ads_landing',
+      listedWithAgent: 'no',
+      attribution: touch({
+        gclid: 'click-1',
+        gbraid: 'gb-1',
+        wbraid: 'wb-1',
+        utm_source: 'google',
+        utm_medium: 'cpc',
+        utm_campaign: '12345',
+        utm_term: 'sell house fast',
+        utm_content: 'ad-a',
+        keyword: 'sell house fast',
+        adgroup: '77',
+        referrer: 'https://www.google.com/',
+        landing_page: 'https://kindkeyhomebuyers.com/offer/as-is?gclid=click-1',
+      }),
+    });
+    assert.equal(payload.gclid, 'click-1');
+    assert.equal(payload.gbraid, 'gb-1');
+    assert.equal(payload.wbraid, 'wb-1');
+    assert.equal(payload.utm_source, 'google');
+    assert.equal(payload.utm_medium, 'cpc');
+    assert.equal(payload.utm_campaign, '12345');
+    assert.equal(payload.utm_term, 'sell house fast');
+    assert.equal(payload.utm_content, 'ad-a');
+    assert.equal(payload.keyword, 'sell house fast');
+    assert.equal(payload.adgroup, '77');
+    assert.equal(payload.referrer, 'https://www.google.com/');
+    assert.equal(
+      payload.landing_page_url,
+      'https://kindkeyhomebuyers.com/offer/as-is?gclid=click-1'
+    );
+    assert.equal(payload.page_tag, 'general');
+    assert.equal(payload.form_origin, 'google_ads_landing');
+    assert.equal(payload.listed_with_agent, 'no');
   });
 });

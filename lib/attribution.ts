@@ -13,6 +13,7 @@ export const ATTRIBUTION_MAX_AGE_MS = ATTRIBUTION_MAX_AGE_SECONDS * 1000;
 const UTM_MAX = 120;
 const CLICK_ID_MAX = 250;
 const URL_MAX = 300;
+const LANDING_PAGE_MAX = 800;
 
 export const LEAD_SOURCES = [
   'Google Ads',
@@ -35,6 +36,10 @@ export interface AttributionTouch {
   gbraid: string;
   wbraid: string;
   fbclid: string;
+  /** `keyword` query param, when the ad URL includes one. */
+  keyword: string;
+  /** `adgroup` query param, or `adgroupid` when the name is absent. */
+  adgroup: string;
   referrer: string;
   landing_page: string;
   captured_at: string;
@@ -51,6 +56,8 @@ export function emptyTouch(capturedAt: string): AttributionTouch {
     gbraid: '',
     wbraid: '',
     fbclid: '',
+    keyword: '',
+    adgroup: '',
     referrer: '',
     landing_page: '',
     captured_at: capturedAt,
@@ -82,8 +89,10 @@ export function normalizeTouch(
     gbraid: cleanField(input?.gbraid, CLICK_ID_MAX),
     wbraid: cleanField(input?.wbraid, CLICK_ID_MAX),
     fbclid: cleanField(input?.fbclid, CLICK_ID_MAX),
+    keyword: cleanField(input?.keyword, UTM_MAX),
+    adgroup: cleanField(input?.adgroup, UTM_MAX),
     referrer: cleanField(input?.referrer, URL_MAX),
-    landing_page: cleanField(input?.landing_page, URL_MAX),
+    landing_page: cleanField(input?.landing_page, LANDING_PAGE_MAX),
     captured_at: Number.isNaN(parsed) ? fallbackCapturedAt : new Date(parsed).toISOString(),
   };
 }
@@ -281,6 +290,8 @@ export function formatAttributionNotes(
     line('utm_term', touch.utm_term),
     line('utm_content', touch.utm_content),
     line('gclid', touch.gclid),
+    line('keyword', touch.keyword),
+    line('adgroup', touch.adgroup),
     line('gbraid', touch.gbraid),
     line('wbraid', touch.wbraid),
     line('fbclid', touch.fbclid),
@@ -296,6 +307,8 @@ export function touchFromLanding(input: {
 }): AttributionTouch {
   const query = input.search.startsWith('?') ? input.search.slice(1) : input.search;
   const params = new URLSearchParams(query);
+  const keyword = params.get('keyword') ?? '';
+  const adgroup = params.get('adgroup') || params.get('adgroupid') || '';
   return normalizeTouch(
     {
       utm_source: params.get('utm_source') ?? '',
@@ -307,6 +320,8 @@ export function touchFromLanding(input: {
       gbraid: params.get('gbraid') ?? '',
       wbraid: params.get('wbraid') ?? '',
       fbclid: params.get('fbclid') ?? '',
+      keyword,
+      adgroup,
       referrer: input.referrer,
       landing_page: input.landingPage,
       captured_at: input.capturedAt,
@@ -341,17 +356,24 @@ export function touchFromRequestBody(
       gbraid: firstString(record.gbraid),
       wbraid: firstString(record.wbraid),
       fbclid: firstString(record.fbclid),
+      keyword: firstString(record.keyword),
+      adgroup: firstString(record.adgroup),
       referrer: firstString(record.referrer),
-      landing_page: firstString(record.landing_page),
+      landing_page: firstString(record.landing_page, record.landing_page_url),
       captured_at: firstString(record.attribution_captured_at),
     },
     capturedAt
   );
 }
 
+function hasNewGclid(existing: AttributionTouch, incoming: AttributionTouch): boolean {
+  const next = incoming.gclid.trim();
+  return next !== '' && next !== existing.gclid.trim();
+}
+
 /**
- * Keeps the first paid click. A later paid click replaces an earlier unpaid
- * visit. Organic and direct visits never replace a stored touch.
+ * A new gclid replaces the stored touch. The same gclid keeps the original
+ * landing page. Organic and direct visits never replace a stored click.
  */
 export function mergeAttribution(
   existing: AttributionTouch | null,
@@ -359,6 +381,7 @@ export function mergeAttribution(
   now = Date.now()
 ): AttributionTouch {
   if (!existing || isAttributionExpired(existing, now)) return incoming;
+  if (hasNewGclid(existing, incoming)) return incoming;
   if (hasPaidClick(existing)) return existing;
   if (hasPaidClick(incoming)) return incoming;
   return existing;
@@ -373,6 +396,9 @@ export function preferStoredTouch(
   const right = second && !isAttributionExpired(second, now) ? second : null;
   if (!left) return right;
   if (!right) return left;
+  if (left.gclid && right.gclid && left.gclid !== right.gclid) {
+    return Date.parse(left.captured_at) >= Date.parse(right.captured_at) ? left : right;
+  }
   const leftPaid = hasPaidClick(left);
   const rightPaid = hasPaidClick(right);
   if (leftPaid !== rightPaid) return leftPaid ? left : right;
@@ -475,8 +501,11 @@ export function attributionToPayload(touch: AttributionTouch): Record<string, st
     gbraid: touch.gbraid,
     wbraid: touch.wbraid,
     fbclid: touch.fbclid,
+    keyword: touch.keyword,
+    adgroup: touch.adgroup,
     referrer: touch.referrer,
     landing_page: touch.landing_page,
+    landing_page_url: touch.landing_page,
     attribution_captured_at: touch.captured_at,
   };
 }
