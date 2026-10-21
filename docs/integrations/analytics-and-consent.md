@@ -9,8 +9,9 @@ counted before they interact with the cookie banner. Offer landing pages do not 
 - `lib/useCookieConsent.ts` reads and writes the consent record. Accept updates consent to granted.
   Reject updates consent to denied.
 - `components/CookieConsent.tsx` displays the accept/reject banner on marketing pages.
-- `app/layout.tsx` loads one gtag.js, sets the consent default, and configures both the Ads tag and
-  GA4. A stored rejection updates consent to denied before either tag sends a hit.
+- `components/RootDocument.tsx` loads one gtag.js, sets the consent default, and configures both
+  the Ads tag and GA4. The public and Facebook-offer root layouts both render that document. A
+  stored rejection updates consent to denied before either tag sends a hit.
 - `lib/analytics.ts` provides the browser event helpers used by lead submission and the offer pages.
 
 ## Consent record
@@ -45,12 +46,16 @@ granted either way, so GA4 still loads when the banner is absent.
   `AW-17766515185/IeBJCKCujPIbEPGD3pdC` with a transaction id.
 - The thank-you route repeats that same conversion with the stored transaction id, so Google Ads
   counts it once if the first hit was lost during navigation. It does not fire a second label.
-- Meta pixel `1352513176647290` loads on `/offer/facebook` and on `/offer` when the URL has
-  `src=fb`, `src=fb_static`, or `utm_source=facebook`. That `/offer` match is stored for the
-  session, so a later `/offer` view in the same tab loads the pixel too. It sends `PageView` on
-  load. A successful submit on those visits calls `fbq('track', 'Lead')` before the redirect to
-  `/thank-you`. Other pages, including a plain `/offer` visit and `/thank-you`, do not load this
-  pixel.
+- Meta pixel `1352513176647290` is an inline script in the document `<head>` on `/offer/facebook`
+  and on `/offer` when `src` is `fb` or `fb_static` (any case). The browser runs `fbq('init')` and
+  `fbq('track', 'PageView')` while parsing that HTML. The same response includes the noscript
+  image. Those pages do not run the init again from the offer bundle. A successful submit still
+  calls `fbq('track', 'Lead')` before the redirect to `/thank-you`.
+- `/offer?utm_source=facebook`, and a later plain `/offer` view in the same tab after a qualifying
+  visit, still load the pixel from the client bundle once the page is interactive. That fallback
+  does not run when `window.fbq` already exists. A plain `/offer` visit with no Facebook signal,
+  the other `/offer/*` pages, and `/thank-you` do not load this pixel. Their HTML does not include
+  the base code.
 - First-touch campaign parameters are stored separately from the GA4 consent record. See
   [GoHighLevel lead delivery](gohighlevel.md).
 

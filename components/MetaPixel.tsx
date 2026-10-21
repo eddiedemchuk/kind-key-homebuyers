@@ -1,26 +1,17 @@
 import Script from 'next/script';
-import { META_PIXEL_ID } from '@/lib/meta-pixel';
+import { META_PIXEL_ID, metaPixelFallbackScript } from '@/lib/meta-pixel';
 
 /**
- * Meta Pixel for /offer/facebook only. Importing this from any other page
- * would count those visits and leads against this pixel.
+ * Late pixel for a Facebook /offer visit that is not in the initial HTML
+ * (utm_source=facebook, or a stored session). The head snippet owns PageView
+ * on /offer?src=fb, /offer?src=fb_static, and /offer/facebook. This fallback
+ * does nothing once window.fbq exists, so PageView cannot fire twice.
  */
 export default function MetaPixel() {
   return (
     <>
-      <Script id="meta-pixel" strategy="afterInteractive">
-        {`
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '${META_PIXEL_ID}');
-          fbq('track', 'PageView');
-        `}
+      <Script id="meta-pixel-fallback" strategy="afterInteractive">
+        {metaPixelFallbackScript()}
       </Script>
       <noscript>
         {/* eslint-disable-next-line @next/next/no-img-element -- Meta requires this exact 1x1 URL */}
