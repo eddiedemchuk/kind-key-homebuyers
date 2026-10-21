@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import LeadConnectorChat from '@/components/LeadConnectorChat';
+import { MobileNavButton, MobileNavPanel, MobileNavProvider } from '@/components/MobileNav';
 import OfferLeadForm from '@/components/OfferLeadForm';
 import OfferMobileBar, { OfferJumpButton, OfferPhoneLink } from '@/components/OfferMobileBar';
 import type { OfferLandingContent } from '@/data/offerLandings';
@@ -55,30 +57,34 @@ export default function OfferLanding({
         }}
       />
       <header className="z-40 border-b border-gray-200 bg-white md:sticky md:top-0">
-        <div className="mx-auto flex max-w-xl items-center justify-between gap-3 px-5 py-3">
-          <div className="flex min-w-0 items-center gap-2">
-            <Image
-              src="/logo-header.avif"
-              alt="KindKey Home Buyers"
-              width={36}
-              height={36}
-              priority
-              className="h-9 w-9 object-contain"
-            />
-            <span className="truncate text-sm font-bold leading-tight">KindKey Home Buyers</span>
+        <MobileNavProvider>
+          <div className="mx-auto flex max-w-xl items-center justify-between gap-3 px-5 py-3">
+            <div className="flex min-w-0 items-center gap-2">
+              <Image
+                src="/logo-header.avif"
+                alt="KindKey Home Buyers"
+                width={36}
+                height={36}
+                priority
+                className="h-9 w-9 object-contain"
+              />
+              <span className="truncate text-sm font-bold leading-tight">KindKey Home Buyers</span>
+            </div>
+            <div className="flex shrink-0 items-center gap-3">
+              <OfferPhoneLink
+                phone={phone}
+                location="header"
+                className="text-base font-semibold text-divider"
+              />
+              <OfferJumpButton
+                location="header"
+                className="hidden min-h-12 items-center justify-center rounded-lg bg-divider px-4 text-sm font-bold text-white shadow-sm md:inline-flex"
+              />
+              <MobileNavButton />
+            </div>
           </div>
-          <div className="flex shrink-0 items-center gap-3">
-            <OfferPhoneLink
-              phone={phone}
-              location="header"
-              className="text-base font-semibold text-divider"
-            />
-            <OfferJumpButton
-              location="header"
-              className="hidden min-h-12 items-center justify-center rounded-lg bg-divider px-4 text-sm font-bold text-white shadow-sm md:inline-flex"
-            />
-          </div>
-        </div>
+          <MobileNavPanel className="mx-auto max-w-xl px-5" />
+        </MobileNavProvider>
       </header>
 
       <div className="mx-auto max-w-xl px-5 pb-[calc(65px+env(safe-area-inset-bottom,0px))] pt-2 md:pb-16 md:pt-8">
@@ -204,6 +210,7 @@ export default function OfferLanding({
         </footer>
       </div>
       <OfferMobileBar phone={phone} />
+      <LeadConnectorChat mobileOnly />
     </main>
   );
 }

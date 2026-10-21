@@ -36,11 +36,17 @@ function raisedBottom(basePx: number | null, dockHeight: number): number | null 
   return Math.ceil(dockHeight + basePx);
 }
 
+const NARROW_QUERY = '(max-width: 767px)';
+
 function offsetCss(widgetBottom: number | null, bubbleBottom: number | null): string {
-  const rules: string[] = [];
+  const rules: string[] = [
+    // Phones were not painting the closed launcher. Keep it displayed on narrow
+    // screens without changing the desktop rules.
+    '@media (max-width:767px){#lc_text-widget:not(.lc_text-widget--active):not(.lc_text-widget--inline):not(.lc_text-widget--embedded-live-chat){display:block !important;visibility:visible !important;opacity:1 !important;}#lc_text-widget:not(.lc_text-widget--active) .lc_text-widget--bubble:not(.inline){display:block !important;visibility:visible !important;opacity:1 !important;pointer-events:auto !important;}}',
+  ];
   if (widgetBottom != null) {
     rules.push(
-      `#lc_text-widget:not(.lc_text-widget--active):not(.lc_text-widget--mobile):not(.lc_text-widget--inline):not(.lc_text-widget--embedded-live-chat){bottom:${widgetBottom}px !important;}`
+      `#lc_text-widget:not(.lc_text-widget--active):not(.lc_text-widget--inline):not(.lc_text-widget--embedded-live-chat){bottom:${widgetBottom}px !important;}`
     );
   }
   if (bubbleBottom != null) {
@@ -55,10 +61,53 @@ function isClosedStickyWidget(widget: HTMLElement | null): widget is HTMLElement
   return (
     widget != null &&
     !widget.classList.contains('lc_text-widget--active') &&
-    !widget.classList.contains('lc_text-widget--mobile') &&
     !widget.classList.contains('lc_text-widget--inline') &&
     !widget.classList.contains('lc_text-widget--embedded-live-chat')
   );
+}
+
+function clearHostInline(host: HTMLElement) {
+  host.style.position = '';
+  host.style.top = '';
+  host.style.right = '';
+  host.style.bottom = '';
+  host.style.left = '';
+  host.style.zIndex = '';
+  host.style.width = '';
+  host.style.height = '';
+  host.style.overflow = '';
+  host.style.margin = '';
+  host.style.display = '';
+}
+
+/** Put the custom element in the viewport so iOS paints its fixed shadow tree. */
+function placeHost(host: HTMLElement, open: boolean, mobileOnly: boolean) {
+  const narrow = window.matchMedia(NARROW_QUERY).matches;
+  if (!narrow) {
+    clearHostInline(host);
+    if (mobileOnly) host.style.display = 'none';
+    return;
+  }
+  host.style.display = '';
+  host.style.margin = '0';
+  host.style.overflow = 'visible';
+  host.style.position = 'fixed';
+  host.style.right = '0px';
+  host.style.bottom = '0px';
+  if (open) {
+    host.style.top = '0px';
+    host.style.left = '0px';
+    host.style.width = 'auto';
+    host.style.height = 'auto';
+    host.style.zIndex = '120';
+    return;
+  }
+  host.style.top = 'auto';
+  host.style.left = 'auto';
+  host.style.width = '0px';
+  host.style.height = '0px';
+  // Under the sticky call/offer bar (z-50) so a mis-placed launcher cannot cover it.
+  host.style.zIndex = '45';
 }
 
 /**
@@ -66,7 +115,7 @@ function isClosedStickyWidget(widget: HTMLElement | null): widget is HTMLElement
  * CSS cannot move it. While a bottom dock is visible, inject an override that keeps
  * the closed launcher the same distance above that dock as the widget's own offset.
  */
-export default function ChatWidgetOffset() {
+export default function ChatWidgetOffset({ mobileOnly = false }: { mobileOnly?: boolean }) {
   useEffect(() => {
     const sheets = new WeakMap<ShadowRoot, OffsetStyle>();
     const appliedCss = new WeakMap<ShadowRoot, string>();
@@ -118,11 +167,14 @@ export default function ChatWidgetOffset() {
     const applyOffset = () => {
       const dockHeight = bottomDockHeight();
       document.querySelectorAll('chat-widget').forEach((node) => {
+        if (!(node instanceof HTMLElement)) return;
         const root = node.shadowRoot;
+        const widget = root?.querySelector<HTMLElement>('#lc_text-widget') ?? null;
+        const open = widget?.classList.contains('lc_text-widget--active') ?? false;
+        placeHost(node, open, mobileOnly);
         if (!root) return;
         watchShadow(root);
 
-        const widget = root.querySelector<HTMLElement>('#lc_text-widget');
         if (!isClosedStickyWidget(widget)) {
           if (sheets.has(root)) setCss(root, '');
           return;
@@ -190,6 +242,10 @@ export default function ChatWidgetOffset() {
       window.removeEventListener('resize', schedule);
       window.removeEventListener('LC_chatWidgetLoaded', schedule);
       document.querySelectorAll('chat-widget').forEach((node) => {
+        if (node instanceof HTMLElement) {
+          clearHostInline(node);
+          if (mobileOnly) node.style.display = 'none';
+        }
         const root = node.shadowRoot;
         const target = root && sheets.get(root);
         if (!root || !target) return;
@@ -200,7 +256,7 @@ export default function ChatWidgetOffset() {
         target.remove();
       });
     };
-  }, []);
+  }, [mobileOnly]);
 
   return null;
 }

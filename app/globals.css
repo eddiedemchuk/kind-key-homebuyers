@@ -33,3 +33,23 @@ body {
     text-wrap: balance;
   }
 }
+
+/*
+ * The LeadConnector launcher is position:fixed inside the shadow root of a
+ * zero-size inline <chat-widget> parked at the bottom of the document. iOS
+ * Safari does not paint that fixed tree. Pinning the host to the viewport on
+ * narrow screens makes the bubble visible. Desktop is left untouched.
+ * z-index stays under the sticky call/offer bar (z-50) and the header (z-50).
+ */
+@media (max-width: 767px) {
+  chat-widget {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 45;
+    width: 0;
+    height: 0;
+    margin: 0;
+    overflow: visible;
+  }
+}
