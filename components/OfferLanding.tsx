@@ -31,6 +31,7 @@ export default function OfferLanding({
   trackMetaLead = false,
   phone = GOOGLE_ADS_PHONE,
   src,
+  showOfferMath = false,
 }: {
   content: OfferLandingContent;
   formOrigin: FormOrigin;
@@ -40,6 +41,8 @@ export default function OfferLanding({
   phone?: DisplayPhone;
   /** Query src for a Facebook /offer visit. Empty when only utm_source=facebook matched. */
   src?: string;
+  /** Short offer-math note shown under the form on /offer only. */
+  showOfferMath?: boolean;
 }) {
   const address = `${BUSINESS.streetAddress}, ${BUSINESS.addressLocality}, ${BUSINESS.addressRegion} ${BUSINESS.postalCode}`;
 
@@ -78,7 +81,7 @@ export default function OfferLanding({
         </div>
       </header>
 
-      <div className="mx-auto max-w-xl px-5 pb-[calc(65px+env(safe-area-inset-bottom,0px))] pt-4 md:pb-16 md:pt-8">
+      <div className="mx-auto max-w-xl px-5 pb-[calc(65px+env(safe-area-inset-bottom,0px))] pt-2 md:pb-16 md:pt-8">
         <section>
           <h1 className="text-balance text-3xl font-bold leading-tight" style={{ marginBottom: 0 }}>
             {content.headline}
@@ -89,7 +92,7 @@ export default function OfferLanding({
           </p>
           <div
             data-offer-form
-            className="mt-4 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-3 shadow-sm md:mt-6 md:scroll-mt-20 md:p-4"
+            className="mt-3 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-3 shadow-sm md:mt-6 md:scroll-mt-20 md:p-4"
           >
             <OfferLeadForm
               idPrefix="hero"
@@ -98,6 +101,18 @@ export default function OfferLanding({
               src={src}
             />
           </div>
+          {showOfferMath ? (
+            <section className="mt-8" aria-labelledby="how-we-figure-heading">
+              <h2 id="how-we-figure-heading" className="text-xl font-bold">
+                How we figure your offer
+              </h2>
+              <div className="mt-3 space-y-2 text-base leading-snug text-text-secondary">
+                <p>We start with what the house would be worth after repairs.</p>
+                <p>We subtract the repair costs and our costs to buy and sell.</p>
+                <p>We leave a fair margin, and we walk you through every number.</p>
+              </div>
+            </section>
+          ) : null}
         </section>
 
         <section className="mt-12" aria-label="Why homeowners sell to us">

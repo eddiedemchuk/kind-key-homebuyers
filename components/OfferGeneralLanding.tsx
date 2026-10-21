@@ -49,6 +49,7 @@ export default function OfferGeneralLanding({
         trackMetaLead={facebook}
         phone={facebook ? FACEBOOK_OFFER_PHONE : GOOGLE_ADS_PHONE}
         src={facebook ? visit.src : undefined}
+        showOfferMath
       />
     </>
   );
