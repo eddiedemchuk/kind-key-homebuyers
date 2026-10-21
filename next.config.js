@@ -10,6 +10,9 @@ const nextConfig = {
   },
   experimental: {
     optimizePackageImports: ['framer-motion'],
+    // Unmatched URLs need their own document because marketing and Facebook
+    // offer pages use separate root layouts.
+    globalNotFound: true,
   },
   compiler: {
     removeConsole:

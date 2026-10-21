@@ -12,7 +12,14 @@ import {
 } from '@/lib/offer-facebook-visit';
 import { FACEBOOK_OFFER_PHONE, GOOGLE_ADS_PHONE } from '@/lib/phones';
 
-export default function OfferGeneralLanding({ initialSearch }: { initialSearch: string }) {
+export default function OfferGeneralLanding({
+  initialSearch,
+  pixelInDocument = false,
+}: {
+  initialSearch: string;
+  /** The document <head> already loaded the pixel. Do not init it again. */
+  pixelInDocument?: boolean;
+}) {
   const [visit, setVisit] = useState<OfferFacebookVisit | null>(() =>
     offerFacebookVisitFromSearch(initialSearch)
   );
@@ -35,7 +42,7 @@ export default function OfferGeneralLanding({ initialSearch }: { initialSearch: 
 
   return (
     <>
-      {facebook ? <MetaPixel /> : null}
+      {facebook && !pixelInDocument ? <MetaPixel /> : null}
       <OfferLanding
         content={generalOffer}
         formOrigin={facebook ? 'facebook_ads_eddie' : generalOffer.formOrigin}
