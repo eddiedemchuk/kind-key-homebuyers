@@ -68,6 +68,7 @@ export default function OfferMobileBar({ phone }: OfferMobileBarProps) {
     <div
       className="fixed inset-x-0 bottom-0 z-50 box-border h-[calc(65px+env(safe-area-inset-bottom,0px))] border-t border-gray-200 bg-white px-2 shadow-[0_-4px_16px_rgba(0,0,0,0.12)] md:hidden"
       data-offer-mobile-bar
+      data-bottom-dock="offer-call"
     >
       <div className="grid h-full w-full grid-cols-2 items-center gap-2">
         <OfferJumpButton
