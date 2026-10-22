@@ -198,6 +198,7 @@ export default function OfferLeadForm({
           placeholder="(253) 555-0100"
           autoComplete="tel"
           inputMode="tel"
+          required
         />
         {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p>}
       </div>

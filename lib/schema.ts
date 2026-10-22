@@ -13,8 +13,17 @@ const optionalPhoneSchema = z.string().refine(
 );
 
 const requiredPhoneSchema = z
-  .string()
-  .refine((val) => isCompleteUsPhone(val), { message: 'Enter a valid US phone number.' });
+  .string({ required_error: 'Phone is required.', invalid_type_error: 'Phone is required.' })
+  .trim()
+  .superRefine((val, ctx) => {
+    if (!val) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, message: 'Phone is required.' });
+      return;
+    }
+    if (!isCompleteUsPhone(val)) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, message: 'Enter a valid US phone number.' });
+    }
+  });
 
 const optionalCitySchema = z.union([z.string().trim().min(2).max(100), z.literal('')]).optional();
 

@@ -58,6 +58,42 @@ describe('lead schemas', () => {
       assert.equal(leadApiSchema.safeParse({ ...shortOffer, phone }).success, true, phone);
     }
     assert.equal(offerLeadFormSchema.safeParse({ ...withAnswer, phone: '253555' }).success, false);
+
+    for (const phone of ['', '   ']) {
+      const parsed = offerLeadFormSchema.safeParse({ ...withAnswer, phone });
+      assert.equal(parsed.success, false, JSON.stringify(phone));
+      if (!parsed.success) {
+        assert.equal(
+          parsed.error.issues.find((issue) => issue.path[0] === 'phone')?.message,
+          'Phone is required.'
+        );
+      }
+    }
+    const missingPhone = offerLeadFormSchema.safeParse({ ...withAnswer, phone: undefined });
+    assert.equal(missingPhone.success, false);
+    if (!missingPhone.success) {
+      assert.equal(
+        missingPhone.error.issues.find((issue) => issue.path[0] === 'phone')?.message,
+        'Phone is required.'
+      );
+    }
+
+    const apiOffer = { ...withAnswer, sms_consent_text_version: SMS_CONSENT_TEXT_VERSION };
+    for (const pagePath of ['/offer', '/offer/facebook']) {
+      for (const formOrigin of ['google_ads_landing', 'facebook_ads_eddie'] as const) {
+        const parsed = leadSchemaForSubmission(formOrigin, pagePath).safeParse({
+          ...apiOffer,
+          phone: '',
+        });
+        assert.equal(parsed.success, false, `${formOrigin} ${pagePath}`);
+        if (!parsed.success) {
+          assert.equal(
+            parsed.error.issues.find((issue) => issue.path[0] === 'phone')?.message,
+            'Phone is required.'
+          );
+        }
+      }
+    }
   });
 
   it('requires a yes or no listing answer on the offer form only', () => {
