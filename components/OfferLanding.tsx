@@ -33,7 +33,8 @@ const AGENT_COMPARISON = [
   },
   {
     label: 'Timeline & Certainty',
-    kindkey: 'Cash offer — pick your closing date (as fast as 7 days)',
+    kindkey:
+      'Cash offer (close as fast as 7 days) or seller-financed terms for a higher price — you pick the date',
     agent: '60–90+ days, and buyer financing can fall through',
   },
   {
@@ -74,6 +75,34 @@ function OfferAgentComparison() {
             </div>
           </div>
         ))}
+      </div>
+    </section>
+  );
+}
+
+function OfferBuyOptions() {
+  return (
+    <section className="mt-8" aria-labelledby="two-ways-heading">
+      <h2 id="two-ways-heading" className="text-xl font-bold">
+        Two Ways We Can Buy Your House
+      </h2>
+      <p className="mt-2 text-base leading-snug text-text-secondary">
+        Pick the option that fits you best.
+      </p>
+      <div className="mt-4 space-y-3">
+        <div className="rounded-xl border border-gray-200 p-3">
+          <p className="text-sm font-bold">Option 1: Fast All-Cash Offer</p>
+          <p className="mt-1 text-base leading-snug text-text-secondary">
+            Close in as little as 7 days (or on your date) and walk away with cash at closing.
+          </p>
+        </div>
+        <div className="rounded-xl border border-gray-200 p-3">
+          <p className="text-sm font-bold">Option 2: Seller Financing (Terms) for a Higher Price</p>
+          <p className="mt-1 text-base leading-snug text-text-secondary">
+            If you don&apos;t need all your cash at once and want a higher total price or steady
+            monthly payments, we can buy on seller-financed terms secured by the property.
+          </p>
+        </div>
       </div>
     </section>
   );
@@ -193,17 +222,20 @@ export default function OfferLanding({
             />
           </div>
           {showOfferMath ? (
-            <section className="mt-8" aria-labelledby="how-we-figure-heading">
-              <h2 id="how-we-figure-heading" className="text-xl font-bold">
-                How we figure your offer
-              </h2>
-              <div className="mt-3 space-y-2 text-base leading-snug text-text-secondary">
-                <p>We buy and hold most houses as rentals, and sometimes we fix and sell them.</p>
-                <p>We start with what the house would be worth after repairs.</p>
-                <p>We subtract the repair costs and our costs to buy and sell.</p>
-                <p>We leave a fair margin, and we walk you through every number.</p>
-              </div>
-            </section>
+            <>
+              <section className="mt-8" aria-labelledby="how-we-figure-heading">
+                <h2 id="how-we-figure-heading" className="text-xl font-bold">
+                  How we figure your offer
+                </h2>
+                <div className="mt-3 space-y-2 text-base leading-snug text-text-secondary">
+                  <p>We buy and hold most houses as rentals, and sometimes we fix and sell them.</p>
+                  <p>We start with what the house would be worth after repairs.</p>
+                  <p>We subtract the repair costs and our costs to buy and sell.</p>
+                  <p>We leave a fair margin, and we walk you through every number.</p>
+                </div>
+              </section>
+              <OfferBuyOptions />
+            </>
           ) : null}
           {showDistressNotes ? <OfferDistressNotes /> : null}
           {showAgentComparison ? <OfferAgentComparison /> : null}
