@@ -151,9 +151,7 @@ export default function LeadForm({
             id="city"
             {...register('city')}
             className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-text-primary placeholder-text-secondary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent"
-            placeholder={
-              cityName || 'Kent, Federal Way, Auburn, Milton, Tacoma, Edgewood, or Puyallup'
-            }
+            placeholder={cityName || 'Your city in King, Pierce, or Kitsap County'}
             autoComplete="address-level2"
             defaultValue={cityName || ''}
           />

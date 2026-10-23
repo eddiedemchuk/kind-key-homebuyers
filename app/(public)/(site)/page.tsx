@@ -54,14 +54,14 @@ export const metadata: Metadata = {
     absolute: 'Sell Your House Fast for Cash in Auburn and South Puget Sound | KindKey Home Buyers',
   },
   description:
-    'Request a cash offer from KindKey Home Buyers LLC, a principal buyer based in Auburn. We buy houses as-is in King and Pierce County, including Kent, Federal Way, Tacoma, and Puyallup.',
+    'Request a cash offer from KindKey Home Buyers LLC, a principal buyer based in Auburn. We buy houses as-is in King County, Pierce County, and Kitsap County.',
   alternates: {
     canonical: SITE_URL,
   },
   openGraph: {
     title: 'Sell Your House Fast for Cash in Auburn and South Puget Sound | KindKey Home Buyers',
     description:
-      'Request a cash offer from KindKey Home Buyers LLC, a principal buyer based in Auburn. We buy houses as-is in King and Pierce County, including Kent, Federal Way, Tacoma, and Puyallup.',
+      'Request a cash offer from KindKey Home Buyers LLC, a principal buyer based in Auburn. We buy houses as-is in King County, Pierce County, and Kitsap County.',
     url: SITE_URL,
     images: [
       {
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Sell Your House Fast for Cash in Auburn and South Puget Sound | KindKey Home Buyers',
     description:
-      'Request a cash offer from KindKey Home Buyers LLC, a principal buyer based in Auburn. We buy houses as-is in King and Pierce County, including Kent, Federal Way, Tacoma, and Puyallup.',
+      'Request a cash offer from KindKey Home Buyers LLC, a principal buyer based in Auburn. We buy houses as-is in King County, Pierce County, and Kitsap County.',
     images: [`${SITE_URL}${defaultHeroImage}`],
   },
 };
@@ -187,9 +187,11 @@ export default function HomePage() {
             Buying Houses Throughout Washington State
           </h2>
           <p className="mb-4 text-center text-xl text-text-secondary">
-            We buy houses throughout Washington State. Our primary areas include Kent, Federal Way,
-            Auburn, Milton, Tacoma, Edgewood, and Puyallup, but we purchase homes from homeowners
-            across the entire state.
+            We buy houses throughout Washington State, with local pages for{' '}
+            <Link href="/areas" className="font-semibold text-divider hover:underline">
+              King County, Pierce County, and Kitsap County
+            </Link>
+            . Auburn is home. The cities below are where most of our sellers are.
           </p>
           <p className="mb-12 text-center text-lg text-text-secondary">
             Whether you're in Seattle, Tacoma, Spokane, or any other city in Washington, we're here

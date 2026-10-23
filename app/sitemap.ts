@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/cash-offer',
     '/sell-house-washington',
     '/blog',
+    '/areas',
   ];
 
   const cityRoutes = cities.map((city) => `/areas/${city.slug}`);
@@ -58,7 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       } else {
         priority = 0.9;
       }
-    } else if (['/how-it-works', '/contact', '/about', '/blog'].includes(route)) {
+    } else if (['/how-it-works', '/contact', '/about', '/blog', '/areas'].includes(route)) {
       priority = 0.85;
     } else if (situationRoutes.includes(route)) {
       priority = 0.8;

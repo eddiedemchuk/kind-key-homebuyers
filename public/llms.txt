@@ -10,7 +10,7 @@ KindKey Home Buyers LLC is a local principal buyer (a real estate investor), not
 
 ## Service area
 
-King County and Pierce County, Washington. Primary cities: Auburn (home office; most of the city is in King County, and some southern parcels are in Pierce County), Kent, Federal Way, Milton, Tacoma, Edgewood, and Puyallup.
+King County, Pierce County, and Kitsap County, Washington. Primary cities include Auburn (home office; most of the city is in King County, and some southern parcels are in Pierce County), Kent, Federal Way, Milton, Tacoma, Edgewood, Puyallup, Renton, Burien, SeaTac, Des Moines, Tukwila, Sumner, Bonney Lake, Spanaway (unincorporated Pierce County), Lakewood, Fife, Port Orchard, Bremerton, Silverdale (unincorporated Kitsap County), and Poulsbo. The full list is at https://kindkeyhomebuyers.com/areas.
 
 ## What KindKey does
 
@@ -48,7 +48,9 @@ KindKey buys houses as-is for cash, including houses that need repairs. KindKey 
 - About (based in Auburn): https://kindkeyhomebuyers.com/about
 - Contact: https://kindkeyhomebuyers.com/contact
 - Blog: https://kindkeyhomebuyers.com/blog
-- City hubs: https://kindkeyhomebuyers.com/areas/auburn and the same pattern for kent, federal-way, milton, tacoma, edgewood, and puyallup
+- City hubs: https://kindkeyhomebuyers.com/areas and https://kindkeyhomebuyers.com/areas/auburn, with the same pattern for every city on the areas index
+- Edgewood situation pages: https://kindkeyhomebuyers.com/areas/edgewood/sell-fire-damaged-house, /sell-house-before-foreclosure, /sell-inherited-probate-house, /sell-house-with-code-violations, /sell-house-with-tenants, /sell-hoarder-house, and /sell-vacant-house
+- Every city hub also has /sell-inherited-probate-house, /sell-house-with-code-violations, /sell-house-with-tenants, /sell-hoarder-house, and /sell-vacant-house
 
 ## Guides
 

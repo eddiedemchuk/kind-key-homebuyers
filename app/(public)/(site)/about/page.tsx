@@ -6,7 +6,7 @@ import { SITE_URL } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'About KindKey Home Buyers, Based in Auburn, WA',
   description:
-    'KindKey Home Buyers LLC is a principal cash home buyer based at 640 1st St SW, Auburn, WA 98001, serving homeowners in King and Pierce County.',
+    'KindKey Home Buyers LLC is a principal cash home buyer based at 640 1st St SW, Auburn, WA 98001, serving homeowners in King, Pierce, and Kitsap County.',
   alternates: { canonical: `${SITE_URL}/about` },
 };
 
@@ -21,10 +21,10 @@ export default function AboutPage() {
               <p>
                 KindKey Home Buyers LLC is based in Auburn, Washington, at 640 1st St SW, Auburn, WA
                 98001. We are a local real estate investment company and a principal buyer. We
-                purchase houses directly from homeowners in King County and Pierce County, including
-                Kent, Federal Way, Auburn, Milton, Tacoma, Edgewood, and Puyallup. KindKey enters
-                into purchase and sale agreements as the buyer and is not acting as the seller's
-                real estate agent or broker.
+                purchase houses directly from homeowners in King County, Pierce County, and Kitsap
+                County, including Auburn, Kent, Tacoma, Edgewood, Bremerton, and Port Orchard.
+                KindKey enters into purchase and sale agreements as the buyer and is not acting as
+                the seller's real estate agent or broker.
               </p>
 
               <p>
@@ -47,8 +47,8 @@ export default function AboutPage() {
               <ul className="ml-4 list-inside list-disc space-y-4">
                 <li>
                   <strong className="text-text-primary">Local Expertise:</strong> We are based in
-                  Auburn and buy houses across King and Pierce County, including Kent, Federal Way,
-                  Tacoma, and Puyallup. Our local knowledge helps us provide fair offers.
+                  Auburn and buy houses across King, Pierce, and Kitsap County. Our local knowledge
+                  helps us provide fair offers.
                 </li>
                 <li>
                   <strong className="text-text-primary">No Repairs Needed:</strong> We buy homes and
@@ -78,9 +78,9 @@ export default function AboutPage() {
                 Areas Where We Buy
               </h2>
               <p>
-                While we focus primarily on Kent, Federal Way, Auburn, Milton, Tacoma, Edgewood, and
-                Puyallup, we buy houses throughout Washington State. Contact us to see if we can
-                purchase your property.
+                We buy in the King, Pierce, and Kitsap County cities listed below, and we also buy
+                houses throughout Washington State. Contact us to see if we can purchase your
+                property.
               </p>
             </div>
           </div>

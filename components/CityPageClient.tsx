@@ -24,6 +24,32 @@ interface SituationLink {
   description: string;
 }
 
+function CityLocalContext({ city }: { city: CityPageClientProps['city'] }) {
+  return (
+    <section className="bg-primary py-16">
+      <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <h2 className="mb-4 text-3xl font-bold text-text-primary">
+          Local context for {city.name}, WA
+        </h2>
+        <p className="mb-4 text-lg text-text-secondary">
+          <span className="font-semibold text-text-primary">County: </span>
+          {city.countyLabel}
+        </p>
+        <h3 className="mb-2 text-xl font-semibold text-text-primary">Neighborhoods and areas</h3>
+        <ul className="mb-4 list-disc space-y-1 pl-6 text-lg text-text-secondary">
+          {city.neighborhoods.map((neighborhood) => (
+            <li key={neighborhood}>{neighborhood}</li>
+          ))}
+        </ul>
+        <p className="mb-6 text-lg text-text-secondary">{city.marketContext}</p>
+        <Link href="/cash-offer" className="font-semibold text-divider hover:underline">
+          Request a cash offer in {city.name}
+        </Link>
+      </div>
+    </section>
+  );
+}
+
 function CitySituationLinks({ cityName, links }: { cityName: string; links: SituationLink[] }) {
   if (links.length === 0) {
     return null;
@@ -36,7 +62,8 @@ function CitySituationLinks({ cityName, links }: { cityName: string; links: Situ
           Common situations in {cityName}
         </h2>
         <p className="mb-8 text-center text-lg text-text-secondary">
-          These {cityName} pages cover fire damage and foreclosure in more local detail.
+          These {cityName} pages cover inherited houses, code violations, tenants, hoarding, vacant
+          houses, and any fire or foreclosure page we publish for this city.
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {links.map((link) => (
@@ -61,6 +88,9 @@ interface CityPageClientProps {
     slug: string;
     description: string;
     intro: string;
+    countyLabel: string;
+    neighborhoods: string[];
+    marketContext: string;
     faq: Array<{ question: string; answer: string }>;
   };
   situationLinks?: SituationLink[];
@@ -104,6 +134,8 @@ export default function CityPageClient({
           cityIntro={city.intro}
           cityDescription={city.description}
         />
+
+        <CityLocalContext city={city} />
 
         <CitySituationLinks cityName={city.name} links={situationLinks} />
 
@@ -237,6 +269,8 @@ export default function CityPageClient({
           </div>
         </div>
       </section>
+
+      <CityLocalContext city={city} />
 
       <CitySituationLinks cityName={city.name} links={situationLinks} />
 

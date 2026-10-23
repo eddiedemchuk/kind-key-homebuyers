@@ -13,7 +13,7 @@ export const situations: LongformContent[] = [
       'Sell a fire-damaged or smoke-damaged house as-is in King or Pierce County. KindKey Home Buyers LLC is an Auburn principal buyer, not a real estate agent.',
     h1: 'Sell a Fire-Damaged House for Cash',
     intro: [
-      'You can sell a fire-damaged house as-is to KindKey Home Buyers LLC without rebuilding the kitchen, replacing smoke-stained drywall, or finishing an insurance project first. KindKey is a principal buyer based at 640 1st St SW in Auburn, Washington. We purchase houses directly from owners in King County and Pierce County. We are not a real estate agent or broker, and we do not list the house.',
+      'You can sell a fire-damaged house as-is to KindKey Home Buyers LLC without rebuilding the kitchen, replacing smoke-stained drywall, or finishing an insurance project first. KindKey is a principal buyer based at 640 1st St SW in Auburn, Washington. We purchase houses directly from owners in King County, Pierce County, and Kitsap County. We are not a real estate agent or broker, and we do not list the house.',
       'The fire does not have to be a total loss. We make offers on kitchen fires, garage fires, attic smoke, boarded windows, and partial burns that left the house standing but not livable. You do not need a contractor bid, a cleared certificate of occupancy, or a cleaned-out interior before you ask for a cash offer.',
       'A retail listing of a burned house usually means showings, repair negotiations, and months of carrying the mortgage, insurance, and utilities. Selling to KindKey skips that. You tell us the address and what happened. We review the damage, walk the property when it is safe, and send a written offer you can accept or decline.',
     ],
@@ -42,7 +42,7 @@ export const situations: LongformContent[] = [
       {
         heading: 'Where we buy fire-damaged houses',
         paragraphs: [
-          'Our office is in downtown Auburn. We look at houses in Auburn, Kent, Federal Way, Tacoma, and Puyallup, and we also buy in Milton, Edgewood, and nearby King and Pierce County communities. Older wood-frame houses and newer hill houses can both be sold as-is when smoke and water damage make a polished listing unrealistic.',
+          'Our office is in downtown Auburn. We look at houses in Auburn, Kent, Federal Way, Tacoma, and Puyallup, and we also buy in Milton, Edgewood, and nearby King, Pierce, and Kitsap County communities, including Bremerton and Port Orchard. Older wood-frame houses and newer hill houses can both be sold as-is when smoke and water damage make a polished listing unrealistic.',
           'Western Washington rain matters after a fire. A tarp that held in July can fail by November. You do not have to solve that before closing. Leave damaged belongings you do not want. KindKey coordinates its side of the purchase with the closing agent.',
         ],
       },
@@ -109,6 +109,11 @@ export const situations: LongformContent[] = [
         description: 'Downtown Puyallup and the South Hill plateau.',
       },
       {
+        href: '/areas/edgewood/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Edgewood',
+        description: 'North Hill, Jovita, and shops set back from Meridian.',
+      },
+      {
         href: '/blog/sell-fire-damaged-house-king-pierce-county',
         label: 'How to sell a fire-damaged house in King or Pierce County',
         description: 'A plain-language walkthrough of the decision.',
@@ -125,7 +130,7 @@ export const situations: LongformContent[] = [
       'Sell a Washington house before foreclosure to an Auburn principal buyer. KindKey is not a real estate agent. Talk with an attorney about RCW 61.34 and your deadlines.',
     h1: 'Sell a House Before Foreclosure',
     intro: [
-      'If you are behind on the mortgage, you may still be able to sell the house before a foreclosure sale and use the proceeds at closing to pay what the lender is owed. KindKey Home Buyers LLC, based at 640 1st St SW in Auburn, buys houses directly from owners in King County and Pierce County. We are a principal buyer, not a real estate agent, broker, or foreclosure-rescue service.',
+      'If you are behind on the mortgage, you may still be able to sell the house before a foreclosure sale and use the proceeds at closing to pay what the lender is owed. KindKey Home Buyers LLC, based at 640 1st St SW in Auburn, buys houses directly from owners in King County, Pierce County, and Kitsap County. We are a principal buyer, not a real estate agent, broker, or foreclosure-rescue service.',
       'A notice of default or a trustee-sale notice does not, by itself, tell you which options are still open. Deadlines can be short, and they depend on the paperwork you received and on which county the property is in. Auburn, Kent, and Federal Way houses are often in King County. Tacoma and Puyallup houses are in Pierce County. Some Auburn parcels are in Pierce County even though the mailing city says Auburn. Confirm the county with the title company or your attorney instead of guessing from the city name.',
       distressedRules,
     ],
@@ -152,10 +157,10 @@ export const situations: LongformContent[] = [
         ],
       },
       {
-        heading: 'King County and Pierce County are not the same office',
+        heading: 'King, Pierce, and Kitsap are not the same office',
         paragraphs: [
-          'A King County house and a Pierce County house are not processed by the same recorder, treasurer, or superior court. That matters when a payoff, a tax lien, or a court case has to be cleared before a deed can record. Federal Way and Kent are in King County. Tacoma, Puyallup, and Edgewood are in Pierce County. Milton is in both counties. Auburn sits on the county line, so the parcel — not the neighborhood name — controls which county records apply.',
-          'We buy in all of those cities. Local pages for Auburn, Kent, Federal Way, Tacoma, and Puyallup cover the housing and the county context in more detail. None of those pages is a substitute for advice about your notice.',
+          'A King County house, a Pierce County house, and a Kitsap County house are not processed by the same recorder, treasurer, or superior court. That matters when a payoff, a tax lien, or a court case has to be cleared before a deed can record. Federal Way and Kent are in King County. Tacoma, Puyallup, and Edgewood are in Pierce County. Bremerton, Port Orchard, and Poulsbo are in Kitsap County, and Silverdale is unincorporated Kitsap County. Milton is in both King and Pierce. Auburn sits on that county line, so the parcel — not the neighborhood name — controls which county records apply.',
+          'We buy in those cities. Local pages cover the housing and the county context in more detail, including an Edgewood foreclosure page. None of those pages is a substitute for advice about your notice. The full city list is on the areas page.',
         ],
       },
       {
@@ -220,6 +225,11 @@ export const situations: LongformContent[] = [
         description: 'Pierce County, downtown and the South Hill area.',
       },
       {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Sell before foreclosure in Edgewood',
+        description: 'Pierce County only. North Hill and the valley are different houses.',
+      },
+      {
         href: '/blog/sell-house-before-foreclosure-washington',
         label: 'Can I sell my house before foreclosure in Washington?',
         description: 'What to ask an attorney, and how a cash sale is different from a listing.',
@@ -240,9 +250,9 @@ export const situations: LongformContent[] = [
       'Sell an inherited or probate house as-is in King or Pierce County. KindKey is an Auburn principal buyer. Confirm authority to sign with an attorney. Not legal or tax advice.',
     h1: 'Sell an Inherited or Probate House',
     intro: [
-      'You can sell an inherited house in Washington without repairing it, emptying every room, or moving back to manage a listing. KindKey Home Buyers LLC buys houses directly from people who have the authority to sell. We are based at 640 1st St SW in Auburn and we purchase in King County and Pierce County. KindKey is not a real estate agent, a probate lawyer, or a tax advisor.',
+      'You can sell an inherited house in Washington without repairing it, emptying every room, or moving back to manage a listing. KindKey Home Buyers LLC buys houses directly from people who have the authority to sell. We are based at 640 1st St SW in Auburn and we purchase in King County, Pierce County, and Kitsap County. KindKey is not a real estate agent, a probate lawyer, or a tax advisor.',
       'Whether a sale can happen now depends on the estate. Some families already have a personal representative with letters from the superior court. Some are still opening probate. Some houses were in a living trust or passed by a transfer-on-death deed, which is a different path. KindKey will not tell you which path you are on. A Washington attorney, and the closing agent once title is opened, are the right people to confirm who can sign the deed.',
-      'King County estates and Pierce County estates are filed in different superior courts. A house in Kent, Federal Way, or most of Auburn is commonly a King County matter. A house in Tacoma, Puyallup, or Edgewood is commonly a Pierce County matter. A Milton house follows the county where the decedent lived, because the city is in both King and Pierce. Auburn’s southern edge crosses into Pierce County, so the parcel controls. Do not rely on the mailing city alone.',
+      'King County estates, Pierce County estates, and Kitsap County estates are filed in different superior courts. A house in Kent, Federal Way, or most of Auburn is commonly a King County matter. A house in Tacoma, Puyallup, or Edgewood is commonly a Pierce County matter. A house in Bremerton, Port Orchard, Poulsbo, or Silverdale is a Kitsap County matter, and the superior court for that county sits in Port Orchard. A Milton house follows the county where the decedent lived, because the city is in both King and Pierce. Auburn’s southern edge crosses into Pierce County, so the parcel controls. Do not rely on the mailing city alone, and do not open a Kitsap estate in Tacoma or Kent because the owner commuted across the Sound.',
     ],
     sections: [
       {
@@ -349,7 +359,7 @@ export const situations: LongformContent[] = [
       'Sell a vacant house as-is in King or Pierce County without cleaning it out or making repairs. KindKey Home Buyers LLC is an Auburn principal buyer.',
     h1: 'Sell a Vacant House for Cash',
     intro: [
-      'You can sell a vacant house to KindKey Home Buyers LLC without staging it, keeping the utilities on for showings, or flying back to manage contractors. KindKey is a principal buyer at 640 1st St SW, Auburn, WA 98001. We buy houses in King County and Pierce County, including homes that have been empty for weeks or for years. We are not a real estate agent.',
+      'You can sell a vacant house to KindKey Home Buyers LLC without staging it, keeping the utilities on for showings, or flying back to manage contractors. KindKey is a principal buyer at 640 1st St SW, Auburn, WA 98001. We buy houses in King County, Pierce County, and Kitsap County, including homes that have been empty for weeks or for years. We are not a real estate agent.',
       'Vacant does not mean simple. Empty houses in Auburn, Kent, Federal Way, Tacoma, and Puyallup still need insurance decisions, yard care, and a watchful eye for break-ins, frozen pipes, and mail that piles up. Those costs continue until the deed transfers. A cash sale is one way to stop that calendar.',
       'You do not have to remove every stick of furniture or correct deferred maintenance first. Tell us the house is empty, whether the power and water are on, and if anyone has a key. We will look at it and send a written offer.',
     ],
@@ -450,7 +460,7 @@ export const situations: LongformContent[] = [
       'Sell a King or Pierce County house with open code violations as-is. KindKey Home Buyers LLC is an Auburn principal buyer, not a code consultant or real estate agent.',
     h1: 'Sell a House with Code Violations',
     intro: [
-      'You can sell a house with open code violations without finishing the city’s punch list first. KindKey Home Buyers LLC buys houses as-is from owners in King County and Pierce County. We are based at 640 1st St SW in Auburn. We are not a real estate agent, and we are not the code enforcement office.',
+      'You can sell a house with open code violations without finishing the city’s punch list first. KindKey Home Buyers LLC buys houses as-is from owners in King County, Pierce County, and Kitsap County. We are based at 640 1st St SW in Auburn. We are not a real estate agent, and we are not the code enforcement office.',
       'A notice might be about tall grass, an inoperable vehicle, a boarded window, an unpermitted addition, an unsafe deck, junk and debris, or a structure the city says is not fit to live in. Those cases differ, and the city that issued the notice is the authority on what it requires. KindKey will not tell you how to fight a citation or what a hearing officer will do.',
       'What we can do is make a cash offer that assumes the violation is still open. You tell us which city wrote the notice and what it says. If you accept an offer, title and the closing agent identify liens that have to be paid. You should read the notice with an attorney if you do not understand the deadline or the penalty.',
     ],
@@ -465,7 +475,7 @@ export const situations: LongformContent[] = [
       {
         heading: 'Violations we see on houses we buy',
         paragraphs: [
-          'South King County and Pierce County cities each run their own code enforcement. Auburn, Kent, and Federal Way are King County cities with their own municipal codes. Tacoma and Puyallup are Pierce County cities. Unincorporated pockets, including parts of the South Hill plateau that use a Puyallup address, can fall under Pierce County instead of the city. The header on your notice is the first place to look. If you are unsure, ask the city or county named on the letter, or ask an attorney.',
+          'South King County, Pierce County, and Kitsap County each run their own code enforcement. Auburn, Kent, and Federal Way are King County cities with their own municipal codes. Tacoma, Puyallup, and Edgewood are Pierce County cities. Bremerton, Port Orchard, and Poulsbo are Kitsap County cities. Unincorporated pockets, including parts of the South Hill plateau that use a Puyallup address, Spanaway, and Silverdale, can fall under the county instead of a city. The header on your notice is the first place to look. If you are unsure, ask the city or county named on the letter, or ask an attorney.',
           'We regularly see vacant-property cases, interior hoarding and debris that spilled outside, fire-damaged houses with an unsafe-structure posting, and additions or garage conversions that never had a final inspection. A retail buyer using a loan may struggle with those issues. KindKey pays cash and does not need the house to pass a lender’s appraisal before we buy it.',
         ],
         bullets: [
@@ -495,7 +505,7 @@ export const situations: LongformContent[] = [
       {
         question: 'Can I sell if the city has an open code case?',
         answer:
-          'Yes. KindKey buys houses with open violations in Auburn, Kent, Federal Way, Tacoma, Puyallup, and nearby King and Pierce County communities. Bring the notice. You do not have to finish the city’s required repairs first.',
+          'Yes. KindKey buys houses with open violations in Auburn, Kent, Federal Way, Tacoma, Puyallup, Edgewood, and nearby King, Pierce, and Kitsap County communities, including Port Orchard and Bremerton. Bring the notice. You do not have to finish the city’s required repairs first.',
       },
       {
         question: 'Will the violation automatically close when I sell?',
@@ -554,7 +564,7 @@ export const situations: LongformContent[] = [
       'Sell a rented house in King or Pierce County without forcing tenants out first. KindKey is an Auburn principal buyer. Landlord-tenant questions belong with an attorney.',
     h1: 'Sell a House with Tenants',
     intro: [
-      'You can sell a house with tenants in place. KindKey Home Buyers LLC buys occupied rental houses in King County and Pierce County and does not require you to deliver the property vacant. We are a principal buyer based at 640 1st St SW in Auburn. We are not a real estate agent, and we are not your landlord-tenant lawyer.',
+      'You can sell a house with tenants in place. KindKey Home Buyers LLC buys occupied rental houses in King County, Pierce County, and Kitsap County and does not require you to deliver the property vacant. We are a principal buyer based at 640 1st St SW in Auburn. We are not a real estate agent, and we are not your landlord-tenant lawyer.',
       'Washington has rules about notice, entry, deposits, and ending a tenancy. KindKey does not advise you on those rules and will not ask you to remove tenants illegally so the house is easier to show. If you are unsure whether you can enter, raise rent, or ask someone to leave, talk with a Washington attorney before you do it.',
       'A cash sale can be a fit when you are tired of repairs, you live out of the area, the tenant relationship is strained, or you inherited a rental you never wanted. The lease, if there is one, is a fact the closing has to respect. Tell us whether the agreement is written, month-to-month, or unclear.',
     ],
@@ -656,7 +666,7 @@ export const situations: LongformContent[] = [
       'Sell a hoarder house or heavy-repair house as-is in King or Pierce County. No clean-out and no contractor bid required. KindKey is an Auburn principal buyer.',
     h1: 'Sell a Hoarder House or Heavy-Repair House',
     intro: [
-      'You can sell a house that is packed with belongings, or a house that needs heavy repairs, without cleaning it out or hiring a contractor first. KindKey Home Buyers LLC buys those houses directly from owners in King County and Pierce County. We are based at 640 1st St SW in Auburn. We are not a real estate agent, and we do not require the house to be presentable.',
+      'You can sell a house that is packed with belongings, or a house that needs heavy repairs, without cleaning it out or hiring a contractor first. KindKey Home Buyers LLC buys those houses directly from owners in King County, Pierce County, and Kitsap County. We are based at 640 1st St SW in Auburn. We are not a real estate agent, and we do not require the house to be presentable.',
       'A house can reach this point for many reasons: a long illness, a death in the family, a repair that started and stopped, or years of putting off a roof, a sewer line, or a foundation crack. None of that has to be solved before you ask for a cash offer. You will not be asked to justify how the house got this way.',
       'If a city has also opened a code case, or if the house is part of a probate or a foreclosure, say so. Those facts change who can sign and which deadlines matter. KindKey does not give legal advice. Washington has distressed-property rules under RCW 61.34 that an attorney can explain if the sale is happening under pressure.',
     ],

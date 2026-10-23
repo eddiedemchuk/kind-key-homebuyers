@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import BlogMoneyLinks from '@/components/BlogMoneyLinks';
 import LongformPage from '@/components/LongformPage';
 import { blogPosts, getBlogPost } from '@/data/blogPosts';
 import { articleMetadata } from '@/lib/seo';
@@ -29,5 +30,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   if (!post) {
     notFound();
   }
-  return <LongformPage content={post} article={post} />;
+  return (
+    <>
+      <LongformPage content={post} article={post} />
+      <BlogMoneyLinks />
+    </>
+  );
 }
