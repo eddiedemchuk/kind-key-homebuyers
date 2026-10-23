@@ -18,8 +18,10 @@ export function focusOfferForm(): void {
   if (!card) return;
   card.scrollIntoView({ behavior: 'smooth', block: 'start' });
   const name = card.querySelector<HTMLInputElement>('input[name="name"]');
+  const address = card.querySelector<HTMLInputElement>('input[name="propertyAddress"]');
+  const field = name ?? address;
   window.setTimeout(() => {
-    name?.focus({ preventScroll: true });
+    field?.focus({ preventScroll: true });
   }, 450);
 }
 

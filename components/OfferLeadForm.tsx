@@ -1,10 +1,10 @@
 'use client';
 
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm, type FieldErrors } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
-import { offerLeadFormSchema, type OfferLeadFormData } from '@/lib/schema';
+import { offerHeroLeadFormSchema, offerLeadFormSchema, type OfferLeadFormData } from '@/lib/schema';
 import { trackEvent, trackLeadSubmit } from '@/lib/analytics';
 import { trackMetaLead } from '@/lib/meta-pixel';
 import { attributionFieldsForSubmit } from '@/lib/attribution-client';
@@ -21,6 +21,8 @@ interface OfferLeadFormProps {
   trackMetaLead?: boolean;
   /** Passed through to the webhook when this submit is a Facebook /offer visit. */
   src?: string;
+  /** Address first, then contact details. Used on /offer and /offer/facebook. */
+  stepped?: boolean;
 }
 
 const fieldClass =
@@ -34,9 +36,12 @@ export default function OfferLeadForm({
   idPrefix,
   trackMetaLead: shouldTrackMetaLead = false,
   src,
+  stepped = false,
 }: OfferLeadFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+  const [step, setStep] = useState<1 | 2>(1);
+  const returnToAddress = useRef(false);
   const formRef = useRef<HTMLFormElement>(null);
   const { executeRecaptcha } = useRecaptcha(formRef);
 
@@ -76,8 +81,10 @@ export default function OfferLeadForm({
     formState: { errors },
     setValue,
     watch,
+    trigger,
   } = useForm<OfferLeadFormData>({
-    resolver: zodResolver(offerLeadFormSchema),
+    resolver: zodResolver(stepped ? offerHeroLeadFormSchema : offerLeadFormSchema),
+    shouldUnregister: false,
     defaultValues: {
       phone: '',
       email: '',
@@ -87,9 +94,39 @@ export default function OfferLeadForm({
     },
   });
   const phoneValue = watch('phone') ?? '';
+  const addressValue = watch('propertyAddress') ?? '';
   const phoneSelection = useRef<number | null>(null);
   const phoneInputRef = useRef<HTMLInputElement | null>(null);
+  const addressInputRef = useRef<HTMLInputElement | null>(null);
+  const nameInputRef = useRef<HTMLInputElement | null>(null);
   const { ref: phoneRef, ...phoneField } = register('phone');
+  const { ref: addressRef, ...addressField } = register('propertyAddress');
+  const { ref: nameRef, ...nameField } = register('name');
+
+  const showProperty = !stepped || step === 1;
+  const showContact = !stepped || step === 2;
+
+  const goToContactStep = async () => {
+    const addressOk = await trigger('propertyAddress');
+    const listedOk = await trigger('listed_with_agent');
+    if (addressOk && listedOk) setStep(2);
+  };
+
+  const editStepOne = () => {
+    returnToAddress.current = true;
+    setStep(1);
+  };
+
+  useEffect(() => {
+    if (!stepped || step !== 2) return;
+    nameInputRef.current?.focus({ preventScroll: true });
+  }, [step, stepped]);
+
+  useEffect(() => {
+    if (step !== 1 || !returnToAddress.current) return;
+    returnToAddress.current = false;
+    addressInputRef.current?.focus({ preventScroll: true });
+  }, [step]);
 
   useLayoutEffect(() => {
     const input = phoneInputRef.current;
@@ -158,173 +195,241 @@ export default function OfferLeadForm({
     }
   };
 
+  const onInvalid = (formErrors: FieldErrors<OfferLeadFormData>) => {
+    if (formErrors.propertyAddress || formErrors.listed_with_agent) setStep(1);
+  };
+
   return (
     <form
       ref={formRef}
-      onSubmit={handleSubmit(onSubmit)}
+      onSubmit={(event) => {
+        if (stepped && step === 1) {
+          event.preventDefault();
+          void goToContactStep();
+          return;
+        }
+        void handleSubmit(onSubmit, onInvalid)(event);
+      }}
       className="scroll-mb-[calc(65px+env(safe-area-inset-bottom,0px))] space-y-1 md:scroll-mb-0"
       noValidate
+      data-offer-step={stepped ? step : undefined}
     >
-      <div>
-        <label htmlFor={ids.name} className="mb-0.5 block text-sm font-medium text-text-primary">
-          Name
-        </label>
-        <input
-          type="text"
-          id={ids.name}
-          {...register('name')}
-          className={fieldClass}
-          placeholder="Your name"
-          autoComplete="name"
-        />
-        {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>}
-      </div>
+      {stepped ? (
+        <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+          Step {step} of 2
+        </p>
+      ) : null}
 
-      <div>
-        <label htmlFor={ids.phone} className="mb-0.5 block text-sm font-medium text-text-primary">
-          Phone
-        </label>
-        <input
-          type="tel"
-          id={ids.phone}
-          {...phoneField}
-          ref={(element) => {
-            phoneInputRef.current = element;
-            phoneRef(element);
-          }}
-          value={phoneValue}
-          onChange={handlePhoneChange}
-          className={fieldClass}
-          placeholder="(253) 555-0100"
-          autoComplete="tel"
-          inputMode="tel"
-          required
-        />
-        {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p>}
-      </div>
-
-      <div>
-        <label htmlFor={ids.email} className="mb-0.5 block text-sm font-medium text-text-primary">
-          Email
-        </label>
-        <input
-          type="email"
-          id={ids.email}
-          {...register('email')}
-          className={fieldClass}
-          placeholder="you@example.com"
-          autoComplete="email"
-          inputMode="email"
-          required
-        />
-        {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>}
-      </div>
-
-      <div>
-        <label htmlFor={ids.address} className="mb-0.5 block text-sm font-medium text-text-primary">
-          Property Address
-        </label>
-        <input
-          type="text"
-          id={ids.address}
-          {...register('propertyAddress')}
-          className={fieldClass}
-          placeholder="123 Main St, Auburn, WA"
-          autoComplete="street-address"
-        />
-        {errors.propertyAddress && (
-          <p className="mt-1 text-sm text-red-600">{errors.propertyAddress.message}</p>
-        )}
-      </div>
-
-      <fieldset>
-        <legend className="mb-0.5 text-sm font-medium text-text-primary">
-          Is your house currently listed with an agent?
-        </legend>
-        <div className="flex gap-4">
-          <label
-            htmlFor={ids.listedYes}
-            className="flex items-center gap-2 text-sm text-text-primary"
+      {stepped && step === 2 ? (
+        <div className="flex items-start justify-between gap-3 rounded-lg bg-secondary px-3 py-2">
+          <p className="min-w-0 text-sm font-medium leading-snug text-text-primary">
+            {addressValue}
+          </p>
+          <button
+            type="button"
+            onClick={editStepOne}
+            className="shrink-0 text-sm font-semibold text-divider underline"
           >
-            <input
-              type="radio"
-              id={ids.listedYes}
-              value="yes"
-              {...register('listed_with_agent')}
-              className="h-4 w-4 border-gray-300 text-divider focus:ring-divider"
-            />
-            Yes
-          </label>
-          <label
-            htmlFor={ids.listedNo}
-            className="flex items-center gap-2 text-sm text-text-primary"
-          >
-            <input
-              type="radio"
-              id={ids.listedNo}
-              value="no"
-              {...register('listed_with_agent')}
-              className="h-4 w-4 border-gray-300 text-divider focus:ring-divider"
-            />
-            No
-          </label>
+            Edit
+          </button>
         </div>
-        {errors.listed_with_agent && (
-          <p className="mt-1 text-sm text-red-600">{errors.listed_with_agent.message}</p>
-        )}
-      </fieldset>
+      ) : null}
 
-      <div className="scroll-mb-[calc(80px+env(safe-area-inset-bottom,0px))]">
-        <div className="flex items-start gap-2">
+      {showContact ? (
+        <div>
+          <label htmlFor={ids.name} className="mb-0.5 block text-sm font-medium text-text-primary">
+            Name
+          </label>
           <input
-            type="checkbox"
-            id={ids.smsConsent}
-            {...register('sms_consent')}
-            className="mt-0.5 h-5 w-5 shrink-0 rounded border-gray-300 bg-white text-divider focus:ring-divider"
+            type="text"
+            id={ids.name}
+            {...nameField}
+            ref={(element) => {
+              nameInputRef.current = element;
+              nameRef(element);
+            }}
+            className={fieldClass}
+            placeholder="Your name"
+            autoComplete="name"
           />
-          <p className="text-[11px] leading-tight text-text-secondary">
-            <label htmlFor={ids.smsConsent}>I agree to the</label>{' '}
-            <Link href="/terms" className="font-medium text-divider underline">
-              Terms of Service
-            </Link>{' '}
-            <label htmlFor={ids.smsConsent}>and</label>{' '}
-            <Link href="/privacy" className="font-medium text-divider underline">
-              Privacy Policy
-            </Link>{' '}
-            <label htmlFor={ids.smsConsent}>
-              and consent to receive calls and text messages from KindKey Home Buyers at the number
-              provided, including automated messages. Consent is not a condition of purchase. Msg
-              &amp; data rates may apply. Msg frequency varies. Reply STOP to opt out, HELP for
-              help.
-            </label>
-          </p>
+          {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>}
         </div>
-        {errors.sms_consent && (
-          <p className="mt-1 text-sm text-red-600" role="alert">
-            {errors.sms_consent.message}
-          </p>
-        )}
-      </div>
+      ) : null}
 
-      {submitError && (
+      {showContact ? (
+        <div>
+          <label htmlFor={ids.phone} className="mb-0.5 block text-sm font-medium text-text-primary">
+            Phone
+          </label>
+          <input
+            type="tel"
+            id={ids.phone}
+            {...phoneField}
+            ref={(element) => {
+              phoneInputRef.current = element;
+              phoneRef(element);
+            }}
+            value={phoneValue}
+            onChange={handlePhoneChange}
+            className={fieldClass}
+            placeholder="(253) 555-0100"
+            autoComplete="tel"
+            inputMode="tel"
+            required
+          />
+          {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p>}
+        </div>
+      ) : null}
+
+      {showContact ? (
+        <div>
+          <label htmlFor={ids.email} className="mb-0.5 block text-sm font-medium text-text-primary">
+            Email
+            {stepped ? <span className="font-normal text-text-secondary"> (optional)</span> : null}
+          </label>
+          <input
+            type="email"
+            id={ids.email}
+            {...register('email')}
+            className={fieldClass}
+            placeholder="you@example.com"
+            autoComplete="email"
+            inputMode="email"
+            required={!stepped}
+          />
+          {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>}
+        </div>
+      ) : null}
+
+      {showProperty ? (
+        <div>
+          <label
+            htmlFor={ids.address}
+            className="mb-0.5 block text-sm font-medium text-text-primary"
+          >
+            Property Address
+          </label>
+          <input
+            type="text"
+            id={ids.address}
+            {...addressField}
+            ref={(element) => {
+              addressInputRef.current = element;
+              addressRef(element);
+            }}
+            className={fieldClass}
+            placeholder="123 Main St, Auburn, WA"
+            autoComplete="street-address"
+          />
+          {errors.propertyAddress && (
+            <p className="mt-1 text-sm text-red-600">{errors.propertyAddress.message}</p>
+          )}
+        </div>
+      ) : null}
+
+      {showProperty ? (
+        <fieldset>
+          <legend className="mb-0.5 text-sm font-medium text-text-primary">
+            {stepped ? 'Listed with an agent?' : 'Is your house currently listed with an agent?'}
+          </legend>
+          <div className="flex gap-4">
+            <label
+              htmlFor={ids.listedYes}
+              className="flex items-center gap-2 text-sm text-text-primary"
+            >
+              <input
+                type="radio"
+                id={ids.listedYes}
+                value="yes"
+                {...register('listed_with_agent')}
+                className="h-4 w-4 border-gray-300 text-divider focus:ring-divider"
+              />
+              Yes
+            </label>
+            <label
+              htmlFor={ids.listedNo}
+              className="flex items-center gap-2 text-sm text-text-primary"
+            >
+              <input
+                type="radio"
+                id={ids.listedNo}
+                value="no"
+                {...register('listed_with_agent')}
+                className="h-4 w-4 border-gray-300 text-divider focus:ring-divider"
+              />
+              No
+            </label>
+          </div>
+          {errors.listed_with_agent && (
+            <p className="mt-1 text-sm text-red-600">{errors.listed_with_agent.message}</p>
+          )}
+        </fieldset>
+      ) : null}
+
+      {showContact ? (
+        <div className="scroll-mb-[calc(80px+env(safe-area-inset-bottom,0px))]">
+          <div className="flex items-start gap-2">
+            <input
+              type="checkbox"
+              id={ids.smsConsent}
+              {...register('sms_consent')}
+              className="mt-0.5 h-5 w-5 shrink-0 rounded border-gray-300 bg-white text-divider focus:ring-divider"
+            />
+            <p className="text-[11px] leading-tight text-text-secondary">
+              <label htmlFor={ids.smsConsent}>I agree to the</label>{' '}
+              <Link href="/terms" className="font-medium text-divider underline">
+                Terms of Service
+              </Link>{' '}
+              <label htmlFor={ids.smsConsent}>and</label>{' '}
+              <Link href="/privacy" className="font-medium text-divider underline">
+                Privacy Policy
+              </Link>{' '}
+              <label htmlFor={ids.smsConsent}>
+                and consent to receive calls and text messages from KindKey Home Buyers at the
+                number provided, including automated messages. Consent is not a condition of
+                purchase. Msg &amp; data rates may apply. Msg frequency varies. Reply STOP to opt
+                out, HELP for help.
+              </label>
+            </p>
+          </div>
+          {errors.sms_consent && (
+            <p className="mt-1 text-sm text-red-600" role="alert">
+              {errors.sms_consent.message}
+            </p>
+          )}
+        </div>
+      ) : null}
+
+      {submitError && showContact ? (
         <div className="rounded-lg border border-red-200 bg-red-50 p-3" role="alert">
           <p className="text-sm text-red-600">{submitError}</p>
         </div>
-      )}
+      ) : null}
 
       <p className="text-center text-xs leading-tight text-text-secondary">
         Filling this out doesn&apos;t commit you to sell.
       </p>
-      <button
-        type="submit"
-        disabled={isSubmitting}
-        className={`${submitButtonClass} scroll-mb-[calc(80px+env(safe-area-inset-bottom,0px))]`}
-      >
-        {isSubmitting ? 'Submitting...' : 'Get My Free Cash Offer'}
-      </button>
-      <p className="text-center text-xs font-medium text-text-secondary">
-        Free, no obligation, we never share your info
-      </p>
+      {stepped && step === 1 ? (
+        <button
+          type="submit"
+          className={`${submitButtonClass} text-balance text-center leading-snug`}
+        >
+          Continue →
+        </button>
+      ) : (
+        <>
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className={`${submitButtonClass} scroll-mb-[calc(80px+env(safe-area-inset-bottom,0px))]`}
+          >
+            {isSubmitting ? 'Submitting...' : 'Get My Free Cash Offer'}
+          </button>
+          <p className="text-center text-xs font-medium text-text-secondary">
+            Free, no obligation, we never share your info
+          </p>
+        </>
+      )}
     </form>
   );
 }

@@ -87,7 +87,7 @@ const offerConsentSchema = z
   .boolean()
   .refine((value) => value === true, { message: SMS_CONSENT_REQUIRED_MESSAGE });
 
-/** Paid-ads short form. Email, phone, listing answer, and consent are required. */
+/** Situation offer pages. Email, phone, listing answer, and consent are required. */
 export const offerLeadFormSchema = leadApiSchema.extend({
   phone: requiredPhoneSchema,
   email: requiredEmailSchema,
@@ -95,22 +95,45 @@ export const offerLeadFormSchema = leadApiSchema.extend({
   sms_consent: offerConsentSchema,
 });
 
-/** Server schema for /offer submissions. Consent must be the current text version. */
-export const offerLeadApiSchema = offerLeadFormSchema.extend({
+/** Two-step /offer hero. Email may be blank. Phone, listing answer, and consent stay required. */
+const optionalOfferEmailSchema = z
+  .string()
+  .trim()
+  .refine((value) => value === '' || z.string().email().safeParse(value).success, {
+    message: 'Enter a valid email address.',
+  });
+
+export const offerHeroLeadFormSchema = offerLeadFormSchema.extend({
+  email: optionalOfferEmailSchema,
+});
+
+const offerConsentApiFields = {
   sms_consent: z.literal(true, {
     errorMap: () => ({ message: SMS_CONSENT_REQUIRED_MESSAGE }),
   }),
   sms_consent_text_version: z.literal(SMS_CONSENT_TEXT_VERSION, {
     errorMap: () => ({ message: SMS_CONSENT_REQUIRED_MESSAGE }),
   }),
-});
+};
+
+/** Server schema for situation /offer submissions. Consent must be the current text version. */
+export const offerLeadApiSchema = offerLeadFormSchema.extend(offerConsentApiFields);
+
+/** Server schema for the two-step hero on /offer and /offer/facebook. */
+export const offerHeroLeadApiSchema = offerHeroLeadFormSchema.extend(offerConsentApiFields);
 
 export function isOfferLeadSubmission(formOrigin: FormOrigin, pagePath: string): boolean {
   return isOfferFormOrigin(formOrigin) || pagePath === '/offer' || pagePath.startsWith('/offer/');
 }
 
+/** Browser paths for the two-step hero. /offer/fb is the internal rewrite of ?src=fb. */
+export function isOfferHeroPath(pagePath: string): boolean {
+  return pagePath === '/offer' || pagePath === '/offer/facebook' || pagePath === '/offer/fb';
+}
+
 export function leadSchemaForSubmission(formOrigin: FormOrigin, pagePath: string) {
-  return isOfferLeadSubmission(formOrigin, pagePath) ? offerLeadApiSchema : leadApiSchema;
+  if (!isOfferLeadSubmission(formOrigin, pagePath)) return leadApiSchema;
+  return isOfferHeroPath(pagePath) ? offerHeroLeadApiSchema : offerLeadApiSchema;
 }
 
 export const extendedLeadFormSchema = leadFormSchema.extend({
@@ -125,4 +148,5 @@ export const extendedLeadFormSchema = leadFormSchema.extend({
 
 export type LeadFormData = z.infer<typeof leadFormSchema>;
 export type OfferLeadFormData = z.infer<typeof offerLeadFormSchema>;
+export type OfferHeroLeadFormData = z.infer<typeof offerHeroLeadFormSchema>;
 export type ExtendedLeadFormData = z.infer<typeof extendedLeadFormSchema>;

@@ -5,12 +5,12 @@ import { usePathname } from 'next/navigation';
 import { isGoogleAdsTouch } from '@/lib/attribution';
 import { captureAttribution } from '@/lib/attribution-client';
 import {
-  FACEBOOK_OFFER_PATH,
-  FACEBOOK_OFFER_PHONE,
   GOOGLE_ADS_PHONE,
   GOOGLE_ADS_PHONE_PATHS,
   isAlwaysGoogleAdsPhonePath,
+  isFacebookOfferDocumentPath,
   isFacebookOfferThankYou,
+  offerDisplayPhone,
   ORGANIC_PHONE,
   thankYouPhone,
   type DisplayPhone,
@@ -22,15 +22,13 @@ export type { DisplayPhone };
 const trackingPaths = new Set<string>(GOOGLE_ADS_PHONE_PATHS);
 
 function phoneBeforeAttribution(pathname: string): DisplayPhone {
-  if (pathname === FACEBOOK_OFFER_PATH) return FACEBOOK_OFFER_PHONE;
-  if (isAlwaysGoogleAdsPhonePath(pathname)) return GOOGLE_ADS_PHONE;
-  return ORGANIC_PHONE;
+  return offerDisplayPhone(pathname);
 }
 
 /**
- * /offer/facebook shows the Facebook offer number.
- * Other /offer pages show the Google Ads number.
- * /thank-you shows the Facebook offer number only after a submit from /offer/facebook.
+ * Facebook offer pages (/offer/facebook, /offer?src=fb, /offer?src=fb_static) show
+ * (253) 453-8597. A plain /offer visit shows the Google Ads number.
+ * /thank-you shows the Facebook offer number only after a submit from a Facebook offer page.
  * /sell-house-as-is and /cash-offer switch to the Google Ads number after a paid Google visit.
  * Every other page stays on the organic number.
  */
@@ -49,12 +47,12 @@ export function useTrackingPhone(): DisplayPhone {
       setPhone(thankYouPhone(fromFacebookOffer));
       return;
     }
-    if (pathname === FACEBOOK_OFFER_PATH) {
-      setPhone(FACEBOOK_OFFER_PHONE);
-      return;
-    }
-    if (isAlwaysGoogleAdsPhonePath(pathname)) {
-      setPhone(GOOGLE_ADS_PHONE);
+    if (
+      pathname === '/offer' ||
+      isFacebookOfferDocumentPath(pathname) ||
+      isAlwaysGoogleAdsPhonePath(pathname)
+    ) {
+      setPhone(offerDisplayPhone(pathname, window.location.search));
       return;
     }
     if (!trackingPaths.has(pathname)) {

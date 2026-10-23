@@ -10,10 +10,14 @@ The chat widget is a separate, GHL-hosted path and does not use this webhook.
    `/offer`, the Facebook page `/offer/facebook`, and the situation pages
    `/offer/foreclosure`, `/offer/inherited`, `/offer/as-is`, and `/offer/fire-damage`.
    There is no embedded GHL form and no direct browser call to the LeadConnector API.
-   Those pages collect name, phone, a required email, property address, a required yes/no answer to
+   Those pages collect name, a required phone, email, property address, a required yes/no answer to
    “Is your house currently listed with an agent?”, and a required call/text consent checkbox that
-   starts unchecked. The listing answer is posted as `listed_with_agent` (`yes` or `no`). Email is
-   the contact email. Consent is posted as `sms_consent` = `true` with `sms_consent_text_version`
+   starts unchecked. The `/offer` and `/offer/facebook` heroes (including `/offer?src=fb` and
+   `/offer?src=fb_static`) ask for the address and listing answer first, then name, phone, an
+   optional email, and consent. Situation offer pages keep every field on one step and still require
+   email. The listing answer is posted as `listed_with_agent` (`yes` or `no`). Email is the contact
+   email, and a blank hero email is sent as an empty string. Consent is posted as `sms_consent` =
+   `true` with `sms_consent_text_version`
    `a2p-v1`; the API records `sms_consent_at` when it accepts the lead. `LeadForm` does not ask the
    listing question or the offer consent box, and email stays optional there. City, condition,
    timeframe, and preferred contact stay required on
@@ -135,7 +139,7 @@ form and click labels below.
 
 | Payload key                                                               | Value                                                                                                                                                                                                                           |
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `first_name`, `last_name`, `full_name`, `phone`, `email`                  | Lead contact. Email is required on `/offer` pages and optional on the website form                                                                                                                                              |
+| `first_name`, `last_name`, `full_name`, `phone`, `email`                  | Lead contact. Email is optional on the two-step `/offer` and `/offer/facebook` hero and on the website form. Situation `/offer` pages still require email.                                                                      |
 | `address1`, `city`, `state`, `country`                                    | Property address, `WA`, `US`                                                                                                                                                                                                    |
 | `condition`, `timeframe`, `preferred_contact`, `reason_for_selling`       | Form answers                                                                                                                                                                                                                    |
 | `listed_with_agent`                                                       | `yes` or `no` from an `/offer` page; empty when the website form omitted it                                                                                                                                                     |
