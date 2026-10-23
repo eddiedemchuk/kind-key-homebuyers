@@ -15,6 +15,85 @@ import type { FormOrigin } from '@/lib/form-origin';
 import { GOOGLE_ADS_PHONE, type DisplayPhone } from '@/lib/phones';
 import { BUSINESS, localBusinessJsonLd } from '@/lib/site';
 
+const AGENT_COMPARISON = [
+  {
+    label: 'Commissions',
+    kindkey: '$0 commissions',
+    agent: '~6% agent commissions',
+  },
+  {
+    label: 'Repairs & Cleanout',
+    kindkey: 'Buy as-is — take what you want and leave the rest',
+    agent: 'You pay for repairs, cleaning, and staging',
+  },
+  {
+    label: 'Showings',
+    kindkey: 'No open houses or strangers walking through',
+    agent: 'Weeks of showings and open houses',
+  },
+  {
+    label: 'Timeline & Certainty',
+    kindkey: 'Cash offer — pick your closing date (as fast as 7 days)',
+    agent: '60–90+ days, and buyer financing can fall through',
+  },
+  {
+    label: 'Back Taxes, Liens & Code Cases',
+    kindkey:
+      'Paid out of the sale at closing, not out of your pocket first; open code cases & tenants in place OK',
+    agent: "Often must be resolved before a buyer's lender will close",
+  },
+] as const;
+
+const DISTRESS_NOTES = [
+  'Back taxes and liens are paid out of the sale at closing, not out of your pocket first.',
+  'Open code violations, unpermitted work, or tenants in place? We still buy without asking you to fix or evict first.',
+  'Take what you want and leave the rest — no cleanout needed.',
+] as const;
+
+function OfferAgentComparison() {
+  return (
+    <section className="mt-10" aria-labelledby="vs-agent-heading">
+      <h2 id="vs-agent-heading" className="text-xl font-bold">
+        Selling to KindKey vs. Listing With an Agent
+      </h2>
+      <div className="mt-4 overflow-hidden rounded-xl border border-gray-200">
+        <div className="grid grid-cols-2 border-b border-gray-200 text-sm font-bold">
+          <p className="bg-secondary px-3 py-2">KindKey</p>
+          <p className="border-l border-gray-200 px-3 py-2 text-text-secondary">
+            Traditional Agent
+          </p>
+        </div>
+        {AGENT_COMPARISON.map((row) => (
+          <div key={row.label} className="border-b border-gray-200 last:border-b-0">
+            <p className="px-3 pt-3 text-xs font-semibold text-text-secondary">{row.label}</p>
+            <div className="grid grid-cols-2">
+              <p className="px-3 py-3 text-sm font-medium leading-snug">{row.kindkey}</p>
+              <p className="border-l border-gray-200 px-3 py-3 text-sm leading-snug text-text-secondary">
+                {row.agent}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function OfferDistressNotes() {
+  return (
+    <section className="mt-8" aria-label="Taxes, code cases, and cleanout">
+      <ul className="space-y-3">
+        {DISTRESS_NOTES.map((note) => (
+          <li key={note} className="flex gap-3 text-base leading-snug">
+            <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-divider" aria-hidden />
+            <span>{note}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
 function FiveStars() {
   return (
     <p className="flex gap-0.5 text-amber-500" aria-label="5 stars">
@@ -34,6 +113,8 @@ export default function OfferLanding({
   phone = GOOGLE_ADS_PHONE,
   src,
   showOfferMath = false,
+  showAgentComparison = false,
+  showDistressNotes = false,
 }: {
   content: OfferLandingContent;
   formOrigin: FormOrigin;
@@ -45,6 +126,10 @@ export default function OfferLanding({
   src?: string;
   /** Short offer-math note shown under the form on /offer only. */
   showOfferMath?: boolean;
+  /** KindKey vs. agent comparison, shown on /offer. */
+  showAgentComparison?: boolean;
+  /** Taxes, code cases, and cleanout notes on /offer and /offer/foreclosure. */
+  showDistressNotes?: boolean;
 }) {
   const address = `${BUSINESS.streetAddress}, ${BUSINESS.addressLocality}, ${BUSINESS.addressRegion} ${BUSINESS.postalCode}`;
 
@@ -120,6 +205,8 @@ export default function OfferLanding({
               </div>
             </section>
           ) : null}
+          {showDistressNotes ? <OfferDistressNotes /> : null}
+          {showAgentComparison ? <OfferAgentComparison /> : null}
         </section>
 
         <section className="mt-12" aria-label="Why homeowners sell to us">

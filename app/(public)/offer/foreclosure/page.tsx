@@ -16,5 +16,11 @@ export const metadata: Metadata = {
 };
 
 export default function ForeclosureOfferPage() {
-  return <OfferLanding content={foreclosureOffer} formOrigin={foreclosureOffer.formOrigin} />;
+  return (
+    <OfferLanding
+      content={foreclosureOffer}
+      formOrigin={foreclosureOffer.formOrigin}
+      showDistressNotes
+    />
+  );
 }

@@ -50,6 +50,8 @@ export default function OfferGeneralLanding({
         phone={facebook ? FACEBOOK_OFFER_PHONE : GOOGLE_ADS_PHONE}
         src={facebook ? visit.src : undefined}
         showOfferMath
+        showAgentComparison
+        showDistressNotes
       />
     </>
   );
