@@ -1,4 +1,4 @@
-import { offerFacebookVisitFromSearch } from '@/lib/offer-facebook-visit';
+import { normalizeOfferSrc, offerFacebookVisitFromSearch } from '@/lib/offer-facebook-visit';
 
 export const ORGANIC_PHONE = { display: '(253) 518-3638', tel: '+12535183638' } as const;
 export const GOOGLE_ADS_PHONE = { display: '(253) 352-4379', tel: '+12533524379' } as const;
@@ -28,15 +28,34 @@ export function isFacebookOfferDocumentPath(pathname: string): boolean {
   return pathname === FACEBOOK_OFFER_PATH || pathname === FACEBOOK_OFFER_REWRITE_PATH;
 }
 
+/** Seller quiz documents. Both URLs default to the Facebook offer number. */
+export function isSellerQuizPath(pathname: string): boolean {
+  return pathname === '/quiz' || pathname === '/offer/quiz';
+}
+
+/**
+ * A quiz URL named a source other than the Facebook src values.
+ * Blank src still counts as the Facebook quiz default.
+ */
+export function hasExplicitNonFacebookSrc(search: string): boolean {
+  const query = search.startsWith('?') ? search.slice(1) : search;
+  const src = new URLSearchParams(query).get('src');
+  if (src == null || src.trim() === '') return false;
+  return normalizeOfferSrc(src) === null;
+}
+
 /** Google offer landings and a thank-you visit that did not come from a Facebook offer page. */
 export function isAlwaysGoogleAdsPhonePath(pathname: string): boolean {
-  if (isFacebookOfferDocumentPath(pathname)) return false;
+  if (isFacebookOfferDocumentPath(pathname) || isSellerQuizPath(pathname)) return false;
   return pathname === '/thank-you' || pathname === '/offer' || pathname.startsWith('/offer/');
 }
 
 /** Header, footer, and mobile call bar on an offer landing when the URL has no query. */
 export function offerLandingPhone(pathname: string): DisplayPhone {
-  return isFacebookOfferDocumentPath(pathname) ? FACEBOOK_OFFER_PHONE : GOOGLE_ADS_PHONE;
+  if (isFacebookOfferDocumentPath(pathname) || isSellerQuizPath(pathname)) {
+    return FACEBOOK_OFFER_PHONE;
+  }
+  return GOOGLE_ADS_PHONE;
 }
 
 /**
@@ -46,6 +65,9 @@ export function offerLandingPhone(pathname: string): DisplayPhone {
  */
 export function offerDisplayPhone(pathname: string, search = ''): DisplayPhone {
   if (isFacebookOfferDocumentPath(pathname)) return FACEBOOK_OFFER_PHONE;
+  if (isSellerQuizPath(pathname)) {
+    return hasExplicitNonFacebookSrc(search) ? GOOGLE_ADS_PHONE : FACEBOOK_OFFER_PHONE;
+  }
   if (pathname === '/offer' && offerFacebookVisitFromSearch(search)) return FACEBOOK_OFFER_PHONE;
   if (isAlwaysGoogleAdsPhonePath(pathname)) return GOOGLE_ADS_PHONE;
   return ORGANIC_PHONE;

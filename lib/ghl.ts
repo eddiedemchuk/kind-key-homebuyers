@@ -15,6 +15,11 @@ interface GHLLeadInput {
   propertyAddress: string;
   city?: string;
   condition?: string;
+  /** Seller quiz step 2 label. */
+  timeline?: string;
+  /** Seller quiz summary of condition, timeline, and listing status. */
+  situation?: string;
+  notes?: string;
   timeframe?: string;
   preferredContact?: string;
   smsNonMarketingConsent?: boolean;
@@ -90,6 +95,9 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
           { key: 'sms_consent_text_version', field_value: data.smsConsentTextVersion ?? '' },
         ]
       : []),
+    ...(data.timeline ? [{ key: 'timeline', field_value: data.timeline }] : []),
+    ...(data.situation ? [{ key: 'situation', field_value: data.situation }] : []),
+    ...(data.notes ? [{ key: 'notes', field_value: data.notes }] : []),
   ];
   const attributionNotes = formatAttributionNotes(
     attribution,
@@ -99,6 +107,17 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
   );
   const consentNotes = smsConsent
     ? `\nSMS consent: true\nSMS consent at: ${data.smsConsentAt ?? ''}\nSMS consent text: ${data.smsConsentTextVersion ?? ''}`
+    : '';
+  const hasQuizAnswers = Boolean(data.timeline || data.situation || data.notes);
+  const quizNotes = hasQuizAnswers
+    ? `\n${[
+        data.condition ? `Condition: ${data.condition}` : '',
+        data.timeline ? `Timeline: ${data.timeline}` : '',
+        data.situation ? `Situation: ${data.situation}` : '',
+        data.notes ? `Notes: ${data.notes}` : '',
+      ]
+        .filter(Boolean)
+        .join('\n')}`
     : '';
 
   return {
@@ -112,6 +131,9 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
     state: 'WA',
     country: 'US',
     condition: data.condition ?? '',
+    timeline: data.timeline ?? '',
+    situation: data.situation ?? '',
+    notes: data.notes ?? '',
     timeframe: data.timeframe ?? '',
     preferred_contact: data.preferredContact ?? '',
     reason_for_selling: data.reasonForSelling ?? '',
@@ -149,7 +171,7 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
     tags,
     source_tag: form.sourceTag,
     customFields,
-    attribution_notes: `${attributionNotes}${consentNotes}`,
+    attribution_notes: `${attributionNotes}${consentNotes}${quizNotes}`,
   };
 }
 

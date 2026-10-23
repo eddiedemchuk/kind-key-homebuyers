@@ -1,6 +1,8 @@
 import { z } from 'zod';
 import { type FormOrigin, isOfferFormOrigin } from './form-origin';
 import { isCompleteUsPhone } from './phone';
+import { isSellerQuizPath } from './phones';
+import { SELLER_QUIZ_CONDITIONS, SELLER_QUIZ_TIMELINES } from './seller-quiz';
 import { SMS_CONSENT_REQUIRED_MESSAGE, SMS_CONSENT_TEXT_VERSION } from './sms-consent';
 
 const optionalPhoneSchema = z.string().refine(
@@ -58,9 +60,16 @@ export const leadApiSchema = z.object({
   reasonForSelling: z.string().optional(),
   propertyAddress: z.string().min(5, 'Address is required').max(200),
   city: optionalCitySchema,
-  condition: conditionSchema.optional(),
+  condition: z.union([conditionSchema, z.enum(SELLER_QUIZ_CONDITIONS)]).optional(),
+  /** Seller quiz step 2. The long site form still uses timeframe. */
+  timeline: z.enum(SELLER_QUIZ_TIMELINES).optional(),
+  /** Seller quiz summary so GoHighLevel receives every tap answer. */
+  situation: z.string().trim().max(500).optional(),
+  notes: z.string().trim().max(1000).optional(),
   timeframe: timeframeSchema.optional(),
   preferredContact: preferredContactSchema.optional(),
+  /** Same yes/no as listed_with_agent. The quiz posts both names. */
+  listedWithAgent: listedWithAgentSchema.optional(),
   smsNonMarketingConsent: z.boolean().default(false),
   smsMarketingConsent: z.boolean().default(false),
   /** Optional so website forms can omit it. The /offer form requires yes or no. */
@@ -123,12 +132,25 @@ export const offerLeadApiSchema = offerLeadFormSchema.extend(offerConsentApiFiel
 export const offerHeroLeadApiSchema = offerHeroLeadFormSchema.extend(offerConsentApiFields);
 
 export function isOfferLeadSubmission(formOrigin: FormOrigin, pagePath: string): boolean {
-  return isOfferFormOrigin(formOrigin) || pagePath === '/offer' || pagePath.startsWith('/offer/');
+  return (
+    isOfferFormOrigin(formOrigin) ||
+    pagePath === '/offer' ||
+    pagePath.startsWith('/offer/') ||
+    isSellerQuizPath(pagePath)
+  );
 }
 
-/** Browser paths for the two-step hero. /offer/fb is the internal rewrite of ?src=fb. */
+/**
+ * Paths that allow a blank email. /offer/fb is the internal rewrite of ?src=fb.
+ * The seller quiz collects an optional email on the last step.
+ */
 export function isOfferHeroPath(pagePath: string): boolean {
-  return pagePath === '/offer' || pagePath === '/offer/facebook' || pagePath === '/offer/fb';
+  return (
+    pagePath === '/offer' ||
+    pagePath === '/offer/facebook' ||
+    pagePath === '/offer/fb' ||
+    isSellerQuizPath(pagePath)
+  );
 }
 
 export function leadSchemaForSubmission(formOrigin: FormOrigin, pagePath: string) {
