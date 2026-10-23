@@ -12,8 +12,9 @@ Each city record produces four routes:
 - `/areas/{slug}/sell-house-as-is`
 - `/areas/{slug}/sell-my-house-fast`
 
-The current seven city records therefore generate seven city hubs and 21 intent pages. Every route
-uses `generateStaticParams`; an unknown slug is handled with `notFound()`.
+Each city record generates a hub and three intent pages. Every route uses `generateStaticParams`;
+an unknown slug is handled with `notFound()`. The city list covers King County, Pierce County, and
+Kitsap County. Spanaway and Silverdale are unincorporated communities, not incorporated cities.
 
 ## Data model
 
@@ -86,14 +87,26 @@ Standalone situation routes live at the site root and are defined in `data/situa
 - `/sell-house-with-tenants`
 - `/sell-hoarder-house`
 
-Fire-damaged and foreclosure pages also exist for Auburn, Kent, Federal Way, Tacoma, and Puyallup:
+Fire-damaged and foreclosure pages exist for Auburn, Kent, Federal Way, Tacoma, Puyallup, and
+Edgewood:
 
 - `/areas/{slug}/sell-fire-damaged-house`
 - `/areas/{slug}/sell-house-before-foreclosure`
 
-Those ten pages are generated only for those five slugs. Content is in `data/cityFirePages.ts` and
-`data/cityForeclosurePages.ts`. City hubs link to them when a page exists. Milton and Edgewood do
-not have these extra routes.
+Edgewood’s versions are hand-written in `data/edgewoodSituations.ts` and include North Hill, Jovita,
+the Meridian corridor, acreage, and septic or well context. The other five cities live in
+`data/cityFirePages.ts` and `data/cityForeclosurePages.ts`.
+
+Every city also has these situation routes, generated from `data/cityDistressedPages.ts` except for
+Edgewood’s hand-written copies:
+
+- `/areas/{slug}/sell-inherited-probate-house`
+- `/areas/{slug}/sell-house-with-code-violations`
+- `/areas/{slug}/sell-house-with-tenants`
+- `/areas/{slug}/sell-hoarder-house`
+- `/areas/{slug}/sell-vacant-house`
+
+`/areas` is the county index. The footer and the blog template link the city and situation pages.
 
 Blog posts live in `data/blogPosts.ts` and render at `/blog` and `/blog/{slug}`.
 `public/llms.txt` summarizes the business for answer engines.

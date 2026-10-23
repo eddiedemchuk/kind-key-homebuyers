@@ -22,6 +22,9 @@ export default function CityGrid() {
             <h3 className="mb-2 text-xl font-semibold text-text-primary transition-colors group-hover:text-divider">
               {city.name}
             </h3>
+            <p className="mb-2 text-xs font-medium uppercase tracking-wide text-text-secondary">
+              {city.countyLabel}
+            </p>
             <p className="mb-4 text-sm text-text-secondary">{city.description}</p>
             <span className="text-sm font-medium text-divider group-hover:underline">
               Learn more about {city.name} →

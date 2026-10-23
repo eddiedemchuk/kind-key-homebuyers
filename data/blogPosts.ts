@@ -1,3 +1,4 @@
+import { expansionBlogPosts } from '@/data/expansionBlogPosts';
 import type { BlogPost } from '@/lib/content';
 
 const home = { name: 'Home', path: '/' };
@@ -725,7 +726,7 @@ export const blogPosts: BlogPost[] = [
         heading: 'Where a King County notice lives',
         paragraphs: [
           'RCW 61.24.040 records the notice of sale where the deed of trust is of record. For a King County deed, that is the King County Recorder. Kent, Federal Way, Renton, and Seattle are King County. Most of Auburn is too. Part of southern Auburn is Pierce County, and Milton can fall in either county. The notice names the county. Do not guess from the neighborhood, and do not search the Pierce County Auditor just because Tacoma is nearby.',
-          'Closer guides on this site cover Auburn, Federal Way, and Kent. Renton and Seattle do not have separate foreclosure pages here. The statute does not change at the city line, and KindKey buys in those cities from Auburn. The auction is held at the time and place on the notice. A lawsuit to restrain a sale under RCW 61.24.130 is filed in superior court. KindKey will not prepare it.',
+          'Closer guides on this site cover Auburn, Federal Way, and Kent. Renton has a city page and does not have a separate foreclosure page. Seattle does not have a city page or a foreclosure page here. The statute does not change at the city line, and KindKey buys in those cities from Auburn. The auction is held at the time and place on the notice. A lawsuit to restrain a sale under RCW 61.24.130 is filed in superior court. KindKey will not prepare it.',
         ],
       },
       {
@@ -839,7 +840,7 @@ export const blogPosts: BlogPost[] = [
         heading: 'Which Pierce County houses this covers',
         paragraphs: [
           'RCW 61.24.040 records the notice of sale with the auditor where the deed of trust is recorded. For these houses, that is the Pierce County Auditor. Tacoma, Puyallup, and Lakewood are cities in that county. Spanaway is unincorporated Pierce County. Edgewood is entirely in Pierce County. Milton is split with King County, and a slice of southern Auburn can be Pierce even when the mailing city says Auburn. The caption on the notice is the fact.',
-          'Guides on this site cover Edgewood and Milton, and Tacoma and Puyallup have foreclosure pages. Lakewood and Spanaway do not have their own pages here. KindKey can still look at the house. The auction is held where the notice says. A case to restrain the sale under RCW 61.24.130 is filed with the Pierce County Superior Court clerk in Tacoma. KindKey will not draft it.',
+          'Guides on this site cover Edgewood and Milton, and Tacoma and Puyallup have foreclosure pages. Lakewood and Spanaway have city pages and do not have separate foreclosure pages. KindKey can still look at the house. The auction is held where the notice says. A case to restrain the sale under RCW 61.24.130 is filed with the Pierce County Superior Court clerk in Tacoma. KindKey will not draft it.',
         ],
       },
       {
@@ -873,7 +874,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: 'Does KindKey buy in Lakewood and Spanaway?',
         answer:
-          'Yes. Both are in the Pierce County area KindKey buys. Call (206) 519-5463 or use the cash-offer form. There is not a separate Lakewood or Spanaway page on this site. The offer is on your house, not on a city slogan.',
+          'Yes. Lakewood and Spanaway each have a city page. Neither has a separate foreclosure page. Call (206) 519-5463 or use the cash-offer form. The offer is on your house, not on a city slogan.',
       },
       {
         question: 'How late can I catch up a Pierce County loan?',
@@ -1450,7 +1451,7 @@ export const blogPosts: BlogPost[] = [
         paragraphs: [
           'Auburn is KindKey’s home city. Downtown, Lea Hill, and Lakeland Hills are commonly King County. A parcel toward the southern edge can come back as Pierce County at title. Use the Auburn inherited-house guide for that split, and use this page for the King County side. The deed, once you have authority to sign, records with the King County Recorder when the parcel is in King County. Property-tax questions on that parcel go to King County, not to Pierce County.',
           'Kent is in King County, from East Hill and West Hill down to the valley floor. There is no separate Kent probate article on this site because the court file is the county file described above. Federal Way is also a King County residence question for a person who lived there. The Federal Way inherited-house guide covers the neighborhoods and the difference between superior court and municipal court. This page is the clerk’s offices those families share with Seattle and Kent.',
-          'Seattle is in King County, and the downtown courthouse is there. A decedent who lived in Seattle has a King County residence under the venue rule. This site’s city pages are Auburn, Kent, Federal Way, Milton, Tacoma, Edgewood, and Puyallup. The authority rules on this page are the same for a Seattle house. Call (206) 519-5463 and describe the property if you want to know whether KindKey will make an offer. KindKey is not a listing broker.',
+          'Seattle is in King County, and the downtown courthouse is there. A decedent who lived in Seattle has a King County residence under the venue rule. Seattle does not have its own city page on this site. The areas index lists the King, Pierce, and Kitsap County cities that do, including Renton, Burien, and the south county cities. The authority rules on this page are the same for a Seattle house. Call (206) 519-5463 and describe the property if you want to know whether KindKey will make an offer. KindKey is not a listing broker.',
         ],
       },
       {
@@ -4580,6 +4581,7 @@ export const blogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. Your attorney confirms authority. You can say no.',
   }),
+  ...expansionBlogPosts,
 ];
 
 export function getBlogPost(slug: string) {

@@ -2,9 +2,18 @@ import type { LongformContent } from '@/lib/content';
 
 const home = { name: 'Home', path: '/' };
 
+export type CitySituationKind =
+  | 'fire'
+  | 'foreclosure'
+  | 'inherited'
+  | 'code'
+  | 'tenants'
+  | 'hoarder'
+  | 'vacant';
+
 export interface CitySituationPage extends LongformContent {
   citySlug: string;
-  kind: 'fire' | 'foreclosure';
+  kind: CitySituationKind;
 }
 
 export const cityFirePages: CitySituationPage[] = [
@@ -471,9 +480,9 @@ export const cityFirePages: CitySituationPage[] = [
         description: 'If a loan deadline is part of the story.',
       },
       {
-        href: '/areas/edgewood',
-        label: 'Edgewood',
-        description: 'A nearby Pierce County city. Edgewood does not have a separate fire page.',
+        href: '/areas/edgewood/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Edgewood',
+        description: 'North Hill, Jovita, and the Meridian corridor in Pierce County.',
       },
     ],
     breadcrumbs: [

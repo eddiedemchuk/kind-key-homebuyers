@@ -4,7 +4,8 @@ import Script from 'next/script';
 import { getCityBySlug, cities } from '@/data/cities';
 import { getCitySituationLinks } from '@/data/citySituations';
 import CityPageClient from '@/components/CityPageClient';
-import { BUSINESS, localBusinessJsonLd } from '@/lib/site';
+import { faqJsonLd } from '@/lib/seo';
+import { BUSINESS, cityRealEstateServiceJsonLd, localBusinessJsonLd } from '@/lib/site';
 
 export async function generateStaticParams() {
   return cities.map((city) => ({
@@ -69,6 +70,26 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
       />
       <Script
         type="application/ld+json"
+        id="faq-schema"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqJsonLd(city.faq)).replace(/</g, '\\u003c'),
+        }}
+      />
+      <Script
+        type="application/ld+json"
+        id="real-estate-service-schema"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            cityRealEstateServiceJsonLd({
+              name: city.name,
+              slug: city.slug,
+              countyLabel: city.countyLabel,
+            })
+          ).replace(/</g, '\\u003c'),
+        }}
+      />
+      <Script
+        type="application/ld+json"
         id="breadcrumb-schema"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -103,6 +124,9 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
           slug: city.slug,
           description: city.description,
           intro: city.intro,
+          countyLabel: city.countyLabel,
+          neighborhoods: city.neighborhoods,
+          marketContext: city.marketContext,
           faq: city.faq,
         }}
         heroVideoSrc={heroVideoSrc}

@@ -6,12 +6,13 @@ import AdsFAQ from '@/components/AdsFAQ';
 import SEOContentAccordion from '@/components/SEOContentAccordion';
 import CTASection from '@/components/CTASection';
 import Link from 'next/link';
+import { citiesByCounty } from '@/data/cities';
 import { localBusinessJsonLd } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Sell Your House FAST Anywhere in Washington — Cash Offer in 24 Hours',
   description:
-    'Sell your house as-is directly to a principal buyer across Washington State. No repairs required before sale. Close in 7–14 days. Serving Kent, Auburn, Tacoma, Federal Way, Milton, Edgewood, Puyallup, and all of WA.',
+    'Sell your house as-is directly to a principal buyer across Washington State. No repairs required before sale. Close in 7–14 days. Serving King County, Pierce County, Kitsap County, and the rest of WA.',
   openGraph: {
     title: 'Sell Your House FAST Anywhere in Washington — Cash Offer',
     description:
@@ -34,7 +35,7 @@ const washingtonFAQ = [
   {
     question: 'Do you buy houses anywhere in Washington State?',
     answer:
-      'Yes! We buy houses throughout Washington State, including Kent, Auburn, Tacoma, Federal Way, Milton, Edgewood, Puyallup, and surrounding areas. No matter where your property is located in WA, we can make you a fair cash offer.',
+      'Yes. We buy houses throughout Washington State, including King County, Pierce County, and Kitsap County. The city list on this page links to the local pages. If your city is not listed, contact us and we can still look at the house.',
   },
   {
     question: 'Do I need to make repairs before selling?',
@@ -54,7 +55,7 @@ const washingtonFAQ = [
 ];
 
 const washingtonSEOContent = {
-  intro: `Washington State offers diverse real estate markets from the bustling Seattle metro area to the peaceful communities of Pierce and King Counties. Whether you're in Kent, Auburn, Tacoma, Federal Way, Milton, Edgewood, Puyallup, or anywhere else in Washington, selling your house can be stressful and time-consuming.`,
+  intro: `Washington State offers different housing from King County and Pierce County to Kitsap County across the Sound. Whether you are in Auburn, Tacoma, Edgewood, Bremerton, Port Orchard, or another Washington city, selling can be stressful and time-consuming.`,
   description: `We're a local Washington-based cash home buyer serving homeowners throughout the entire state. We understand the unique real estate dynamics across different Washington communities and can provide fair, transparent cash offers regardless of your property's location or condition.`,
 };
 
@@ -87,23 +88,22 @@ export default function SellHouseWashingtonPage() {
             <h2 className="mb-8 text-center text-2xl font-bold text-text-primary md:text-3xl">
               We Buy Houses in Cities Throughout Washington
             </h2>
-            <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-              {[
-                { name: 'Kent', slug: 'kent' },
-                { name: 'Auburn', slug: 'auburn' },
-                { name: 'Tacoma', slug: 'tacoma' },
-                { name: 'Federal Way', slug: 'federal-way' },
-                { name: 'Milton', slug: 'milton' },
-                { name: 'Edgewood', slug: 'edgewood' },
-                { name: 'Puyallup', slug: 'puyallup' },
-              ].map((city) => (
-                <Link
-                  key={city.slug}
-                  href={`/areas/${city.slug}`}
-                  className="rounded-lg border border-divider bg-secondary px-4 py-3 text-center font-medium text-text-primary transition-colors hover:border-accent hover:bg-accent/10"
-                >
-                  {city.name}
-                </Link>
+            <div className="space-y-8">
+              {citiesByCounty().map((group) => (
+                <div key={group.group}>
+                  <h3 className="mb-3 text-lg font-semibold text-text-primary">{group.label}</h3>
+                  <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+                    {group.cities.map((city) => (
+                      <Link
+                        key={city.slug}
+                        href={`/areas/${city.slug}`}
+                        className="rounded-lg border border-divider bg-secondary px-4 py-3 text-center font-medium text-text-primary transition-colors hover:border-accent hover:bg-accent/10"
+                      >
+                        {city.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
             <p className="mt-6 text-center text-text-secondary">

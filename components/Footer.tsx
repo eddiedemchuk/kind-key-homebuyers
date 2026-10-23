@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { citiesByCounty } from '@/data/cities';
 import { APPROVED_TRANSACTION_DISCLOSURE } from '@/data/disclosures';
 import TrackingPhoneLink from '@/components/TrackingPhoneLink';
 
@@ -15,7 +16,7 @@ export default function Footer() {
             </h3>
             <p className="mb-4 text-text-secondary">
               {process.env.NEXT_PUBLIC_BRAND_TAGLINE ||
-                'Your Local Home Buyer in Kent, Federal Way, Auburn, Milton, Tacoma, Edgewood & Puyallup'}
+                'Principal cash home buyer in King County, Pierce County, and Kitsap County, based in Auburn'}
             </p>
             <p className="mt-4 text-sm text-text-secondary">{APPROVED_TRANSACTION_DISCLOSURE}</p>
           </div>
@@ -166,6 +167,34 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+        </div>
+
+        <div className="mt-10 border-t border-divider pt-8">
+          <h4 className="mb-4 font-semibold text-text-primary">Areas we buy</h4>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {citiesByCounty().map((group) => (
+              <div key={group.group}>
+                <h5 className="mb-2 text-sm font-semibold text-text-primary">{group.label}</h5>
+                <ul className="space-y-1">
+                  {group.cities.map((city) => (
+                    <li key={city.slug}>
+                      <Link
+                        href={`/areas/${city.slug}`}
+                        className="text-sm text-text-secondary transition-colors hover:text-divider"
+                      >
+                        {city.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 text-sm">
+            <Link href="/areas" className="text-text-secondary hover:text-divider">
+              All areas in King, Pierce, and Kitsap County
+            </Link>
+          </p>
         </div>
 
         <div className="mt-8 border-t border-divider pt-8 text-center text-sm text-text-secondary">

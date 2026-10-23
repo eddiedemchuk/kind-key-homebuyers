@@ -52,7 +52,8 @@ The main routes are:
 - `/areas/{city}/sell-my-house-fast`
 
 `data/cities.ts` is the source of truth for city names, slugs, descriptions, introductions, and
-city FAQs. Seven city records currently generate seven hubs and 21 intent pages.
+city FAQs. Each city record generates a hub and three intent pages, plus the distressed situation
+pages wired in `data/citySituations.ts`.
 `data/intentFAQs.ts` supplies intent-specific FAQs. `data/disclosures.ts` centralizes approved
 transaction and business-model wording reused by visible content and structured data.
 

@@ -23,7 +23,7 @@ export default function HeroSection({
   hasVideoBackground,
   companyName,
   heading = 'Sell Your House Fast & Fair — For Cash, As-Is',
-  subheading = 'Buying houses throughout Washington State. Primary areas: Kent, Federal Way, Auburn, Milton, Tacoma, Edgewood, Puyallup. No repairs. No agent commission charged by KindKey. Simple, transparent cash offer.',
+  subheading = 'Buying houses throughout Washington State, including King, Pierce, and Kitsap County. No repairs. No agent commission charged by KindKey. Simple, transparent cash offer.',
 }: HeroSectionProps) {
   const [scrollY, setScrollY] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
