@@ -19,7 +19,7 @@ export default function RootDocument({
   metaPixel = false,
 }: Readonly<{
   children: React.ReactNode;
-  /** Facebook offer document only. Other routes must leave this false. */
+  /** Facebook offer and seller-quiz documents. Other routes must leave this false. */
   metaPixel?: boolean;
 }>) {
   const googleAdsId = 'AW-17766515185';

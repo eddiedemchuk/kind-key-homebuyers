@@ -185,6 +185,8 @@ describe('lead schemas', () => {
     assert.equal(isOfferHeroPath('/offer'), true);
     assert.equal(isOfferHeroPath('/offer/facebook'), true);
     assert.equal(isOfferHeroPath('/offer/fb'), true);
+    assert.equal(isOfferHeroPath('/quiz'), true);
+    assert.equal(isOfferHeroPath('/offer/quiz'), true);
     assert.equal(isOfferHeroPath('/offer/inherited'), false);
     assert.equal(
       leadSchemaForSubmission('google_ads_landing', '/offer').safeParse(heroBlankEmail).success,
@@ -224,5 +226,50 @@ describe('lead schemas', () => {
       leadSchemaForSubmission('website', '/contact').safeParse(shortOffer).success,
       true
     );
+  });
+
+  it('accepts seller quiz answers and still requires a phone', () => {
+    const quizLead = {
+      name: 'Ada Lovelace',
+      phone: '(253) 555-0100',
+      email: '',
+      propertyAddress: '123 Main St, Auburn, WA',
+      listed_with_agent: 'no' as const,
+      listedWithAgent: 'no' as const,
+      sms_consent: true,
+      sms_consent_text_version: SMS_CONSENT_TEXT_VERSION,
+      smsNonMarketingConsent: true,
+      smsMarketingConsent: true,
+      condition: 'Needs Major Repairs',
+      timeline: 'As Fast as 7 Days',
+      situation:
+        'Condition: Needs Major Repairs. Timeline: As Fast as 7 Days. Listed: No — Not Listed.',
+      notes:
+        'Condition: Needs Major Repairs. Timeline: As Fast as 7 Days. Listed: No — Not Listed.',
+      src: 'fb',
+    };
+
+    for (const pagePath of ['/quiz', '/offer/quiz']) {
+      const parsed = leadSchemaForSubmission('facebook_ads_eddie', pagePath).safeParse(quizLead);
+      assert.equal(parsed.success, true, pagePath);
+      if (!parsed.success) continue;
+      assert.equal(parsed.data.condition, 'Needs Major Repairs');
+      assert.equal(parsed.data.timeline, 'As Fast as 7 Days');
+      assert.equal(parsed.data.listedWithAgent, 'no');
+      assert.equal(parsed.data.listed_with_agent, 'no');
+      assert.equal(parsed.data.email, '');
+
+      const missingPhone = leadSchemaForSubmission('facebook_ads_eddie', pagePath).safeParse({
+        ...quizLead,
+        phone: '',
+      });
+      assert.equal(missingPhone.success, false, pagePath);
+      if (!missingPhone.success) {
+        assert.equal(
+          missingPhone.error.issues.find((issue) => issue.path[0] === 'phone')?.message,
+          'Phone is required.'
+        );
+      }
+    }
   });
 });

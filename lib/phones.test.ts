@@ -7,6 +7,7 @@ import {
   hasFacebookOfferThankYouFlag,
   isAlwaysGoogleAdsPhonePath,
   isFacebookOfferThankYou,
+  isSellerQuizPath,
   offerDisplayPhone,
   offerLandingPhone,
   ORGANIC_PHONE,
@@ -81,6 +82,34 @@ describe('isAlwaysGoogleAdsPhonePath', () => {
     assert.equal(offerDisplayPhone('/offer', '?utm_source=facebook').tel, FACEBOOK_OFFER_PHONE.tel);
     assert.equal(offerDisplayPhone('/offer/facebook', '?src=google'), FACEBOOK_OFFER_PHONE);
     assert.equal(offerDisplayPhone('/offer/fb', '?src=fb'), FACEBOOK_OFFER_PHONE);
+  });
+
+  it('defaults seller quiz pages to the Facebook offer number', () => {
+    for (const path of ['/quiz', '/offer/quiz']) {
+      assert.equal(isSellerQuizPath(path), true, path);
+      assert.equal(isAlwaysGoogleAdsPhonePath(path), false, path);
+      assert.equal(offerLandingPhone(path), FACEBOOK_OFFER_PHONE, path);
+      assert.equal(offerDisplayPhone(path).display, '(253) 453-8597', path);
+      assert.equal(offerDisplayPhone(path).tel, '+12534538597', path);
+    }
+
+    for (const search of [
+      '?src=fb',
+      '?src=FB',
+      'src=fb_static',
+      '?src=FB_STATIC',
+      '?utm_source=facebook',
+    ]) {
+      assert.equal(offerDisplayPhone('/quiz', search).display, '(253) 453-8597', search);
+      assert.equal(offerDisplayPhone('/quiz', search).tel, '+12534538597', search);
+      assert.equal(offerDisplayPhone('/offer/quiz', search).tel, '+12534538597', search);
+    }
+
+    assert.equal(offerDisplayPhone('/quiz', '?src=google').display, '(253) 352-4379');
+    assert.equal(offerDisplayPhone('/offer/quiz', '?src=google').tel, GOOGLE_ADS_PHONE.tel);
+    assert.equal(offerDisplayPhone('/quiz', '?src=fb').display, '(253) 453-8597');
+    assert.notEqual(offerDisplayPhone('/quiz', '?src=fb').display, '(253) 352-4379');
+    assert.notEqual(offerDisplayPhone('/offer/quiz').tel, GOOGLE_ADS_PHONE.tel);
   });
 
   it('leaves organic pages on the organic number', () => {

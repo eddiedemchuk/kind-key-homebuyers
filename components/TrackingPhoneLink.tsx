@@ -10,6 +10,7 @@ import {
   isAlwaysGoogleAdsPhonePath,
   isFacebookOfferDocumentPath,
   isFacebookOfferThankYou,
+  isSellerQuizPath,
   offerDisplayPhone,
   ORGANIC_PHONE,
   thankYouPhone,
@@ -26,8 +27,9 @@ function phoneBeforeAttribution(pathname: string): DisplayPhone {
 }
 
 /**
- * Facebook offer pages (/offer/facebook, /offer?src=fb, /offer?src=fb_static) show
- * (253) 453-8597. A plain /offer visit shows the Google Ads number.
+ * Facebook offer pages (/offer/facebook, /offer?src=fb, /offer?src=fb_static) and the
+ * seller quiz (/quiz, /offer/quiz) show (253) 453-8597 unless the quiz URL sets a
+ * non-Facebook src. A plain /offer visit shows the Google Ads number.
  * /thank-you shows the Facebook offer number only after a submit from a Facebook offer page.
  * /sell-house-as-is and /cash-offer switch to the Google Ads number after a paid Google visit.
  * Every other page stays on the organic number.
@@ -49,6 +51,7 @@ export function useTrackingPhone(): DisplayPhone {
     }
     if (
       pathname === '/offer' ||
+      isSellerQuizPath(pathname) ||
       isFacebookOfferDocumentPath(pathname) ||
       isAlwaysGoogleAdsPhonePath(pathname)
     ) {

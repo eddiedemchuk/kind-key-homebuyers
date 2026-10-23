@@ -4,7 +4,7 @@ import '../globals.css';
 
 export const metadata = rootMetadata;
 
-/** /offer/facebook and the rewritten /offer?src=fb|fb_static document. */
+/** Facebook offer documents and the seller quiz. The Meta pixel lives in <head>. */
 export default function MetaPixelRootLayout({
   children,
 }: Readonly<{
