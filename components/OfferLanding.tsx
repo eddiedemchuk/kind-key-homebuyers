@@ -144,12 +144,13 @@ export default function OfferLanding({
   showOfferMath = false,
   showAgentComparison = false,
   showDistressNotes = false,
+  steppedForm = false,
 }: {
   content: OfferLandingContent;
   formOrigin: FormOrigin;
   /** Passed through to the form. Facebook offer visits set this. */
   trackMetaLead?: boolean;
-  /** Header, footer, and mobile call bar. Defaults to the Google Ads number. */
+  /** Header, footer, menu, and mobile call bar. Defaults to the Google Ads number. */
   phone?: DisplayPhone;
   /** Query src for a Facebook /offer visit. Empty when only utm_source=facebook matched. */
   src?: string;
@@ -159,6 +160,8 @@ export default function OfferLanding({
   showAgentComparison?: boolean;
   /** Taxes, code cases, and cleanout notes on /offer and /offer/foreclosure. */
   showDistressNotes?: boolean;
+  /** Two-step hero form on /offer and /offer/facebook. Situation pages stay one step. */
+  steppedForm?: boolean;
 }) {
   const address = `${BUSINESS.streetAddress}, ${BUSINESS.addressLocality}, ${BUSINESS.addressRegion} ${BUSINESS.postalCode}`;
 
@@ -197,7 +200,7 @@ export default function OfferLanding({
               <MobileNavButton />
             </div>
           </div>
-          <MobileNavPanel className="mx-auto max-w-xl px-5" />
+          <MobileNavPanel className="mx-auto max-w-xl px-5" phone={phone} />
         </MobileNavProvider>
       </header>
 
@@ -219,6 +222,7 @@ export default function OfferLanding({
               formOrigin={formOrigin}
               trackMetaLead={trackMetaLead}
               src={src}
+              stepped={steppedForm}
             />
           </div>
           {showOfferMath ? (

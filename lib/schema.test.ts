@@ -4,7 +4,10 @@ import { SMS_CONSENT_TEXT_VERSION } from './sms-consent';
 import {
   leadApiSchema,
   leadFormSchema,
+  isOfferHeroPath,
   leadSchemaForSubmission,
+  offerHeroLeadApiSchema,
+  offerHeroLeadFormSchema,
   offerLeadApiSchema,
   offerLeadFormSchema,
 } from './schema';
@@ -168,6 +171,43 @@ describe('lead schemas', () => {
     const apiOffer = { ...offer, sms_consent_text_version: SMS_CONSENT_TEXT_VERSION };
     assert.equal(offerLeadApiSchema.safeParse(apiOffer).success, true);
     assert.equal(offerLeadApiSchema.safeParse(offer).success, false);
+    assert.equal(offerHeroLeadFormSchema.safeParse({ ...offer, email: '' }).success, true);
+    assert.equal(offerHeroLeadFormSchema.safeParse({ ...offer, email: '   ' }).success, true);
+    assert.equal(
+      offerHeroLeadFormSchema.safeParse({ ...offer, email: 'not-an-email' }).success,
+      false
+    );
+    const heroBlankEmail = {
+      ...apiOffer,
+      email: '',
+    };
+    assert.equal(offerHeroLeadApiSchema.safeParse(heroBlankEmail).success, true);
+    assert.equal(isOfferHeroPath('/offer'), true);
+    assert.equal(isOfferHeroPath('/offer/facebook'), true);
+    assert.equal(isOfferHeroPath('/offer/fb'), true);
+    assert.equal(isOfferHeroPath('/offer/inherited'), false);
+    assert.equal(
+      leadSchemaForSubmission('google_ads_landing', '/offer').safeParse(heroBlankEmail).success,
+      true
+    );
+    assert.equal(
+      leadSchemaForSubmission('facebook_ads_eddie', '/offer/facebook').safeParse(heroBlankEmail)
+        .success,
+      true
+    );
+    assert.equal(
+      leadSchemaForSubmission('google_ads_inherited', '/offer/inherited').safeParse(heroBlankEmail)
+        .success,
+      false
+    );
+    const heroMissingPhone = offerHeroLeadFormSchema.safeParse({ ...offer, phone: '' });
+    assert.equal(heroMissingPhone.success, false);
+    if (!heroMissingPhone.success) {
+      assert.equal(
+        heroMissingPhone.error.issues.find((issue) => issue.path[0] === 'phone')?.message,
+        'Phone is required.'
+      );
+    }
     assert.equal(
       offerLeadApiSchema.safeParse({ ...apiOffer, sms_consent_text_version: 'old' }).success,
       false

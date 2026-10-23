@@ -1,13 +1,17 @@
+import { offerFacebookVisitFromSearch } from '@/lib/offer-facebook-visit';
+
 export const ORGANIC_PHONE = { display: '(253) 518-3638', tel: '+12535183638' } as const;
 export const GOOGLE_ADS_PHONE = { display: '(253) 352-4379', tel: '+12533524379' } as const;
 export const FACEBOOK_ADS_PHONE = { display: '(206) 519-5463', tel: '+12065195463' } as const;
-/** Number shown on /offer/facebook and on /thank-you after that page's form is submitted. */
+/** Number shown on Facebook offer pages and on /thank-you after that form is submitted. */
 export const FACEBOOK_OFFER_PHONE = { display: '(253) 453-8597', tel: '+12534538597' } as const;
 
 /** Organic pages that swap to the Google Ads number after a paid Google visit. */
 export const GOOGLE_ADS_PHONE_PATHS = ['/sell-house-as-is', '/cash-offer'] as const;
 
 export const FACEBOOK_OFFER_PATH = '/offer/facebook';
+/** Internal document for /offer?src=fb and /offer?src=fb_static. The browser URL stays /offer. */
+export const FACEBOOK_OFFER_REWRITE_PATH = '/offer/fb';
 export const FACEBOOK_OFFER_THANK_YOU_KEY = 'kk_facebook_offer_phone';
 const FACEBOOK_OFFER_THANK_YOU_VALUE = 'facebook';
 
@@ -19,15 +23,32 @@ export interface ThankYouPhoneStorage {
   removeItem(key: string): void;
 }
 
-/** Google offer landings and a thank-you visit that did not come from /offer/facebook. */
+/** /offer/facebook and the rewritten /offer?src=fb|fb_static document. */
+export function isFacebookOfferDocumentPath(pathname: string): boolean {
+  return pathname === FACEBOOK_OFFER_PATH || pathname === FACEBOOK_OFFER_REWRITE_PATH;
+}
+
+/** Google offer landings and a thank-you visit that did not come from a Facebook offer page. */
 export function isAlwaysGoogleAdsPhonePath(pathname: string): boolean {
-  if (pathname === FACEBOOK_OFFER_PATH) return false;
+  if (isFacebookOfferDocumentPath(pathname)) return false;
   return pathname === '/thank-you' || pathname === '/offer' || pathname.startsWith('/offer/');
 }
 
-/** Header, footer, and mobile call bar on an offer landing. */
+/** Header, footer, and mobile call bar on an offer landing when the URL has no query. */
 export function offerLandingPhone(pathname: string): DisplayPhone {
-  return pathname === FACEBOOK_OFFER_PATH ? FACEBOOK_OFFER_PHONE : GOOGLE_ADS_PHONE;
+  return isFacebookOfferDocumentPath(pathname) ? FACEBOOK_OFFER_PHONE : GOOGLE_ADS_PHONE;
+}
+
+/**
+ * Phone for an offer URL, including the query string.
+ * src=fb, src=fb_static, and utm_source=facebook use the Facebook offer number.
+ * A plain /offer visit keeps the Google Ads number.
+ */
+export function offerDisplayPhone(pathname: string, search = ''): DisplayPhone {
+  if (isFacebookOfferDocumentPath(pathname)) return FACEBOOK_OFFER_PHONE;
+  if (pathname === '/offer' && offerFacebookVisitFromSearch(search)) return FACEBOOK_OFFER_PHONE;
+  if (isAlwaysGoogleAdsPhonePath(pathname)) return GOOGLE_ADS_PHONE;
+  return ORGANIC_PHONE;
 }
 
 export function thankYouHref(

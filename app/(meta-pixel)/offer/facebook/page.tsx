@@ -23,6 +23,7 @@ export default function FacebookEddieOfferPage() {
       formOrigin={facebookEddieOffer.formOrigin}
       trackMetaLead
       phone={FACEBOOK_OFFER_PHONE}
+      steppedForm
     />
   );
 }

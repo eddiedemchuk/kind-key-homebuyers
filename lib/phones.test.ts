@@ -7,6 +7,7 @@ import {
   hasFacebookOfferThankYouFlag,
   isAlwaysGoogleAdsPhonePath,
   isFacebookOfferThankYou,
+  offerDisplayPhone,
   offerLandingPhone,
   ORGANIC_PHONE,
   rememberThankYouPhoneSource,
@@ -50,13 +51,36 @@ describe('isAlwaysGoogleAdsPhonePath', () => {
     assert.equal(GOOGLE_ADS_PHONE.tel, '+12533524379');
   });
 
-  it('uses the Facebook offer number only on /offer/facebook', () => {
+  it('uses the Facebook offer number on Facebook offer documents', () => {
     assert.equal(isAlwaysGoogleAdsPhonePath('/offer/facebook'), false);
+    assert.equal(isAlwaysGoogleAdsPhonePath('/offer/fb'), false);
     assert.equal(offerLandingPhone('/offer/facebook'), FACEBOOK_OFFER_PHONE);
+    assert.equal(offerLandingPhone('/offer/fb'), FACEBOOK_OFFER_PHONE);
     assert.equal(FACEBOOK_OFFER_PHONE.display, '(253) 453-8597');
     assert.equal(FACEBOOK_OFFER_PHONE.tel, '+12534538597');
     assert.equal(offerLandingPhone('/offer').tel, '+12533524379');
     assert.equal(offerLandingPhone('/offer/inherited').tel, '+12533524379');
+  });
+
+  it('keeps the Google Ads number on /offer unless the visit is Facebook', () => {
+    assert.equal(offerDisplayPhone('/offer').tel, GOOGLE_ADS_PHONE.tel);
+    assert.equal(offerDisplayPhone('/offer', '').display, '(253) 352-4379');
+    assert.equal(offerDisplayPhone('/offer', '?src=google').tel, GOOGLE_ADS_PHONE.tel);
+    assert.equal(offerDisplayPhone('/offer', '?src=facebook').tel, GOOGLE_ADS_PHONE.tel);
+    assert.equal(offerDisplayPhone('/offer/inherited', '?src=fb').tel, GOOGLE_ADS_PHONE.tel);
+
+    for (const search of [
+      '?src=fb',
+      '?src=FB',
+      'src=fb_static',
+      '?src=FB_STATIC&utm_source=facebook',
+    ]) {
+      assert.equal(offerDisplayPhone('/offer', search).tel, FACEBOOK_OFFER_PHONE.tel, search);
+      assert.equal(offerDisplayPhone('/offer', search).display, '(253) 453-8597', search);
+    }
+    assert.equal(offerDisplayPhone('/offer', '?utm_source=facebook').tel, FACEBOOK_OFFER_PHONE.tel);
+    assert.equal(offerDisplayPhone('/offer/facebook', '?src=google'), FACEBOOK_OFFER_PHONE);
+    assert.equal(offerDisplayPhone('/offer/fb', '?src=fb'), FACEBOOK_OFFER_PHONE);
   });
 
   it('leaves organic pages on the organic number', () => {

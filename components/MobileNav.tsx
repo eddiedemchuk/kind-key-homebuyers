@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { createContext, useContext, useEffect, useId, useState } from 'react';
 import TrackingPhoneLink from '@/components/TrackingPhoneLink';
 import { isActivePath, siteNavLinks } from '@/components/siteNav';
+import type { DisplayPhone } from '@/lib/phones';
 
 interface MobileNavContextValue {
   open: boolean;
@@ -76,7 +77,14 @@ export function MobileNavButton({ className = '' }: { className?: string }) {
   );
 }
 
-export function MobileNavPanel({ className = '' }: { className?: string }) {
+export function MobileNavPanel({
+  className = '',
+  phone,
+}: {
+  className?: string;
+  /** Offer pages pass the same number used in the header and sticky bar. */
+  phone?: DisplayPhone;
+}) {
   const { open, setOpen, panelId } = useMobileNav();
   const pathname = usePathname();
   const close = () => setOpen(false);
@@ -98,10 +106,20 @@ export function MobileNavPanel({ className = '' }: { className?: string }) {
             {link.label}
           </Link>
         ))}
-        <TrackingPhoneLink
-          onClick={close}
-          className="flex min-h-11 items-center text-base font-medium text-text-secondary transition-colors hover:text-divider"
-        />
+        {phone ? (
+          <a
+            href={`tel:${phone.tel}`}
+            onClick={close}
+            className="flex min-h-11 items-center text-base font-medium text-text-secondary transition-colors hover:text-divider"
+          >
+            {phone.display}
+          </a>
+        ) : (
+          <TrackingPhoneLink
+            onClick={close}
+            className="flex min-h-11 items-center text-base font-medium text-text-secondary transition-colors hover:text-divider"
+          />
+        )}
         <a
           href="mailto:info@kindkeyhomebuyers.com"
           onClick={close}
