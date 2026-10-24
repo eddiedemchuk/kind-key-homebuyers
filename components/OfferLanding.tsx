@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import LeadConnectorChat from '@/components/LeadConnectorChat';
 import { MobileNavButton, MobileNavPanel, MobileNavProvider } from '@/components/MobileNav';
+import OfferCityHeadline from '@/components/OfferCityHeadline';
 import OfferLeadForm from '@/components/OfferLeadForm';
 import OfferMobileBar, { OfferJumpButton, OfferPhoneLink } from '@/components/OfferMobileBar';
 import type { OfferLandingContent } from '@/data/offerLandings';
@@ -206,8 +207,12 @@ export default function OfferLanding({
 
       <div className="mx-auto max-w-xl px-5 pb-[calc(65px+env(safe-area-inset-bottom,0px))] pt-2 md:pb-16 md:pt-8">
         <section>
-          <h1 className="text-balance text-3xl font-bold leading-tight" style={{ marginBottom: 0 }}>
-            {content.headline}
+          <h1
+            className="text-balance text-3xl font-bold leading-tight"
+            style={{ marginBottom: 0 }}
+            data-offer-headline
+          >
+            <OfferCityHeadline headline={content.headline} />
           </h1>
           <p className="mt-3 text-base leading-relaxed text-text-secondary">{content.subhead}</p>
           <p className="mt-4 inline-flex items-center rounded-full border-2 border-divider bg-secondary px-4 py-2 text-sm font-bold text-text-primary">
