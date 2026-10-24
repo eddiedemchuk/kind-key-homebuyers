@@ -406,6 +406,10 @@ export default function OfferLeadForm({
         </div>
       ) : null}
 
+      <p className="flex items-center justify-center gap-2 text-center text-sm font-medium leading-tight text-text-primary">
+        <span className="h-2 w-2 shrink-0 rounded-full bg-divider" aria-hidden />
+        You pick the closing date.
+      </p>
       <p className="text-center text-xs leading-tight text-text-secondary">
         Filling this out doesn&apos;t commit you to sell.
       </p>
