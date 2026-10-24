@@ -8,16 +8,17 @@ function post(
   slug: string,
   data: Omit<BlogPost, 'slug' | 'path' | 'publishedAt' | 'updatedAt' | 'breadcrumbs'> & {
     breadcrumbName: string;
+    publishedAt?: string;
   }
 ): BlogPost {
   const path = `/blog/${slug}`;
-  const { breadcrumbName, ...rest } = data;
+  const { breadcrumbName, publishedAt: date = publishedAt, ...rest } = data;
   return {
     ...rest,
     slug,
     path,
-    publishedAt,
-    updatedAt: publishedAt,
+    publishedAt: date,
+    updatedAt: date,
     breadcrumbs: [home, blog, { name: breadcrumbName, path }],
   };
 }
@@ -713,5 +714,133 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaTitle: 'Ask for a Bremerton offer once you know who can sign',
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. KindKey will price the house as it is.',
+  }),
+  post('sell-house-with-tenants-edgewood-wa', {
+    breadcrumbName: 'Tenants in Edgewood',
+    title: 'Selling a House with Tenants in Edgewood, WA',
+    description:
+      'How Edgewood owners sell a North Hill or valley rental with tenants in place, including a shop, septic, or an inherited house. KindKey buys as a principal. Not legal advice.',
+    h1: 'Selling a House with Tenants in Edgewood, WA',
+    publishedAt: '2026-10-24',
+    intro: [
+      `You can sell an Edgewood house with tenants still living there. You do not have to evict them, empty the shop, or replace a septic system first. ${office} KindKey is not a property manager and not a landlord-tenant lawyer.`,
+      'Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. Most residents live on North Hill. A smaller share of the city sits in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. A rental on a long driveway, with a shop set back from the street, is a normal Edgewood house. It is not a reason the occupants have to leave before anyone will look.',
+    ],
+    callout:
+      'You do not have to deliver the house vacant. Reach out, and KindKey will help you through the whole process from start to finish. The tenant can stay. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'Who is actually living on the property',
+        paragraphs: [
+          'Say who is there before anyone schedules a visit. It may be one household in the house, a separate person in a garage or a room over the shop, or a tenant in the house while the shop is still full of your tools. Some agreements are written. Some are month-to-month. Some were never written down. KindKey prices the property you describe. A single Edgewood rent, guessed before anyone hears the facts, is not an offer.',
+          'North Hill lots are often larger than a Tacoma city lot. The walkthrough has to cover the house and the outbuildings, and it has to respect the people living there. A valley rental is usually a smaller lot, and the drainage problem is different from a hill lot. Tell us which one you have. Milton, next door, can fall in King County or Pierce County. Edgewood does not. Do not treat an Edgewood rental as a Milton rental because the tenant crosses the city line for work or school.',
+        ],
+      },
+      {
+        heading: 'Septic, an unpermitted room, and a city letter',
+        paragraphs: [
+          'Many older North Hill and Jovita houses use septic, and some use a private well. Others are on public sewer and public water. The city name does not decide it, and the tenant living there does not decide it. You do not have to pump, replace, or certify the system, and the occupants do not have to move out so a contractor can stage a repair, before KindKey looks. On-site sewage questions in Pierce County go to the Tacoma-Pierce County Health Department. KindKey does not inspect or certify a septic system or a well.',
+          'An unpermitted garage apartment, a room over a shop, or a remodel that stopped can sit next to the tenancy. A City of Edgewood letter about that work, or about vehicles and debris a neighbor can see, does not have to be cured first. Community Development is at Edgewood City Hall, 10440 Dom Calata Way E, Edgewood, WA 98372. The permit line published by the city is (253) 952-3299. KindKey will not pull the permit, appear at a hearing, or promise that a fine disappears when you sign. Until the deed records, deadlines on the notice are still yours. If the paper has a hearing, a fine, or an order to vacate, talk with a Washington attorney. This article is not legal advice.',
+        ],
+      },
+      {
+        heading: 'A sale does not end the tenancy',
+        paragraphs: [
+          'Chapter 59.18 RCW is Washington’s Residential Landlord-Tenant Act. Selling the house does not, by itself, cancel a lease or a month-to-month tenancy. KindKey will not tell you that it does. The tenant can still be in the house on the day the deed records. The offer can assume the tenant stays. You do not have to stage the rooms or promise vacant possession at closing.',
+          'Do not serve a move-out notice to empty an Edgewood house for a cash sale. KindKey does not list houses, and KindKey will not write, serve, or approve a notice. A Washington landlord-tenant attorney should read the lease and the statute together. The Milton rental guide covers one subsection owners sometimes try to use as a shortcut. Do not copy a notice from that article, or from a neighbor, onto an Edgewood lease. If you want the tenant to stay through closing, say that when you ask for the offer. That is the path KindKey can price.',
+          'A walkthrough is one visit, not a string of showings. Arrange it with whatever notice your attorney says the lease and chapter 59.18 require. KindKey will not tell you to enter without that notice. If access will take time, photos and a plain description can start the conversation. Bring the lease if you have it, the rent, whether rent is current, and the deposit amount. Unpaid rent, a deposit you still hold, and prepaid rent can show on the settlement statement. KindKey does not calculate what the tenant is owed and does not hold the deposit for you before closing.',
+        ],
+      },
+      {
+        heading: 'Inherited rentals, a loan notice, and the direct sale',
+        paragraphs: [
+          'An inherited Edgewood rental often means heirs in Puyallup, Sumner, or another state, a tenant who was already there, and a shop nobody has opened. The person with authority to sign is a probate question. Ask a Washington attorney before anyone deeds the house. KindKey will not guess which relative can sign, and KindKey will not file the probate. You can ask for an offer while the attorney finishes that question. Do not sign a deed before the authority exists. Do not force the tenant, or a relative who still lives there, to leave so the house looks vacant.',
+          'If rent has stopped, or someone is living in the shop with no written agreement, tell us. KindKey may still look. KindKey will not coach an eviction, a lockout, or a utility shutoff. If a foreclosure notice is also in the file, you have two clocks. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. Parts of Edgewood lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary.',
+          `The Edgewood deed records with the Pierce County Auditor. ${closing} Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a deposit, or a city fine. You can keep the rental, or hire a licensed broker to list it, if the occupants will allow the access a listing needs. KindKey will not run that listing. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of who lives there through the walkthrough, the written offer, and closing. KindKey does not promise a specific number of days. You can say no.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do Edgewood tenants have to move out before KindKey buys the house?',
+        answer:
+          'No. KindKey buys Edgewood houses with tenants in place. A sale does not, by itself, end the tenancy. Call (206) 519-5463 or use the cash-offer form and say who lives there. You can decline the offer.',
+      },
+      {
+        question: 'Someone is living in the shop or an unpermitted room. Will you still look?',
+        answer:
+          'Yes. Tell us which building they occupy and whether any agreement is written. You do not have to tear the room out, and you do not have to make them leave, before an offer.',
+      },
+      {
+        question: 'The rental is on septic. Do I have to replace it first?',
+        answer:
+          'No. Tell us the house is on septic, a well, public sewer, public water, or that you do not know. KindKey does not certify the system. The occupants do not have to move out for a repair you are not doing.',
+      },
+      {
+        question: 'Will KindKey evict a tenant who stopped paying?',
+        answer:
+          'No. KindKey is the buyer, not your lawyer and not your property manager. Tell us the rent status. Talk with a Washington attorney before you serve any notice or change the locks.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood/sell-house-with-tenants',
+        label: 'Sell a house with tenants in Edgewood',
+        description: 'The Edgewood rental page.',
+      },
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, and the valley.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'The Washington overview for occupied houses.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'Condition does not have to be repaired first.',
+      },
+      {
+        href: '/areas/edgewood/sell-inherited-probate-house',
+        label: 'Inherited houses in Edgewood',
+        description: 'When the rental came from an estate.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, before the city detail.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with a rental.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'City letters about a shop, a yard, or an unpermitted room.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description: 'When the private system is the other problem.',
+      },
+      {
+        href: '/blog/sell-rental-property-with-tenants-milton-wa',
+        label: 'Rentals with tenants in Milton',
+        description: 'The next city west, and a notice owners should not copy.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say who lives there. You do not have to deliver it vacant.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood offer with the tenants still there',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. Reach out, and KindKey will help you through the whole process from start to finish. You do not have to empty the house. You can say no.',
   }),
 ];
