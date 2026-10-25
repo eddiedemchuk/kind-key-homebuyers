@@ -843,4 +843,167 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. Reach out, and KindKey will help you through the whole process from start to finish. You do not have to empty the house. You can say no.',
   }),
+  post('selling-a-vacant-house-edgewood-wa', {
+    breadcrumbName: 'Vacant houses in Edgewood',
+    title: 'Selling a Vacant House in Edgewood, WA',
+    description:
+      'How Edgewood owners sell a vacant North Hill or valley house as-is, including a shop, a sitting septic system, a stalled remodel, or a yard notice. KindKey buys as a principal. Not legal advice.',
+    h1: 'Selling a Vacant House in Edgewood, WA',
+    publishedAt: '2026-10-25',
+    intro: [
+      `You can sell a vacant house in Edgewood without mowing it to a listing standard, finishing a stalled remodel, replacing a septic system that has been sitting, or flying back for showings. ${office} KindKey is not code enforcement, a property manager, or a vacant-house insurer.`,
+      'Vacant means nobody lives there. Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. It incorporated on February 28, 1996. Most residents live on North Hill: longer driveways, and shops or sheds set back from the street. A smaller share of the city sits in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. A North Hill house that has sat empty is a normal Edgewood sale. It is not a reason you have to make it look occupied before anyone will look.',
+    ],
+    callout:
+      'You do not have to clean the house out, keep the utilities on, or cure a yard notice before KindKey looks. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'An empty North Hill house is hard to watch',
+        paragraphs: [
+          'Tell us who has a key, whether the driveway is gated, and what is in the shop before anyone schedules a visit. A relative in Puyallup, Sumner, Milton, or another state can open the door once. KindKey does not need a string of showings. Furniture, tools, and vehicles you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to, not during the signing. If a floor or a shop roof is not safe to walk, say so. An exterior look can start the conversation.',
+          'The valley portion of Edgewood is a smaller lot and a different drainage problem from a hill lot with a long driveway. Do not describe them as the same house. Milton, next door, can fall in King County or Pierce County. Edgewood does not. A mailing address that says Edgewood is not always inside the city. If the letterhead is Pierce County, the parcel may be outside the city limits. Read the header. The closing agent confirms the parcel. The Edgewood deed records with the Pierce County Auditor.',
+          'East Pierce Fire & Rescue covers the city. Edgewood’s former Fire District 8 joined East Pierce in 2010. East Pierce’s 2022 standards of cover list Station 118 at 10105 24th Street E. KindKey is not the fire department. A neighbor’s report does not pause because you asked for an offer. A house that is empty because of a fire is still this sale if nobody lives there. The insurance claim stays with your insurer. KindKey does not give insurance advice. Until the deed records, the vacant-house policy is still yours. KindKey will not tell you that coverage continues. Ask your insurer what the policy requires while the house is empty.',
+        ],
+      },
+      {
+        heading: 'What an Edgewood notice on an empty house is doing',
+        paragraphs: [
+          'Chapter 15.80 of the Edgewood Municipal Code adopts the 2021 International Property Maintenance Code, with the amendments in that chapter. EMC 15.80.010 says Chapter 15.10 EMC is used in place of IPMC Chapter 1, and that IPMC Appendix A, the Boarding Standard, is adopted. EMC 15.80.301.4 adds a security rule: vacant buildings must be secured against outside entry, doors and windows must remain locked, there must be at least one operable door into every building and housing unit, and exterior walls and roofs must remain intact without holes. EMC 15.80.302.1 says exterior property is to be kept clean, safe, and sanitary, and free from an accumulation of rubbish, garbage, or fire hazards. KindKey will not decide whether your house meets those sentences. KindKey will not board a window for you or tell you how to board it.',
+          'EMC 15.80.302.4 amends the vegetation section. The adopted text lists, among other conditions, grasses in the yards of occupied residential properties that are not kept at six inches or less, and grasses, ground cover, or vines on vacant lots that are within or adjacent to developed areas, are not used for agriculture, and are not part of a critical area under Title 14 EMC, that are not kept at twelve inches or less. The City of Edgewood’s code-compliance FAQ still cites EMC 15.80.230 for those height figures. Read the notice you were served. KindKey will not tell you which citation the city will use, whether your lot is a critical area, or whether a field counts as agriculture. Chapter 8.15 EMC is a different chapter, on vegetation or debris that obstructs a street or sidewalk or is a hazard, and it cites RCW 35.21.310. A lawn letter and a sidewalk letter are not the same paper.',
+          'Shops and other outbuildings are in the same maintenance chapter. EMC 15.80.302.7 says accessory structures, including detached garages, storage buildings, carports, fences, and retaining walls, are to be maintained structurally sound and in good repair. EMC 15.80.302.8 addresses inoperative or unlicensed motor vehicles kept outside, with exceptions the section states for work inside a permanent structure. EMC 15.80.302.10 prohibits storing semi-tractors, semi-trailers, storage containers, or shipping containers where the primary use is residential, and it states an exception for moving trucks or containers placed for 72 hours or less for short-term loading. KindKey will not tell you whether a container, an RV, or a truck on your lot is inside an exception. You do not have to haul them off before an offer.',
+          'Do not treat Auburn’s vacant-property rule as an Edgewood rule. Auburn City Code 15.20.100 is an Auburn ordinance. KindKey’s office is in Auburn. The house is not. Code compliance for a city letter is the City of Edgewood. Community Development and the code desk share City Hall at 10440 Dom Calata Way E, Edgewood, WA 98372. The line the city publishes is (253) 952-3299. The city also points people to SeeClickFix to report concerns. KindKey will not answer the notice, appear at a hearing, pull a permit, or promise that a fine disappears when you sign. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement, prepared by the closing agent, is where you see them. Until recording, deadlines on the notice are still yours. If the paper has a hearing, a fine, or an order to vacate, talk with a Washington attorney. This article is not legal advice.',
+        ],
+      },
+      {
+        heading: 'A sitting septic, a stalled remodel, and an inherited shop',
+        paragraphs: [
+          'Many older North Hill and Jovita houses use septic, and some use a private well. Others are on public sewer and public water. The city name does not decide it, and a house that has been empty does not decide it. A system that has not been used because nobody lives there is still something to say in plain words. You do not have to pump it, replace the drainfield, or put it back in service so a walkthrough can happen. On-site sewage questions in Pierce County go to the Tacoma-Pierce County Health Department, not to the city building counter, and not to KindKey. KindKey does not inspect or certify a septic system or a well.',
+          'A remodel that stopped is a common reason an Edgewood house is empty. Open walls, a kitchen that was demolished, a garage that was becoming a room, or a shop apartment that never had a final inspection can all sit there. You do not need a City of Edgewood permit closed, a contractor bid, or the finishes put back before KindKey looks. If the work left holes in a wall or a roof, the security rule above is a city duty that stays with the owner until the deed records. KindKey will not tell you that requesting an offer satisfies it. The city’s adopted boarding standard is Appendix A of the property-maintenance code. KindKey will not interpret that appendix or perform the boarding as your contractor.',
+          'An inherited vacant house on acreage often means heirs in Puyallup, Sumner, King County, or another state, a shop nobody has opened, and a yard the neighbors can see. The person with authority to sign is a probate question. Ask a Washington attorney before anyone deeds the house. KindKey will not guess which relative can sign, and KindKey will not file the probate. You can ask for an offer while the attorney finishes that question. Do not sign a deed before the authority exists. If a relative still lives in the house, or a tenant is still there, this is not a vacant delivery. Do not force that person out so the house looks empty. Say who is there. Parts of Edgewood lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary.',
+          'A Pierce County property-tax delinquency is a different account from a city vegetation penalty. The treasurer’s process is not the city’s code desk. You can ask for an offer while those papers are open. KindKey will not calculate the tax, and KindKey will not tell you a sale stops a treasurer’s date. If a foreclosure notice is also in the file, you have more than one clock. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute.',
+        ],
+      },
+      {
+        heading: 'One visit, a written offer, and what cash does not erase',
+        paragraphs: [
+          'The sequence is a call or the cash-offer form, one walkthrough, a written offer, and a closing date you help choose with the closing agent. Access can be a lockbox or a local person. Utilities can stay off. Photos of the house, the shop, the yard, and any posting are enough to start if a visit has to wait. KindKey is based in downtown Auburn, so a look at an Edgewood house does not depend on a listing calendar. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need to collect boxes can ask for longer.',
+          `Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a city fine, or a utility balance. ${closing} The offer reflects the house as it sits, including contents you leave and work that remains, so it can be less than a retail price for a cleaned, financed house. You can say no.`,
+          'A listing can fit a vacant Edgewood house that is safe to show, easy to finance, and watched by someone local. Hire a licensed broker if you want that path. KindKey will not run the listing and will not tell you a listed sale is a mistake. A vacant house in Port Orchard, Bremerton, Silverdale, or Poulsbo is a Kitsap County file, with a different recorder and a different set of local rules. Bainbridge Island, Kingston, Olalla, and Seabeck are Kitsap places KindKey also buys in. Do not use this Edgewood page as the code guide for a Kitsap letter, or for a Milton letter. Milton can be King County or Pierce County. Edgewood, inside the city, is Pierce County. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the empty house through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do I have to clean out or mow a vacant Edgewood house before KindKey will look?',
+        answer:
+          'No. Furniture, shop contents, and vehicles you do not want can stay. A yard notice does not have to be cured first. Call (206) 519-5463 or use the cash-offer form. The city still controls its own case until it says otherwise.',
+      },
+      {
+        question: 'Does Auburn’s vacant-property registration apply because KindKey is in Auburn?',
+        answer:
+          'No. Auburn City Code 15.20.100 is an Auburn ordinance. An Edgewood letter names the City of Edgewood or Pierce County. Read the header. KindKey will not register the house for you.',
+      },
+      {
+        question:
+          'The septic has been sitting and a remodel stopped. Will you still make an offer?',
+        answer:
+          'Yes. Tell us the system has not been used and what the remodel left unfinished, including any unpermitted work. You do not have to replace the drainfield or close a permit first. KindKey does not certify a septic system.',
+      },
+      {
+        question: 'I inherited the vacant house and I live out of state. Who signs?',
+        answer:
+          'A Washington attorney confirms who has authority. KindKey will not guess and will not file the probate. You can request an offer before that answer is finished. Do not sign a deed before the authority exists. Access can be a lockbox or a relative for one visit.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Sell a vacant house in Edgewood',
+        description: 'The Edgewood vacant-house page.',
+      },
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, and the valley.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The Washington overview for empty houses.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'Condition does not have to be repaired first.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell as-is in Edgewood',
+        description: 'The Edgewood as-is page.',
+      },
+      {
+        href: '/areas/edgewood/sell-inherited-probate-house',
+        label: 'Inherited houses in Edgewood',
+        description: 'When the vacant house came from an estate.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, before the city detail.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'Open city letters about a yard, a shop, or unpermitted work.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'The King and Pierce County overview.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description: 'A system that has been sitting because the house is empty.',
+      },
+      {
+        href: '/blog/sell-house-needing-repairs-edgewood-wa',
+        label: 'Major repairs in Edgewood',
+        description: 'A remodel that stopped, a roof, or a foundation.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-edgewood-wa',
+        label: 'Fire damage in Edgewood',
+        description: 'When the house is empty because of a fire.',
+      },
+      {
+        href: '/blog/behind-on-property-taxes-edgewood-wa',
+        label: 'Property taxes in Edgewood',
+        description: 'A Pierce County tax bill is a different clock from a city letter.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Foreclosure in Edgewood',
+        description: 'When a trustee’s notice arrived while the house sat empty.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-milton-wa',
+        label: 'Vacant houses in Milton',
+        description: 'The next city west, and a county line Edgewood does not have.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Sell as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say the house is empty and who has a key.',
+      },
+    ],
+    ctaTitle: 'Ask for an offer on the vacant Edgewood house',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to mow it, empty it, or finish the remodel first. You can say no.',
+  }),
 ];
