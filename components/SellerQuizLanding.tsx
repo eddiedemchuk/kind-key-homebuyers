@@ -156,7 +156,7 @@ export default function SellerQuizLanding({
         </footer>
       </div>
       <OfferMobileBar phone={phone} />
-      <LeadConnectorChat mobileOnly />
+      <LeadConnectorChat mobileOnly suppressGreeting />
     </main>
   );
 }

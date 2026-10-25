@@ -10,7 +10,14 @@ const NARROW_QUERY = '(max-width: 767px)';
  * LeadConnector loader. Offer landings pass mobileOnly so a wide viewport
  * never mounts the widget and the desktop page stays as it is.
  */
-export default function LeadConnectorChat({ mobileOnly = false }: { mobileOnly?: boolean }) {
+export default function LeadConnectorChat({
+  mobileOnly = false,
+  suppressGreeting = false,
+}: {
+  mobileOnly?: boolean;
+  /** Hide the auto greeting bubble. The launcher icon stays. */
+  suppressGreeting?: boolean;
+}) {
   const [show, setShow] = useState(!mobileOnly);
 
   useEffect(() => {
@@ -26,7 +33,7 @@ export default function LeadConnectorChat({ mobileOnly = false }: { mobileOnly?:
 
   return (
     <>
-      <ChatWidgetOffset mobileOnly={mobileOnly} />
+      <ChatWidgetOffset mobileOnly={mobileOnly} suppressGreeting={suppressGreeting} />
       <Script
         id="leadconnector-chat-widget"
         src="https://widgets.leadconnectorhq.com/loader.js"

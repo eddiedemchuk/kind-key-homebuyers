@@ -38,12 +38,24 @@ function raisedBottom(basePx: number | null, dockHeight: number): number | null 
 
 const NARROW_QUERY = '(max-width: 767px)';
 
-function offsetCss(widgetBottom: number | null, bubbleBottom: number | null): string {
+function offsetCss(
+  widgetBottom: number | null,
+  bubbleBottom: number | null,
+  suppressGreeting: boolean
+): string {
   const rules: string[] = [
     // Phones were not painting the closed launcher. Keep it displayed on narrow
-    // screens without changing the desktop rules.
+    // screens without changing the desktop rules. `.lc_text-widget--bubble` is
+    // the round launcher button, not the greeting.
     '@media (max-width:767px){#lc_text-widget:not(.lc_text-widget--active):not(.lc_text-widget--inline):not(.lc_text-widget--embedded-live-chat){display:block !important;visibility:visible !important;opacity:1 !important;}#lc_text-widget:not(.lc_text-widget--active) .lc_text-widget--bubble:not(.inline){display:block !important;visibility:visible !important;opacity:1 !important;pointer-events:auto !important;}}',
   ];
+  if (suppressGreeting) {
+    // The greeting (`.lc_text-widget--prompt`) sits over the offer form on a
+    // phone. Hide that pop-up and leave the launcher button.
+    rules.push(
+      '@media (max-width:767px){#lc_text-widget:not(.lc_text-widget--active) .lc_text-widget--prompt{display:none !important;visibility:hidden !important;opacity:0 !important;pointer-events:none !important;height:0 !important;overflow:hidden !important;}}'
+    );
+  }
   if (widgetBottom != null) {
     rules.push(
       `#lc_text-widget:not(.lc_text-widget--active):not(.lc_text-widget--inline):not(.lc_text-widget--embedded-live-chat){bottom:${widgetBottom}px !important;}`
@@ -110,12 +122,29 @@ function placeHost(host: HTMLElement, open: boolean, mobileOnly: boolean) {
   host.style.zIndex = '45';
 }
 
+function hideGreetingPrompt(root: ShadowRoot) {
+  root.querySelectorAll<HTMLElement>('.lc_text-widget--prompt').forEach((prompt) => {
+    prompt.style.setProperty('display', 'none', 'important');
+    prompt.style.setProperty('visibility', 'hidden', 'important');
+    prompt.style.setProperty('pointer-events', 'none', 'important');
+    prompt.setAttribute('hidden', '');
+    prompt.setAttribute('aria-hidden', 'true');
+  });
+}
+
 /**
  * The LeadConnector launcher is position:fixed inside an open shadow root, so page
  * CSS cannot move it. While a bottom dock is visible, inject an override that keeps
  * the closed launcher the same distance above that dock as the widget's own offset.
  */
-export default function ChatWidgetOffset({ mobileOnly = false }: { mobileOnly?: boolean }) {
+export default function ChatWidgetOffset({
+  mobileOnly = false,
+  suppressGreeting = false,
+}: {
+  mobileOnly?: boolean;
+  /** Offer pages: keep the launcher, hide the auto greeting so it cannot cover the form. */
+  suppressGreeting?: boolean;
+}) {
   useEffect(() => {
     const sheets = new WeakMap<ShadowRoot, OffsetStyle>();
     const appliedCss = new WeakMap<ShadowRoot, string>();
@@ -181,11 +210,13 @@ export default function ChatWidgetOffset({ mobileOnly = false }: { mobileOnly?: 
         }
 
         const bubble = root.querySelector<HTMLElement>('.lc_text-widget--bubble');
+        if (suppressGreeting) hideGreetingPrompt(root);
         setCss(
           root,
           offsetCss(
             raisedBottom(inlineBottomPx(widget), dockHeight),
-            raisedBottom(inlineBottomPx(bubble), dockHeight)
+            raisedBottom(inlineBottomPx(bubble), dockHeight),
+            suppressGreeting
           )
         );
       });
@@ -256,7 +287,7 @@ export default function ChatWidgetOffset({ mobileOnly = false }: { mobileOnly?: 
         target.remove();
       });
     };
-  }, [mobileOnly]);
+  }, [mobileOnly, suppressGreeting]);
 
   return null;
 }
