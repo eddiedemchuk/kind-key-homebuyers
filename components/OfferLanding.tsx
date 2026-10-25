@@ -338,7 +338,7 @@ export default function OfferLanding({
         </footer>
       </div>
       <OfferMobileBar phone={phone} />
-      <LeadConnectorChat mobileOnly />
+      <LeadConnectorChat mobileOnly suppressGreeting />
     </main>
   );
 }
