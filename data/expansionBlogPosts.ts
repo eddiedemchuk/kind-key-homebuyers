@@ -1006,4 +1006,185 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to mow it, empty it, or finish the remodel first. You can say no.',
   }),
+  post('sell-inherited-acreage-with-outbuildings-edgewood-wa', {
+    breadcrumbName: 'Inherited acreage in Edgewood',
+    title: 'Selling Inherited Acreage with Outbuildings in Edgewood, WA',
+    description:
+      'How heirs sell inherited Edgewood acreage with a shop, barn, or other outbuildings as-is, including a drainfield or an unpermitted structure. KindKey is the buyer. Not legal advice.',
+    h1: 'Selling Inherited Acreage with Outbuildings in Edgewood, WA',
+    publishedAt: '2026-10-26',
+    intro: [
+      `You can sell inherited acreage in Edgewood, including the house and the shop, barn, shed, or other outbuilding that came with it, without subdividing the land, permitting those buildings, replacing a drainfield, or emptying the yard first. ${office} KindKey is not a probate attorney, a surveyor, or code enforcement.`,
+      'Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. It incorporated on February 28, 1996. The city’s budget describes most residents as living on North Hill, with the rest at the base of the hill in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. An inherited place on North Hill is often a house plus buildings set back from the street. Those buildings can stay. They are not a project you have to finish before anyone will look.',
+    ],
+    callout:
+      'You do not have to prove the shop was permitted, split the acreage, or clean it out before KindKey looks. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'The inheritance is often more than the house',
+        paragraphs: [
+          'Say what is on the ground before anyone schedules a visit. It may be a house and a detached shop, a barn, an RV cover, a row of sheds, a manufactured home, or a room over a garage that someone used as a place to live. A valley parcel at the base of the hill is usually smaller, and the drainage problem is different from a hill lot with a long driveway. Do not describe them as the same property. Bring every parcel number you have. Acreage can be one tax parcel, or the house and an outbuilding can sit on separate parcels that share a driveway. KindKey will not assume the shop is included because it looks connected. The Pierce County Assessor-Treasurer’s map is the record. The closing agent orders the title report. KindKey will not redraw a line or file a boundary adjustment.',
+          'EMC 18.90.100(C) is the city’s flag-lot section. It says a flag lot has setbacks of 20 feet from all property lines for both principal and accessory structures. In the residential zones named in that subsection, it also states a minimum frontage of 20 feet on a public road, or an easement at least 20 feet wide when that frontage does not exist. A long driveway on North Hill is a fact to mention. KindKey will not survey it and will not tell you the lot is a flag lot. You do not need a survey before an offer.',
+          'Milton, next door, can fall in King County or Pierce County. Edgewood does not. The Edgewood deed records with the Pierce County Auditor. A mailing address that says Edgewood is not always inside the city. If a letterhead says Pierce County, the parcel may be outside the city limits. Read the header. Parts of Edgewood lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary.',
+        ],
+      },
+      {
+        heading: 'Shops that predate the city, and shops that never had a permit',
+        paragraphs: [
+          'EMC 18.90.110 is the nonconformities section. EMC 18.90.110(I) says the burden of demonstrating that a nonconformity existed on or before February 28, 1996, or is otherwise lawful under that title, rests with the property or business owner. It says the exact date need not be proven, only that the nonconformity existed on or before that date, and it also states other conditions, including that the nonconformity must not have been criminal at the time or under current law. It lists examples of evidence, including tax assessment records, permit records, testamentary documents, and photographs whose date can be ascertained. EMC 18.90.110(L) says the transfer of ownership of a nonconforming lot, use, or structure will not alter its legal nonconforming status. That sentence is about a status the city recognizes. It does not mean an unpermitted building becomes lawful because a parent died. KindKey will not gather that file, and KindKey will not tell you a shop is legal nonconforming. If you need a ruling, talk with the City of Edgewood or a Washington attorney. You do not need that ruling before you ask for an offer.',
+          'EMC 15.20.030(C)(2)(a) exempts some accessory detached structures from a building permit when they are used as tool and storage sheds, playhouses, and similar uses accessory to one- and two-family dwellings, and when they meet the limits in that subsection. Those limits include a floor area that does not exceed 200 square feet, except 120 square feet on lots under one-half acre, and a maximum height of 10 feet, plus the setbacks in chapter 18.90 EMC and the other conditions written there. EMC 15.20.030(A) says an exemption from a permit does not authorize work that violates other rules. EMC 15.20.030(B) says the exemptions do not apply when the work is in a critical area the subsection lists, including wetlands, flood hazard areas, landslide hazard areas, and erosion hazard areas. The city’s building FAQ publishes a chart that lists 200 square feet and 14 feet for lots of one-half acre and larger, and it cites EMC 18.90.020. EMC 18.90.020 is a size and setback section for accessory buildings, including buildings larger than that permit exemption. KindKey will not tell you which page controls your shop, and KindKey will not call a pole barn, a powered shop, or a living space exempt.',
+          'EMC 18.90.190 is the accessory-dwelling section. It says a landowner seeking an accessory dwelling unit applies for a building permit. It says a preexisting unit established without city approval may seek legal status through that same path, and that after approval the landowner must provide a title notification that the unit was legally constructed. It also says an accessory dwelling unit must be served by an approved potable water system and an approved sewer or on-site septic system. KindKey will not legalize a room over a shop or a second roof in the yard. If a relative or anyone else is living there, say so. Do not make that person leave so the acreage looks empty. Community Development is at Edgewood City Hall, 10440 Dom Calata Way E, Edgewood, WA 98372. The permit line published by the city is (253) 952-3299. KindKey will not pull the permit, appear at a hearing, or promise that a fine disappears when you sign. Until the deed records, deadlines on a city notice are still yours. If the paper has a hearing, a fine, or an order to vacate, talk with a Washington attorney. This article is not legal advice.',
+        ],
+      },
+      {
+        heading: 'A drainfield, a well, and a shop nobody has opened',
+        paragraphs: [
+          'Many older North Hill and Jovita lots use a septic system, and some use a private well. Others are on public sewer and public water. The city name does not decide it, and the fact that a parent handled the bill does not tell the heir which one it is. A failing drainfield, a system that has sat because the house is empty, or a field nobody can find on a large lot can all be described in plain words. You do not have to pump it, locate it, replace it, or put it back in service before a walkthrough. On-site sewage questions in Pierce County go to the Tacoma-Pierce County Health Department, not to the city building counter, and not to KindKey. KindKey does not inspect, pump, or certify a septic system or a well.',
+          'A City of Edgewood letter about the shop and a health-department letter about the system are different files. Read the header. The City of Edgewood’s stormwater materials describe Jovita Creek, in the northeast of the city, in a steep-sided canyon. That describes the basin. It is not a map of your drainfield and it is not a finding that your lot is a critical area. If a floor or a shop roof is not safe to walk, say so. Photos of the house, the outbuildings, the yard, and any posting are enough to start. Take papers, photos, and what the family wants. Tools, vehicles, and the contents of the shop can stay. You do not have to rent a dumpster first.',
+        ],
+      },
+      {
+        heading: 'Who can sign, and what the sale does not erase',
+        paragraphs: [
+          'The person with authority to sign is a probate question. If the decedent lived in Edgewood, the Edgewood probate guide explains why Pierce County is the residence county under the transfer rule in RCW 11.96A.050. KindKey will not choose the courthouse. Ask a Washington attorney before anyone deeds the acreage. KindKey will not guess which relative can sign, will not file the probate, and will not prepare the deed. You can ask for an offer while the attorney finishes that question. Do not sign before the authority exists. Heirs can live in Puyallup, Sumner, King County, or another state and still need to be part of the decision. Agreement among siblings is not the signature the title company needs. A relative who still lives in the house should not be pushed out so the property looks vacant.',
+          'A Pierce County property-tax bill is a different account from a city penalty on a shop. You can ask for an offer while the taxes are unpaid. KindKey will not calculate the tax and will not tell you a sale stops a treasurer’s date. If a foreclosure notice is also in the file, you have more than one clock. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. A fire in the shop or the house is a different problem from the inheritance. The insurance claim stays with the insurer. KindKey does not give insurance advice.',
+          `The sequence is a call or the cash-offer form, one walkthrough, a written offer, and a closing date you help choose with the closing agent. Access can be a lockbox or a local person. KindKey is based in downtown Auburn, so a look at an Edgewood property does not depend on a listing calendar. KindKey does not promise a specific number of days. ${closing} Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a city fine, or a utility balance. The offer reflects the acreage as it sits, including outbuildings and work that remains, so it can be less than a retail price for a cleared, permitted property. You can say no.`,
+          'Splitting the land, permitting the shop, and listing the house can fit if the family wants that path and can fund it. Hire a licensed broker for a listing. KindKey will not run the listing, will not file a short plat, and will not tell you a listed sale is a mistake. Acreage in Olalla, Seabeck, Kingston, or on Bainbridge Island is a Kitsap County file, with a different recorder. Port Orchard, Bremerton, Silverdale, and Poulsbo each have their own pages. Do not use this Edgewood article as the code guide for a Kitsap letter, or for a Milton letter. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the buildings through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do I have to remove the shop or split the acreage before KindKey will look?',
+        answer:
+          'No. KindKey buys the Edgewood property as it sits, including shops, barns, and other outbuildings. You do not have to subdivide, demolish a building, or empty the yard first. Call (206) 519-5463 or use the cash-offer form. You can decline the offer.',
+      },
+      {
+        question: 'The shop was built before Edgewood became a city. Is it automatically legal?',
+        answer:
+          'The city decides that. EMC 18.90.110(I) places the burden of showing a lawful nonconformity on the owner, tied to February 28, 1996, or to some other lawful status under that title. KindKey will not decide. You can still request an offer. A ruling is a question for the city or a Washington attorney.',
+      },
+      {
+        question:
+          'The drainfield is failing and nobody knows where it is. Do I have to replace it?',
+        answer:
+          'No. Tell us what you know, including if you do not know whether the property is on septic, a well, public sewer, or public water. KindKey does not locate or certify the system. On-site sewage questions in Pierce County go to the Tacoma-Pierce County Health Department.',
+      },
+      {
+        question: 'I inherited the acreage and I am not the only heir. Who signs the deed?',
+        answer:
+          'A Washington attorney confirms who has authority. KindKey will not guess and will not file the probate. You can request an offer before that answer is finished. Do not sign before the authority exists. If a foreclosure notice is also in the file, ask that attorney about RCW 61.34. KindKey does not interpret that statute.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, Meridian, and the valley.',
+      },
+      {
+        href: '/areas/edgewood/sell-inherited-probate-house',
+        label: 'Sell an inherited house in Edgewood',
+        description: 'The Edgewood probate page.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, before the acreage detail.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Probate houses in Edgewood',
+        description: 'Pierce County letters, and who can sign.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell as-is in Edgewood',
+        description: 'The buildings and the land can transfer as they sit.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The Washington as-is page.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'A city letter about a shop or an unpermitted room.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'The King and Pierce County overview.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-edgewood-wa',
+        label: 'Unpermitted work in Edgewood',
+        description: 'When the notice is about the shop, not the probate.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description: 'A drainfield or a well the family cannot document.',
+      },
+      {
+        href: '/areas/edgewood/sell-hoarder-house',
+        label: 'Hoarder and heavy-repair houses in Edgewood',
+        description: 'Shops and yards that are full.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'The Washington overview for heavy contents.',
+      },
+      {
+        href: '/blog/sell-hoarder-house-on-acreage-edgewood-wa',
+        label: 'Hoarder houses on Edgewood acreage',
+        description: 'When the shop and the house are both full.',
+      },
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Vacant houses in Edgewood',
+        description: 'When nobody has lived on the acreage.',
+      },
+      {
+        href: '/blog/behind-on-property-taxes-edgewood-wa',
+        label: 'Property taxes in Edgewood',
+        description: 'A Pierce County tax bill is a different clock from a city letter.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Foreclosure in Edgewood',
+        description: 'When a trustee’s notice arrived with the inheritance.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-edgewood-wa',
+        label: 'Fire damage in Edgewood',
+        description: 'When the inherited shop or house has burned.',
+      },
+      {
+        href: '/blog/sell-house-needing-repairs-edgewood-wa',
+        label: 'Major repairs in Edgewood',
+        description: 'A stalled remodel or a roof on the same property.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-tenants',
+        label: 'Tenants in Edgewood',
+        description: 'When someone still lives in the house or the shop.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Sell as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Name the buildings and the parcel numbers you have.',
+      },
+    ],
+    ctaTitle: 'Ask for an offer on the inherited Edgewood acreage',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to permit the shop, find the drainfield, or split the land first. You can say no.',
+  }),
 ];
