@@ -1187,4 +1187,176 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to permit the shop, find the drainfield, or split the land first. You can say no.',
   }),
+  post('sell-water-damaged-house-edgewood-wa', {
+    breadcrumbName: 'Water damage in Edgewood',
+    title: 'Selling a Water-Damaged House in Edgewood, WA',
+    description:
+      'How Edgewood owners sell a North Hill or valley house with a roof leak, a burst pipe, or a wet crawlspace as-is. KindKey buys as a principal. Not insurance advice.',
+    h1: 'Selling a Water-Damaged House in Edgewood, WA',
+    publishedAt: '2026-10-27',
+    intro: [
+      `You can sell a water-damaged house in Edgewood without drying the walls, replacing the roof, or finishing an insurance repair first. ${office} KindKey is not a restoration contractor, an insurer, or a mold inspector. This article is not insurance advice.`,
+      'Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. It incorporated on February 28, 1996. Most residents live on North Hill: longer driveways, and shops or sheds set back from the street. A smaller share of the city sits in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. A leak in a North Hill rambler, water in a detached shop, and a valley house with a wet crawlspace are different properties. Bring the address.',
+    ],
+    callout:
+      'You do not have to dry the house out, pull the wet drywall, or get a contractor bid before KindKey looks. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'A roof leak, a burst pipe, and a wet shop are not the same job',
+        paragraphs: [
+          'Say where the water is before anyone schedules a visit. It may be a roof that leaked through a Western Washington winter, a pipe or fixture that failed while the house sat empty, a ceiling stain in one room, or a shop roof that let rain into tools and vehicles. Some of those houses are still lived in. Some are not. KindKey prices the property you describe. A single Edgewood discount, guessed before anyone sees the wet room, is not an offer.',
+          'You do not have to tarp the roof to a listing standard, run fans, pull soaked drywall, or replace the shop roof before a walkthrough. Photos of the stain, the roof, the crawlspace access, and the shop are enough to start. If a floor or a ceiling is not safe to walk, say so. An exterior look can begin the conversation. Do not walk a house that is not safe just to satisfy a buyer. Furniture and shop contents you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to.',
+          'North Hill lots are often larger than a Tacoma city lot. The walkthrough has to cover the house and the outbuildings. A shop set back from Meridian or Jovita can be the wet structure while the house is dry, or the reverse. Tell us which. A valley house at the base of the hill is usually a smaller lot, and standing water after rain is a different problem from a pipe that broke inside a wall. Do not describe them as the same house. Milton, next door, can fall in King County or Pierce County. Edgewood does not. A mailing address that says Edgewood is not always inside the city. Read the header on any letter. The closing agent confirms the parcel. The Edgewood deed records with the Pierce County Auditor.',
+        ],
+      },
+      {
+        heading: 'Jovita Creek describes a basin, not your floor',
+        paragraphs: [
+          'The City of Edgewood’s stormwater materials describe Jovita Creek, in the northeast of the city, flowing in a steep-sided canyon. They say the adjacent hill slopes in that canyon are subject to frequent slides from runoff off the plateau, tree falls, unstable slopes, and high flows in the creek. That describes the basin. It is not a finding that your crawlspace flooded, that your shop roof failed, or that your lot is a critical area. If your house is along Jovita Boulevard, say what you have seen in the house and in the yard. KindKey prices the property in front of us.',
+          'A wet yard can be a septic problem, not a roof problem. Many older North Hill and Jovita lots use a septic system, and some use a private well. Others are on public sewer and public water. The city name does not decide it, and a stain on the ceiling does not decide it. You do not have to pump the tank, find the drainfield, or replace it before KindKey looks. On-site sewage questions in Pierce County go to the Tacoma-Pierce County Health Department, not to the city building counter, and not to KindKey. KindKey does not inspect, pump, or certify a septic system or a well. The Edgewood septic guide is the page for a failing system. This page is for water that entered a building.',
+          'Water from a fire is a different file. East Pierce Fire & Rescue covers Edgewood. The city’s former Fire District 8 joined East Pierce in 2010. East Pierce’s 2022 standards of cover list Station 118 at 10105 24th Street E. KindKey is not the fire department and does not interpret a run report. A kitchen fire that also soaked the floor belongs on the Edgewood fire page, including the insurance claim, which stays with your insurer. Use this page when the water did not start as a fire.',
+        ],
+      },
+      {
+        heading: 'A hole in the roof is still the city’s file until you deed it',
+        paragraphs: [
+          'Chapter 15.80 of the Edgewood Municipal Code adopts the 2021 International Property Maintenance Code, with the amendments in that chapter. EMC 15.80.301.4 adds a security rule. It says vacant buildings must be secured against outside entry, doors and windows must remain locked, there must be at least one operable door into every building and housing unit, and exterior walls and roofs must remain intact without holes. KindKey will not decide whether your roof meets that sentence. A leak that has opened a hole does not have to be patched before KindKey looks. Until the deed records, that duty stays with the owner. Requesting an offer does not board a window or close a roof. KindKey will not perform that work as your contractor.',
+          'A more serious letter can use the unfit-building process. Chapter 7.50 EMC is the city’s unfit-dwellings chapter, and it states that it is pursuant to chapter 35.80 RCW. EMC 7.50.040 says the code official may consider damage from fire, earthquake, wind, flood, or any other cause, and inadequate drainage, among other conditions. KindKey will not decide whether your house meets them, and KindKey will not tell you whether the city will order a repair or a demolition. EMC 7.50.080 says a hearing shall be scheduled for not less than 10 days nor more than 30 days after the serving of the order. Read the date on the paper you were served. KindKey will not count the days, appear at the hearing, or file the appeal under EMC 7.50.090. A petition to Pierce County Superior Court is a lawyer’s work. If the notice has a hearing, a fine, or an order to vacate, talk with a Washington attorney. Do not skip a hearing because a buyer is looking. This article is not legal advice.',
+          'Community Development is at Edgewood City Hall, 10440 Dom Calata Way E, Edgewood, WA 98372. The permit line published by the city is (253) 952-3299. You do not need a reconstruction permit, a dry-out contract, or a trip to that counter before the visit. KindKey will not pull the permit or promise that a fine disappears when you sign. EMC 7.50.130 says repair or demolition costs the city incurs can be assessed against the property, and it cites RCW 35.80.030 for a lien. KindKey will not calculate that amount. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement, prepared by the closing agent, is where you see them.',
+        ],
+      },
+      {
+        heading: 'The insurance file, a loan notice, and selling the wet house as-is',
+        paragraphs: [
+          'Your insurer and your lender are your relationships. You can ask KindKey for an offer while a claim is open, after a claim was denied, or when you never opened one. KindKey will not tell you whether to wait for a check, how to assign the proceeds, or whether a stain is mold. KindKey does not test air, write a mold report, or certify that a house is dry. Talk with your insurer and, if the paperwork is unclear, a Washington attorney.',
+          'A retail buyer using a mortgage often cannot close while walls are open, a roof is still leaking, or an appraiser will not treat the house as livable. Cash, in this sale, means KindKey is not waiting on that buyer’s loan. It does not mean a suitcase of money, and it does not erase a mortgage, a Pierce County tax bill, a city cost, or a contractor’s bill for a dry-out you already started. Those amounts can reduce proceeds. You see them on the settlement statement before you close.',
+          `If a foreclosure notice or a probate is sitting next to the water damage, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. Your attorney confirms who can sign. KindKey will not file a probate and will not guess which relative has authority. Parts of Edgewood lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary. ${closing}`,
+          'Drying the house and repairing it can fit if you want to keep it and you can fund the work. A listing can fit after that. Hire a licensed broker if you want a listing. KindKey will not run one and will not tell you a listed sale is a mistake. A direct sale fits when the dry-out bid is larger than the cash you have, when you already live in Puyallup, Sumner, or another state, or when you cannot watch a leak from somewhere else. A water-damaged house in Port Orchard, Bremerton, Silverdale, Poulsbo, Bainbridge Island, Kingston, Olalla, or Seabeck is a Kitsap County file. Do not use this Edgewood page as the code guide for a Kitsap letter, or for a Milton letter. The sequence here is a call or the cash-offer form, one walkthrough, a written offer, and a closing date you help choose with the closing agent. KindKey does not promise a specific number of days. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the leak through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do I have to dry out an Edgewood house before KindKey will look?',
+        answer:
+          'No. KindKey buys water-damaged houses on North Hill, along Jovita Boulevard, on the Meridian corridor, and in the valley as they sit. You do not need a restoration bid, a mold report, or a finished roof. Call (206) 519-5463 or use the cash-offer form. You can decline the offer.',
+      },
+      {
+        question: 'The leak is in the shop and the house is dry. Will you still look?',
+        answer:
+          'Yes. Tell us which structure is wet. You do not have to demolish the shop or replace its roof before an offer. If a floor or a shop roof is not safe to walk, say so.',
+      },
+      {
+        question: 'Will KindKey advise me on the insurance claim or tell me a stain is mold?',
+        answer:
+          'No. KindKey does not give insurance advice and does not inspect for mold. Ask your insurer, and a Washington attorney if you are assigning claim rights. You can still request an offer while a claim is open.',
+      },
+      {
+        question:
+          'Is a wet crawlspace the same as a failed septic system, a fire, or a foreclosure?',
+        answer:
+          'No. A drainfield question goes to the Tacoma-Pierce County Health Department. Water from a fire is the Edgewood fire page. A trustee’s notice is a different deadline. If a foreclosure notice or a probate is also in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34 that KindKey will not interpret. KindKey can still look at the house.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, Meridian, and the valley.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell a house as-is in Edgewood',
+        description: 'The Edgewood as-is page.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'Condition does not have to be repaired first.',
+      },
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Vacant houses in Edgewood',
+        description: 'When the leak started after nobody was living there.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The Washington overview for empty houses.',
+      },
+      {
+        href: '/areas/edgewood/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Edgewood',
+        description: 'When the water started as a fire.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The King, Pierce, and Kitsap overview.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'A city letter about a roof, a shop, or an unsafe structure.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'The King and Pierce County overview.',
+      },
+      {
+        href: '/areas/edgewood/sell-hoarder-house',
+        label: 'Heavy-repair houses in Edgewood',
+        description: 'When the water damage is one part of a larger repair.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Roof, moisture, and contents can stay.',
+      },
+      {
+        href: '/blog/sell-house-needing-repairs-edgewood-wa',
+        label: 'Major repairs in Edgewood',
+        description: 'A stopped remodel, a roof, or a foundation on the same house.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description: 'When the wet spot is the private system, not the ceiling.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-edgewood-wa',
+        label: 'Vacant houses in Edgewood',
+        description: 'The city rule for a roof that is no longer intact.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-edgewood-wa',
+        label: 'Fire damage in Edgewood',
+        description: 'Station 118, North Hill shops, and the insurance file.',
+      },
+      {
+        href: '/areas/edgewood/sell-inherited-probate-house',
+        label: 'Inherited houses in Edgewood',
+        description: 'When the wet house came from an estate.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, before the city detail.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Foreclosure in Edgewood',
+        description: 'When a trustee’s notice arrived with the leak.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say where the water is. You do not have to dry the house first.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood offer on the water-damaged house',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. Reach out, and KindKey will help you through the whole process from start to finish. You do not have to dry the house out first. You can say no.',
+  }),
 ];
