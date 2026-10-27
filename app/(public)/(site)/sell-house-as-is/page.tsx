@@ -1,16 +1,10 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import dynamic from 'next/dynamic';
 import HeroSection from '@/components/HeroSection';
 import TrustBadges from '@/components/TrustBadges';
 import StepTimeline from '@/components/StepTimeline';
 import FAQAccordion from '@/components/FAQAccordion';
 import CTASection from '@/components/CTASection';
-
-// Lazy load below-the-fold components
-const ReviewsSection = dynamic(() => import('@/components/ReviewsSection'), {
-  ssr: true,
-});
 
 const companyName = 'KindKey Home Buyers';
 const defaultHeroImage = '/logo.avif';
@@ -189,8 +183,6 @@ export default function SellHouseAsIsPage() {
           </div>
         </div>
       </section>
-
-      <ReviewsSection />
 
       <section className="bg-primary py-20">
         <div className="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">

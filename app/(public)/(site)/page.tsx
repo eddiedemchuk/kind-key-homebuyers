@@ -17,9 +17,6 @@ const CityGrid = dynamic(() => import('@/components/CityGrid'), {
 const VideoCase = dynamic(() => import('@/components/VideoCase'), {
   ssr: true,
 });
-const ReviewsSection = dynamic(() => import('@/components/ReviewsSection'), {
-  ssr: true,
-});
 const FAQAccordion = dynamic(() => import('@/components/FAQAccordion'), {
   ssr: true,
 });
@@ -242,8 +239,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <ReviewsSection />
 
       <section className="bg-primary py-20">
         <div className="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
