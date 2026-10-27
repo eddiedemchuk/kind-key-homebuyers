@@ -421,18 +421,28 @@ export default function OfferLeadForm({
           Continue →
         </button>
       ) : (
-        <>
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className={`${submitButtonClass} scroll-mb-[calc(80px+env(safe-area-inset-bottom,0px))]`}
-          >
-            {isSubmitting ? 'Submitting...' : 'Get My Free Cash Offer'}
-          </button>
-          <p className="text-center text-xs font-medium text-text-secondary">
-            Free, no obligation, we never share your info
-          </p>
-        </>
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          className={`${submitButtonClass} scroll-mb-[calc(80px+env(safe-area-inset-bottom,0px))]`}
+        >
+          {isSubmitting ? 'Submitting...' : 'Get My Free Cash Offer'}
+        </button>
+      )}
+      <p className="flex items-center justify-center gap-1.5 text-center text-xs font-medium leading-tight text-text-primary">
+        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden className="h-3.5 w-3.5 shrink-0">
+          <path
+            fillRule="evenodd"
+            d="M10 2a4 4 0 00-4 4v2H5a2 2 0 00-2 2v7a2 2 0 002 2h10a2 2 0 002-2V10a2 2 0 00-2-2h-1V6a4 4 0 00-4-4zm2 6V6a2 2 0 10-4 0v2h4z"
+            clipRule="evenodd"
+          />
+        </svg>
+        100% confidential — we never share your info
+      </p>
+      {stepped && step === 1 ? null : (
+        <p className="text-center text-xs font-medium text-text-secondary">
+          Free, no obligation, we never share your info
+        </p>
       )}
     </form>
   );
