@@ -1418,12 +1418,14 @@ export const expansionBlogPosts: BlogPost[] = [
           'No. KindKey buys houses on North Hill, along Jovita Boulevard, on the Meridian corridor, and in the valley with the remodel unfinished. You do not need drywall, a final inspection, or a new contractor bid. Call (206) 519-5463 or use the cash-offer form. You can decline the offer.',
       },
       {
-        question: 'The permit is open, expired, or I never pulled one. Can you still make an offer?',
+        question:
+          'The permit is open, expired, or I never pulled one. Can you still make an offer?',
         answer:
           'Yes. Bring the permit card if you have it. If you do not, say so. KindKey will not decide whether a permit has expired, will not renew it, and will not pull one for you. The city’s permit counter at 10440 Dom Calata Way E is for owners who choose to keep permitting.',
       },
       {
-        question: 'The contractor left and there may be an unpaid bill. Will KindKey handle the claim?',
+        question:
+          'The contractor left and there may be an unpaid bill. Will KindKey handle the claim?',
         answer:
           'No. KindKey does not interpret lien law and does not negotiate a contractor’s invoice. If a claim is recorded and you do not understand it, talk with a Washington attorney. Amounts that must be paid can reduce proceeds and show on the settlement statement. You can still request an offer.',
       },
