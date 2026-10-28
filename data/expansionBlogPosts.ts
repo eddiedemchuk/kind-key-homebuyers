@@ -1359,4 +1359,205 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. Reach out, and KindKey will help you through the whole process from start to finish. You do not have to dry the house out first. You can say no.',
   }),
+  post('sell-house-with-stalled-remodel-edgewood-wa', {
+    breadcrumbName: 'Stalled remodel in Edgewood',
+    title: 'Selling a House with a Stalled or Unfinished Remodel in Edgewood, WA',
+    description:
+      'How Edgewood owners sell a North Hill or valley house with an open permit, an expired permit, or a remodel that stopped. KindKey buys as a principal. Not legal advice.',
+    h1: 'Selling a House with a Stalled or Unfinished Remodel in Edgewood, WA',
+    publishedAt: '2026-10-28',
+    intro: [
+      `You can sell a house with a stalled or unfinished remodel in Edgewood without closing the walls, calling for a final inspection, or hiring a new contractor first. ${office} KindKey is not a contractor, a permit expediter, or the city’s building official.`,
+      'Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. It incorporated on February 28, 1996. Most residents live on North Hill: longer driveways, and shops set back from the street. A smaller share of the city sits in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. A gutted kitchen on North Hill, a framed addition along Jovita, and a valley bathroom that was opened and never closed are different projects. Bring the address.',
+    ],
+    callout:
+      'You do not have to finish the remodel, pass a final inspection, or collect a contractor bid before KindKey looks. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'A gutted kitchen, a framed addition, and a permit that was never finaled',
+        paragraphs: [
+          'A stalled remodel is work that started and stopped. On a North Hill lot that can be a kitchen down to the studs, a garage that was going to become a room, a shop with new wiring and no cover plates, or an addition framed in the side yard and still wrapped in house wrap. In the valley it is often a smaller house: one bathroom opened for a leak, a floor that was pulled up, or a room addition that never dried in. Some of these houses are still lived in. Some are not. Some still have a permit card in the window. Some have a card that the owner believes expired. Some never had a permit at all. Say which one you have. KindKey prices the property you describe. A single Edgewood number, guessed before anyone sees the open walls, is not an offer.',
+          'You do not have to hang drywall, put the cabinets back, pull a new permit, or schedule the inspection the last contractor missed. Photos of the open room, the addition, the shop, and any permit card are enough to start. If a floor, a stair, or a temporary opening is not safe to walk, say so. An exterior look can begin the conversation. Do not walk a house that is not safe just to satisfy a buyer. Tools, leftover materials, and furniture you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to.',
+          'A worn-out roof, a foundation crack, or a shop that needs wiring, with no remodel in progress, is a different article. The Edgewood major-repairs guide covers that house. A shop or a room that was built years ago and never permitted, with no project underway now, is the Edgewood code-and-unpermitted guide. Use this page when the project itself is what stopped: open studs, a permit in the file, a contractor who left, or an addition that never reached a final inspection. North Hill lots are often larger than a Tacoma city lot, so the walkthrough has to include the house and the outbuildings. Tell us which structure is unfinished. Milton, next door, can fall in King County or Pierce County. Edgewood does not. A mailing address that says Edgewood is not always inside the city. The closing agent confirms the parcel. The deed records with the Pierce County Auditor.',
+        ],
+      },
+      {
+        heading: 'What the Edgewood permit counter actually publishes',
+        paragraphs: [
+          'Community Development is at Edgewood City Hall, 10440 Dom Calata Way E, Edgewood, WA 98372. The permit line published by the city is (253) 952-3299. City Hall’s posted hours are Monday through Thursday, 8:30 a.m. to 5:00 p.m. The building division publishes cityhall@cityofedgewood.org. The online permit center publishes permit@edgewoodwa.gov for status questions. That counter is for owners who choose to keep permitting. KindKey does not require the visit, and KindKey will not email the permit desk, pull the permit, or appear for an inspection.',
+          'The city publishes more than one description of review time, and both are targets rather than a promise about your file. The online permit center says plumbing, mechanical, and residential re-roof applications are generally issued within one week, and that the city tries to review other new applications within eight weeks and resubmittals within six weeks, depending on complexity. The building and fire prevention page gives examples by project type: a very small interior-only project with no engineering might complete review in one week, smaller residential alterations and additions might complete a first review in two weeks, a new detached residence is described as typically about five weeks for a first review, and more complex projects may take up to ten weeks, with further time when corrections come back. If you have waited longer than the target posted for your application, the permit center says to email permit@edgewoodwa.gov. KindKey will not send that email and will not tell you the city is late. Your application status is the clock that matters. None of those weeks is a step KindKey requires before an offer.',
+          'Inspections, if you are still pursuing the permit yourself, are scheduled on that same portal. The city says a request must be in no later than 4:00 p.m. one business day before the desired date, and that a scheduled inspection can be canceled up to 6:00 a.m. the day of the inspection. KindKey will not book it. The portal also lets an account holder opt into an email 30 days before a permit is set to expire. That notice is a reminder of a date the city already has. It is not a statewide expiration rule, and it is not a calculation KindKey will make. Chapter 15.10 EMC is the administration chapter the city uses in place of Chapter 1 of the 2021 International Building Code and in place of Chapter 1 of the 2021 International Residential Code, under EMC 15.20.010 and EMC 15.30.010. Read the date on your own permit. KindKey will not decide that the permit has expired, and KindKey will not tell you whether to renew it.',
+          'The city’s building and fire prevention page posts construction hours and attributes them to EMC 18.90.140(G), unless a permit decision modifies them: Monday through Friday, 7:00 a.m. to 7:00 p.m., Saturday 9:00 a.m. to 6:00 p.m., and no construction on Sunday or on city-observed holidays. A contractor who is still on site is working on the city’s clock. KindKey’s purchase does not depend on that schedule. You can ask for an offer while a permit is open, expired, suspended, or never pulled. Bring the paperwork if you have it. If you do not, say so.',
+        ],
+      },
+      {
+        heading: 'Finish work, a cut wall, and a land-use approval are different papers',
+        paragraphs: [
+          'EMC 15.20.030(A) says an exemption from the building-permit requirement is not authorization to violate other rules, and that an exemption under one technical code does not exempt the work from another. EMC 15.20.030(C)(1) says application or notice is not required for ordinary repairs, and then says those repairs shall not include work affecting public health or general safety. The list includes cutting away any wall or partition, removing or cutting a structural beam or load-bearing support, changing a required means of egress, and adding, altering, replacing, or relocating water, sewer, gas, or similar piping, electric wiring, or mechanical work. EMC 15.20.030(C)(2)(d) lists finish work such as painting, papering, tiling, carpeting, cabinets, counter tops, and similar work as permit-exempt when the rest of that section is met. A kitchen that only needed new cabinet boxes can fall in a different sentence from a kitchen that moved a wall or the plumbing. KindKey will not decide which sentence describes your house. The city does. You do not have to get that ruling before KindKey looks.',
+          'EMC 15.20.030(B) says those exemptions do not apply when the work is in a critical area the subsection lists, including wetlands, flood hazard areas, landslide hazard areas, and erosion hazard areas. The city’s stormwater materials describe Jovita Creek, in the northeast of the city, in a steep-sided canyon, and say the adjacent hill slopes are subject to slides. That describes the basin. It is not a finding that your addition sits in a landslide hazard area. If the remodel is on a slope along Jovita Boulevard, say what you have seen. KindKey will not map the lot and will not tell you the exemption applies.',
+          'A building permit card and a land-use decision are different documents. EMC 18.40.020 says the building code official shall not issue a building permit for construction, reconstruction, or alteration of a structure for which a zoning decision is required but has not been issued. EMC 18.40.090(K) is the expiration rule for a Process II approval, which that chapter titles a major administrative action. It says the applicant must begin construction or submit a complete building permit application within one year after the final decision is issued, or the decision becomes void, and must substantially complete construction and the applicable conditions within five years after the final decision of the city, or the decision becomes void. EMC 18.40.090(L) allows a written request to community development for a one-time extension of up to one year. The request has to show substantial progress and circumstances beyond the applicant’s control, and it has to include the fee in the city fee schedule. The section says the community development director’s decision on that extension is final and not appealable. EMC 18.40.100(K) points Process III, the hearing-examiner process, back to the same expiration subsection. Do not copy the one-year and five-year sentences onto a building permit card unless the decision in your hand is the approval those sentences govern. KindKey will not classify the file, count the year, write the extension letter, or pay the fee.',
+          'If the city has already issued a decision you can appeal under the building title, EMC 15.90.010 lists what may go to the hearing examiner. The list includes a decision on a permit application under EMC 15.10.230 and revocation or suspension of an issued building permit under EMC 15.10.320, along with certain interpretations, modifications, alternative-materials decisions, and completeness determinations. The section says no other determinations, orders, or approvals of the code official under that title may be appealed. EMC 15.90.020 says the applicant or permittee may file a written request for appeal with the city clerk within seven business days of the date of the applicable decision. EMC 15.90.030 says the hearing examiner schedules the hearing no sooner than 10 days nor later than 30 days after the appeal is filed, unless the parties agree otherwise. Read the date on your paper. KindKey will not count the days, file the appeal, or tell you whether your email from the city is on that list. If the paper has a hearing, a fine, or an order to vacate, talk with a Washington attorney. Do not skip a hearing because a buyer is looking. This article is not legal advice.',
+        ],
+      },
+      {
+        heading: 'The contractor left, and the unfinished house can still be sold as-is',
+        paragraphs: [
+          'An unpaid contractor bill can show up when the closing agent runs title. KindKey does not interpret Washington lien law, does not tell you whether a claim was recorded correctly, and does not negotiate the invoice. If a claim is in the file and you do not understand it, talk with a Washington attorney. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. You see them on the settlement statement, prepared by the closing agent, before you close. KindKey does not promise that a contractor’s bill disappears when you sign.',
+          'A retail buyer using a mortgage often cannot close while walls are open, an inspection was never finaled, or a permit is sitting unfinished in the city file. Cash, in this sale, means KindKey is not waiting on that buyer’s loan. It does not mean a suitcase of money, and it does not erase a mortgage, a Pierce County tax bill, a city cost, or the contractor’s bill. The offer reflects the remaining work, so it can be less than a retail price for a finished house. You can say no.',
+          `If a foreclosure notice, a probate, or a divorce is sitting next to the remodel, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. Your attorney confirms who can sign. KindKey will not file a probate, will not guess which relative has authority, and will not tell divorcing owners which signature the deed needs. A Pierce County property-tax delinquency is a different clock from a permit. Parts of Edgewood lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary. ${closing}`,
+          'A remodel that added a bathroom or a second living space can also be a septic question. Many older North Hill and Jovita lots use a septic system, and some use a private well. Others are on public sewer and public water. The city name does not decide it. On-site sewage questions in Pierce County go to the Tacoma-Pierce County Health Department, not to KindKey. EMC 18.90.190 says a landowner seeking an accessory dwelling unit applies for a building permit, and that the unit must be served by an approved potable water system and an approved sewer or on-site septic system. KindKey will not legalize a room over a shop or a garage apartment. If someone is living in the unfinished space, say so. Do not make that person leave so the house looks vacant. You do not have to replace a drainfield before an offer.',
+          'An open roof or an open exterior wall can also draw a maintenance letter. Until the deed records, that file stays with the owner. Requesting an offer does not close the walls or close the city’s case. The Edgewood vacant-house guide and the water-damage guide cover a roof that is no longer intact, including EMC 15.80.301.4 and the unfit-building chapter. Use those pages when the problem is the leak or the empty house. Use this page when the problem is the remodel that stopped. If the project stopped because of a fire, the Edgewood fire guide is the one that covers the insurance claim. KindKey does not advise you on a claim.',
+          'Finishing the remodel can fit if you have the money, the time, and a house you want to show. A listing can fit after that, or before it, if a broker will take the condition and you can host access. Hire a licensed broker if you want a listing. KindKey will not run one and will not tell you a listed sale is a mistake. A direct sale fits when the bid to finish is larger than the cash you have, when you already live in Puyallup, Sumner, Tacoma, or another state, or when a deadline is closer than the city’s review examples. A stalled remodel in Port Orchard, Bremerton, Silverdale, Poulsbo, Bainbridge Island, Kingston, Olalla, or Seabeck is a Kitsap County file. Do not use this Edgewood page as the permit guide for a Kitsap city, or for a Milton letter. The sequence here is a call or the cash-offer form, one walkthrough, a written offer, and a closing date you help choose with the closing agent. KindKey does not promise a specific number of days. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the open room through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do I have to finish an Edgewood remodel before KindKey will look?',
+        answer:
+          'No. KindKey buys houses on North Hill, along Jovita Boulevard, on the Meridian corridor, and in the valley with the remodel unfinished. You do not need drywall, a final inspection, or a new contractor bid. Call (206) 519-5463 or use the cash-offer form. You can decline the offer.',
+      },
+      {
+        question: 'The permit is open, expired, or I never pulled one. Can you still make an offer?',
+        answer:
+          'Yes. Bring the permit card if you have it. If you do not, say so. KindKey will not decide whether a permit has expired, will not renew it, and will not pull one for you. The city’s permit counter at 10440 Dom Calata Way E is for owners who choose to keep permitting.',
+      },
+      {
+        question: 'The contractor left and there may be an unpaid bill. Will KindKey handle the claim?',
+        answer:
+          'No. KindKey does not interpret lien law and does not negotiate a contractor’s invoice. If a claim is recorded and you do not understand it, talk with a Washington attorney. Amounts that must be paid can reduce proceeds and show on the settlement statement. You can still request an offer.',
+      },
+      {
+        question:
+          'Is a stalled remodel the same as a code case, a failed septic system, or a foreclosure?',
+        answer:
+          'No. A city notice about unpermitted work is the Edgewood code page. A drainfield question goes to the Tacoma-Pierce County Health Department. A trustee’s notice is a different deadline. If a foreclosure notice, a probate, or a divorce is also in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34 that KindKey will not interpret. KindKey can still look at the house.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, Meridian, and the valley.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell a house as-is in Edgewood',
+        description: 'The Edgewood as-is page.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'Condition does not have to be repaired first.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'When the open work has already drawn a city letter.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'The King and Pierce County overview.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-edgewood-wa',
+        label: 'Unpermitted work in Edgewood',
+        description: 'A shop or a room that was never permitted, with no project underway.',
+      },
+      {
+        href: '/blog/sell-house-needing-repairs-edgewood-wa',
+        label: 'Major repairs in Edgewood',
+        description: 'A roof, a foundation, or other work that is not a remodel in progress.',
+      },
+      {
+        href: '/areas/edgewood/sell-hoarder-house',
+        label: 'Heavy-repair houses in Edgewood',
+        description: 'When the unfinished room is one part of a larger repair.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents and major repairs can stay.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description: 'When the remodel added a bathroom on a private system.',
+      },
+      {
+        href: '/areas/edgewood/sell-inherited-probate-house',
+        label: 'Inherited houses in Edgewood',
+        description: 'When the stopped remodel came with the estate.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, before the permit detail.',
+      },
+      {
+        href: '/blog/selling-a-house-during-divorce-edgewood-wa',
+        label: 'Divorce sales in Edgewood',
+        description: 'When the remodel stopped because the household split.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Foreclosure in Edgewood',
+        description: 'When a trustee’s notice arrived with the open permit.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Vacant houses in Edgewood',
+        description: 'When nobody is living in the unfinished house.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-edgewood-wa',
+        label: 'Selling a vacant Edgewood house',
+        description: 'The city rule for a roof or a wall that is no longer intact.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-tenants',
+        label: 'Houses with tenants in Edgewood',
+        description: 'When someone still lives in the unfinished space.',
+      },
+      {
+        href: '/blog/sell-water-damaged-house-edgewood-wa',
+        label: 'Water damage in Edgewood',
+        description: 'When the open walls started as a leak.',
+      },
+      {
+        href: '/blog/sell-inherited-acreage-with-outbuildings-edgewood-wa',
+        label: 'Inherited acreage in Edgewood',
+        description: 'Shops, ADUs, and the building-permit path for a second unit.',
+      },
+      {
+        href: '/blog/behind-on-property-taxes-edgewood-wa',
+        label: 'Property taxes in Edgewood',
+        description: 'A Pierce County bill is a different clock from a permit.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo.',
+      },
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description: 'The next city west. Milton can be King County or Pierce County.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what stopped. You do not have to finish the remodel first.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood offer on the unfinished remodel',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. Reach out, and KindKey will help you through the whole process from start to finish. You do not have to finish the remodel first. You can say no.',
+  }),
 ];
