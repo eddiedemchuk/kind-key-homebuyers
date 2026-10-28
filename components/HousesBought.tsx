@@ -16,6 +16,9 @@ export default function HousesBought() {
       <h2 id="houses-bought-heading" className="text-xl font-bold">
         Houses we&apos;ve bought
       </h2>
+      <p className="mt-1 text-sm font-semibold leading-snug">
+        A small, local family-owned business
+      </p>
       <ul className="mt-3 flex snap-x snap-mandatory gap-3 overflow-x-auto overscroll-x-contain pb-1">
         {HOUSES_BOUGHT.map((src) => (
           <li

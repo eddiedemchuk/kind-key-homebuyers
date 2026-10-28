@@ -160,7 +160,7 @@ export default function OfferLanding({
       />
       <header className="z-40 border-b border-gray-200 bg-white md:sticky md:top-0">
         <MobileNavProvider>
-          <div className="mx-auto flex max-w-xl items-center justify-between gap-3 px-5 py-2 md:py-3">
+          <div className="mx-auto flex max-w-xl items-center justify-between gap-3 px-5 py-1 md:py-3">
             <div className="flex min-w-0 items-center gap-2">
               <Image
                 src="/logo-header.avif"
@@ -198,10 +198,13 @@ export default function OfferLanding({
           >
             <OfferCityHeadline headline={content.headline} />
           </h1>
-          <p className="mt-1 text-base leading-relaxed text-text-secondary md:mt-3">
+          <p className="mt-0.5 text-lg font-bold leading-tight" data-offer-speed>
+            Get your cash offer within 24 hours
+          </p>
+          <p className="mt-1 text-base leading-snug text-text-secondary md:mt-2">
             {content.subhead}
           </p>
-          <p className="mt-1 inline-flex items-center rounded-full border-2 border-divider bg-secondary px-4 py-1.5 text-sm font-bold text-text-primary md:mt-4 md:py-2">
+          <p className="mt-1 inline-flex items-center rounded-full border-2 border-divider bg-secondary px-4 py-1 text-sm font-bold text-text-primary md:mt-4 md:py-2">
             {BBB_TRUST_LINE}
           </p>
           <div

@@ -29,7 +29,7 @@ const sharedSteps: OfferStep[] = [
   },
   {
     title: 'Get a cash offer',
-    body: 'We review the house and send a no-obligation cash offer.',
+    body: 'Get your cash offer within 24 hours. No obligation.',
   },
   {
     title: 'Pick your closing date',
@@ -98,7 +98,7 @@ export const foreclosureOffer: OfferLandingContent = {
     },
     {
       title: 'Get a cash offer',
-      body: 'We review the house as it is and send a no-obligation cash offer.',
+      body: 'Get your cash offer within 24 hours. No obligation.',
     },
     {
       title: 'Close on a date you pick',
@@ -143,7 +143,7 @@ export const inheritedOffer: OfferLandingContent = {
     },
     {
       title: 'Get a cash offer',
-      body: 'We review the house as-is and send a no-obligation cash offer.',
+      body: 'Get your cash offer within 24 hours. No obligation.',
     },
     {
       title: "Close on the estate's timeline",
@@ -193,7 +193,7 @@ export const fireDamageOffer: OfferLandingContent = {
     },
     {
       title: 'Get a cash offer',
-      body: 'We review the house as-is and send a no-obligation cash offer. An open insurance claim is fine.',
+      body: 'Get your cash offer within 24 hours. No obligation. An open insurance claim is fine.',
     },
     {
       title: 'Pick your closing date',
@@ -236,7 +236,7 @@ export const asIsOffer: OfferLandingContent = {
     },
     {
       title: 'Get a cash offer',
-      body: 'We price the house as it is today and send a no-obligation offer.',
+      body: 'Get your cash offer within 24 hours. No obligation.',
     },
     {
       title: 'Close without a fix-up list',
