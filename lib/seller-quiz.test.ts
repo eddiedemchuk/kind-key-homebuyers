@@ -8,18 +8,22 @@ import {
   buildSellerQuizLeadBody,
   chooseQuizCondition,
   chooseQuizListed,
+  chooseQuizRealtor,
   chooseQuizTimeline,
   editQuizAnswers,
   goBackQuiz,
   initialSellerQuizState,
   quizAnswerSummary,
   quizLeadAttribution,
+  sellerQuizNotAFitMessage,
+  shouldSubmitQuizLead,
 } from './seller-quiz';
 
 describe('seller quiz flow', () => {
-  it('advances through four taps and keeps earlier answers on back', () => {
+  it('advances through five taps and keeps earlier answers on back', () => {
     let state = initialSellerQuizState;
     assert.equal(state.step, 1);
+    assert.equal(state.outcome, 'quiz');
 
     state = chooseQuizCondition(state, 'Full of Stuff / Needs Cleanout');
     assert.equal(state.step, 2);
@@ -35,6 +39,15 @@ describe('seller quiz flow', () => {
     assert.equal(state.answers.condition, 'Full of Stuff / Needs Cleanout');
     assert.equal(state.answers.timeline, '1–3 Months');
 
+    state = chooseQuizRealtor(state, 'expired');
+    assert.equal(state.step, 5);
+    assert.equal(state.outcome, 'quiz');
+    assert.equal(state.answers.realtorStatus, 'expired');
+    assert.equal(shouldSubmitQuizLead(state), true);
+
+    state = goBackQuiz(state);
+    assert.equal(state.step, 4);
+    assert.equal(state.answers.realtorStatus, 'expired');
     state = goBackQuiz(state);
     assert.equal(state.step, 3);
     assert.equal(state.answers.listedWithAgent, 'yes');
@@ -49,11 +62,42 @@ describe('seller quiz flow', () => {
     state = chooseQuizCondition(state, 'Good Shape — Just Want a Fast Sale');
     state = chooseQuizTimeline(state, 'Just Exploring Options');
     state = chooseQuizListed(state, 'no');
+    state = chooseQuizRealtor(state, 'no');
     const edited = editQuizAnswers(state);
     assert.equal(edited.step, 1);
+    assert.equal(edited.outcome, 'quiz');
     assert.equal(edited.answers.condition, 'Good Shape — Just Want a Fast Sale');
     assert.equal(edited.answers.timeline, 'Just Exploring Options');
     assert.equal(edited.answers.listedWithAgent, 'no');
+    assert.equal(edited.answers.realtorStatus, 'no');
+  });
+
+  it('stops a listed-or-realtor answer before name and phone', () => {
+    let state = initialSellerQuizState;
+    state = chooseQuizCondition(state, 'Needs Major Repairs');
+    state = chooseQuizTimeline(state, 'As Fast as 7 Days');
+    state = chooseQuizListed(state, 'no');
+    state = chooseQuizRealtor(state, 'listed-or-realtor');
+
+    assert.equal(state.step, 4);
+    assert.equal(state.outcome, 'not-a-fit');
+    assert.equal(state.answers.realtorStatus, 'listed-or-realtor');
+    assert.equal(shouldSubmitQuizLead(state), false);
+    assert.equal(
+      sellerQuizNotAFitMessage('(253) 453-8597'),
+      'Thanks! Based on your answers, we may not be the best fit right now, but feel free to call us at (253) 453-8597.'
+    );
+
+    const back = goBackQuiz(state);
+    assert.equal(back.outcome, 'quiz');
+    assert.equal(back.step, 4);
+    assert.equal(back.answers.realtorStatus, 'listed-or-realtor');
+    assert.equal(shouldSubmitQuizLead(back), false);
+
+    const qualified = chooseQuizRealtor(back, 'no');
+    assert.equal(qualified.outcome, 'quiz');
+    assert.equal(qualified.step, 5);
+    assert.equal(shouldSubmitQuizLead(qualified), true);
   });
 });
 
@@ -94,11 +138,13 @@ describe('seller quiz submission payload', () => {
       condition: 'Needs Cosmetics / Updating',
       timeline: 'Within 30 Days',
       listedWithAgent: 'no',
+      realtorStatus: 'no',
     });
     const body = buildSellerQuizLeadBody({
       condition: 'Needs Cosmetics / Updating',
       timeline: 'Within 30 Days',
       listedWithAgent: 'no',
+      realtorStatus: 'no',
       propertyAddress: ' 123 Main St, Auburn, WA ',
       name: ' Ada Lovelace ',
       phone: '(253) 555-0100',
@@ -118,9 +164,11 @@ describe('seller quiz submission payload', () => {
     assert.equal(body.condition, 'Needs Cosmetics / Updating');
     assert.equal(body.situation, summary);
     assert.equal(body.notes, summary);
+    assert.equal(body.realtor_status, 'no');
     assert.match(String(body.situation), /Needs Cosmetics \/ Updating/);
     assert.match(String(body.situation), /Within 30 Days/);
     assert.match(String(body.situation), /No — Not Listed/);
+    assert.match(String(body.situation), /Realtor: No/);
     assert.equal(body.src, 'fb');
     assert.equal(body.form_origin, 'facebook_ads_eddie');
     assert.equal(body.pagePath, '/offer/quiz');
@@ -142,6 +190,7 @@ describe('seller quiz submission payload', () => {
       situation: String(body.situation),
       notes: String(body.notes),
       reasonForSelling: String(body.reasonForSelling),
+      realtorStatus: 'No',
       listedWithAgent: 'no',
       formOrigin: 'facebook_ads_eddie',
       src: 'fb',
@@ -154,6 +203,8 @@ describe('seller quiz submission payload', () => {
     assert.equal(payload.lead_source, 'Facebook Leads (Eddie)');
     assert.equal(payload.source_tag, 'Facebook Leads (Eddie)');
     assert.equal(payload.tags, 'website lead, Facebook Leads (Eddie)');
+    assert.doesNotMatch(String(payload.tags), /verify owner/);
+    assert.equal(payload.realtor_status, 'No');
     assert.equal(payload.form_origin, 'facebook_ads_eddie');
     assert.equal(payload.condition, 'Needs Cosmetics / Updating');
     assert.equal(payload.timeline, 'Within 30 Days');
@@ -164,6 +215,7 @@ describe('seller quiz submission payload', () => {
     assert.match(String(payload.attribution_notes), /Needs Cosmetics \/ Updating/);
     assert.match(String(payload.attribution_notes), /Within 30 Days/);
     assert.match(String(payload.attribution_notes), /No — Not Listed/);
+    assert.match(String(payload.attribution_notes), /Realtor: No/);
     assert.equal(
       Array.isArray(payload.customFields) &&
         payload.customFields.some(
@@ -177,6 +229,53 @@ describe('seller quiz submission payload', () => {
         ),
       true
     );
+    assert.equal(
+      Array.isArray(payload.customFields) &&
+        payload.customFields.some(
+          (field) =>
+            typeof field === 'object' &&
+            field !== null &&
+            'key' in field &&
+            field.key === 'realtor_status' &&
+            'field_value' in field &&
+            field.field_value === 'No'
+        ),
+      true
+    );
+  });
+
+  it('keeps an expired listing on the Facebook tag without adding verify owner', () => {
+    const summary = quizAnswerSummary({
+      condition: 'Needs Major Repairs',
+      timeline: 'As Fast as 7 Days',
+      listedWithAgent: 'yes',
+      realtorStatus: 'expired',
+    });
+    const payload = buildGhlPayload({
+      name: 'Ada Lovelace',
+      phone: '+12535550100',
+      email: '',
+      propertyAddress: '123 Main St, Auburn, WA',
+      condition: 'Needs Major Repairs',
+      timeline: 'As Fast as 7 Days',
+      situation: summary,
+      notes: summary,
+      reasonForSelling: summary,
+      listedWithAgent: 'yes',
+      realtorStatus: 'It was listed but expired',
+      formOrigin: 'facebook_ads_eddie',
+      src: 'fb',
+      pagePath: '/quiz',
+      smsConsent: true,
+      smsConsentTextVersion: SMS_CONSENT_TEXT_VERSION,
+    });
+
+    assert.equal(payload.source, 'Facebook Leads (Eddie)');
+    assert.equal(payload.tags, 'website lead, Facebook Leads (Eddie), listed with agent');
+    assert.doesNotMatch(String(payload.tags), /verify owner/);
+    assert.equal(payload.realtor_status, 'It was listed but expired');
+    assert.match(String(payload.situation), /It was listed but expired/);
+    assert.match(String(payload.attribution_notes), /Realtor: It was listed but expired/);
   });
 
   it('rejects an empty phone before the payload would be accepted', () => {
@@ -184,6 +283,7 @@ describe('seller quiz submission payload', () => {
       condition: 'Needs Major Repairs',
       timeline: 'As Fast as 7 Days',
       listedWithAgent: 'yes',
+      realtorStatus: 'expired',
       propertyAddress: '123 Main St, Auburn, WA',
       name: 'Ada Lovelace',
       phone: '',

@@ -8,20 +8,25 @@ import { FACEBOOK_OFFER_PHONE, GOOGLE_ADS_PHONE } from '../lib/phones';
 import {
   chooseQuizCondition,
   chooseQuizListed,
+  chooseQuizRealtor,
   chooseQuizTimeline,
   editQuizAnswers,
   goBackQuiz,
   initialSellerQuizState,
+  sellerQuizNotAFitMessage,
   type SellerQuizState,
 } from '../lib/seller-quiz';
 
 function screen(state: SellerQuizState, extra: Partial<SellerQuizScreenProps> = {}) {
   const props: SellerQuizScreenProps = {
     step: state.step,
+    outcome: state.outcome,
+    callPhone: FACEBOOK_OFFER_PHONE,
     answers: state.answers,
     onCondition: () => undefined,
     onTimeline: () => undefined,
     onListed: () => undefined,
+    onRealtor: () => undefined,
     onBack: () => undefined,
     onEdit: () => undefined,
     propertyAddress: '',
@@ -45,10 +50,10 @@ function telHrefs(html: string): string[] {
 }
 
 describe('seller quiz screen', () => {
-  it('renders the four taps, keeps the previous choice, and asks for a phone', () => {
+  it('renders the five taps, keeps the previous choice, and asks for a phone', () => {
     let state = initialSellerQuizState;
     let html = screen(state);
-    assert.match(html, /Step 1 of 4/);
+    assert.match(html, /Step 1 of 5/);
     assert.match(html, /What condition is the property in\?/);
     assert.equal(html.includes('← Back'), false);
     for (const option of [
@@ -62,7 +67,7 @@ describe('seller quiz screen', () => {
 
     state = chooseQuizCondition(state, 'Needs Major Repairs');
     html = screen(state);
-    assert.match(html, /Step 2 of 4/);
+    assert.match(html, /Step 2 of 5/);
     assert.match(html, /How soon would you like to close\?/);
     assert.match(html, /← Back/);
     for (const option of [
@@ -77,34 +82,45 @@ describe('seller quiz screen', () => {
     const backToCondition = goBackQuiz(state);
     assert.equal(backToCondition.answers.condition, 'Needs Major Repairs');
     html = screen(backToCondition);
-    assert.match(html, /Step 1 of 4/);
+    assert.match(html, /Step 1 of 5/);
     assert.match(html, /aria-pressed="true"/);
     assert.match(html, /Needs Major Repairs/);
 
     state = chooseQuizTimeline(state, 'Within 30 Days');
     html = screen(state);
-    assert.match(html, /Step 3 of 4/);
+    assert.match(html, /Step 3 of 5/);
     assert.match(html, /Is the property currently listed with a real estate agent\?/);
     assert.match(html, /No — Not Listed/);
     assert.match(html, /Yes — Currently Listed/);
 
     const backToTimeline = goBackQuiz(state);
     html = screen(backToTimeline);
-    assert.match(html, /Step 2 of 4/);
+    assert.match(html, /Step 2 of 5/);
     assert.match(html, /aria-pressed="true"/);
     assert.match(html, /Within 30 Days/);
     assert.equal(backToTimeline.answers.condition, 'Needs Major Repairs');
 
     state = chooseQuizListed(state, 'no');
     html = screen(state);
-    assert.match(html, /Step 4 of 4/);
+    assert.match(html, /Step 4 of 5/);
+    assert.match(html, /Is the home listed or are you working with a realtor\?/);
+    assert.match(html, />No</);
+    assert.match(html, /Yes, it&#x27;s listed or I have a realtor/);
+    assert.match(html, /It was listed but expired/);
+    assert.equal(html.includes('id="hero-phone"'), false);
+
+    state = chooseQuizRealtor(state, 'expired');
+    html = screen(state);
+    assert.match(html, /Step 5 of 5/);
     assert.match(html, /Where should we send your cash offer\?/);
     assert.match(html, /Needs Major Repairs/);
     assert.match(html, /Within 30 Days/);
     assert.match(html, /No — Not Listed/);
+    assert.match(html, /It was listed but expired/);
     assert.match(html, /id="hero-phone"/);
     assert.match(html, /Get My Cash Offer →/);
     assert.equal(html.includes('Phone is required.'), false);
+    assert.equal(html.includes('data-quiz-outcome="not-a-fit"'), false);
 
     html = screen(state, { phoneError: 'Phone is required.' });
     assert.match(html, /Phone is required\./);
@@ -115,8 +131,44 @@ describe('seller quiz screen', () => {
     assert.equal(edited.answers.timeline, 'Within 30 Days');
     assert.equal(edited.answers.listedWithAgent, 'no');
     html = screen(edited);
-    assert.match(html, /Step 1 of 4/);
+    assert.match(html, /Step 1 of 5/);
     assert.match(html, /aria-pressed="true"/);
+  });
+
+  it('shows a not-a-fit page for a listed home and does not ask for a phone', () => {
+    let state = initialSellerQuizState;
+    state = chooseQuizCondition(state, 'Needs Major Repairs');
+    state = chooseQuizTimeline(state, 'Within 30 Days');
+    state = chooseQuizListed(state, 'yes');
+    state = chooseQuizRealtor(state, 'listed-or-realtor');
+
+    let html = screen(state);
+    assert.match(html, /data-quiz-outcome="not-a-fit"/);
+    assert.match(html, /Thanks!/);
+    assert.match(
+      html,
+      /Based on your answers, we may not be the best fit right now, but feel free to call us at/
+    );
+    assert.match(html, /href="tel:\+12534538597"/);
+    assert.match(html, /\(253\) 453-8597/);
+    assert.equal(html.includes('(253) 352-4379'), false);
+    assert.equal(html.includes('id="hero-phone"'), false);
+    assert.equal(html.includes('Get My Cash Offer'), false);
+    assert.equal(html.includes('Step 4 of 5'), false);
+    assert.equal(html.includes('verify owner'), false);
+    assert.equal(html.includes('family'), false);
+
+    html = screen(state, { callPhone: GOOGLE_ADS_PHONE });
+    assert.match(html, /href="tel:\+12533524379"/);
+    assert.match(html, /\(253\) 352-4379/);
+    assert.equal(html.includes('(253) 453-8597'), false);
+
+    const back = goBackQuiz(state);
+    html = screen(back);
+    assert.match(html, /Step 4 of 5/);
+    assert.match(html, /aria-pressed="true"/);
+    assert.match(html, /Yes, it&#x27;s listed or I have a realtor/);
+    assert.equal(html.includes('data-quiz-outcome="not-a-fit"'), false);
   });
 });
 

@@ -2,7 +2,11 @@ import { z } from 'zod';
 import { type FormOrigin, isOfferFormOrigin } from './form-origin';
 import { isCompleteUsPhone } from './phone';
 import { isSellerQuizPath } from './phones';
-import { SELLER_QUIZ_CONDITIONS, SELLER_QUIZ_TIMELINES } from './seller-quiz';
+import {
+  SELLER_QUIZ_CONDITIONS,
+  SELLER_QUIZ_QUALIFYING_REALTOR,
+  SELLER_QUIZ_TIMELINES,
+} from './seller-quiz';
 import { SMS_CONSENT_REQUIRED_MESSAGE, SMS_CONSENT_TEXT_VERSION } from './sms-consent';
 
 const optionalPhoneSchema = z.string().refine(
@@ -74,6 +78,11 @@ export const leadApiSchema = z.object({
   smsMarketingConsent: z.boolean().default(false),
   /** Optional so website forms can omit it. The /offer form requires yes or no. */
   listed_with_agent: listedWithAgentSchema.optional(),
+  /**
+   * Seller quiz realtor answer. Only qualifying values are accepted.
+   * "Yes, it's listed or I have a realtor" is not a lead and is rejected.
+   */
+  realtor_status: z.enum(SELLER_QUIZ_QUALIFYING_REALTOR).optional(),
   recaptchaToken: z.string().optional(),
   /** Optional src from /offer. Facebook visits send fb, fb_static, or an empty string. */
   src: z.string().trim().max(40).optional(),
@@ -154,8 +163,23 @@ export function isOfferHeroPath(pagePath: string): boolean {
 }
 
 export function leadSchemaForSubmission(formOrigin: FormOrigin, pagePath: string) {
-  if (!isOfferLeadSubmission(formOrigin, pagePath)) return leadApiSchema;
-  return isOfferHeroPath(pagePath) ? offerHeroLeadApiSchema : offerLeadApiSchema;
+  const base = !isOfferLeadSubmission(formOrigin, pagePath)
+    ? leadApiSchema
+    : isOfferHeroPath(pagePath)
+      ? offerHeroLeadApiSchema
+      : offerLeadApiSchema;
+
+  if (!isSellerQuizPath(pagePath)) return base;
+
+  return base.superRefine((value, ctx) => {
+    if (value.realtor_status !== 'no' && value.realtor_status !== 'expired') {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: ['realtor_status'],
+        message: 'Please tell us whether the home is listed.',
+      });
+    }
+  });
 }
 
 export const extendedLeadFormSchema = leadFormSchema.extend({

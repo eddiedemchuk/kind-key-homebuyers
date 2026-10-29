@@ -243,9 +243,10 @@ describe('lead schemas', () => {
       condition: 'Needs Major Repairs',
       timeline: 'As Fast as 7 Days',
       situation:
-        'Condition: Needs Major Repairs. Timeline: As Fast as 7 Days. Listed: No — Not Listed.',
+        'Condition: Needs Major Repairs. Timeline: As Fast as 7 Days. Listed: No — Not Listed. Realtor: No.',
       notes:
-        'Condition: Needs Major Repairs. Timeline: As Fast as 7 Days. Listed: No — Not Listed.',
+        'Condition: Needs Major Repairs. Timeline: As Fast as 7 Days. Listed: No — Not Listed. Realtor: No.',
+      realtor_status: 'no' as const,
       src: 'fb',
     };
 
@@ -257,7 +258,26 @@ describe('lead schemas', () => {
       assert.equal(parsed.data.timeline, 'As Fast as 7 Days');
       assert.equal(parsed.data.listedWithAgent, 'no');
       assert.equal(parsed.data.listed_with_agent, 'no');
+      assert.equal(parsed.data.realtor_status, 'no');
       assert.equal(parsed.data.email, '');
+
+      const missingRealtor = leadSchemaForSubmission('facebook_ads_eddie', pagePath).safeParse({
+        ...quizLead,
+        realtor_status: undefined,
+      });
+      assert.equal(missingRealtor.success, false, pagePath);
+
+      const listedWithRealtor = leadSchemaForSubmission('facebook_ads_eddie', pagePath).safeParse({
+        ...quizLead,
+        realtor_status: 'listed-or-realtor',
+      });
+      assert.equal(listedWithRealtor.success, false, pagePath);
+
+      const expired = leadSchemaForSubmission('facebook_ads_eddie', pagePath).safeParse({
+        ...quizLead,
+        realtor_status: 'expired',
+      });
+      assert.equal(expired.success, true, pagePath);
 
       const missingPhone = leadSchemaForSubmission('facebook_ads_eddie', pagePath).safeParse({
         ...quizLead,

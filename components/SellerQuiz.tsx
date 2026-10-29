@@ -8,27 +8,36 @@ import { trackEvent, trackLeadSubmit } from '@/lib/analytics';
 import { attributionFieldsForSubmit } from '@/lib/attribution-client';
 import { trackMetaLead } from '@/lib/meta-pixel';
 import { formatPhoneChange } from '@/lib/phone';
-import { persistThankYouPhoneSource, thankYouHref } from '@/lib/phones';
+import { persistThankYouPhoneSource, thankYouHref, type DisplayPhone } from '@/lib/phones';
 import { offerHeroLeadFormSchema, type OfferHeroLeadFormData } from '@/lib/schema';
 import {
   SELLER_QUIZ_CONDITIONS,
   SELLER_QUIZ_LISTED_OPTIONS,
   SELLER_QUIZ_QUESTIONS,
+  SELLER_QUIZ_REALTOR_OPTIONS,
+  SELLER_QUIZ_STEP_COUNT,
   SELLER_QUIZ_TIMELINES,
   buildSellerQuizLeadBody,
   chooseQuizCondition,
   chooseQuizListed,
+  chooseQuizRealtor,
   chooseQuizTimeline,
   editQuizAnswers,
   goBackQuiz,
   initialSellerQuizState,
+  isQualifyingRealtor,
   listedOptionLabel,
   quizLeadAttribution,
+  realtorOptionLabel,
+  sellerQuizNotAFitMessage,
   sellerQuizProgress,
   sellerQuizStepLabel,
+  shouldSubmitQuizLead,
   type SellerQuizAnswers,
   type SellerQuizCondition,
   type SellerQuizListed,
+  type SellerQuizOutcome,
+  type SellerQuizRealtor,
   type SellerQuizState,
   type SellerQuizStep,
   type SellerQuizTimeline,
@@ -47,10 +56,13 @@ const choiceClass = (selected: boolean) =>
 
 export interface SellerQuizScreenProps {
   step: SellerQuizStep;
+  outcome: SellerQuizOutcome;
+  callPhone: DisplayPhone;
   answers: SellerQuizAnswers;
   onCondition: (value: SellerQuizCondition) => void;
   onTimeline: (value: SellerQuizTimeline) => void;
   onListed: (value: SellerQuizListed) => void;
+  onRealtor: (value: SellerQuizRealtor) => void;
   onBack: () => void;
   onEdit: () => void;
   propertyAddress: string;
@@ -75,10 +87,13 @@ export interface SellerQuizScreenProps {
 
 export function SellerQuizScreen({
   step,
+  outcome,
+  callPhone,
   answers,
   onCondition,
   onTimeline,
   onListed,
+  onRealtor,
   onBack,
   onEdit,
   propertyAddress,
@@ -105,8 +120,11 @@ export function SellerQuizScreen({
   const phoneSelection = useRef<number | null>(null);
   const mounted = useRef(false);
   const summary =
-    answers.condition && answers.timeline && answers.listedWithAgent
-      ? `${answers.condition} · ${answers.timeline} · ${listedOptionLabel(answers.listedWithAgent)}`
+    answers.condition &&
+    answers.timeline &&
+    answers.listedWithAgent &&
+    isQualifyingRealtor(answers.realtorStatus)
+      ? `${answers.condition} · ${answers.timeline} · ${listedOptionLabel(answers.listedWithAgent)} · ${realtorOptionLabel(answers.realtorStatus)}`
       : '';
 
   useEffect(() => {
@@ -115,13 +133,51 @@ export function SellerQuizScreen({
       return;
     }
     headingRef.current?.focus({ preventScroll: true });
-  }, [step]);
+  }, [step, outcome]);
 
   useEffect(() => {
     const input = phoneRef.current;
     if (!input || document.activeElement !== input || phoneSelection.current == null) return;
     input.setSelectionRange(phoneSelection.current, phoneSelection.current);
   }, [phone]);
+
+  if (outcome === 'not-a-fit') {
+    const message = sellerQuizNotAFitMessage(callPhone.display);
+    const phoneStart = message.lastIndexOf(callPhone.display);
+    return (
+      <section data-seller-quiz data-quiz-outcome="not-a-fit" aria-labelledby="seller-quiz-heading">
+        <button
+          type="button"
+          onClick={onBack}
+          className="inline-flex min-h-11 items-center text-base font-semibold text-divider"
+        >
+          ← Back
+        </button>
+        <h1
+          id="seller-quiz-heading"
+          ref={headingRef}
+          tabIndex={-1}
+          className="text-balance text-2xl font-bold leading-tight text-text-primary outline-none"
+          style={{ marginBottom: 0, marginTop: '0.75rem' }}
+        >
+          Thanks!
+        </h1>
+        <p className="mt-4 text-base leading-relaxed text-text-primary">
+          {phoneStart === -1 ? (
+            message
+          ) : (
+            <>
+              {message.slice(0, phoneStart)}
+              <a href={`tel:${callPhone.tel}`} className="font-semibold text-divider">
+                {callPhone.display}
+              </a>
+              {message.slice(phoneStart + callPhone.display.length)}
+            </>
+          )}
+        </p>
+      </section>
+    );
+  }
 
   return (
     <section data-seller-quiz data-quiz-step={step} aria-labelledby="seller-quiz-heading">
@@ -130,7 +186,7 @@ export function SellerQuizScreen({
         className="mt-2 h-2 overflow-hidden rounded-full bg-gray-200"
         role="progressbar"
         aria-valuemin={1}
-        aria-valuemax={4}
+        aria-valuemax={SELLER_QUIZ_STEP_COUNT}
         aria-valuenow={step}
         aria-label={sellerQuizStepLabel(step)}
       >
@@ -221,6 +277,26 @@ export function SellerQuizScreen({
       ) : null}
 
       {step === 4 ? (
+        <ul className="mt-4 space-y-3">
+          {SELLER_QUIZ_REALTOR_OPTIONS.map((option) => (
+            <li key={option.value}>
+              <button
+                type="button"
+                className={choiceClass(answers.realtorStatus === option.value)}
+                aria-pressed={answers.realtorStatus === option.value}
+                onClick={() => onRealtor(option.value)}
+              >
+                <span>{option.label}</span>
+                <span aria-hidden className="text-divider">
+                  →
+                </span>
+              </button>
+            </li>
+          ))}
+        </ul>
+      ) : null}
+
+      {step === 5 ? (
         <form
           className="mt-4 space-y-3"
           noValidate
@@ -392,7 +468,13 @@ function messageFor(
   return typeof message === 'string' ? message : undefined;
 }
 
-export default function SellerQuiz({ pathname }: { pathname: '/quiz' | '/offer/quiz' }) {
+export default function SellerQuiz({
+  pathname,
+  callPhone,
+}: {
+  pathname: '/quiz' | '/offer/quiz';
+  callPhone: DisplayPhone;
+}) {
   const [quiz, setQuiz] = useState<SellerQuizState>(initialSellerQuizState);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -419,11 +501,11 @@ export default function SellerQuiz({ pathname }: { pathname: '/quiz' | '/offer/q
 
   const started = useRef(false);
   useEffect(() => {
-    if (quiz.step !== 4 || started.current) return;
+    if (quiz.outcome !== 'quiz' || quiz.step !== 5 || started.current) return;
     started.current = true;
     const source = quizLeadAttribution(pathname, window.location.search);
     trackEvent('form_start', { form_origin: source.formOrigin });
-  }, [pathname, quiz.step]);
+  }, [pathname, quiz.outcome, quiz.step]);
 
   const propertyAddress = watch('propertyAddress') ?? '';
   const name = watch('name') ?? '';
@@ -441,10 +523,13 @@ export default function SellerQuiz({ pathname }: { pathname: '/quiz' | '/offer/q
     setValue('listed_with_agent', listed, { shouldValidate: false });
     setQuiz((state) => chooseQuizListed(state, listed));
   };
+  const selectRealtor = (realtorStatus: SellerQuizRealtor) => {
+    setQuiz((state) => chooseQuizRealtor(state, realtorStatus));
+  };
 
   const submit = async () => {
+    if (!shouldSubmitQuizLead(quiz)) return;
     const answers = quiz.answers;
-    if (!answers.condition || !answers.timeline || !answers.listedWithAgent) return;
     setValue('listed_with_agent', answers.listedWithAgent, { shouldValidate: false });
     const valid = await trigger();
     if (!valid) return;
@@ -472,6 +557,7 @@ export default function SellerQuiz({ pathname }: { pathname: '/quiz' | '/offer/q
             condition: answers.condition,
             timeline: answers.timeline,
             listedWithAgent: answers.listedWithAgent,
+            realtorStatus: answers.realtorStatus,
             propertyAddress: data.propertyAddress,
             name: data.name,
             phone: data.phone,
@@ -507,10 +593,13 @@ export default function SellerQuiz({ pathname }: { pathname: '/quiz' | '/offer/q
     <div ref={formRef} data-offer-form>
       <SellerQuizScreen
         step={quiz.step}
+        outcome={quiz.outcome}
+        callPhone={callPhone}
         answers={quiz.answers}
         onCondition={selectCondition}
         onTimeline={selectTimeline}
         onListed={selectListed}
+        onRealtor={selectRealtor}
         onBack={() => setQuiz((state) => goBackQuiz(state))}
         onEdit={() => setQuiz((state) => editQuizAnswers(state))}
         propertyAddress={propertyAddress}

@@ -134,7 +134,7 @@ export default function SellerQuizLanding({
           KindKey Home Buyers LLC is a local cash home buyer in King, Pierce, and Kitsap County.
         </p>
         <div className="mt-4">
-          <SellerQuiz pathname={pathname} />
+          <SellerQuiz pathname={pathname} callPhone={phone} />
         </div>
         <footer className="mt-12 border-t border-gray-200 py-8 text-sm leading-relaxed text-text-secondary">
           <p>{address}</p>
