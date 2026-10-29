@@ -14,9 +14,12 @@ import { FACEBOOK_OFFER_PHONE, GOOGLE_ADS_PHONE } from '@/lib/phones';
 
 export default function OfferGeneralLanding({
   initialSearch,
+  headline = generalOffer.headline,
   pixelInDocument = false,
 }: {
   initialSearch: string;
+  /** Server-rendered headline, including a whitelist city from the ad URL. */
+  headline?: string;
   /** The document <head> already loaded the pixel. Do not init it again. */
   pixelInDocument?: boolean;
 }) {
@@ -44,7 +47,7 @@ export default function OfferGeneralLanding({
     <>
       {facebook && !pixelInDocument ? <MetaPixel /> : null}
       <OfferLanding
-        content={generalOffer}
+        content={{ ...generalOffer, headline }}
         formOrigin={facebook ? 'facebook_ads_eddie' : generalOffer.formOrigin}
         trackMetaLead={facebook}
         phone={facebook ? FACEBOOK_OFFER_PHONE : GOOGLE_ADS_PHONE}

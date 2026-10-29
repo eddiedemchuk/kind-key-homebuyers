@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import OfferLanding from '@/components/OfferLanding';
 import { inheritedOffer } from '@/data/offerLandings';
+import { offerPageHeadline } from '@/lib/offer-city';
 
 export const metadata: Metadata = {
   title: inheritedOffer.title,
@@ -15,6 +16,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function InheritedOfferPage() {
-  return <OfferLanding content={inheritedOffer} formOrigin={inheritedOffer.formOrigin} />;
+export default async function InheritedOfferPage({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const params = await searchParams;
+  return (
+    <OfferLanding
+      content={{
+        ...inheritedOffer,
+        headline: offerPageHeadline(inheritedOffer.headline, params),
+      }}
+      formOrigin={inheritedOffer.formOrigin}
+    />
+  );
 }

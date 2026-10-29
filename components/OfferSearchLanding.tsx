@@ -1,4 +1,6 @@
 import OfferGeneralLanding from '@/components/OfferGeneralLanding';
+import { generalOffer } from '@/data/offerLandings';
+import { offerPageHeadline } from '@/lib/offer-city';
 
 function firstQueryValue(value: string | string[] | undefined): string {
   const raw = Array.isArray(value) ? value[0] : value;
@@ -9,7 +11,7 @@ export default async function OfferSearchLanding({
   searchParams,
   pixelInDocument = false,
 }: {
-  searchParams: Promise<{ src?: string | string[]; utm_source?: string | string[] }>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
   /** True when this response's <head> already contains the Meta pixel. */
   pixelInDocument?: boolean;
 }) {
@@ -21,6 +23,10 @@ export default async function OfferSearchLanding({
   if (utmSource) initial.set('utm_source', utmSource);
 
   return (
-    <OfferGeneralLanding initialSearch={initial.toString()} pixelInDocument={pixelInDocument} />
+    <OfferGeneralLanding
+      initialSearch={initial.toString()}
+      headline={offerPageHeadline(generalOffer.headline, params)}
+      pixelInDocument={pixelInDocument}
+    />
   );
 }

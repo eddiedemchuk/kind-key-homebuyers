@@ -16,6 +16,20 @@ export const OFFER_CITIES = [
   'Edgewood',
   'Enumclaw',
   'Poulsbo',
+  'Mountlake Terrace',
+  'Lake Stevens',
+  'Mill Creek',
+  'Marysville',
+  'Mukilteo',
+  'Lynnwood',
+  'Edmonds',
+  'Everett',
+  'Bothell',
+  'Monroe',
+  'Arlington',
+  'Stanwood',
+  'SeaTac',
+  'Tukwila',
   'Tacoma',
   'Auburn',
   'Renton',
@@ -28,11 +42,29 @@ export const OFFER_CITIES = [
 
 export type OfferCity = (typeof OFFER_CITIES)[number];
 
-/** Query keys the ad URLs already send. Explicit `city` wins, then `keyword`, then `utm_term`. */
-const CITY_PARAM_KEYS = ['city', 'keyword', 'utm_term'] as const;
+/** Explicit `city` wins, then `keyword`, then `kw`, then `utm_term`. */
+const CITY_PARAM_KEYS = ['city', 'keyword', 'kw', 'utm_term'] as const;
 
 export function offerCityHeadline(city: OfferCity): string {
-  return `We Buy Houses in ${city}`;
+  return `We Buy Houses in ${city} for Cash`;
+}
+
+export function offerPageHeadline(
+  fallback: string,
+  params: Record<string, string | string[] | undefined>
+): string {
+  const city = offerCityFromSearch(offerCitySearchFromParams(params));
+  return city ? offerCityHeadline(city) : fallback;
+}
+
+function offerCitySearchFromParams(params: Record<string, string | string[] | undefined>): string {
+  const search = new URLSearchParams();
+  for (const key of CITY_PARAM_KEYS) {
+    const value = params[key];
+    const raw = Array.isArray(value) ? value[0] : value;
+    if (raw) search.set(key, raw);
+  }
+  return search.toString();
 }
 
 /**
@@ -62,6 +94,14 @@ function matchOfferCity(raw: string): OfferCity | null {
     .replace(/[^a-z\s]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+  if (!normalized) return null;
+
+  return (
+    matchNormalizedCity(normalized) ?? matchNormalizedCity(normalized.replace(/sea tac/g, 'seatac'))
+  );
+}
+
+function matchNormalizedCity(normalized: string): OfferCity | null {
   if (!normalized) return null;
 
   const padded = ` ${normalized} `;

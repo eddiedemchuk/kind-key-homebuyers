@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import OfferLanding from '@/components/OfferLanding';
 import { asIsOffer } from '@/data/offerLandings';
+import { offerPageHeadline } from '@/lib/offer-city';
 
 export const metadata: Metadata = {
   title: asIsOffer.title,
@@ -15,6 +16,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function AsIsOfferPage() {
-  return <OfferLanding content={asIsOffer} formOrigin={asIsOffer.formOrigin} />;
+export default async function AsIsOfferPage({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const params = await searchParams;
+  return (
+    <OfferLanding
+      content={{ ...asIsOffer, headline: offerPageHeadline(asIsOffer.headline, params) }}
+      formOrigin={asIsOffer.formOrigin}
+    />
+  );
 }

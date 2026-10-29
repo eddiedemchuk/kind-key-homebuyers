@@ -6,7 +6,12 @@ describe('offer city headline', () => {
   it('reads a city out of a keyword-style utm_term', () => {
     assert.equal(offerCityFromSearch('?utm_term=sell+my+house+bremerton'), 'Bremerton');
     assert.equal(offerCityFromSearch('?utm_term=sell%20my%20house%20bremerton'), 'Bremerton');
-    assert.equal(offerCityHeadline('Bremerton'), 'We Buy Houses in Bremerton');
+    assert.equal(offerCityHeadline('Bremerton'), 'We Buy Houses in Bremerton for Cash');
+    assert.equal(offerCityFromSearch('?kw=tacoma'), 'Tacoma');
+    assert.equal(offerCityFromSearch('?kw=everett'), 'Everett');
+    assert.equal(offerCityFromSearch('?kw=bremerton&utm_term=auburn'), 'Bremerton');
+    assert.equal(offerCityFromSearch('?keyword=kent&kw=tacoma'), 'Kent');
+    assert.equal(offerCityFromSearch('?city=sea-tac'), 'SeaTac');
   });
 
   it('keeps the default headline when the query has no known city', () => {
