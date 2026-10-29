@@ -4,7 +4,7 @@ declare global {
     gtag?: (
       command: 'config' | 'event' | 'js' | 'set' | 'consent',
       targetIdOrEventName: string,
-      config?: Record<string, unknown>
+      config?: Record<string, unknown> | boolean
     ) => void;
   }
 }
@@ -16,7 +16,7 @@ export const COOKIE_CONSENT_STORAGE_KEY = 'cookie-consent';
 
 export type GoogleConsentState = 'granted' | 'denied';
 
-/** Consent Mode v2 update. Decline sets every storage flag to denied. */
+/** Consent Mode v2 update. Decline denies ad and analytics storage. Security storage stays granted. */
 export function updateGoogleConsent(state: GoogleConsentState): void {
   if (typeof window === 'undefined' || !window.gtag) return;
 
@@ -26,7 +26,11 @@ export function updateGoogleConsent(state: GoogleConsentState): void {
     ad_user_data: state,
     ad_personalization: state,
   });
+  window.gtag('set', 'ads_data_redaction', state === 'denied');
 }
+
+/** Page-view conversion for a /thank-you visit. Not gated on the cookie banner. */
+export const GOOGLE_ADS_THANK_YOU_CONVERSION_SEND_TO = 'AW-17766515185/hcQZCKrs2swbEPGD3pdC';
 
 /** Fired after a successful lead submit. Thank-you repeats it with the same transaction id. */
 export const GOOGLE_ADS_SUBMIT_CONVERSION_SEND_TO = 'AW-17766515185/IeBJCKCujPIbEPGD3pdC';

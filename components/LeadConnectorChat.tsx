@@ -13,12 +13,16 @@ const NARROW_QUERY = '(max-width: 767px)';
 export default function LeadConnectorChat({
   mobileOnly = false,
   suppressGreeting = false,
+  mountDelayMs = 0,
 }: {
   mobileOnly?: boolean;
   /** Hide the auto greeting bubble. The launcher icon stays. */
   suppressGreeting?: boolean;
+  /** Wait before loading the launcher so it does not cover the form on arrival. */
+  mountDelayMs?: number;
 }) {
   const [show, setShow] = useState(!mobileOnly);
+  const [delayDone, setDelayDone] = useState(mountDelayMs <= 0);
 
   useEffect(() => {
     if (!mobileOnly) return;
@@ -29,7 +33,13 @@ export default function LeadConnectorChat({
     return () => media.removeEventListener('change', update);
   }, [mobileOnly]);
 
-  if (!show) return null;
+  useEffect(() => {
+    if (mountDelayMs <= 0) return;
+    const timer = window.setTimeout(() => setDelayDone(true), mountDelayMs);
+    return () => window.clearTimeout(timer);
+  }, [mountDelayMs]);
+
+  if (!show || !delayDone) return null;
 
   return (
     <>

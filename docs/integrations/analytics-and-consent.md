@@ -33,9 +33,12 @@ granted either way, so GA4 still loads when the banner is absent.
 
 - GA4 measurement ID `G-E2YKGLGN1S` is the web stream for property 514584396.
   `NEXT_PUBLIC_GA_MEASUREMENT_ID` overrides it when set to a `G-` ID.
-- Consent Mode v2 defaults `analytics_storage`, `ad_storage`, `ad_user_data`, and
-  `ad_personalization` to `granted` for every visitor. US visitors, including Washington, are the
-  audience. Rejecting cookies calls `gtag('consent', 'update', …)` with those flags `denied`.
+- Consent Mode v2 defaults `ad_storage`, `ad_user_data`, `ad_personalization`, and
+  `analytics_storage` to `granted` for every visitor, including while the cookie banner is still
+  pending. `functionality_storage` and `security_storage` stay granted. `url_passthrough` is on.
+  US visitors, including Washington, are the audience. Rejecting cookies calls
+  `gtag('consent', 'update', …)` with the four ad and analytics flags `denied` and sets
+  `ads_data_redaction`.
 - Google Ads `AW-17766515185` and GA4 share that one gtag loader. GA4 sends the page view. The Ads
   config stays `gtag('config', 'AW-17766515185')` so the existing conversion can fire. There is no
   second gtag loader and no second GA4 `config`.
@@ -44,8 +47,14 @@ granted either way, so GA4 still loads when the banner is absent.
   Offer button.
 - Lead submission emits `lead_submit` and `generate_lead`, and queues Google Ads conversion
   `AW-17766515185/IeBJCKCujPIbEPGD3pdC` with a transaction id.
-- The thank-you route repeats that same conversion with the stored transaction id, so Google Ads
-  counts it once if the first hit was lost during navigation. It does not fire a second label.
+- The thank-you route always fires the page conversion `AW-17766515185/hcQZCKrs2swbEPGD3pdC`.
+  That hit is not gated on the cookie banner. Consent Mode v2 defaults `ad_storage`,
+  `ad_user_data`, `ad_personalization`, and `analytics_storage` to granted, so a pending banner
+  still counts the visit. A stored rejection updates those four flags to denied and turns on
+  `ads_data_redaction`; Google can then model the hit. `url_passthrough` stays on.
+- The thank-you route also repeats `AW-17766515185/IeBJCKCujPIbEPGD3pdC` with the stored
+  transaction id, so Google Ads counts that submit conversion once if the first hit was lost
+  during navigation.
 - Meta pixel `1352513176647290` is an inline script in the document `<head>` on `/offer/facebook`
   and on `/offer` when `src` is `fb` or `fb_static` (any case). The browser runs `fbq('init')` and
   `fbq('track', 'PageView')` while parsing that HTML. The same response includes the noscript

@@ -45,8 +45,10 @@ The chat widget is a separate, GHL-hosted path and does not use this webhook.
    local copy of the lead.
 6. A successful response runs the existing `generate_lead` analytics event, queues Google Ads
    conversion `AW-17766515185/IeBJCKCujPIbEPGD3pdC`, and sends the visitor to `/thank-you`.
-   `/thank-you` repeats that same conversion with the stored `transaction_id` so Google Ads counts
-   it once if the first hit was lost during navigation. It does not fire a second conversion label.
+   `/thank-you` always fires `AW-17766515185/hcQZCKrs2swbEPGD3pdC` for the visit, whether or not
+   the cookie banner has been accepted. It also repeats `AW-17766515185/IeBJCKCujPIbEPGD3pdC` with
+   the stored `transaction_id` so Google Ads counts that submit conversion once if the first hit
+   was lost during navigation.
 
 The webhook URL is the Inbound Webhook trigger of a workflow in the KindKey Home Buyers
 sub-account. This app does not create the opportunity itself.

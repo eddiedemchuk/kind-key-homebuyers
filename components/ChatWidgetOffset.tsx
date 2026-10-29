@@ -17,6 +17,16 @@ function inlineBottomPx(el: HTMLElement | null): number | null {
   return value;
 }
 
+function launcherCoversForm(): boolean {
+  const form = document.querySelector<HTMLElement>('[data-offer-form]');
+  if (!form) return false;
+  const rect = form.getBoundingClientRect();
+  const dock = bottomDockHeight();
+  const zoneTop = window.innerHeight - dock - 88;
+  const zoneLeft = window.innerWidth - 88;
+  return rect.right > zoneLeft && rect.bottom > zoneTop && rect.top < window.innerHeight - dock;
+}
+
 function bottomDockHeight(): number {
   let height = 0;
   document.querySelectorAll<HTMLElement>(DOCK_SELECTOR).forEach((el) => {
@@ -201,6 +211,13 @@ export default function ChatWidgetOffset({
         const widget = root?.querySelector<HTMLElement>('#lc_text-widget') ?? null;
         const open = widget?.classList.contains('lc_text-widget--active') ?? false;
         placeHost(node, open, mobileOnly);
+        if (!open && suppressGreeting && launcherCoversForm()) {
+          node.style.visibility = 'hidden';
+          node.style.pointerEvents = 'none';
+        } else if (!open) {
+          node.style.visibility = '';
+          node.style.pointerEvents = '';
+        }
         if (!root) return;
         watchShadow(root);
 
@@ -260,6 +277,7 @@ export default function ChatWidgetOffset({
     });
     bodyObserver.observe(document.body, { childList: true, subtree: true });
     window.addEventListener('resize', schedule);
+    window.addEventListener('scroll', schedule, { passive: true });
     window.addEventListener('LC_chatWidgetLoaded', schedule);
 
     observeDocks();
@@ -271,6 +289,7 @@ export default function ChatWidgetOffset({
       shadowObserver.disconnect();
       resizeObserver.disconnect();
       window.removeEventListener('resize', schedule);
+      window.removeEventListener('scroll', schedule);
       window.removeEventListener('LC_chatWidgetLoaded', schedule);
       document.querySelectorAll('chat-widget').forEach((node) => {
         if (node instanceof HTMLElement) {

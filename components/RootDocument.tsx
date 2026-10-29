@@ -38,11 +38,15 @@ export default function RootDocument({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('consent', 'default', {
-              analytics_storage: 'granted',
               ad_storage: 'granted',
               ad_user_data: 'granted',
-              ad_personalization: 'granted'
+              ad_personalization: 'granted',
+              analytics_storage: 'granted',
+              functionality_storage: 'granted',
+              security_storage: 'granted'
             });
+            gtag('set', 'url_passthrough', true);
+            gtag('set', 'ads_data_redaction', false);
             try {
               var stored = localStorage.getItem('${COOKIE_CONSENT_STORAGE_KEY}');
               if (stored) {
@@ -54,6 +58,7 @@ export default function RootDocument({
                     ad_user_data: 'denied',
                     ad_personalization: 'denied'
                   });
+                  gtag('set', 'ads_data_redaction', true);
                 }
               }
             } catch (e) {}

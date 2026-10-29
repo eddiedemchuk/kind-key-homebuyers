@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function OfferPage({
   searchParams,
 }: {
-  searchParams: Promise<{ src?: string | string[]; utm_source?: string | string[] }>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   return <OfferSearchLanding searchParams={searchParams} />;
 }
