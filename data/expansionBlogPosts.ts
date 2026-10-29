@@ -1562,4 +1562,239 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. Reach out, and KindKey will help you through the whole process from start to finish. You do not have to finish the remodel first. You can say no.',
   }),
+  post('sell-house-with-power-of-attorney-edgewood-wa', {
+    breadcrumbName: 'Power of attorney in Edgewood',
+    title: 'Selling an Edgewood House with a Power of Attorney While the Owner Is in Care',
+    description:
+      'How families sell a living owner’s Edgewood house while that owner is in care, if a power of attorney or a court order allows the signature. KindKey is the buyer. Not legal advice.',
+    h1: 'Selling an Edgewood House with a Power of Attorney While the Owner Is in Care',
+    publishedAt: '2026-10-29',
+    intro: [
+      `You can ask for a cash offer on an Edgewood house while the owner is alive and living in care, without waiting for a death and a probate, if the person who signs is someone the title company will accept. ${office} KindKey does not act under the power of attorney, and KindKey is not a conservator or a guardian.`,
+      'The owner may be in assisted living, a nursing facility, memory care, or an adult family home in Puyallup, Sumner, Tacoma, Milton, or across the county line in Federal Way or Kent. The house does not move with them. Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. It incorporated on February 28, 1996. Most residents live on North Hill: longer driveways, and shops set back from the street. A smaller share of the city sits in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. A North Hill house a parent left behind, and a smaller valley house, are different properties. Bring the address.',
+    ],
+    callout:
+      'You do not have to empty the house, repair it, or open a probate that has not started. The signer still has to be someone an attorney and the title company will accept. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'A living owner is not an Edgewood probate',
+        paragraphs: [
+          'This page is for a house whose owner is still alive. RCW 11.125.100(1)(a) says a power of attorney terminates when the principal dies. In that sentence, the principal is the person who signed the power of attorney, usually the parent. After that death, the power of attorney cannot be used to deed the house. Read the Edgewood probate guide and ask a Washington attorney who can sign. Do not hand the closing agent a power of attorney for someone who has already died. KindKey will not file the probate and will not guess which relative has authority.',
+          'A financial power of attorney and a medical power of attorney are different papers. RCW 11.125.240(1)(l) lists health-care decisions as authority the document must expressly grant. A hospital form, a health-care directive, or a medical power of attorney does not, by itself, sell the house. Bring the financial document if you have it. If you do not, say so. KindKey will not treat a care-facility packet as a deed.',
+          'Some Edgewood houses are already titled in a living trust, or had a transfer-on-death deed recorded under chapter 64.80 RCW. Those paths are not a power of attorney, and they are not a probate while the owner is alive. A Washington attorney, and then the title company, reads the document that is actually on title. Adult children in Puyallup, Sumner, Fife, Milton, King County, or another state can help gather papers. They cannot sign on a family vote. If the owner still has capacity and wants to sign the deed personally, a power of attorney is not a requirement KindKey imposes. An attorney is the person who speaks to capacity. KindKey will not.',
+        ],
+      },
+      {
+        heading: 'What chapter 11.125 RCW says about selling the house',
+        paragraphs: [
+          'Chapter 11.125 RCW is Washington’s Uniform Power of Attorney Act, including rules that differ from the uniform text. RCW 11.125.040 says the authority conferred under a power of attorney created before January 1, 2017, and also under a power of attorney created on or after that date, terminates upon the incapacity of the principal unless the writing contains the words "This power of attorney shall not be affected by disability of the principal," or "This power of attorney shall become effective upon the disability of the principal," or similar words showing the intent of the principal that the authority conferred shall be exercisable notwithstanding the principal’s incapacity. A parent who could discuss a sale last year, and cannot now, may be holding a document that already stopped. KindKey will not read that sentence for you and will not tell you the document is durable. Take it to a Washington attorney. The closing agent will ask to see it.',
+          'RCW 11.125.090(1) says a power of attorney is effective when executed unless the principal provides that it becomes effective at a future date or upon a future event or contingency. Some documents do not start until someone determines incapacity in writing. If the document names that person, KindKey will not decide that the event has occurred. If it becomes effective upon incapacity and the principal did not authorize anyone to make that determination, or that person cannot or will not, RCW 11.125.090(3) describes a written determination by a physician or a licensed psychologist, unrelated to the principal or the agent by blood or marriage, who has personally examined the principal, or by a judge or an appropriate governmental official. KindKey is none of those people. KindKey will not write that determination.',
+          'RCW 11.125.050 says a power of attorney must be signed and dated by the principal, and that the signature must be acknowledged before a notary or other person authorized to take acknowledgments, or attested by two or more competent witnesses. Those witnesses cannot be home care providers for the principal, cannot be care providers at an adult family home or long-term care facility in which the principal resides, and must be unrelated to the principal or the agent by blood, marriage, or state registered domestic partnership. A form signed at the facility by the facility’s own staff can fail that witness rule. KindKey will not tell you a signature is valid. RCW 11.125.270 says that, unless the power of attorney otherwise provides, language granting general authority with respect to real property authorizes the agent to sell, exchange, and convey an interest in the real property, among the other acts that section lists. RCW 11.125.250 describes when that general authority is created, including a grant to do all acts the principal could do, subject to RCW 11.125.240. A document that only lets someone pay a bill, or that never grants real-property authority, is a different paper. KindKey will not decide that a sentence in a kitchen drawer is general authority.',
+          'The agent acts for the owner. RCW 11.125.140(1) says an agent who has accepted appointment shall act in accordance with the principal’s reasonable expectations to the extent actually known by the agent and, otherwise, in the principal’s best interest, shall act in good faith, and shall act only within the authority granted. RCW 11.125.140(2) says that, except as otherwise provided in the power of attorney, the agent shall act loyally for the principal’s benefit and keep a record of all receipts, disbursements, and transactions made on behalf of the principal. Sale proceeds are the owner’s. They are not a gift to the child because a buyer made an offer. KindKey does not divide the money, does not pay the care facility, and does not monitor the agent’s accounting. Where the funds go is the agent’s duty and the attorney’s question. Do not deed the Edgewood house to yourself, or to a sibling, to make the file easier. KindKey will not participate in a transfer meant to move the house out of the owner’s name for a purpose the document does not support. A gift, or a transfer meant to qualify the owner for medical assistance, is a different act from a sale to KindKey. Chapter 74.09 RCW is the medical-assistance chapter. KindKey will not tell you whether a transfer is allowed and will not take title for that purpose. Ask an elder-law attorney before anyone signs a deed to a relative.',
+        ],
+      },
+      {
+        heading: 'A conservator, a spouse, and the agent are not the same signer',
+        paragraphs: [
+          'A conservator is a person a court appoints. That file is chapter 11.130 RCW, not a power of attorney the family printed. RCW 11.130.435(1) says that, except as otherwise ordered by the court, a conservator must give notice to persons entitled to notice under RCW 11.130.370(4) and receive specific authorization by the court before the conservator may sell or encumber the primary dwelling of the individual, and before the conservator may sell or encumber any other real estate. RCW 11.130.435(1)(k) says that in all transactions involving the sale of real property, the conservator shall receive additional authority from the court as to the disposition of the proceedings from the sale of the real property. That subsection uses the word "proceedings." KindKey will not paraphrase it, and KindKey will not draft the petition, give that notice, or tell you the order in the folder is the order the statute describes. Bring the order to your attorney and to the closing agent. Do not sign a deed before that authority exists. You can ask KindKey for a number while the attorney prepares the request. An offer is not court approval.',
+          'Appointing a conservator does not, by itself, tear up a financial power of attorney the owner already signed. RCW 11.125.080(2) says that if a court later appoints a conservator of the estate or another fiduciary charged with management of some or all of the property, the power of attorney is not terminated and the agent’s authority continues, subject to RCW 11.130.335(1) and RCW 11.130.435(4), unless the court limits, suspends, or terminates it, and that the agent is accountable to the fiduciary as well as to the principal. RCW 11.130.435(4) says a conservator may not revoke or amend a power of attorney for finances executed by the individual, and that if a power of attorney for finances is in effect, a decision of the agent within the scope of the agent’s authority takes precedence over that of the conservator, unless the court orders otherwise. The same subsection says the court has authority to revoke or amend any power of attorney executed by the adult. Two people can both believe they are in charge of the Edgewood house. KindKey will not pick between them, and KindKey will not apply RCW 11.130.335(1) to your file.',
+          'Ask a Washington attorney which superior court is the right one before anyone files. KindKey will not file the case and will not tell you that the Edgewood house address picks the courthouse. A parent who now lives in a facility in Federal Way or Kent may be in a different county from the house. If a Pierce County case is already open, the Clerk of the Superior Court is at the County-City Building, 930 Tacoma Ave S, Room 110, Tacoma, WA 98402, phone (253) 798-7455. That is the same counter the Edgewood probate guide uses. A conservatorship and a probate are not the same case. The clerk does not record the deed. An Edgewood deed records with the Pierce County Auditor.',
+          'A spouse who still lives on North Hill, while the other spouse is in care, is a title question before it is a sale. RCW 26.16.030 says neither spouse shall sell, convey, or encumber community real property unless the other spouse joins in the deed or other instrument, and both acknowledge it. One spouse remaining in the house does not, by itself, change that sentence. A power of attorney may be the paper title uses for the missing signature. KindKey cannot waive it. If a dissolution is already filed, read the Edgewood divorce guide and every temporary order before you sign. If nobody has filed, this is not that article. KindKey will not choose which spouse is the seller.',
+        ],
+      },
+      {
+        heading: 'The house on North Hill can transfer as it sits',
+        paragraphs: [
+          'The house is often still full. A shop on a long driveway, tools, a vehicle that does not run, furniture, and a yard the neighbors can see are ordinary on North Hill. A valley lot at the base of the hill is usually smaller, and the drainage problem is different. You do not have to empty the shop, mow the lot to a listing standard, or move the owner back in so the house looks lived in. Say who has a key. A relative in Puyallup or Sumner can open the door once. Photos are enough to start if the person with the papers is already out of state. If a floor or a shop roof is not safe to walk, say so. An exterior look can begin the conversation. Take papers, photos, and what the family wants to keep before the closing date you agree to. Leave the rest.',
+          'Many older North Hill and Jovita lots use a septic system, and some use a private well. Others are on public sewer and public water. The city name does not decide it, and the fact that a parent used to pay the bill does not tell you which one it is. You do not have to pump the tank, find the drainfield, or replace it before KindKey looks. On-site sewage questions in Pierce County go to the Tacoma-Pierce County Health Department, not to KindKey. If someone still lives in the house, say so. Do not force that person out so the house looks vacant. A tenant’s rights come from the rental agreement and from Washington law, including chapter 59.18 RCW. KindKey will not serve a notice and will not tell you to end a tenancy. The Edgewood tenants guide is the page for occupants. The Edgewood vacant-house guide is the page for a city maintenance letter after the owner has left, including the security and vegetation rules in chapter 15.80 EMC. This page is about who can sign. Use those pages for the condition. A mailing address that says Edgewood is not always inside the city. Milton, next door, can fall in King County or Pierce County. Edgewood does not. The closing agent confirms the parcel.',
+          'A mortgage that fell behind while the owner was in care, and a Pierce County property-tax bill, are different clocks from the power of attorney. If a foreclosure notice is in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. The Edgewood foreclosure guide and the Edgewood property-tax guide cover those papers. Requesting an offer does not pause a trustee’s date or a treasurer’s date. Parts of Edgewood lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary.',
+          `The sequence is a call or the cash-offer form, one walkthrough, a written offer, and a closing date you help choose with the closing agent. KindKey is based in downtown Auburn. KindKey does not promise a specific number of days. ${closing} Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a care-facility bill, or a lien. The offer reflects the house as it sits, so it can be less than a retail price for a repaired house. You can say no. Accept it only when your attorney says the signer is clear.`,
+          'A listing can fit a house that is safe to show and that someone local can host while the owner is in care. Hire a licensed broker if you want that path. KindKey will not run the listing and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. A parent’s house in Port Orchard, Bremerton, Silverdale, Poulsbo, Bainbridge Island, Kingston, Olalla, or Seabeck is a Kitsap County file. The superior court for those cities sits in Port Orchard, not at the Pierce County clerk’s counter in Tacoma. Do not use this Edgewood page as the courthouse guide for a Kitsap house, or for a Milton house that may be in King County. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of who can sign through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question:
+          'Can I sell my parent’s Edgewood house with a power of attorney while they are in care?',
+        answer:
+          'Sometimes. It depends on the document, on whether the owner is still alive, and on whether the authority survived incapacity under RCW 11.125.040. KindKey does not decide that. Ask a Washington attorney, then call (206) 519-5463 or use the cash-offer form if a sale is allowed. You can decline the offer.',
+      },
+      {
+        question: 'Does the power of attorney still work after my parent dies?',
+        answer:
+          'No. RCW 11.125.100(1)(a) says a power of attorney terminates when the principal dies. After that, use the Edgewood probate guide and ask an attorney who can sign. Do not use the power of attorney on the deed.',
+      },
+      {
+        question: 'A court appointed a conservator. Can we close without an order?',
+        answer:
+          'KindKey will not close on a conservator’s deed unless the closing agent has the authority the file requires. RCW 11.130.435 says that, except as otherwise ordered by the court, a conservator must give notice and receive specific court authorization before selling the primary dwelling or other real estate. KindKey will not prepare that request. You can ask for an offer while your attorney does.',
+      },
+      {
+        question: 'Do we have to empty the house or move my parent back before KindKey looks?',
+        answer:
+          'No. Belongings can stay. Say who has a key and who still lives in the house. Do not force an occupant out so the house looks empty. Call (206) 519-5463 or use the cash-offer form. You can decline the offer.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, Meridian, and the valley.',
+      },
+      {
+        href: '/areas/edgewood/sell-inherited-probate-house',
+        label: 'Inherited houses in Edgewood',
+        description: 'Use this after the owner has died. A power of attorney has ended.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign once the sale is an estate.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Probate houses in Edgewood',
+        description: 'Pierce County letters, after the death.',
+      },
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Vacant houses in Edgewood',
+        description: 'When the owner has left and nobody lives there.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The Washington overview for empty houses.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-edgewood-wa',
+        label: 'Selling a vacant Edgewood house',
+        description: 'City maintenance rules after the owner moves to care.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell a house as-is in Edgewood',
+        description: 'Condition does not have to be repaired first.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/edgewood/sell-my-house-fast',
+        label: 'Sell my house fast in Edgewood',
+        description: 'The Edgewood fast-sale page.',
+      },
+      {
+        href: '/blog/sell-my-house-fast-for-cash-edgewood',
+        label: 'Sell fast for cash in Edgewood',
+        description: 'A direct sale once the signer is clear.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-tenants',
+        label: 'Houses with tenants in Edgewood',
+        description: 'When someone still lives in the house.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/blog/sell-house-with-tenants-edgewood-wa',
+        label: 'Tenants in Edgewood',
+        description: 'Occupants, septic, and a city letter on the same lot.',
+      },
+      {
+        href: '/areas/edgewood/sell-hoarder-house',
+        label: 'Heavy-repair houses in Edgewood',
+        description: 'A shop and a lifetime of belongings can stay.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents do not have to be hauled away first.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description: 'A drainfield the family has not serviced since the move.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'A city letter about the yard or an unpermitted shop.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'The King and Pierce County overview.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Foreclosure in Edgewood',
+        description: 'When a trustee’s notice arrived while the owner was in care.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'A loan deadline is separate from the power of attorney.',
+      },
+      {
+        href: '/blog/behind-on-property-taxes-edgewood-wa',
+        label: 'Property taxes in Edgewood',
+        description: 'A Pierce County bill is a different clock.',
+      },
+      {
+        href: '/blog/selling-a-house-during-divorce-edgewood-wa',
+        label: 'Divorce sales in Edgewood',
+        description: 'When a dissolution is already filed.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo.',
+      },
+      {
+        href: '/areas/port-orchard',
+        label: 'Sell a house in Port Orchard',
+        description: 'Kitsap County seat. A different courthouse from Tacoma.',
+      },
+      {
+        href: '/areas/bremerton',
+        label: 'Sell a house in Bremerton',
+        description: 'Kitsap County, across the inlet.',
+      },
+      {
+        href: '/areas/silverdale',
+        label: 'Sell a house in Silverdale',
+        description: 'Unincorporated Kitsap County.',
+      },
+      {
+        href: '/areas/poulsbo',
+        label: 'Sell a house in Poulsbo',
+        description: 'North Kitsap. Not an Edgewood probate or conservatorship.',
+      },
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description: 'The next city west. Milton can be King County or Pierce County.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say who can sign. Asking does not obligate a sale.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood number once an attorney confirms who can sign',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. KindKey will not decide that a power of attorney is enough. You can say no.',
+  }),
 ];
