@@ -13,6 +13,7 @@ import {
   touchFromRequestBody,
 } from '@/lib/attribution';
 import { resolveFormOrigin } from '@/lib/form-origin';
+import { qualifyingRealtorLabel } from '@/lib/seller-quiz';
 
 // Rate limiting is optional so local development and deployments without the
 // complete Upstash credential pair can still accept leads.
@@ -89,6 +90,7 @@ export async function POST(request: NextRequest) {
       typeof data.sms_consent_text_version === 'string'
         ? data.sms_consent_text_version
         : undefined;
+    const realtorStatus = qualifyingRealtorLabel(data.realtor_status);
 
     const crmData = {
       name: data.name,
@@ -113,6 +115,7 @@ export async function POST(request: NextRequest) {
       attribution,
       formOrigin,
       listedWithAgent: data.listed_with_agent ?? data.listedWithAgent,
+      ...(realtorStatus ? { realtorStatus } : {}),
       smsConsent,
       smsConsentAt,
       smsConsentTextVersion,

@@ -24,88 +24,172 @@ export const SELLER_QUIZ_LISTED_OPTIONS = [
   { value: 'yes', label: 'Yes — Currently Listed' },
 ] as const;
 
+/** Asked immediately before the name and phone step. */
+export const SELLER_QUIZ_REALTOR_OPTIONS = [
+  { value: 'no', label: 'No' },
+  { value: 'listed-or-realtor', label: "Yes, it's listed or I have a realtor" },
+  { value: 'expired', label: 'It was listed but expired' },
+] as const;
+
+/** Answers that continue to the contact step and a GoHighLevel submit. */
+export const SELLER_QUIZ_QUALIFYING_REALTOR = ['no', 'expired'] as const;
+
+export const SELLER_QUIZ_STEP_COUNT = 5;
+
 export const SELLER_QUIZ_QUESTIONS = {
   1: 'What condition is the property in?',
   2: 'How soon would you like to close?',
   3: 'Is the property currently listed with a real estate agent?',
-  4: 'Where should we send your cash offer?',
+  4: 'Is the home listed or are you working with a realtor?',
+  5: 'Where should we send your cash offer?',
 } as const;
 
 export type SellerQuizCondition = (typeof SELLER_QUIZ_CONDITIONS)[number];
 export type SellerQuizTimeline = (typeof SELLER_QUIZ_TIMELINES)[number];
 export type SellerQuizListed = (typeof SELLER_QUIZ_LISTED_OPTIONS)[number]['value'];
-export type SellerQuizStep = 1 | 2 | 3 | 4;
+export type SellerQuizRealtor = (typeof SELLER_QUIZ_REALTOR_OPTIONS)[number]['value'];
+export type SellerQuizQualifyingRealtor = (typeof SELLER_QUIZ_QUALIFYING_REALTOR)[number];
+export type SellerQuizStep = 1 | 2 | 3 | 4 | 5;
+export type SellerQuizOutcome = 'quiz' | 'not-a-fit';
 
 export interface SellerQuizAnswers {
   condition: SellerQuizCondition | null;
   timeline: SellerQuizTimeline | null;
   listedWithAgent: SellerQuizListed | null;
+  realtorStatus: SellerQuizRealtor | null;
 }
 
 export interface SellerQuizState {
   step: SellerQuizStep;
+  outcome: SellerQuizOutcome;
   answers: SellerQuizAnswers;
 }
 
 export const initialSellerQuizState: SellerQuizState = {
   step: 1,
+  outcome: 'quiz',
   answers: {
     condition: null,
     timeline: null,
     listedWithAgent: null,
+    realtorStatus: null,
   },
 };
 
 export function sellerQuizStepLabel(step: SellerQuizStep): string {
-  return `Step ${step} of 4`;
+  return `Step ${step} of ${SELLER_QUIZ_STEP_COUNT}`;
 }
 
 export function sellerQuizProgress(step: SellerQuizStep): number {
-  return (step / 4) * 100;
+  return (step / SELLER_QUIZ_STEP_COUNT) * 100;
+}
+
+/** "Yes, it's listed or I have a realtor" is not submitted. */
+export function isDisqualifyingRealtor(value: SellerQuizRealtor | null | undefined): boolean {
+  return value === 'listed-or-realtor';
+}
+
+export function isQualifyingRealtor(value: unknown): value is SellerQuizQualifyingRealtor {
+  return value === 'no' || value === 'expired';
 }
 
 export function chooseQuizCondition(
   state: SellerQuizState,
   condition: SellerQuizCondition
 ): SellerQuizState {
-  return { step: 2, answers: { ...state.answers, condition } };
+  return { step: 2, outcome: 'quiz', answers: { ...state.answers, condition } };
 }
 
 export function chooseQuizTimeline(
   state: SellerQuizState,
   timeline: SellerQuizTimeline
 ): SellerQuizState {
-  return { step: 3, answers: { ...state.answers, timeline } };
+  return { step: 3, outcome: 'quiz', answers: { ...state.answers, timeline } };
 }
 
 export function chooseQuizListed(
   state: SellerQuizState,
   listedWithAgent: SellerQuizListed
 ): SellerQuizState {
-  return { step: 4, answers: { ...state.answers, listedWithAgent } };
+  return { step: 4, outcome: 'quiz', answers: { ...state.answers, listedWithAgent } };
+}
+
+/**
+ * Qualifying answers continue to name and phone.
+ * "Yes, it's listed or I have a realtor" stops on the not-a-fit page.
+ */
+export function chooseQuizRealtor(
+  state: SellerQuizState,
+  realtorStatus: SellerQuizRealtor
+): SellerQuizState {
+  const answers = { ...state.answers, realtorStatus };
+  if (isDisqualifyingRealtor(realtorStatus)) {
+    return { step: 4, outcome: 'not-a-fit', answers };
+  }
+  return { step: 5, outcome: 'quiz', answers };
 }
 
 /** Previous step. Selections already stored on the state stay in place. */
 export function goBackQuiz(state: SellerQuizState): SellerQuizState {
+  if (state.outcome === 'not-a-fit') {
+    return { ...state, outcome: 'quiz' };
+  }
   if (state.step === 1) return state;
-  return { ...state, step: (state.step - 1) as SellerQuizStep };
+  return { ...state, outcome: 'quiz', step: (state.step - 1) as SellerQuizStep };
 }
 
-/** Jump back to the first question without clearing the three answers. */
+/** Jump back to the first question without clearing stored answers. */
 export function editQuizAnswers(state: SellerQuizState): SellerQuizState {
-  return { ...state, step: 1 };
+  return { ...state, step: 1, outcome: 'quiz' };
+}
+
+/** Contact step with a qualifying realtor answer. Disqualified visits never submit. */
+export function shouldSubmitQuizLead(state: SellerQuizState): state is SellerQuizState & {
+  outcome: 'quiz';
+  step: 5;
+  answers: {
+    condition: SellerQuizCondition;
+    timeline: SellerQuizTimeline;
+    listedWithAgent: SellerQuizListed;
+    realtorStatus: SellerQuizQualifyingRealtor;
+  };
+} {
+  const { condition, timeline, listedWithAgent, realtorStatus } = state.answers;
+  return (
+    state.outcome === 'quiz' &&
+    state.step === 5 &&
+    condition !== null &&
+    timeline !== null &&
+    listedWithAgent !== null &&
+    isQualifyingRealtor(realtorStatus)
+  );
 }
 
 export function listedOptionLabel(value: SellerQuizListed): string {
   return SELLER_QUIZ_LISTED_OPTIONS.find((option) => option.value === value)?.label ?? value;
 }
 
+export function realtorOptionLabel(value: SellerQuizRealtor): string {
+  return SELLER_QUIZ_REALTOR_OPTIONS.find((option) => option.value === value)?.label ?? value;
+}
+
+/** Label for a qualifying realtor answer. Disqualified values return null and are not submitted. */
+export function qualifyingRealtorLabel(value: unknown): string | null {
+  if (!isQualifyingRealtor(value as SellerQuizRealtor)) return null;
+  return realtorOptionLabel(value as SellerQuizRealtor);
+}
+
 export function quizAnswerSummary(answers: {
   condition: string;
   timeline: string;
   listedWithAgent: SellerQuizListed;
+  realtorStatus: SellerQuizQualifyingRealtor;
 }): string {
-  return `Condition: ${answers.condition}. Timeline: ${answers.timeline}. Listed: ${listedOptionLabel(answers.listedWithAgent)}.`;
+  return `Condition: ${answers.condition}. Timeline: ${answers.timeline}. Listed: ${listedOptionLabel(answers.listedWithAgent)}. Realtor: ${realtorOptionLabel(answers.realtorStatus)}.`;
+}
+
+export function sellerQuizNotAFitMessage(phoneDisplay: string): string {
+  return `Thanks! Based on your answers, we may not be the best fit right now, but feel free to call us at ${phoneDisplay}.`;
 }
 
 export interface QuizLeadAttribution {
@@ -148,6 +232,7 @@ export interface SellerQuizLeadInput {
   condition: SellerQuizCondition;
   timeline: SellerQuizTimeline;
   listedWithAgent: SellerQuizListed;
+  realtorStatus: SellerQuizQualifyingRealtor;
   propertyAddress: string;
   name: string;
   phone: string;
@@ -170,6 +255,7 @@ export function buildSellerQuizLeadBody(input: SellerQuizLeadInput): Record<stri
     email: (input.email ?? '').trim(),
     listedWithAgent: input.listedWithAgent,
     listed_with_agent: input.listedWithAgent,
+    realtor_status: input.realtorStatus,
     timeline: input.timeline,
     condition: input.condition,
     situation: summary,
@@ -189,7 +275,7 @@ export function buildSellerQuizLeadBody(input: SellerQuizLeadInput): Record<stri
 export const sellerQuizMetadata: Metadata = {
   title: 'Get Your Cash Offer | KindKey Home Buyers',
   description:
-    'Answer four quick questions for a cash offer from KindKey Home Buyers LLC, a local cash home buyer in King, Pierce, and Kitsap County. Close in 7 Days.',
+    'Answer five quick questions for a cash offer from KindKey Home Buyers LLC, a local cash home buyer in King, Pierce, and Kitsap County. Close in 7 Days.',
   robots: {
     index: false,
     follow: true,

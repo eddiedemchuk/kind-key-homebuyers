@@ -17,9 +17,11 @@ interface GHLLeadInput {
   condition?: string;
   /** Seller quiz step 2 label. */
   timeline?: string;
-  /** Seller quiz summary of condition, timeline, and listing status. */
+  /** Seller quiz summary of condition, timeline, listing status, and realtor answer. */
   situation?: string;
   notes?: string;
+  /** Qualifying seller-quiz realtor answer, as the option label. */
+  realtorStatus?: string;
   timeframe?: string;
   preferredContact?: string;
   smsNonMarketingConsent?: boolean;
@@ -86,6 +88,7 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
   const smsConsent = data.smsConsent === true;
   const customFields = [
     ...(listedWithAgent ? [{ key: 'listed_with_agent', field_value: listedWithAgent }] : []),
+    ...(data.realtorStatus ? [{ key: 'realtor_status', field_value: data.realtorStatus }] : []),
     { key: 'form_origin', field_value: formOrigin },
     ...(typeof data.src === 'string' ? [{ key: 'src', field_value: data.src }] : []),
     ...(smsConsent
@@ -108,11 +111,14 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
   const consentNotes = smsConsent
     ? `\nSMS consent: true\nSMS consent at: ${data.smsConsentAt ?? ''}\nSMS consent text: ${data.smsConsentTextVersion ?? ''}`
     : '';
-  const hasQuizAnswers = Boolean(data.timeline || data.situation || data.notes);
+  const hasQuizAnswers = Boolean(
+    data.timeline || data.situation || data.notes || data.realtorStatus
+  );
   const quizNotes = hasQuizAnswers
     ? `\n${[
         data.condition ? `Condition: ${data.condition}` : '',
         data.timeline ? `Timeline: ${data.timeline}` : '',
+        data.realtorStatus ? `Realtor: ${data.realtorStatus}` : '',
         data.situation ? `Situation: ${data.situation}` : '',
         data.notes ? `Notes: ${data.notes}` : '',
       ]
@@ -168,6 +174,7 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
     page_tag: form.pageTag,
     channel: 'Website',
     listed_with_agent: listedWithAgent ?? '',
+    ...(data.realtorStatus ? { realtor_status: data.realtorStatus } : {}),
     tags,
     source_tag: form.sourceTag,
     customFields,
