@@ -6,6 +6,7 @@ import {
   normalizeTouch,
 } from '@/lib/attribution';
 import { type FormOrigin, formOriginLabel, resolveFormOrigin } from '@/lib/form-origin';
+import { isSellerQuizPath } from '@/lib/phones';
 
 interface GHLLeadInput {
   name: string;
@@ -101,6 +102,18 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
     ...(data.timeline ? [{ key: 'timeline', field_value: data.timeline }] : []),
     ...(data.situation ? [{ key: 'situation', field_value: data.situation }] : []),
     ...(data.notes ? [{ key: 'notes', field_value: data.notes }] : []),
+    ...(isSellerQuizPath(data.pagePath ?? '')
+      ? [
+          { key: 'utm_source', field_value: attribution.utm_source },
+          { key: 'utm_medium', field_value: attribution.utm_medium },
+          { key: 'utm_campaign', field_value: attribution.utm_campaign },
+          { key: 'utm_content', field_value: attribution.utm_content },
+          { key: 'utm_term', field_value: attribution.utm_term },
+          { key: 'landing_page', field_value: attribution.landing_page },
+          { key: 'landing_page_url', field_value: attribution.landing_page },
+          { key: 'referrer', field_value: attribution.referrer },
+        ]
+      : []),
   ];
   const attributionNotes = formatAttributionNotes(
     attribution,
