@@ -13,7 +13,8 @@ import {
   touchFromRequestBody,
 } from '@/lib/attribution';
 import { resolveFormOrigin } from '@/lib/form-origin';
-import { qualifyingRealtorLabel } from '@/lib/seller-quiz';
+import { isSellerQuizPath } from '@/lib/phones';
+import { qualifyingRealtorLabel, quizLeadTouchFromBody } from '@/lib/seller-quiz';
 
 // Rate limiting is optional so local development and deployments without the
 // complete Upstash credential pair can still accept leads.
@@ -78,10 +79,15 @@ export async function POST(request: NextRequest) {
     }
 
     const ip = getClientIP(request);
-    const attribution = resolveSubmissionAttribution(
-      touchFromRequestBody(body),
-      readAttributionFromCookieHeader(request.headers.get('cookie'))
-    );
+    // Quiz submits send the current URL. A stored paid click must not keep the
+    // previous utm, landing page, or click id on this contact.
+    const quizLead = isSellerQuizPath(pagePath);
+    const attribution = quizLead
+      ? quizLeadTouchFromBody(body)
+      : resolveSubmissionAttribution(
+          touchFromRequestBody(body),
+          readAttributionFromCookieHeader(request.headers.get('cookie'))
+        );
     const smsConsent = 'sms_consent' in data && data.sms_consent === true;
     const smsConsentAt = smsConsent ? new Date().toISOString() : undefined;
     const smsConsentTextVersion =
@@ -107,8 +113,8 @@ export async function POST(request: NextRequest) {
       preferredContact: data.preferredContact,
       smsNonMarketingConsent: data.smsNonMarketingConsent,
       smsMarketingConsent: data.smsMarketingConsent,
-      utm: attribution.utm_source || body.utm,
-      gclid: attribution.gclid || body.gclid,
+      utm: quizLead ? attribution.utm_source : attribution.utm_source || body.utm,
+      gclid: quizLead ? attribution.gclid : attribution.gclid || body.gclid,
       pagePath: pagePath || 'unknown',
       recaptchaScore: 0.9, // Used when verification is skipped.
       ip,

@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { useForm, type FieldErrors } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { trackEvent, trackLeadSubmit } from '@/lib/analytics';
-import { attributionFieldsForSubmit } from '@/lib/attribution-client';
 import { trackMetaLead } from '@/lib/meta-pixel';
 import { formatPhoneChange } from '@/lib/phone';
 import { persistThankYouPhoneSource, thankYouHref, type DisplayPhone } from '@/lib/phones';
@@ -28,6 +27,7 @@ import {
   isQualifyingRealtor,
   listedOptionLabel,
   quizLeadAttribution,
+  quizSubmitFields,
   realtorOptionLabel,
   sellerQuizNotAFitMessage,
   sellerQuizProgress,
@@ -540,15 +540,20 @@ export default function SellerQuiz({
 
     try {
       const recaptchaToken = await executeRecaptcha('submit_lead');
-      let attributionFields: Record<string, string> = {};
+      const pagePath = window.location.pathname || pathname;
+      const search = window.location.search;
+      const source = quizLeadAttribution(pagePath, search);
+      let tracking = quizSubmitFields({ pathname: pagePath, search: '', referrer: '' });
       try {
-        attributionFields = attributionFieldsForSubmit();
+        tracking = quizSubmitFields({
+          pathname: pagePath,
+          search,
+          referrer: document.referrer,
+        });
       } catch (error) {
         console.error('Attribution capture failed:', error);
       }
 
-      const pagePath = window.location.pathname || pathname;
-      const source = quizLeadAttribution(pagePath, window.location.search);
       const response = await fetch('/api/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -562,11 +567,11 @@ export default function SellerQuiz({
             name: data.name,
             phone: data.phone,
             email: data.email,
-            src: source.src,
+            src: tracking.src,
             formOrigin: source.formOrigin,
             pagePath,
             recaptchaToken,
-            attribution: attributionFields,
+            attribution: tracking.attribution,
           })
         ),
       });

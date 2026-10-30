@@ -1,9 +1,27 @@
 import type { Metadata } from 'next';
+import {
+  type AttributionTouch,
+  attributionToPayload,
+  normalizeTouch,
+  touchFromLanding,
+  touchFromRequestBody,
+} from '@/lib/attribution';
 import type { FormOrigin } from '@/lib/form-origin';
 import { normalizeOfferSrc, offerFacebookVisitFromSearch } from '@/lib/offer-facebook-visit';
 import { toE164 } from '@/lib/phone';
 import { offerDisplayPhone, type DisplayPhone } from '@/lib/phones';
 import { SMS_CONSENT_TEXT_VERSION } from '@/lib/sms-consent';
+
+const QUIZ_UTM_FIELDS = [
+  'utm_source',
+  'utm_medium',
+  'utm_campaign',
+  'utm_content',
+  'utm_term',
+] as const;
+
+type QuizUtmField = (typeof QUIZ_UTM_FIELDS)[number];
+type QuizUtmValues = Record<QuizUtmField, string>;
 
 export const SELLER_QUIZ_CONDITIONS = [
   'Needs Major Repairs',
@@ -226,6 +244,108 @@ export function quizLeadAttribution(pathname: string, search: string): QuizLeadA
     facebook: true,
     phone,
   };
+}
+
+function withSearch(search: string): string {
+  if (!search) return '';
+  return search.startsWith('?') ? search : `?${search}`;
+}
+
+function explicitString(record: Record<string, unknown>, key: string): string {
+  const value = record[key];
+  return typeof value === 'string' ? value.trim() : '';
+}
+
+/** src=fb and src=fb_static are Facebook. Any other src is the utm_source value. */
+export function utmSourceFromSrc(src: string): string {
+  const normalized = src.trim().toLowerCase();
+  if (normalized === 'fb' || normalized === 'fb_static') return 'facebook';
+  return src.trim();
+}
+
+/**
+ * URL UTM params win. When the quiz URL has none, utm_source falls back to src
+ * and the other UTM fields stay empty.
+ */
+export function quizUtmValues(input: { src: string } & QuizUtmValues): QuizUtmValues {
+  const utm = {
+    utm_source: input.utm_source.trim(),
+    utm_medium: input.utm_medium.trim(),
+    utm_campaign: input.utm_campaign.trim(),
+    utm_content: input.utm_content.trim(),
+    utm_term: input.utm_term.trim(),
+  };
+  const hasUtm = QUIZ_UTM_FIELDS.some((key) => utm[key] !== '');
+  if (!hasUtm) utm.utm_source = utmSourceFromSrc(input.src);
+  return utm;
+}
+
+function srcFromQuizSearch(search: string): string {
+  const params = new URLSearchParams(withSearch(search).slice(1));
+  const raw = (params.get('src') ?? '').trim();
+  return normalizeOfferSrc(raw) ?? raw;
+}
+
+/**
+ * Fresh quiz attribution from the current URL. Stored first-touch values are
+ * not copied in. Missing UTM params are empty strings.
+ */
+export function quizSubmitFields(input: {
+  pathname: string;
+  search: string;
+  referrer?: string;
+  capturedAt?: string;
+}): { src: string; attribution: Record<string, string> } {
+  const search = withSearch(input.search);
+  const pathname = input.pathname.startsWith('/') ? input.pathname : `/${input.pathname}`;
+  const referrer = (input.referrer ?? '').trim();
+  const landingPage = `${pathname}${search}`;
+  const capturedAt = input.capturedAt ?? new Date().toISOString();
+  const src = srcFromQuizSearch(search);
+  const touch = touchFromLanding({
+    search,
+    referrer,
+    landingPage,
+    capturedAt,
+  });
+  const utm = quizUtmValues({ src, ...touch });
+  const normalized = normalizeTouch(
+    { ...touch, ...utm, landing_page: landingPage, referrer },
+    capturedAt
+  );
+  return { src, attribution: attributionToPayload(normalized) };
+}
+
+/**
+ * Quiz submits replace stored campaign values. Empty strings are kept so an
+ * older Google click is not written back onto the contact.
+ */
+export function quizLeadTouchFromBody(
+  body: unknown,
+  capturedAt = new Date().toISOString()
+): AttributionTouch {
+  const record = body && typeof body === 'object' ? (body as Record<string, unknown>) : {};
+  const submitted = touchFromRequestBody(record, capturedAt);
+  const src = explicitString(record, 'src');
+  const utm = quizUtmValues({
+    src,
+    utm_source: explicitString(record, 'utm_source'),
+    utm_medium: explicitString(record, 'utm_medium'),
+    utm_campaign: explicitString(record, 'utm_campaign'),
+    utm_content: explicitString(record, 'utm_content'),
+    utm_term: explicitString(record, 'utm_term'),
+  });
+  const landing =
+    explicitString(record, 'landing_page') || explicitString(record, 'landing_page_url');
+  return normalizeTouch(
+    {
+      ...submitted,
+      ...utm,
+      landing_page: landing,
+      referrer: explicitString(record, 'referrer'),
+    },
+    submitted.captured_at || capturedAt
+  );
 }
 
 export interface SellerQuizLeadInput {
