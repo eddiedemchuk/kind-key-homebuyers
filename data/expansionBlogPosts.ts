@@ -1797,4 +1797,275 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. KindKey will not decide that a power of attorney is enough. You can say no.',
   }),
+  post('sell-house-in-a-living-trust-edgewood-wa', {
+    breadcrumbName: 'Living trust sales in Edgewood',
+    title: 'Selling an Edgewood House That Is Titled in a Living Trust',
+    description:
+      'How a trustee sells an Edgewood house already titled in a living trust, as-is, once an attorney confirms who can sign. KindKey is the buyer. Not legal advice.',
+    h1: 'Selling an Edgewood House That Is Titled in a Living Trust',
+    publishedAt: '2026-10-30',
+    intro: [
+      `You can ask KindKey to buy an Edgewood house that is already titled in a living trust, without listing it and without repairing it, once a Washington attorney and the title company confirm the trustee who can sign. A house that was actually deeded into the trust may be handled by the trustee rather than through a probate of that house. KindKey will not decide whether this house was deeded into the trust, and KindKey will not tell you to skip a probate. ${office} KindKey is not the trustee, a probate attorney, or a broker.`,
+      'Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. It incorporated on February 28, 1996. Most residents live on North Hill: longer driveways, and shops set back from the street. A smaller share of the city sits in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. A North Hill acreage parcel a parent put in a trust, and a smaller valley house, are different properties. Bring the address.',
+    ],
+    callout:
+      'You do not have to empty the house, replace a drainfield, permit a shop, or finish a remodel before you ask. The signer still has to be the trustee an attorney and the title company will accept. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'A trust binder is not the deed to the Edgewood house',
+        paragraphs: [
+          'This page is for a house the recorded deed already holds in a trust. If the Pierce County deed is still in a parent’s individual name, the trust document in a drawer on North Hill does not replace that deed. Other property may still need a probate even when this house is in the trust. Read the Edgewood probate guide and ask a Washington attorney which file you are in. KindKey will not open a probate, and KindKey will not guess that a binder, a pour-over will, or a family meeting put the house into the trust.',
+          'RCW 11.98.008 says a trust may be created by a transfer of property to another person as trustee during the trustor’s lifetime, or by a will or other disposition taking effect upon the trustor’s death; by a declaration that the owner holds identifiable property as trustee; or by exercise of a power of appointment in favor of a trustee. RCW 64.04.010 says every conveyance of real estate, or any interest in it, shall be by deed, and then states provisos about leases and about certificates when the terms of a trust are already of record. KindKey will not decide which sentence in RCW 11.98.008 describes your file, and KindKey will not apply those provisos to a living-trust binder. The closing agent starts from the recorded deed. An Edgewood deed records with the Pierce County Auditor. A mailing address that says Edgewood is not always inside the city. Milton, next door, can fall in King County or Pierce County. Edgewood does not.',
+          'A transfer-on-death deed recorded under chapter 64.80 RCW is not a living trust. A financial power of attorney is not a living trust. If the owner is alive and the signer is an agent, use the Edgewood power-of-attorney guide. RCW 11.125.100(1)(a) says a power of attorney terminates when the principal dies. After that death, do not hand the closing agent a power of attorney and call it a trustee’s deed. KindKey will not accept it as one.',
+        ],
+      },
+      {
+        heading: 'Who signs when the parent who was trustee has died',
+        paragraphs: [
+          'RCW 11.98.039(1) says that where a vacancy occurs in the office of the trustee and there is a successor trustee who is willing to serve as trustee and is named in the governing instrument as successor trustee, or has been selected under the procedure the instrument sets for that selection, the outgoing trustee, or any other interested party, must give notice of the vacancy, whether it arises because of resignation or for any other reason, and of the successor trustee’s agreement to serve, to each permissible distributee. The successor named in the instrument, or selected under that procedure, is entitled to act as trustee except for good cause or disqualification. The successor is deemed to have accepted the trusteeship as of the effective date of the discharge of the predecessor trustee as provided in RCW 11.98.041. KindKey will not give that notice, will not decide who a permissible distributee is, and will not decide that good cause or a disqualification exists.',
+          'RCW 11.98.041 says that where a vacancy occurs under RCW 11.98.039(1) or (2), the outgoing trustee is discharged upon the agreement of all parties entitled to notice or upon the expiration of thirty days after notice is given, whichever occurs first, or, if no notice is required under RCW 11.98.039(1), upon the date the vacancy occurs, unless before that effective date a petition is filed under RCW 11.98.039(4). KindKey will not count those thirty days, will not tell you that no notice was required, and will not tell you a death certificate in the kitchen starts the clock. Read the paper with a Washington attorney. Do not skip a notice because a buyer is ready to look at the house.',
+          'If no successor is named and willing to serve, RCW 11.98.039(2) says all parties with an interest in the trust may agree to a nonjudicial change of the trustee under RCW 11.96A.220. Unless subsection (1), (2), or (3) of RCW 11.98.039 applies, RCW 11.98.039(4) says any beneficiary, the trustor if alive, or the trustee may petition the superior court having jurisdiction for the appointment or change of a trustee. KindKey will not draft that agreement, will not file that petition, and will not tell you the Edgewood house address picks the court. If your attorney opens a Pierce County case, the Clerk of the Superior Court is at the County-City Building, 930 Tacoma Ave S, Room 110, Tacoma, WA 98402, phone (253) 798-7455. The clerk does not record the deed. RCW 11.98.060 says a successor trustee shall succeed to all the powers, duties, and discretionary authority of the original trustee. KindKey will not read that sentence as permission to skip the notice, the trust instrument, or an attorney.',
+          'RCW 11.98.075 says that instead of furnishing a copy of the trust instrument to a person other than a beneficiary, the trustee may furnish a certification of trust. The certification contains that the trust exists and the date the instrument was executed, the identity of the trustor, the identity and address of the currently acting trustee, the relevant powers of the trustee, the revocability or irrevocability of the trust and the identity of any person holding a power to revoke it, the authority of cotrustees to sign and whether all or less than all are required, and the name of the trust or the titling of the trust property. It must state that the trust has not been revoked, modified, or amended in any manner that would cause those representations to be incorrect. Any trustee, or an attorney for the trust, may sign it. KindKey will not prepare the certification. The closing agent says what the file needs. You can ask for an offer before that paper is ready. Accept the offer only when your attorney says the signer is clear.',
+        ],
+      },
+      {
+        heading: 'Co-trustees, a living parent, and a spouse are different signers',
+        paragraphs: [
+          'RCW 11.98.016(1) says any power vested in three or more trustees jointly may be exercised by a majority of such trustees. That sentence is about three or more. KindKey will not extend it to two siblings, and KindKey will not count a text message as a joinder. RCW 11.98.016(2) says that where two or more trustees are appointed and one or more of them does not accept the appointment or, having accepted, ceases to be a trustee, the survivor or survivors shall execute the trust. A sibling who disagrees, and who is still a trustee, has not ceased because the sale would be easier. KindKey will not decide that someone ceased. RCW 11.98.075 is where a certification states whether all or less than all cotrustees are required to sign. Title reads that. One child on North Hill cannot sign for a co-trustee in Puyallup, Sumner, King County, or another state because the family would like one signature.',
+          'While the parent is alive, this is not a sale that waits on a death. RCW 11.103.040 says that while the trustor of a revocable trust is living, the rights of the beneficiaries are subject to the control of, and the duties of the trustee are owed exclusively to, the trustor. If a revocable trust has more than one trustor, the duties of the trustee are owed to all of the living trustors having the right to revoke the trust. RCW 11.103.020 says the capacity required to create, amend, revoke, or add property to a revocable trust, or to direct the actions of the trustee of a revocable trust, is the same as that required to make a will. KindKey will not judge that capacity. A child who expects to become successor trustee after a death is not, by that expectation, the signer today. If the parent is in care, the Edgewood power-of-attorney guide is the other paper. RCW 11.103.030(5) says a trustor’s powers with respect to the revocation or amendment of a trust, or distribution of the property of a trust, may be exercised by the trustor’s agent under a power of attorney only to the extent specified in the power of attorney document, as provided in RCW 11.125.240, and to the extent consistent with or expressly authorized by the trust agreement. KindKey will not decide that a power of attorney amends the trust or directs the trustee.',
+          'RCW 11.103.030(1) says that unless the terms of a trust expressly provide that the trust is revocable, the trustor may not revoke or amend the trust. KindKey will not tell you a document is revocable because the cover says “living trust.” RCW 11.103.030(2)(c) says that if a revocable trust is created or funded by more than one trustor, and unless the trust agreement provides otherwise, the character of community property or separate property is unaffected by its transfer to and from a revocable trust. KindKey will not decide whether the Edgewood house was community property. RCW 26.16.030 says neither spouse shall sell, convey, or encumber community real property unless the other spouse joins in the deed or other instrument, and both acknowledge it. A trust on the deed does not, by itself, answer a spouse’s signature. Your attorney and the title company do. Do not deed the house from the trust to yourself, or to a sibling, to make the file easier. KindKey will not participate in a transfer meant to move the house out of the trust for a purpose the instrument does not support. Sale proceeds are the trust’s. KindKey does not divide them among children and does not pay a care facility.',
+        ],
+      },
+      {
+        heading: 'The North Hill house can transfer as it sits',
+        paragraphs: [
+          'The house in the trust is often still full. A shop on a long driveway, a barn, an RV cover, tools, a vehicle that does not run, and a yard the neighbors can see are ordinary on North Hill acreage. A valley lot at the base of the hill is usually smaller, and the drainage problem is different. You do not have to empty the shop, subdivide the land, mow to a listing standard, or move anyone back in so the house looks occupied. Say who has a key. A co-trustee in another state can send photos. If a floor or a shop roof is not safe to walk, say so. An exterior look can begin the conversation. Take papers, photos, and what the family wants before the closing date you agree to. Leave the rest.',
+          'RCW 11.98.070 says a trustee, or the trustees jointly, in addition to the authority otherwise given by law, have discretionary power to sell, convey, and manage the trust property, among other acts, in accordance with the standards provided by law. RCW 11.98.070(10) includes power to subdivide, adjust boundaries, and partition real property. RCW 11.98.070(19) includes ordinary or extraordinary repairs, demolition, and improvements. You do not have to use those powers before KindKey looks, and KindKey will not tell you to split the acreage or rebuild the shop. The instrument can say something different from the statute. KindKey will not compare them and will not tell you the statute overrides the document. Your attorney does that.',
+          'RCW 11.100.140(1) says a trustee shall not enter into a significant nonroutine transaction in the absence of a compelling circumstance without providing the written notice that section describes and, if the transaction is the real-estate type in RCW 11.100.140(2)(a), obtaining an independent appraisal or selling in an open-market transaction. RCW 11.100.140(2)(a) describes any sale, option, lease, or other agreement, binding for a period of ten years or more, dealing with any interest in real estate other than real estate purchased by the trustee or a vendor’s interest in a real estate contract, the value of which constitutes twenty-five percent or more of the net fair market value of trust principal at the time of the transaction. RCW 11.100.140(4) describes written notice by certified mail, or personal service, at least twenty days before the trustee enters into a binding agreement. The section also describes a written waiver and a written statement a person dealing with a trustee may rely on. KindKey will not tell you whether your agreement is binding for ten years or more, whether the Edgewood house meets that percentage, whether a compelling circumstance exists, whether a direct sale is an open-market transaction, whether anyone has waived the section, or whether the requirements have been met. KindKey will not send the notice, count the days, write that statement, or prepare an appraisal. Ask a Washington attorney before you sign. If that attorney says an open-market sale is what the statute requires in your file, hire a licensed broker. KindKey will not run the listing. You can still ask for a written number while you get that advice. Asking does not obligate a sale.',
+          'Many older North Hill and Jovita lots use a septic system, and some use a private well. Others are on public sewer and public water. The city name does not decide it, and the fact that a parent handled the bill does not tell the trustee which one it is. A failing drainfield, a system that has sat because the house is empty, or a field nobody can find on a large lot can all be described in plain words. You do not have to pump the tank, locate the field, or replace it before a walkthrough. On-site sewage questions in Pierce County go to the Tacoma-Pierce County Health Department, not to KindKey. KindKey does not inspect, pump, or certify a septic system or a well. The Edgewood septic guide is that page. An unpermitted shop, a garage turned into a room, or a city notice about the yard is a different file. Inside the city, Community Development is at Edgewood City Hall, 10440 Dom Calata Way E, Edgewood, WA 98372. The permit line published by the city is (253) 952-3299. You do not have to close that case, pull a permit, or tear the shop down before KindKey looks. A Pierce County letter can mean the parcel is outside the city even when the mail says Edgewood. Read the header. The Edgewood code-and-unpermitted guide is that page.',
+          'If someone still lives in the house, say so. Do not force that person out so the house looks vacant. A tenant’s rights come from the rental agreement and from Washington law, including chapter 59.18 RCW. KindKey will not serve a notice and will not tell you to end a tenancy. The Edgewood tenants guide is the page for occupants. The Edgewood vacant-house guide is the page for a city maintenance letter after everyone has left. A stopped remodel, a fire in the house or the shop, and a heavy clean-out are separate guides. Use them for the condition. This page is about who can sign. A mortgage in the trust’s name, or a Pierce County property-tax bill, is a different clock. If a foreclosure notice is in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. Requesting an offer does not pause a foreclosure sale date or a treasurer’s date. Parts of Edgewood lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary.',
+          `The sequence is a call or the cash-offer form, one walkthrough, a written offer, and a closing date you help choose with the closing agent. KindKey is based in downtown Auburn. KindKey does not promise a specific number of days. ${closing} Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a code fine, or a lien. The offer reflects the house as it sits, so it can be less than a retail price for a repaired house. You can say no. A parent’s house in Port Orchard, Bremerton, Silverdale, Poulsbo, Bainbridge Island, Kingston, Olalla, or Seabeck is a Kitsap County file. The superior court for those cities sits in Port Orchard, not at the Pierce County clerk’s counter in Tacoma. Do not use this Edgewood page as the courthouse guide for a Kitsap house, or for a Milton house that may be in King County. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of who can sign through the walkthrough, the written offer, and closing. You can say no.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question:
+          'Can a successor trustee sell an Edgewood house in a living trust without probate?',
+        answer:
+          'Sometimes, if the recorded deed is already in the trust and the signer is the trustee the title company will accept. KindKey will not decide that, and KindKey will not tell you to skip a probate of other property. Ask a Washington attorney, then call (206) 519-5463 or use the cash-offer form if a sale is allowed. You can decline the offer.',
+      },
+      {
+        question:
+          'The trust names the house, but the deed is still in my parent’s name. Is that enough?',
+        answer:
+          'Not by itself. KindKey starts from the recorded deed, not from a binder that mentions the address. If the deed is still in an individual’s name, use the Edgewood probate guide and ask an attorney who can sign. KindKey will not treat the trust document as a deed.',
+      },
+      {
+        question: 'Do all of the co-trustees have to sign the Edgewood deed?',
+        answer:
+          'KindKey will not decide that. RCW 11.98.016(1) is about a power vested in three or more trustees. A certification of trust under RCW 11.98.075 states whether all or less than all cotrustees are required to sign. Your attorney and the title company read the instrument. One sibling’s approval is not a substitute.',
+      },
+      {
+        question: 'Do we have to fix the septic, the shop, or a code case before you look?',
+        answer:
+          'No. Tell us about a failing drainfield, an unpermitted shop, a vacant house, a tenant, or a city letter. You do not have to pump the system, close the permit, or empty the yard first. Call (206) 519-5463 or use the cash-offer form. You can decline the offer.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, Meridian, and the valley.',
+      },
+      {
+        href: '/areas/edgewood/sell-inherited-probate-house',
+        label: 'Inherited houses in Edgewood',
+        description: 'Use this when the deed is still in the parent’s name.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign once the sale is an estate.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Probate houses in Edgewood',
+        description: 'Pierce County letters, when the house was not deeded into the trust.',
+      },
+      {
+        href: '/blog/sell-house-with-power-of-attorney-edgewood-wa',
+        label: 'Power of attorney in Edgewood',
+        description: 'When the owner is alive and in care. A trust is a different paper.',
+      },
+      {
+        href: '/blog/sell-inherited-acreage-with-outbuildings-edgewood-wa',
+        label: 'Inherited acreage in Edgewood',
+        description: 'A shop, a barn, or another outbuilding on the trust’s land.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell a house as-is in Edgewood',
+        description: 'Condition does not have to be repaired first.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/edgewood/sell-my-house-fast',
+        label: 'Sell my house fast in Edgewood',
+        description: 'The Edgewood fast-sale page.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description: 'A drainfield the trustee has not found.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'A city letter about the yard or an unpermitted shop.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'The King and Pierce County overview.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-edgewood-wa',
+        label: 'Unpermitted work in Edgewood',
+        description: 'A shop or a room that was never permitted.',
+      },
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Vacant houses in Edgewood',
+        description: 'When nobody lives in the trust’s house.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The Washington overview for empty houses.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-edgewood-wa',
+        label: 'Selling a vacant Edgewood house',
+        description: 'City maintenance rules after the owner has left.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-tenants',
+        label: 'Houses with tenants in Edgewood',
+        description: 'When someone still lives in the house.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/blog/sell-house-with-tenants-edgewood-wa',
+        label: 'Tenants in Edgewood',
+        description: 'Occupants on a lot the trust still owns.',
+      },
+      {
+        href: '/areas/edgewood/sell-hoarder-house',
+        label: 'Heavy-repair houses in Edgewood',
+        description: 'A shop and a lifetime of belongings can stay.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents do not have to be hauled away first.',
+      },
+      {
+        href: '/blog/sell-hoarder-house-on-acreage-edgewood-wa',
+        label: 'Hoarder houses on Edgewood acreage',
+        description: 'When the trust’s lot is full.',
+      },
+      {
+        href: '/blog/sell-house-with-stalled-remodel-edgewood-wa',
+        label: 'Stalled remodels in Edgewood',
+        description: 'An addition that never reached a final inspection.',
+      },
+      {
+        href: '/areas/edgewood/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Edgewood',
+        description: 'A house or a shop fire on trust property.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The county overview. Not insurance advice.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-edgewood-wa',
+        label: 'Fire damage in Edgewood',
+        description: 'East Pierce Fire & Rescue, shops, and a sale as-is.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Foreclosure in Edgewood',
+        description: 'When a foreclosure notice arrived on the loan.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'A loan deadline is separate from the trust signature.',
+      },
+      {
+        href: '/blog/behind-on-property-taxes-edgewood-wa',
+        label: 'Property taxes in Edgewood',
+        description: 'A Pierce County bill is a different clock.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-bremerton',
+        label: 'Inherited houses in Bremerton',
+        description: 'A Kitsap estate. Not this Edgewood trust file.',
+      },
+      {
+        href: '/areas/port-orchard',
+        label: 'Sell a house in Port Orchard',
+        description: 'Kitsap County seat. A different courthouse from Tacoma.',
+      },
+      {
+        href: '/areas/bremerton',
+        label: 'Sell a house in Bremerton',
+        description: 'Kitsap County, across the inlet.',
+      },
+      {
+        href: '/areas/silverdale',
+        label: 'Sell a house in Silverdale',
+        description: 'Unincorporated Kitsap County.',
+      },
+      {
+        href: '/areas/poulsbo',
+        label: 'Sell a house in Poulsbo',
+        description: 'North Kitsap. Not an Edgewood trust sale.',
+      },
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description: 'The next city west. Milton can be King County or Pierce County.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say who the trustee is. Asking does not obligate a sale.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood offer once an attorney confirms the trustee',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. KindKey will not decide that a living trust is enough. You can say no.',
+  }),
 ];
