@@ -2068,4 +2068,266 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. KindKey will not decide that a living trust is enough. You can say no.',
   }),
+  post('sell-house-before-foreclosure-kitsap-county', {
+    breadcrumbName: 'Foreclosure in Kitsap County',
+    title: 'Selling a House Before Foreclosure in Kitsap County, WA',
+    description:
+      'How owners in Port Orchard, Bremerton, Silverdale, and Poulsbo sell before a trustee sale. KindKey buys as a principal. Not legal advice.',
+    h1: 'Selling a House Before Foreclosure in Kitsap County, WA',
+    publishedAt: '2026-10-31',
+    intro: [
+      `You can ask KindKey for a cash offer on a Kitsap County house that is heading toward a trustee’s sale without repairing it, catching the loan up, or listing it, if there is still time to transfer title and the numbers can pay what has to be paid at closing. Asking does not stop the sale. ${office} KindKey is not a trustee, a housing counselor, a foreclosure consultant, or a broker. This article is not legal advice.`,
+      'Kitsap County is across Puget Sound from King County. Port Orchard is the county seat. Bremerton and Poulsbo are incorporated cities. Silverdale is an unincorporated community, not a city. Kingston, Olalla, Seabeck, Manchester, Southworth, Navy Yard City, and Gorst are unincorporated places people name. Bainbridge Island is its own city. Gig Harbor is in Pierce County, not Kitsap. A ferry commute to Seattle, or a drive across the Tacoma Narrows, does not move the deed, the notice, or the courthouse. KindKey’s office is in downtown Auburn. The distance does not add a repair requirement.',
+    ],
+    callout:
+      'You do not have to catch up the mortgage, repair the house, or empty it before you ask. A request does not postpone the trustee. Reach out, and KindKey will help you through the whole process from start to finish. Talk with a Washington attorney or a HUD-approved housing counselor about the notice before you sign. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'A Kitsap notice is recorded in Port Orchard',
+        paragraphs: [
+          'RCW 61.24.040(1) says that at least 90 days before the sale, or at least 120 days before the sale if a letter under RCW 61.24.031 is required, the trustee records a notice of sale in the office of the auditor in each county in which the deed of trust is recorded. For a Kitsap County deed, that office is the Kitsap County Auditor in Port Orchard. The auditor’s mailing address is 614 Division St., MS-31, Port Orchard, WA 98366. The physical address the auditor publishes is 619 Division St., Port Orchard, WA 98366. Recording’s published phone is (360) 337-4935. The auditor’s published hours are Monday through Friday, 8:00 a.m. to 4:30 p.m. KindKey is not the auditor and will not record the notice, pull the file, or tell you the recording date from a street address.',
+          'Do not search the Pierce County Auditor in Tacoma, or the King County Recorder, because you take the ferry or because KindKey’s office is in Auburn. Edgewood, Tacoma, Puyallup, and Gig Harbor are Pierce County. Kent, Federal Way, and most of Auburn are King County. Milton can be either. The caption on your notice is the fact. If the deed of trust was recorded in more than one county, the same statute follows each of those counties. KindKey will not decide that from the city on the mailbox.',
+          'Port Orchard, Bremerton, Silverdale, and Poulsbo are not the same house. Downtown Port Orchard, Annapolis, Mile Hill, and McCormick Woods sit in the county seat. Manchester and Southworth are nearby and unincorporated. Bremerton includes downtown, Manette, Charleston, and the east and west sides. Navy Yard City and Gorst are not Bremerton neighborhoods. Silverdale has no city hall: Old Town, Bucklin Hill, Ridgetop, and Clear Creek are local names, and building permits there go through Kitsap County. Poulsbo is on Liberty Bay. Kingston is not Poulsbo. A notice for one of those places can still be a Kitsap County recording. A City of Bremerton letter, a City of Port Orchard letter, a City of Poulsbo letter, and a Kitsap County letter are not the trustee’s notice. Read the header.',
+        ],
+      },
+      {
+        heading: 'The date on the notice is the clock',
+        paragraphs: [
+          'Unless you were served with a summons, a deed-of-trust foreclosure in Washington is nonjudicial, under chapter 61.24 RCW, not a lawsuit under chapter 61.12 RCW. The earlier papers, including a notice of default, are explained in the Washington notice-of-default guide and the notice-of-trustee-sale guide. Your paper shows the stage you are in. KindKey will not tell you that step is finished, and KindKey will not count days forward from a missed payment and call the result your sale date.',
+          'RCW 61.24.040(12) says the sale shall not take place less than 190 days from the date of default in any of the obligations secured. That sentence is a floor in the statute. It is not a date you should invent by counting 190 days from the month you first fell behind. RCW 61.24.040(9) says the place of sale is any designated public place within the county where the property is located, and that the sale shall be on Friday, or if Friday is a legal holiday on the following Monday, during the hours set by statute for execution sales. The notice states the time and place. KindKey will not substitute a courthouse door for the place printed on your notice. RCW 61.24.040(10) says the trustee has no obligation to continue the sale, but may continue it for a period or periods not exceeding a total of 120 days, on the terms that subsection states. A postponement is the trustee’s choice. KindKey cannot order it.',
+          'Reinstatement is a payment to the trustee, not to a buyer. RCW 61.24.090(1) says that at any time prior to the eleventh day before the date set by the trustee for the sale in the recorded notice of sale, or if the trustee continues the sale, at any time prior to the eleventh day before the actual sale, the borrower and the other persons that subsection lists are entitled to discontinue the sale by curing the default. For a payment default, that cure is the amount then due other than principal that would not yet be due, plus the trustee’s expenses and fees the subsection describes. You pay the trustee. KindKey does not calculate the cure, collect it, or tell you the eleventh day has not passed. After that day, ask a Washington attorney what remains.',
+          'If you want to keep the house, talk with a HUD-approved housing counselor or a Washington attorney about Foreclosure Fairness Act mediation under RCW 61.24.163. Subsection (1) says the program applies only to borrowers who have been referred by a housing counselor or an attorney. You do not refer yourself. Subsection (2) says the referral may be made any time after a notice of default has been issued but no later than 90 days prior to the date of sale listed in the notice of trustee’s sale. The same subsection states a different window if an amended notice of trustee’s sale is recorded after the sale has been stayed. KindKey will not decide that you are inside either window, will not send the referral, and will not attend the session. RCW 61.24.163(8) says the mediator convenes the session in the county where the property is located, unless the parties agree on another location. For a Kitsap house, that county is Kitsap, not King County because of the ferry and not Pierce County because of the Narrows. RCW 61.24.163(20) says that unless the fee is waived, the parties agree otherwise, or the department otherwise authorizes, a foreclosure mediator’s fee may not exceed $400 for preparing, scheduling, and conducting a session lasting between one hour and three hours. A longer session may be a different fee the department authorizes. Payment of the mediator’s fee is divided equally between the beneficiary and the borrower. KindKey does not collect it. A referral can affect whether the sale goes forward. It does not guarantee you keep the house. The Washington Department of Commerce publishes a free counseling line at 1-877-894-HOME (4663). Use that line, or the hotline printed on your notice if it differs.',
+        ],
+      },
+      {
+        heading: 'The Port Orchard courthouse is not the Auburn office',
+        paragraphs: [
+          'The notice form in RCW 61.24.040 says you may contest the default by initiating court action in the Superior Court of the county in which the sale is to be held. For a Kitsap sale, that court is in Port Orchard, at 614 Division Street. The Kitsap County Clerk publishes the clerk’s office at 614 Division Street, Room 202, Port Orchard, WA 98366, phone (360) 337-7164, with mailing address 614 Division Street, MS-34, Port Orchard, WA 98366. The clerk’s published hours are Monday through Friday, 8:00 a.m. to 12:15 p.m. and 1:15 p.m. to 4:30 p.m. The office is closed for lunch from 12:15 to 1:15. The clerk does not record the deed. An Edgewood or Tacoma foreclosure uses the Pierce County clerk in Tacoma. Do not open a Kitsap file there because a relative lives in Puyallup. A case to restrain the sale under RCW 61.24.130 is a lawyer’s filing. KindKey will not draft it, count a deadline, or appear for you. If the paper has a sale date, talk with a Washington attorney before you sign anything meant to move the house.',
+          'Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. Do not deed the house to a relative, or to anyone, outside a closing, to get ahead of the trustee. KindKey will not take a deed outside escrow, will not ask you to sign the house over so someone else can list it, and will not tell you those rules do not apply because the buyer is local. Take the written offer to your attorney. You can say no.',
+          'A county treasurer’s tax foreclosure is a different notice from a trustee’s sale on a mortgage. KindKey will not tell you a loan sale date is also a tax sale date. The statewide guide on tax-delinquent houses is the place for that distinction. Your own paper controls. A city or county letter about an unpermitted shop, a yard, or a vacant house is a third file. Inside Port Orchard, Bremerton, or Poulsbo, a municipal letter is the city’s. In Silverdale and other unincorporated places, a building or code letter is Kitsap County’s. On-site sewage questions in Kitsap County go to the Kitsap Public Health District. KindKey is none of those offices. You do not have to close a code case before you ask for an offer. KindKey will not pull a permit or attend a hearing.',
+        ],
+      },
+      {
+        heading: 'The house can transfer as it sits, if the date still allows a closing',
+        paragraphs: [
+          'You do not have to replace a roof, close a permit, pump a septic tank, mow to a listing standard, or move back from King County or Pierce County before KindKey looks. Photos of the house and a copy of the notice are enough to start. If a floor is not safe to walk, say so. An exterior look can begin the conversation. Take papers, photos, and what you want to keep before the closing date you agree to. Leave the rest. Say who has a key. A relative in Bremerton, Port Orchard, Silverdale, Poulsbo, or across the water can open the door once. KindKey does not need a string of showings.',
+          'If someone still lives in the house, say so. Do not force that person out so the house looks vacant. A tenant’s rights come from the rental agreement and from Washington law, including chapter 59.18 RCW. KindKey will not serve a notice and will not tell you to end a tenancy. Many Kitsap houses use a septic system, and some use a private well. Others are on public sewer and public water. The city name does not decide it. You do not have to pass a septic inspection before an offer. KindKey does not inspect, pump, or certify a system. If the house is also in a probate, or titled in a trust, the person who signs is a separate question. The Bremerton probate guide covers a Kitsap estate. The superior court for a decedent who lived in Bremerton, Port Orchard, Poulsbo, or Silverdale sits in Port Orchard, not in Tacoma. KindKey will not guess who can sign and will not file the probate. Do not sign a deed before your attorney says the authority exists.',
+          `A direct sale can pay the mortgage and other required liens if the price covers them and title can still transfer before the sale. If the payoff is higher than the price, the lender has to agree to different numbers, and there may be nothing left over. KindKey will not negotiate with the servicer as your representative. ${closing} Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase the loan, a tax bill, a code fine, or a lien. The offer reflects the house as it sits, so it can be less than a retail price for a repaired house. You see the payoffs on the settlement statement, prepared by the closing agent, before you close. An offer does not postpone the trustee. KindKey does not promise a specific number of days. The sequence is a call or the cash-offer form, one walkthrough, a written offer, and a closing date you help choose with the closing agent, if the trustee’s date still leaves room. Reach out, and KindKey will help you through the whole process from start to finish. You can say no.`,
+          'Keeping the house can fit if you can cure, or if a counselor or your attorney says mediation is still open. A listing can fit a house that is safe to show and that someone local can host, if a broker will take the timeline. Hire a licensed broker in Kitsap County for a listing. KindKey will not run one and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. An Edgewood foreclosure is a Pierce County file. Use the Edgewood foreclosure guide for that house, not this page. A King County notice belongs in the King County foreclosure guide. Do not use this Kitsap page as the auditor guide for a Pierce County or King County deed. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell my Kitsap County house before the trustee’s sale?',
+        answer:
+          'Sometimes, if title can still transfer in time and the numbers pay what has to be paid at closing. KindKey can make a cash offer on a house in Port Orchard, Bremerton, Silverdale, Poulsbo, and the rest of Kitsap County. Only your attorney, the lender, and the trustee can speak to whether the foreclosure is still stoppable. Call (206) 519-5463 or use the cash-offer form. You can decline the offer.',
+      },
+      {
+        question: 'Does asking KindKey for an offer stop the foreclosure?',
+        answer:
+          'No. A finished sale might pay what title requires if the numbers and the date work. The request itself does not postpone the trustee. RCW 61.24.090 puts reinstatement on a payment to the trustee before the eleventh day before the sale, or before the eleventh day before a continued sale. KindKey does not collect that payment.',
+      },
+      {
+        question: 'Where is a Kitsap County notice of sale recorded?',
+        answer:
+          'With the Kitsap County Auditor in Port Orchard, when the deed of trust is a Kitsap deed. The auditor’s mailing address is 614 Division St., MS-31, Port Orchard, WA 98366. Recording’s published phone is (360) 337-4935. Gig Harbor is Pierce County. Edgewood is Pierce County. KindKey will not tell you which county your deed is in. Read the notice.',
+      },
+      {
+        question: 'Do I have to repair the house or move a tenant out first?',
+        answer:
+          'No. Tell us about the roof, a septic system, a tenant, or a vacant house. Do not force an occupant out so the house looks empty. KindKey does not serve notices and does not certify a septic system. You can still request an offer. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/port-orchard',
+        label: 'Sell a house in Port Orchard',
+        description: 'Kitsap County seat. The auditor and the superior court sit here.',
+      },
+      {
+        href: '/areas/bremerton',
+        label: 'Sell a house in Bremerton',
+        description: 'Downtown, Manette, Charleston, and both sides of the city.',
+      },
+      {
+        href: '/areas/silverdale',
+        label: 'Sell a house in Silverdale',
+        description: 'Unincorporated Central Kitsap. No city hall.',
+      },
+      {
+        href: '/areas/poulsbo',
+        label: 'Sell a house in Poulsbo',
+        description: 'North Kitsap and Liberty Bay. Kingston is a different place.',
+      },
+      {
+        href: '/areas/port-orchard/sell-house-as-is',
+        label: 'Sell a house as-is in Port Orchard',
+        description: 'Condition does not have to be repaired first.',
+      },
+      {
+        href: '/areas/bremerton/sell-house-as-is',
+        label: 'Sell a house as-is in Bremerton',
+        description: 'The Bremerton as-is page.',
+      },
+      {
+        href: '/areas/silverdale/sell-house-as-is',
+        label: 'Sell a house as-is in Silverdale',
+        description: 'The Silverdale as-is page.',
+      },
+      {
+        href: '/areas/poulsbo/sell-house-as-is',
+        label: 'Sell a house as-is in Poulsbo',
+        description: 'The Poulsbo as-is page.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The Washington overview.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Can I sell before foreclosure in Washington?',
+        description: 'What a direct sale can pay at closing.',
+      },
+      {
+        href: '/blog/notice-of-default-washington',
+        label: 'Notice of default in Washington',
+        description: 'The paper that often comes before the sale notice.',
+      },
+      {
+        href: '/blog/notice-of-trustee-sale-washington',
+        label: 'Notice of trustee sale in Washington',
+        description: 'The sale date and reinstatement.',
+      },
+      {
+        href: '/blog/washington-foreclosure-mediation-vs-selling',
+        label: 'Mediation or a sale',
+        description: 'When a counselor refers you, and when a sale is the other path.',
+      },
+      {
+        href: '/blog/behind-on-mortgage-payments-washington',
+        label: 'Behind on mortgage payments',
+        description: 'Options before a sale date is on the calendar.',
+      },
+      {
+        href: '/blog/foreclosure-in-pierce-county-washington',
+        label: 'Foreclosure in Pierce County',
+        description: 'Tacoma, Puyallup, and Edgewood. Not this Kitsap file.',
+      },
+      {
+        href: '/blog/foreclosure-in-king-county-washington',
+        label: 'Foreclosure in King County',
+        description: 'Kent, Federal Way, and most of Auburn.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'Edgewood is Pierce County. A different auditor.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Edgewood houses before foreclosure',
+        description: 'The Pierce County city page. Do not use it for a Kitsap notice.',
+      },
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'Pierce County, between Milton and Puyallup.',
+      },
+      {
+        href: '/areas/bremerton/sell-inherited-probate-house',
+        label: 'Inherited houses in Bremerton',
+        description: 'When a probate and a loan notice are both open.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, before the sale date.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-bremerton',
+        label: 'Probate houses in Bremerton',
+        description: 'The court sits in Port Orchard.',
+      },
+      {
+        href: '/areas/bremerton/sell-house-with-tenants',
+        label: 'Houses with tenants in Bremerton',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'The Washington overview.',
+      },
+      {
+        href: '/areas/bremerton/sell-vacant-house',
+        label: 'Vacant houses in Bremerton',
+        description: 'When nobody is living in the house.',
+      },
+      {
+        href: '/areas/silverdale/sell-vacant-house',
+        label: 'Vacant houses in Silverdale',
+        description: 'An empty house in unincorporated Kitsap County.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The Washington overview for empty houses.',
+      },
+      {
+        href: '/areas/port-orchard/sell-house-with-code-violations',
+        label: 'Code violations in Port Orchard',
+        description: 'A city letter is not the trustee’s notice.',
+      },
+      {
+        href: '/areas/silverdale/sell-house-with-code-violations',
+        label: 'Code violations in Silverdale',
+        description: 'A Kitsap County letter, because Silverdale is unincorporated.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices are a different file from the loan.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-port-orchard',
+        label: 'Code cases in Port Orchard',
+        description: 'City, county, and health-district letters.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A treasurer’s sale is not a trustee’s sale.',
+      },
+      {
+        href: '/areas/tacoma/sell-house-before-foreclosure',
+        label: 'Sell before foreclosure in Tacoma',
+        description: 'Pierce County. Across the Narrows, not Kitsap.',
+      },
+      {
+        href: '/areas/bremerton/sell-my-house-fast',
+        label: 'Sell a house fast in Bremerton',
+        description: 'The Bremerton fast-sale page.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what the notice shows. Asking does not postpone the sale.',
+      },
+    ],
+    ctaTitle: 'Ask for a Kitsap County offer you can review with an attorney',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. A request does not postpone the trustee. You do not have to catch up the loan first. You can say no.',
+  }),
 ];
