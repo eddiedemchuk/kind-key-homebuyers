@@ -28,9 +28,11 @@ export function focusOfferForm(): void {
 export function OfferJumpButton({
   className,
   location,
+  label = 'Get My Offer',
 }: {
   className?: string;
   location: OfferLinkLocation;
+  label?: string;
 }) {
   return (
     <button
@@ -41,7 +43,7 @@ export function OfferJumpButton({
       }}
       className={className}
     >
-      Get My Offer
+      {label}
     </button>
   );
 }

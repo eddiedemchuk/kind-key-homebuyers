@@ -136,6 +136,45 @@ function OfferSituations() {
   );
 }
 
+function OfferCountyBuyers() {
+  return (
+    <section className="mt-8" aria-labelledby="county-buyers-heading">
+      <h2 id="county-buyers-heading" className="text-xl font-bold">
+        Cash Home Buyers in Pierce &amp; South King County
+      </h2>
+      <div className="mt-3 space-y-3 text-base leading-snug text-text-secondary">
+        <p>
+          Thinking &ldquo;I need to sell my house fast&rdquo; but don&apos;t want to deal with
+          repairs, showings or agents? KindKey Home Buyers is a small, family-owned business. We buy
+          houses for cash across Pierce and South King County.
+        </p>
+        <p>
+          <span className="font-semibold text-text-primary">We buy houses as-is.</span> No repairs,
+          no cleaning, no staging. Leave behind anything you don&apos;t want.
+        </p>
+        <p>
+          <span className="font-semibold text-text-primary">Cash offer within 24 hours.</span> Tell
+          us about the property and we&apos;ll get back to you with a no-obligation cash offer,
+          usually within one day.
+        </p>
+        <p>
+          <span className="font-semibold text-text-primary">You pick the closing date.</span> Close
+          quickly, or take more time if you need it to move. You set the timeline.
+        </p>
+        <p>
+          <span className="font-semibold text-text-primary">Local and family-owned.</span> As local
+          cash home buyers, we work with you directly, not through a call center.
+        </p>
+      </div>
+      <OfferJumpButton
+        location="bottom"
+        label="Get My Cash Offer"
+        className="mt-4 flex min-h-14 w-full items-center justify-center rounded-lg bg-divider px-6 text-lg font-bold text-white shadow-md"
+      />
+    </section>
+  );
+}
+
 function OfferDistressNotes() {
   return (
     <section className="mt-8" aria-label="Taxes, code cases, and cleanout">
@@ -251,6 +290,7 @@ export default function OfferLanding({
             />
           </div>
           <OfferSituations />
+          <OfferCountyBuyers />
           <HousesBought />
           {showOfferMath ? (
             <>
