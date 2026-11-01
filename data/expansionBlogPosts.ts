@@ -2330,4 +2330,296 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. A request does not postpone the trustee. You do not have to catch up the loan first. You can say no.',
   }),
+  post('sell-house-with-septic-or-well-issues-kitsap-county', {
+    breadcrumbName: 'Septic or well issues in Kitsap County',
+    title: 'Selling a House with Septic Failure or Well Issues in Kitsap County, WA',
+    description:
+      'How owners in Port Orchard, Bremerton, Silverdale, Poulsbo, and unincorporated Kitsap sell with a failed septic system or a private-well problem. KindKey buys as-is. Not health advice.',
+    h1: 'Selling a House with Septic Failure or Well Issues in Kitsap County, WA',
+    publishedAt: '2026-11-01',
+    intro: [
+      `You can ask KindKey for a cash offer on a Kitsap County house with a failing septic system, a drainfield that stays wet, or a private well that is a problem, without replacing the system, pumping the tank, or passing an inspection first. Asking does not close a health-district file, and it does not waive a rule the district enforces. ${office} KindKey does not inspect, pump, design, or certify a septic system or a well. This article is not legal, health, or code advice.`,
+      'Kitsap County is across Puget Sound from King County. Port Orchard is the county seat. Bremerton, Poulsbo, and Bainbridge Island are incorporated cities. Silverdale is an unincorporated community, not a city. Kingston, Olalla, Seabeck, Manchester, Southworth, Navy Yard City, and Gorst are unincorporated places people name. A city name does not tell you whether the house is on a public sewer, an on-site system, a public water system, or a private well. The parcel does. Gig Harbor is in Pierce County. An Edgewood drainfield is a Pierce County file, not this one.',
+    ],
+    callout:
+      'You do not have to replace the drainfield, drill a new well, or finish a health-district report before you ask. The district still controls its rules. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'The letter is from the health district, not from a city hall',
+        paragraphs: [
+          'On-site sewage in Kitsap County is handled by the Kitsap Public Health District. The district publishes its office at 345 6th Street, Suite 300, Bremerton, WA 98337. The published phone is (360) 728-2235. The published office hours are Monday through Friday, 9 a.m. to 4 p.m. That office is not Bremerton City Hall, not Port Orchard City Hall, not Poulsbo City Hall, not Bainbridge Island City Hall, and not the Kitsap County building counter. KindKey is none of those offices. A municipal letter about an unpermitted shop, a yard, or a vacant house is a different file from a septic letter. Read the header.',
+          'The regulations document the district publishes is Kitsap Public Health Board Ordinance 2025-01, Onsite Sewage System and General Sewage Sanitation Regulations, effective March 17, 2025. Section 4.A.1 says these regulations apply to all territory contained within the boundaries, and under the supervision, of the Kitsap Public Health Board. KindKey will not decide whether a particular parcel is inside that territory. The district’s page on selling property served by a septic system cites “Kitsap Public Health Board Ordinance 2025A-01, Section 13.D” in the same conversation. KindKey will not tell you those labels are the same paper or two papers. Use the citation printed on the letter you received, and ask the district if the labels do not match.',
+          'Inside Port Orchard, Bremerton, Poulsbo, or Bainbridge Island, a building permit is a city matter. In Silverdale, Kingston, Olalla, Seabeck, Manchester, Southworth, Navy Yard City, and Gorst, a building permit is a Kitsap County matter, because those places are unincorporated. The health district is still the sewage office in both cases when the house uses an on-site system. Deeds for a Kitsap house record with the Kitsap County Auditor in Port Orchard. The auditor’s mailing address is 614 Division St., MS-31, Port Orchard, WA 98366. The physical address the auditor publishes is 619 Division St., Port Orchard, WA 98366. Recording’s published phone is (360) 337-4935. The auditor’s published hours are Monday through Friday, 8:00 a.m. to 4:30 p.m. The auditor does not inspect a drainfield. Do not search the Pierce County Auditor in Tacoma, or the King County Recorder, because you take the ferry or because KindKey’s office is in Auburn.',
+          'An Edgewood house is entirely in Pierce County. On-site sewage questions there go to the Tacoma-Pierce County Health Department, not to the Bremerton health district. North Hill and Jovita are the Edgewood map. Use the Edgewood septic guide for that house. Do not bring a Pierce County health letter to this page, and do not use this page as the recorder guide for an Edgewood deed.',
+        ],
+      },
+      {
+        heading: 'What the ordinance calls a failure, and what a transfer asks for',
+        paragraphs: [
+          'Ordinance 2025-01 defines “Failure or Failing” as a condition, or malfunction, of an on-site sewage system, or a connection to a public sewer, that threatens human or public health or safety, as determined by the Health Officer, by inadequately treating, conveying, and/or dispersing sewage, or by creating a potential for direct or indirect contact between sewage and humans. The examples in that definition include sewage on the surface of the ground, sewage discharged directly to surface water or upon the surface of the ground unless the discharge is under a permit from the Washington State Department of Ecology, sewage backing up into a structure, sewage leaking from a septic tank, pump chamber, holding tank, or collection system, and other conditions the definition lists. KindKey will not decide that the wet spot in a Seabeck yard, or a smell in a Kingston crawlspace, meets that definition. The Health Officer does. WAC 246-272A-0270(1)(a) says the owner shall request assistance from the local health officer when a failure or a suspected failure occurs. KindKey is not that officer and will not make the report for you.',
+          'Section 13.D is the part titled responsibilities and requirements for owners conveying property. It says owners that intend to convey ownership of property that uses an on-site sewage system shall submit an application to the Health Officer at least 30 days before the property transfer, to request an inspection and a written evaluation of the system’s functionality, maintenance needs, and compliance status. KindKey will not count those 30 days, will not file the application, and will not tell you a cash buyer is outside the sentence. For a system with no sewage permit on file, Section 13.D.3 says the owner or authorized agent shall develop or obtain a record drawing, obtain a tank inspection report completed within the past three years by a certified pumper or monitoring and maintenance specialist, submit the conveyance application with those papers, allow the inspection, and provide the Health Officer’s written evaluation to the buyer before the transfer. The district’s selling page says the district needs a record drawing to perform a property conveyance inspection, and that if the property does not have one, you will need to create one. Section 13.D.4 says that after a completed application, the Health Officer shall, within seven business days of receipt, search the records, conduct a field inspection, and issue a written summary. KindKey will not tell you that clock has started.',
+          'Section 13.D.5 says that if the records review or the site evaluation identifies certain items, the Health Officer shall notify the owner and require correction under Section 19. Those items include a failing, broken, or malfunctioning system or component that poses a threat to public health or to the continued functionality of the system; a previously designated and approved primary or reserve area that has been eliminated, destroyed, or otherwise made unusable; use or operation of the system in violation of its approved use or design capacity; and missing or inaccessible service access on an alternative system, as that subsection describes. Section 13.D.6 says other items of non-compliance, the ones that do not pose an immediate threat and do not fall under 13.D.5, shall be noted on the evaluation report, and that the intent of the regulations is that those other items be addressed in good faith by the current owner, the prospective owner, or both, through the conveyance process. KindKey will not sort your file into those two piles, and KindKey will not tell you a signature erases either one.',
+          'Section 13.D.9 says a property conveyance inspection is not required for systems connected to structures or buildings which have never been occupied, have a Health Officer approved sewage installation permit, and have a valid certificate of occupancy from the building official. KindKey will not apply that exception to a house someone has lived in. Section 13.C.24 says that at or before the transfer, the owner provides the buyer the permit and maintenance records when available, a scaled record drawing when no official sewage permit records are available, the written evaluation under Section 13.D, and a completed seller disclosure statement in accordance with chapter 64.06 RCW. KindKey will not prepare that disclosure. Ask a Washington attorney or the closing agent what the form requires. WAC 246-272A-0270(1)(k)(i) also says that at the time of property transfer the owner provides the buyer all available maintenance and repair records in addition to the completed seller disclosure statement under chapter 64.06 RCW for residential real property transfers. WAC 246-272A-0270(1)(k)(ii) says that beginning February 1, 2027 the owner obtains an inspection, as required in WAC 246-272A-0260(5), by a third-party inspector the local health officer authorizes. Subsection (1)(k)(iv) says the local health officer may require a compliance schedule for repair of a failure discovered during the property transfer inspection. KindKey will not tell you whether Ordinance 2025-01 or that state rule controls a particular closing day.',
+        ],
+      },
+      {
+        heading: 'The lots this shows up on, from Seabeck to Mile Hill',
+        paragraphs: [
+          'Kingston, Olalla, and Seabeck are unincorporated. The house is often a rambler or an older place on acreage, with a shop, a barn, or an RV cover set back from the road. The drainfield may be a patch of grass nobody in the family has marked. A building, a driveway, or a pasture over the primary area or the reserve area is a fact to say out loud. Ordinance 2025-01 defines “expansion” to include a change that reduces the treatment or dispersal capability of the existing system or the reserve area, and the examples include a building placed over a reserve area and a driveway or animal pasture over a primary area. KindKey will not decide that your shop is that expansion. You do not have to tear the shop down, locate every line, or draw the record before a walkthrough. If the ground is soft, or a tank lid is not safe to walk, say so. An exterior look can begin the conversation. Building permits in those places go through Kitsap County. The sewage question still goes to the health district.',
+          'WAC 246-272A-0280(1)(f) says that when an on-site sewage failure occurs, the local health officer shall report failures within 200 feet of shellfish growing areas to the department. A Seabeck or Hood Canal lot, an Olalla shoreline lot, and a house near Liberty Bay or Sinclair Inlet can raise that question. KindKey will not measure the 200 feet, will not sample the water, and will not file that report. Bainbridge Island is its own city. A house near the ferry and a house on a larger island lot are not the same property. The island name does not tell you whether the parcel is on a public sewer or an on-site system. Send the Bainbridge Island address. KindKey still looks at the house. Poulsbo is on Liberty Bay. Downtown along Front Street, Viking Avenue, Noll Road, and Olhava are the local map. Kingston is not Poulsbo. Some edge lots use septic. Some in-town houses do not.',
+          'Silverdale has no city hall. Old Town, Bucklin Hill, Ridgetop, and Clear Creek are local names. Dyes Inlet is the water. Some lots are on public sewer. Some older or outlying lots use septic. Clear Creek is the name of an area. It is not a diagnosis of your drainfield. Port Orchard includes downtown and Bay Street, Annapolis, Mile Hill, the Bethel and Sedgwick corridors, and McCormick Woods. Manchester and Southworth are nearby and unincorporated. A newer subdivision and a larger edge lot are different systems. Bremerton includes downtown, Manette, Charleston, the east and west sides, Kitsap Lake, and Rocky Point. Navy Yard City and Gorst are not Bremerton neighborhoods. Some in-town Bremerton houses are on a city sewer. An edge lot, or a house someone added a bathroom to, can still be on septic. KindKey will not guess from the neighborhood.',
+          'A house on a public sewer is a different system from an on-site tank and drainfield. Section 4.A.3 of Ordinance 2025-01 says that in the specific event of public exposure to sewage, a sewage discharge to the ground surface, surface water, or ground water, or a backup of sewage into a structure, the regulations also apply to an owner connected to a public sewer or a large or community system. KindKey will not decide that event happened. Say what you know, including if you do not know. A private well is a separate fact from the drainfield. The district’s page on selling property served by a septic system and by water says that, effective March 4, 2019, properties served by a private or Group B water system are required to have a Water Status Report from the district before they are sold, and that those applications should be submitted 30 days before the transfer. KindKey will not tell you whether your well is a one-party well, a two-party well, Group A, or Group B. KindKey does not test the water and does not certify the well. A dry well, a well that has not been run because the house is empty, and a shared well you do not want to explain can all be described in plain words.',
+        ],
+      },
+      {
+        heading: 'A direct sale does not replace the health district',
+        paragraphs: [
+          'You do not have to pump the tank, replace the field, drill a well, mow to a listing standard, or create a record drawing before KindKey looks. Photos of the house and of any letter are enough to start. Take papers, photos, and what you want to keep before the closing date you agree to. Leave the rest. If the house is full, or a shop on acreage is full, you do not have to empty it. The Kitsap as-is guide is the condition page. The hoarder pages for Port Orchard, Bremerton, Silverdale, and Poulsbo are the heavy-repair pages. An inherited acreage sale in Edgewood, with the shop and the outbuildings, is the Pierce County version of the same problem. Use that guide when the parcel is in Edgewood.',
+          'If the house is vacant because a parent died, or because everyone moved, say so. You do not have to put the system back in service so the house looks lived in. If the decedent lived in Port Orchard, Bremerton, Poulsbo, Silverdale, or another Kitsap place, the residence county for the probate question families take to a lawyer is Kitsap County. The superior court sits in Port Orchard, at 614 Division Street. The Kitsap County Clerk publishes the clerk’s office at 614 Division Street, Room 202, Port Orchard, WA 98366, phone (360) 337-7164. KindKey will not file the probate and will not guess who can sign. The Bremerton probate guide is that signature question. Accept an offer only when your attorney says the signer is clear. If someone still lives in the house, including a tenant, say so. Do not force that person out so the yard looks empty. A tenant’s rights come from the rental agreement and from Washington law, including chapter 59.18 RCW. KindKey will not serve a notice and will not tell you to end a tenancy.',
+          'An unpermitted room, a garage turned into a bathroom, or a shop with plumbing the district did not review is often the same property as the drainfield problem. You do not have to close the permit, tear the plumbing out, or attend a hearing before you ask for an offer. KindKey will not pull the permit and will not appear for you. A City of Port Orchard letter, a City of Bremerton letter, a City of Poulsbo letter, a Bainbridge Island letter, and a Kitsap County letter are not the health district’s letter. The Port Orchard code guide is the city-letter page. The Silverdale code page is the unincorporated page, because Silverdale has no city hall. If a foreclosure notice is also in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. A request for an offer does not postpone a trustee. The Kitsap foreclosure guide is that clock. A county treasurer’s tax sale is a different notice. The statewide tax-delinquent guide is that distinction. Your own paper controls.',
+          `The sequence is a call or the cash-offer form, one walkthrough, a written offer, and a closing date you help choose with the closing agent. KindKey is based in downtown Auburn. The ferry and the Tacoma Narrows do not add a repair requirement. KindKey does not promise a specific number of days. ${closing} Cash means KindKey is not waiting on a retail buyer’s mortgage, which is often the path that stops when a septic inspection fails. It does not mean a suitcase of money. It does not erase a mortgage, a tax bill, a code fine, a lien, or a health-district order. The offer reflects the house as it sits, so it can be less than a retail price for a house with a passed system and a passed well report. You see payoffs on the settlement statement, prepared by the closing agent, before you close. Until the deed records, deadlines on a health letter are still yours. After a purchase, repairs KindKey chooses to make are KindKey’s work as the new owner. KindKey does not clear the district’s file as your representative, and KindKey does not promise what the Health Officer will accept.`,
+          'Replacing the system and keeping the house can be the right path if you want to stay and you can fund the work. A listing can fit a house that is safe to show and that a broker will take with the system as it is, or after a repair. Hire a licensed broker in Kitsap County for a listing. KindKey will not run the listing and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. You can say no after you see the number. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the tank, the field, or the well through the walkthrough, the written offer, and closing.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question:
+          'Do I have to replace a failed septic system before KindKey will look at a Kitsap house?',
+        answer:
+          'No. Tell us the system is failing, unused, or unknown. You do not have to pump the tank, locate the drainfield, or pass an inspection before an offer. The health district still controls its file. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Who regulates septic systems and private wells in Kitsap County?',
+        answer:
+          'The Kitsap Public Health District, at 345 6th Street, Suite 300, Bremerton, WA 98337, phone (360) 728-2235. That is not a city building counter and not KindKey. The on-site sewage regulations the district publishes are Ordinance 2025-01, effective March 17, 2025. A Pierce County letter, including an Edgewood letter, is a different health department.',
+      },
+      {
+        question: 'Does a sale to KindKey skip the property conveyance inspection?',
+        answer:
+          'KindKey does not require you to pass one before an offer. Section 13.D of Ordinance 2025-01 says owners who intend to convey property that uses an on-site sewage system shall submit an application to the Health Officer at least 30 days before the transfer. KindKey will not tell you that sentence does not apply. Ask the district. You can still request a written offer while you do.',
+      },
+      {
+        question:
+          'What if I do not know where the drainfield is, or whether the house is on a well?',
+        answer:
+          'Say that. KindKey does not require you to become the septic or well expert before an offer. A later record, a record drawing, or the district’s own file may still identify the system. KindKey does not certify either one.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/port-orchard',
+        label: 'Sell a house in Port Orchard',
+        description: 'Kitsap County seat. The auditor and the superior court sit here.',
+      },
+      {
+        href: '/areas/bremerton',
+        label: 'Sell a house in Bremerton',
+        description: 'Downtown, Manette, Charleston, and both sides of the city.',
+      },
+      {
+        href: '/areas/silverdale',
+        label: 'Sell a house in Silverdale',
+        description: 'Unincorporated Central Kitsap. No city hall.',
+      },
+      {
+        href: '/areas/poulsbo',
+        label: 'Sell a house in Poulsbo',
+        description: 'North Kitsap and Liberty Bay. Kingston is a different place.',
+      },
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'Pierce County. A different health department from Kitsap.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description: 'North Hill and Jovita. Tacoma-Pierce County Health Department.',
+      },
+      {
+        href: '/areas/port-orchard/sell-house-as-is',
+        label: 'Sell a house as-is in Port Orchard',
+        description: 'The system does not have to be replaced first.',
+      },
+      {
+        href: '/areas/bremerton/sell-house-as-is',
+        label: 'Sell a house as-is in Bremerton',
+        description: 'The Bremerton as-is page.',
+      },
+      {
+        href: '/areas/silverdale/sell-house-as-is',
+        label: 'Sell a house as-is in Silverdale',
+        description: 'The Silverdale as-is page.',
+      },
+      {
+        href: '/areas/poulsbo/sell-house-as-is',
+        label: 'Sell a house as-is in Poulsbo',
+        description: 'The Poulsbo as-is page.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The Washington overview.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo.',
+      },
+      {
+        href: '/areas/port-orchard/sell-vacant-house',
+        label: 'Vacant houses in Port Orchard',
+        description: 'A system that has been sitting because nobody lives there.',
+      },
+      {
+        href: '/areas/bremerton/sell-vacant-house',
+        label: 'Vacant houses in Bremerton',
+        description: 'When the house has been empty.',
+      },
+      {
+        href: '/areas/silverdale/sell-vacant-house',
+        label: 'Vacant houses in Silverdale',
+        description: 'An empty house in unincorporated Kitsap County.',
+      },
+      {
+        href: '/areas/poulsbo/sell-vacant-house',
+        label: 'Vacant houses in Poulsbo',
+        description: 'An empty house on the north end.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The Washington overview for empty houses.',
+      },
+      {
+        href: '/areas/bremerton/sell-inherited-probate-house',
+        label: 'Inherited houses in Bremerton',
+        description: 'When the septic problem is also a probate.',
+      },
+      {
+        href: '/areas/port-orchard/sell-inherited-probate-house',
+        label: 'Inherited houses in Port Orchard',
+        description: 'The court sits in Port Orchard.',
+      },
+      {
+        href: '/areas/silverdale/sell-inherited-probate-house',
+        label: 'Inherited houses in Silverdale',
+        description: 'Heirs can live across the water.',
+      },
+      {
+        href: '/areas/poulsbo/sell-inherited-probate-house',
+        label: 'Inherited houses in Poulsbo',
+        description: 'A north-end house and a signer question.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Who can sign, before the system is replaced.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-bremerton',
+        label: 'Probate houses in Bremerton',
+        description: 'The court sits in Port Orchard, not in Tacoma.',
+      },
+      {
+        href: '/areas/port-orchard/sell-house-with-code-violations',
+        label: 'Code violations in Port Orchard',
+        description: 'A city letter is not a septic letter.',
+      },
+      {
+        href: '/areas/bremerton/sell-house-with-code-violations',
+        label: 'Code violations in Bremerton',
+        description: 'A Bremerton header is not the health district.',
+      },
+      {
+        href: '/areas/silverdale/sell-house-with-code-violations',
+        label: 'Code violations in Silverdale',
+        description: 'A Kitsap County letter, because Silverdale is unincorporated.',
+      },
+      {
+        href: '/areas/poulsbo/sell-house-with-code-violations',
+        label: 'Code violations in Poulsbo',
+        description: 'A city letter on the north end.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices are a different file from the drainfield.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-port-orchard',
+        label: 'Code cases in Port Orchard',
+        description: 'City, county, and health-district letters.',
+      },
+      {
+        href: '/areas/bremerton/sell-house-with-tenants',
+        label: 'Houses with tenants in Bremerton',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/port-orchard/sell-house-with-tenants',
+        label: 'Houses with tenants in Port Orchard',
+        description: 'Do not force an occupant out so the house looks empty.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'The Washington overview.',
+      },
+      {
+        href: '/areas/port-orchard/sell-hoarder-house',
+        label: 'Heavy-repair houses in Port Orchard',
+        description: 'A full house and a septic problem can be the same sale.',
+      },
+      {
+        href: '/areas/silverdale/sell-hoarder-house',
+        label: 'Heavy-repair houses in Silverdale',
+        description: 'Contents can stay. The system can stay as it is.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'The Washington overview.',
+      },
+      {
+        href: '/blog/sell-inherited-acreage-with-outbuildings-edgewood-wa',
+        label: 'Inherited acreage in Edgewood',
+        description: 'Shops and outbuildings on a Pierce County lot.',
+      },
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Vacant houses in Edgewood',
+        description: 'Pierce County. Do not use it for a Kitsap health letter.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-kitsap-county',
+        label: 'Foreclosure in Kitsap County',
+        description: 'A trustee’s date is a different clock from a septic letter.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A treasurer’s sale is not a health-district inspection.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell a house as-is in Edgewood',
+        description: 'The Pierce County city next to Milton and Puyallup.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say septic, well, sewer, or “I do not know.”',
+      },
+    ],
+    ctaTitle: 'Ask for a Kitsap offer with the system as it is',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to pass a septic inspection or replace a drainfield first. You can say no.',
+  }),
 ];
