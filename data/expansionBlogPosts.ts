@@ -2622,4 +2622,409 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to pass a septic inspection or replace a drainfield first. You can say no.',
   }),
+  post('selling-a-vacant-house-kitsap-county', {
+    breadcrumbName: 'Vacant houses in Kitsap County',
+    title: 'Selling a Vacant House in Kitsap County, WA',
+    description:
+      'How owners in Port Orchard, Bremerton, Silverdale, and Poulsbo sell a vacant house as-is. City, county, and Edgewood rules differ. KindKey buys as a principal. Not legal advice.',
+    h1: 'Selling a Vacant House in Kitsap County, WA',
+    publishedAt: '2026-11-02',
+    intro: [
+      `You can ask KindKey for a cash offer on a vacant house in Kitsap County without cleaning it out, mowing it, boarding it to a city’s standard, or coming back across the water for showings. Asking does not close a code case, and it does not keep a vacant-house insurance policy in force. ${office} KindKey is not code enforcement, a property manager, a fire department, or a vacant-house insurer.`,
+      'Vacant means nobody lives there. Kitsap County is across Puget Sound from King County. Port Orchard is the county seat. Bremerton, Poulsbo, and Bainbridge Island are incorporated cities. Silverdale is an unincorporated community, not a city. Kingston, Olalla, Seabeck, Manchester, Southworth, Navy Yard City, and Gorst are unincorporated places people name. A ferry commute, or a drive across the Tacoma Narrows, does not move the deed or the code letter. Gig Harbor is in Pierce County. An empty house in Edgewood is a Pierce County file, with a different recorder and a different municipal code. Do not use this page for that house.',
+    ],
+    callout:
+      'You do not have to empty the house, keep the utilities on, or cure a yard notice before KindKey looks. A request does not close the city’s file or the county’s file. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'An empty house is not one Kitsap file',
+        paragraphs: [
+          'Read the header before you decide which counter wrote the letter. Inside Port Orchard, Bremerton, Poulsbo, or Bainbridge Island, a building or nuisance letter is that city’s. In Silverdale, Kingston, Olalla, Seabeck, Manchester, Southworth, Navy Yard City, and Gorst, a building or nuisance letter is Kitsap County’s, because those places are unincorporated. A mailing city is not the enforcing city. Navy Yard City and Gorst are not Bremerton neighborhoods. Kingston is not Poulsbo. Manchester and Southworth are not Port Orchard. The county’s code-compliance page says the county has authority only over unincorporated Kitsap County, and it tells people to use the parcel search when they are not sure. KindKey will not run that search for the county, and KindKey will not tell you the city from a street name.',
+          'Port Orchard’s code-enforcement page says an investigation begins only after a written complaint. The contact that page publishes is 216 Prospect Street, Port Orchard, WA 98366, phone (360) 876-4407, with hours of 8 a.m. to 4:30 p.m., Monday through Friday. The same city’s community development and permit center publishes a physical address of 720 Prospect Street and a mailing address of 216 Prospect Street, phone (360) 874-5533, with the same weekday hours. Those are two counters. A permit question and a complaint are not the same visit. The code-enforcement page says it does not handle landlord-tenant conflicts, foreclosure, trespass, or a septic or well question. It points septic, well, sanitation, and rodent questions to the Kitsap Public Health District at (360) 728-2235, and electrical permits to the Washington Department of Labor and Industries at (360) 902-5800. KindKey is none of those offices.',
+          'Deeds for a Kitsap house record with the Kitsap County Auditor in Port Orchard. The auditor’s mailing address is 614 Division St., MS-31, Port Orchard, WA 98366. The physical address the auditor publishes is 619 Division St., Port Orchard, WA 98366. Recording’s published phone is (360) 337-4935. The auditor’s published hours are Monday through Friday, 8:00 a.m. to 4:30 p.m. The auditor does not mow the yard and does not decide a nuisance. Do not record a Kitsap deed at the Pierce County Auditor in Tacoma, or at the King County Recorder, because you take the ferry or because KindKey’s office is in Auburn. An Edgewood deed records in Pierce County. The closing agent confirms the parcel.',
+        ],
+      },
+      {
+        heading: 'Port Orchard’s unfit-building chapter is not every empty house',
+        paragraphs: [
+          'Chapter 20.212 of the Port Orchard Municipal Code is the dangerous and unfit dwellings chapter. POMC 20.212.020 defines “abandoned” or “apparently abandoned” as any dwelling, building, structure, or premises that is so neglected, or that has other characteristics, as to support a reasonable conclusion that it is vacant, except as may be temporarily occupied by vagrants, and not cared for by any owner, tenant, or other party. A house you locked and left, with the taxes paid and a neighbor checking it, is not a conclusion KindKey will draw for you. The director decides whether the chapter applies. KindKey will not.',
+          'POMC 20.212.040 lists conditions the director may use, including a building damaged by fire, wind, earthquake, flood, or another cause, or a building that is dilapidated or abandoned so as to be an attractive nuisance. POMC 20.212.050 says that if a preliminary investigation finds the place dangerous or unfit, the director issues a complaint, and that the complaint contains notice of a hearing before the director not less than 10 days nor more than 30 days after service. POMC 20.212.060 says that if no appeal is filed, the order is final and a copy is filed with the Kitsap County auditor. POMC 20.212.080 says that, in accordance with RCW 35.80.030(1)(g), an owner or other party in interest may file a notice of appeal with the city clerk within 30 days from service and posting of the findings and order, for a hearing before the hearing officer. The same section says that, in accordance with RCW 35.80.030(2), a person affected by the hearing officer’s decision may petition the superior court within 30 days after posting and service of that decision. KindKey will not count any of those days, file the appeal, or appear at the hearing. If the paper has a hearing, a fine, or an order to vacate, talk with a Washington attorney before you rely on a sale to solve it. This article is not legal advice.',
+          'The chapter says the cost of repairs, alterations, vacating and closing the building, removal, demolition, or other correction the director causes is assessed against the property unless it is paid, and it cites RCW 35.80.030(1)(h) for a lien of equal rank with state, county, and municipal taxes. It also says that, upon the director’s certification, the county treasurer enters the amount on the tax rolls. KindKey does not promise that a Port Orchard cost disappears when you sign. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement, prepared by the closing agent, is where you see them. Until the deed records, deadlines on the notice are still yours. You do not have to board the windows, finish a permit, or haul the contents away before KindKey looks. Downtown and Bay Street, Annapolis, Mile Hill, the Bethel and Sedgwick corridors, and McCormick Woods are different houses. Send the address you have.',
+        ],
+      },
+      {
+        heading: 'Bremerton, Poulsbo, and the county do not share one vacant rule',
+        paragraphs: [
+          'Bremerton Municipal Code chapter 6.10 is an abandoned-property registration and maintenance chapter. BMC 6.10.020 defines “vacant” as a property that is not legally occupied. It defines “abandoned” as a property that is vacant and also meets one of four conditions: it is under a current notice of default or notice of trustee’s sale, it is the subject of a pending tax assessor’s lien sale, it has been the subject of a foreclosure sale where the beneficiary of the deed of trust kept title, or it was transferred under a deed in lieu of foreclosure. Vacant, by itself, is not that definition. The property also has to meet one of those four conditions. A current mortgage does not answer the tax-lien sentence, and KindKey will not decide which sentence fits your file. BMC 6.10.060(a) puts an inspection and registration duty on a lender who holds a security interest: an initial inspection upon default, before foreclosure proceedings such as a notice of default, performed within 14 days of default, and, if the property is vacant or shows evidence of vacancy, registration with the Director of Community Development within 14 days from the inspection. That is a lender’s sentence. KindKey will not register the house, and KindKey will not tell you that you owe the lender’s duty.',
+          'BMC 6.10.040 says abandoned properties are maintained and secured by the owners, lenders, and other responsible persons the chapter defines, and that lenders register under BMC 6.10.060. BMC 6.10.080 lists conditions those responsible persons keep off properties the chapter covers, including weeds, trash, junk vehicles, piled newspapers, and graffiti, and it says ponds, pools, and hot tubs are secured. BMC 6.10.100 is the different case: a vacant property that is not “abandoned” as defined, but that has been boarded or otherwise secured because of a city code-enforcement action, has to meet the local-manager and posting rules in BMC 6.10.050(b) and BMC 6.10.090. “Out of area,” in that chapter, means outside Kitsap County. KindKey will not tell an owner who moved to Edgewood, Tacoma, or Seattle that a manager is required. Read the notice. The Department of Community Development publishes its office at 345 6th Street, Suite 600, Bremerton, WA 98337, a mailing address of 345 6th Street, Suite 100, and the phone (360) 473-5275. The department describes counter hours of 9 a.m. to noon and phone hours of 8 a.m. to 5 p.m., Monday through Friday. The Kitsap Public Health District publishes its office at 345 6th Street, Suite 300. That is a different suite and a different file. Bremerton’s code-enforcement page says trespassing is a police matter, and it publishes a non-emergency police number of (360) 473-5220. KindKey will not remove an occupant. If someone is living in the house without your agreement, talk with a Washington attorney. Do not force that person out so the house looks empty.',
+          'Poulsbo’s nuisance chapter is PMC 9.50. PMC 9.50.050(M) lists buildings or structures that are abandoned, partially destroyed, or left in partial construction or partial demolition so as to be an attractive nuisance. PMC 9.50.050(N) lists the failure to close and secure doorways, windows, and other openings into a vacant structure, including broken windows. PMC 9.50.070(A) says a violation is a civil infraction for which a monetary penalty of two hundred fifty dollars may be assessed, and that each day the violation exists is a separate offense. KindKey will not decide that your house meets either letter, and KindKey will not board it for you. The city’s code-enforcement page says complaints other than neighborhood items such as a pothole or litter go to Public Works, by email or by mail to 200 NE Moe Street, Poulsbo, WA 98370. City Hall is at that address. Public Works publishes (360) 779-4078. The building department, on the second floor of the same City Hall, publishes (360) 394-9882. A permit and a nuisance letter are not the same desk.',
+          'Unincorporated Kitsap County uses chapter 9.56 of the Kitsap County Code, public nuisances. The examples include visible accumulations of trash and junk, and dangerous structures, which the chapter describes as including a dangerous, decaying, unkempt, falling, or damaged dwelling. A junk motor vehicle, under KCC 9.56.020, is a vehicle that meets at least three of four tests: it is three years old or older, it is extensively damaged, it is apparently inoperable, or its value is about the scrap in it. A vehicle stored entirely inside a building, where it is not visible from the street or from other property, is outside that definition. The chapter also describes a path for up to six junk vehicles stored outside a building, if they are completely screened or more than 250 feet from all property lines, and if the owner has an environmental mitigation agreement with the department. It says a tarp is not an acceptable visual barrier. KindKey will not measure the 250 feet, will not decide that a shop counts as the building, and will not sign that agreement for you. KCC 9.56.040(5) states a monetary penalty of $250 per day, or portion of a day, for each violation. KCC 9.56.040(6) says paying the penalty does not relieve the duty to correct. KCC 9.56.050 lets the violations hearing examiner assess less than that amount using the factors in that section, or double the schedule for a repeat violation. KindKey will not predict the number. KCC 9.56.060(6) describes a county lien for the penalty and the abatement costs, on a parity with state and county taxes and superior to other liens except previously existing special-assessment liens. KindKey does not promise that lien is gone at signing.',
+          'Kitsap County’s Department of Community Development publishes its office at 619 Division Street, 2nd Floor, Port Orchard, WA 98366, and its general line as (360) 337-5777. The contact page lists lobby hours of Monday through Friday, 9 a.m. to noon, and it says Friday is limited service, without reviewers. The same contact page lists a mailing address of 619 Division Street, MS-36. A planning page lists 614 Division Street, MS-36. KindKey will not tell you which envelope the county prefers. Use the address printed on the letter you received. Code compliance on that contact page is described as walk-in only, Tuesday through Thursday. KindKey will not appear for you. This county chapter is the Silverdale, Kingston, Olalla, and Seabeck file. It is not the City of Bremerton’s chapter 6.10, and it is not Port Orchard’s chapter 20.212. Old Town, Bucklin Hill, Ridgetop, and Clear Creek are Silverdale names. Silverdale has no city hall.',
+        ],
+      },
+      {
+        heading: 'Edgewood is the Pierce County version of this problem',
+        paragraphs: [
+          'Do not use a Kitsap ordinance on an Edgewood house, and do not use Edgewood’s ordinance on a Kitsap house. Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. It incorporated on February 28, 1996. Most residents live on North Hill. A smaller share of the city sits in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. The Edgewood vacant-house guide is the page for that letter. It walks through chapter 15.80 of the Edgewood Municipal Code, which adopts the 2021 International Property Maintenance Code, including the security rule for vacant buildings. Do not copy an Edgewood grass height, a shop rule, or a boarding sentence onto a Mile Hill house, a Manette house, or a Silverdale lot. KindKey will not tell you the two codes match.',
+          'Auburn City Code 15.20.100 is an Auburn ordinance. KindKey’s office is at 640 1st St SW in Auburn. The house, if it is in Kitsap County or in Edgewood, is not. An Auburn registration does not attach because the buyer is based there. Milton, next to Edgewood, can fall in King County or Pierce County. Edgewood, inside the city, does not. A person who moved from a North Hill house to a house in Silverdale can own two different files. Say which address you want to sell.',
+          'The fire department is local, and KindKey is not it. South Kitsap Fire and Rescue publishes its administrative office at Station 8, 1974 Fircrest Drive SE, Port Orchard, WA 98366, phone (360) 871-2411. The Bremerton Fire Department is a city department. It publishes headquarters at Station 1, 911 Park Avenue, Bremerton, with administrative hours of Monday through Friday, 8 a.m. to 5 p.m. A Bremerton mailing address outside the city is not automatically that department. Central Kitsap Fire and Rescue publishes its administration building at 5300 NW Newberry Hill Road, Suite 101, Silverdale, WA 98383, phone (360) 447-3550, and it points fire-code questions to the Kitsap County fire marshal. Poulsbo Fire Department publishes headquarters at Station 71, 911 NE Liberty Road, Poulsbo, WA 98370, phone (360) 779-3997. Kingston is not that city. Edgewood is covered by East Pierce Fire and Rescue, not by any of those Kitsap agencies. East Pierce’s 2022 standards of cover list Station 118 at 10105 24th Street E in Edgewood. KindKey will not draw a district boundary from a mailing address and will not interpret a run report.',
+          'A sitting septic system is common on a vacant lot in Kingston, Olalla, Seabeck, and on older edges of Silverdale, and it is also common on North Hill and along Jovita in Edgewood. The health department changes at the county line. On-site sewage in Kitsap County goes to the Kitsap Public Health District, at 345 6th Street, Suite 300, Bremerton, WA 98337, phone (360) 728-2235. On-site sewage in Edgewood goes to the Tacoma-Pierce County Health Department. You do not have to pump the tank, replace the drainfield, or put a sitting system back in service before an offer. KindKey does not inspect or certify a septic system or a well. The Kitsap septic guide and the Edgewood septic guide are the two pages. A city name does not tell you whether the parcel is on a public sewer.',
+          'The other clocks travel with the house, and they are not the grass letter. A Pierce County property-tax bill on an Edgewood house is paid to the Pierce County treasurer, not to a Kitsap office. A Kitsap tax bill is not paid at the Pierce County counter in Tacoma. The statewide tax-delinquent guide is the distinction, and the Edgewood tax guide is the Pierce County version. KindKey will not calculate either bill. If a trustee’s notice is also in the file, you have more than one date. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. The Kitsap foreclosure guide is the Port Orchard auditor’s clock. The Edgewood foreclosure guide is the Pierce County clock. A request for an offer does not postpone a trustee. An unpermitted room, a stalled remodel, a shop on acreage, or a tenant who is still there can sit next to the vacant-house letter. You do not have to close the permit, finish the kitchen, tear the shop down, or end a tenancy before you ask. If someone still lives there, the house is not a vacant delivery. A tenant’s rights come from the rental agreement and from Washington law, including chapter 59.18 RCW. KindKey will not serve a notice and will not tell you to end a tenancy.',
+        ],
+      },
+      {
+        heading: 'One visit, a written offer, and what cash does not erase',
+        paragraphs: [
+          'Tell us who has a key, whether the driveway is gated, and whether a shop, a barn, or an RV cover is part of the sale. A relative in Port Orchard, Bremerton, Silverdale, Poulsbo, or across the water in Edgewood, Tacoma, or King County can open the door once. KindKey does not need a string of showings. Furniture, tools, and vehicles you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to. If a floor, a shop roof, or a fire-damaged room is not safe to walk, say so. An exterior look can start the conversation. Photos of the house, the yard, and any posting are enough to start if a visit has to wait. Utilities can stay off. Until the deed records, insurance on the empty house is still yours. KindKey does not give insurance advice. Ask your insurer what the policy requires while nobody lives there.',
+          'If the house is empty because a parent died, the person who can sign is a probate question. A decedent who lived in Port Orchard, Bremerton, Poulsbo, Silverdale, or another Kitsap place is a Kitsap residence question for your lawyer. The superior court sits in Port Orchard, at 614 Division Street. The Kitsap County Clerk publishes the clerk’s office at 614 Division Street, Room 202, Port Orchard, WA 98366, phone (360) 337-7164. That court is not in Tacoma. An Edgewood estate is a Pierce County probate. KindKey will not file either one, and KindKey will not guess which relative can sign. You can ask for an offer while the attorney finishes that question. Do not sign a deed before the authority exists. The Bremerton probate guide and the Edgewood probate guide are the two signature pages. Heirs who also inherited a shop, a drainfield, and a long driveway on North Hill should use the Edgewood acreage guide for that parcel.',
+          `The sequence is a call or the cash-offer form, one walkthrough, a written offer, and a closing date you help choose with the closing agent. KindKey is based in downtown Auburn. The ferry and the Tacoma Narrows do not add a repair requirement. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need to collect boxes can ask for longer. ${closing} Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a code fine, a utility balance, or a health-district order. The offer reflects the house as it sits, including contents you leave and work that remains, so it can be less than a retail price for a cleaned, financed house. You see payoffs on the settlement statement before you close. You can say no.`,
+          'A listing can fit a vacant house that is safe to show, easy to finance, and watched by someone local. Hire a licensed broker in Kitsap County for a Kitsap listing, or a licensed broker for an Edgewood listing. KindKey will not run the listing and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. If the empty house is also a fire, use the fire-damaged-house page, and use the Edgewood fire guide when the parcel is in Edgewood. There is no separate Kitsap city fire page to substitute for the notice in your hand. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the empty house through the walkthrough, the written offer, and closing.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question:
+          'Do I have to clean out or mow a vacant Kitsap County house before KindKey will look?',
+        answer:
+          'No. Furniture, shop contents, and vehicles you do not want can stay. A yard notice does not have to be cured first. The city or the county still controls its own case. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Does Bremerton require every vacant house to be registered?',
+        answer:
+          'No. BMC 6.10.020 defines “abandoned” as vacant plus a foreclosure-related condition or a tax-lien sale. BMC 6.10.060 puts the registration duty on the lender in the cases that section names. A vacant house that is not inside that definition is a different file. KindKey will not decide which one you have, and KindKey will not register the house.',
+      },
+      {
+        question:
+          'My vacant house is in Silverdale. Is that a Bremerton or a Port Orchard code case?',
+        answer:
+          'Silverdale is unincorporated Kitsap County. A nuisance or building letter there is a Kitsap County Department of Community Development matter, at 619 Division Street in Port Orchard, phone (360) 337-5777. It is not Bremerton chapter 6.10 and it is not Port Orchard chapter 20.212. Kingston, Olalla, and Seabeck are unincorporated too. Read the header.',
+      },
+      {
+        question: 'The empty house is in Edgewood, not in Kitsap County. Is this the right page?',
+        answer:
+          'No. Edgewood is entirely in Pierce County. Use the Edgewood vacant-house guide and the Edgewood city page. Edgewood Municipal Code 15.80 is not a Kitsap rule, and a Kitsap ordinance is not an Edgewood rule. KindKey still buys Edgewood houses. Call (206) 519-5463 or use the cash-offer form with that address.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/port-orchard/sell-vacant-house',
+        label: 'Sell a vacant house in Port Orchard',
+        description: 'The Port Orchard vacant-house page.',
+      },
+      {
+        href: '/areas/bremerton/sell-vacant-house',
+        label: 'Sell a vacant house in Bremerton',
+        description: 'Downtown, Manette, Charleston, and both sides of the city.',
+      },
+      {
+        href: '/areas/silverdale/sell-vacant-house',
+        label: 'Sell a vacant house in Silverdale',
+        description: 'Unincorporated Central Kitsap. No city hall.',
+      },
+      {
+        href: '/areas/poulsbo/sell-vacant-house',
+        label: 'Sell a vacant house in Poulsbo',
+        description: 'North Kitsap and Liberty Bay. Kingston is a different place.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The Washington overview for empty houses.',
+      },
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Sell a vacant house in Edgewood',
+        description: 'Pierce County. North Hill, Jovita, and the valley.',
+      },
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'The Edgewood city page. A different county from Kitsap.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-edgewood-wa',
+        label: 'Vacant houses in Edgewood',
+        description: 'EMC 15.80, shops, and a sitting septic system.',
+      },
+      {
+        href: '/areas/port-orchard',
+        label: 'Sell a house in Port Orchard',
+        description: 'Kitsap County seat. The auditor and the superior court sit here.',
+      },
+      {
+        href: '/areas/bremerton',
+        label: 'Sell a house in Bremerton',
+        description: 'The Bremerton city page.',
+      },
+      {
+        href: '/areas/silverdale',
+        label: 'Sell a house in Silverdale',
+        description: 'Central Kitsap, without a city code of its own.',
+      },
+      {
+        href: '/areas/poulsbo',
+        label: 'Sell a house in Poulsbo',
+        description: 'The Poulsbo city page.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'Condition does not have to be repaired first.',
+      },
+      {
+        href: '/areas/port-orchard/sell-house-as-is',
+        label: 'Sell a house as-is in Port Orchard',
+        description: 'The Port Orchard as-is page.',
+      },
+      {
+        href: '/areas/bremerton/sell-house-as-is',
+        label: 'Sell a house as-is in Bremerton',
+        description: 'The Bremerton as-is page.',
+      },
+      {
+        href: '/areas/silverdale/sell-house-as-is',
+        label: 'Sell a house as-is in Silverdale',
+        description: 'The Silverdale as-is page.',
+      },
+      {
+        href: '/areas/poulsbo/sell-house-as-is',
+        label: 'Sell a house as-is in Poulsbo',
+        description: 'The Poulsbo as-is page.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell a house as-is in Edgewood',
+        description: 'The Edgewood as-is page.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'An open notice can travel with a vacant house.',
+      },
+      {
+        href: '/areas/port-orchard/sell-house-with-code-violations',
+        label: 'Code violations in Port Orchard',
+        description: 'A city letter is not the same as a county letter.',
+      },
+      {
+        href: '/areas/bremerton/sell-house-with-code-violations',
+        label: 'Code violations in Bremerton',
+        description: 'A Bremerton header is not the health district.',
+      },
+      {
+        href: '/areas/silverdale/sell-house-with-code-violations',
+        label: 'Code violations in Silverdale',
+        description: 'A Kitsap County letter, because Silverdale is unincorporated.',
+      },
+      {
+        href: '/areas/poulsbo/sell-house-with-code-violations',
+        label: 'Code violations in Poulsbo',
+        description: 'A city letter on the north end.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'Pierce County. Do not use it for a Kitsap letter.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-port-orchard',
+        label: 'Code cases in Port Orchard',
+        description: 'City, county, and health-district letters.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-edgewood-wa',
+        label: 'Code violations in Edgewood',
+        description: 'Unpermitted work and city letters on North Hill.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Who can sign, before the house is emptied.',
+      },
+      {
+        href: '/areas/port-orchard/sell-inherited-probate-house',
+        label: 'Inherited houses in Port Orchard',
+        description: 'The court sits in Port Orchard.',
+      },
+      {
+        href: '/areas/bremerton/sell-inherited-probate-house',
+        label: 'Inherited houses in Bremerton',
+        description: 'When the vacant house came from an estate.',
+      },
+      {
+        href: '/areas/silverdale/sell-inherited-probate-house',
+        label: 'Inherited houses in Silverdale',
+        description: 'Heirs can live across the water.',
+      },
+      {
+        href: '/areas/poulsbo/sell-inherited-probate-house',
+        label: 'Inherited houses in Poulsbo',
+        description: 'A north-end house and a signer question.',
+      },
+      {
+        href: '/areas/edgewood/sell-inherited-probate-house',
+        label: 'Inherited houses in Edgewood',
+        description: 'A Pierce County estate, not a Kitsap probate.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-bremerton',
+        label: 'Probate houses in Bremerton',
+        description: 'The court sits in Port Orchard, not in Tacoma.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Probate houses in Edgewood',
+        description: 'The Pierce County version of the same signature question.',
+      },
+      {
+        href: '/blog/sell-inherited-acreage-with-outbuildings-edgewood-wa',
+        label: 'Inherited acreage in Edgewood',
+        description: 'Shops and outbuildings on a North Hill lot.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'If someone still lives there, the house is not vacant.',
+      },
+      {
+        href: '/areas/port-orchard/sell-house-with-tenants',
+        label: 'Houses with tenants in Port Orchard',
+        description: 'Do not force an occupant out so the house looks empty.',
+      },
+      {
+        href: '/areas/bremerton/sell-house-with-tenants',
+        label: 'Houses with tenants in Bremerton',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-tenants',
+        label: 'Houses with tenants in Edgewood',
+        description: 'The Pierce County tenant page.',
+      },
+      {
+        href: '/blog/sell-house-with-tenants-edgewood-wa',
+        label: 'Tenants in Edgewood',
+        description: 'A rented North Hill house is a different delivery.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents can stay.',
+      },
+      {
+        href: '/areas/port-orchard/sell-hoarder-house',
+        label: 'Heavy-repair houses in Port Orchard',
+        description: 'A full house can still be a vacant sale.',
+      },
+      {
+        href: '/areas/silverdale/sell-hoarder-house',
+        label: 'Heavy-repair houses in Silverdale',
+        description: 'You do not have to empty the shop first.',
+      },
+      {
+        href: '/areas/edgewood/sell-hoarder-house',
+        label: 'Heavy-repair houses in Edgewood',
+        description: 'Acreage, a shop, and belongings left behind.',
+      },
+      {
+        href: '/blog/sell-hoarder-house-on-acreage-edgewood-wa',
+        label: 'Hoarder houses on Edgewood acreage',
+        description: 'The Pierce County heavy-repair guide.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-kitsap-county',
+        label: 'Septic or well issues in Kitsap County',
+        description: 'A system that has been sitting because nobody lives there.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description: 'Tacoma-Pierce County Health Department, not the Bremerton district.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'When the house is empty because of a fire.',
+      },
+      {
+        href: '/areas/edgewood/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Edgewood',
+        description: 'East Pierce Fire and Rescue. Not a Kitsap agency.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-edgewood-wa',
+        label: 'Fire damage in Edgewood',
+        description: 'The Pierce County fire guide for a vacant house after a fire.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-king-pierce-county',
+        label: 'Fire damage in King and Pierce County',
+        description: 'The two-county guide. Kitsap is a different fire map.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'A trustee’s date is a different clock from a vacant-house letter.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-kitsap-county',
+        label: 'Foreclosure in Kitsap County',
+        description: 'The notice records with the Kitsap County Auditor.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Edgewood houses before foreclosure',
+        description: 'Pierce County. Do not use it for a Kitsap notice.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'A trustee’s notice on an empty North Hill house.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A treasurer’s sale is not a code case.',
+      },
+      {
+        href: '/blog/behind-on-property-taxes-edgewood-wa',
+        label: 'Property taxes in Edgewood',
+        description: 'Pierce County’s treasurer. Not the Kitsap bill.',
+      },
+      {
+        href: '/blog/sell-house-with-stalled-remodel-edgewood-wa',
+        label: 'Stalled remodels in Edgewood',
+        description: 'Open walls on a house nobody finished.',
+      },
+      {
+        href: '/blog/sell-my-house-fast-for-cash-edgewood',
+        label: 'Sell fast for cash in Edgewood',
+        description: 'The direct-sale steps for that Pierce County city.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-milton-wa',
+        label: 'Vacant houses in Milton',
+        description: 'Next to Edgewood, and a county line Kitsap does not have.',
+      },
+      {
+        href: '/areas/port-orchard/sell-my-house-fast',
+        label: 'Sell a house fast in Port Orchard',
+        description: 'The Port Orchard fast-sale page.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say the house is empty, and who has a key.',
+      },
+    ],
+    ctaTitle: 'Ask for an offer on the vacant Kitsap County house',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to empty it, mow it, or board it first. You can say no.',
+  }),
 ];
