@@ -179,7 +179,10 @@ export default function OfferLeadForm({
         throw new Error(error.message || 'Failed to submit form');
       }
 
-      trackLeadSubmit({});
+      trackLeadSubmit({
+        email: data.email,
+        phone: toE164(data.phone),
+      });
       if (shouldTrackMetaLead) trackMetaLead();
       const pagePath = window.location.pathname;
       const facebookThankYou =
