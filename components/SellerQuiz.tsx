@@ -581,7 +581,10 @@ export default function SellerQuiz({
         throw new Error(error.message || 'Failed to submit form');
       }
 
-      trackLeadSubmit({});
+      trackLeadSubmit({
+        email: data.email,
+        phone: data.phone,
+      });
       trackMetaLead();
       persistThankYouPhoneSource(pagePath, source.facebook);
       window.location.href = thankYouHref(pagePath, source.facebook);

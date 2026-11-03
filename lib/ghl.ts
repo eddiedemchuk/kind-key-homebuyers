@@ -123,13 +123,16 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
     ...(data.timeline ? [{ key: 'timeline', field_value: data.timeline }] : []),
     ...(data.situation ? [{ key: 'situation', field_value: data.situation }] : []),
     ...(data.notes ? [{ key: 'notes', field_value: data.notes }] : []),
+    { key: 'google_click_id', field_value: attribution.gclid },
+    { key: 'gbraid', field_value: attribution.gbraid },
+    { key: 'wbraid', field_value: attribution.wbraid },
+    { key: 'utm_source', field_value: attribution.utm_source },
+    { key: 'utm_medium', field_value: attribution.utm_medium },
+    { key: 'utm_campaign', field_value: attribution.utm_campaign },
+    { key: 'utm_term', field_value: attribution.utm_term },
+    { key: 'utm_content', field_value: attribution.utm_content },
     ...(isFreshCampaignPath(data.pagePath ?? '')
       ? [
-          { key: 'utm_source', field_value: attribution.utm_source },
-          { key: 'utm_medium', field_value: attribution.utm_medium },
-          { key: 'utm_campaign', field_value: attribution.utm_campaign },
-          { key: 'utm_content', field_value: attribution.utm_content },
-          { key: 'utm_term', field_value: attribution.utm_term },
           { key: 'landing_page', field_value: attribution.landing_page },
           { key: 'landing_page_url', field_value: attribution.landing_page },
           { key: 'referrer', field_value: attribution.referrer },
@@ -181,7 +184,7 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
 
   return {
     first_name: firstName,
-    last_name: restName.join(' '),
+    last_name: lastName,
     full_name: fullName,
     phone: normalizePhone(data.phone),
     email: data.email?.trim() ?? '',

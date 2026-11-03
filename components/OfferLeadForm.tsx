@@ -72,7 +72,10 @@ async function deliverOfferLead(input: {
     throw new Error(error.message || 'Failed to submit form');
   }
 
-  trackLeadSubmit({});
+  trackLeadSubmit({
+    email: typeof input.body.email === 'string' ? input.body.email : undefined,
+    phone: typeof input.body.phone === 'string' ? input.body.phone : undefined,
+  });
   if (input.trackMeta) trackMetaLead();
   const pagePath = window.location.pathname;
   const facebookThankYou =

@@ -98,6 +98,8 @@ export default function LeadForm({
         city: data.city || cityName || 'unknown',
         condition: data.condition,
         timeframe: data.timeframe,
+        email: data.email,
+        phone: data.phone,
       });
 
       const pagePath = window.location.pathname;

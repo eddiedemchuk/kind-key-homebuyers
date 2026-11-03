@@ -44,16 +44,48 @@ function createConversionTransactionId(): string {
   return `lead-${Date.now()}`;
 }
 
-function trackSubmitConversion(): void {
+function enhancedConversionPhone(phone?: string): string {
+  if (!phone) return '';
+  const trimmed = phone.trim();
+  const digits = trimmed.replace(/\D/g, '');
+  if (!digits) return '';
+  if (trimmed.startsWith('+')) return `+${digits}`;
+  if (digits.length === 11 && digits.startsWith('1')) return `+${digits}`;
+  if (digits.length === 10) return `+1${digits}`;
+  return '';
+}
+
+/** Normalized email and E.164 phone for Google Ads Enhanced Conversions. */
+export function googleAdsUserData(user?: {
+  email?: string;
+  phone?: string;
+}): Record<string, string> {
+  const userData: Record<string, string> = {};
+  const email = user?.email?.trim().toLowerCase() ?? '';
+  if (email) userData.email = email;
+  const phone = enhancedConversionPhone(user?.phone);
+  if (phone) userData.phone_number = phone;
+  return userData;
+}
+
+function setGoogleAdsUserData(userData: Record<string, string>): void {
+  if (!window.gtag || Object.keys(userData).length === 0) return;
+  window.gtag('set', 'user_data', userData);
+}
+
+function trackSubmitConversion(user?: { email?: string; phone?: string }): void {
   if (typeof window === 'undefined') return;
 
   const transactionId = createConversionTransactionId();
+  const userData = googleAdsUserData(user);
   try {
     sessionStorage.setItem(
       GOOGLE_ADS_SUBMIT_CONVERSION_STORAGE_KEY,
       JSON.stringify({
         sendTo: GOOGLE_ADS_SUBMIT_CONVERSION_SEND_TO,
         transactionId,
+        email: userData.email ?? '',
+        phone_number: userData.phone_number ?? '',
       })
     );
   } catch {
@@ -63,6 +95,7 @@ function trackSubmitConversion(): void {
   if (!window.gtag) return;
 
   try {
+    setGoogleAdsUserData(userData);
     window.gtag('event', 'conversion', {
       send_to: GOOGLE_ADS_SUBMIT_CONVERSION_SEND_TO,
       value: 1.0,
@@ -84,6 +117,8 @@ export function trackLeadSubmit(formData: {
   city?: string;
   condition?: string;
   timeframe?: string;
+  email?: string;
+  phone?: string;
 }): void {
   trackEvent('lead_submit', {
     city: formData.city,
@@ -104,7 +139,7 @@ export function trackLeadSubmit(formData: {
     }
   }
 
-  trackSubmitConversion();
+  trackSubmitConversion({ email: formData.email, phone: formData.phone });
 }
 
 export function trackHeroCTA(): void {

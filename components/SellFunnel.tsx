@@ -12,7 +12,7 @@ import {
   type GooglePlaceResult,
 } from '@/lib/google-maps';
 import { createMetaEventId, trackMetaLead, trackMetaViewContent } from '@/lib/meta-pixel';
-import { formatPhoneChange, isCompleteUsPhone } from '@/lib/phone';
+import { formatPhoneChange, isCompleteUsPhone, toE164 } from '@/lib/phone';
 import { trackLeadSubmit } from '@/lib/analytics';
 import {
   locationFromPlaceParts,
@@ -808,7 +808,11 @@ export default function SellFunnel() {
         throw new Error(error.message || 'Failed to submit form');
       }
 
-      trackLeadSubmit({ condition: state.answers.condition ?? undefined });
+      trackLeadSubmit({
+        condition: state.answers.condition ?? undefined,
+        email: contact.email,
+        phone: toE164(contact.phone),
+      });
       if (!leadSent) {
         leadSent = true;
         trackMetaLead(leadEventId);
