@@ -24,7 +24,7 @@ function touch(overrides: Partial<AttributionTouch> = {}): AttributionTouch {
 }
 
 const EMPTY_CLICK_CUSTOM_FIELDS = [
-  { key: 'gclid', field_value: '' },
+  { key: 'google_click_id', field_value: '' },
   { key: 'gbraid', field_value: '' },
   { key: 'wbraid', field_value: '' },
   { key: 'utm_source', field_value: '' },
@@ -739,7 +739,8 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.listed_with_agent, 'no');
     const fields = payload.customFields as Array<{ key: string; field_value: string }>;
     const fieldValue = (key: string) => fields.find((field) => field.key === key)?.field_value;
-    assert.equal(fieldValue('gclid'), 'click-1');
+    assert.equal(fieldValue('google_click_id'), 'click-1');
+    assert.equal(fieldValue('gclid'), undefined);
     assert.equal(fieldValue('gbraid'), 'gb-1');
     assert.equal(fieldValue('wbraid'), 'wb-1');
     assert.equal(fieldValue('utm_source'), 'google');

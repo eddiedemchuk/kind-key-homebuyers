@@ -102,7 +102,7 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
     ...(data.timeline ? [{ key: 'timeline', field_value: data.timeline }] : []),
     ...(data.situation ? [{ key: 'situation', field_value: data.situation }] : []),
     ...(data.notes ? [{ key: 'notes', field_value: data.notes }] : []),
-    { key: 'gclid', field_value: attribution.gclid },
+    { key: 'google_click_id', field_value: attribution.gclid },
     { key: 'gbraid', field_value: attribution.gbraid },
     { key: 'wbraid', field_value: attribution.wbraid },
     { key: 'utm_source', field_value: attribution.utm_source },
