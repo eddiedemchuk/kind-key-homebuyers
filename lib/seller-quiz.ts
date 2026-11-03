@@ -263,9 +263,15 @@ export function utmSourceFromSrc(src: string): string {
   return src.trim();
 }
 
+function isFacebookSrc(src: string): boolean {
+  const normalized = src.trim().toLowerCase();
+  return normalized === 'fb' || normalized === 'fb_static';
+}
+
 /**
- * URL UTM params win. When the quiz URL has none, utm_source falls back to src
- * and the other UTM fields stay empty.
+ * An explicit utm_source wins. src=fb and src=fb_static fill utm_source=facebook
+ * whenever utm_source is missing, even if another UTM param is present.
+ * Any other src fills utm_source only when the URL has no UTM params at all.
  */
 export function quizUtmValues(input: { src: string } & QuizUtmValues): QuizUtmValues {
   const utm = {
@@ -275,9 +281,27 @@ export function quizUtmValues(input: { src: string } & QuizUtmValues): QuizUtmVa
     utm_content: input.utm_content.trim(),
     utm_term: input.utm_term.trim(),
   };
-  const hasUtm = QUIZ_UTM_FIELDS.some((key) => utm[key] !== '');
-  if (!hasUtm) utm.utm_source = utmSourceFromSrc(input.src);
+  if (utm.utm_source) return utm;
+  const hasOtherUtm = QUIZ_UTM_FIELDS.some((key) => key !== 'utm_source' && utm[key] !== '');
+  if (isFacebookSrc(input.src) || !hasOtherUtm) {
+    utm.utm_source = utmSourceFromSrc(input.src);
+  }
   return utm;
+}
+
+/** /offer keeps its stored touch, then applies the same src=fb fill. */
+export function withSrcUtmSource(touch: AttributionTouch, src: string): AttributionTouch {
+  if (!isFacebookSrc(src) || touch.utm_source.trim()) return touch;
+  const utm = quizUtmValues({
+    src,
+    utm_source: touch.utm_source,
+    utm_medium: touch.utm_medium,
+    utm_campaign: touch.utm_campaign,
+    utm_content: touch.utm_content,
+    utm_term: touch.utm_term,
+  });
+  if (utm.utm_source === touch.utm_source) return touch;
+  return { ...touch, utm_source: utm.utm_source };
 }
 
 function srcFromQuizSearch(search: string): string {

@@ -111,14 +111,15 @@ describe('sell tracking', () => {
     assert.equal(kept.attribution.utm_source, 'facebook');
   });
 
-  it('keeps a partial UTM and does not fill utm_source from src', () => {
+  it('fills utm_source from src=fb when another UTM param is present', () => {
     const partial = resolveSellTracking({
-      search: '?src=fb&utm_content=ad-a&fbclid=zz',
+      search: '?src=fb&utm_campaign=TEST&fbclid=zz',
       referrer: '',
       capturedAt,
     });
-    assert.equal(partial.attribution.utm_source, '');
-    assert.equal(partial.attribution.utm_content, 'ad-a');
+    assert.equal(partial.src, 'fb');
+    assert.equal(partial.attribution.utm_source, 'facebook');
+    assert.equal(partial.attribution.utm_campaign, 'TEST');
     assert.equal(partial.attribution.utm_medium, '');
     assert.equal(partial.attribution.fbclid, 'zz');
   });
@@ -195,6 +196,7 @@ describe('sell GoHighLevel payload', () => {
     assert.equal(payload.hot_lead, undefined);
     assert.equal(payload.pipeline, undefined);
     assert.equal(payload.utm_source, 'facebook');
+    assert.equal(payload.src, 'fb');
     assert.equal(payload.fbclid, '');
     assert.equal(payload.first_name, 'Ada');
     assert.equal(payload.last_name, 'Lovelace');
