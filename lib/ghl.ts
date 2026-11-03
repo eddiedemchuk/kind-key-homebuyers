@@ -6,7 +6,7 @@ import {
   normalizeTouch,
 } from '@/lib/attribution';
 import { type FormOrigin, formOriginLabel, resolveFormOrigin } from '@/lib/form-origin';
-import { isSellerQuizPath } from '@/lib/phones';
+import { isFreshCampaignPath } from '@/lib/phones';
 
 interface GHLLeadInput {
   name: string;
@@ -42,9 +42,21 @@ interface GHLLeadInput {
   smsConsentTextVersion?: string;
   /** src query from a Facebook /offer visit. Empty when only utm_source=facebook matched. */
   src?: string;
+  /** /sell first and last name. Other forms keep the split of `name`. */
+  firstName?: string;
+  lastName?: string;
+  ownerStatus?: string;
+  /** /sell listing answer: no, expired, or listed-now. */
+  sellListed?: string;
+  county?: string;
+  outOfArea?: boolean;
+  /** False for a listed-now /sell lead. Omitted for a normal hot lead. */
+  hotLead?: boolean;
 }
 
 const LISTED_WITH_AGENT_TAG = 'listed with agent';
+const OUT_OF_AREA_TAG = 'out_of_area';
+const CHECK_IN_TAG = 'check in';
 
 const GHL_TIMEOUT_MS = 10_000;
 
@@ -79,13 +91,22 @@ function attributionForLead(data: GHLLeadInput): AttributionTouch {
  */
 export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
   const fullName = data.name.trim();
-  const [firstName = '', ...restName] = fullName.split(/\s+/);
+  const [splitFirst = '', ...restName] = fullName.split(/\s+/);
+  const firstName = data.firstName?.trim() || splitFirst;
+  const lastName = data.lastName?.trim() || restName.join(' ');
   const attribution = attributionForLead(data);
   const clickSource = deriveLeadSource(attribution);
   const formOrigin = resolveFormOrigin(data.formOrigin);
   const form = formOriginLabel(formOrigin);
   const listedWithAgent = data.listedWithAgent;
-  const tags = listedWithAgent === 'yes' ? `${form.tags}, ${LISTED_WITH_AGENT_TAG}` : form.tags;
+  const tags = [
+    form.tags,
+    listedWithAgent === 'yes' ? LISTED_WITH_AGENT_TAG : '',
+    data.outOfArea === true ? OUT_OF_AREA_TAG : '',
+    data.hotLead === false ? CHECK_IN_TAG : '',
+  ]
+    .filter(Boolean)
+    .join(', ');
   const smsConsent = data.smsConsent === true;
   const customFields = [
     ...(listedWithAgent ? [{ key: 'listed_with_agent', field_value: listedWithAgent }] : []),
@@ -102,7 +123,7 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
     ...(data.timeline ? [{ key: 'timeline', field_value: data.timeline }] : []),
     ...(data.situation ? [{ key: 'situation', field_value: data.situation }] : []),
     ...(data.notes ? [{ key: 'notes', field_value: data.notes }] : []),
-    ...(isSellerQuizPath(data.pagePath ?? '')
+    ...(isFreshCampaignPath(data.pagePath ?? '')
       ? [
           { key: 'utm_source', field_value: attribution.utm_source },
           { key: 'utm_medium', field_value: attribution.utm_medium },
@@ -112,8 +133,18 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
           { key: 'landing_page', field_value: attribution.landing_page },
           { key: 'landing_page_url', field_value: attribution.landing_page },
           { key: 'referrer', field_value: attribution.referrer },
+          { key: 'fbclid', field_value: attribution.fbclid },
         ]
       : []),
+    ...(data.ownerStatus ? [{ key: 'owner_status', field_value: data.ownerStatus }] : []),
+    ...(data.sellListed ? [{ key: 'sell_listed', field_value: data.sellListed }] : []),
+    ...(data.county ? [{ key: 'county', field_value: data.county }] : []),
+    ...(typeof data.outOfArea === 'boolean'
+      ? [{ key: 'out_of_area', field_value: data.outOfArea ? 'true' : 'false' }]
+      : []),
+    ...(data.hotLead === false ? [{ key: 'hot_lead', field_value: 'false' }] : []),
+    ...(data.firstName ? [{ key: 'first_name', field_value: firstName }] : []),
+    ...(data.lastName ? [{ key: 'last_name', field_value: lastName }] : []),
   ];
   const attributionNotes = formatAttributionNotes(
     attribution,
@@ -138,6 +169,15 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
         .filter(Boolean)
         .join('\n')}`
     : '';
+  const sellNotes = [
+    data.ownerStatus ? `Owner: ${data.ownerStatus}` : '',
+    data.sellListed ? `Listing detail: ${data.sellListed}` : '',
+    data.county ? `County: ${data.county}` : '',
+    data.outOfArea === true ? 'Out of area: true' : '',
+    data.hotLead === false ? 'Hot lead: false' : '',
+  ]
+    .filter(Boolean)
+    .join('\n');
 
   return {
     first_name: firstName,
@@ -188,10 +228,15 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
     channel: 'Website',
     listed_with_agent: listedWithAgent ?? '',
     ...(data.realtorStatus ? { realtor_status: data.realtorStatus } : {}),
+    ...(data.ownerStatus ? { owner_status: data.ownerStatus } : {}),
+    ...(data.sellListed ? { sell_listed: data.sellListed } : {}),
+    ...(data.county ? { county: data.county } : {}),
+    ...(typeof data.outOfArea === 'boolean' ? { out_of_area: data.outOfArea } : {}),
+    ...(data.hotLead === false ? { hot_lead: false } : {}),
     tags,
     source_tag: form.sourceTag,
     customFields,
-    attribution_notes: `${attributionNotes}${consentNotes}${quizNotes}`,
+    attribution_notes: `${attributionNotes}${consentNotes}${quizNotes}${sellNotes ? `\n${sellNotes}` : ''}`,
   };
 }
 

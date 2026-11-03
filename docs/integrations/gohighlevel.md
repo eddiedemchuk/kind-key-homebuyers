@@ -60,6 +60,18 @@ GHL_WEBHOOK_URL=https://services.leadconnectorhq.com/hooks/your_location/webhook
 Pipeline **ALL LEADS** and stage **New Hot Lead** stay in that workflow. The payload does not send
 pipeline, stage, or opportunity fields, so the existing opportunity step is left as-is.
 
+`/sell` posts through the same `/api/lead` route on the final step only. The webhook still requires
+a name and phone, so an address by itself is not saved. The origin is `facebook_ads_eddie`
+(`Facebook Leads (Eddie)`, tag `Facebook Leads (Eddie)`, form name `Facebook Leads (Eddie) Landing Page`).
+Campaign fields follow the quiz rule: the current URL replaces a stored click, missing UTMs are
+blank, and `src=fb` sets `utm_source` to `facebook` only when the URL has no UTM params. `fbclid`
+is sent with the other click ids. A listed-now answer still creates the contact, with
+`listed_with_agent` `yes`, tags `listed with agent` and `check in`, and `hot_lead` `false`.
+Qualifying answers omit `hot_lead`, so the workflow can keep placing them in **New Hot Lead**.
+An address outside King, Pierce, or Kitsap County adds the tag `out_of_area` and is still accepted.
+The general `/offer` form now posts only address, `listed_with_agent`, name, and phone. It does not
+send the consent checkbox. `/offer/facebook` and the situation pages still do.
+
 The root layout also loads the LeadConnector chat widget
 (`widgets.leadconnectorhq.com`, widget id `6abd7b3db9739b95923d98c3`). Conversations that start in
 that widget are created by GHL directly. They do not pass through `/api/lead`. To attribute those

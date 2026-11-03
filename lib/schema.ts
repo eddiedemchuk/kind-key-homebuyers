@@ -3,6 +3,12 @@ import { type FormOrigin, isOfferFormOrigin } from './form-origin';
 import { isCompleteUsPhone } from './phone';
 import { isSellerQuizPath } from './phones';
 import {
+  SELL_CONDITIONS,
+  SELL_LISTED_OPTIONS,
+  SELL_OWNER_OPTIONS,
+  SELL_TIMELINES,
+} from './sell-funnel';
+import {
   SELLER_QUIZ_CONDITIONS,
   SELLER_QUIZ_QUALIFYING_REALTOR,
   SELLER_QUIZ_TIMELINES,
@@ -140,29 +146,122 @@ export const offerLeadApiSchema = offerLeadFormSchema.extend(offerConsentApiFiel
 /** Server schema for the two-step hero on /offer and /offer/facebook. */
 export const offerHeroLeadApiSchema = offerHeroLeadFormSchema.extend(offerConsentApiFields);
 
+/**
+ * General /offer form: address, listing answer, name, and phone.
+ * Email and the consent checkbox are not on that page. /offer/facebook keeps both.
+ */
+export const offerTrimmedLeadFormSchema = z.object({
+  name: z.string().min(2, 'Name must be at least 2 characters').max(100),
+  phone: requiredPhoneSchema,
+  propertyAddress: z.string().min(5, 'Address is required').max(200),
+  listed_with_agent: listedWithAgentSchema,
+  email: optionalOfferEmailSchema.optional(),
+});
+
+export const offerTrimmedLeadApiSchema = leadApiSchema.extend({
+  phone: requiredPhoneSchema,
+  email: optionalOfferEmailSchema.optional(),
+  listed_with_agent: listedWithAgentSchema,
+});
+
+const sellOwnerSchema = z.enum([
+  SELL_OWNER_OPTIONS[0].value,
+  SELL_OWNER_OPTIONS[1].value,
+  SELL_OWNER_OPTIONS[2].value,
+]);
+
+const sellListedSchema = z.enum([
+  SELL_LISTED_OPTIONS[0].value,
+  SELL_LISTED_OPTIONS[1].value,
+  SELL_LISTED_OPTIONS[2].value,
+]);
+
+/** /sell final step. Listed-now may omit condition and timeline and must not be a hot lead. */
+export const sellLeadApiSchema = offerHeroLeadApiSchema
+  .extend({
+    condition: z.enum(SELL_CONDITIONS).optional(),
+    timeline: z.enum(SELL_TIMELINES).optional(),
+    first_name: z.string().trim().min(1, 'First name is required.').max(50),
+    last_name: z.string().trim().min(1, 'Last name is required.').max(50),
+    owner_status: sellOwnerSchema,
+    sell_listed: sellListedSchema,
+    county: z.string().trim().max(80).optional(),
+    out_of_area: z.boolean().optional(),
+    hot_lead: z.boolean().optional(),
+  })
+  .superRefine((value, ctx) => {
+    if (value.sell_listed === 'listed-now') {
+      if (value.hot_lead !== false) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          path: ['hot_lead'],
+          message: 'A listed home is not submitted as a hot lead.',
+        });
+      }
+      if (value.listed_with_agent !== 'yes') {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          path: ['listed_with_agent'],
+          message: 'Choose whether the home is listed.',
+        });
+      }
+      return;
+    }
+    if (value.listed_with_agent !== 'no') {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: ['listed_with_agent'],
+        message: 'Choose whether the home is listed.',
+      });
+    }
+    if (!value.condition) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: ['condition'],
+        message: 'Choose the property condition.',
+      });
+    }
+    if (!value.timeline) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: ['timeline'],
+        message: 'Choose a timeline.',
+      });
+    }
+  });
+
+export function isTrimmedOfferPath(pagePath: string): boolean {
+  return pagePath === '/offer' || pagePath === '/offer/fb';
+}
+
 export function isOfferLeadSubmission(formOrigin: FormOrigin, pagePath: string): boolean {
   return (
     isOfferFormOrigin(formOrigin) ||
     pagePath === '/offer' ||
     pagePath.startsWith('/offer/') ||
+    pagePath === '/sell' ||
     isSellerQuizPath(pagePath)
   );
 }
 
 /**
  * Paths that allow a blank email. /offer/fb is the internal rewrite of ?src=fb.
- * The seller quiz collects an optional email on the last step.
+ * The seller quiz and /sell collect an optional email on the last step.
  */
 export function isOfferHeroPath(pagePath: string): boolean {
   return (
     pagePath === '/offer' ||
     pagePath === '/offer/facebook' ||
     pagePath === '/offer/fb' ||
+    pagePath === '/sell' ||
     isSellerQuizPath(pagePath)
   );
 }
 
 export function leadSchemaForSubmission(formOrigin: FormOrigin, pagePath: string) {
+  if (pagePath === '/sell') return sellLeadApiSchema;
+  if (isTrimmedOfferPath(pagePath)) return offerTrimmedLeadApiSchema;
+
   const base = !isOfferLeadSubmission(formOrigin, pagePath)
     ? leadApiSchema
     : isOfferHeroPath(pagePath)
@@ -195,4 +294,5 @@ export const extendedLeadFormSchema = leadFormSchema.extend({
 export type LeadFormData = z.infer<typeof leadFormSchema>;
 export type OfferLeadFormData = z.infer<typeof offerLeadFormSchema>;
 export type OfferHeroLeadFormData = z.infer<typeof offerHeroLeadFormSchema>;
+export type OfferTrimmedLeadFormData = z.infer<typeof offerTrimmedLeadFormSchema>;
 export type ExtendedLeadFormData = z.infer<typeof extendedLeadFormSchema>;

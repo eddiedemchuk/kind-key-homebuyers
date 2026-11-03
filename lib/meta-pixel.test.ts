@@ -5,6 +5,7 @@ import {
   isMetaPixelOfferSrc,
   metaPixelFallbackScript,
   metaPixelInlineScript,
+  metaTrackCall,
 } from './meta-pixel';
 
 describe('meta pixel document', () => {
@@ -32,5 +33,16 @@ describe('meta pixel document', () => {
     assert.equal(script.startsWith(`if (typeof window.fbq !== 'function')`), true);
     assert.equal(script.split(`fbq('track', 'PageView')`).length, 2);
     assert.equal(script.includes(metaPixelInlineScript()), true);
+  });
+
+  it('passes an event id so Lead and ViewContent can be deduped', () => {
+    assert.deepEqual(metaTrackCall('Lead'), ['track', 'Lead']);
+    assert.deepEqual(metaTrackCall('Lead', 'evt-1'), ['track', 'Lead', {}, { eventID: 'evt-1' }]);
+    assert.deepEqual(metaTrackCall('ViewContent', 'view-1'), [
+      'track',
+      'ViewContent',
+      {},
+      { eventID: 'view-1' },
+    ]);
   });
 });

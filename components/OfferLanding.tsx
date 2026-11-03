@@ -42,17 +42,6 @@ const AGENT_COMPARISON = [
   },
 ] as const;
 
-const OFFER_SITUATIONS = [
-  'Inherited or probate',
-  'Foreclosure',
-  'Fire or water damage',
-  'Needs major repairs',
-  'Behind on payments',
-  'Tired landlord or bad tenants',
-  'Divorce',
-  'Relocation',
-] as const;
-
 const DISTRESS_NOTES = [
   'Back taxes and liens are paid out of the sale at closing, not out of your pocket first.',
   'Open code violations, unpermitted work, or tenants in place? We still buy without asking you to fix or evict first.',
@@ -112,26 +101,6 @@ function OfferBuyOptions() {
           </p>
         </div>
       </div>
-    </section>
-  );
-}
-
-function OfferSituations() {
-  return (
-    <section className="mt-6" aria-labelledby="situations-heading">
-      <h2 id="situations-heading" className="text-lg font-bold">
-        Situations we help with
-      </h2>
-      <ul className="mt-2 grid grid-cols-1 gap-y-1.5 sm:grid-cols-2 sm:gap-x-4">
-        {OFFER_SITUATIONS.map((item) => (
-          <li key={item} className="flex gap-2 text-sm leading-snug">
-            <span className="font-bold text-divider" aria-hidden>
-              ✓
-            </span>
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
     </section>
   );
 }
@@ -200,6 +169,8 @@ export default function OfferLanding({
   showAgentComparison = false,
   showDistressNotes = false,
   steppedForm = false,
+  compactForm = false,
+  stickyPhone,
 }: {
   content: OfferLandingContent;
   formOrigin: FormOrigin;
@@ -207,6 +178,8 @@ export default function OfferLanding({
   trackMetaLead?: boolean;
   /** Header, footer, menu, and mobile call bar. Defaults to the Google Ads number. */
   phone?: DisplayPhone;
+  /** Sticky tap-to-call when it should differ from the header tracking number. */
+  stickyPhone?: DisplayPhone;
   /** Query src for a Facebook /offer visit. Empty when only utm_source=facebook matched. */
   src?: string;
   /** Short offer-math note shown under the form on /offer only. */
@@ -217,6 +190,8 @@ export default function OfferLanding({
   showDistressNotes?: boolean;
   /** Two-step hero form on /offer and /offer/facebook. Situation pages stay one step. */
   steppedForm?: boolean;
+  /** Four-field /offer form: address, listing answer, name, and phone. */
+  compactForm?: boolean;
 }) {
   const address = `${BUSINESS.streetAddress}, ${BUSINESS.addressLocality}, ${BUSINESS.addressRegion} ${BUSINESS.postalCode}`;
 
@@ -287,9 +262,9 @@ export default function OfferLanding({
               trackMetaLead={trackMetaLead}
               src={src}
               stepped={steppedForm}
+              compact={compactForm}
             />
           </div>
-          <OfferSituations />
           <OfferCountyBuyers />
           <HousesBought />
           {showOfferMath ? (
@@ -386,7 +361,7 @@ export default function OfferLanding({
           </p>
         </footer>
       </div>
-      <OfferMobileBar phone={phone} />
+      <OfferMobileBar phone={stickyPhone ?? phone} />
       <LeadConnectorChat mobileOnly suppressGreeting mountDelayMs={8000} />
     </main>
   );

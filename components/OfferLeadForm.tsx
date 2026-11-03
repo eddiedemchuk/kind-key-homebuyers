@@ -4,7 +4,13 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useForm, type FieldErrors } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
-import { offerHeroLeadFormSchema, offerLeadFormSchema, type OfferLeadFormData } from '@/lib/schema';
+import {
+  offerHeroLeadFormSchema,
+  offerLeadFormSchema,
+  offerTrimmedLeadFormSchema,
+  type OfferLeadFormData,
+  type OfferTrimmedLeadFormData,
+} from '@/lib/schema';
 import { trackEvent, trackLeadSubmit } from '@/lib/analytics';
 import { trackMetaLead } from '@/lib/meta-pixel';
 import { attributionFieldsForSubmit } from '@/lib/attribution-client';
@@ -23,6 +29,8 @@ interface OfferLeadFormProps {
   src?: string;
   /** Address first, then contact details. Used on /offer and /offer/facebook. */
   stepped?: boolean;
+  /** /offer only: address, listing answer, name, and phone. */
+  compact?: boolean;
 }
 
 const fieldClass =
@@ -31,7 +39,252 @@ const fieldClass =
 const submitButtonClass =
   'flex min-h-14 w-full touch-manipulation items-center justify-center rounded-lg bg-divider px-6 py-3 text-lg font-bold text-white shadow-md transition-colors hover:bg-divider/90 disabled:cursor-not-allowed disabled:opacity-50';
 
-export default function OfferLeadForm({
+async function deliverOfferLead(input: {
+  body: Record<string, unknown>;
+  formOrigin: FormOrigin;
+  trackMeta: boolean;
+  src?: string;
+  executeRecaptcha: (action: string) => Promise<string>;
+}): Promise<void> {
+  const recaptchaToken = await input.executeRecaptcha('submit_lead');
+  let attributionFields: Record<string, string> = {};
+  try {
+    attributionFields = attributionFieldsForSubmit();
+  } catch (error) {
+    console.error('Attribution capture failed:', error);
+  }
+
+  const response = await fetch('/api/lead', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      ...input.body,
+      recaptchaToken,
+      pagePath: window.location.pathname,
+      ...attributionFields,
+      form_origin: input.formOrigin,
+      ...(input.src !== undefined ? { src: input.src } : {}),
+    }),
+  });
+
+  if (!response.ok) {
+    const error = await response.json();
+    throw new Error(error.message || 'Failed to submit form');
+  }
+
+  trackLeadSubmit({});
+  if (input.trackMeta) trackMetaLead();
+  const pagePath = window.location.pathname;
+  const facebookThankYou =
+    pagePath === FACEBOOK_OFFER_PATH || input.formOrigin === 'facebook_ads_eddie';
+  persistThankYouPhoneSource(pagePath, facebookThankYou);
+  window.location.href = thankYouHref(pagePath, facebookThankYou);
+}
+
+function CompactOfferLeadForm({
+  formOrigin,
+  idPrefix,
+  trackMetaLead: shouldTrackMetaLead = false,
+  src,
+}: OfferLeadFormProps) {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const formRef = useRef<HTMLFormElement>(null);
+  const { executeRecaptcha } = useRecaptcha(formRef);
+  const ids = {
+    name: `${idPrefix}-name`,
+    phone: `${idPrefix}-phone`,
+    address: `${idPrefix}-address`,
+    listedYes: `${idPrefix}-listed-yes`,
+    listedNo: `${idPrefix}-listed-no`,
+  };
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    watch,
+    formState: { errors },
+  } = useForm<OfferTrimmedLeadFormData>({
+    resolver: zodResolver(offerTrimmedLeadFormSchema),
+    defaultValues: { phone: '', email: '' },
+  });
+  const phoneValue = watch('phone') ?? '';
+  const phoneSelection = useRef<number | null>(null);
+  const phoneInputRef = useRef<HTMLInputElement | null>(null);
+  const { ref: phoneRef, ...phoneField } = register('phone');
+
+  useEffect(() => {
+    const form = formRef.current;
+    if (!form) return;
+    let started = false;
+    const onStart = (event: Event) => {
+      if (started) return;
+      const target = event.target;
+      if (!(target instanceof Element) || !target.closest('input, textarea, select')) return;
+      started = true;
+      trackEvent('form_start', { form_origin: formOrigin });
+    };
+    form.addEventListener('focusin', onStart);
+    form.addEventListener('input', onStart);
+    return () => {
+      form.removeEventListener('focusin', onStart);
+      form.removeEventListener('input', onStart);
+    };
+  }, [formOrigin]);
+
+  useLayoutEffect(() => {
+    const input = phoneInputRef.current;
+    if (!input || document.activeElement !== input || phoneSelection.current == null) return;
+    input.setSelectionRange(phoneSelection.current, phoneSelection.current);
+  }, [phoneValue]);
+
+  const onSubmit = async (data: OfferTrimmedLeadFormData) => {
+    setIsSubmitting(true);
+    setSubmitError(null);
+    try {
+      await deliverOfferLead({
+        formOrigin,
+        trackMeta: shouldTrackMetaLead,
+        src,
+        executeRecaptcha,
+        body: {
+          name: data.name,
+          phone: toE164(data.phone),
+          email: '',
+          propertyAddress: data.propertyAddress,
+          listed_with_agent: data.listed_with_agent,
+        },
+      });
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setSubmitError(
+        error instanceof Error ? error.message : 'Something went wrong. Please try again.'
+      );
+      setIsSubmitting(false);
+    }
+  };
+
+  return (
+    <form
+      ref={formRef}
+      onSubmit={(event) => {
+        void handleSubmit(onSubmit)(event);
+      }}
+      className="space-y-3"
+      noValidate
+      data-offer-fields="address listed name phone"
+    >
+      <div>
+        <label htmlFor={ids.address} className="mb-1 block text-sm font-medium text-text-primary">
+          Property address
+        </label>
+        <input
+          type="text"
+          id={ids.address}
+          {...register('propertyAddress')}
+          className={fieldClass}
+          placeholder="123 Main St, Auburn, WA"
+          autoComplete="street-address"
+        />
+        {errors.propertyAddress ? (
+          <p className="mt-1 text-sm text-red-600">{errors.propertyAddress.message}</p>
+        ) : null}
+      </div>
+      <fieldset>
+        <legend className="mb-1 text-sm font-medium text-text-primary">
+          Listed with an agent?
+        </legend>
+        <div className="grid grid-cols-2 gap-2">
+          <label
+            htmlFor={ids.listedNo}
+            className="flex min-h-14 items-center gap-2 rounded-lg border border-gray-300 px-3 text-base text-text-primary"
+          >
+            <input
+              type="radio"
+              id={ids.listedNo}
+              value="no"
+              {...register('listed_with_agent')}
+              className="h-5 w-5 border-gray-300 text-divider focus:ring-divider"
+            />
+            No
+          </label>
+          <label
+            htmlFor={ids.listedYes}
+            className="flex min-h-14 items-center gap-2 rounded-lg border border-gray-300 px-3 text-base text-text-primary"
+          >
+            <input
+              type="radio"
+              id={ids.listedYes}
+              value="yes"
+              {...register('listed_with_agent')}
+              className="h-5 w-5 border-gray-300 text-divider focus:ring-divider"
+            />
+            Yes
+          </label>
+        </div>
+        {errors.listed_with_agent ? (
+          <p className="mt-1 text-sm text-red-600">{errors.listed_with_agent.message}</p>
+        ) : null}
+      </fieldset>
+      <div>
+        <label htmlFor={ids.name} className="mb-1 block text-sm font-medium text-text-primary">
+          Name
+        </label>
+        <input
+          type="text"
+          id={ids.name}
+          {...register('name')}
+          className={fieldClass}
+          placeholder="Your name"
+          autoComplete="name"
+        />
+        {errors.name ? <p className="mt-1 text-sm text-red-600">{errors.name.message}</p> : null}
+      </div>
+      <div>
+        <label htmlFor={ids.phone} className="mb-1 block text-sm font-medium text-text-primary">
+          Phone
+        </label>
+        <input
+          type="tel"
+          id={ids.phone}
+          {...phoneField}
+          ref={(element) => {
+            phoneInputRef.current = element;
+            phoneRef(element);
+          }}
+          value={phoneValue}
+          onChange={(event) => {
+            const { value, selection } = formatPhoneChange(
+              event.target.value,
+              event.target.selectionStart
+            );
+            phoneSelection.current = selection;
+            setValue('phone', value, { shouldValidate: value.length > 0 });
+          }}
+          className={fieldClass}
+          placeholder="(253) 555-0100"
+          autoComplete="tel"
+          inputMode="tel"
+          required
+        />
+        {errors.phone ? <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p> : null}
+      </div>
+      {submitError ? (
+        <div className="rounded-lg border border-red-200 bg-red-50 p-3" role="alert">
+          <p className="text-sm text-red-600">{submitError}</p>
+        </div>
+      ) : null}
+      <button type="submit" disabled={isSubmitting} className={submitButtonClass}>
+        {isSubmitting ? 'Submitting...' : 'Get My Free Cash Offer'}
+      </button>
+      <p className="text-center text-xs leading-tight text-text-secondary">
+        Filling this out doesn&apos;t commit you to sell.
+      </p>
+    </form>
+  );
+}
+
+function FullOfferLeadForm({
   formOrigin,
   idPrefix,
   trackMetaLead: shouldTrackMetaLead = false,
@@ -145,18 +398,12 @@ export default function OfferLeadForm({
     setSubmitError(null);
 
     try {
-      const recaptchaToken = await executeRecaptcha('submit_lead');
-      let attributionFields: Record<string, string> = {};
-      try {
-        attributionFields = attributionFieldsForSubmit();
-      } catch (error) {
-        console.error('Attribution capture failed:', error);
-      }
-
-      const response = await fetch('/api/lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
+      await deliverOfferLead({
+        formOrigin,
+        trackMeta: shouldTrackMetaLead,
+        src,
+        executeRecaptcha,
+        body: {
           name: data.name,
           phone: toE164(data.phone),
           email: data.email.trim(),
@@ -166,26 +413,8 @@ export default function OfferLeadForm({
           smsNonMarketingConsent: true,
           smsMarketingConsent: true,
           listed_with_agent: data.listed_with_agent,
-          recaptchaToken,
-          pagePath: window.location.pathname,
-          ...attributionFields,
-          form_origin: formOrigin,
-          ...(src !== undefined ? { src } : {}),
-        }),
+        },
       });
-
-      if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.message || 'Failed to submit form');
-      }
-
-      trackLeadSubmit({});
-      if (shouldTrackMetaLead) trackMetaLead();
-      const pagePath = window.location.pathname;
-      const facebookThankYou =
-        pagePath === FACEBOOK_OFFER_PATH || formOrigin === 'facebook_ads_eddie';
-      persistThankYouPhoneSource(pagePath, facebookThankYou);
-      window.location.href = thankYouHref(pagePath, facebookThankYou);
     } catch (error) {
       console.error('Form submission error:', error);
       setSubmitError(
@@ -446,4 +675,9 @@ export default function OfferLeadForm({
       )}
     </form>
   );
+}
+
+export default function OfferLeadForm(props: OfferLeadFormProps) {
+  if (props.compact) return <CompactOfferLeadForm {...props} />;
+  return <FullOfferLeadForm {...props} />;
 }

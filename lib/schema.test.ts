@@ -10,6 +10,7 @@ import {
   offerHeroLeadFormSchema,
   offerLeadApiSchema,
   offerLeadFormSchema,
+  offerTrimmedLeadFormSchema,
 } from './schema';
 
 const shortOffer = {
@@ -291,5 +292,31 @@ describe('lead schemas', () => {
         );
       }
     }
+  });
+
+  it('accepts the four-field /offer form and still requires consent on /offer/facebook', () => {
+    const trimmed = {
+      name: 'Ada Lovelace',
+      phone: '(253) 555-0100',
+      propertyAddress: '123 Main St, Auburn, WA',
+      listed_with_agent: 'no' as const,
+    };
+    assert.equal(
+      leadSchemaForSubmission('google_ads_landing', '/offer').safeParse(trimmed).success,
+      true
+    );
+    assert.equal(
+      leadSchemaForSubmission('facebook_ads_eddie', '/offer/fb').safeParse(trimmed).success,
+      true
+    );
+    assert.equal(
+      leadSchemaForSubmission('facebook_ads_eddie', '/offer/facebook').safeParse(trimmed).success,
+      false
+    );
+    assert.equal(offerTrimmedLeadFormSchema.safeParse(trimmed).success, true);
+    assert.equal(
+      offerTrimmedLeadFormSchema.safeParse({ ...trimmed, email: 'ada@example.com' }).success,
+      true
+    );
   });
 });
