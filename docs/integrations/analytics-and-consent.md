@@ -46,7 +46,9 @@ granted either way, so GA4 still loads when the banner is absent.
   or input, `call_click` (with `link_location`) on a `tel:` tap, and `get_offer_click` on a Get My
   Offer button.
 - Lead submission emits `lead_submit` and `generate_lead`, and queues Google Ads conversion
-  `AW-17766515185/IeBJCKCujPIbEPGD3pdC` with a transaction id.
+  `AW-17766515185/IeBJCKCujPIbEPGD3pdC` with a transaction id. Before that event, and again on
+  `/thank-you` before either conversion event, the tag runs `gtag('set', 'user_data', …)` with
+  `email` when the form collected one and `phone_number` in E.164.
 - The thank-you route always fires the page conversion `AW-17766515185/hcQZCKrs2swbEPGD3pdC`.
   That hit is not gated on the cookie banner. Consent Mode v2 defaults `ad_storage`,
   `ad_user_data`, `ad_personalization`, and `analytics_storage` to granted, so a pending banner

@@ -22,6 +22,19 @@ export default function ThankYouPage() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
 
+          var pending = null;
+          try {
+            var pendingRaw = sessionStorage.getItem('${GOOGLE_ADS_SUBMIT_CONVERSION_STORAGE_KEY}');
+            if (pendingRaw) pending = JSON.parse(pendingRaw);
+          } catch (e) {}
+
+          var userData = {};
+          if (pending && pending.email) userData.email = pending.email;
+          if (pending && pending.phone_number) userData.phone_number = pending.phone_number;
+          if (userData.email || userData.phone_number) {
+            gtag('set', 'user_data', userData);
+          }
+
           gtag('event', 'conversion', {
             'send_to': '${GOOGLE_ADS_THANK_YOU_CONVERSION_SEND_TO}',
             'value': 1.0,
@@ -29,21 +42,19 @@ export default function ThankYouPage() {
           });
 
           try {
-            var pendingRaw = sessionStorage.getItem('${GOOGLE_ADS_SUBMIT_CONVERSION_STORAGE_KEY}');
-            if (pendingRaw) {
-              var pending = JSON.parse(pendingRaw);
-              if (
-                pending &&
-                pending.sendTo === '${GOOGLE_ADS_SUBMIT_CONVERSION_SEND_TO}' &&
-                pending.transactionId
-              ) {
-                gtag('event', 'conversion', {
-                  'send_to': pending.sendTo,
-                  'value': 1.0,
-                  'currency': 'USD',
-                  'transaction_id': pending.transactionId
-                });
-              }
+            if (
+              pending &&
+              pending.sendTo === '${GOOGLE_ADS_SUBMIT_CONVERSION_SEND_TO}' &&
+              pending.transactionId
+            ) {
+              gtag('event', 'conversion', {
+                'send_to': pending.sendTo,
+                'value': 1.0,
+                'currency': 'USD',
+                'transaction_id': pending.transactionId
+              });
+            }
+            if (pending) {
               sessionStorage.removeItem('${GOOGLE_ADS_SUBMIT_CONVERSION_STORAGE_KEY}');
             }
           } catch (e) {}

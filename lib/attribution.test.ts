@@ -23,6 +23,21 @@ function touch(overrides: Partial<AttributionTouch> = {}): AttributionTouch {
   return { ...emptyTouch(CAPTURED), ...overrides, captured_at: overrides.captured_at ?? CAPTURED };
 }
 
+const EMPTY_CLICK_CUSTOM_FIELDS = [
+  { key: 'gclid', field_value: '' },
+  { key: 'gbraid', field_value: '' },
+  { key: 'wbraid', field_value: '' },
+  { key: 'utm_source', field_value: '' },
+  { key: 'utm_medium', field_value: '' },
+  { key: 'utm_campaign', field_value: '' },
+  { key: 'utm_term', field_value: '' },
+  { key: 'utm_content', field_value: '' },
+];
+
+function clickFields(fields: Array<{ key: string; field_value: string }>) {
+  return [...fields, ...EMPTY_CLICK_CUSTOM_FIELDS];
+}
+
 function landing(search: string, referrer = ''): AttributionTouch {
   return touchFromLanding({
     search,
@@ -398,9 +413,10 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.tags, 'website lead, google ads, general');
     assert.equal(payload.form_name, 'Google Ads Landing Page');
     assert.equal(payload.form_origin, 'google_ads_landing');
-    assert.deepEqual(payload.customFields, [
-      { key: 'form_origin', field_value: 'google_ads_landing' },
-    ]);
+    assert.deepEqual(
+      payload.customFields,
+      clickFields([{ key: 'form_origin', field_value: 'google_ads_landing' }])
+    );
     assert.equal(payload.click_source, 'Direct/Website');
     assert.equal(payload.city, '');
     assert.equal(payload.condition, '');
@@ -461,10 +477,13 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.form_origin, 'google_ads_foreclosure');
     assert.equal(payload.page_path, '/offer/foreclosure');
     assert.equal(payload.listed_with_agent, 'no');
-    assert.deepEqual(payload.customFields, [
-      { key: 'listed_with_agent', field_value: 'no' },
-      { key: 'form_origin', field_value: 'google_ads_foreclosure' },
-    ]);
+    assert.deepEqual(
+      payload.customFields,
+      clickFields([
+        { key: 'listed_with_agent', field_value: 'no' },
+        { key: 'form_origin', field_value: 'google_ads_foreclosure' },
+      ])
+    );
     assert.match(String(payload.attribution_notes), /Form origin: google_ads_foreclosure/);
     assert.match(String(payload.attribution_notes), /Listed with agent: no/);
   });
@@ -503,10 +522,13 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.page_path, '/offer/facebook');
     assert.equal(payload.channel, 'Website');
     assert.equal(payload.listed_with_agent, 'no');
-    assert.deepEqual(payload.customFields, [
-      { key: 'listed_with_agent', field_value: 'no' },
-      { key: 'form_origin', field_value: 'facebook_ads_eddie' },
-    ]);
+    assert.deepEqual(
+      payload.customFields,
+      clickFields([
+        { key: 'listed_with_agent', field_value: 'no' },
+        { key: 'form_origin', field_value: 'facebook_ads_eddie' },
+      ])
+    );
     assert.match(String(payload.attribution_notes), /Listed with agent: no/);
     assert.match(String(payload.attribution_notes), /Form origin: facebook_ads_eddie/);
     assert.doesNotMatch(String(payload.attribution_notes), /Page tag:/);
@@ -527,10 +549,13 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.page_tag, '');
     assert.equal(payload.tags, 'website lead, Facebook Leads (Eddie), listed with agent');
     assert.equal(payload.listed_with_agent, 'yes');
-    assert.deepEqual(payload.customFields, [
-      { key: 'listed_with_agent', field_value: 'yes' },
-      { key: 'form_origin', field_value: 'facebook_ads_eddie' },
-    ]);
+    assert.deepEqual(
+      payload.customFields,
+      clickFields([
+        { key: 'listed_with_agent', field_value: 'yes' },
+        { key: 'form_origin', field_value: 'facebook_ads_eddie' },
+      ])
+    );
     assert.match(String(payload.attribution_notes), /Listed with agent: yes/);
     assert.match(String(payload.attribution_notes), /Form origin: facebook_ads_eddie/);
   });
@@ -550,11 +575,14 @@ describe('buildGhlPayload', () => {
       assert.equal(payload.form_origin, 'facebook_ads_eddie', src || 'empty');
       assert.equal(payload.page_tag, '', src || 'empty');
       assert.equal(payload.src, src);
-      assert.deepEqual(payload.customFields, [
-        { key: 'listed_with_agent', field_value: 'no' },
-        { key: 'form_origin', field_value: 'facebook_ads_eddie' },
-        { key: 'src', field_value: src },
-      ]);
+      assert.deepEqual(
+        payload.customFields,
+        clickFields([
+          { key: 'listed_with_agent', field_value: 'no' },
+          { key: 'form_origin', field_value: 'facebook_ads_eddie' },
+          { key: 'src', field_value: src },
+        ])
+      );
     }
   });
 
@@ -570,10 +598,13 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.tags, 'website lead, google ads, general, listed with agent');
     assert.equal(payload.source, 'Google Ads');
     assert.equal(payload.source_tag, 'google ads');
-    assert.deepEqual(payload.customFields, [
-      { key: 'listed_with_agent', field_value: 'yes' },
-      { key: 'form_origin', field_value: 'google_ads_landing' },
-    ]);
+    assert.deepEqual(
+      payload.customFields,
+      clickFields([
+        { key: 'listed_with_agent', field_value: 'yes' },
+        { key: 'form_origin', field_value: 'google_ads_landing' },
+      ])
+    );
     assert.match(String(payload.attribution_notes), /Listed with agent: yes/);
     assert.match(String(payload.attribution_notes), /Form origin: google_ads_landing/);
   });
@@ -589,10 +620,13 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.page_tag, '');
     assert.equal(payload.tags, 'website lead, facebook ads');
     assert.equal(payload.source, 'Facebook Ads');
-    assert.deepEqual(payload.customFields, [
-      { key: 'listed_with_agent', field_value: 'no' },
-      { key: 'form_origin', field_value: 'facebook_ads_landing' },
-    ]);
+    assert.deepEqual(
+      payload.customFields,
+      clickFields([
+        { key: 'listed_with_agent', field_value: 'no' },
+        { key: 'form_origin', field_value: 'facebook_ads_landing' },
+      ])
+    );
     assert.match(String(payload.attribution_notes), /Listed with agent: no/);
     assert.match(String(payload.attribution_notes), /Form origin: facebook_ads_landing/);
     assert.doesNotMatch(String(payload.attribution_notes), /Page tag:/);
@@ -621,10 +655,13 @@ describe('buildGhlPayload', () => {
       assert.equal(payload.tags, `website lead, google ads, ${pageTag}`, formOrigin);
       assert.equal(payload.listed_with_agent, 'no', formOrigin);
       assert.equal(payload.form_origin, formOrigin);
-      assert.deepEqual(payload.customFields, [
-        { key: 'listed_with_agent', field_value: 'no' },
-        { key: 'form_origin', field_value: formOrigin },
-      ]);
+      assert.deepEqual(
+        payload.customFields,
+        clickFields([
+          { key: 'listed_with_agent', field_value: 'no' },
+          { key: 'form_origin', field_value: formOrigin },
+        ])
+      );
       assert.match(String(payload.attribution_notes), new RegExp(`Form origin: ${formOrigin}`));
       assert.match(String(payload.attribution_notes), new RegExp(`Page tag: ${pageTag}`));
       assert.equal(payload.sms_consent, false);
@@ -647,13 +684,16 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.sms_consent, true);
     assert.equal(payload.sms_consent_at, '2026-10-20T15:00:00.000Z');
     assert.equal(payload.sms_consent_text_version, 'a2p-v1');
-    assert.deepEqual(payload.customFields, [
-      { key: 'listed_with_agent', field_value: 'no' },
-      { key: 'form_origin', field_value: 'google_ads_landing' },
-      { key: 'sms_consent', field_value: 'true' },
-      { key: 'sms_consent_at', field_value: '2026-10-20T15:00:00.000Z' },
-      { key: 'sms_consent_text_version', field_value: 'a2p-v1' },
-    ]);
+    assert.deepEqual(
+      payload.customFields,
+      clickFields([
+        { key: 'listed_with_agent', field_value: 'no' },
+        { key: 'form_origin', field_value: 'google_ads_landing' },
+        { key: 'sms_consent', field_value: 'true' },
+        { key: 'sms_consent_at', field_value: '2026-10-20T15:00:00.000Z' },
+        { key: 'sms_consent_text_version', field_value: 'a2p-v1' },
+      ])
+    );
     assert.match(String(payload.attribution_notes), /SMS consent: true/);
     assert.match(String(payload.attribution_notes), /SMS consent text: a2p-v1/);
   });
@@ -697,5 +737,15 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.page_tag, 'general');
     assert.equal(payload.form_origin, 'google_ads_landing');
     assert.equal(payload.listed_with_agent, 'no');
+    const fields = payload.customFields as Array<{ key: string; field_value: string }>;
+    const fieldValue = (key: string) => fields.find((field) => field.key === key)?.field_value;
+    assert.equal(fieldValue('gclid'), 'click-1');
+    assert.equal(fieldValue('gbraid'), 'gb-1');
+    assert.equal(fieldValue('wbraid'), 'wb-1');
+    assert.equal(fieldValue('utm_source'), 'google');
+    assert.equal(fieldValue('utm_medium'), 'cpc');
+    assert.equal(fieldValue('utm_campaign'), '12345');
+    assert.equal(fieldValue('utm_term'), 'sell house fast');
+    assert.equal(fieldValue('utm_content'), 'ad-a');
   });
 });
