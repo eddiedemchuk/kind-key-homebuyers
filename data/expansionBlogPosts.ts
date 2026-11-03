@@ -3027,4 +3027,139 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to empty it, mow it, or board it first. You can say no.',
   }),
+  post('sell-house-with-unpermitted-work-edgewood-wa', {
+    breadcrumbName: 'Unpermitted work in Edgewood',
+    title: 'Selling a House with Unpermitted Work in Edgewood, WA',
+    description:
+      'How Edgewood owners sell a house with an unpermitted garage conversion, addition, or shop without permitting it first. KindKey buys as-is. Not legal advice.',
+    h1: 'Selling a House with Unpermitted Work in Edgewood, WA',
+    publishedAt: '2026-11-03',
+    intro: [
+      'You can sell a house with unpermitted work in Edgewood without getting the work permitted, inspected, or torn out first. KindKey Home Buyers LLC buys that kind of house as-is, as the buyer. ' +
+        office,
+      'Unpermitted work in Edgewood usually means a garage converted into a bedroom, a basement finished without inspections, a shop or barn wired by a past owner, an addition the Pierce County Assessor-Treasurer record does not show, or a deck or second kitchen nobody pulled a permit for. You may not even know who did the work. KindKey does not need a permit history before making an offer. The City of Edgewood still decides what is legal on the parcel, and nothing here changes that.',
+    ],
+    callout:
+      'You do not have to permit, legalize, or remove the work before you sell. KindKey buys the house as-is and walks you through the sale from start to finish.',
+    sections: [
+      {
+        heading: 'The short answer for Edgewood sellers',
+        paragraphs: [
+          'A retail buyer with a mortgage often stalls on unpermitted work. The appraiser may not count the converted garage as living space, the lender may ask questions, and the buyer’s inspector may write up the wiring in the shop. Each one can turn into a repair request, a price cut, or a buyer who walks. A direct sale skips that loop. KindKey looks at the house the way it actually is, prices the work as it stands, and does not need a lender to approve it.',
+          'That does not make the work legal, and it does not hide it. Tell KindKey what you know: what was built, roughly when, and whether the city ever sent a letter about it. If you do not know, say so. KindKey will walk the house and ask.',
+        ],
+      },
+      {
+        heading: 'Check what the city and county already have on file',
+        paragraphs: [
+          'Edgewood is its own city in Pierce County, between Milton, Fife, Puyallup, and Sumner. A house with an Edgewood mailing address can still sit in a neighboring city or in unincorporated Pierce County, so read the parcel record before you assume the City of Edgewood is the permit office. The Pierce County Assessor-Treasurer parcel page shows the recorded building square footage and outbuildings. Comparing that page to what is actually on the lot is a quick way to see what the record is missing.',
+          'Permits for an Edgewood parcel go through the City of Edgewood, not KindKey. You can ask the city what permit records exist for your address. If the city has already opened a code case about the work, that is a different problem. Read the Edgewood code-violation guide, and talk with a Washington attorney if the notice has a hearing, a deadline, or a penalty you do not understand.',
+        ],
+      },
+      {
+        heading: 'Disclose what you know',
+        paragraphs: [
+          'Washington’s seller disclosure law is chapter 64.06 RCW. The disclosure statement asks about things like additions, conversions, and remodeling and whether permits were obtained. KindKey will not tell you how to answer it or whether an exemption applies to your sale. Ask a Washington real estate attorney if you are unsure. Answer honestly with what you actually know. A cash buyer is not a reason to leave something off the form.',
+          'If the house came to you through an estate or a trust, you may not know who built what. Saying you do not know is different from saying there is nothing. The Edgewood probate and living-trust guides cover who can sign when the owner has died.',
+        ],
+      },
+      {
+        heading: 'Permit it, tear it out, or sell it as it is',
+        paragraphs: [
+          'Permitting after the fact can mean drawings, opening walls for inspection, and bringing work up to current code. On acreage with outbuildings, a well, or a septic system, the questions can stack up. Removing the work costs money too and can leave the house smaller. Some owners have the time and cash for either. If you do, a licensed contractor and a listing with a licensed broker may get you more. KindKey will not run that listing.',
+          'If you do not have the time or the cash, or the house also needs a roof, has a stalled remodel, or has tenants in the converted space, selling as-is is the simpler path. KindKey buys as a principal. ' +
+            closing,
+        ],
+      },
+      {
+        heading: 'When unpermitted work is not the only problem',
+        paragraphs: [
+          'If the loan is behind, foreclosure timing matters more than the permit question. Read the Edgewood foreclosure guide and talk with a Washington attorney. Washington’s foreclosure-rescue law is chapter 61.34 RCW. KindKey does not interpret it, and you should ask your attorney about it before you sign anything with any buyer.',
+          'If a tenant lives in the garage conversion or the ADU, do not try to clear them out yourself. The Edgewood tenant guide explains how KindKey looks at an occupied house. Kitsap County owners in Port Orchard, Bremerton, Silverdale, and Poulsbo have the same question with a different permit office. The Kitsap County as-is guide is the place to start there.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell my Edgewood house if the garage conversion was never permitted?',
+        answer:
+          'Yes. KindKey buys houses with unpermitted work as-is. You do not have to permit or remove it first. Tell KindKey what you know about it, call (206) 519-5463 or use the cash-offer form, and you can say no to the offer.',
+      },
+      {
+        question: 'Do I have to tell the buyer about unpermitted work?',
+        answer:
+          'Washington’s seller disclosure law is chapter 64.06 RCW, and the form asks about permits for additions and remodeling. KindKey cannot tell you how to fill it out. Ask a Washington real estate attorney, and answer with what you actually know.',
+      },
+      {
+        question: 'Will KindKey report the unpermitted work to the City of Edgewood?',
+        answer:
+          'KindKey is a buyer, not code enforcement or a permit office. After closing, the house is KindKey’s, and KindKey deals with the city on its own house.',
+      },
+      {
+        question: 'What if the city already sent a code notice about the work?',
+        answer:
+          'KindKey can still make an offer. The city still controls the case, so read the notice, keep any hearing dates, and talk with a Washington attorney if there is a deadline or penalty you do not understand.',
+      },
+      {
+        question: 'Is KindKey a real estate agent?',
+        answer:
+          'No. KindKey Home Buyers LLC buys houses directly as a principal. It does not list houses or represent sellers.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'The Edgewood city page.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'How an as-is sale works with KindKey.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'When the city has already opened a case.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-edgewood-wa',
+        label: 'Code violations in Edgewood',
+        description: 'The Edgewood code-case guide.',
+      },
+      {
+        href: '/blog/sell-house-with-stalled-remodel-edgewood-wa',
+        label: 'Stalled remodels in Edgewood',
+        description: 'Open walls on a project nobody finished.',
+      },
+      {
+        href: '/blog/sell-inherited-acreage-with-outbuildings-edgewood-wa',
+        label: 'Acreage and outbuildings in Edgewood',
+        description: 'Shops, barns, and extra structures on the lot.',
+      },
+      {
+        href: '/blog/sell-house-with-tenants-edgewood-wa',
+        label: 'Tenants in Edgewood',
+        description: 'If someone lives in the converted space.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'If the loan is behind too.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Sell as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'No permit history required.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood offer without permitting the work first',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. Tell KindKey what was built and what you know. You can say no.',
+  }),
 ];
