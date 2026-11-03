@@ -13,7 +13,7 @@ import {
   touchFromRequestBody,
 } from '@/lib/attribution';
 import { resolveFormOrigin } from '@/lib/form-origin';
-import { isSellerQuizPath } from '@/lib/phones';
+import { isFreshCampaignPath } from '@/lib/phones';
 import { qualifyingRealtorLabel, quizLeadTouchFromBody } from '@/lib/seller-quiz';
 
 // Rate limiting is optional so local development and deployments without the
@@ -33,6 +33,33 @@ const ratelimit = redis
       analytics: true,
     })
   : null;
+
+function sellDeliveryFields(data: object): {
+  firstName?: string;
+  lastName?: string;
+  ownerStatus?: string;
+  sellListed?: string;
+  county?: string;
+  outOfArea?: boolean;
+  hotLead?: false;
+} {
+  const record = data as Record<string, unknown>;
+  const text = (key: string) => (typeof record[key] === 'string' ? record[key] : undefined);
+  const firstName = text('first_name');
+  const lastName = text('last_name');
+  const ownerStatus = text('owner_status');
+  const sellListed = text('sell_listed');
+  const county = text('county');
+  return {
+    ...(firstName ? { firstName } : {}),
+    ...(lastName ? { lastName } : {}),
+    ...(ownerStatus ? { ownerStatus } : {}),
+    ...(sellListed ? { sellListed } : {}),
+    ...(county ? { county } : {}),
+    ...(typeof record.out_of_area === 'boolean' ? { outOfArea: record.out_of_area } : {}),
+    ...(record.hot_lead === false ? { hotLead: false } : {}),
+  };
+}
 
 function getClientIP(request: NextRequest): string {
   // Proxies append addresses to x-forwarded-for; the first entry is the
@@ -81,8 +108,8 @@ export async function POST(request: NextRequest) {
     const ip = getClientIP(request);
     // Quiz submits send the current URL. A stored paid click must not keep the
     // previous utm, landing page, or click id on this contact.
-    const quizLead = isSellerQuizPath(pagePath);
-    const attribution = quizLead
+    const freshCampaign = isFreshCampaignPath(pagePath);
+    const attribution = freshCampaign
       ? quizLeadTouchFromBody(body)
       : resolveSubmissionAttribution(
           touchFromRequestBody(body),
@@ -113,8 +140,8 @@ export async function POST(request: NextRequest) {
       preferredContact: data.preferredContact,
       smsNonMarketingConsent: data.smsNonMarketingConsent,
       smsMarketingConsent: data.smsMarketingConsent,
-      utm: quizLead ? attribution.utm_source : attribution.utm_source || body.utm,
-      gclid: quizLead ? attribution.gclid : attribution.gclid || body.gclid,
+      utm: freshCampaign ? attribution.utm_source : attribution.utm_source || body.utm,
+      gclid: freshCampaign ? attribution.gclid : attribution.gclid || body.gclid,
       pagePath: pagePath || 'unknown',
       recaptchaScore: 0.9, // Used when verification is skipped.
       ip,
@@ -126,6 +153,7 @@ export async function POST(request: NextRequest) {
       smsConsentAt,
       smsConsentTextVersion,
       ...(typeof data.src === 'string' ? { src: data.src } : {}),
+      ...sellDeliveryFields(data),
     };
 
     // Delivery channels are independent and optional. A provider failure is

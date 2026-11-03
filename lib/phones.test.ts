@@ -7,6 +7,8 @@ import {
   hasFacebookOfferThankYouFlag,
   isAlwaysGoogleAdsPhonePath,
   isFacebookOfferThankYou,
+  isFreshCampaignPath,
+  isSellFunnelPath,
   isSellerQuizPath,
   offerDisplayPhone,
   offerLandingPhone,
@@ -110,6 +112,16 @@ describe('isAlwaysGoogleAdsPhonePath', () => {
     assert.equal(offerDisplayPhone('/quiz', '?src=fb').display, '(253) 453-8597');
     assert.notEqual(offerDisplayPhone('/quiz', '?src=fb').display, '(253) 352-4379');
     assert.notEqual(offerDisplayPhone('/offer/quiz').tel, GOOGLE_ADS_PHONE.tel);
+  });
+
+  it('uses the Facebook offer number on /sell', () => {
+    assert.equal(isSellFunnelPath('/sell'), true);
+    assert.equal(isFreshCampaignPath('/sell'), true);
+    assert.equal(isFreshCampaignPath('/quiz'), true);
+    assert.equal(isAlwaysGoogleAdsPhonePath('/sell'), false);
+    assert.equal(offerDisplayPhone('/sell').display, '(253) 453-8597');
+    assert.equal(offerDisplayPhone('/sell', '?src=google').tel, '+12534538597');
+    assert.equal(offerLandingPhone('/sell'), FACEBOOK_OFFER_PHONE);
   });
 
   it('leaves organic pages on the organic number', () => {

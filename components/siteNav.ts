@@ -8,7 +8,8 @@ export const siteNavLinks = [
   { href: '/contact', label: 'Contact' },
 ];
 
-export function isActivePath(pathname: string, href: string) {
+export function isActivePath(pathname: string | null | undefined, href: string) {
+  if (!pathname) return false;
   if (href === '/') {
     return pathname === '/';
   }

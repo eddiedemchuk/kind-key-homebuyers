@@ -11,15 +11,16 @@ enabled only when the relevant variable groups are complete.
 Values prefixed with `NEXT_PUBLIC_` may be included in browser bundles and require a rebuild when
 changed.
 
-| Variable                         | Purpose                                              | Default                         |
-| -------------------------------- | ---------------------------------------------------- | ------------------------------- |
-| `NEXT_PUBLIC_SITE_URL`           | Base origin for generated URLs and schema            | `https://kindkeyhomebuyers.com` |
-| `NEXT_PUBLIC_RECAPTCHA_SITE_KEY` | Loads reCAPTCHA v3 and requests form tokens          | reCAPTCHA is skipped            |
-| `NEXT_PUBLIC_GA_MEASUREMENT_ID`  | Overrides the GA4 measurement ID (`G-E2YKGLGN1S`)    | `G-E2YKGLGN1S`                  |
-| `NEXT_PUBLIC_HERO_VIDEO_SRC`     | Overrides hero video; supported routes accept `none` | `/hero-loop.mp4`                |
-| `NEXT_PUBLIC_HERO_IMAGE_SRC`     | Overrides hero poster imagery                        | route-specific local asset      |
-| `NEXT_PUBLIC_BRAND_NAME`         | Overrides header and footer brand name               | `KindKey Home Buyers`           |
-| `NEXT_PUBLIC_BRAND_TAGLINE`      | Overrides the footer tagline                         | built-in statewide tagline      |
+| Variable                          | Purpose                                                                                                                                          | Default                         |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------- |
+| `NEXT_PUBLIC_SITE_URL`            | Base origin for generated URLs and schema                                                                                                        | `https://kindkeyhomebuyers.com` |
+| `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`  | Loads reCAPTCHA v3 and requests form tokens                                                                                                      | reCAPTCHA is skipped            |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID`   | Overrides the GA4 measurement ID (`G-E2YKGLGN1S`)                                                                                                | `G-E2YKGLGN1S`                  |
+| `NEXT_PUBLIC_HERO_VIDEO_SRC`      | Overrides hero video; supported routes accept `none`                                                                                             | `/hero-loop.mp4`                |
+| `NEXT_PUBLIC_HERO_IMAGE_SRC`      | Overrides hero poster imagery                                                                                                                    | route-specific local asset      |
+| `NEXT_PUBLIC_BRAND_NAME`          | Overrides header and footer brand name                                                                                                           | `KindKey Home Buyers`           |
+| `NEXT_PUBLIC_BRAND_TAGLINE`       | Overrides the footer tagline                                                                                                                     | built-in statewide tagline      |
+| `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` | Enables Places autocomplete and the map pin on `/sell`. Restricted to Washington. Blank keeps a plain address box plus the Census county lookup. | plain address input             |
 
 ## Server-only variables
 

@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
   // /offer, /offer/facebook, /offer/foreclosure, /offer/inherited, /offer/as-is,
-  // /offer/fire-damage, /quiz, and /offer/quiz are paid landing pages.
+  // /offer/fire-damage, /quiz, /offer/quiz, and /sell are paid landing pages.
   // They are noindex and must stay off this list.
   const routes = [
     '',

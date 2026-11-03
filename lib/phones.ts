@@ -33,6 +33,19 @@ export function isSellerQuizPath(pathname: string): boolean {
   return pathname === '/quiz' || pathname === '/offer/quiz';
 }
 
+/** Paid /sell funnel. It uses the Facebook offer number and fresh campaign fields. */
+export function isSellFunnelPath(pathname: string): boolean {
+  return pathname === '/sell';
+}
+
+/**
+ * Quiz and /sell replace a stored click with the current URL, including blanks.
+ * Other forms still merge the 90-day first touch.
+ */
+export function isFreshCampaignPath(pathname: string): boolean {
+  return isSellerQuizPath(pathname) || isSellFunnelPath(pathname);
+}
+
 /**
  * A quiz URL named a source other than the Facebook src values.
  * Blank src still counts as the Facebook quiz default.
@@ -46,13 +59,23 @@ export function hasExplicitNonFacebookSrc(search: string): boolean {
 
 /** Google offer landings and a thank-you visit that did not come from a Facebook offer page. */
 export function isAlwaysGoogleAdsPhonePath(pathname: string): boolean {
-  if (isFacebookOfferDocumentPath(pathname) || isSellerQuizPath(pathname)) return false;
+  if (
+    isFacebookOfferDocumentPath(pathname) ||
+    isSellerQuizPath(pathname) ||
+    isSellFunnelPath(pathname)
+  ) {
+    return false;
+  }
   return pathname === '/thank-you' || pathname === '/offer' || pathname.startsWith('/offer/');
 }
 
 /** Header, footer, and mobile call bar on an offer landing when the URL has no query. */
 export function offerLandingPhone(pathname: string): DisplayPhone {
-  if (isFacebookOfferDocumentPath(pathname) || isSellerQuizPath(pathname)) {
+  if (
+    isFacebookOfferDocumentPath(pathname) ||
+    isSellerQuizPath(pathname) ||
+    isSellFunnelPath(pathname)
+  ) {
     return FACEBOOK_OFFER_PHONE;
   }
   return GOOGLE_ADS_PHONE;
@@ -64,6 +87,7 @@ export function offerLandingPhone(pathname: string): DisplayPhone {
  * A plain /offer visit keeps the Google Ads number.
  */
 export function offerDisplayPhone(pathname: string, search = ''): DisplayPhone {
+  if (isSellFunnelPath(pathname)) return FACEBOOK_OFFER_PHONE;
   if (isFacebookOfferDocumentPath(pathname)) return FACEBOOK_OFFER_PHONE;
   if (isSellerQuizPath(pathname)) {
     return hasExplicitNonFacebookSrc(search) ? GOOGLE_ADS_PHONE : FACEBOOK_OFFER_PHONE;

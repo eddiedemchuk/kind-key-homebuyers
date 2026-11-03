@@ -50,13 +50,36 @@ export function metaPixelFallbackScript(): string {
   return `if (typeof window.fbq !== 'function') {\n${metaPixelInlineScript()}\n}`;
 }
 
-/** Standard Lead event. No-op until the Facebook page has installed fbq. */
-export function trackMetaLead(): void {
+export function createMetaEventId(): string {
+  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+    return crypto.randomUUID();
+  }
+  return `meta-${Date.now()}`;
+}
+
+/** Arguments passed to fbq. An event id lets a later server event dedupe this hit. */
+export function metaTrackCall(eventName: string, eventId?: string): unknown[] {
+  if (eventId) return ['track', eventName, {}, { eventID: eventId }];
+  return ['track', eventName];
+}
+
+function trackMetaStandard(eventName: 'Lead' | 'ViewContent', eventId?: string): void {
   if (typeof window === 'undefined' || typeof window.fbq !== 'function') return;
 
   try {
-    window.fbq('track', 'Lead');
+    const args = metaTrackCall(eventName, eventId);
+    window.fbq(...args);
   } catch (error) {
-    console.error('Meta pixel Lead error:', error);
+    console.error(`Meta pixel ${eventName} error:`, error);
   }
+}
+
+/** Standard Lead event. No-op until the page has installed fbq. */
+export function trackMetaLead(eventId?: string): void {
+  trackMetaStandard('Lead', eventId);
+}
+
+/** Standard ViewContent event. /sell fires this once on the address step. */
+export function trackMetaViewContent(eventId?: string): void {
+  trackMetaStandard('ViewContent', eventId);
 }
