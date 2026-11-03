@@ -63,8 +63,11 @@ pipeline, stage, or opportunity fields, so the existing opportunity step is left
 `/sell` posts through the same `/api/lead` route on the final step only. The webhook still requires
 a name and phone, so an address by itself is not saved. The origin is `facebook_ads_eddie`
 (`Facebook Leads (Eddie)`, tag `Facebook Leads (Eddie)`, form name `Facebook Leads (Eddie) Landing Page`).
-Campaign fields follow the quiz rule: the current URL replaces a stored click, missing UTMs are
-blank, and `src=fb` sets `utm_source` to `facebook` only when the URL has no UTM params. `fbclid`
+Campaign fields follow the quiz rule: the current URL replaces a stored click, and missing UTMs
+are blank. `src=fb` and `src=fb_static` set `utm_source` to `facebook` whenever `utm_source` itself
+is missing, including when another UTM param such as `utm_campaign` is present. An explicit
+`utm_source` still wins. The same fill runs for `/quiz`, `/sell`, and `/offer`. `src` is its own
+payload field and custom field (the contact field named `src`). `fbclid`
 is sent with the other click ids. A listed-now answer still creates the contact, with
 `listed_with_agent` `yes`, tags `listed with agent` and `check in`, and `hot_lead` `false`.
 Qualifying answers omit `hot_lead`, so the workflow can keep placing them in **New Hot Lead**.

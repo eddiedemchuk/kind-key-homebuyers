@@ -14,7 +14,7 @@ import {
 } from '@/lib/attribution';
 import { resolveFormOrigin } from '@/lib/form-origin';
 import { isFreshCampaignPath } from '@/lib/phones';
-import { qualifyingRealtorLabel, quizLeadTouchFromBody } from '@/lib/seller-quiz';
+import { qualifyingRealtorLabel, quizLeadTouchFromBody, withSrcUtmSource } from '@/lib/seller-quiz';
 
 // Rate limiting is optional so local development and deployments without the
 // complete Upstash credential pair can still accept leads.
@@ -109,12 +109,15 @@ export async function POST(request: NextRequest) {
     // Quiz submits send the current URL. A stored paid click must not keep the
     // previous utm, landing page, or click id on this contact.
     const freshCampaign = isFreshCampaignPath(pagePath);
-    const attribution = freshCampaign
-      ? quizLeadTouchFromBody(body)
-      : resolveSubmissionAttribution(
-          touchFromRequestBody(body),
-          readAttributionFromCookieHeader(request.headers.get('cookie'))
-        );
+    const attribution = withSrcUtmSource(
+      freshCampaign
+        ? quizLeadTouchFromBody(body)
+        : resolveSubmissionAttribution(
+            touchFromRequestBody(body),
+            readAttributionFromCookieHeader(request.headers.get('cookie'))
+          ),
+      typeof body.src === 'string' ? body.src : ''
+    );
     const smsConsent = 'sms_consent' in data && data.sms_consent === true;
     const smsConsentAt = smsConsent ? new Date().toISOString() : undefined;
     const smsConsentTextVersion =

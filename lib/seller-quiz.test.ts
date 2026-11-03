@@ -18,6 +18,7 @@ import {
   quizLeadAttribution,
   quizLeadTouchFromBody,
   quizSubmitFields,
+  withSrcUtmSource,
   sellerQuizNotAFitMessage,
   shouldSubmitQuizLead,
 } from './seller-quiz';
@@ -463,13 +464,101 @@ describe('seller quiz fresh attribution', () => {
       capturedAt,
     });
     assert.equal(partial.src, 'fb');
-    assert.equal(partial.attribution.utm_source, '');
+    assert.equal(partial.attribution.utm_source, 'facebook');
     assert.equal(partial.attribution.utm_medium, '');
     assert.equal(partial.attribution.utm_campaign, '');
     assert.equal(partial.attribution.utm_content, 'ad-a');
     assert.equal(partial.attribution.utm_term, '');
     assert.equal(partial.attribution.landing_page, '/quiz?src=fb&utm_content=ad-a');
     assert.equal(partial.attribution.referrer, '');
+  });
+
+  it('fills utm_source from src=fb when another UTM param is present', () => {
+    const campaign = quizSubmitFields({
+      pathname: '/quiz',
+      search: '?src=fb&utm_campaign=TEST',
+      referrer: '',
+      capturedAt,
+    });
+    assert.equal(campaign.src, 'fb');
+    assert.equal(campaign.attribution.utm_source, 'facebook');
+    assert.equal(campaign.attribution.utm_campaign, 'TEST');
+    assert.equal(campaign.attribution.utm_medium, '');
+
+    const touch = quizLeadTouchFromBody(
+      {
+        src: 'fb',
+        utm_source: '',
+        utm_campaign: 'TEST',
+        landing_page: '/quiz?src=fb&utm_campaign=TEST',
+      },
+      capturedAt
+    );
+    assert.equal(touch.utm_source, 'facebook');
+    assert.equal(touch.utm_campaign, 'TEST');
+
+    const payload = buildGhlPayload({
+      name: 'Ada Lovelace',
+      phone: '+12535550100',
+      propertyAddress: '123 Main St, Auburn, WA',
+      formOrigin: 'facebook_ads_eddie',
+      pagePath: '/quiz',
+      src: 'fb',
+      attribution: touch,
+    });
+    assert.equal(payload.src, 'fb');
+    assert.equal(customField(payload, 'src'), 'fb');
+    assert.equal(payload.utm_source, 'facebook');
+    assert.equal(customField(payload, 'utm_source'), 'facebook');
+    assert.equal(customField(payload, 'utm_campaign'), 'TEST');
+
+    const explicit = quizSubmitFields({
+      pathname: '/sell',
+      search: '?src=fb&utm_source=newsletter&utm_campaign=TEST',
+      referrer: '',
+      capturedAt,
+    });
+    assert.equal(explicit.attribution.utm_source, 'newsletter');
+    assert.equal(explicit.attribution.utm_campaign, 'TEST');
+  });
+
+  it('fills utm_source from src=fb on /offer and sends src on the contact', () => {
+    const submitted = touchFromRequestBody(
+      {
+        utm_source: '',
+        utm_campaign: 'TEST',
+        landing_page: '/offer?src=fb&utm_campaign=TEST',
+      },
+      capturedAt
+    );
+    const merged = withSrcUtmSource(
+      resolveSubmissionAttribution(submitted, null, Date.parse(capturedAt)),
+      'fb'
+    );
+    assert.equal(merged.utm_source, 'facebook');
+    assert.equal(merged.utm_campaign, 'TEST');
+
+    const kept = withSrcUtmSource({ ...merged, utm_source: 'google' }, 'fb');
+    assert.equal(kept.utm_source, 'google');
+    assert.equal(
+      withSrcUtmSource({ ...emptyTouch(capturedAt), utm_campaign: 'TEST' }, 'google').utm_source,
+      ''
+    );
+
+    const payload = buildGhlPayload({
+      name: 'Ada Lovelace',
+      phone: '+12535550100',
+      propertyAddress: '123 Main St, Auburn, WA',
+      formOrigin: 'facebook_ads_eddie',
+      pagePath: '/offer',
+      src: 'fb',
+      attribution: merged,
+    });
+    assert.equal(payload.src, 'fb');
+    assert.equal(customField(payload, 'src'), 'fb');
+    assert.equal(payload.utm_source, 'facebook');
+    assert.equal(customField(payload, 'utm_source'), 'facebook');
+    assert.equal(customField(payload, 'utm_campaign'), 'TEST');
   });
 
   it('falls back to the src value only when the quiz URL has no UTM params', () => {
