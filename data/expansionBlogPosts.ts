@@ -3162,4 +3162,179 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. Tell KindKey what was built and what you know. You can say no.',
   }),
+  post('sell-fire-damaged-house-silverdale-wa', {
+    breadcrumbName: 'Fire damage in Silverdale',
+    title: 'Selling a Fire-Damaged House in Silverdale, WA',
+    description:
+      'How Silverdale owners sell a fire-damaged or smoke-damaged house as-is. Central Kitsap Fire and Rescue responds. Kitsap County issues permits. KindKey buys as a principal. Not insurance advice.',
+    h1: 'Selling a Fire-Damaged House in Silverdale, WA',
+    publishedAt: '2026-11-04',
+    intro: [
+      `You can sell a fire-damaged house in Silverdale without rebuilding the kitchen, replacing smoke-stained drywall, boarding the windows, or waiting for an insurance check. ${office}`,
+      'Silverdale is an unincorporated community in Central Kitsap. There is no City of Silverdale and no city hall. Old Town, the Bucklin Hill and Kitsap Mall area, Ridgetop, and Clear Creek are local names. Dyes Inlet is the water. Kitsap County is the permit office. If the burned house is in Edgewood, this is the wrong page. Edgewood is a city in Pierce County. Use the Edgewood fire guide and the Edgewood city page for that parcel.',
+    ],
+    callout:
+      'You do not have to rebuild, pull a permit, or wait for the insurance check before you ask. KindKey is not the fire department and does not give insurance advice. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'The short answer for a Silverdale fire',
+        paragraphs: [
+          'A retail buyer with a mortgage often cannot close on a house with open fire damage, a tarp on the roof, or smoke in the ducts. The lender, the appraiser, and the inspector each get a turn, and any one of them can stall the file. A direct sale skips that loop. KindKey looks at the house the way the fire left it, prices that condition, and does not need a lender to approve the damage.',
+          'That does not hide the fire, and it does not settle the insurance claim. Tell KindKey what burned, whether anyone can safely go inside, and whether a county letter or a trustee’s notice is sitting with the photos. If you do not know who has authority to sign, say that too. KindKey will not guess.',
+        ],
+      },
+      {
+        heading: 'Central Kitsap Fire and Rescue is the department on a Silverdale call',
+        paragraphs: [
+          'Central Kitsap Fire and Rescue publishes the Silverdale stations. Its stations page lists Station 51 at 10955 Silverdale Way NW, Silverdale, WA 98383, and Station 52, labeled Olympic View, at 5328 NW Anderson Hill Rd NW, Silverdale, WA 98383. The administration building is at 5300 NW Newberry Hill Road, Suite 101, Silverdale, WA 98383. The contact page publishes the main line (360) 447-3550 and lobby hours of 8:00 a.m. to 3:30 p.m. That page says questions about fire codes go to the Kitsap County Fire Marshal’s office. KindKey is not Central Kitsap Fire and Rescue and does not interpret a run report.',
+          'There is no city limit to confuse with the mailing city, because Silverdale is not a city. A Bremerton mailing address is a different problem. Central Kitsap Fire and Rescue’s stations page lists stations that use a Bremerton or Seabeck mailing address, including Station 53 at 15543 Seabeck Hwy NW, Seabeck, WA 98380, and a Chico station it marks under construction at 4065 Chico Way, Bremerton, WA 98312. The Bremerton Fire Department is a city department. The Kitsap vacant-house guide notes that department’s published headquarters at Station 1, 911 Park Avenue. KindKey will not draw a fire-district line from the city printed on the mailbox. Read who responded, and read the header on any letter that followed.',
+          'Port Orchard, Poulsbo, and Bainbridge Island are other cities with their own maps. Kingston, Olalla, and Seabeck are unincorporated, and they are not Silverdale. Gig Harbor is in Pierce County. Edgewood is covered by East Pierce Fire & Rescue, not by Central Kitsap Fire and Rescue. East Pierce’s 2022 standards of cover list Station 118 at 10105 24th Street E in Edgewood. Do not use this page for an Edgewood fire. The King and Pierce County fire guide is the page for a house on that side of the water, including Auburn, where KindKey’s office is.',
+        ],
+      },
+      {
+        heading: 'The house can transfer in the condition the fire left',
+        paragraphs: [
+          'An older house near Old Town or Clear Creek, a house on the ridge in Ridgetop, and a house nearer Bucklin Hill are different buildings. A kitchen fire, a garage fire, smoke pulled through the ducts, a boarded window, and a fire that stayed in a shop are all conditions KindKey will look at. You do not need a contractor’s bid, a cleared certificate of occupancy, or a clean-out before you ask. Furniture and belongings you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to.',
+          'Some older and outlying Silverdale lots use a septic system. Some are on public sewer. The name Silverdale does not decide which, and water from putting the fire out does not make KindKey the health department. On-site sewage questions in Kitsap County go to the Kitsap Public Health District at 345 6th Street, Suite 300, Bremerton, WA 98337, phone (360) 728-2235. You do not have to pump, repair, or certify a system before an offer. KindKey does not inspect or certify a septic system or a well. The Kitsap septic guide is the longer page for that question.',
+          'If a floor or a roof is not safe to walk, say so. Photos of the room where the fire started, the roof, and any posting are enough to start. An exterior look can begin the conversation. Do not go inside a structure that is not safe just so a buyer can see it. KindKey will not ask you to.',
+        ],
+      },
+      {
+        heading: 'Permits and a county letter are a different clock from the sale',
+        paragraphs: [
+          'A rebuild permit for a Silverdale house goes through the Kitsap County Department of Community Development, at 619 Division Street, 2nd Floor, Port Orchard, WA 98366. The department publishes (360) 337-5777 and help@kitsap1.com. Its contact page lists lobby hours of Monday through Friday, 9 a.m. to noon, and says Friday is limited service, without reviewers. The mailing address that page lists is 619 Division Street, MS-36. The Kitsap County Fire Marshal’s office publishes the same street address and the same phone. There is no Silverdale permit counter. KindKey will not pull the permit, meet a reviewer, or attend for you. You do not need a reconstruction permit before KindKey looks. If you want to rebuild and keep the house, that counter is the county’s, not ours.',
+          'A fire can also produce a nuisance or dangerous-structure letter. The Kitsap vacant-house guide walks through chapter 9.56 of the Kitsap County Code, which describes dangerous structures as including a dangerous, decaying, unkempt, falling, or damaged dwelling. KindKey will not decide whether that chapter applies, will not count a deadline, and will not appear at a hearing. If the paper has a hearing, a fine, or an order, talk with a Washington attorney before you rely on a sale to solve it. This article is not legal advice. You do not have to board the house or finish the county’s list before you ask for an offer. The county still controls its case until it says otherwise. The Silverdale code-violations page is the local page for an open case. Deeds for a Kitsap house record with the Kitsap County Auditor in Port Orchard, not with the Pierce County Auditor and not at KindKey’s office in Auburn. The closing agent confirms the parcel.',
+        ],
+      },
+      {
+        heading: 'Insurance, a foreclosure date, or a death in the family',
+        paragraphs: [
+          'Your insurer is your relationship. You can ask KindKey for an offer while a claim is open, paused, or already settled. KindKey will not tell you whether to wait for the check, how to assign the proceeds, or what the policy requires while the house sits empty. Talk with your insurer. If the paperwork is unclear, talk with a Washington attorney.',
+          'If a trustee’s notice arrived with the fire, you have two clocks. Asking for an offer does not postpone the trustee. Read the Kitsap foreclosure guide, and talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. KindKey will not take a deed outside escrow.',
+          'If the owner died, the person who can sign is a probate question, whether the fire came before the death or after it. KindKey will not file the probate and will not guess which relative can sign. A decedent who lived in Silverdale lived in Kitsap County. The superior court sits in Port Orchard. Ask a Washington attorney before anyone signs a deed. The Bremerton and Kitsap probate guide is the signature page for that county, and the Silverdale inherited-house page is the local one. If the estate is also under financial pressure, ask that attorney about RCW 61.34. KindKey does not interpret it. You can request an offer while the attorney finishes the authority question. Do not sign before that authority exists.',
+          'If someone still lives in the house, say so. Do not force that person out so the house looks empty. A tenant’s rights come from the rental agreement and from Washington law, including chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that a sale cancels a lease. The Silverdale tenants page is the local page.',
+        ],
+      },
+      {
+        heading: 'A direct sale, a rebuild, or a listing',
+        paragraphs: [
+          `Rebuilding can fit if you want to keep the house and you can fund the work. A listing can fit after the house is safe to show. Hire a licensed broker in Kitsap County for that listing. KindKey will not run it and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. ${closing}`,
+          'The sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The ferry and the Tacoma Narrows do not add a repair requirement. KindKey does not promise a specific number of days. Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a code fine, or a lien. The offer reflects the house as it sits, so it can be less than a retail price for a repaired house. You see the payoffs on the settlement statement, prepared by the closing agent, before you close. You can say no.',
+          'An Edgewood fire is a different county, a different fire district, and a different permit counter. Edgewood City Hall is at 10440 Dom Calata Way E. The city’s published permit line is (253) 952-3299. Do not take a Kitsap County permit question there, and do not take an Edgewood letter to the Port Orchard counter. KindKey buys houses in both places. Say which address you want to sell.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell my Silverdale house before the insurance claim is paid?',
+        answer:
+          'Yes. You can ask KindKey for a cash offer while a claim is open, paused, or already settled. KindKey does not advise you on the claim. Talk with your insurer, and with a Washington attorney if you are assigning claim rights. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Do I need a Kitsap County rebuild permit before KindKey will look?',
+        answer:
+          'No. You do not have to pull a reconstruction permit, finish repairs, or clear a certificate of occupancy first. If you choose to rebuild, permits go through the Kitsap County Department of Community Development at 619 Division Street in Port Orchard, phone (360) 337-5777. KindKey will not pull that permit for you.',
+      },
+      {
+        question: 'Is a Silverdale fire a Bremerton Fire Department call?',
+        answer:
+          'Silverdale is unincorporated. Central Kitsap Fire and Rescue publishes Station 51 at 10955 Silverdale Way NW and Station 52 at 5328 NW Anderson Hill Rd NW, both in Silverdale. A Bremerton mailing address is not automatically the city fire department. KindKey will not draw the boundary. Read who responded.',
+      },
+      {
+        question: 'The burned house is in Edgewood. Is this the right page?',
+        answer:
+          'No. Edgewood is entirely in Pierce County, and East Pierce Fire & Rescue covers that city. Use the Edgewood fire guide and the Edgewood city page. KindKey still buys Edgewood houses. Call (206) 519-5463 or use the cash-offer form with that address.',
+      },
+      {
+        question: 'What if the house is also in foreclosure, or the owner has died?',
+        answer:
+          'Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute, will not file a probate, and will not stop a trustee. You can still request a cash offer while you get that advice. You can say no.',
+      },
+      {
+        question: 'Is KindKey a real estate agent?',
+        answer:
+          'No. KindKey Home Buyers LLC buys houses directly as a principal. It does not list houses or represent sellers.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/silverdale',
+        label: 'Sell a house in Silverdale',
+        description: 'Unincorporated Central Kitsap. Old Town, Ridgetop, and Clear Creek.',
+      },
+      {
+        href: '/areas/silverdale/sell-house-as-is',
+        label: 'Sell a Silverdale house as-is',
+        description: 'The direct-sale page for this community.',
+      },
+      {
+        href: '/areas/silverdale/sell-vacant-house',
+        label: 'Sell a vacant house in Silverdale',
+        description: 'Many fire-damaged houses are empty.',
+      },
+      {
+        href: '/areas/silverdale/sell-house-with-code-violations',
+        label: 'Code violations in Silverdale',
+        description: 'When Kitsap County has already opened a case.',
+      },
+      {
+        href: '/areas/silverdale/sell-inherited-probate-house',
+        label: 'Inherited houses in Silverdale',
+        description: 'When the person who can sign is a probate question.',
+      },
+      {
+        href: '/areas/silverdale/sell-house-with-tenants',
+        label: 'Tenants in Silverdale',
+        description: 'If someone still lives in the house.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The Washington overview.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-kitsap-county',
+        label: 'Vacant houses in Kitsap County',
+        description: 'The county nuisance rules, including damaged dwellings.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-kitsap-county',
+        label: 'Foreclosure in Kitsap County',
+        description: 'When a trustee’s date is in the file too.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-bremerton',
+        label: 'Probate in Bremerton and Kitsap County',
+        description: 'The court sits in Port Orchard. Ask an attorney who can sign.',
+      },
+      {
+        href: '/areas/edgewood/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house in Edgewood',
+        description: 'Pierce County. A different fire district.',
+      },
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, and the valley. Not Silverdale.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-edgewood-wa',
+        label: 'Fire damage in Edgewood',
+        description: 'East Pierce Fire & Rescue, not Central Kitsap.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-king-pierce-county',
+        label: 'Fire damage in King or Pierce County',
+        description: 'The guide for the other side of the water.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what burned. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for a Silverdale offer on the fire-damaged house',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to finish the insurance repair first. You can say no.',
+  }),
 ];
