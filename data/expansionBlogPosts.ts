@@ -3337,4 +3337,192 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to finish the insurance repair first. You can say no.',
   }),
+  post('sell-house-with-code-violations-poulsbo-wa', {
+    breadcrumbName: 'Code violations in Poulsbo',
+    title: 'Selling a House with Code Violations in Poulsbo, WA',
+    description:
+      'How Poulsbo owners sell a house with an open city notice, unpermitted work, or a junk-vehicle letter without finishing the list first. KindKey buys as-is. Not legal advice.',
+    h1: 'Selling a House with Code Violations in Poulsbo, WA',
+    publishedAt: '2026-11-05',
+    intro: [
+      'You can sell a house with open code violations in Poulsbo without finishing the city’s list, permitting the work, or hauling the yard away first. KindKey Home Buyers LLC buys that house as a principal. ' +
+        office,
+      'Poulsbo is an incorporated city in North Kitsap, on Liberty Bay. Downtown along Front Street, the Viking Avenue corridor, Noll Road, and Olhava are not the same house. A 98370 mailing address is not proof the parcel is inside the city. Kingston, Keyport, and Port Gamble are not Poulsbo. If the house is in Edgewood, this is the wrong page. Edgewood is a city in Pierce County. Use the Edgewood code guide and the Edgewood city page for that parcel.',
+    ],
+    callout:
+      'You do not have to fix the violations, pull a permit, or clear the yard before you ask. KindKey is not code enforcement and will not appear at a hearing. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'The short answer for a Poulsbo notice',
+        paragraphs: [
+          'A retail buyer with a mortgage often stalls when a permit is open, a structure is posted, or a fine is still accruing. The lender, the appraiser, and the inspector each get a turn, and any one of them can ask for the work to be cured before closing. A direct sale skips that loop. KindKey looks at the house the way it sits, prices the open file with the condition, and does not need a lender to approve the work.',
+          'That does not close the city’s case, and it does not hide the work. Tell KindKey what the letter says, which desk wrote it, and whether anyone can safely go inside. If you do not know, say so. Photos of the notice and of the yard, the addition, or the vehicles are enough to start. If a floor or a shop roof is not safe to walk, say that too. An exterior look can begin the conversation.',
+        ],
+      },
+      {
+        heading: 'A 98370 address is not always a City of Poulsbo letter',
+        paragraphs: [
+          'The city’s planning page says the 98370 zip code extends beyond the city limits, and it tells you to confirm the parcel before you assume you are inside the city. If the parcel is outside the limits, that page points you to the Kitsap County Department of Community Development, not to Poulsbo City Hall. KindKey will not run the parcel search and will not tell you the city from a street name. Read the header on the letter you actually received.',
+          'Inside the city, a building or nuisance letter is the City of Poulsbo’s. City Hall is at 200 NE Moe Street, Poulsbo, WA 98370. The city’s code-enforcement page says that work sits in both the Planning and Economic Development Department and the Police Department, and that cases start from complaints. The complaints that page lists include public nuisances, junk vehicles, sign violations, illegal clearing or dumping, critical area destruction, work without a permit, and unapproved businesses. Neighborhood items such as a pothole, graffiti, a sidewalk, or litter are a different form. That page points those to SeeClickFix. Other complaints go to Public Works, by email at publicworks@cityofpoulsbo.com or by mail to 200 NE Moe Street. The contact page publishes the Public Works shop at 22097 Viking Ave NW, Poulsbo, WA 98370, phone (360) 779-4078. The police department publishes (360) 779-3113 at the Moe Street address. The same code-enforcement page says life-threatening emergencies and after-hours noise complaints go to 911. KindKey is none of those offices.',
+          'Kingston and the Kingston ferry are nearby and are not the city. A letter for Kingston, Olalla, Seabeck, or another unincorporated place is a Kitsap County letter. Silverdale is unincorporated and has no city hall. Bainbridge Island is its own city. Bremerton and Port Orchard each have their own code. Do not use a Poulsbo explanation for one of those headers, or the reverse. The Port Orchard code guide covers that city’s letter. The Kitsap vacant-house guide is the page that separates Port Orchard, Bremerton, Poulsbo, and the county.',
+        ],
+      },
+      {
+        heading: 'What Poulsbo’s nuisance chapter is listing',
+        paragraphs: [
+          'PMC 9.50 is the city’s nuisance chapter. PMC 9.50.040 says it is a violation to permit, create, maintain, or allow, on any premises, anything PMC 9.50.050 declares a public nuisance. The opening of PMC 9.50.050 says each listed condition, unless otherwise permitted by law, is a public nuisance, and that when the enforcement officer determines one exists, the officer may provide for abatement and monetary penalties may be assessed under PMC 9.50.070. KindKey will not decide that your house meets any letter in that section.',
+          'The papers owners usually have are practical. PMC 9.50.050(A) covers accumulations that can be seen or smelled from outside the property, including building materials, mattresses, and other items that subsection lists when they are not properly stored or neatly piled. PMC 9.50.050(C) covers wrecked or disassembled trailers, house trailers, boats, tractors, or other vehicles, appliances, or machinery, or major parts of them. PMC 9.50.010 defines nuisance vegetation to include plants that overhang a sidewalk below eight feet or a street below sixteen feet. The same definition includes grass and weeds exceeding twelve inches, except in areas maintained for domestic livestock, and it includes blackberry vines and dead, decayed, diseased, or hazardous trees. PMC 9.50.050(I) lists that vegetation as a nuisance. PMC 9.50.050(M) lists buildings or structures that are abandoned, partially destroyed, or left in partial construction or partial demolition so as to be an attractive nuisance. PMC 9.50.050(N) lists the failure to close and secure doorways, windows, and other openings into a vacant structure, including broken windows. PMC 9.50.050(P) lists unprotected or hazardous foundations and excavations. A stalled addition, an open house, and a pile of roofing are different facts. KindKey will not pick the subsection for you.',
+          'PMC 9.50.010 also says that each owner is always a responsible party for that chapter, even if someone else agreed to maintain the property. A tenant, a relative, or a property manager on the letter does not, by itself, take the owner off the chapter. KindKey will not tell you who the city can cite. PMC 9.50.070(A) says a violation is a civil infraction for which a monetary penalty of two hundred fifty dollars may be assessed, in accordance with chapter 1.16 PMC, and that abatement may be required. It also says each day the violation exists is a separate offense. KindKey will not multiply that figure, predict what the municipal court will assess, or tell you the count stopped because you requested an offer. PMC 9.50.080 says costs the city incurs abating the nuisance are a debt owed by the responsible party and are enforceable as a lien against the property, in addition to other remedies for debts. KindKey does not promise that a Poulsbo fine or abatement cost disappears when you sign. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement, prepared by the closing agent, is where you see them.',
+        ],
+      },
+      {
+        heading: 'A junk vehicle and a missing permit are different desks',
+        paragraphs: [
+          'Junk vehicles have their own chapter. PMC 10.18.030 says storing or keeping an unauthorized junk motor vehicle, as defined in RCW 46.55.010(5), on private property is prohibited and is a public nuisance subject to removal and impoundment. KindKey will not decide whether a car, a boat trailer, or a pile of parts meets that definition. The same section says the enforcement officer, using the definition in PMC 9.50.010, may investigate a complaint and may issue a written notice of violation to the last registered owner of record and to the property owner of record. It says that notice includes a statement that a hearing may be requested before the municipal court of the City of Poulsbo, and that if no hearing is requested within ten days, the vehicle will be removed and any assessed penalties will be final. KindKey will not count those ten days, request the hearing, or tell you to skip it. The city’s contact page publishes the municipal court at (360) 779-9846. If the paper has a hearing, a tow date, or a penalty you do not understand, talk with a Washington attorney before you rely on a sale to solve it. This article is not legal advice. You do not have to move the vehicles before KindKey looks.',
+          'Work without a permit is on the city’s complaint list, and the permit counter is the building department, on the second floor of City Hall at 200 NE Moe Street, Poulsbo, WA 98370-7437. That department publishes (360) 394-9882. Its page says scheduled inspections run Monday, Tuesday, Wednesday, and Friday, and that Thursdays are reserved for plan review until further notice. The same page says the 2021 Washington State Building Codes went into effect on March 15, 2024, and that electronic building permit submittals started January 1, 2026. Planning and Economic Development publishes (360) 394-9748 in the same building. You do not need a permit, a final inspection, or a visit to that counter before KindKey will look. If you choose to legalize an addition, a garage conversion, or a deck and keep the house, that counter is the city’s. KindKey will not pull the permit or meet the inspector for you.',
+          'A septic or well letter is a third file. On-site sewage in Kitsap County goes to the Kitsap Public Health District at 345 6th Street, Suite 300, Bremerton, WA 98337, phone (360) 728-2235. Some edge lots use septic or a well. Houses closer to downtown are often on city utilities. The name Poulsbo does not decide which. The city’s contact page lists garbage, sewer, and water questions at (360) 779-4078. That number is not the health district. You do not have to pump, repair, or certify a system before an offer. KindKey does not inspect or certify a septic system or a well. The Kitsap septic guide is the longer page for that letter.',
+        ],
+      },
+      {
+        heading: 'The notice stays yours until the deed records',
+        paragraphs: [
+          'Requesting an offer does not close the case, pause a penalty, or vacate an order. Until the deed records, deadlines on the notice are still yours. Do not skip a hearing because a buyer is walking the house. KindKey will not appear, will not negotiate the citation, and will not clear it as your representative. After recording, the house is KindKey’s to deal with, including repairs and any permits KindKey chooses to pull on its own property. That is not a promise about what an enforcement officer, the municipal court, or an inspector will do.',
+          'Deeds for a Poulsbo house record with the Kitsap County Auditor in Port Orchard, not at Poulsbo City Hall and not at KindKey’s office in Auburn. The auditor’s mailing address is 614 Division St., MS-31, Port Orchard, WA 98366. The physical address the auditor publishes is 619 Division St., Port Orchard, WA 98366. Recording’s published phone is (360) 337-4935. The auditor does not close a code case. An Edgewood deed records in Pierce County. Do not take a Poulsbo letter to the Pierce County Auditor in Tacoma because the buyer is based in Auburn. The closing agent confirms the parcel.',
+          'If a trustee’s notice is in the same stack as the city letter, you have two clocks. Asking for an offer does not postpone the trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. The Kitsap foreclosure guide is the page for a notice recorded in Port Orchard. An Edgewood foreclosure is a Pierce County file. Use the Edgewood foreclosure guide for that house, not this page.',
+          'If the owner has died, the person who can sign is a probate question, separate from the code letter. A person who lived in Poulsbo lived in Kitsap County. The superior court sits in Port Orchard, not in Poulsbo City Hall and not in Tacoma. KindKey will not file the probate and will not guess which relative can sign. The Bremerton and Kitsap probate guide is the signature page, and the Poulsbo inherited-house page is the local one. You can ask for an offer while the attorney finishes that question. Do not sign a deed before the authority exists. If someone still lives in the house, say so. A tenant’s rights come from the rental agreement and from Washington law, including chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that a sale cancels a lease. Do not force an occupant out so the yard looks empty. The Poulsbo tenants page is the local page.',
+        ],
+      },
+      {
+        heading: 'Cure the notice, list the house, or sell it as it is',
+        paragraphs: [
+          'Curing a small yard notice can be the right choice if you want to keep the house and the work is actually small. It is a poor fit when the letter requires a tear-out, a permit for a conversion, or a clean-out you cannot staff from King County or Pierce County. A listing still means showings and buyers who may ask for the violation to be cured before they close. Washington’s seller disclosure law is chapter 64.06 RCW. The form asks about work and permits. KindKey will not tell you how to answer it or whether an exemption applies. Ask a Washington real estate attorney if you are unsure. Hire a licensed broker in Kitsap County if you want the listing. KindKey will not run it and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts.',
+          `The sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The ferry and the drive up the peninsula do not add a repair requirement. KindKey does not promise a specific number of days. ${closing} Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a code fine, or a lien. The offer reflects the house as it sits, so it can be less than a retail price for a violation-free house. You see the payoffs on the settlement statement before you close. You can say no.`,
+          'Edgewood is a different county and a different code. Do not use PMC 9.50 on a North Hill house, and do not use Edgewood’s code on a Liberty Bay house. Edgewood City Hall is at 10440 Dom Calata Way E. The city’s published permit line is (253) 952-3299. Most Edgewood residents live on North Hill, with Jovita Boulevard and Meridian Avenue E as the everyday roads. East Pierce Fire & Rescue covers that city. Poulsbo Fire Department publishes its address at 911 NE Liberty Rd., Poulsbo, WA 98370, phone (360) 779-3997, and its site says it provides fire suppression to Poulsbo, Keyport, Port Gamble, and surrounding unincorporated communities. KindKey is not that department and does not interpret a run report. A fire can produce the nuisance letter. The fire-damaged-house page is the overview. If the burned house is in Edgewood, use the Edgewood fire guide. KindKey buys houses in both places. Say which address you want to sell.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell my Poulsbo house before the code case is closed?',
+        answer:
+          'Yes. KindKey buys Poulsbo houses with an open notice and does not require you to finish the city’s list first. The city still controls the case until it says otherwise. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Is every 98370 address a City of Poulsbo code case?',
+        answer:
+          'No. The city’s planning page says the 98370 zip code extends beyond the city limits. Kingston is not Poulsbo. If the parcel is outside the city, the letter is not automatically a Poulsbo letter. Read the header. KindKey will not decide the boundary for you.',
+      },
+      {
+        question: 'Do I have to move junk vehicles or permit the work before KindKey will look?',
+        answer:
+          'No. You do not have to tow vehicles, pull a building permit, or clear the yard first. Tell KindKey what the notice says. If the notice gives a hearing date, talk with a Washington attorney. KindKey will not appear at the hearing.',
+      },
+      {
+        question: 'Does the two-hundred-fifty-dollar penalty disappear when I sell?',
+        answer:
+          'Do not assume that. PMC 9.50.070(A) says a penalty of two hundred fifty dollars may be assessed and that each day can be a separate offense. PMC 9.50.080 says abatement costs can be a lien. Amounts that must be paid show on the settlement statement. KindKey does not negotiate the citation.',
+      },
+      {
+        question:
+          'What if a foreclosure notice arrived with the city letter, or the owner has died?',
+        answer:
+          'Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute, will not stop a trustee, and will not file a probate. You can still request a cash offer while you get that advice. You can say no.',
+      },
+      {
+        question: 'Is KindKey a real estate agent?',
+        answer:
+          'No. KindKey Home Buyers LLC buys houses directly as a principal. It does not list houses or represent sellers.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/poulsbo/sell-house-with-code-violations',
+        label: 'Code violations in Poulsbo',
+        description: 'The Poulsbo code page.',
+      },
+      {
+        href: '/areas/poulsbo',
+        label: 'Sell a house in Poulsbo',
+        description: 'Liberty Bay, Front Street, Viking Avenue, and Noll Road.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'The Washington overview.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'Condition does not have to be repaired first.',
+      },
+      {
+        href: '/areas/poulsbo/sell-house-as-is',
+        label: 'Sell a Poulsbo house as-is',
+        description: 'The direct-sale page for this city.',
+      },
+      {
+        href: '/areas/poulsbo/sell-vacant-house',
+        label: 'Sell a vacant house in Poulsbo',
+        description: 'When the notice is about an empty house.',
+      },
+      {
+        href: '/areas/poulsbo/sell-house-with-tenants',
+        label: 'Tenants in Poulsbo',
+        description: 'If someone still lives in the house.',
+      },
+      {
+        href: '/areas/poulsbo/sell-inherited-probate-house',
+        label: 'Inherited houses in Poulsbo',
+        description: 'When the person who can sign is a probate question.',
+      },
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'Pierce County. North Hill, Jovita, and the valley. Not Poulsbo.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'A different city and a different code.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-edgewood-wa',
+        label: 'Edgewood code-violation guide',
+        description: 'The Edgewood guide, including unpermitted shops.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-port-orchard',
+        label: 'Code violations in Port Orchard',
+        description: 'Kitsap County seat. A different city’s letter.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-kitsap-county',
+        label: 'Vacant houses in Kitsap County',
+        description: 'How Poulsbo, Bremerton, Port Orchard, and the county differ.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-kitsap-county',
+        label: 'Foreclosure in Kitsap County',
+        description: 'When a trustee’s date is in the file too.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-kitsap-county',
+        label: 'Septic or well issues in Kitsap County',
+        description: 'When the letter is from the health district.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'Pierce County. A different recorder.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what the letter says. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for a Poulsbo offer while the notice is open',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to finish the city’s list first. You can say no.',
+  }),
 ];
