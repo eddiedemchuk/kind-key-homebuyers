@@ -171,6 +171,8 @@ export default function OfferLanding({
   steppedForm = false,
   compactForm = false,
   stickyPhone,
+  lockHeadline = false,
+  trustStrip,
 }: {
   content: OfferLandingContent;
   formOrigin: FormOrigin;
@@ -192,6 +194,10 @@ export default function OfferLanding({
   steppedForm?: boolean;
   /** Four-field /offer form: address, listing answer, name, and phone. */
   compactForm?: boolean;
+  /** Keep the server headline. Foreclosure ads must not become the generic city line. */
+  lockHeadline?: boolean;
+  /** Short claims under the headline. Replaces the single BBB line when set. */
+  trustStrip?: readonly string[];
 }) {
   const address = `${BUSINESS.streetAddress}, ${BUSINESS.addressLocality}, ${BUSINESS.addressRegion} ${BUSINESS.postalCode}`;
 
@@ -241,7 +247,7 @@ export default function OfferLanding({
             style={{ marginBottom: 0 }}
             data-offer-headline
           >
-            <OfferCityHeadline headline={content.headline} />
+            <OfferCityHeadline headline={content.headline} lockHeadline={lockHeadline} />
           </h1>
           <p className="mt-0.5 text-lg font-bold leading-tight" data-offer-speed>
             Get your cash offer within 24 hours
@@ -249,9 +255,26 @@ export default function OfferLanding({
           <p className="mt-1 text-base leading-snug text-text-secondary md:mt-2">
             {content.subhead}
           </p>
-          <p className="mt-1 inline-flex items-center rounded-full border-2 border-divider bg-secondary px-4 py-1 text-sm font-bold text-text-primary md:mt-4 md:py-2">
-            {BBB_TRUST_LINE}
-          </p>
+          {trustStrip && trustStrip.length > 0 ? (
+            <ul
+              className="mt-3 grid grid-cols-2 gap-2"
+              aria-label="Why ask for an offer"
+              data-offer-trust-strip
+            >
+              {trustStrip.map((item) => (
+                <li
+                  key={item}
+                  className="rounded-md border border-gray-200 bg-secondary px-2 py-1.5 text-center text-xs font-semibold leading-tight"
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="mt-1 inline-flex items-center rounded-full border-2 border-divider bg-secondary px-4 py-1 text-sm font-bold text-text-primary md:mt-4 md:py-2">
+              {BBB_TRUST_LINE}
+            </p>
+          )}
           <div
             data-offer-form
             className="mt-0 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-3 shadow-sm md:mt-6 md:scroll-mt-20 md:p-4"

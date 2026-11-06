@@ -4,10 +4,12 @@ import { createElement, type ReactElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import OfferGeneralLanding from './OfferGeneralLanding';
 import OfferLanding from './OfferLanding';
+import ForeclosureOfferPage from '../app/(public)/offer/foreclosure/page';
 import {
   asIsOffer,
   fireDamageOffer,
   foreclosureOffer,
+  foreclosureTrustStrip,
   inheritedOffer,
 } from '../data/offerLandings';
 import { GOOGLE_ADS_PHONE } from '../lib/phones';
@@ -38,6 +40,8 @@ describe('trimmed /offer landing', () => {
     assert.equal(html.includes('type="email"'), false);
     assert.equal(html.includes('sms_consent'), false);
     assert.equal(html.includes('we pay closing costs'), false);
+    assert.equal(html.includes('Bought 100+ homes'), true);
+    assert.equal(html.toLowerCase().includes('hundreds'), false);
     assert.equal(bar.includes(`tel:${GOOGLE_ADS_PHONE.tel}`), true);
     assert.equal(bar.includes('Call (253) 352-4379'), true);
     assert.equal(html.includes(MAIN_OFFICE_TEL), false);
@@ -72,6 +76,64 @@ describe('trimmed /offer landing', () => {
       assert.equal(bar.includes('Call (253) 352-4379'), true, content.formOrigin);
       assert.equal(html.includes(MAIN_OFFICE_TEL), false, content.formOrigin);
       assert.equal(html.includes(ORGANIC_DISPLAY), false, content.formOrigin);
+      assert.equal(html.toLowerCase().includes('hundreds'), false, content.formOrigin);
+      assert.equal(html.toLowerCase().includes('we pay closing costs'), false, content.formOrigin);
     }
+  });
+
+  it('replaces the hundreds claim on the as-is offer page', () => {
+    const html = renderToStaticMarkup(
+      createElement(OfferLanding, {
+        content: asIsOffer,
+        formOrigin: asIsOffer.formOrigin,
+      }) as ReactElement
+    );
+
+    assert.equal(html.includes('Bought 100+ homes'), true);
+    assert.equal(html.toLowerCase().includes('hundreds'), false);
+  });
+});
+
+describe('foreclosure offer landing', () => {
+  it('leads with stopping foreclosure, a short trust strip, and lazy images', async () => {
+    const page = await ForeclosureOfferPage({ searchParams: Promise.resolve({}) });
+    const html = renderToStaticMarkup(page as ReactElement);
+    const bar = stickyBar(html);
+
+    assert.match(html, /Stop foreclosure\. Sell your house before the sale/);
+    assert.match(html, /Asking does not stop the foreclosure/);
+    assert.equal(html.includes('data-offer-trust-strip'), true);
+    for (const item of foreclosureTrustStrip) {
+      assert.equal(html.includes(item), true, item);
+    }
+    assert.equal(html.toLowerCase().includes('hundreds'), false);
+    assert.equal(html.toLowerCase().includes('we pay closing costs'), false);
+    assert.equal(html.includes('name="name"'), true);
+    assert.equal(html.includes('name="phone"'), true);
+    assert.equal(html.includes('name="email"'), true);
+    assert.equal(html.includes('name="propertyAddress"'), true);
+    assert.equal(html.includes('name="listed_with_agent"'), true);
+    assert.equal(html.includes('sms_consent'), true);
+    assert.equal(bar.includes('Call (253) 352-4379'), true);
+    assert.equal(bar.includes(`tel:${GOOGLE_ADS_PHONE.tel}`), true);
+    const images = [...html.matchAll(/<img\b[^>]*>/g)].map((match) => match[0]);
+    const houses = images.filter((tag) => tag.includes('/houses/house-'));
+    assert.equal(houses.length, 5);
+    for (const tag of houses) {
+      assert.match(tag, /loading="lazy"/);
+      assert.match(tag, /decoding="async"/);
+      assert.match(tag, / fetchpriority="low"/);
+      assert.equal(tag.includes('fetchPriority'), false);
+    }
+  });
+
+  it('keeps foreclosure in the headline when the ad names a city', async () => {
+    const page = await ForeclosureOfferPage({
+      searchParams: Promise.resolve({ utm_term: 'sell house tacoma' }),
+    });
+    const html = renderToStaticMarkup(page as ReactElement);
+
+    assert.match(html, /Stop foreclosure in Tacoma\. Sell your house before the sale/);
+    assert.equal(html.includes('We Buy Houses in Tacoma'), false);
   });
 });

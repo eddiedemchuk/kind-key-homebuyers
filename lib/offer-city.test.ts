@@ -1,6 +1,12 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { OFFER_CITIES, offerCityFromSearch, offerCityHeadline } from './offer-city';
+import {
+  OFFER_CITIES,
+  offerCityFromSearch,
+  offerCityHeadline,
+  offerDisplayedHeadline,
+  offerForeclosureHeadline,
+} from './offer-city';
 
 describe('offer city headline', () => {
   it('reads a city out of a keyword-style utm_term', () => {
@@ -42,6 +48,25 @@ describe('offer city headline', () => {
       assert.equal(offerCityFromSearch(`?keyword=${city.toLowerCase().replace(/ /g, '-')}`), city);
     }
     assert.equal(offerCityFromSearch('?utm_content=bremerton&utm_campaign=kent'), null);
+  });
+
+  it('keeps a foreclosure headline about selling before the sale', () => {
+    assert.equal(
+      offerForeclosureHeadline(null),
+      'Stop foreclosure. Sell your house before the sale'
+    );
+    assert.equal(
+      offerForeclosureHeadline('Tacoma'),
+      'Stop foreclosure in Tacoma. Sell your house before the sale'
+    );
+    assert.equal(
+      offerDisplayedHeadline(offerForeclosureHeadline('Tacoma'), '?utm_term=tacoma', true),
+      'Stop foreclosure in Tacoma. Sell your house before the sale'
+    );
+    assert.equal(
+      offerDisplayedHeadline('Sell your house as-is for cash', '?utm_term=tacoma'),
+      'We Buy Houses in Tacoma for Cash'
+    );
   });
 
   it('uses the city that appears first when a keyword names two', () => {

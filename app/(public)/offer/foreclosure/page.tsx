@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import OfferLanding from '@/components/OfferLanding';
-import { foreclosureOffer } from '@/data/offerLandings';
-import { offerPageHeadline } from '@/lib/offer-city';
+import { foreclosureOffer, foreclosureTrustStrip } from '@/data/offerLandings';
+import { offerCityFromParams, offerForeclosureHeadline } from '@/lib/offer-city';
 
 export const metadata: Metadata = {
   title: foreclosureOffer.title,
@@ -26,10 +26,12 @@ export default async function ForeclosureOfferPage({
     <OfferLanding
       content={{
         ...foreclosureOffer,
-        headline: offerPageHeadline(foreclosureOffer.headline, params),
+        headline: offerForeclosureHeadline(offerCityFromParams(params)),
       }}
       formOrigin={foreclosureOffer.formOrigin}
       showDistressNotes
+      lockHeadline
+      trustStrip={foreclosureTrustStrip}
     />
   );
 }

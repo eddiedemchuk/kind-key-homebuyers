@@ -53,8 +53,34 @@ export function offerPageHeadline(
   fallback: string,
   params: Record<string, string | string[] | undefined>
 ): string {
-  const city = offerCityFromSearch(offerCitySearchFromParams(params));
+  const city = offerCityFromParams(params);
   return city ? offerCityHeadline(city) : fallback;
+}
+
+export function offerCityFromParams(
+  params: Record<string, string | string[] | undefined>
+): OfferCity | null {
+  return offerCityFromSearch(offerCitySearchFromParams(params));
+}
+
+/** Foreclosure ads keep a foreclosure headline, including when the keyword names a city. */
+export function offerForeclosureHeadline(city: OfferCity | null): string {
+  if (!city) return 'Stop foreclosure. Sell your house before the sale';
+  return `Stop foreclosure in ${city}. Sell your house before the sale`;
+}
+
+/**
+ * Generic offer pages swap in a city headline. Locked headlines (foreclosure)
+ * stay as the server rendered them.
+ */
+export function offerDisplayedHeadline(
+  headline: string,
+  search: string,
+  lockHeadline = false
+): string {
+  if (lockHeadline) return headline;
+  const city = offerCityFromSearch(search);
+  return city ? offerCityHeadline(city) : headline;
 }
 
 function offerCitySearchFromParams(params: Record<string, string | string[] | undefined>): string {
