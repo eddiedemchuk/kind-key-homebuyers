@@ -46,7 +46,7 @@ export const generalOffer: OfferLandingContent = {
   cta: 'Get your no-obligation cash offer: takes 30 seconds',
   formOrigin: 'google_ads_landing',
   trustPoints: [
-    "We've bought hundreds of homes",
+    'Bought 100+ homes',
     'Any condition, no cleaning or repairs',
     'Local Auburn, WA company',
   ],
@@ -78,23 +78,31 @@ export const facebookEddieOffer: OfferLandingContent = {
   formOrigin: 'facebook_ads_eddie',
 };
 
+/** Short claims under the foreclosure headline. No extra stats or testimonials. */
+export const foreclosureTrustStrip = [
+  'BBB A- Rated',
+  'Bought 100+ homes',
+  'Close in as little as 7 days',
+  'No obligation offer',
+] as const;
+
 export const foreclosureOffer: OfferLandingContent = {
-  title: 'Sell Before the Auction for Cash',
+  title: 'Stop Foreclosure. Sell Your House Before the Sale',
   description:
-    'Behind on the mortgage in King or Pierce County? Request a cash offer and see if you can sell before the auction date. No repairs.',
-  headline: 'Sell before the auction for cash',
-  subhead: 'As-is, no repairs. Asking does not stop the auction.',
-  cta: 'Get a cash offer before the auction date',
+    'Sell a King or Pierce County house before foreclosure. Request a cash offer. No repairs. Asking does not stop the foreclosure.',
+  headline: 'Stop foreclosure. Sell your house before the sale',
+  subhead: 'As-is, no repairs. Asking does not stop the foreclosure.',
+  cta: 'Get a cash offer before the foreclosure sale',
   formOrigin: 'google_ads_foreclosure',
   trustPoints: [
     'No repairs before you sell',
-    'Tell us the auction date',
+    'Tell us the foreclosure sale date',
     'You choose the closing date',
   ],
   steps: [
     {
       title: 'Tell us the situation',
-      body: 'Share the address, your phone number, and the auction or sale date if you have one.',
+      body: 'Share the address, your phone number, and the foreclosure sale date if you have one.',
     },
     {
       title: 'Get a cash offer',
@@ -102,7 +110,7 @@ export const foreclosureOffer: OfferLandingContent = {
     },
     {
       title: 'Close on a date you pick',
-      body: 'You pick the date. We do not promise to stop the auction.',
+      body: 'You pick the date. We do not promise to stop the foreclosure.',
     },
   ],
   faqs: [
@@ -116,7 +124,7 @@ export const foreclosureOffer: OfferLandingContent = {
       answer: 'No. We buy houses as-is, including houses that need work.',
     },
     {
-      question: 'Will this stop the auction?',
+      question: 'Will this stop the foreclosure?',
       answer:
         'No. A cash offer is not a promise to stop a foreclosure or an auction. Tell us the date, and we will say whether a closing can be scheduled before it.',
     },
@@ -228,7 +236,7 @@ export const asIsOffer: OfferLandingContent = {
   subhead: 'Fire, water, mold, or major repairs. No fix-up first.',
   cta: 'Get a cash offer without making repairs',
   formOrigin: 'google_ads_as_is',
-  trustPoints: ['Any condition', 'No repairs required', "We've bought hundreds of homes"],
+  trustPoints: ['Any condition', 'No repairs required', 'Bought 100+ homes'],
   steps: [
     {
       title: 'Tell us the condition',

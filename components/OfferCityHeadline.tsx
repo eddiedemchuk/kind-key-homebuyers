@@ -1,16 +1,24 @@
 'use client';
 
 import { useLayoutEffect, useState } from 'react';
-import { offerCityFromSearch, offerCityHeadline } from '@/lib/offer-city';
+import { offerDisplayedHeadline } from '@/lib/offer-city';
 
 /** Default headline on the server. A whitelist city in the ad URL replaces it before paint. */
-export default function OfferCityHeadline({ headline }: { headline: string }) {
+export default function OfferCityHeadline({
+  headline,
+  lockHeadline = false,
+}: {
+  headline: string;
+  /** Keep the server headline. Foreclosure must stay about foreclosure. */
+  lockHeadline?: boolean;
+}) {
   const [text, setText] = useState(headline);
 
   useLayoutEffect(() => {
-    const city = offerCityFromSearch(window.location.search);
-    setText(city ? offerCityHeadline(city) : headline);
-  }, [headline]);
+    if (lockHeadline) return;
+    setText(offerDisplayedHeadline(headline, window.location.search));
+  }, [headline, lockHeadline]);
 
+  if (lockHeadline) return headline;
   return text;
 }
