@@ -10,7 +10,7 @@ import {
   writeStoredOfferFacebookVisit,
   type OfferFacebookVisit,
 } from '@/lib/offer-facebook-visit';
-import { FACEBOOK_ADS_PHONE, FACEBOOK_OFFER_PHONE, GOOGLE_ADS_PHONE } from '@/lib/phones';
+import { FACEBOOK_OFFER_PHONE, GOOGLE_ADS_PHONE } from '@/lib/phones';
 
 export default function OfferGeneralLanding({
   initialSearch,
@@ -51,7 +51,7 @@ export default function OfferGeneralLanding({
         formOrigin={facebook ? 'facebook_ads_eddie' : generalOffer.formOrigin}
         trackMetaLead={facebook}
         phone={facebook ? FACEBOOK_OFFER_PHONE : GOOGLE_ADS_PHONE}
-        stickyPhone={FACEBOOK_ADS_PHONE}
+        stickyPhone={GOOGLE_ADS_PHONE}
         src={facebook ? visit.src : undefined}
         showOfferMath
         showAgentComparison
