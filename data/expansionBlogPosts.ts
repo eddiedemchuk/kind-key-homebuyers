@@ -3525,4 +3525,224 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to finish the city’s list first. You can say no.',
   }),
+  post('sell-house-after-expired-listing-edgewood-wa', {
+    breadcrumbName: 'Expired listing in Edgewood',
+    title: 'Selling a House After an Expired Listing in Edgewood, WA',
+    description:
+      'How Edgewood owners sell after an MLS listing expired, was withdrawn, or sat with few or no offers. KindKey buys as-is as a principal. Not legal advice.',
+    h1: 'Selling a House After an Expired Listing in Edgewood, WA',
+    publishedAt: '2026-11-06',
+    intro: [
+      'You can sell an Edgewood house after the listing expired, was withdrawn, or sat with few or no offers, without relisting it, staging it, or hosting another round of showings. ' +
+        office +
+        ' KindKey will not list the house and will not take over a broker’s file.',
+      'Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. It incorporated on February 28, 1996. Most residents live on North Hill: longer driveways, and shops set back from the street. A smaller share of the city sits in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. A North Hill listing that expired after an inspection on the shop, a valley house that sat vacant, and a listing withdrawn because the occupants would not allow showings are different files. Bring the address.',
+    ],
+    callout:
+      'You do not have to relist, stage, cut the price again, or schedule more showings before you ask. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'Expired, withdrawn, and still sitting are not the same status',
+        paragraphs: [
+          'An expired listing is one whose marketing period ended. A withdrawn listing is one taken off the market before that period ended. A listing that is still up, after price cuts and few or no offers, is still an active file. KindKey will not look up the status, will not tell you which of those three you have, and will not cancel, extend, or rewrite the listing. The written listing agreement and the licensed broker who holds it are the source. If you are not sure whether that agreement still limits a sale, including after the public listing has ended, read it with that broker or with a Washington attorney before you sign a purchase contract. This article is not legal advice. Do not sign two conflicting contracts.',
+          'Requesting a cash offer does not, by itself, end a listing agreement. KindKey is not a broker and does not provide listing services. Pricing advice for a new public listing, open-house scheduling, and representation in a listed sale belong to a licensed broker you hire. If you want to try the market again, hire one. KindKey will not run that listing and will not tell you a second listing is a mistake. You can ask for a written number while you decide. Asking does not obligate a sale.',
+        ],
+      },
+      {
+        heading: 'Why an Edgewood listing stalls',
+        paragraphs: [
+          'A retail buyer with a mortgage often stalls on the same facts that made the first listing hard. On North Hill the inspector may write up a roof, shop wiring, a garage that was turned into a room, or a septic system the buyer’s lender will not finance. The appraiser may not count an unpermitted shop or a converted garage as living space, and the buyer may then ask for a price cut or walk. In the valley the issue is often a smaller house: a soft floor, standing water, or a repair the inspection report turned into a request. A price cut on the listing, and then another, is not a number KindKey will match. KindKey will not quote a percentage off the last list price. Anyone who does that without seeing the house is guessing. A direct sale skips the relisting loop. KindKey looks at the house the way it sits, prices the condition with the offer, and does not need a retail lender’s appraisal to close.',
+          'A vacant house is a common reason the showings dried up. Nobody local is home to reset the lights, the yard is visible from Meridian or Jovita, and the owner may already live in Puyallup, Sumner, Tacoma, or another state. You do not have to move back in, stage the rooms, or mow to a listing standard before KindKey looks. If a floor or a shop roof is not safe to walk, say so. An exterior look can begin the conversation. Take papers, photos, and what you want to keep. Leave the rest. The Edgewood vacant-house guide covers a city maintenance letter after everyone has left.',
+          'Tenants are a different stall. Showings depend on access the occupants will allow. A tenant’s rights come from the rental agreement and from Washington law, including chapter 59.18 RCW. KindKey will not serve a notice, will not schedule showings through the tenant, and will not tell you that a sale cancels a lease. Do not force an occupant out so the house looks empty for a second listing. Say who lives there. The Edgewood tenants guide is that page.',
+          'Many older North Hill and Jovita lots use a septic system, and some use a private well. Others are on public sewer and public water. The city name does not decide it, and a listing description that said “septic” is not an inspection. A buyer’s request for a pump, a certification, or a new drainfield is a reason some offers die. You do not have to pump the tank, locate the field, or replace it before a walkthrough. On-site sewage questions in Pierce County go to the Tacoma-Pierce County Health Department, not to KindKey. KindKey does not inspect, pump, or certify a septic system or a well. The Edgewood septic guide is that page.',
+        ],
+      },
+      {
+        heading: 'The shop, the permit file, and the county record',
+        paragraphs: [
+          'Acreage in Edgewood often includes a shop, a barn, or an RV cover set back from the street. A listing photo of the house does not describe the outbuilding. Tell KindKey which structure the inspector wrote up, and whether anyone can safely go inside. An unpermitted shop, a garage conversion, or an addition that never reached a final inspection is a reason a lender stalls. It is not a repair KindKey requires before an offer. If the project itself stopped with open walls, use the Edgewood stalled-remodel guide. If the shop was built years ago and never permitted, and nothing is underway now, use the Edgewood unpermitted-work guide. Inside the city, Community Development is at Edgewood City Hall, 10440 Dom Calata Way E, Edgewood, WA 98372. The permit line published by the city is (253) 952-3299. City Hall’s posted hours are Monday through Thursday, 8:30 a.m. to 5:00 p.m. That counter is for owners who choose to permit the work and try another listing. KindKey does not require the visit, will not pull the permit, and will not appear for an inspection.',
+          'The Pierce County Assessor-Treasurer parcel page shows the recorded building square footage and outbuildings. Comparing that page to what is actually on the lot is one way a listing’s square footage and an appraisal come apart. KindKey will not reconcile those two numbers for you and will not tell you the assessor is wrong. The Assessor-Treasurer’s office is at 2401 S 35th St, Room 142, Tacoma, WA 98409. The main phone number published for that office is (253) 798-6111. KindKey is not that office. A mailing address that says Edgewood is not always inside the city. Milton, next door, can fall in King County or Pierce County. Edgewood does not. If the letterhead is Pierce County, the parcel may be outside the city limits even when the listing said Edgewood. Read the header. The closing agent confirms the parcel. An Edgewood deed records with the Pierce County Auditor.',
+          'Washington’s seller disclosure law is chapter 64.06 RCW. The form asks about work, permits, and systems. A prior listing does not answer the form for a later sale. KindKey will not tell you how to fill it out, whether an exemption applies, or what you should have told the first buyers. Ask a Washington real estate attorney if you are unsure. Answer with what you actually know. If you do not know who built the shop, say that. Selling to a cash buyer is not a reason to leave a known problem off the form.',
+        ],
+      },
+      {
+        heading: 'Relist the house, or sell it as it sits',
+        paragraphs: [
+          'A second listing can fit if the house is safe to show, a broker will take the condition, and you can host the access. Price cuts, inspection repairs, and another appraisal are part of that path when the buyer is using a loan. Commission is negotiated in the listing agreement with that broker and is not set by KindKey. Hire a licensed broker in Pierce County if you want the listing. KindKey will not run it.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive from Edgewood does not add a repair requirement. KindKey does not promise a specific number of days. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a code fine, or a lien. The offer reflects the house as it sits, so it can be less than a retail price for a repaired house that a second listing might bring. You see the payoffs on the settlement statement before you close. You can say no.',
+          'If a foreclosure notice arrived while the house was listed, you have a clock the listing status does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. The Edgewood foreclosure guide is that page. If the owner has died, who can sign is a probate or trust question, separate from the expired listing. KindKey will not file the probate and will not guess which relative can sign. Use the Edgewood probate guide or the living-trust guide, and do not sign before the authority exists. Parts of Edgewood lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary.',
+          'A house that did not sell in Port Orchard, Bremerton, Silverdale, Poulsbo, Bainbridge Island, Kingston, Olalla, or Seabeck is a Kitsap County file. Do not use this Edgewood page as the guide for a Kitsap city, or for a Milton house that may be in King County. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of why the listing ended through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell my Edgewood house after the listing expired without relisting it?',
+        answer:
+          'Yes. KindKey buys the house as a principal. You do not have to relist, stage, or host more showings first. If a listing agreement might still limit a sale, read it with the broker or a Washington attorney before you sign. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'What if the listing was withdrawn, or it is still active and has no offers?',
+        answer:
+          'Tell KindKey which one it is. KindKey will not look up the status or cancel the listing. Do not sign a purchase contract that conflicts with a listing agreement that is still in effect. You can still ask for a written offer and decline it.',
+      },
+      {
+        question: 'Do I have to finish the inspection repairs, the septic work, or the shop first?',
+        answer:
+          'No. You do not have to complete a buyer’s repair list, pump a septic system, or permit a shop before KindKey looks. The offer reflects the house as it sits. The city’s permit counter at 10440 Dom Calata Way E is for owners who choose to repair and try another listing.',
+      },
+      {
+        question: 'What if a foreclosure notice arrived while the house was on the market?',
+        answer:
+          'Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute, will not stop a trustee, and will not file a probate. You can still request a cash offer while you get that advice. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, Meridian, and the valley.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell a house as-is in Edgewood',
+        description: 'Condition does not have to be repaired before a direct sale.',
+      },
+      {
+        href: '/areas/edgewood/sell-my-house-fast',
+        label: 'Sell my house fast in Edgewood',
+        description: 'The Edgewood fast-sale page, without another listing period.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/blog/cash-buyer-vs-listing-with-an-agent',
+        label: 'Cash buyer compared with a listing',
+        description: 'KindKey buys. A licensed broker lists. Those are different jobs.',
+      },
+      {
+        href: '/blog/sell-my-house-fast-for-cash-edgewood',
+        label: 'Sell fast for cash in Edgewood',
+        description: 'When another round of showings is not the plan.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-edgewood-wa',
+        label: 'Selling a vacant Edgewood house',
+        description: 'When the listing sat because nobody was living there.',
+      },
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Vacant houses in Edgewood',
+        description: 'The Edgewood page for an empty house.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/blog/sell-house-needing-repairs-edgewood-wa',
+        label: 'Major repairs in Edgewood',
+        description: 'When the inspection list was a roof, a floor, or other deferred work.',
+      },
+      {
+        href: '/blog/sell-house-with-stalled-remodel-edgewood-wa',
+        label: 'Stalled remodels in Edgewood',
+        description: 'Open walls that kept financed buyers from closing.',
+      },
+      {
+        href: '/blog/sell-house-with-unpermitted-work-edgewood-wa',
+        label: 'Unpermitted work in Edgewood',
+        description: 'A shop or a garage conversion an appraiser may not count.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-edgewood-wa',
+        label: 'Code violations in Edgewood',
+        description: 'When the listing also drew a city letter.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'The Edgewood code page.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'The King and Pierce County overview.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description: 'When a buyer’s septic request ended the offer.',
+      },
+      {
+        href: '/blog/sell-house-with-tenants-edgewood-wa',
+        label: 'Tenants in Edgewood',
+        description: 'When showings depended on occupants who still live there.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-tenants',
+        label: 'Houses with tenants in Edgewood',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'The overview for occupied rentals.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Foreclosure in Edgewood',
+        description: 'When a trustee’s notice arrived during the listing.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'A loan deadline is separate from the listing status.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Probate houses in Edgewood',
+        description: 'When the listing ended and the signer is still an estate question.',
+      },
+      {
+        href: '/blog/sell-house-in-a-living-trust-edgewood-wa',
+        label: 'Living trusts in Edgewood',
+        description: 'When the house is already titled in a trust.',
+      },
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description: 'The next city west. Milton can be King County or Pierce County.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo. A different county.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say why the listing ended. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood offer after the listing ends',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to relist or stage the house. You can say no.',
+  }),
 ];
