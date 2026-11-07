@@ -3745,4 +3745,195 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to relist or stage the house. You can say no.',
   }),
+  post('sell-house-with-foundation-problems-edgewood-wa', {
+    breadcrumbName: 'Foundation problems in Edgewood',
+    title: 'Selling a House with Foundation Problems in Edgewood, WA',
+    description:
+      'How Edgewood owners sell a house with a cracked foundation, settling, soft floors, or crawlspace problems as-is. KindKey buys as a principal. Not engineering advice.',
+    h1: 'Selling a House with Foundation Problems in Edgewood, WA',
+    publishedAt: '2026-11-07',
+    intro: [
+      'You can sell an Edgewood house with foundation problems without jacking the house, pouring a new foundation, replacing piers or posts, or finishing the repairs an inspector wrote up. A cracked foundation, settling, a soft floor, water under the house, a crawlspace that is hard to enter, or a retaining wall that leans can all stay as they are while you ask for an offer. ' +
+        office +
+        ' KindKey is not a structural engineer, a foundation contractor, or a building official. This article is not engineering advice.',
+      'Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. It incorporated on February 28, 1996. Most residents live on North Hill: longer driveways, and shops set back from the street. A smaller share of the city sits in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. A North Hill rambler with a crack in the foundation, a valley house with a soft floor, and a house where an inspection ended a financed sale are different properties. Bring the address.',
+    ],
+    callout:
+      'You do not have to hire an engineer, lift the house, or complete an inspection repair list before you ask. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'A crack, settling, and a failed inspection are different facts',
+        paragraphs: [
+          'Tell KindKey what you have seen, in plain words, before anyone schedules a visit. It may be a visible crack, a floor that slopes, doors that stick, a soft spot when you walk, posts or piers in a crawlspace that look out of place, water standing under the house, or a wall along the driveway that has moved. Some of those houses are still lived in. Some are not. KindKey does not diagnose the cause, and KindKey will not tell you the crack is cosmetic or that the house is unsafe. A single Edgewood number, guessed before anyone sees the foundation, is not an offer.',
+          'A retail inspection is a common reason this sale starts. The buyer’s inspector wrote up the foundation, the crawlspace, or settlement. The buyer asked for a repair or a price cut, or the lender would not close, and the sale died. You do not have to complete that repair list, hire the contractor the report named, or relist the house before KindKey looks. KindKey will not quote a percentage off the price in that failed contract. Anyone who does that without seeing the house is guessing. Cash, in this sale, means KindKey is not waiting on that buyer’s mortgage. It does not mean a suitcase of money. The Edgewood major-repairs guide covers a roof, a stopped remodel, or other deferred work on the same property. This page is the foundation and the structure.',
+          'North Hill lots are often larger than a Tacoma city lot, with a shop or a shed set back from Meridian or Jovita. The walkthrough has to include the house and the outbuildings. Tell us which structure has the crack, the soft floor, or the wall that moved. A valley house at the base of the hill is usually a smaller lot, and standing water after rain is a different problem from a pier under a hill house. Do not describe them as the same house. The City of Edgewood’s stormwater materials describe Jovita Creek, in the northeast of the city, flowing in a steep-sided canyon. They say the adjacent hill slopes in that canyon are subject to frequent slides from runoff off the plateau, tree falls, unstable slopes, and high flows in the creek. That describes the basin. It is not a finding that your foundation cracked, that a pier has failed, or that your lot is a landslide hazard area. If your house is along Jovita Boulevard, say what you have seen. KindKey prices the property in front of us. Milton, next door, can fall in King County or Pierce County. Edgewood does not. A mailing address that says Edgewood is not always inside the city. The closing agent confirms the parcel. An Edgewood deed records with the Pierce County Auditor.',
+        ],
+      },
+      {
+        heading: 'Crawlspaces, piers, posts, and water under the house',
+        paragraphs: [
+          'You do not have to jack a corner, sister a joist, replace a post, pour a footing, or dry the crawlspace before a walkthrough. Photos of the crack, the floor, the crawlspace opening, the shop, and any pages from the inspection that killed the last deal are enough to start. If a floor is not safe to walk, or the crawlspace is not safe to enter, say so. An exterior look can begin the conversation. Do not walk a house that is not safe just to satisfy a buyer. Furniture and shop contents you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to.',
+          'Water under the house is not one problem. It may be standing water in a crawlspace, a slow leak you have watched for years, or a floor that feels soft because something underneath has been wet. A roof leak or a burst pipe that soaked the walls is the Edgewood water-damage guide. Use this page when the problem is the foundation, the floor structure, the piers or posts, or water that sits under the house. KindKey does not test air, write a mold report, or certify that a crawlspace is dry. A wet yard can also be a septic problem. Many older North Hill and Jovita lots use a septic system, and some use a private well. Others are on public sewer and public water. The city name does not decide it, and water under the house does not decide it. You do not have to pump the tank, locate the drainfield, or replace it before KindKey looks. On-site sewage questions in Pierce County go to the Tacoma-Pierce County Health Department, not to KindKey. KindKey does not inspect, pump, or certify a septic system or a well.',
+          'A shop set back from the street can have its own slab, its own posts, or its own wall, while the house is a separate structure. Tell us which one the inspector wrote up, and whether anyone can go inside. You do not have to demolish the shop, or level it, before an offer. If someone still lives in the house, say so. Do not force an occupant out so the floor can be opened up. A tenant’s rights come from the rental agreement and from Washington law, including chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that a sale cancels a lease. The Edgewood tenants page is that file.',
+        ],
+      },
+      {
+        heading: 'A retaining wall, a permit, and the disclosure form',
+        paragraphs: [
+          'A retaining wall along a North Hill driveway, or at the edge of a shop pad, is not the same structure as the house foundation. EMC 15.80.302.7 says accessory structures, including detached garages, storage buildings, carports, fences, and retaining walls, are to be maintained structurally sound and in good repair. KindKey will not decide whether your wall meets that sentence, and KindKey will not apply that sentence to the house foundation. You do not have to rebuild the wall, the fence, or the shop before an offer. If the house is empty and the letter is about the yard or an open building, the Edgewood vacant-house page covers the rest of that maintenance chapter. KindKey will not answer the notice, appear at a hearing, or promise that a fine disappears when you sign.',
+          'EMC 15.20.030(C)(1) says application or notice is not required for ordinary repairs, and then says those repairs shall not include work affecting public health or general safety. The list includes cutting away any wall or partition and removing or cutting a structural beam or load-bearing support. KindKey will not decide whether your crack, your pier, your post, or your wall is that kind of work, and KindKey will not tell you a City of Edgewood permit is or is not required. If you choose to repair and then try a listing, Community Development is at Edgewood City Hall, 10440 Dom Calata Way E, Edgewood, WA 98372. The permit line published by the city is (253) 952-3299. That counter is for owners who choose the repair. KindKey does not require the visit, will not pull the permit, and will not appear for an inspection.',
+          'Washington’s seller disclosure law is chapter 64.06 RCW. The form asks about work, permits, and systems. A prior inspection report does not answer the form for a later sale. KindKey will not tell you how to fill it out, whether an exemption applies, or what you should have told the first buyers. Ask a Washington real estate attorney if you are unsure. Answer with what you actually know. If you do not know who poured the foundation, or whether a past owner patched a crack, say that. Selling to a cash buyer is not a reason to leave a known problem off the form.',
+        ],
+      },
+      {
+        heading: 'Repair it and relist, or sell the house as it sits',
+        paragraphs: [
+          'Repairing the foundation can fit if you want to keep the house and you can fund the engineer and the contractor. A listing can fit after that, if a broker will take the condition and you can host the access. A financed buyer may still stall on the same floor, the same crawlspace, or the same wall. Commission is negotiated in the listing agreement with that broker and is not set by KindKey. Hire a licensed broker in Pierce County if you want the listing. KindKey will not run it, will not choose your engineer, and will not tell you a listed sale is a mistake.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive from Edgewood does not add a repair requirement. KindKey does not promise a specific number of days. ' +
+            closing +
+            ' The offer reflects the house as it sits, so it can be less than a retail price for a repaired house. You see the payoffs on the settlement statement before you close. You can say no. The Edgewood as-is page is that direct sale for the house in its current condition.',
+          'If a foreclosure notice is in the file with the inspection report, you have a clock the foundation does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. The Edgewood foreclosure page is that file. If the owner has died, who can sign is a probate or trust question, separate from the crack in the foundation. KindKey will not file the probate and will not guess which relative can sign. Use the Edgewood probate page, and do not sign before the authority exists. Parts of Edgewood lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary.',
+          'A house with foundation problems in Port Orchard, Bremerton, Silverdale, Poulsbo, Bainbridge Island, Kingston, Olalla, or Seabeck is a Kitsap County file. Do not use this Edgewood page as the guide for a Kitsap city, or for a Milton house that may be in King County. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the foundation through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question:
+          'Do I have to repair the foundation, the piers, or a soft floor before KindKey will look?',
+        answer:
+          'No. KindKey buys Edgewood houses with cracked foundations, settling, soft floors, crawlspace problems, and leaning retaining walls as they sit. You do not have to jack the house or finish an inspection repair list first. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'An inspection ended the last sale. Do I need a new engineer’s report?',
+        answer:
+          'No. Bring the report if you have it, and say what the inspector wrote up. KindKey will not require a new engineering letter before an offer, and KindKey will not tell you the old report is right or wrong. The offer reflects the house as it sits.',
+      },
+      {
+        question: 'Water is under the house. Is that a roof leak or a failed septic system?',
+        answer:
+          'Not necessarily. A roof leak or a burst pipe is the Edgewood water-damage guide. A drainfield question goes to the Tacoma-Pierce County Health Department. Tell KindKey what you have seen under the house. KindKey does not certify a crawlspace, a septic system, or a well, and you do not have to dry it out first.',
+      },
+      {
+        question: 'What if a foreclosure notice arrived after the foundation inspection?',
+        answer:
+          'Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute, will not stop a trustee, and will not file a probate. You can still request a cash offer while you get that advice. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, Meridian, and the valley.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell a house as-is in Edgewood',
+        description: 'Condition does not have to be repaired before a direct sale.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/edgewood/sell-my-house-fast',
+        label: 'Sell my house fast in Edgewood',
+        description: 'The Edgewood fast-sale page, without a foundation repair first.',
+      },
+      {
+        href: '/areas/edgewood/sell-hoarder-house',
+        label: 'Heavy-repair houses in Edgewood',
+        description: 'When the foundation is one part of a larger repair.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Roof, foundation, and contents can stay.',
+      },
+      {
+        href: '/blog/sell-house-needing-repairs-edgewood-wa',
+        label: 'Major repairs in Edgewood',
+        description: 'A roof, a stopped remodel, or a foundation on the same house.',
+      },
+      {
+        href: '/blog/sell-water-damaged-house-edgewood-wa',
+        label: 'Water damage in Edgewood',
+        description: 'A roof leak or a burst pipe, rather than the foundation itself.',
+      },
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Vacant houses in Edgewood',
+        description: 'When the foundation letter arrived after everyone left.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'A city letter about a wall, a shop, or an unsafe structure.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'The King and Pierce County overview.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-tenants',
+        label: 'Houses with tenants in Edgewood',
+        description: 'When someone still lives over the soft floor.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Foreclosure in Edgewood',
+        description: 'When a trustee’s notice is in the file with the inspection.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/areas/edgewood/sell-inherited-probate-house',
+        label: 'Inherited houses in Edgewood',
+        description: 'When the foundation and the signer are both open questions.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the condition.',
+      },
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description: 'The next city west. Milton can be King County or Pierce County.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo. A different county.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what the foundation is doing. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood offer on the foundation as it sits',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to repair the foundation first. You can say no.',
+  }),
 ];
