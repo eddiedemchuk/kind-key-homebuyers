@@ -169,7 +169,6 @@ export default function OfferLanding({
   showAgentComparison = false,
   showDistressNotes = false,
   steppedForm = false,
-  compactForm = false,
   stickyPhone,
   lockHeadline = false,
   trustStrip,
@@ -190,10 +189,8 @@ export default function OfferLanding({
   showAgentComparison?: boolean;
   /** Taxes, code cases, and cleanout notes on /offer and /offer/foreclosure. */
   showDistressNotes?: boolean;
-  /** Two-step hero form on /offer and /offer/facebook. Situation pages stay one step. */
+  /** Two-step hero form on /offer/facebook. /offer and the situation pages stay one step. */
   steppedForm?: boolean;
-  /** Four-field /offer form: address, listing answer, name, and phone. */
-  compactForm?: boolean;
   /** Keep the server headline. Foreclosure ads must not become the generic city line. */
   lockHeadline?: boolean;
   /** Short claims under the headline. Replaces the single BBB line when set. */
@@ -285,7 +282,6 @@ export default function OfferLanding({
               trackMetaLead={trackMetaLead}
               src={src}
               stepped={steppedForm}
-              compact={compactForm}
             />
           </div>
           <OfferCountyBuyers />
