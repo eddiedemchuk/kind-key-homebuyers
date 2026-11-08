@@ -3936,4 +3936,214 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to repair the foundation first. You can say no.',
   }),
+  post('sell-house-with-tenants-bremerton-wa', {
+    breadcrumbName: 'Tenants in Bremerton',
+    title: 'Selling a House with Tenants in Bremerton, WA',
+    description:
+      'How Bremerton owners sell a house with tenants in place, including a landlord license, an inherited rental, or a city letter. KindKey buys as a principal. Not legal advice.',
+    h1: 'Selling a House with Tenants in Bremerton, WA',
+    publishedAt: '2026-11-08',
+    intro: [
+      'You can sell a Bremerton house with tenants still living there. You do not have to evict them, renew a city landlord license, empty a garage apartment, or finish a repair list first. ' +
+        office +
+        ' KindKey is not a property manager and not a landlord-tenant lawyer.',
+      'Bremerton is an incorporated Kitsap County city on Sinclair Inlet. Downtown, Charleston, Manette, East Bremerton, West Bremerton, Kitsap Lake, and Rocky Point are local areas. The naval shipyard shapes the city. Navy Yard City and Gorst are unincorporated neighbors, not Bremerton neighborhoods. Port Orchard is a different city across the inlet. A Manette rental, a Charleston house, and a Kitsap Lake house are different files. Bring the address.',
+    ],
+    callout:
+      'You do not have to deliver the house vacant. The tenant can stay. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'Who is living there, and whether the parcel is in the city',
+        paragraphs: [
+          'Say who is there before anyone schedules a visit. It may be one household in the house, a separate person in a basement or a garage, a relative who stayed after the owner moved, or someone paying no rent and holding no written agreement. Some leases are fixed-term. Some are month-to-month. Some were never written down. KindKey prices the property you describe. A single Bremerton rent, guessed before anyone hears the facts, is not an offer.',
+          'Manette is across the Manette Bridge and is still Bremerton. Port Orchard is not. Silverdale is north and unincorporated, and it has no city hall. Navy Yard City and Gorst are unincorporated Kitsap County, even when a mailing address or a commute makes them feel like Bremerton. The city’s landlord-license page tells owners to check Kitsap County Parcel Search when they are unsure of the limit. KindKey will not draw that line. The closing agent confirms the parcel. KindKey buys a private house you have the right to sell. KindKey does not buy a house you cannot deed.',
+          'A Bremerton deed records with the Kitsap County Auditor in Port Orchard, not at Bremerton City Hall and not at KindKey’s office in Auburn. The auditor’s mailing address is 614 Division St., MS-31, Port Orchard, WA 98366. The physical address the auditor publishes is 619 Division St., Port Orchard, WA 98366. Recording’s published phone is (360) 337-4935. The auditor’s published hours are Monday through Friday, 8:00 a.m. to 4:30 p.m. Do not record a Kitsap deed at the Pierce County Auditor in Tacoma because you take the ferry, or because the buyer is based in Auburn. An Edgewood deed records in Pierce County. This page is the Bremerton rental.',
+        ],
+      },
+      {
+        heading: 'The city landlord license is not a condition of an offer',
+        paragraphs: [
+          'The City of Bremerton’s landlord-license page says anyone renting or leasing real property inside the city limits needs a city landlord business license. It cites BMC 3.48.025 and publishes an annual fee of $75. That fee is the city’s, not a KindKey charge. BMC 3.48.025 says it is unlawful to engage in business in the city without a business license under Chapter 5.02 BMC. Chapter 3.48 BMC defines engaging in business to include owning, renting, or leasing real property in the city. Chapter 5.02 BMC then says engaging in business also includes renting or leasing real property, except casual rentals and ancillary rentals, and it defines those two exceptions. KindKey will not decide whether your house is one of them, whether a license is current, or what the city will do if it is not. Tax & License is the city’s office for that question. The mailing address it publishes is 345 6th St., Suite 100, Bremerton, WA 98337, and the published phone is (360) 473-5311. City Hall is in the Norm Dicks Government Center at 345 6th Street, Suite 600. KindKey is neither office.',
+          'BMC 5.06 is the rental-registration chapter. The city’s landlord page says it took effect January 1, 2014. BMC 5.06.030 says a landlord who must have the Chapter 5.02 license registers each dwelling unit each year, gives contact information, gives the Bremerton Police Department a way to reach the owner, and files a declaration that each unit complies with RCW 59.18.060. You do not have to obtain the license, renew it, or sign that declaration before KindKey will look. KindKey will not file it and will not certify the house against that statute. The same city’s page separates agreements of 30 days or more from stays under 30 days. This article is the house with a tenant. A short-term rental is a different city file. KindKey will not tell you which label fits.',
+          'The prohibited-actions language in BMC 5.06.030 says a landlord who has not complied with that registration, or with the Chapter 5.02 license, is prohibited from recovering possession of units that are not licensed and registered, and that the failure is a defense in an action to recover possession. KindKey does not interpret that sentence and will not tell you it applies to your tenant. If possession is in dispute, talk with a Washington landlord-tenant attorney before you serve anything. Do not start an eviction because a buyer asked to see the house. The city’s landlord-license FAQ says the city does not currently conduct physical inspections, and that the landlord certifies compliance on the application instead. BMC 5.06.040 is a different path: a correction notice under Chapter 1.04 BMC, a hearing before the administrative hearing examiner under BMC 1.04.080 if that correction is not made, and a certificate of inspection the examiner’s order may require. KindKey will not decide which sentence describes your letter, appear at the hearing, or hire the inspector. Until the deed records, deadlines on a city notice are still yours. BMC 5.06.070 and RCW 59.18.085 address relocation assistance when the city orders a unit vacated. KindKey will not calculate that amount or tell you whether anyone is owed it.',
+        ],
+      },
+      {
+        heading: 'A sale does not end the tenancy',
+        paragraphs: [
+          'Chapter 59.18 RCW is Washington’s Residential Landlord-Tenant Act. Selling the house does not, by itself, cancel a lease or a month-to-month tenancy. KindKey will not tell you that it does. The tenant can still be in the house on the day the deed records. The offer can assume the tenant stays. You do not have to stage the rooms or promise vacant possession at closing.',
+          'Owners sometimes hear that selling is a legal reason to end a tenancy. RCW 59.18.650(2)(e) is narrower than a cash sale. It describes a cause when the owner elects to sell a single-family residence and the landlord has given at least 90 days’ advance written notice. The statute says an owner “elects to sell” by making reasonable attempts to sell within 30 days after the tenant has vacated, including, at a minimum, listing the house at a reasonable price with a realty agency or advertising it at a reasonable price on the multiple listing service. It also states a rebuttable presumption that the owner did not intend to sell if, within 30 days after the tenant vacated, the owner does not make that listing, or if, within 90 days after the tenant vacated or the listing date, whichever is later, the owner withdraws the unit, rents it to someone other than the former tenant, or otherwise indicates the owner does not intend to sell. Subsection (5) says nothing in subsection (2)(e) permits ending a tenancy for a specified period before the term is over unless the landlord and the tenant agree in writing and the tenant has at least 60 days to leave. KindKey does not list houses. A purchase by KindKey is not a listing with a realty agency and it is not an MLS advertisement. Do not serve that notice to empty a Bremerton house for this sale. KindKey will not write the notice, serve it, or tell you it fits your lease. The Milton rental guide walks through the same subsection for a different city. Do not copy a notice from that page onto a Bremerton lease. A Washington landlord-tenant attorney should read the lease and the statute together. If you want the tenant to stay through closing, say that. That is the path KindKey can price.',
+          'A walkthrough is one visit, not a string of showings. Arrange it with whatever notice your attorney says the lease and chapter 59.18 require. BMC 5.06.040(f) points a landlord to RCW 59.18.150(6) when the entry is for a certificate of inspection the city required. KindKey will not write that notice, and KindKey will not tell you to enter without the notice your attorney says applies. If access will take time, photos and a plain description can start the conversation. Bring the lease if you have it, the rent, whether rent is current, and the deposit amount. Unpaid rent, a deposit you still hold, and prepaid rent can show on the settlement statement. KindKey does not calculate what the tenant is owed and does not hold the deposit for you before closing. KindKey will not collect the rent, change the locks, or shut off utilities.',
+        ],
+      },
+      {
+        heading: 'An inherited rental, a city letter, or selling with the tenant in place',
+        paragraphs: [
+          'An inherited Bremerton rental often means heirs in King County or Pierce County, a tenant who was already there, and a house nobody has managed since the funeral. The person with authority to sign is a probate question. A person who lived in Bremerton lived in Kitsap County. The superior court sits in Port Orchard, at 614 Division Street, not in Tacoma and not in Seattle. The Kitsap County Clerk publishes the clerk’s office at 614 Division Street, Room 202, Port Orchard, WA 98366, phone (360) 337-7164. KindKey will not file the probate and will not guess which relative can sign. The Bremerton probate guide is that signature question. You can ask for an offer while the attorney finishes it. Do not sign a deed before the authority exists. Do not force the tenant, or a relative who still lives there, to leave so the house looks vacant.',
+          'The city’s page for landlords says garbage, junk vehicles, graffiti, nuisance vegetation, a dilapidated fence, or an unsafe structure can draw a city letter even when a tenant caused it. You do not have to haul the yard, tear out an unpermitted room, or repair a roof before an offer. KindKey will not answer the notice or promise that a fine disappears when you sign. The Bremerton code-violations page is that file. The city name does not tell you whether the house is on public sewer, public water, a septic system, or a well, and the tenant living there does not decide it either. You do not have to pump, replace, or certify a system before KindKey looks. On-site sewage questions in Kitsap County go to the Kitsap Public Health District, not to KindKey. If rent has stopped, say so. KindKey may still look. KindKey will not coach an eviction, a lockout, or a utility shutoff.',
+          'If a foreclosure notice is also in the file, you have two clocks. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. The Kitsap foreclosure guide is that clock. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a deposit, or a city fine. You can keep managing the rental, or hire a licensed broker to list it, if the occupants will allow the access a listing needs. Commission is negotiated with that broker and is not set by KindKey. KindKey will not run the listing. The direct-sale sequence is a call or the cash-offer form, one walkthrough when access is arranged, a written offer, and a closing date you help choose with the closing agent. KindKey does not promise a specific number of days. The offer reflects the house as it sits, so it can be less than a retail price for a vacant, repaired house. You can say no.',
+          'A house with tenants in Port Orchard, Silverdale, Poulsbo, Bainbridge Island, Kingston, Olalla, or Seabeck is a different file. Silverdale, Kingston, Olalla, Seabeck, Navy Yard City, and Gorst are not the City of Bremerton. An Edgewood rental is Pierce County. Do not use this page for those houses. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of who lives there through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do Bremerton tenants have to move out before KindKey buys the house?',
+        answer:
+          'No. KindKey buys Bremerton houses with tenants in place. A sale does not, by itself, end the tenancy. Call (206) 519-5463 or use the cash-offer form and say who lives there. You can say no.',
+      },
+      {
+        question: 'Do I need a current City of Bremerton landlord license before you will look?',
+        answer:
+          'No. The city’s landlord-license page describes the license, cites BMC 3.48.025, and publishes an annual fee of $75. KindKey will not decide whether you need it, file the BMC 5.06 registration, or require it before an offer. Tax & License can be reached at (360) 473-5311. Questions about possession belong with a Washington attorney.',
+      },
+      {
+        question: 'Should I give a notice that I am selling so the house is empty at closing?',
+        answer:
+          'Do not use RCW 59.18.650(2)(e) as a plan to empty the house for a cash buyer. That subsection is written around a listing with a realty agency or on the MLS, and KindKey does not list houses. Ask a Washington landlord-tenant attorney before you serve any notice.',
+      },
+      {
+        question: 'The rental was inherited, or a foreclosure notice arrived. Can I still ask?',
+        answer:
+          'You can ask for an offer while a Washington attorney confirms who can sign, and while you get advice on a trustee’s notice. KindKey will not file a probate, stop a sale date, or interpret RCW 61.34. Do not sign a deed before the authority exists. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/bremerton/sell-house-with-tenants',
+        label: 'Sell a house with tenants in Bremerton',
+        description: 'The Bremerton rental page.',
+      },
+      {
+        href: '/areas/bremerton',
+        label: 'Sell a house in Bremerton',
+        description: 'Downtown, Manette, Charleston, and Kitsap Lake.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/bremerton/sell-house-as-is',
+        label: 'Sell a house as-is in Bremerton',
+        description: 'The tenant and the condition can both stay.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/bremerton/sell-my-house-fast',
+        label: 'Sell my house fast in Bremerton',
+        description: 'A direct sale without a string of showings.',
+      },
+      {
+        href: '/areas/bremerton/cash-offer',
+        label: 'Cash offer in Bremerton',
+        description: 'The Bremerton offer page. Asking does not obligate you.',
+      },
+      {
+        href: '/areas/bremerton/sell-inherited-probate-house',
+        label: 'Inherited houses in Bremerton',
+        description: 'When the rental came from an estate.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the tenancy.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-bremerton',
+        label: 'Probate houses in Bremerton and Kitsap',
+        description: 'The signature question, filed in Port Orchard.',
+      },
+      {
+        href: '/areas/bremerton/sell-house-with-code-violations',
+        label: 'Code violations in Bremerton',
+        description: 'A city letter about the yard, a room, or an unsafe structure.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with a rental.',
+      },
+      {
+        href: '/areas/bremerton/sell-vacant-house',
+        label: 'Vacant houses in Bremerton',
+        description: 'When the tenant has already left.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/bremerton/sell-hoarder-house',
+        label: 'Heavy-repair houses in Bremerton',
+        description: 'When the contents and the repairs are the other problem.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Clean-out and repairs can stay.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-kitsap-county',
+        label: 'Foreclosure in Kitsap County',
+        description: 'A trustee’s notice is a different clock from the tenancy.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Silverdale, and Poulsbo, when the house is not in Bremerton.',
+      },
+      {
+        href: '/blog/sell-house-with-tenants-edgewood-wa',
+        label: 'Tenants in Edgewood',
+        description: 'The Pierce County version. A different city and a different auditor.',
+      },
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'Pierce County, on the other side of the water.',
+      },
+      {
+        href: '/areas/port-orchard',
+        label: 'Sell a house in Port Orchard',
+        description: 'The county seat across Sinclair Inlet.',
+      },
+      {
+        href: '/areas/silverdale',
+        label: 'Sell a house in Silverdale',
+        description: 'Unincorporated Central Kitsap. Not a Bremerton neighborhood.',
+      },
+      {
+        href: '/blog/sell-rental-property-with-tenants-milton-wa',
+        label: 'Rentals with tenants in Milton',
+        description: 'The notice owners should not copy onto a Bremerton lease.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say who lives there. You do not have to deliver it vacant.',
+      },
+    ],
+    ctaTitle: 'Ask for a Bremerton offer with the tenants still there',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to empty the house or renew a landlord license first. You can say no.',
+  }),
 ];
