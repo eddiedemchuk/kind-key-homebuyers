@@ -8,14 +8,15 @@ The chat widget is a separate, GHL-hosted path and does not use this webhook.
 1. Cash-offer forms post through `components/LeadForm.tsx` (homepage, `/cash-offer`, `/contact`,
    city pages, and situation pages) or `components/OfferLeadForm.tsx` on the paid-ads page
    `/offer`, the Facebook page `/offer/facebook`, and the situation pages
-   `/offer/foreclosure`, `/offer/inherited`, `/offer/as-is`, and `/offer/fire-damage`.
+   `/offer/foreclosure`, `/offer/inherited`, `/offer/as-is`, `/offer/fire-damage`, and the
+   city pages `/offer/tacoma-puyallup`, `/offer/kitsap-bremerton`, and `/offer/kent-auburn`.
    There is no embedded GHL form and no direct browser call to the LeadConnector API.
    Those pages collect name, a required phone, email, property address, a required yes/no answer to
    “Is your house currently listed with an agent?”, and a required call/text consent checkbox that
    starts unchecked. The `/offer` and `/offer/facebook` heroes (including `/offer?src=fb` and
    `/offer?src=fb_static`) ask for the address and listing answer first, then name, phone, an
-   optional email, and consent. Situation offer pages keep every field on one step and still require
-   email. The listing answer is posted as `listed_with_agent` (`yes` or `no`). Email is the contact
+   optional email, and consent. Situation offer pages and the three city pages keep every field on
+   one step and still require email. The listing answer is posted as `listed_with_agent` (`yes` or `no`). Email is the contact
    email, and a blank hero email is sent as an empty string. Consent is posted as `sms_consent` =
    `true` with `sms_consent_text_version`
    `a2p-v1`; the API records `sms_consent_at` when it accepts the lead. `LeadForm` does not ask the
@@ -27,7 +28,10 @@ The chat widget is a separate, GHL-hosted path and does not use this webhook.
    `src=fb_static`, or `utm_source=facebook` (that `/offer` match is remembered for the session),
    `google_ads_foreclosure` from `/offer/foreclosure`, `google_ads_inherited` from
    `/offer/inherited`, `google_ads_as_is` from `/offer/as-is`, and `google_ads_fire_damage` from
-   `/offer/fire-damage`. Those `/offer` Facebook visits also post `src` (`fb`, `fb_static`, or an
+   `/offer/fire-damage`. The three city pages use the same `google_ads_landing` origin as `/offer`,
+   so `source` stays `Google Ads`, the source tag stays `google ads`, and `page_tag` stays
+   `general`. A Facebook `src` on those city URLs does not change the source or the phone.
+   Those `/offer` Facebook visits also post `src` (`fb`, `fb_static`, or an
    empty string when only `utm_source=facebook` matched). `facebook_ads_landing` remains an
    allowlisted origin and is no longer chosen by `/offer`.
    The server accepts only those values.
@@ -219,7 +223,9 @@ Do this in the KindKey Home Buyers sub-account, in the workflow that owns `GHL_W
    matches `lead_source`. Do not map `click_source` onto that field.
 3. Tags. The Website Leads workflow currently applies the contact tag from `source_tag`
    (`google ads` on every Google offer page). Keep that mapping. Also add
-   `{{inboundWebhookRequest.page_tag}}` as a second tag so `/offer` is tagged `general`,
+   `{{inboundWebhookRequest.page_tag}}` as a second tag so `/offer` and the city pages
+   `/offer/tacoma-puyallup`, `/offer/kitsap-bremerton`, and `/offer/kent-auburn` are tagged
+   `general`,
    `/offer/inherited` is `inherited`, `/offer/as-is` is `as-is`, `/offer/foreclosure` is
    `foreclosure`, and `/offer/fire-damage` is `fire damage`. Skip the extra tag when `page_tag`
    is empty, which includes `/offer/facebook` and a Facebook visit to `/offer` (`src=fb`,

@@ -424,6 +424,32 @@ describe('buildGhlPayload', () => {
     assert.equal(payload.preferred_contact, '');
     assert.equal(payload.page_path, '/offer');
     assert.equal(payload.listed_with_agent, '');
+    for (const pagePath of [
+      '/offer/tacoma-puyallup',
+      '/offer/kitsap-bremerton',
+      '/offer/kent-auburn',
+    ]) {
+      const cityPayload = buildGhlPayload({
+        name: 'Ada Lovelace',
+        phone: '+1(253) 555-0100',
+        propertyAddress: '123 Main St',
+        smsNonMarketingConsent: false,
+        smsMarketingConsent: false,
+        pagePath,
+        formOrigin: 'google_ads_landing',
+        listedWithAgent: 'no',
+        attribution: touch({
+          landing_page: `https://kindkeyhomebuyers.com${pagePath}`,
+        }),
+      });
+      assert.equal(cityPayload.source, 'Google Ads', pagePath);
+      assert.equal(cityPayload.lead_source, 'Google Ads', pagePath);
+      assert.equal(cityPayload.source_tag, 'google ads', pagePath);
+      assert.equal(cityPayload.page_tag, 'general', pagePath);
+      assert.equal(cityPayload.tags, 'website lead, google ads, general', pagePath);
+      assert.equal(cityPayload.form_origin, 'google_ads_landing', pagePath);
+      assert.equal(cityPayload.page_path, pagePath);
+    }
     assert.match(String(payload.attribution_notes), /Form origin: google_ads_landing/);
     assert.match(String(payload.attribution_notes), /Page tag: general/);
     assert.doesNotMatch(String(payload.attribution_notes), /Listed with agent/);
