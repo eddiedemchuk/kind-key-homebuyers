@@ -188,6 +188,23 @@ describe('lead schemas', () => {
     assert.equal(isOfferHeroPath('/quiz'), true);
     assert.equal(isOfferHeroPath('/offer/quiz'), true);
     assert.equal(isOfferHeroPath('/offer/inherited'), false);
+    for (const path of [
+      '/offer/tacoma-puyallup',
+      '/offer/kitsap-bremerton',
+      '/offer/kent-auburn',
+    ]) {
+      assert.equal(isOfferHeroPath(path), false, path);
+      assert.equal(
+        leadSchemaForSubmission('google_ads_landing', path).safeParse(heroBlankEmail).success,
+        false,
+        path
+      );
+      assert.equal(
+        leadSchemaForSubmission('google_ads_landing', path).safeParse(apiOffer).success,
+        true,
+        path
+      );
+    }
     assert.equal(
       leadSchemaForSubmission('google_ads_landing', '/offer').safeParse(heroBlankEmail).success,
       false

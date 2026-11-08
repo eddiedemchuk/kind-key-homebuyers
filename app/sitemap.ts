@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { blogPosts } from '@/data/blogPosts';
 import { cities } from '@/data/cities';
 import { citySituations } from '@/data/citySituations';
+import { offerCityAdsPages } from '@/data/offerCityAds';
 import { situations } from '@/data/situations';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -11,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // /offer, /offer/facebook, /offer/foreclosure, /offer/inherited, /offer/as-is,
   // /offer/fire-damage, /quiz, /offer/quiz, and /sell are paid landing pages.
   // They are noindex and must stay off this list.
+  // The city Google Ads pages are indexable and are listed below.
   const routes = [
     '',
     '/how-it-works',
@@ -33,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     intentTypes.map((intent) => `/areas/${city.slug}/${intent}`)
   );
 
+  const offerCityRoutes: string[] = offerCityAdsPages.map((page) => page.path);
   const situationRoutes = situations.map((page) => page.path);
   const citySituationRoutes = citySituations.map((page) => page.path);
   const blogRoutes = blogPosts.map((post) => post.path);
@@ -41,6 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...routes,
     ...cityRoutes,
     ...cityIntentRoutes,
+    ...offerCityRoutes,
     ...situationRoutes,
     ...citySituationRoutes,
     ...blogRoutes,
@@ -62,6 +66,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }
     } else if (['/how-it-works', '/contact', '/about', '/blog', '/areas'].includes(route)) {
       priority = 0.85;
+    } else if (offerCityRoutes.includes(route)) {
+      priority = 0.6;
     } else if (situationRoutes.includes(route)) {
       priority = 0.8;
     } else if (citySituationRoutes.includes(route) || blogRoutes.includes(route)) {

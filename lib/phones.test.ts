@@ -46,6 +46,9 @@ describe('isAlwaysGoogleAdsPhonePath', () => {
       '/offer/as-is',
       '/offer/foreclosure',
       '/offer/fire-damage',
+      '/offer/tacoma-puyallup',
+      '/offer/kitsap-bremerton',
+      '/offer/kent-auburn',
     ]) {
       assert.equal(isAlwaysGoogleAdsPhonePath(path), true, path);
       assert.equal(offerLandingPhone(path).tel, GOOGLE_ADS_PHONE.tel, path);
@@ -71,6 +74,14 @@ describe('isAlwaysGoogleAdsPhonePath', () => {
     assert.equal(offerDisplayPhone('/offer', '?src=google').tel, GOOGLE_ADS_PHONE.tel);
     assert.equal(offerDisplayPhone('/offer', '?src=facebook').tel, GOOGLE_ADS_PHONE.tel);
     assert.equal(offerDisplayPhone('/offer/inherited', '?src=fb').tel, GOOGLE_ADS_PHONE.tel);
+    for (const path of [
+      '/offer/tacoma-puyallup',
+      '/offer/kitsap-bremerton',
+      '/offer/kent-auburn',
+    ]) {
+      assert.equal(offerDisplayPhone(path, '?src=fb').tel, GOOGLE_ADS_PHONE.tel, path);
+      assert.equal(offerDisplayPhone(path, '?src=fb').display, '(253) 352-4379', path);
+    }
 
     for (const search of [
       '?src=fb',
