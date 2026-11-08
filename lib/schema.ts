@@ -119,7 +119,7 @@ export const offerLeadFormSchema = leadApiSchema.extend({
   sms_consent: offerConsentSchema,
 });
 
-/** Two-step /offer hero. Email may be blank. Phone, listing answer, and consent stay required. */
+/** Two-step /offer/facebook hero and the seller quiz. Email may be blank. Phone, listing answer, and consent stay required. */
 const optionalOfferEmailSchema = z
   .string()
   .trim()
@@ -143,26 +143,8 @@ const offerConsentApiFields = {
 /** Server schema for situation /offer submissions. Consent must be the current text version. */
 export const offerLeadApiSchema = offerLeadFormSchema.extend(offerConsentApiFields);
 
-/** Server schema for the two-step hero on /offer and /offer/facebook. */
+/** Server schema for the two-step hero on /offer/facebook. Email may be blank. */
 export const offerHeroLeadApiSchema = offerHeroLeadFormSchema.extend(offerConsentApiFields);
-
-/**
- * General /offer form: address, listing answer, name, and phone.
- * Email and the consent checkbox are not on that page. /offer/facebook keeps both.
- */
-export const offerTrimmedLeadFormSchema = z.object({
-  name: z.string().min(2, 'Name must be at least 2 characters').max(100),
-  phone: requiredPhoneSchema,
-  propertyAddress: z.string().min(5, 'Address is required').max(200),
-  listed_with_agent: listedWithAgentSchema,
-  email: optionalOfferEmailSchema.optional(),
-});
-
-export const offerTrimmedLeadApiSchema = leadApiSchema.extend({
-  phone: requiredPhoneSchema,
-  email: optionalOfferEmailSchema.optional(),
-  listed_with_agent: listedWithAgentSchema,
-});
 
 const sellOwnerSchema = z.enum([
   SELL_OWNER_OPTIONS[0].value,
@@ -230,10 +212,6 @@ export const sellLeadApiSchema = offerHeroLeadApiSchema
     }
   });
 
-export function isTrimmedOfferPath(pagePath: string): boolean {
-  return pagePath === '/offer' || pagePath === '/offer/fb';
-}
-
 export function isOfferLeadSubmission(formOrigin: FormOrigin, pagePath: string): boolean {
   return (
     isOfferFormOrigin(formOrigin) ||
@@ -245,22 +223,15 @@ export function isOfferLeadSubmission(formOrigin: FormOrigin, pagePath: string):
 }
 
 /**
- * Paths that allow a blank email. /offer/fb is the internal rewrite of ?src=fb.
- * The seller quiz and /sell collect an optional email on the last step.
+ * Paths that allow a blank email. /offer and the situation pages require one.
+ * /offer/facebook, the seller quiz, and /sell collect an optional email.
  */
 export function isOfferHeroPath(pagePath: string): boolean {
-  return (
-    pagePath === '/offer' ||
-    pagePath === '/offer/facebook' ||
-    pagePath === '/offer/fb' ||
-    pagePath === '/sell' ||
-    isSellerQuizPath(pagePath)
-  );
+  return pagePath === '/offer/facebook' || pagePath === '/sell' || isSellerQuizPath(pagePath);
 }
 
 export function leadSchemaForSubmission(formOrigin: FormOrigin, pagePath: string) {
   if (pagePath === '/sell') return sellLeadApiSchema;
-  if (isTrimmedOfferPath(pagePath)) return offerTrimmedLeadApiSchema;
 
   const base = !isOfferLeadSubmission(formOrigin, pagePath)
     ? leadApiSchema
@@ -294,5 +265,4 @@ export const extendedLeadFormSchema = leadFormSchema.extend({
 export type LeadFormData = z.infer<typeof leadFormSchema>;
 export type OfferLeadFormData = z.infer<typeof offerLeadFormSchema>;
 export type OfferHeroLeadFormData = z.infer<typeof offerHeroLeadFormSchema>;
-export type OfferTrimmedLeadFormData = z.infer<typeof offerTrimmedLeadFormSchema>;
 export type ExtendedLeadFormData = z.infer<typeof extendedLeadFormSchema>;

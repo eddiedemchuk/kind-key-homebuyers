@@ -10,7 +10,6 @@ import {
   offerHeroLeadFormSchema,
   offerLeadApiSchema,
   offerLeadFormSchema,
-  offerTrimmedLeadFormSchema,
 } from './schema';
 
 const shortOffer = {
@@ -183,14 +182,22 @@ describe('lead schemas', () => {
       email: '',
     };
     assert.equal(offerHeroLeadApiSchema.safeParse(heroBlankEmail).success, true);
-    assert.equal(isOfferHeroPath('/offer'), true);
+    assert.equal(isOfferHeroPath('/offer'), false);
+    assert.equal(isOfferHeroPath('/offer/fb'), false);
     assert.equal(isOfferHeroPath('/offer/facebook'), true);
-    assert.equal(isOfferHeroPath('/offer/fb'), true);
     assert.equal(isOfferHeroPath('/quiz'), true);
     assert.equal(isOfferHeroPath('/offer/quiz'), true);
     assert.equal(isOfferHeroPath('/offer/inherited'), false);
     assert.equal(
       leadSchemaForSubmission('google_ads_landing', '/offer').safeParse(heroBlankEmail).success,
+      false
+    );
+    assert.equal(
+      leadSchemaForSubmission('google_ads_landing', '/offer').safeParse(apiOffer).success,
+      true
+    );
+    assert.equal(
+      leadSchemaForSubmission('facebook_ads_eddie', '/offer/fb').safeParse(apiOffer).success,
       true
     );
     assert.equal(
@@ -294,28 +301,44 @@ describe('lead schemas', () => {
     }
   });
 
-  it('accepts the four-field /offer form and still requires consent on /offer/facebook', () => {
+  it('requires email and consent on /offer, and still requires consent on /offer/facebook', () => {
     const trimmed = {
       name: 'Ada Lovelace',
       phone: '(253) 555-0100',
       propertyAddress: '123 Main St, Auburn, WA',
       listed_with_agent: 'no' as const,
     };
+    const withEmail = { ...trimmed, email: 'ada@example.com' };
     assert.equal(
       leadSchemaForSubmission('google_ads_landing', '/offer').safeParse(trimmed).success,
-      true
+      false
     );
     assert.equal(
-      leadSchemaForSubmission('facebook_ads_eddie', '/offer/fb').safeParse(trimmed).success,
-      true
+      leadSchemaForSubmission('google_ads_landing', '/offer').safeParse(withEmail).success,
+      false
+    );
+    assert.equal(
+      leadSchemaForSubmission('facebook_ads_eddie', '/offer/fb').safeParse(withEmail).success,
+      false
     );
     assert.equal(
       leadSchemaForSubmission('facebook_ads_eddie', '/offer/facebook').safeParse(trimmed).success,
       false
     );
-    assert.equal(offerTrimmedLeadFormSchema.safeParse(trimmed).success, true);
+    const consented = {
+      ...withEmail,
+      sms_consent: true,
+      sms_consent_text_version: SMS_CONSENT_TEXT_VERSION,
+    };
     assert.equal(
-      offerTrimmedLeadFormSchema.safeParse({ ...trimmed, email: 'ada@example.com' }).success,
+      leadSchemaForSubmission('google_ads_landing', '/offer').safeParse(consented).success,
+      true
+    );
+    assert.equal(
+      leadSchemaForSubmission('facebook_ads_eddie', '/offer/facebook').safeParse({
+        ...consented,
+        email: '',
+      }).success,
       true
     );
   });

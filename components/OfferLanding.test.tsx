@@ -16,6 +16,8 @@ import { GOOGLE_ADS_PHONE } from '../lib/phones';
 
 const MAIN_OFFICE_TEL = 'tel:+12065195463';
 const ORGANIC_DISPLAY = '(253) 518-3638';
+const ORGANIC_TEL = 'tel:+12535183638';
+const ADS_TEL = `tel:${GOOGLE_ADS_PHONE.tel}`;
 
 function stickyBar(html: string): string {
   const start = html.indexOf('data-offer-mobile-bar');
@@ -25,27 +27,58 @@ function stickyBar(html: string): string {
   return html.slice(start, html.indexOf('</a>', end));
 }
 
-describe('trimmed /offer landing', () => {
-  it('keeps four fields, the ads tracking call, and no situations list', () => {
+function telHrefs(html: string): string[] {
+  return [...html.matchAll(/href="(tel:[^"]+)"/g)].map((match) => match[1]);
+}
+
+function inputTag(html: string, id: string): string {
+  const tag = html.match(new RegExp(`<input\\b[^>]*\\bid="${id}"[^>]*>`))?.[0];
+  assert.ok(tag, id);
+  return tag ?? '';
+}
+
+/** Every tap-to-call on a Google offer landing is the ads number. */
+function assertAdsTapToCall(html: string, label: string) {
+  const hrefs = telHrefs(html);
+  assert.ok(hrefs.length >= 3, `${label} tap-to-call count`);
+  for (const href of hrefs) {
+    assert.equal(href, ADS_TEL, `${label} ${href}`);
+  }
+  assert.equal(html.includes(ORGANIC_DISPLAY), false, label);
+  assert.equal(html.includes(ORGANIC_TEL), false, label);
+  assert.equal(html.includes(MAIN_OFFICE_TEL), false, label);
+  assert.equal(html.includes('(253) 352-4379'), true, label);
+}
+
+describe('/offer landing', () => {
+  it('requires email and unchecked consent, and uses the ads tracking call', () => {
     const html = renderToStaticMarkup(
       createElement(OfferGeneralLanding, { initialSearch: '' }) as ReactElement
     );
     const bar = stickyBar(html);
+    const email = inputTag(html, 'hero-email');
+    const consent = inputTag(html, 'hero-sms-consent');
 
     assert.equal(html.includes('Situations we help with'), false);
     assert.equal(html.includes('Behind on payments'), false);
     assert.equal(html.includes('Divorce'), false);
     assert.equal(html.includes('Foreclosure'), false);
-    assert.equal(html.includes('data-offer-fields="address listed name phone"'), true);
-    assert.equal(html.includes('type="email"'), false);
-    assert.equal(html.includes('sms_consent'), false);
+    assert.equal(email.includes('type="email"'), true);
+    assert.equal(email.includes('name="email"'), true);
+    assert.equal(email.includes('required'), true);
+    assert.equal(consent.includes('type="checkbox"'), true);
+    assert.equal(consent.includes('name="sms_consent"'), true);
+    assert.equal(consent.includes('checked'), false);
+    assert.equal(html.includes('Terms of Service'), true);
+    assert.equal(html.includes('Privacy Policy'), true);
+    assert.equal(html.includes('Reply STOP to opt out'), true);
+    assert.equal(html.includes('Consent is not a condition of purchase'), true);
     assert.equal(html.includes('we pay closing costs'), false);
     assert.equal(html.includes('Bought 100+ homes'), true);
     assert.equal(html.toLowerCase().includes('hundreds'), false);
-    assert.equal(bar.includes(`tel:${GOOGLE_ADS_PHONE.tel}`), true);
+    assert.equal(bar.includes(ADS_TEL), true);
     assert.equal(bar.includes('Call (253) 352-4379'), true);
-    assert.equal(html.includes(MAIN_OFFICE_TEL), false);
-    assert.equal(html.includes(ORGANIC_DISPLAY), false);
+    assertAdsTapToCall(html, '/offer');
     assert.equal(html.includes('(206) 519-5463'), false);
   });
 
@@ -55,10 +88,12 @@ describe('trimmed /offer landing', () => {
     );
     const bar = stickyBar(html);
 
-    assert.equal(bar.includes(`tel:${GOOGLE_ADS_PHONE.tel}`), true);
+    assert.equal(bar.includes(ADS_TEL), true);
     assert.equal(bar.includes('Call (253) 352-4379'), true);
     assert.equal(bar.includes(MAIN_OFFICE_TEL), false);
     assert.equal(html.includes(MAIN_OFFICE_TEL), false);
+    assert.equal(html.includes(ORGANIC_DISPLAY), false);
+    assert.equal(html.includes(ORGANIC_TEL), false);
   });
 
   it('situation pages already use the ads tracking number for tap-to-call', () => {
@@ -71,11 +106,16 @@ describe('trimmed /offer landing', () => {
         }) as ReactElement
       );
       const bar = stickyBar(html);
+      const email = inputTag(html, 'hero-email');
+      const consent = inputTag(html, 'hero-sms-consent');
 
-      assert.equal(bar.includes(`tel:${GOOGLE_ADS_PHONE.tel}`), true, content.formOrigin);
+      assert.equal(email.includes('type="email"'), true, content.formOrigin);
+      assert.equal(email.includes('required'), true, content.formOrigin);
+      assert.equal(consent.includes('name="sms_consent"'), true, content.formOrigin);
+      assert.equal(consent.includes('checked'), false, content.formOrigin);
+      assert.equal(bar.includes(ADS_TEL), true, content.formOrigin);
       assert.equal(bar.includes('Call (253) 352-4379'), true, content.formOrigin);
-      assert.equal(html.includes(MAIN_OFFICE_TEL), false, content.formOrigin);
-      assert.equal(html.includes(ORGANIC_DISPLAY), false, content.formOrigin);
+      assertAdsTapToCall(html, content.formOrigin);
       assert.equal(html.toLowerCase().includes('hundreds'), false, content.formOrigin);
       assert.equal(html.toLowerCase().includes('we pay closing costs'), false, content.formOrigin);
     }
@@ -114,8 +154,10 @@ describe('foreclosure offer landing', () => {
     assert.equal(html.includes('name="propertyAddress"'), true);
     assert.equal(html.includes('name="listed_with_agent"'), true);
     assert.equal(html.includes('sms_consent'), true);
+    assert.equal(inputTag(html, 'hero-sms-consent').includes('checked'), false);
     assert.equal(bar.includes('Call (253) 352-4379'), true);
-    assert.equal(bar.includes(`tel:${GOOGLE_ADS_PHONE.tel}`), true);
+    assert.equal(bar.includes(ADS_TEL), true);
+    assertAdsTapToCall(html, '/offer/foreclosure');
     const images = [...html.matchAll(/<img\b[^>]*>/g)].map((match) => match[0]);
     const houses = images.filter((tag) => tag.includes('/houses/house-'));
     assert.equal(houses.length, 5);
