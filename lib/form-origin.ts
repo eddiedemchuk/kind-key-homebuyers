@@ -18,9 +18,9 @@ export const FORM_ORIGINS = [
 export type FormOrigin = (typeof FORM_ORIGINS)[number];
 
 export interface FormOriginLabel {
-  source: 'Website' | 'Google Ads' | 'Facebook Ads' | 'Facebook Leads (Eddie)';
-  leadSource: 'Website' | 'Google Ads' | 'Facebook Ads' | 'Facebook Leads (Eddie)';
-  sourceTag: 'website' | 'google ads' | 'facebook ads' | 'Facebook Leads (Eddie)';
+  source: 'Website' | 'Google Ads' | 'YouTube Ads' | 'Facebook Ads' | 'Facebook Leads (Eddie)';
+  leadSource: 'Website' | 'Google Ads' | 'YouTube Ads' | 'Facebook Ads' | 'Facebook Leads (Eddie)';
+  sourceTag: 'website' | 'google ads' | 'youtube ads' | 'facebook ads' | 'Facebook Leads (Eddie)';
   /** Situation tag added beside the source tag. Empty on the website form and Facebook forms. */
   pageTag: string;
   tags: string;
@@ -102,6 +102,25 @@ export function resolveFormOrigin(value: unknown): FormOrigin {
 
 export function formOriginLabel(origin: FormOrigin): FormOriginLabel {
   return FORM_ORIGIN_LABELS[origin];
+}
+
+/**
+ * YouTube ads use the same offer form as Google Ads. The contact source and
+ * source tag change; the page tag and form name stay on that form.
+ */
+export function formOriginLabelForLead(origin: FormOrigin, youtubeAds = false): FormOriginLabel {
+  const form = FORM_ORIGIN_LABELS[origin];
+  if (!youtubeAds || form.source !== 'Google Ads') return form;
+  return {
+    ...form,
+    source: 'YouTube Ads',
+    leadSource: 'YouTube Ads',
+    sourceTag: 'youtube ads',
+    tags: form.tags
+      .split(', ')
+      .map((tag) => (tag === form.sourceTag ? 'youtube ads' : tag))
+      .join(', '),
+  };
 }
 
 /** Paid offer landings, including the Facebook variant of /offer. */

@@ -5,7 +5,8 @@ import {
   formatAttributionNotes,
   normalizeTouch,
 } from '@/lib/attribution';
-import { type FormOrigin, formOriginLabel, resolveFormOrigin } from '@/lib/form-origin';
+import { type FormOrigin, formOriginLabelForLead, resolveFormOrigin } from '@/lib/form-origin';
+import { isYouTubeAdsValue, isYouTubeOfferTouch } from '@/lib/offer-youtube';
 import { isFreshCampaignPath } from '@/lib/phones';
 
 interface GHLLeadInput {
@@ -42,6 +43,11 @@ interface GHLLeadInput {
   smsConsentTextVersion?: string;
   /** src query from a Facebook /offer visit. Empty when only utm_source=facebook matched. */
   src?: string;
+  /**
+   * Offer submit whose landing URL, or a stored first-touch visit, is YouTube.
+   * Ignored unless this form's contact source is Google Ads.
+   */
+  youtubeAds?: boolean;
   /** /sell first and last name. Other forms keep the split of `name`. */
   firstName?: string;
   lastName?: string;
@@ -97,7 +103,9 @@ export function buildGhlPayload(data: GHLLeadInput): Record<string, unknown> {
   const attribution = attributionForLead(data);
   const clickSource = deriveLeadSource(attribution);
   const formOrigin = resolveFormOrigin(data.formOrigin);
-  const form = formOriginLabel(formOrigin);
+  const youtubeAds =
+    data.youtubeAds === true || isYouTubeAdsValue(data.src) || isYouTubeOfferTouch(attribution);
+  const form = formOriginLabelForLead(formOrigin, youtubeAds);
   const listedWithAgent = data.listedWithAgent;
   const tags = [
     form.tags,

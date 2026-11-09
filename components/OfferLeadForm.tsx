@@ -9,6 +9,7 @@ import { trackEvent, trackLeadSubmit } from '@/lib/analytics';
 import { trackMetaLead } from '@/lib/meta-pixel';
 import { attributionFieldsForSubmit } from '@/lib/attribution-client';
 import type { FormOrigin } from '@/lib/form-origin';
+import { offerLandingIsYouTube, persistOfferYouTubeLanding } from '@/lib/offer-youtube-client';
 import { useRecaptcha } from '@/lib/useRecaptcha';
 import { formatPhoneChange, toE164 } from '@/lib/phone';
 import { FACEBOOK_OFFER_PATH, persistThankYouPhoneSource, thankYouHref } from '@/lib/phones';
@@ -46,6 +47,17 @@ async function deliverOfferLead(input: {
     console.error('Attribution capture failed:', error);
   }
 
+  let youtubeAds = false;
+  try {
+    persistOfferYouTubeLanding(window.location.search);
+    youtubeAds = offerLandingIsYouTube(input.formOrigin, window.location.search, {
+      utm_source: attributionFields.utm_source,
+      landing_page: attributionFields.landing_page,
+    });
+  } catch (error) {
+    console.error('YouTube visit capture failed:', error);
+  }
+
   const response = await fetch('/api/lead', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -55,6 +67,7 @@ async function deliverOfferLead(input: {
       pagePath: window.location.pathname,
       ...attributionFields,
       form_origin: input.formOrigin,
+      ...(youtubeAds ? { youtube_ads: true } : {}),
       ...(input.src !== undefined ? { src: input.src } : {}),
     }),
   });
@@ -89,6 +102,10 @@ function FullOfferLeadForm({
   const returnToAddress = useRef(false);
   const formRef = useRef<HTMLFormElement>(null);
   const { executeRecaptcha } = useRecaptcha(formRef);
+
+  useLayoutEffect(() => {
+    persistOfferYouTubeLanding(window.location.search);
+  }, []);
 
   useEffect(() => {
     const form = formRef.current;
