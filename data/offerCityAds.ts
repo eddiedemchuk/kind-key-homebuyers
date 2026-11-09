@@ -118,28 +118,28 @@ export interface OfferCityAdsPage {
 
 export const tacomaPuyallupOffer: OfferCityAdsPage = {
   path: '/offer/tacoma-puyallup',
-  title: 'Sell Your Tacoma or Puyallup House Fast for Cash',
+  title: 'Sell Your Tacoma, Puyallup, Lakewood, or Edgewood House Fast for Cash',
   description:
-    'Cash offer for an off-market Tacoma, Puyallup, South Hill, Lakewood, University Place, Spanaway, or Gig Harbor house. No fees, no repairs, no cleaning.',
-  headline: 'Sell Your Tacoma or Puyallup House Fast for Cash',
+    'Cash offer for an off-market house in Tacoma, Puyallup, Lakewood, Edgewood, Milton, Sumner, Fife, South Hill, University Place, Spanaway, or Gig Harbor. No fees, no repairs, no cleaning.',
+  headline: 'Sell Your Tacoma, Puyallup, Lakewood, or Edgewood House Fast for Cash',
   subhead:
-    'Off-market houses in Pierce County. No fees, no repairs, and no cleaning. The house should not be listed with an agent.',
-  areaHeading: 'Tacoma, Puyallup, and nearby Pierce County',
+    'Off-market houses in Tacoma, Puyallup, Lakewood, Edgewood, Milton, Sumner, and Fife. No fees, no repairs, and no cleaning. The house should not be listed with an agent.',
+  areaHeading: 'Tacoma, Puyallup, Lakewood, Edgewood, and nearby',
   areaBody:
-    'KindKey buys off-market houses in Tacoma, Puyallup, South Hill, Lakewood, University Place, Spanaway, and Gig Harbor. In Tacoma, that includes the North End, Hilltop, the Stadium District, the Lincoln District, and South Tacoma. Around Puyallup, that includes downtown Puyallup and South Hill. In Lakewood, that includes Tillicum and Oakbrook. University Place and Spanaway are included, as is Gig Harbor from downtown to Artondale.',
+    'KindKey buys off-market houses in Tacoma, Puyallup, South Hill, Lakewood, University Place, Spanaway, Edgewood, Milton, Sumner, Fife, and Gig Harbor. In Tacoma, that includes the North End, Hilltop, the Stadium District, the Lincoln District, and South Tacoma. Around Puyallup, that includes downtown Puyallup and South Hill. In Lakewood, that includes Tillicum and Oakbrook. University Place and Spanaway are included. Edgewood is in Pierce County, including North Hill. Milton sits on the King County and Pierce County line. Sumner includes downtown and the valley. Fife is in Pierce County, between Tacoma and Milton. Gig Harbor runs from downtown to Artondale.',
 };
 
 export const kitsapBremertonOffer: OfferCityAdsPage = {
   path: '/offer/kitsap-bremerton',
-  title: 'Sell Your Bremerton or Port Orchard House Fast for Cash',
+  title: 'Sell Your Bremerton, Port Orchard, or Gig Harbor House Fast for Cash',
   description:
-    'Cash offer for an off-market Bremerton, Port Orchard, Silverdale, or Poulsbo house. Inherited, tenants, damage, or repairs. No fees and no cleaning.',
-  headline: 'Sell Your Bremerton or Port Orchard House Fast for Cash',
+    'Cash offer for an off-market Bremerton, Port Orchard, Silverdale, Poulsbo, or Gig Harbor house. We buy houses in Gig Harbor for cash. No fees and no cleaning.',
+  headline: 'Sell Your Bremerton, Port Orchard, or Gig Harbor House Fast for Cash',
   subhead:
-    'Off-market houses in Kitsap County. No fees, no repairs, and no cleaning. The house should not be listed with an agent.',
-  areaHeading: 'Bremerton, Port Orchard, and Kitsap County',
+    'Off-market houses in Kitsap County and Gig Harbor. We buy houses in Gig Harbor for cash. No fees, no repairs, and no cleaning. The house should not be listed with an agent.',
+  areaHeading: 'Bremerton, Port Orchard, Gig Harbor, and nearby',
   areaBody:
-    'KindKey buys off-market houses in Bremerton, Port Orchard, Silverdale, and Poulsbo. In Bremerton, that includes Manette, downtown Bremerton, Charleston, and Navy Yard City. In Port Orchard, that includes downtown, Annapolis, Mile Hill, and McCormick Woods. Silverdale includes Old Town Silverdale. Poulsbo includes downtown Poulsbo and Viking Avenue.',
+    'KindKey buys off-market houses in Bremerton, Port Orchard, Silverdale, Poulsbo, and Gig Harbor. We buy houses in Gig Harbor for cash. You can sell a Gig Harbor house fast, with no fees, no repairs, and no cleaning. Gig Harbor is in Pierce County, across the Tacoma Narrows, from downtown to Artondale. In Bremerton, that includes Manette, downtown Bremerton, Charleston, and Navy Yard City. In Port Orchard, that includes downtown, Annapolis, Mile Hill, and McCormick Woods. Silverdale includes Old Town Silverdale. Poulsbo includes downtown Poulsbo and Viking Avenue.',
 };
 
 export const kentAuburnOffer: OfferCityAdsPage = {

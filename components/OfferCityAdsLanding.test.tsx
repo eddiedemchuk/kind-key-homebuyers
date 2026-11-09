@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { createElement, type ReactElement } from 'react';
+import { type ReactElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import sitemap from '../app/sitemap';
 import KentAuburnOfferPage, {
@@ -41,6 +41,10 @@ const PAGES = [
       'Puyallup',
       'South Hill',
       'Lakewood',
+      'Edgewood',
+      'Milton',
+      'Sumner',
+      'Fife',
       'University Place',
       'Spanaway',
       'Gig Harbor',
@@ -49,6 +53,7 @@ const PAGES = [
       'Stadium District',
       'Lincoln District',
       'South Tacoma',
+      'North Hill',
       'Tillicum',
       'Oakbrook',
       'Artondale',
@@ -63,7 +68,9 @@ const PAGES = [
       'Port Orchard',
       'Silverdale',
       'Poulsbo',
+      'Gig Harbor',
       'Kitsap',
+      'Pierce County',
       'Manette',
       'Charleston',
       'Navy Yard City',
@@ -72,6 +79,7 @@ const PAGES = [
       'McCormick Woods',
       'Old Town Silverdale',
       'Viking Avenue',
+      'Artondale',
     ],
   },
   {
@@ -154,6 +162,14 @@ function inputTag(html: string, id: string): string {
   return tag ?? '';
 }
 
+async function pageHtml(
+  page: (typeof PAGES)[number]['page'],
+  params: Record<string, string | string[] | undefined> = {}
+) {
+  const element = await page({ searchParams: Promise.resolve(params) });
+  return renderToStaticMarkup(element as ReactElement);
+}
+
 function robotsIndex(metadata: (typeof PAGES)[number]['metadata']): boolean | undefined {
   const robots = metadata.robots;
   if (robots == null || typeof robots === 'string') return undefined;
@@ -195,9 +211,9 @@ describe('Google Ads city offer pages', () => {
     }
   });
 
-  it('reuses the shared offer form, ads number, local copy, and allowed claims', () => {
+  it('reuses the shared offer form, ads number, local copy, and allowed claims', async () => {
     for (const entry of PAGES) {
-      const html = renderToStaticMarkup(createElement(entry.page) as ReactElement);
+      const html = await pageHtml(entry.page);
       const bar = stickyBar(html);
       const email = inputTag(html, 'hero-email');
       const consent = inputTag(html, 'hero-sms-consent');
@@ -267,5 +283,27 @@ describe('Google Ads city offer pages', () => {
         );
       }
     }
+  });
+
+  it('swaps the headline to the whitelist city named in the ad keyword', async () => {
+    const gigHarbor = await pageHtml(KitsapBremertonOfferPage, {
+      utm_term: 'we buy houses gig harbor',
+    });
+    assert.match(gigHarbor, /data-offer-headline[^>]*>We Buy Houses in Gig Harbor for Cash/);
+    assert.match(gigHarbor, /Gig Harbor is in Pierce County/);
+
+    const lakewood = await pageHtml(TacomaPuyallupOfferPage, {
+      utm_term: 'sell my house fast lakewood',
+    });
+    assert.match(lakewood, /data-offer-headline[^>]*>We Buy Houses in Lakewood for Cash/);
+    assert.match(lakewood, /Edgewood/);
+    assert.match(lakewood, /Milton/);
+    assert.match(lakewood, /Sumner/);
+    assert.match(lakewood, /Fife/);
+
+    const edgewood = await pageHtml(TacomaPuyallupOfferPage, {
+      keyword: 'we buy houses edgewood',
+    });
+    assert.match(edgewood, /data-offer-headline[^>]*>We Buy Houses in Edgewood for Cash/);
   });
 });

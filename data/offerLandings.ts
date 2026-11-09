@@ -37,12 +37,17 @@ const sharedSteps: OfferStep[] = [
   },
 ];
 
+/**
+ * Default /offer copy. `headline` is the no-city fallback for offerPageHeadline.
+ * A whitelist city in the ad URL replaces it with "We Buy Houses in {City} for Cash".
+ */
 export const generalOffer: OfferLandingContent = {
-  title: 'Sell Your House As-Is for Cash',
+  title: 'We Buy Houses for Cash',
   description:
-    'Local King & Pierce County home buyer. No repairs, no commissions, you pick the closing date.',
-  headline: 'Sell your house as-is for cash',
-  subhead: 'No repairs. You choose the closing date.',
+    'Cash home buyers in Pierce County, South King County, and Kitsap County. We buy homes for cash. Sell your property for cash, as-is, including a divorce, a foreclosure, tenants, a tax delinquent house, or liens. No repairs. You choose the closing date.',
+  headline: 'We buy houses for cash',
+  subhead:
+    'Cash home buyers. Sell your property for cash, as-is. No repairs. You choose the closing date.',
   cta: 'Get your no-obligation cash offer: takes 30 seconds',
   formOrigin: 'google_ads_landing',
   trustPoints: [

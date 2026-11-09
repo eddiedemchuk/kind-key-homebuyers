@@ -48,6 +48,26 @@ const DISTRESS_NOTES = [
   'Take what you want and leave the rest — no cleanout needed.',
 ] as const;
 
+/** Search phrases the Situations ad group sends to /offer. The house and the sale only. */
+const OFFER_SITUATIONS = [
+  {
+    title: 'Divorce',
+    body: 'You can ask for a cash offer on the house during a divorce. KindKey does not give legal advice about the divorce.',
+  },
+  {
+    title: 'Stop foreclosure',
+    body: 'Tell us the sale date if you have one. You can ask for a cash offer before the sale. Asking for an offer does not stop a foreclosure.',
+  },
+  {
+    title: 'House with tenants',
+    body: 'Tenants can stay in place. You do not have to end a rental before you ask for an offer.',
+  },
+  {
+    title: 'Tax delinquent, back taxes, and liens',
+    body: 'Back taxes and liens are paid out of the sale at closing, not out of your pocket first.',
+  },
+] as const;
+
 function OfferAgentComparison() {
   return (
     <section className="mt-10" aria-labelledby="vs-agent-heading">
@@ -105,17 +125,23 @@ function OfferBuyOptions() {
   );
 }
 
-function OfferCountyBuyers() {
+function OfferCountyBuyers({ includeKitsap = false }: { includeKitsap?: boolean }) {
+  const area = includeKitsap
+    ? 'Pierce County, South King County, and Kitsap County'
+    : 'Pierce and South King County';
+
   return (
     <section className="mt-8" aria-labelledby="county-buyers-heading">
       <h2 id="county-buyers-heading" className="text-xl font-bold">
-        Cash Home Buyers in Pierce &amp; South King County
+        {includeKitsap
+          ? 'Cash Home Buyers in Pierce, South King, and Kitsap County'
+          : 'Cash Home Buyers in Pierce & South King County'}
       </h2>
       <div className="mt-3 space-y-3 text-base leading-snug text-text-secondary">
         <p>
           Thinking &ldquo;I need to sell my house fast&rdquo; but don&apos;t want to deal with
           repairs, showings or agents? KindKey Home Buyers is a small, family-owned business. We buy
-          houses for cash across Pierce and South King County.
+          houses for cash across {area}.{includeKitsap ? ' We buy homes for cash.' : ''}
         </p>
         <p>
           <span className="font-semibold text-text-primary">We buy houses as-is.</span> No repairs,
@@ -159,6 +185,27 @@ function OfferDistressNotes() {
   );
 }
 
+function OfferSituations() {
+  return (
+    <section className="mt-8" aria-labelledby="offer-situations-heading" data-offer-situations>
+      <h2 id="offer-situations-heading" className="text-xl font-bold">
+        Situations we buy
+      </h2>
+      <p className="mt-2 text-base leading-snug text-text-secondary">
+        For an off-market house that is not listed with an agent.
+      </p>
+      <ul className="mt-4 space-y-4">
+        {OFFER_SITUATIONS.map((item) => (
+          <li key={item.title}>
+            <h3 className="font-semibold">{item.title}</h3>
+            <p className="mt-1 text-sm leading-relaxed text-text-secondary">{item.body}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
 export default function OfferLanding({
   content,
   formOrigin,
@@ -168,6 +215,8 @@ export default function OfferLanding({
   showOfferMath = false,
   showAgentComparison = false,
   showDistressNotes = false,
+  showServiceArea = false,
+  showSituations = false,
   steppedForm = false,
   stickyPhone,
   lockHeadline = false,
@@ -189,6 +238,10 @@ export default function OfferLanding({
   showAgentComparison?: boolean;
   /** Taxes, code cases, and cleanout notes on /offer and /offer/foreclosure. */
   showDistressNotes?: boolean;
+  /** Names Kitsap next to Pierce and South King. /offer only. */
+  showServiceArea?: boolean;
+  /** Divorce, foreclosure, tenants, and liens. /offer only. */
+  showSituations?: boolean;
   /** Two-step hero form on /offer/facebook. /offer and the situation pages stay one step. */
   steppedForm?: boolean;
   /** Keep the server headline. Foreclosure ads must not become the generic city line. */
@@ -252,6 +305,11 @@ export default function OfferLanding({
           <p className="mt-1 text-base leading-snug text-text-secondary md:mt-2">
             {content.subhead}
           </p>
+          {showServiceArea ? (
+            <p className="mt-1 text-sm font-semibold leading-snug" data-offer-service-area>
+              Pierce County, South King County, and Kitsap County.
+            </p>
+          ) : null}
           {trustStrip && trustStrip.length > 0 ? (
             <ul
               className="mt-3 grid grid-cols-2 gap-2"
@@ -284,7 +342,8 @@ export default function OfferLanding({
               stepped={steppedForm}
             />
           </div>
-          <OfferCountyBuyers />
+          <OfferCountyBuyers includeKitsap={showServiceArea} />
+          {showSituations ? <OfferSituations /> : null}
           <HousesBought />
           {showOfferMath ? (
             <>

@@ -61,8 +61,27 @@ describe('/offer landing', () => {
 
     assert.equal(html.includes('Situations we help with'), false);
     assert.equal(html.includes('Behind on payments'), false);
-    assert.equal(html.includes('Divorce'), false);
-    assert.equal(html.includes('Foreclosure'), false);
+    assert.match(html, /We buy houses for cash/);
+    assert.match(html, /Cash home buyers/);
+    assert.match(html, /Sell your property for cash/);
+    assert.match(html, /We buy homes for cash/);
+    assert.match(
+      html,
+      /data-offer-service-area[^>]*>Pierce County, South King County, and Kitsap County/
+    );
+    assert.match(html, /Cash Home Buyers in Pierce, South King, and Kitsap County/);
+    assert.match(html, /data-offer-situations/);
+    assert.match(html, /Divorce/);
+    assert.match(html, /does not give legal advice about the divorce/);
+    assert.match(html, /Stop foreclosure/);
+    assert.match(html, /does not stop a foreclosure/);
+    assert.match(html, /House with tenants/);
+    assert.match(html, /Tax delinquent, back taxes, and liens/);
+    assert.match(html, /not listed with an agent/);
+    assert.equal(html.includes('name="name"'), true);
+    assert.equal(html.includes('name="phone"'), true);
+    assert.equal(html.includes('name="propertyAddress"'), true);
+    assert.equal(html.includes('name="listed_with_agent"'), true);
     assert.equal(email.includes('type="email"'), true);
     assert.equal(email.includes('name="email"'), true);
     assert.equal(email.includes('required'), true);
@@ -126,6 +145,9 @@ describe('/offer landing', () => {
       assertAdsTapToCall(html, content.formOrigin);
       assert.equal(html.toLowerCase().includes('hundreds'), false, content.formOrigin);
       assert.equal(html.toLowerCase().includes('we pay closing costs'), false, content.formOrigin);
+      assert.equal(html.includes('data-offer-situations'), false, content.formOrigin);
+      assert.equal(html.includes('House with tenants'), false, content.formOrigin);
+      assert.equal(html.includes('Tax delinquent'), false, content.formOrigin);
     }
   });
 
