@@ -56,6 +56,8 @@ export default function OfferGeneralLanding({
         showOfferMath
         showAgentComparison
         showDistressNotes
+        showServiceArea
+        showSituations
       />
     </>
   );

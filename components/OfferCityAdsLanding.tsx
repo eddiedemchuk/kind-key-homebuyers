@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import LeadConnectorChat from '@/components/LeadConnectorChat';
 import { MobileNavButton, MobileNavPanel, MobileNavProvider } from '@/components/MobileNav';
+import OfferCityHeadline from '@/components/OfferCityHeadline';
 import OfferLeadForm from '@/components/OfferLeadForm';
 import OfferMobileBar, { OfferJumpButton, OfferPhoneLink } from '@/components/OfferMobileBar';
 import {
@@ -19,7 +20,14 @@ import { BUSINESS, localBusinessJsonLd } from '@/lib/site';
 
 const phone = GOOGLE_ADS_PHONE;
 
-export default function OfferCityAdsLanding({ content }: { content: OfferCityAdsPage }) {
+export default function OfferCityAdsLanding({
+  content,
+  headline = content.headline,
+}: {
+  content: OfferCityAdsPage;
+  /** Server headline. A whitelist city in the ad URL replaces it before paint. */
+  headline?: string;
+}) {
   const address = `${BUSINESS.streetAddress}, ${BUSINESS.addressLocality}, ${BUSINESS.addressRegion} ${BUSINESS.postalCode}`;
 
   return (
@@ -74,7 +82,7 @@ export default function OfferCityAdsLanding({ content }: { content: OfferCityAds
             style={{ marginBottom: 0 }}
             data-offer-headline
           >
-            {content.headline}
+            <OfferCityHeadline headline={headline} />
           </h1>
           <p className="mt-2 text-base leading-snug text-text-secondary">{content.subhead}</p>
           <ul

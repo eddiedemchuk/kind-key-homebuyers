@@ -64,7 +64,7 @@ describe('offer city headline', () => {
       'Stop foreclosure in Tacoma. Sell your house before the sale'
     );
     assert.equal(
-      offerDisplayedHeadline('Sell your house as-is for cash', '?utm_term=tacoma'),
+      offerDisplayedHeadline('We buy houses for cash', '?utm_term=tacoma'),
       'We Buy Houses in Tacoma for Cash'
     );
   });
