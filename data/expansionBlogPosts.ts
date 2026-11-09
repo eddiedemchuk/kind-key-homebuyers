@@ -3936,4 +3936,205 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to repair the foundation first. You can say no.',
   }),
+  post('sell-house-with-septic-or-drainfield-puyallup-wa', {
+    breadcrumbName: 'Septic or drainfield in Puyallup',
+    title: 'Selling a House with Septic Failure or a Failed Drainfield in Puyallup, WA',
+    description:
+      'How Puyallup and South Hill owners sell a house with a failing septic system or a failed drainfield without replacing it first. KindKey buys as-is. Not a health-department opinion.',
+    h1: 'Selling a House with Septic Failure or a Failed Drainfield in Puyallup, WA',
+    publishedAt: '2026-11-09',
+    intro: [
+      'You can sell a Puyallup house with a failing septic system, a failed drainfield, or a troubled private well without pumping the tank, replacing the field, connecting to public sewer, or passing a health-department inspection first. ' +
+        office +
+        ' KindKey does not inspect, pump, design, or certify a septic system or a well. This article is not a health-department opinion and not engineering advice.',
+      'Say which Puyallup you mean. Downtown Puyallup is inside the city, a valley grid near Pioneer Park and the fairgrounds. South Hill is the plateau south of the valley. Meridian, which is State Route 161, and Shaw Road are the everyday South Hill corridors. Many South Hill addresses use a Puyallup mailing city even when the parcel is unincorporated Pierce County. Both are Pierce County. A mailing city does not tell you whether the house is on City of Puyallup sewer, Pierce County sewer, a septic system, public water, or a private well. The parcel does. A downtown house with an old tank, and a South Hill house with a wet spot in the yard, are different properties. Bring the address.',
+    ],
+    callout:
+      'You do not have to pump the tank, replace the drainfield, or hook the house to sewer before you ask. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading:
+          'A city letter, a county sewer account, and a health-department file are not the same paper',
+        paragraphs: [
+          'Inside the city limits, sewer connection is a City of Puyallup question. PMC 14.08.070(1) says the city has determined that owners of property within the city are required to connect their industrial, commercial, business, and residential establishments to the wastewater treatment system and to cease to use all other methods of sewage disposal, provided that the establishment is within 300 feet of the nearest sewer main and is capable of being served by and through the municipal wastewater treatment system. PMC 14.08.070(3) says that if the system is later expanded so a main comes within 300 feet of a previously improved parcel that still uses an alternate method, the owner shall not be required to connect until that alternate method requires substantial repair or the owner desires to expand wastewater treatment capacity. PMC 14.08.070(4) authorizes the director of public works, in consultation with the city engineer, to suspend that connection requirement for an owner of a septic system that requires substantial repair when the conditions in that subsection are met, including the criteria the subsection points to in RCW 35A.21.390. KindKey will not measure the distance to a main, will not decide whether a system needs substantial repair, and will not apply RCW 35A.21.390. A Washington attorney can read the section with you. This article is not legal advice.',
+          'Development Services is at City Hall, 2nd Floor, 333 S Meridian, Puyallup, WA 98371. The line published for that department is (253) 864-4165, option 2. The posted hours are Monday through Friday, 8:00 a.m. to 5:00 p.m., excluding holidays. That counter is for owners who choose to permit a connection and keep the house. KindKey does not require the visit, will not pull a sewer permit, and will not appear for an inspection. PMC 14.08.080 says that if an owner of a dwelling subject to connection fails to connect within the specified time after being directed to connect, the monthly sewer charge is imposed as if the dwelling were connected, and that if the connection is not made within two years after notice to connect is given, the city attorney shall cause an action in Pierce County Superior Court. KindKey will not decide whether you were directed to connect, will not count those two years, and will not calculate the charge. PMC 14.08.050 says delinquent charges shall be a lien against the property served. KindKey does not promise that a charge disappears when you sign. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement, prepared by the closing agent, is where you see them.',
+          'A South Hill address outside the city is not a City of Puyallup sewer file. Pierce County’s Sewer Division describes unincorporated South Hill as part of its service area, along with other unincorporated communities. The division’s published office is 9850 64th St W, University Place, WA 98467, and the published phone is (253) 798-4050. The county also publishes a 24-hour sewer emergency line at (253) 798-7000. A place in a described service area is not the same fact as a side sewer already connected to your house. KindKey will not look that up for you and will not tell you that you must connect. Sumner and Edgewood are neighboring cities, not Puyallup neighborhoods. A house near that line can sit in Sumner or Edgewood even when the mail says Puyallup. Read the header. The closing agent confirms the parcel. A Puyallup deed, and an unincorporated South Hill deed, records with the Pierce County Auditor.',
+          'When the house uses an on-site system, the septic file in Pierce County is handled by the Tacoma-Pierce County Health Department, at 3629 S D St, Tacoma, WA 98418. The department’s main line is (253) 649-1500. The line it publishes for on-site sewage questions is (253) 649-1925. Its published hours are 8:00 a.m. to 4:30 p.m., Monday through Friday, except holidays. The department’s regulations page lists chapter 246-272A WAC for on-site sewage systems and chapter 173-160 WAC for minimum standards for construction and maintenance of wells, along with the department’s own chapters. KindKey does not interpret those rules, does not file an application, and does not order a record drawing for you. You do not have to find an as-built before an offer. If you already have one, it can come with the photos. A city or county letter about a shop, a yard, or an unpermitted room is a different file from a septic order. The Puyallup code-violations page is that letter. Read the header on the paper you actually received.',
+        ],
+      },
+      {
+        heading: 'What owners are looking at in the yard',
+        paragraphs: [
+          'Tell KindKey what you have seen, in plain words, before anyone schedules a visit. It may be a wet spot that does not dry, sewage at the surface, a backup into the house, a smell in the yard, a tank nobody has pumped, a drainfield a buyer’s inspector failed, or a system with no drawing in the file. Some of those houses are still lived in. Some have been empty long enough that the system has not been used. KindKey does not diagnose the cause, and KindKey will not tell you the field has failed or that the wet spot is only rain. A single Puyallup number, guessed before anyone sees the yard, is not an offer.',
+          'You do not have to locate the drainfield, pump the tank, replace a line, or install a new system before a walkthrough. Photos of the yard, the tank lid if you can see it, the shop, and any pages from the inspection that killed the last deal are enough to start. If the yard or a floor is not safe to walk, say so. An exterior look can begin the conversation. Do not walk a house that is not safe just to satisfy a buyer. Furniture and shop contents you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to.',
+          'A private well is a separate fact from the drainfield. Some houses are on public water. Some use a well. The city name does not decide it, and a failed drainfield does not decide it. KindKey will not test the water or tell you the well is safe. You can ask the health department or a licensed well professional. You can also ask KindKey to price the house as it sits while you do that. A downtown valley lot and a South Hill lot do not share one layout. Tell us which one you have, including if you do not know where the tank is.',
+          'A shop bathroom, a garage converted to a room, or an extra living space can be tied into the same system. The health department publishes guidance on unpermitted septic connections. KindKey will not decide whether a bathroom was connected without a permit, and KindKey will not make you disconnect it before an offer. Say what is out there. If someone still lives in the house, or in a room over the shop, say that too. Do not force an occupant out so the yard can be dug up. A tenant’s rights come from the rental agreement and from Washington law, including chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that a sale cancels a lease. The Puyallup tenants page is that file.',
+        ],
+      },
+      {
+        heading: 'Why a financed sale stalls, and what you do not have to finish',
+        paragraphs: [
+          'A retail buyer using a mortgage often wants a passed septic inspection, a known water source, and a record of the system. A failed drainfield, a tank with no drawing, or a well the buyer’s lender will not finance is a reason that sale dies. You do not have to complete that repair list, hire the contractor the report named, or relist the house before KindKey looks. KindKey will not quote a percentage off the price in that failed contract. Anyone who does that without seeing the house is guessing. Cash, in this sale, means KindKey is not waiting on that buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a sewer charge, a tax bill, or a lien.',
+          'Washington’s seller disclosure law is chapter 64.06 RCW. The form asks about work, permits, and systems. A prior inspection report does not answer the form for a later sale. KindKey will not tell you how to fill it out, whether an exemption applies, or what you should have told the first buyers. Ask a Washington real estate attorney if you are unsure. Answer with what you actually know. If you do not know where the drainfield is, or whether a past owner patched a wet spot, say that. Selling to a cash buyer is not a reason to leave a known problem off the form.',
+          'Replacing the system, or connecting to a public sewer where the city or the county will allow it, can fit if you want to keep the house and you can fund the work. A listing can fit after that, if a broker will take the condition and you can host the access. Commission is negotiated in the listing agreement with that broker and is not set by KindKey. Hire a licensed broker in Pierce County if you want the listing. KindKey will not run it, will not choose your designer, and will not tell you a listed sale is a mistake. A vacant house does not have to be put back in service, staged, or mowed to a listing standard before KindKey looks. The Puyallup vacant-house page is that file. Take what you want. Leave the rest.',
+        ],
+      },
+      {
+        heading: 'Sell the house as it sits',
+        paragraphs: [
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive from Puyallup does not add a repair requirement. KindKey does not promise a specific number of days. ' +
+            closing +
+            ' The offer reflects the house as it sits, so it can be less than a retail price for a house on a working public sewer with a passed inspection. You see the payoffs on the settlement statement before you close. You can say no. The Puyallup as-is page is that direct sale for the house in its current condition.',
+          'If a foreclosure notice is in the file with the septic letter, you have a clock the drainfield does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. The Puyallup foreclosure page is that file. If the owner has died, who can sign is a probate or trust question, separate from the tank in the yard. KindKey will not file the probate and will not guess which relative can sign. Heirs can live in Sumner, Edgewood, Tacoma, or another state and still need the person with authority. Do not sign before that authority exists. The Puyallup inherited-house page is that question. A relative who still lives there should not be pushed out so the house looks vacant.',
+          'A Pierce County property-tax bill is a different account from a health-department file and from a city sewer charge. KindKey does not calculate the treasurer’s number. The Washington tax-delinquent guide is that clock. Parts of a sale can include more than one of these papers. You can ask for an offer while an attorney reads them. Requesting the offer does not extend a compliance date, stop a daily problem in the yard, or vacate an order.',
+          'A septic or well problem in Port Orchard, Bremerton, Silverdale, Poulsbo, Bainbridge Island, Kingston, Olalla, or Seabeck is a Kitsap County file. Use the Kitsap septic guide for those cities. An Edgewood house, including a North Hill or Jovita lot, is the Edgewood septic guide. Do not use this Puyallup page for either one, or for a Milton house that may be in King County or Pierce County. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the yard through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question:
+          'Do I have to replace a failed drainfield, or pass a septic inspection, before KindKey will look?',
+        answer:
+          'No. KindKey buys Puyallup and South Hill houses with failing septic systems, failed drainfields, and troubled wells as they sit. You do not have to pump the tank, connect to sewer, or finish an inspection repair list first. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'My address says Puyallup. Is the septic file with the city?',
+        answer:
+          'Read the header on the letter. Inside the city, a sewer-connection question can be a City of Puyallup matter under PMC 14.08.070. On unincorporated South Hill, public sewer is a Pierce County question. An on-site septic system, in either place, is a Tacoma-Pierce County Health Department file. KindKey will not decide which office controls your parcel.',
+      },
+      {
+        question: 'What if I do not know whether the house is on septic, public sewer, or a well?',
+        answer:
+          'Say that. KindKey does not require you to locate the drainfield or become the well expert before an offer. A later title report or a record drawing may still identify the system. You can decline the offer after you see it.',
+      },
+      {
+        question:
+          'What if a foreclosure notice or an estate is in the file with the septic letter?',
+        answer:
+          'Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute, will not stop a trustee, and will not file a probate or guess who can sign. You can still request a cash offer while you get that advice. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/puyallup',
+        label: 'Sell a house in Puyallup',
+        description: 'Downtown, South Hill, Meridian, and Shaw Road.',
+      },
+      {
+        href: '/areas/puyallup/sell-house-as-is',
+        label: 'Sell a house as-is in Puyallup',
+        description: 'The drainfield does not have to be replaced before a direct sale.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/puyallup/sell-my-house-fast',
+        label: 'Sell my house fast in Puyallup',
+        description: 'The Puyallup fast-sale page, without a new septic system first.',
+      },
+      {
+        href: '/areas/puyallup/sell-vacant-house',
+        label: 'Vacant houses in Puyallup',
+        description: 'When the system has sat because nobody lives there.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/puyallup/sell-inherited-probate-house',
+        label: 'Inherited houses in Puyallup',
+        description: 'When the tank and the signer are both open questions.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the condition of the system.',
+      },
+      {
+        href: '/blog/selling-a-house-in-probate-washington',
+        label: 'Probate houses in Washington',
+        description: 'The statewide guide. Your attorney confirms who can sign.',
+      },
+      {
+        href: '/areas/puyallup/sell-house-with-code-violations',
+        label: 'Code violations in Puyallup',
+        description: 'A city or county letter about a shop or a yard, rather than the drainfield.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'The King and Pierce County overview.',
+      },
+      {
+        href: '/areas/puyallup/sell-house-with-tenants',
+        label: 'Houses with tenants in Puyallup',
+        description: 'When someone still lives there and the yard needs work.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/puyallup/sell-hoarder-house',
+        label: 'Heavy-repair houses in Puyallup',
+        description: 'When the septic system is one part of a larger repair.',
+      },
+      {
+        href: '/areas/puyallup/sell-house-before-foreclosure',
+        label: 'Foreclosure in Puyallup',
+        description: 'When a trustee’s notice is in the file with the septic letter.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A Pierce County tax bill is a different account from a sewer charge.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description: 'The city between Milton, Fife, and Puyallup. A different lot.',
+      },
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill and Jovita. Edgewood is not a Puyallup neighborhood.',
+      },
+      {
+        href: '/areas/sumner',
+        label: 'Sell a house in Sumner',
+        description: 'The valley city to the north, if the parcel is actually there.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-kitsap-county',
+        label: 'Septic or well issues in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo. A different county.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description:
+          'Say septic, drainfield, sewer, well, or that you do not know. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for a Puyallup offer with the system as it sits',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to replace the drainfield first. You can say no.',
+  }),
 ];
