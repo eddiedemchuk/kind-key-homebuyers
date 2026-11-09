@@ -82,6 +82,14 @@ describe('/offer landing', () => {
     assert.equal(html.includes('(206) 519-5463'), false);
   });
 
+  it('keeps the ads tracking number for a YouTube src', () => {
+    const html = renderToStaticMarkup(
+      createElement(OfferGeneralLanding, { initialSearch: 'src=youtube' }) as ReactElement
+    );
+    assertAdsTapToCall(html, 'src=youtube');
+    assert.equal(html.includes('tel:+12534538597'), false);
+  });
+
   it('keeps the sticky call on the ads tracking number for a Facebook /offer visit', () => {
     const html = renderToStaticMarkup(
       createElement(OfferGeneralLanding, { initialSearch: 'src=fb' }) as ReactElement

@@ -2,7 +2,10 @@ import type { Metadata } from 'next';
 import type { OfferFaq, OfferStep } from '@/data/offerLandings';
 import { pageMetadata } from '@/lib/seo';
 
-/** Same origin as /offer, so GoHighLevel source stays Google Ads and the tag stays general. */
+/**
+ * Same origin as /offer, so the page tag stays general.
+ * GoHighLevel source stays Google Ads unless the landing URL is a YouTube ad.
+ */
 export const OFFER_CITY_ADS_FORM_ORIGIN = 'google_ads_landing' as const;
 
 export const OFFER_CITY_ADS_TRUST = [

@@ -150,6 +150,7 @@ export async function POST(request: NextRequest) {
       ip,
       attribution,
       formOrigin,
+      ...(body.youtube_ads === true ? { youtubeAds: true } : {}),
       listedWithAgent: data.listed_with_agent ?? data.listedWithAgent,
       ...(realtorStatus ? { realtorStatus } : {}),
       smsConsent,
