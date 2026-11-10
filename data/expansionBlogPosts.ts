@@ -4137,4 +4137,258 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to replace the drainfield first. You can say no.',
   }),
+  post('sell-house-with-heating-oil-tank-edgewood-wa', {
+    breadcrumbName: 'Heating oil tank in Edgewood',
+    title: 'Selling a House with a Heating Oil Tank in Edgewood, WA',
+    description:
+      'How Edgewood owners sell a house with an underground, basement, or aboveground heating oil tank, including a tank that may have leaked, without removing it first. KindKey buys as-is. Not legal or environmental advice.',
+    h1: 'Selling a House with a Heating Oil Tank in Edgewood, WA',
+    publishedAt: '2026-11-10',
+    intro: [
+      'You can sell an Edgewood house with a heating oil tank without digging the tank up, decommissioning it, cleaning up a leak, converting the heat, or finishing a state grant first. The tank can be underground, in a basement, or above the ground. ' +
+        office +
+        ' KindKey is not an environmental consultant, a tank contractor, or the Pollution Liability Insurance Agency. This article is not legal, tax, or environmental advice.',
+      'Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. It incorporated on February 28, 1996. Most residents live on North Hill: longer driveways, and shops set back from the street. A smaller share of the city sits in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. A North Hill fill pipe near a shop, a basement tank, and a valley house where someone smelled oil are different properties. Bring the address.',
+    ],
+    callout:
+      'You do not have to remove the tank, enroll in a state grant, or finish a cleanup before you ask. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'A buried tank, a basement tank, and a leak are different facts',
+        paragraphs: [
+          'Tell KindKey what you have seen, in plain words, before anyone schedules a visit. The furnace in the house may already be gas or electric, and an old tank can still be in the ground, in the basement, or beside the shop. It may be a fill pipe in the grass, a vent along the foundation, a tank you can see, a stain in the soil, a smell in the basement, or a report a past buyer left behind. Some of those houses are still lived in. Some have been empty long enough that nobody has opened the tank. KindKey does not locate tanks, does not test soil, and will not tell you the tank leaked or that the stain is only rain. A single Edgewood number, guessed before anyone sees the property, is not an offer.',
+          'RCW 70A.330.010(8) says heating oil means any petroleum product used for space heating in oil-fired furnaces, heaters, and boilers, including stove oil, diesel fuel, or kerosene. It says heating oil does not include petroleum products used as fuels in motor vehicles, marine vessels, trains, buses, aircraft, or off-highway equipment not used for space heating, or for industrial processing or the generation of electrical energy. RCW 70A.330.010(9) says a heating oil tank means a tank and its connecting pipes, whether above or below ground, or in a basement, with pipes connected to the tank for space heating of human living or working space on the premises where the tank is located. That definition says a heating oil tank does not include a decommissioned or abandoned heating oil tank, or a tank used solely for industrial process heating or generation of electrical energy. RCW 70A.330.010(17) says a release means a spill, leak, emission, escape, or leaching into the environment. KindKey will not decide whether your tank meets those sentences, and KindKey will not tell you a tank that was filled with sand years ago is still a heating oil tank under that definition. A tank that held gasoline or diesel for vehicles is a different file from a tank that heated the house. Say what you know. If you do not know what was stored, say that.',
+          'You do not have to find the tank, hire a locator, pump it, or sample the soil before a walkthrough. Photos of the fill pipe, the vent, the furnace, the shop, and any pages you already have are enough to start. If a floor or a shop is not safe to walk, say so. An exterior look can begin the conversation. Do not walk a house that is not safe just to satisfy a buyer. Furniture and shop contents you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to. A North Hill lot is often larger than a Tacoma city lot, so the walkthrough has to include the house and the outbuildings. Tell us which structure the tank served. Milton, next door, can fall in King County or Pierce County. Edgewood does not. A mailing address that says Edgewood is not always inside the city. The closing agent confirms the parcel. An Edgewood deed records with the Pierce County Auditor.',
+        ],
+      },
+      {
+        heading: 'Ecology, the city code, and the health department are not the same office',
+        paragraphs: [
+          'The Washington State Department of Ecology underground storage tank page says Ecology does not regulate any home heating oil tanks, underground or aboveground, and it points owners to the Pollution Liability Insurance Agency at (800) 822-3905. WAC 173-360A-0110(1)(d) lists a UST system used solely for heating structures on the property where the system is located as exempt from all of the requirements of chapter 173-360A WAC. That chapter is the state underground storage tank program under chapter 90.76 RCW. KindKey will not decide whether the exemption fits your tank, and KindKey will not register a tank with Ecology. A commercial fuel tank, or a tank that stored motor fuel, can be a different program. Do not use this page as the guide for a gas station.',
+          'Chapter 14.60 EMC is the city critical aquifer recharge areas chapter. It is not a finding that your lot is in one. EMC 14.60.030(B) says that, in addition to the requirements of that title, three authorities regulate the installation, repair, replacement, or removal of any underground storage tank. The city Building and Fire Official regulates and authorizes permits for all underground storage tanks, and hazardous aboveground storage tanks, pursuant to the International Fire Code. The same subsection says Ecology regulates and authorizes permits for all underground storage tanks and cites chapter 173-360 WAC. The code publisher notes that chapter 173-360 WAC was repealed and points readers to chapter 173-360A WAC. The same subsection says the Tacoma-Pierce County Health Department regulates and authorizes permits for the removal of any underground storage tank, and it points to Pierce County Code chapter 8.34 as adopted by reference under chapter 8.05 EMC. EMC 14.60.040(D)(3) lists below-ground storage tanks among hazardous land uses that may only be permitted in a critical aquifer recharge area after a hydrogeologic assessment. KindKey will not map your lot, will not decide whether an old heating oil tank is that kind of use, and will not order the assessment. KindKey will not reconcile the city cross-reference with Ecology’s statement that Ecology does not regulate home heating oil tanks.',
+          'If you choose to permit a removal and keep the house, Community Development is at Edgewood City Hall, 10440 Dom Calata Way E, Edgewood, WA 98372. The phone published on the city site is (253) 952-3299. Posted City Hall hours are Monday through Thursday, 8:30 a.m. to 5:00 p.m. That counter is for owners who choose the permit. KindKey does not require the visit, will not pull the permit, and will not appear for an inspection. The city’s adopted-codes page lists the state adoption of the International Fire Code. KindKey is not the Building and Fire Official. East Pierce Fire & Rescue covers the city. A heating oil question is not a call to the fire department unless there is a fire or the fire department is already on a spill. KindKey is not East Pierce.',
+          'The Tacoma-Pierce County Health Department is at 3629 S D St, Tacoma, WA 98418. The department’s main line is (253) 649-1500. KindKey will not file a removal permit with that department and will not tell you a home heating oil tank requires one. On-site sewage is a different system from a heating oil tank. Many older North Hill and Jovita lots use a septic system, and some use a private well. Others are on public sewer and public water. The city name does not decide it, and an oil stain does not decide it. You do not have to pump a tank, locate a drainfield, or replace it before KindKey looks. KindKey does not inspect, pump, or certify a septic system or a well. The Edgewood septic guide is that page. A roof leak or a wet wall is the Edgewood water-damage guide. This page is the heating oil tank.',
+        ],
+      },
+      {
+        heading: 'The old insurance program and the loan and grant program',
+        paragraphs: [
+          'RCW 70A.330.010 says support for owners of damaged heating oil tanks can be provided through the agency’s revolving loan and grant program in chapter 70A.345 RCW, and that the legislature intends to transition the pollution liability insurance program for heating oil tanks to a revolving loan and grant program while maintaining that insurance program for existing registrants. RCW 70A.330.040(1) says that, while existing claims are closed out, the director has authority to maintain a program providing pollution liability insurance for heating oil tanks that provides up to sixty thousand dollars per occurrence coverage, and that the program shall not register heating oil tanks for that coverage after July 1, 2020. The published heading of RCW 70A.330.040 says the section expires July 1, 2030. KindKey will not tell you whether that expiration changes your tank, whether an old registration still matters, or whether a past claim can be reopened. KindKey does not interpret the statute.',
+          'The Pollution Liability Insurance Agency heating oil insurance page says the insurance policy expired on June 30, 2025, ending coverage for tanks registered with the agency, and that no new claims are accepted in that insurance program after July 31, 2025. It says claims for releases reported before July 1, 2025, remain with the agency until the claim is closed or the funds are exhausted. The same page says a suspected or confirmed release must be reported to the Department of Ecology by a Statewide Environmental Incident Report Form, which the page calls ERTS. RCW 70A.330.040(11) says the director shall establish requirements, including deadlines not to exceed ninety days, for reporting to the agency a suspected or confirmed release from a heating oil tank, including a decommissioned or abandoned heating oil tank, that may pose a threat to human health or the environment. KindKey will not file either report, will not count the days, and will not decide whether a stain is a release. Asking for an offer does not file the report. The agency’s published phones are (800) 822-3905 and (360) 407-0520. KindKey is not that agency.',
+          'The agency’s heating oil loan and grant page, as posted when this article was written, says the 2026 fall/winter application cycle is open through December 17, 2026, and that cycles open in the spring and the winter and stay open for 45 days. That page says the program provides up to $75,000 for qualified heating oil tank owners, and then lists separate pieces: a preliminary planning assessment grant of $7,000, a technical-assistance enrollment grant of $1,500 when it applies, a tank-removal and cleanup grant of up to $60,000, and an infrastructure-upgrade loan if the owner qualifies. The page says the agency must pre-approve work, that the program does not reimburse work already completed, that an applicant must own the property and submit a complete application, and that cleanup estimates most often exceed the tank-removal and cleanup grant. A date or a dollar figure on a state web page can change. Read the current page, or call the agency, before you rely on it. KindKey will not add those figures, will not tell you that you qualify, will not apply for you, will not choose a consultant, and will not promise a No Further Action letter under chapter 173-340 WAC. A grant is not a step KindKey requires before an offer. You can ask for a cash offer and never apply.',
+        ],
+      },
+      {
+        heading: 'Disclose what you know, or sell the house as it sits',
+        paragraphs: [
+          'Washington’s seller disclosure law is chapter 64.06 RCW. RCW 64.06.020 sets out the seller disclosure statement. In the environmental section of that form, question 7.E asks whether there are any substances, materials, or products in or on the property that may be environmental concerns, and the examples include fuel or chemical storage tanks and contaminated soil or water. Question 7.G asks whether there is any soil or groundwater contamination. A prior listing, or a grant application, does not answer the form for a later sale. KindKey will not tell you how to mark the boxes, whether an exemption applies, or what you should have told an earlier buyer. Ask a Washington real estate attorney if you are unsure. Answer with what you actually know. If you do not know whether a past owner filled the tank or left it, say that. Selling to a cash buyer is not a reason to leave a known tank, or a known leak, off the form.',
+          'Removing the tank, or converting the heat and then listing, can fit if you want to keep the house and you can fund the work. A financed buyer often stalls on the same tank, the same missing report, or the same stain. Commission is negotiated in the listing agreement with the broker and is not set by KindKey. Hire a licensed broker in Pierce County if you want the listing. KindKey will not run it, will not choose your contractor, and will not tell you a listed sale is a mistake.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive from Edgewood does not add a removal requirement. KindKey does not promise a specific number of days. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a Pierce County tax bill, a cleanup cost, or a lien. The offer reflects the house as it sits, so it can be less than a retail price for a house with the tank gone and a clean report. You see the payoffs on the settlement statement before you close. You can say no. The Edgewood as-is page is that direct sale for the house in its current condition.',
+          'If a foreclosure notice is in the file with the tank, you have a clock the tank does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. The Edgewood foreclosure page is that file. If the owner has died, who can sign is a probate or trust question, separate from the tank in the yard. KindKey will not file the probate and will not guess which relative can sign. Use the Edgewood probate page or the living-trust page, and do not sign before the authority exists. If someone still lives in the house, say so. Do not force an occupant out so the yard can be dug up. A tenant’s rights come from the rental agreement and from Washington law, including chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that a sale cancels a lease. A Pierce County property-tax bill is a different account from a tank report. The Edgewood property-tax guide is that clock. Parts of Edgewood lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary.',
+          'A heating oil tank in Port Orchard, Bremerton, Silverdale, Poulsbo, Bainbridge Island, Kingston, Olalla, or Seabeck is a Kitsap County file. Do not use this Edgewood page as the guide for a Kitsap city, or for a Milton house that may be in King County. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the tank through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question:
+          'Do I have to remove a heating oil tank, or clean up a leak, before KindKey will look at an Edgewood house?',
+        answer:
+          'No. KindKey buys Edgewood houses with underground, basement, and aboveground heating oil tanks as they sit, including a tank that may have leaked. You do not have to dig it up, decommission it, or finish a cleanup first. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Does the Department of Ecology permit a home heating oil tank in Edgewood?',
+        answer:
+          'Ecology’s underground storage tank page says Ecology does not regulate home heating oil tanks, underground or aboveground, and it points owners to the Pollution Liability Insurance Agency. WAC 173-360A-0110(1)(d) exempts a tank system used solely to heat structures on the property from that chapter. EMC 14.60.030(B) also names the city Building and Fire Official and the Tacoma-Pierce County Health Department for underground storage tank permits. KindKey will not decide which office applies to your tank.',
+      },
+      {
+        question:
+          'Will KindKey apply for the state heating oil grant or tell me the old insurance still pays?',
+        answer:
+          'No. KindKey will not apply, will not tell you that you qualify, and will not interpret an old registration. The agency’s insurance page says that policy expired on June 30, 2025, and that no new claims are accepted after July 31, 2025. Read the current loan and grant page, or call (800) 822-3905, before you rely on a dollar figure or a deadline. You can still ask KindKey for an offer without applying.',
+      },
+      {
+        question: 'What if a foreclosure notice or an estate is in the file with the tank?',
+        answer:
+          'Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute, will not stop a trustee, and will not file a probate or guess who can sign. You can still request a cash offer while you get that advice. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, Meridian, and the valley.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell a house as-is in Edgewood',
+        description: 'The tank does not have to come out before a direct sale.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/edgewood/sell-my-house-fast',
+        label: 'Sell my house fast in Edgewood',
+        description: 'The Edgewood fast-sale page, without a tank removal first.',
+      },
+      {
+        href: '/blog/sell-my-house-fast-for-cash-edgewood',
+        label: 'Sell fast for cash in Edgewood',
+        description: 'When another round of showings is not the plan.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description: 'A wet yard can be a drainfield, not an oil tank.',
+      },
+      {
+        href: '/blog/sell-water-damaged-house-edgewood-wa',
+        label: 'Water damage in Edgewood',
+        description: 'A roof leak or a burst pipe, rather than heating oil.',
+      },
+      {
+        href: '/blog/sell-house-with-foundation-problems-edgewood-wa',
+        label: 'Foundation problems in Edgewood',
+        description: 'A crack or a soft floor on the same property.',
+      },
+      {
+        href: '/blog/sell-house-needing-repairs-edgewood-wa',
+        label: 'Major repairs in Edgewood',
+        description: 'Deferred work that is not the tank itself.',
+      },
+      {
+        href: '/areas/edgewood/sell-hoarder-house',
+        label: 'Heavy-repair houses in Edgewood',
+        description: 'When the tank is one part of a larger repair.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents and heavy repairs can stay.',
+      },
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Vacant houses in Edgewood',
+        description: 'When the tank sat because nobody lives there.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-edgewood-wa',
+        label: 'Selling a vacant Edgewood house',
+        description: 'An empty house and a city maintenance letter.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'A city letter about a shop or a yard, rather than the tank.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'The King and Pierce County overview.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-edgewood-wa',
+        label: 'Code violations in Edgewood',
+        description: 'When the tank file also drew a city notice.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-tenants',
+        label: 'Houses with tenants in Edgewood',
+        description: 'When someone still lives there and the yard needs work.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Foreclosure in Edgewood',
+        description: 'When a trustee’s notice is in the file with the tank.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'A loan deadline is separate from the tank.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/areas/edgewood/sell-inherited-probate-house',
+        label: 'Inherited houses in Edgewood',
+        description: 'When the tank and the signer are both open questions.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the tank.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Probate houses in Edgewood',
+        description: 'Who can sign, when the owner has died.',
+      },
+      {
+        href: '/blog/sell-house-in-a-living-trust-edgewood-wa',
+        label: 'Living trusts in Edgewood',
+        description: 'When the house is already titled in a trust.',
+      },
+      {
+        href: '/blog/behind-on-property-taxes-edgewood-wa',
+        label: 'Property taxes in Edgewood',
+        description: 'A Pierce County tax bill is a different account from a tank report.',
+      },
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description: 'The next city west. Milton can be King County or Pierce County.',
+      },
+      {
+        href: '/areas/puyallup',
+        label: 'Sell a house in Puyallup',
+        description: 'The city to the south, if the parcel is actually there.',
+      },
+      {
+        href: '/areas/sumner',
+        label: 'Sell a house in Sumner',
+        description: 'The valley city to the east.',
+      },
+      {
+        href: '/areas/fife',
+        label: 'Sell a house in Fife',
+        description: 'The city to the west, if the mailing city is wrong.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo. A different county.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say where the tank is, or that you do not know. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood offer with the tank still in place',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to remove the tank first. You can say no.',
+  }),
 ];
