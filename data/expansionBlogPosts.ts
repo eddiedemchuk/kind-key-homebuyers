@@ -4631,4 +4631,247 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to empty the house or renew the landlord license first. You can say no.',
   }),
+  post('selling-a-vacant-house-puyallup-wa', {
+    breadcrumbName: 'Vacant houses in Puyallup',
+    title: 'Selling a Vacant House in Puyallup, WA',
+    description:
+      'How Puyallup and South Hill owners sell a vacant house as-is, including a city or county notice, without cleaning it out first. KindKey buys as a principal. Not legal advice.',
+    h1: 'Selling a Vacant House in Puyallup, WA',
+    publishedAt: '2026-11-12',
+    intro: [
+      'You can sell a vacant house in Puyallup without mowing it to a listing standard, boarding every window, emptying the rooms, turning the utilities back on, or flying back for showings. ' +
+        office +
+        ' KindKey is not code enforcement, a property manager, the fire department, or a vacant-house insurer.',
+      'Vacant means nobody lives there. Say which Puyallup you mean before anyone treats the letter as a city case. Downtown Puyallup is inside the city, a valley grid near Pioneer Park and the fairgrounds. South Hill is the plateau south of the valley. Meridian, which is State Route 161, and Shaw Road are the everyday South Hill corridors. Many South Hill addresses use a Puyallup mailing city even when the parcel is unincorporated Pierce County. Both are Pierce County. A mailing city does not decide which office wrote the notice, or whether the house is on city sewer, county sewer, or a septic system. A downtown house that has sat empty, and a South Hill house empty after a job move, are different properties. Bring the address.',
+    ],
+    callout:
+      'You do not have to clean the house out, keep the utilities on, or cure a yard notice before KindKey looks. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'Say who has a key, and whether anyone is still inside',
+        paragraphs: [
+          'Tell KindKey who has a key, whether the driveway is gated, and whether the power and water are on, before anyone schedules a visit. A relative in Sumner, Edgewood, Tacoma, or another state can open the door once. KindKey does not need a string of showings. Furniture, tools, and vehicles you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to, not during the signing. If a floor, a porch, or a shop roof is not safe to walk, say so. An exterior look can start the conversation. Do not walk a house that is not safe just to satisfy a buyer.',
+          'If a tenant, a relative, or anyone else still lives in the house, this is the wrong page. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not tell you that it does, and KindKey will not serve a notice or tell you to change the locks. Do not force that person out so the house looks empty. The Puyallup tenants page is that file. An occupied RV or a tent on an unincorporated lot is also not a vacant delivery. Pierce County’s code-violations page lists occupied RVs or tents among common complaints. Say who is there.',
+          'Sumner and Edgewood are neighboring cities, not Puyallup neighborhoods. A house near that line can sit in Sumner or Edgewood even when the mail says Puyallup. Milton, farther west, can be King County or Pierce County. Read the header on any letter. The closing agent confirms the parcel. A Puyallup deed, and an unincorporated South Hill deed, records with the Pierce County Auditor in Tacoma, at 2401 S 35th St, Room 200, Tacoma, WA 98409. The phone that office publishes for questions about requesting recorded documents is (253) 798-7440. The auditor’s published counter hours are Monday through Friday, 8:30 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m. The auditor does not mow the yard and does not decide a nuisance. Do not record a Pierce County deed at the Kitsap County Auditor in Port Orchard, or at the King County Recorder, because someone in the family takes a ferry or because KindKey’s office is in Auburn. Some parcels in the Puyallup valley can lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary.',
+        ],
+      },
+      {
+        heading: 'A City of Puyallup notice and a Pierce County notice are different papers',
+        paragraphs: [
+          'Inside the city limits, code compliance is a City of Puyallup file. The city’s code-enforcement page says the Code Compliance Division enforces sections of the Puyallup Municipal Code, including zoning ordinances, property maintenance codes, and public nuisances. It says the code compliance officer opens a case only when a written complaint is received, and that the city does not follow up on anonymous phone tips. The page publishes the phone (253) 770-3327 and the physical address 333 S Meridian, Puyallup, WA 98371. A Request for Action form can be picked up at the permit center on the second floor of that building. KindKey is not that desk, will not file the complaint, and will not appear for an inspection. The same page sends fire hazards to Central Pierce Fire and Rescue, street-parking complaints to the Puyallup Police Department, building-code violations to Puyallup Building Services, and animal complaints to Metro Animal Services. Those are different calls. Call 911 for a fire or for a crime in progress. KindKey is none of those offices.',
+          'Chapter 6.07 PMC is the unfit-dwellings chapter, adopted under chapter 35.80 RCW. PMC 6.07.010 says the council finds dwellings and other buildings in the city that are dangerous or unfit for reasons the section lists, including dwellings, buildings, structures, and premises which are vacant, unsecured, and abandoned or apparently abandoned. PMC 6.07.020 says the public officer is the director of development and permitting services or that director’s designee, and it says “unsafe or unfit” includes structures defined by the Puyallup Municipal Code and by adopted codes in the current and subsequent editions of the International Property Maintenance Code. PMC 6.07.030 declares as public nuisances buildings that, by reason of decay, dilapidation, or damage by fire, the elements, or any other cause, are in the judgment of the public officer dangerous, unsafe, or unfit. KindKey will not decide whether your house meets those sentences. You do not have to board the windows or finish the city’s list before you ask for an offer.',
+          'PMC 6.07.050 says that if a preliminary investigation finds a dwelling, building, structure, or premises dangerous, unfit, or unsafe, the public officer serves the persons with an interest shown on the Pierce County auditor’s records, personally or by certified mail, and posts a complaint on the property. That complaint gives notice of a hearing before the public officer, not less than 10 days nor more than 30 days after service. The same section says a copy of the complaint is filed with the Pierce County auditor and that the filing has the same force and effect as other lis pendens notices. PMC 6.07.070 says that if, after the hearing, the public officer determines the property is dangerous or unfit, the officer issues a written order to repair, alter, or improve it, to vacate and close it, or to remove or demolish it, within the time the order specifies, and that if no appeal is filed a copy of the order is filed with the auditor. PMC 6.07.080 says an owner may, within 30 days from service and posting, file an appeal with the city clerk for a hearing before the code compliance hearing examiner, and that matters under that chapter are resolved by the examiner within 60 days from filing. It also says a person affected by the examiner’s order may, within 30 days, petition Pierce County Superior Court for an injunction, and that the trial is heard de novo. KindKey will not count those days, file the appeal, file the petition, or tell you the hearing is optional. If the paper has a hearing, a fine, or an order to vacate, talk with a Washington attorney before you rely on a sale to solve it. Do not skip a hearing because a buyer is looking at the house. This article is not legal advice.',
+          'PMC 6.07.060 says that if the public officer finds conditions that subsection lists to a degree that is dangerous or injurious, and one of the further tests in that subsection is also met, the officer orders the structure demolished and the land filled and cleared, or orders it immediately vacated and secured pending demolition. Those further tests include structural deterioration the subsection describes, an estimated restoration cost above 50 percent of value, and a structure damaged by fire or other calamity whose estimated restoration cost exceeds 30 percent of value and that has remained vacant for six months or more. The section says value is determined by a qualified real estate appraiser. KindKey will not apply those tests or those percentages, and KindKey will not tell you that your house meets them. The Puyallup fire-damage page is the house that is empty because of a fire. The insurance claim stays with your insurer. KindKey does not give insurance advice. Until the deed records, the vacant-house policy is still yours. Ask your insurer what the policy requires while the house is empty.',
+          'PMC 6.07.100 says the cost of repairs, alterations, improvements, vacating and closing, or removal or demolition by the public officer is assessed against the real property unless that amount is previously paid, and that under RCW 35.80.030(1)(h) the amount constitutes a lien against the property of equal rank with state, county, and municipal taxes. PMC 6.07.150 says it is unlawful to knowingly occupy or allow occupation of a building ordered vacated, to fail to comply with an order issued under that chapter, or to obstruct enforcement, and it states criminal penalties for a violation. KindKey will not tell you which sentence applies to your paper and will not calculate the assessment. A yard or debris letter may instead be chapter 6.08 PMC. PMC 6.08.235 says that when the community development director determines a nuisance exists, a notice is posted and mailed, directing abatement within 10 days, and that the person responsible may protest by giving notice to the city clerk within 10 days. PMC 6.08.236 says the record of the city’s abatement expense includes a charge of 15 percent of the expense for administrative overhead. PMC 6.08.237 says unpaid costs can be recorded as a lien and that the lien bears interest at seven percent per year from the date of entry. PMC 6.08.400 says a violation of that chapter is a Class I civil infraction under chapter 1.02 PMC, and that each day of a continuing violation is a separate offense. KindKey will not look up the infraction amount, will not protest the notice for you, and will not tell you a sale makes the lien disappear. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement, prepared by the closing agent, is where you see them. Until recording, deadlines on the notice are still yours.',
+          'A South Hill address outside the city is not a City of Puyallup code file. Pierce County’s vacant-property page is written for unincorporated Pierce County, and it says that if the vacant property is within a city or town, the owner should contact that jurisdiction. The page lists common issues at vacant property that has not been maintained or secured: accumulated solid waste, sometimes from illegal dumping; junk or abandoned vehicles; overgrown vegetation; unsecured or uninhabitable structures; graffiti; trespassing or unauthorized use; and tree or timber theft. Code enforcement for those county cases publishes (253) 798-4636 and PCRESPONDS@PierceCountyWa.gov. The county’s code-violations page says an initial notice asks the owner to contact the assigned officer within five days to schedule a site inspection or discuss a compliance plan, and that the owner has 14 days to appeal the determination that a violation occurred. It says the county can issue fines, record a certificate of non-compliance on the title, pursue abatement, and in rare cases issue criminal misdemeanor charges. It also says owners are responsible for violations on the property even if they did not create them. KindKey will not decide that a county webpage and your paper use the same clock. Read the notice you were served. The county page says illegal activity that is no longer in progress can be reported to the Pierce County Sheriff’s non-emergency line at (253) 287-4455. A city-limit house does not use that sheriff line for a City of Puyallup complaint. Do not treat Auburn City Code 15.20.100, which is an Auburn vacant-property ordinance, as a Puyallup rule or a South Hill rule. KindKey’s office is in Auburn. The house is not.',
+        ],
+      },
+      {
+        heading: 'What you can leave, and what you do not have to put back in service',
+        paragraphs: [
+          'You do not have to haul the furniture, mow the field, pump a septic tank, close a permit, or turn the heat on before a walkthrough. Photos of the house, the yard, the shop, and any posting are enough to start if a visit has to wait. A system that has not been used because nobody lives there is still something to say in plain words. Some houses are on City of Puyallup sewer. Some unincorporated South Hill houses are in a Pierce County sewer area. Some use a septic system or a private well. The city name does not decide it. KindKey does not inspect, pump, or certify a septic system or a well. The Puyallup septic guide is that letter. You do not have to replace a drainfield so the house looks occupied.',
+          'A remodel that stopped is a common reason a Puyallup house is empty. Open walls, a kitchen that was demolished, or a garage that was becoming a room can all sit there. You do not need a permit closed, a contractor bid, or the finishes put back before KindKey looks. Development Services, for an owner who chooses to permit work and keep the house, is on the second floor of City Hall at 333 S Meridian, with the line (253) 864-4165, option 2, and posted hours of Monday through Friday, 8:00 a.m. to 5:00 p.m., excluding holidays. That counter is not the code-compliance phone. KindKey does not require the visit and will not pull the permit. If the open work left a hole in a wall or a roof, any duty to secure the building stays with the owner until the deed records. KindKey will not tell you that requesting an offer satisfies it, and KindKey will not board the house as your contractor.',
+          'An inherited vacant house often means heirs who do not live in Puyallup, a garage nobody has opened, and a yard the neighbors can see. The person who can sign is a probate question. If the decedent lived in Puyallup, Pierce County is the residence county. Do not open the estate at the Kitsap County courthouse in Port Orchard because a relative takes the ferry. Ask a Washington attorney before anyone files. KindKey will not file the probate and will not guess which relative can sign. If a Pierce County case is already open, the Clerk of the Superior Court is at the County-City Building, 930 Tacoma Ave S, Room 110, Tacoma, WA 98402, phone (253) 798-7455. The clerk does not record the deed. You can ask for an offer while the attorney finishes the signature question. Do not sign a deed before the authority exists. The Puyallup inherited-house page is that file.',
+          'Pierce County’s vacant-property page describes steps an owner can choose, including regular visits, locks, and a litter credit the code-violations page describes as free disposal of up to 2,000 pounds of solid waste. Those are county programs for an owner who wants to keep the property and clean it. KindKey does not require you to use them, does not enroll you, and does not haul the trash as your contractor before an offer. A listing can fit a vacant house that is safe to show, easy to finance, and watched by someone local. Hire a licensed broker in Pierce County if you want that path. Commission is negotiated with the broker and is not set by KindKey. KindKey will not run the listing and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts.',
+        ],
+      },
+      {
+        heading: 'One visit, a written offer, and the clocks a sale does not stop',
+        paragraphs: [
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive from Puyallup, often on State Route 512, does not add a repair requirement, and you do not have to wait for the Washington State Fair to end. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need to collect boxes can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a utility balance, a city assessment, or a county certificate of non-compliance. The offer reflects the house as it sits, including contents you leave and work that remains, so it can be less than a retail price for a cleaned, secured, financed house. You see the payoffs on the settlement statement before you close. You can say no. The Puyallup as-is page is that direct sale for the house in its current condition.',
+          'If a foreclosure notice is in the file with the vacant-house letter, you have a clock the grass does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. The Puyallup foreclosure page is that file, and the Pierce County foreclosure guide is the county version. A Pierce County property-tax bill is a different account from a city penalty and from a code case. KindKey will not calculate the treasurer’s number. The Washington tax-delinquent guide is that clock. You can ask for an offer while an attorney reads those papers. Requesting the offer does not extend a compliance date, stop a daily problem in the yard, or vacate an order.',
+          'A vacant house in Port Orchard, Bremerton, Silverdale, Poulsbo, Bainbridge Island, Kingston, Olalla, or Seabeck is a Kitsap County file, with a different recorder and a different set of local rules. Use the Kitsap vacant-house guide for those places. An Edgewood house, including a North Hill or Jovita lot, is the Edgewood vacant guide. A Milton house can be King County or Pierce County, and the Milton vacant guide is that city. Do not use this Puyallup page for any of them, and do not copy a Puyallup notice onto an Edgewood lawn or a Kitsap letter. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the empty house through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do I have to clean out or mow a vacant Puyallup house before KindKey will look?',
+        answer:
+          'No. Furniture, shop contents, and vehicles you do not want can stay. A yard notice does not have to be cured first. Call (206) 519-5463 or use the cash-offer form. The city or the county still controls its own case until it says otherwise. You can say no.',
+      },
+      {
+        question: 'My address says Puyallup. Is the vacant-house letter a City of Puyallup case?',
+        answer:
+          'Read the header. Inside the city, code compliance is a City of Puyallup file. The published code-compliance phone is (253) 770-3327, at 333 S Meridian. Many South Hill addresses are unincorporated Pierce County, and those notices are county cases. Pierce County code enforcement publishes (253) 798-4636. KindKey will not decide which office controls your parcel.',
+      },
+      {
+        question: 'The utilities are off and I live out of state. Can KindKey still look?',
+        answer:
+          'Yes. Tell us the power and water are off and who has a key. A lockbox or one visit by a local person can be enough. You do not have to turn the utilities on or fly back for a showing schedule. KindKey does not advise you on a vacant-house insurance policy. Ask your insurer what the policy requires while the house is empty.',
+      },
+      {
+        question: 'What if the empty house is an estate, or a foreclosure notice arrived too?',
+        answer:
+          'Talk with a Washington attorney before you sign. KindKey will not file a probate or guess who can sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not stop a trustee. You can still request a cash offer while you get that advice. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/puyallup/sell-vacant-house',
+        label: 'Sell a vacant house in Puyallup',
+        description: 'The Puyallup vacant-house page.',
+      },
+      {
+        href: '/areas/puyallup',
+        label: 'Sell a house in Puyallup',
+        description: 'Downtown, South Hill, Meridian, and Shaw Road.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses in King, Pierce, and Kitsap County.',
+      },
+      {
+        href: '/areas/puyallup/sell-house-as-is',
+        label: 'Sell a house as-is in Puyallup',
+        description: 'The clean-out and the yard notice do not have to be finished first.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/puyallup/sell-my-house-fast',
+        label: 'Sell my house fast in Puyallup',
+        description: 'A direct sale without a listing calendar.',
+      },
+      {
+        href: '/areas/puyallup/sell-house-with-code-violations',
+        label: 'Code violations in Puyallup',
+        description: 'When the empty house also has an open notice.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/areas/puyallup/sell-inherited-probate-house',
+        label: 'Inherited houses in Puyallup',
+        description: 'When the vacant house came from an estate.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the empty rooms.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-pierce-county',
+        label: 'Estate houses in Pierce County',
+        description: 'The county guide. Your attorney confirms who can sign.',
+      },
+      {
+        href: '/blog/selling-a-house-in-probate-washington',
+        label: 'Probate houses in Washington',
+        description: 'The statewide guide for executors and heirs.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-drainfield-puyallup-wa',
+        label: 'Septic or drainfield problems in Puyallup',
+        description: 'A system that has sat because nobody lives there.',
+      },
+      {
+        href: '/areas/puyallup/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Puyallup',
+        description: 'When the house is empty because of a fire.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The insurance claim stays with your insurer.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-king-pierce-county',
+        label: 'Fire damage in King and Pierce County',
+        description: 'The county overview, including a posted structure.',
+      },
+      {
+        href: '/areas/puyallup/sell-house-with-tenants',
+        label: 'Houses with tenants in Puyallup',
+        description: 'Use this when someone still lives there.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/puyallup/sell-hoarder-house',
+        label: 'Heavy-repair houses in Puyallup',
+        description: 'When the contents are more than a normal clean-out.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Belongings and heavy repairs can stay.',
+      },
+      {
+        href: '/areas/puyallup/sell-house-before-foreclosure',
+        label: 'Foreclosure in Puyallup',
+        description: 'When a trustee’s notice arrived while the house sat empty.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/foreclosure-in-pierce-county-washington',
+        label: 'Foreclosure in Pierce County',
+        description: 'A loan deadline is separate from a yard letter.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A Pierce County tax bill is a different account from a city penalty.',
+      },
+      {
+        href: '/blog/selling-a-vacant-or-inherited-house',
+        label: 'Vacant or inherited houses',
+        description: 'The shorter guide for owners who do not want to manage the property.',
+      },
+      {
+        href: '/areas/sumner',
+        label: 'Sell a house in Sumner',
+        description: 'The valley city to the north, if the parcel is actually there.',
+      },
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill and Jovita. Edgewood is not a Puyallup neighborhood.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-edgewood-wa',
+        label: 'Vacant houses in Edgewood',
+        description: 'A different city, and a different municipal code.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-milton-wa',
+        label: 'Vacant houses in Milton',
+        description: 'Milton can be King County or Pierce County.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-kitsap-county',
+        label: 'Vacant houses in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say the house is empty and who has a key. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for an offer on the vacant Puyallup house',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to mow it, empty it, or board it first. You can say no.',
+  }),
 ];
