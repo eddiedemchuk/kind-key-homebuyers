@@ -4874,4 +4874,274 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to mow it, empty it, or board it first. You can say no.',
   }),
+  post('sell-house-with-knob-and-tube-wiring-edgewood-wa', {
+    breadcrumbName: 'Knob-and-tube wiring in Edgewood',
+    title:
+      'Selling a House with Knob-and-Tube Wiring or an Old Electrical Panel in Edgewood, WA',
+    description:
+      'How Edgewood owners sell a house with knob-and-tube wiring, an old panel, or open splices without rewiring first. KindKey buys as a principal. Not an electrical inspection.',
+    h1: 'Selling a House with Knob-and-Tube Wiring or an Old Electrical Panel in Edgewood, WA',
+    publishedAt: '2026-11-13',
+    intro: [
+      'You can sell an Edgewood house with knob-and-tube wiring, cloth-covered wire, two-prong outlets, an old electrical panel, or open splices without rewiring the house, replacing the panel, or passing an electrical inspection first. ' +
+        office +
+        ' KindKey is not an electrician, the Department of Labor & Industries, the electric utility, or the city’s building official. This article is not an electrical inspection and not legal advice.',
+      'Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. It incorporated on February 28, 1996. Most residents live on North Hill: longer driveways, and shops set back from the street. A smaller share of the city sits in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. A North Hill rambler with ceramic knobs in the attic, a valley house with a panel an inspector named, and a shop with its own subpanel are different properties. Bring the address.',
+    ],
+    callout:
+      'You do not have to rewire the house, replace the panel, or bring the power back on before you ask. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'Knob-and-tube, a named panel, and a shop circuit are different facts',
+        paragraphs: [
+          'Tell KindKey what you have seen, in plain words, before anyone schedules a visit. It may be ceramic knobs and tubes in an attic or a crawlspace, cloth-covered wire, outlets with two slots, a breaker that trips, scorch marks at a panel, a splice left open, or a shop with its own subpanel. An inspection report may name knob-and-tube wiring, aluminum branch wiring, or a panel brand. KindKey will not tell you that any of those is safe, unsafe, or required to be replaced. Some of these houses are still lived in. Some are not. A single Edgewood number, guessed before anyone sees the panel, is not an offer.',
+          'A retail inspection is a common reason this sale starts. The buyer’s inspector wrote up the wiring or the panel. The buyer asked for a rewire, or the lender would not close, and the sale died. You do not have to complete that repair list, hire the electrician the report named, or relist the house before KindKey looks. KindKey will not quote a percentage off the price in that failed contract. Anyone who does that without seeing the house is guessing. Cash, in this sale, means KindKey is not waiting on that buyer’s mortgage. It does not mean a suitcase of money. The Edgewood expired-listing guide is the sale that already died. The Edgewood major-repairs guide covers a roof or a stopped remodel on the same property. This page is the wiring and the panel.',
+          'North Hill lots are often larger than a Tacoma city lot, with a shop or a shed set back from Meridian or Jovita. Tell us whether the knob-and-tube, the panel, or the open splice is in the house, the shop, or both. A valley house at the base of the hill is usually a smaller lot. Do not describe them as the same house. Milton, next door, can fall in King County or Pierce County. Edgewood does not. A mailing address that says Edgewood is not always inside the city. The closing agent confirms the parcel. An Edgewood deed records with the Pierce County Auditor in Tacoma, at 2401 S 35th St, Room 200, Tacoma, WA 98409. The phone that office publishes for questions about requesting recorded documents is (253) 798-7440. The auditor does not inspect wiring. Do not record a Pierce County deed at the Kitsap County Auditor in Port Orchard, or at the King County Recorder, because someone in the family takes a ferry or because KindKey’s office is in Auburn.',
+        ],
+      },
+      {
+        heading: 'The city building counter and the electrical permit are not the same desk',
+        paragraphs: [
+          'EMC 15.40.010 adopts the National Electrical Code as the Washington State Department of Labor & Industries adopts it in chapter 296-46B WAC and chapter 19.28 RCW. The section says that prior to April 1, 2024, that adoption is the 2020 edition, and that on April 1, 2024, or after, it is the 2023 edition. EMC 15.40.020 says that pursuant to chapters 19.28 and 19.29 RCW, Labor & Industries is responsible for enforcement of those chapters, chapter 296-46B WAC, and any other duly adopted rules, and that the forms and notices for that administration are furnished by Labor & Industries. KindKey will not tell you which edition applies to wire that has been in the walls for decades. EMC 15.80.030(A)(1) says building service systems are maintained in proper operating condition in accordance with the original design and in a safe and sanitary condition, and that devices or safeguards required by the property-maintenance code or a previous technical code shall be maintained in compliance with the edition of the technical code under which they were installed. It also says the code official may require a system to be reinspected to determine that compliance. KindKey will not decide that your knob-and-tube meets the edition it was installed under, and KindKey will not tell you the current code requires you to remove it before a sale.',
+          'Labor & Industries’ page on city electrical permits says the department does not issue permits or do inspections in the cities listed on that page, or within Tacoma Power’s service area. That list names Milton. It does not name Edgewood. The same page says Tacoma Power issues permits and performs inspections for properties that utility serves in Tacoma, Fircrest, University Place, Fife, parts of Steilacoom, Lakewood, and unincorporated Pierce County as far south as Roy, and it tells a Pierce County jobsite to check that service area before applying. KindKey will not tell you whether your Edgewood parcel is a Labor & Industries job or a Tacoma Power job. Confirm it before you buy a permit. The department’s electrical program contacts sheet lists the Tacoma electrical office at 950 Broadway, Suite 200, Tacoma, WA 98402, with an office phone of (253) 596-3808 and an inspection-request line of (253) 596-3822. Tacoma Power’s permit office, for a property that utility serves, publishes 3628 S 35th St, Tacoma, WA 98409, phone (253) 502-8277. Those are not Edgewood City Hall. The department’s permits page says it inspects electrical work using the 2023 National Electrical Code. That is the inspection standard the page states for work the department inspects. It is not a finding about wire that is already in your walls, and it is not an order to rewire before you ask for an offer.',
+          'The same permits page says electrical work in Washington requires a permit and inspection, that there are exceptions, and that readers who are not sure should check chapter 296-46B-901 WAC. It says a permit must be purchased by the electrical contractor, or by the property owner or homeowner who will actually do the work, and that a hired contractor must purchase the permit for the contractor’s own work. KindKey will not pull the permit, will not do the work, and will not tell you which jobs fall in the exception. If you choose to rewire and then try a listing, start with the desk that actually inspects your parcel. Community Development, for a city building permit that is not the electrical permit, is at Edgewood City Hall, 10440 Dom Calata Way E, Edgewood, WA 98372. The permit line the city publishes is (253) 952-3299. The city’s adopted-codes page publishes City Hall hours of Monday through Thursday, 8:30 a.m. to 5:00 p.m. Confirm the hours before you go. KindKey does not require that visit.',
+          'EMC 15.40.030 says that where more than one electric meter is used on a building, all meters must be identified by permanently indicating the apartment, occupancy, or area served. A house and a shop can have more than one meter. KindKey will not label the meters and will not tell you the section applies. EMC 15.40.040 says electrical conductors not in use shall be removed unless the building official approves otherwise. KindKey will not decide which wires are unused and will not pull them. EMC 15.40.050 says the code official, or an authorized representative of Labor & Industries, may disconnect an electrical system in an emergency when disconnection is necessary to eliminate an immediate hazard to life or property, or in the case of an illegal service connection. KindKey will not disconnect the power, will not reconnect it, and will not tell you a shutoff on your house was lawful. If the power is already off, say so. Photos of the panel, with the cover left on if that is all you can safely photograph, are enough to start. Do not remove a panel cover, and do not walk a house that is not safe, just to satisfy a buyer.',
+        ],
+      },
+      {
+        heading: 'Insulation over old wire, a wet wire, and the disclosure form',
+        paragraphs: [
+          'WAC 296-46B-394 is the state rule on concealed knob-and-tube wiring. It says Article 394 of the National Electrical Code does not prohibit loose or rolled thermal insulation in spaces that contain existing knob-and-tube wiring, if the conditions in that section are met. Those conditions include a survey by an appropriately licensed electrical contractor who certifies in writing to the department that the wiring is in good condition, with no evidence of improper overcurrent protection, conductor insulation failure or deterioration, and no improper connections or splices. The section says the electrical inspector must inspect all repairs, alterations, or extensions to the electrical system. It says the insulation must meet the Class I specifications the section identifies in the Uniform Building Code, with a flame-spread factor of 25 or less as tested using ASTM E84-81a, and that foam insulation may not be used with knob-and-tube wiring. It says all knob-and-tube circuits must have overcurrent protection in compliance with the 60-degree-centigrade column of NEC Table 310.16, using circuit breakers or Type S fuses. Read the current section. A rule can change. KindKey will not survey the attic, write that certification, or tell you the conditions are met. You do not have to remove insulation, add insulation, or replace fuses before an offer.',
+          'A wire that got wet is a different fact from knob-and-tube that has stayed dry. A roof leak or a burst pipe belongs on the Edgewood water-damage guide. A crack, a soft floor, or water sitting under the house belongs on the Edgewood foundation guide. Use this page when the problem you are selling is the wiring or the panel. KindKey does not test circuits and does not certify that a crawlspace is dry. If a floor is not safe to walk, say so. An exterior look can begin the conversation. Furniture and shop contents you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to.',
+          'Chapter 15.80 EMC adopts the 2021 International Property Maintenance Code, with the amendments in that chapter. The amendments published there cover subjects that chapter lists, including security, sanitation, vegetation, accessory structures, and heat supply. They do not, in those published sections, replace an electrical-facilities rule with a local sentence about knob-and-tube. KindKey will not apply the adopted code to your panel and will not decide that the city must order a repair. If a notice arrives, read the header. The city’s code-compliance page says owners can contact City Hall at (253) 952-3299 or email codeenforcement@cityofedgewood.org. KindKey is not that desk, will not answer the notice, and will not appear at a hearing. Chapter 7.50 EMC is the unfit-dwellings chapter, and it states that it is pursuant to chapter 35.80 RCW. EMC 7.50.040 says the code official may consider, among other conditions, a lack of electric utility service, whether the premises contains unsafe equipment, and whether it contains a condition described in the property-maintenance code adopted in Title 15 EMC. KindKey will not decide that your wiring, or a power shutoff, meets those sentences. If the paper has a hearing, a fine, or an order to vacate, talk with a Washington attorney before you rely on a sale to solve it. Do not skip a hearing because a buyer is looking at the house. The Edgewood code-violations guide is that letter. Until the deed records, deadlines on the notice are still yours.',
+          'Washington’s seller disclosure law is chapter 64.06 RCW. RCW 64.06.020 sets out the seller disclosure statement. In the systems section, question 5.A asks, if the system is included with the transfer, whether there are any defects in the electrical system, including wiring, switches, outlets, and service. Question 4.I asks whether the attic is insulated. A prior inspection report does not answer the form for a later sale. KindKey will not tell you how to mark the boxes, whether an exemption applies, or what you should have told the first buyers. Ask a Washington real estate attorney if you are unsure. Answer with what you actually know. If you do not know whether the attic wire is knob-and-tube, or whether a past owner replaced the panel, say that. Selling to a cash buyer is not a reason to leave a known problem off the form.',
+        ],
+      },
+      {
+        heading: 'Rewire and relist, or sell the house as it sits',
+        paragraphs: [
+          'Rewiring can fit if you want to keep the house and you can fund an electrician and the permit. A listing can fit after that, if a broker will take the house and you can host the access. A financed buyer may still stall on the same panel or the same attic. Commission is negotiated in the listing agreement with that broker and is not set by KindKey. Hire a licensed broker in Pierce County if you want the listing. KindKey will not run it, will not choose your electrician, and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive from Edgewood does not add a rewire. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need an electrician’s schedule, or a relative with a key, can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a utility balance, or a city assessment. The offer reflects the house as it sits, including the wiring and the panel, so it can be less than a retail price for a rewired house. You see the payoffs on the settlement statement before you close. You can say no. The Edgewood as-is page is that direct sale for the house in its current condition.',
+          'If a foreclosure notice is in the file with the inspection report, you have a clock the wiring does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. The Edgewood foreclosure page is that file. If the owner has died, who can sign is a probate or trust question, separate from the panel. KindKey will not file the probate and will not guess which relative can sign. Use the Edgewood probate page when a death is the reason the house is for sale, and the living-trust page if the house is already titled in a trust. Do not sign a deed before the authority exists. If someone still lives in the house, say so. Do not force an occupant out so an electrician can open the walls. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does. The Edgewood tenants page is that file.',
+          'Some owners call after an insurer asked for an electrical repair, or after a policy was not renewed. KindKey does not give insurance advice and will not tell you what the policy requires. Ask the insurer. You can still request an offer while that letter is open. If the wiring is why the house burned, the insurance claim stays with your insurer. The Edgewood fire-damage guide is that file. A heating-oil furnace is a different system from the electrical panel. The Edgewood heating-oil guide is the tank. A Pierce County property-tax bill is a different account from an electrical repair. KindKey will not calculate the treasurer’s number. Parts of Edgewood lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary. A house with old wiring in Port Orchard, Bremerton, Silverdale, Poulsbo, Bainbridge Island, Kingston, Olalla, or Seabeck is a Kitsap County file. Labor & Industries’ electrical contacts sheet lists a Silverdale office at 10049 Kitsap Mall Blvd, Suite 100, Silverdale, WA 98383, with an inspection-request line of (360) 308-2839. Do not use this Edgewood page for a Kitsap city, for a Fife house that may sit in Tacoma Power’s permit area, or for a Milton house. The Labor & Industries city list names Milton among the cities that issue their own electrical permits. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the wiring through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question:
+          'Do I have to rewire an Edgewood house, or replace the panel, before KindKey will look?',
+        answer:
+          'No. KindKey buys Edgewood houses with knob-and-tube wiring, cloth-covered wire, two-prong outlets, old panels, and open splices as they sit. You do not have to pass an electrical inspection first. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Is knob-and-tube wiring illegal in Edgewood?',
+        answer:
+          'KindKey will not tell you that it is, or that it is not. EMC 15.40 adopts the National Electrical Code for the electrical work that chapter covers, and EMC 15.40.020 places enforcement with Labor & Industries. EMC 15.80.030 says devices required by a previous technical code are maintained under the edition they were installed under. WAC 296-46B-394 sets conditions for insulation over existing knob-and-tube. It does not, by itself, order a rewire before a sale. You can still request a cash offer. You can say no.',
+      },
+      {
+        question: 'An inspection or an insurer wrote up the panel. Do I need a new electrical report?',
+        answer:
+          'No. Bring the report or the letter if you have it. KindKey will not require a new electrician’s letter before an offer, and KindKey will not tell you the old report is right or wrong. KindKey does not give insurance advice. Ask the insurer what the policy requires. The offer reflects the house as it sits.',
+      },
+      {
+        question: 'The power is off, or a foreclosure notice arrived. Can I still ask for an offer?',
+        answer:
+          'Yes. Tell us the power is off. You do not have to restore it before KindKey looks. If a foreclosure notice is also in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not stop a trustee. You can still request a cash offer while you get that advice. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, Meridian, and the valley.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell a house as-is in Edgewood',
+        description: 'The wiring does not have to be replaced before a direct sale.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/edgewood/sell-my-house-fast',
+        label: 'Sell my house fast in Edgewood',
+        description: 'A direct sale without a rewire on the calendar.',
+      },
+      {
+        href: '/areas/edgewood/sell-hoarder-house',
+        label: 'Heavy-repair houses in Edgewood',
+        description: 'When the panel is one part of a larger repair.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Wiring, contents, and other repairs can stay.',
+      },
+      {
+        href: '/blog/sell-house-needing-repairs-edgewood-wa',
+        label: 'Major repairs in Edgewood',
+        description: 'A roof, a stopped remodel, or old wiring on the same house.',
+      },
+      {
+        href: '/blog/sell-house-after-expired-listing-edgewood-wa',
+        label: 'Expired listings in Edgewood',
+        description: 'When an inspection of the panel ended a financed sale.',
+      },
+      {
+        href: '/blog/sell-water-damaged-house-edgewood-wa',
+        label: 'Water damage in Edgewood',
+        description: 'A roof leak or a burst pipe, rather than the wiring itself.',
+      },
+      {
+        href: '/blog/sell-house-with-foundation-problems-edgewood-wa',
+        label: 'Foundation problems in Edgewood',
+        description: 'A crack, a soft floor, or water under the house.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'When the city has written about the house.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-edgewood-wa',
+        label: 'Code violations in Edgewood',
+        description: 'The city letter, separate from the electrical permit.',
+      },
+      {
+        href: '/blog/sell-house-with-unpermitted-work-edgewood-wa',
+        label: 'Unpermitted work in Edgewood',
+        description: 'A room or a shop that never had a final inspection.',
+      },
+      {
+        href: '/areas/edgewood/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Edgewood',
+        description: 'When the wiring is why the house burned.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The insurance claim stays with your insurer.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-edgewood-wa',
+        label: 'Fire damage in Edgewood',
+        description: 'East Pierce Fire & Rescue, and the claim, are that page.',
+      },
+      {
+        href: '/blog/sell-house-with-heating-oil-tank-edgewood-wa',
+        label: 'Heating oil tanks in Edgewood',
+        description: 'A tank is a different system from the electrical panel.',
+      },
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Vacant houses in Edgewood',
+        description: 'When the power is off because nobody lives there.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-tenants',
+        label: 'Houses with tenants in Edgewood',
+        description: 'When someone still lives there and the panel is old.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Foreclosure in Edgewood',
+        description: 'When a trustee’s notice is in the file with the inspection.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'A loan deadline is separate from the wiring.',
+      },
+      {
+        href: '/areas/edgewood/sell-inherited-probate-house',
+        label: 'Inherited houses in Edgewood',
+        description: 'When the panel and the signer are both open questions.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the condition.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Probate houses in Edgewood',
+        description: 'Who can sign, when the owner has died.',
+      },
+      {
+        href: '/blog/sell-house-in-a-living-trust-edgewood-wa',
+        label: 'Living trusts in Edgewood',
+        description: 'When the house is already titled in a trust.',
+      },
+      {
+        href: '/blog/behind-on-property-taxes-edgewood-wa',
+        label: 'Property taxes in Edgewood',
+        description: 'A Pierce County tax bill is a different account from a panel.',
+      },
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description:
+          'The next city west. Milton is on the Labor & Industries list of cities that inspect their own electrical work.',
+      },
+      {
+        href: '/areas/fife',
+        label: 'Sell a house in Fife',
+        description: 'Fife is named in Tacoma Power’s permit area. Confirm the parcel.',
+      },
+      {
+        href: '/areas/puyallup',
+        label: 'Sell a house in Puyallup',
+        description: 'The city to the south, if the parcel is actually there.',
+      },
+      {
+        href: '/areas/sumner',
+        label: 'Sell a house in Sumner',
+        description: 'The valley city to the east.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo. A different county.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what the wiring or the panel is doing. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood offer with the wiring as it sits',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to rewire the house first. You can say no.',
+  }),
 ];
