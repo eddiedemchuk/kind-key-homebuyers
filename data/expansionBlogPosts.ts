@@ -5144,4 +5144,315 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to rewire the house first. You can say no.',
   }),
+  post('sell-house-with-asbestos-edgewood-wa', {
+    breadcrumbName: 'Asbestos in Edgewood',
+    title: 'Selling a House with Asbestos or Suspect Materials in Edgewood, WA',
+    description:
+      'How Edgewood owners sell a house with asbestos, a popcorn ceiling, cement-board siding, or old floor tile without removing it first. KindKey buys as a principal. Not an asbestos survey.',
+    h1: 'Selling a House with Asbestos or Suspect Materials in Edgewood, WA',
+    publishedAt: '2026-11-14',
+    intro: [
+      'You can sell an Edgewood house with asbestos, or with a popcorn ceiling, cement-board siding, old floor tile, or pipe wrap that nobody has tested, without sampling every surface, scraping the ceiling, or replacing the siding first. ' +
+        office +
+        ' KindKey is not an asbestos inspector, an abatement contractor, the Washington State Department of Labor & Industries, or the Puget Sound Clean Air Agency. This article is not an asbestos survey, not removal instructions, and not legal advice.',
+      'Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. It incorporated on February 28, 1996. Most residents live on North Hill: longer driveways, and shops set back from the street. A smaller share of the city sits in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. A North Hill rambler with a textured ceiling, a valley house with cement-board siding, and a shop with a wrap on an old heat line are different properties. Bring the address.',
+    ],
+    callout:
+      'You do not have to test the material, scrape the ceiling, or pull the siding before you ask. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'A ceiling, a floor, and a shop wall are different facts',
+        paragraphs: [
+          'Tell KindKey what you have seen, in plain words, before anyone schedules a visit. It may be a sprayed or troweled ceiling, square floor tile or sheet flooring, cement-board siding, a wrap on a pipe or a duct, joint compound, or a lab report that already names asbestos. Labor & Industries’ asbestos page says it is impossible to tell whether a material contains asbestos without a sample tested by an accredited laboratory, that a material containing more than 1 percent asbestos is considered an asbestos-containing material, and that asbestos has not been banned and can still be found in new products. KindKey will not tell you that your ceiling, your floor, or your siding contains asbestos, and KindKey will not tell you that it does not. Some of these houses are still lived in. Some are not. A single Edgewood number, guessed before anyone sees the house, is not an offer.',
+          'The same page lists materials in which asbestos has been found: pipe insulation; wall and ceiling texture, including popcorn ceilings; adhesives, caulking, and joint compound; vinyl floor tiles, including backing and adhesives; roofing materials and siding shingles; and walls and floors around stoves and fireplaces. A later list on that page adds insulation on steam pipes, boilers, and furnace ducts; cement sheets, millboard, and paper insulation; sprayed soundproofing or decorative coatings; patching and joint compounds and textured paints; and asbestos cement roofing, shingles, and siding. Those are the department’s lists of places to be cautious. They are not a finding about your house. A retail inspection is a common reason this sale starts. The buyer asked for a test or a removal, or the lender would not close, and the sale died. You do not have to complete that list, hire the contractor the report named, or relist the house before KindKey looks. The Edgewood expired-listing guide is the sale that already died. The Edgewood major-repairs guide is a roof or a stopped remodel on the same property. This page is the material itself.',
+          'North Hill lots are often larger than a Tacoma city lot, with a shop or a shed set back from Meridian or Jovita. Tell us whether the ceiling, the flooring, the siding, or the pipe wrap is in the house, the shop, or both. A valley house at the base of the hill is usually a smaller lot. Do not describe them as the same house. Milton, next door, can fall in King County or Pierce County. Edgewood does not. A mailing address that says Edgewood is not always inside the city. The closing agent confirms the parcel. An Edgewood deed records with the Pierce County Auditor in Tacoma, at 2401 S 35th St, Room 200, Tacoma, WA 98409. The phone that office publishes for questions about requesting recorded documents is (253) 798-7440. The auditor does not test building materials. Do not record a Pierce County deed at the Kitsap County Auditor in Port Orchard, or at the King County Recorder, because someone in the family takes a ferry or because KindKey’s office is in Auburn.',
+          'KindKey will not tell you a ceiling, a floor, or a shop is safe to occupy or safe to enter. Labor & Industries’ page says that when the material is intact it likely does not pose a hazard, and that fibers can be released when it is improperly disturbed. That is the department’s sentence. It is not a clearance of your house. If you do not believe the house is safe to walk, say so. Photos of the ceiling, the flooring, the siding, and any report you already have are enough to start. An exterior look can begin the conversation. Do not scrape, sand, or break the material so a buyer can see it. Furniture and shop contents you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to.',
+        ],
+      },
+      {
+        heading: 'Selling the house is not the same event as tearing the material out',
+        paragraphs: [
+          'RCW 49.26.100 defines an asbestos project as the construction, demolition, repair, maintenance, remodeling, or renovation of any public or private building or mechanical piping equipment or systems involving the demolition, removal, encapsulation, salvage, or disposal of material, or outdoor activity, releasing or likely to release asbestos fibers into the air. It defines an asbestos abatement project as an asbestos project involving three square feet or three linear feet, or more, of asbestos-containing material. It says a certified asbestos supervisor is not required for projects involving less than three square feet or three linear feet. The same section’s definition of owner does not include individuals who work on asbestos projects on their own single-family residences, no part of which is used for any commercial purpose. KindKey will not tell you that your house, your shop, a room you rent, or a ceiling you want scraped fits or misses those sentences.',
+          'RCW 49.26.013 says that, except as that section provides, an owner or owner’s agent who allows or authorizes any construction, renovation, remodeling, maintenance, repair, or demolition project which has a reasonable possibility, as defined by the department, of disturbing or releasing asbestos into the air shall perform or cause to be performed a good-faith inspection to determine whether the project will disturb or release any material containing asbestos. It says those inspections are conducted by persons meeting the accreditation requirements of the federal toxics substances control act, section 206(a)(1) and (3), which the statute cites as 15 U.S.C. 2646(a)(1) and (3). It says an inspection is not required if the owner or owner’s agent is reasonably certain that asbestos will not be disturbed, or assumes that asbestos will be disturbed and takes the maximum precautions specified by applicable federal and state requirements. It also says the owner or owner’s agent prepares a written report, or a statement of that assumption or of reasonable certainty, and provides a copy to contractors before they apply or bid. Labor & Industries’ asbestos page describes that inspector as an AHERA building inspector and says you cannot tell by looking. KindKey will not tell you that you are reasonably certain, will not take the sample, and will not write the report.',
+          'RCW 49.26.120 says no person may assign any employee, contract with, or permit any individual or person to remove or encapsulate asbestos in any facility unless the work is performed by a certified asbestos worker and under the direct, on-site supervision of a certified asbestos supervisor. It also says the department requires written notice before an asbestos project begins, except as provided in RCW 49.26.125. That exception says prenotification is not required for a project involving less than forty-eight square feet of surface area, or less than ten linear feet of pipe, unless the surface area of the pipe is greater than forty-eight square feet. The reports required under RCW 49.26.013 still have to be kept and made available on request. KindKey will not measure the ceiling, will not decide that a project was split up to stay under a threshold, and will not file the notice. Read the current sections. A statute can be amended. Asking KindKey for an offer is not, by itself, a renovation or a demolition. If you scrape a ceiling, pull tile, or tear off siding so the house will show better, that work can be a project under the words above. KindKey does not require that work, and KindKey will not do it as your contractor.',
+          'Labor & Industries’ asbestos page says that if you are conducting work in your own residence, which is not used for commercial purposes, you are exempt from general survey requirements, and that you must still provide relevant information to contractors and other workers you bring in. The same page says you can be fined $600 a day for work performed without having an AHERA building inspector test for asbestos, or for not sharing the results with contractors and workers who could be exposed, and that the fine can apply to both contractors and building owners. Those are the page’s sentences. KindKey will not tell you that your house fits the residence sentence, and KindKey will not calculate a penalty. The page identifies chapter 296-62 WAC, Part I-1, and chapter 296-65 WAC as the asbestos rules. KindKey will not apply those chapters to your ceiling. If you are thinking about removal, ask the department before anyone starts. The certification program’s project-notification instructions publish a mailing address of PO Box 44614, Olympia, WA 98504-4614, and a fax of 360-902-4409. KindKey is not that office.',
+        ],
+      },
+      {
+        heading: 'The clean-air agency for an Edgewood house is not City Hall',
+        paragraphs: [
+          'The Puget Sound Clean Air Agency’s about page says its jurisdiction covers King, Kitsap, Pierce, and Snohomish counties. Edgewood is in Pierce County, so that is the agency for an Edgewood house. Its Regulation I says the agency, consisting of the counties of Pierce, King, Snohomish, and Kitsap, was activated by the Washington Clean Air Act, RCW 70A.15. The office the agency publishes is 1904 Third Avenue, Suite 105, Seattle, WA 98101. The main phone is (206) 343-8800. The contractor renovation page also publishes (206) 689-4058 and asbestos@pscleanair.org for asbestos questions. The contact page says the office is open Monday through Friday, 8:00 a.m. to 4:30 p.m., and closed federal holidays. Confirm the hours before you go. KindKey is not the agency, will not file a notification, and will not tell you a Northwest Clean Air Agency rule from another part of the state applies in Edgewood.',
+          'Regulation III, Section 4.02 says it is unlawful to cause or allow a renovation unless the owner or the owner’s agent determines whether there are suspect asbestos-containing materials in the work area and obtains an asbestos survey of any suspect materials by an AHERA building inspector. It says an AHERA building inspector is not required for asbestos surveys associated with the renovation of an owner-occupied, single-family residence. It says that, except for that renovation, only an AHERA building inspector may determine that a suspect material does not contain asbestos. The regulation defines a single-family residence as any non-multiple-unit building containing space for uses such as living, sleeping, preparation of food, and eating, used by one family who owns the property as their domicile. It says the term includes houses, mobile homes, trailers, detached garages, houseboats, and houses with a mother-in-law apartment or guest room, and that it does not include rental property, multiple-family units, or a mixed-use building, structure, or installation that contains a residential unit. KindKey will not tell you that a shop, a room you rent, or a house you no longer live in meets that definition. The agency’s homeowner renovation page says an owner who lives in the single-family house to be remodeled, not demolished, may conduct the survey, and that a rental, a condominium, or a demolition needs an AHERA-certified building inspector. KindKey will not choose the inspector.',
+          'Regulation III, Section 4.03 says notification is not required for asbestos projects involving less than 10 linear feet of friable asbestos-containing material on pipes and/or 48 square feet of friable asbestos-containing material on other components, per structure, building, or vessel, per calendar year. It says notification is not required for removal and disposal of nonfriable asbestos-containing material. It says notification is required for all demolitions of structures with a projected roof area greater than 120 square feet, even if no asbestos-containing material is present, and that all demolitions require a 10-day waiting period unless the emergency waiver in that section applies. The agency’s homeowner renovation page says that before you remove friable asbestos-containing material you submit a Single-Family Residence Notification with a $25 filing fee, and that the agency strongly encourages a certified abatement contractor because the work is dangerous if the procedures are not followed. The homeowner demolition page says friable asbestos-containing material is removed before demolition, and that you wait 10 days after the notification to demolish the house, whether or not there is an asbestos project. Those pages are the agency’s instructions for people who are renovating or demolishing. KindKey will not walk you through a removal, will not tell you that you may do it yourself, and will not tell you that a Labor & Industries notice satisfies the clean-air notice. They are different filings. This sale does not require you to demolish the house.',
+          'City Hall is a third desk. Chapter 15.20 EMC adopts the building code for work that includes demolition, when you choose that path. Chapter 15.60 EMC adopts the 2021 Uniform Plumbing Code, with the exceptions that chapter states, including a permit exemption for stopping certain leaks. A leaking pipe and a wrap on an old heat line are not the same fact, and a plumbing-permit exemption is not an asbestos exemption. KindKey will not tell you that it is. Chapter 15.80 EMC adopts the 2021 International Property Maintenance Code, with the amendments in that chapter. Those amendments do not, in the sections the chapter publishes, order you to remove a textured ceiling or cement-board siding before a sale. Community Development is at Edgewood City Hall, 10440 Dom Calata Way E, Edgewood, WA 98372. The permit line the city publishes is (253) 952-3299. KindKey does not require that visit. If a notice arrives about deteriorated siding or an open building, read the header. The city’s code-compliance page says owners can contact City Hall at (253) 952-3299 or email codeenforcement@cityofedgewood.org. KindKey will not answer the notice or appear at a hearing. The Edgewood code-violations guide is that letter. Until the deed records, deadlines on a city notice are still yours.',
+        ],
+      },
+      {
+        heading: 'Remove it and relist, or sell the house as it sits',
+        paragraphs: [
+          'Removal can fit if you want to keep the house and you are willing to deal with the department, the clean-air agency, and a contractor those offices recognize. A listing can fit after that, if a broker will take the house and you can host the access. A financed buyer may still stall on the same ceiling. Commission is negotiated in the listing agreement with that broker and is not set by KindKey. Hire a licensed broker in Pierce County if you want the listing. KindKey will not run it, will not choose your contractor, and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive from Edgewood does not add a removal. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need a relative with a key can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a utility balance, or a city assessment. The offer reflects the house as it sits, including the ceiling, the flooring, and the siding, so it can be less than a retail price for a house where that material has already been removed. You see the payoffs on the settlement statement before you close. You can say no. The Edgewood as-is page is that direct sale for the house in its current condition.',
+          'Washington’s seller disclosure law is chapter 64.06 RCW. RCW 64.06.020 sets out the seller disclosure statement. In the environmental section, question 7.E asks whether there are any substances, materials, or products in or on the property that may be environmental concerns, such as asbestos, formaldehyde, radon gas, lead-based paint, fuel or chemical storage tanks, or contaminated soil or water. RCW 64.06.010(6) lists a transfer made by the personal representative of the estate of the decedent or by a trustee in bankruptcy among the transfers the chapter does not apply to. RCW 64.06.010(7) lists a transfer in which the buyer has expressly waived the disclosure, and it says that if the answer to any question in the section entitled Environmental would be yes, the buyer may not waive receipt of the Environmental section. KindKey will not tell you how to mark the boxes, whether you are one of those signers, or whether a waiver is available. Ask a Washington real estate attorney if you are unsure. The closing agent handles the form that applies to your file. Answer with what you actually know. If a lab report already found asbestos, say that. If you do not know, the form has a choice for that. Selling to a cash buyer is not a reason to leave a known problem off the form. A heating-oil tank is a different item in the same question. The Edgewood heating-oil guide is the tank. This page is the building material.',
+          'If a foreclosure notice is in the file with the inspection report, you have a clock the ceiling does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. The Edgewood foreclosure page is that file. If the owner has died, who can sign is a probate or trust question, separate from the ceiling. KindKey will not file the probate and will not guess which relative can sign. Use the Edgewood probate page when a death is the reason the house is for sale, and the living-trust page if the house is already titled in a trust. Do not sign a deed before the authority exists. If someone still lives in the house, say so. Do not force an occupant out so a contractor can open the ceiling. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does. The Edgewood tenants page is that file. A fire that may have disturbed the material is a different file. RCW 49.26.120 says the department consults with the Washington State Association of Fire Chiefs and may set procedures for fire personnel who clean up after fires that have made it likely asbestos was disturbed. KindKey is not the fire department. The insurance claim stays with your insurer. KindKey does not give insurance advice. The Edgewood fire-damage guide is that file. A Pierce County property-tax bill is a different account from a removal bid. KindKey will not calculate the treasurer’s number. Parts of Edgewood lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary. A house in Port Orchard, Bremerton, Silverdale, or Poulsbo is still in this clean-air agency’s four-county area, and it is a different city. Do not use this Edgewood page for a Kitsap house, for a Milton house that may sit in King County, or for a Fife or Puyallup parcel. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the ceiling, the floor, or the siding through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question:
+          'Do I have to remove asbestos, a popcorn ceiling, or cement-board siding before KindKey will look?',
+        answer:
+          'No. KindKey buys Edgewood houses with those materials as they sit. You do not have to test them, scrape a ceiling, pull floor tile, or replace siding first. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Can KindKey tell me whether the ceiling or the siding contains asbestos?',
+        answer:
+          'No. Labor & Industries’ asbestos page says you cannot tell without a sample tested by an accredited laboratory. KindKey does not take samples, does not write a survey, and does not certify that a house is free of asbestos. Bring any report you already have. You can still request an offer.',
+      },
+      {
+        question:
+          'The house is a rental, or I was going to demolish it. Do I still skip the survey?',
+        answer:
+          'KindKey does not require a survey before an offer, and KindKey will not tell you that a rental or a demolition is exempt. The Puget Sound Clean Air Agency’s homeowner pages say a rental renovation and a demolition need an AHERA-certified building inspector, and that demolitions of structures with a roof area greater than 120 square feet are notified even when no asbestos is found. Ask the agency at (206) 343-8800 before you remove material or tear the house down. You can still request a cash offer without doing that work. You can say no.',
+      },
+      {
+        question:
+          'A test already found asbestos, or a foreclosure notice arrived. Can I still ask?',
+        answer:
+          'Yes. Tell us what the report says. You do not have to finish a removal before KindKey looks. On the seller disclosure, question 7.E of RCW 64.06.020 asks about materials such as asbestos. KindKey will not tell you how to mark it. If a foreclosure notice is also in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, Meridian, and the valley.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell a house as-is in Edgewood',
+        description: 'The ceiling, the floor, and the siding can stay.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/edgewood/sell-my-house-fast',
+        label: 'Sell my house fast in Edgewood',
+        description: 'A direct sale without a removal on the calendar.',
+      },
+      {
+        href: '/areas/edgewood/sell-hoarder-house',
+        label: 'Heavy-repair houses in Edgewood',
+        description: 'When the material is one part of a larger repair.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents and building materials can stay.',
+      },
+      {
+        href: '/blog/sell-house-needing-repairs-edgewood-wa',
+        label: 'Major repairs in Edgewood',
+        description: 'A roof or a stopped remodel on the same house.',
+      },
+      {
+        href: '/blog/sell-house-after-expired-listing-edgewood-wa',
+        label: 'Expired listings in Edgewood',
+        description: 'When a buyer’s inspection asked for a removal.',
+      },
+      {
+        href: '/blog/sell-house-with-stalled-remodel-edgewood-wa',
+        label: 'Stalled remodels in Edgewood',
+        description: 'Open walls can be how the material was found.',
+      },
+      {
+        href: '/blog/sell-house-with-unpermitted-work-edgewood-wa',
+        label: 'Unpermitted work in Edgewood',
+        description: 'A room or a shop that never had a final inspection.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'When the city has written about the siding or the building.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-edgewood-wa',
+        label: 'Code violations in Edgewood',
+        description: 'The city letter, separate from an asbestos notice.',
+      },
+      {
+        href: '/blog/sell-water-damaged-house-edgewood-wa',
+        label: 'Water damage in Edgewood',
+        description: 'A roof leak or a burst pipe, rather than the material itself.',
+      },
+      {
+        href: '/blog/sell-house-with-foundation-problems-edgewood-wa',
+        label: 'Foundation problems in Edgewood',
+        description: 'A crack, a soft floor, or water under the house.',
+      },
+      {
+        href: '/blog/sell-house-with-heating-oil-tank-edgewood-wa',
+        label: 'Heating oil tanks in Edgewood',
+        description: 'Question 7.E also asks about fuel tanks. That is a different item.',
+      },
+      {
+        href: '/blog/sell-house-with-knob-and-tube-wiring-edgewood-wa',
+        label: 'Knob-and-tube wiring in Edgewood',
+        description: 'Old wiring is a different system from the ceiling and the siding.',
+      },
+      {
+        href: '/areas/edgewood/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Edgewood',
+        description: 'When a fire may have disturbed the material.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The insurance claim stays with your insurer.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-edgewood-wa',
+        label: 'Fire damage in Edgewood',
+        description: 'East Pierce Fire & Rescue, and the claim, are that page.',
+      },
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Vacant houses in Edgewood',
+        description: 'When nobody is there to watch the house.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-tenants',
+        label: 'Houses with tenants in Edgewood',
+        description: 'A rental removal is a different rule from a sale.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/blog/sell-house-with-tenants-edgewood-wa',
+        label: 'Tenants in Edgewood',
+        description: 'Do not make an occupant leave so a contractor can open the ceiling.',
+      },
+      {
+        href: '/areas/edgewood/sell-inherited-probate-house',
+        label: 'Inherited houses in Edgewood',
+        description: 'When the material and the signer are both open questions.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the condition.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Probate houses in Edgewood',
+        description: 'Who can sign, when the owner has died.',
+      },
+      {
+        href: '/blog/sell-house-in-a-living-trust-edgewood-wa',
+        label: 'Living trusts in Edgewood',
+        description: 'When the house is already titled in a trust.',
+      },
+      {
+        href: '/blog/sell-house-with-power-of-attorney-edgewood-wa',
+        label: 'Power of attorney in Edgewood',
+        description: 'When someone else is signing while the owner is in care.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Foreclosure in Edgewood',
+        description: 'When a trustee’s notice is in the file with the report.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'A loan deadline is separate from the ceiling.',
+      },
+      {
+        href: '/blog/behind-on-property-taxes-edgewood-wa',
+        label: 'Property taxes in Edgewood',
+        description: 'A Pierce County tax bill is a different account from a removal bid.',
+      },
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description: 'The next city west. Milton can sit in King County or Pierce County.',
+      },
+      {
+        href: '/areas/fife',
+        label: 'Sell a house in Fife',
+        description: 'West of Edgewood. Confirm the parcel before you use this page.',
+      },
+      {
+        href: '/areas/puyallup',
+        label: 'Sell a house in Puyallup',
+        description: 'The city to the south, if the parcel is actually there.',
+      },
+      {
+        href: '/areas/sumner',
+        label: 'Sell a house in Sumner',
+        description: 'The valley city to the east.',
+      },
+      {
+        href: '/areas/port-orchard',
+        label: 'Sell a house in Port Orchard',
+        description: 'Kitsap County. The same clean-air agency, a different city.',
+      },
+      {
+        href: '/areas/bremerton',
+        label: 'Sell a house in Bremerton',
+        description: 'Kitsap County. Do not use the Edgewood page for this parcel.',
+      },
+      {
+        href: '/areas/silverdale',
+        label: 'Sell a house in Silverdale',
+        description: 'Kitsap County, and still inside the four-county clean-air area.',
+      },
+      {
+        href: '/areas/poulsbo',
+        label: 'Sell a house in Poulsbo',
+        description: 'Kitsap County. A different city from Edgewood.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what the ceiling, the floor, or the siding is. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood offer with the material left in place',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to remove it first. You can say no.',
+  }),
 ];
