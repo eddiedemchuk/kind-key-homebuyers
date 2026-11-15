@@ -4876,8 +4876,7 @@ export const expansionBlogPosts: BlogPost[] = [
   }),
   post('sell-house-with-knob-and-tube-wiring-edgewood-wa', {
     breadcrumbName: 'Knob-and-tube wiring in Edgewood',
-    title:
-      'Selling a House with Knob-and-Tube Wiring or an Old Electrical Panel in Edgewood, WA',
+    title: 'Selling a House with Knob-and-Tube Wiring or an Old Electrical Panel in Edgewood, WA',
     description:
       'How Edgewood owners sell a house with knob-and-tube wiring, an old panel, or open splices without rewiring first. KindKey buys as a principal. Not an electrical inspection.',
     h1: 'Selling a House with Knob-and-Tube Wiring or an Old Electrical Panel in Edgewood, WA',
@@ -4942,12 +4941,14 @@ export const expansionBlogPosts: BlogPost[] = [
           'KindKey will not tell you that it is, or that it is not. EMC 15.40 adopts the National Electrical Code for the electrical work that chapter covers, and EMC 15.40.020 places enforcement with Labor & Industries. EMC 15.80.030 says devices required by a previous technical code are maintained under the edition they were installed under. WAC 296-46B-394 sets conditions for insulation over existing knob-and-tube. It does not, by itself, order a rewire before a sale. You can still request a cash offer. You can say no.',
       },
       {
-        question: 'An inspection or an insurer wrote up the panel. Do I need a new electrical report?',
+        question:
+          'An inspection or an insurer wrote up the panel. Do I need a new electrical report?',
         answer:
           'No. Bring the report or the letter if you have it. KindKey will not require a new electrician’s letter before an offer, and KindKey will not tell you the old report is right or wrong. KindKey does not give insurance advice. Ask the insurer what the policy requires. The offer reflects the house as it sits.',
       },
       {
-        question: 'The power is off, or a foreclosure notice arrived. Can I still ask for an offer?',
+        question:
+          'The power is off, or a foreclosure notice arrived. Can I still ask for an offer?',
         answer:
           'Yes. Tell us the power is off. You do not have to restore it before KindKey looks. If a foreclosure notice is also in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not stop a trustee. You can still request a cash offer while you get that advice. You can say no.',
       },
@@ -5454,5 +5455,334 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaTitle: 'Ask for an Edgewood offer with the material left in place',
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to remove it first. You can say no.',
+  }),
+  post('sell-house-with-code-violations-sumner-wa', {
+    breadcrumbName: 'Code violations in Sumner',
+    title: 'Selling a House with Code Violations in Sumner, WA',
+    description:
+      'How Sumner owners sell a house with an open code case or a stop-work order without finishing the city’s list first. KindKey buys as a principal. Not legal advice.',
+    h1: 'Selling a House with Code Violations in Sumner, WA',
+    publishedAt: '2026-11-15',
+    intro: [
+      'You can sell a house with open code violations in Sumner without finishing the city’s repair list, pulling the missing permit, or clearing the yard first. ' +
+        office +
+        ' KindKey is not code enforcement, a permit expediter, the hearing examiner, or a real estate agent. This article is not legal advice.',
+      'Sumner is an incorporated city in Pierce County, in the White River and Puyallup River valley, between Auburn, Pacific, Puyallup, and the hill up to Bonney Lake. Downtown Sumner is a small historic grid. East Sumner and the valley edges mix houses with larger lots and shops. Bonney Lake, up SR-410, is a different city on the plateau. Pacific and Edgewood are separate cities. A mailing address that says Sumner is not always inside the city limits. Bring the address on the letter.',
+    ],
+    callout:
+      'You do not have to fix the violations, pull the permit, or clear the yard before you ask. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'Read the header before you treat it as a Sumner case',
+        paragraphs: [
+          'The City of Sumner’s code-violations page tells people how a complaint starts. They can use the online form, or print a form, sign and date it, and mail or deliver it to City Hall at 1104 Maple Street, Sumner, WA 98390. The page lists the main line as (253) 863-8300. For the status of a report it says to email codecomplaint@sumnerwa.gov or call Development Services at (253) 299-5530. The city’s contact page says the City Hall lobby is open for in-person visits Monday through Thursday, 8 a.m. to 5 p.m., and that phone and email service is Monday through Thursday, 7:30 a.m. to 5:30 p.m., and Friday, 7:30 a.m. to noon. Confirm the hours before you go. KindKey is not that desk and will not file the complaint or answer it. The same code-violations page says the city enforces building code violations, zoning code violations, nuisance violations, and Sumner Municipal Code violations. The common issues it lists are abandoned, junk, or inoperable vehicles on private property; blackberry bushes or vines; a building that has been abandoned, neglected, or is falling down; a business operating from a residence; a fence that is falling down; garbage and trash; no garbage service; tall weeds or grasses; building without a permit; and a public nuisance. That is the city’s list of what it sees. It is not a finding about your house.',
+          'Sumner is entirely in Pierce County. Most of Auburn is in King County, and a southern slice of Auburn records in Pierce County. Edgewood is entirely in Pierce County. The Edgewood city page places that city between Milton, Fife, Puyallup, and Sumner. Milton, next to Edgewood, can fall in King County or Pierce County. Bonney Lake is the plateau city up SR-410. Pacific is its own city. Unincorporated Pierce County is a county case, including many Lake Tapps parcels people mention in the same breath as Bonney Lake. If the letterhead says City of Edgewood, City of Puyallup, City of Bonney Lake, City of Pacific, City of Auburn, or Pierce County, use that government’s page. The Edgewood code-violations guide is the city beside this valley. The Auburn code-violations guide is KindKey’s home city, and it is a different letter. Sumner Municipal Court is easy to misplace for the same reason. The City of Sumner’s contact page lists its municipal court at the Justice & Municipal Center, 9002 Main St E, Suite 100, Bonney Lake, WA 98391, phone (253) 862-6606. The courtroom is in Bonney Lake. A code letter is still whatever city is on the header. KindKey will not appear in that court.',
+          'The closing agent confirms the parcel. A Sumner deed records with the Pierce County Auditor at 2401 S 35th St, Room 200, Tacoma, WA 98409. The phone that office publishes for questions about requesting recorded documents is (253) 798-7440. The auditor does not close a code case. Do not record a Pierce County deed at the King County Recorder because KindKey’s office is in Auburn, or at the Kitsap County Auditor in Port Orchard because someone in the family takes a ferry.',
+        ],
+      },
+      {
+        heading: 'What a Sumner notice of violation is doing',
+        paragraphs: [
+          'Chapter 15.06 SMC is the city’s enforcement chapter. SMC 15.06.010 says its purpose is to promote the health, safety, and welfare of the general public and to establish consistent enforcement of the city’s building, construction, land use, street use, construction in the right-of-way, environmental protection, and permitting regulations. SMC 15.06.010(C) says the intent is to place the obligation of complying on the owner, occupier, or other person responsible for the condition of the land and buildings, or for the actions the chapter regulates. KindKey will not tell you that you are that person. SMC 15.06.020 lists regulations the chapter applies to. The list includes nuisances, chapter 8.16 SMC; the building code, chapter 15.08 SMC; unfit dwellings, buildings, and structures, chapter 15.14 SMC; the fire code, chapter 15.24 SMC; flood damage prevention, chapter 15.52 SMC; and zoning enforcement, chapter 18.59 SMC, among the other chapters printed there. Read the current list. A code can be amended. KindKey will not match your letter to a chapter for you.',
+          'SMC 15.06.050 says a notice of violation may be issued to the owner, tenant, or other person responsible for the condition. The section says the notice contains the name of the party, the address or location, a separate statement of each standard or code provision violated, the corrective action, a reasonable time for compliance under SMC 15.06.060, a statement that civil penalties will be assessed if compliance does not occur in that time, a statement that subsequent violations may result in criminal prosecution under SMC 15.06.110 if the violation is not already subject to it, and the deadline to appeal to the code compliance hearing examiner under SMC 15.06.100. Service is by certified mail to the last-known address, by personal service, or, if the person cannot be found after reasonable efforts, by posting on the property. When service is by that certified mail, the section says service is complete on the third day after the item is postmarked. KindKey will not count those days. SMC 15.06.060 says that in setting a reasonable time the officer considers the type and degree of the violation, any stated intent to comply, the steps to get a permit, the complexity of the work, including seasonal considerations and the legal prerogatives of landlords and tenants, and circumstances beyond the responsible party’s control. Unless an appeal is filed with the city clerk, the notice becomes the final order of the code enforcement officer. A copy of the notice may be filed with the Pierce County auditor. Do not skip a hearing because a buyer is looking at the house.',
+          'SMC 15.06.070 sets a monetary penalty for each violation per day or portion of a day: $100 on the first day, $200 on the second, $300 on the third, $400 on the fourth, and $500 for each additional day beyond four days. The section says payment does not relieve the person who received the notice of the duty to correct the violation. It says an assessed penalty must be paid to the city within 30 calendar days from the date an invoice is served by mail, and that mail service is complete on the third day after the item is postmarked. SMC 15.06.075 says accrued penalties may be waived at the discretion of the city attorney or the code enforcement officer in the circumstances that section lists, including a notice issued in error, new information, a negotiated agreement to resolve the violation, or a waiver the city considers appropriate to resolve or avoid litigation. KindKey will not ask the city for a waiver, will not calculate the invoice, and will not tell you a waiver is available. Read the notice you were served and the current section. A code can be amended.',
+          'SMC 15.06.100 says a person significantly affected by or interested in a notice of violation may appeal by filing with the city clerk within 10 calendar days following service, along with a filing fee in an amount set by the department director. If the last day is a Saturday, Sunday, or a federal or city holiday, the period runs until 5:00 p.m. on the next business day. The section says the filing does not alter the time for compliance unless the hearing examiner modifies it after a hearing. It says that if an appeal is not filed within 10 calendar days after the notice is served, the violation shall be deemed committed and monetary penalties shall be assessed under the deadlines in the notice. Staff forward the request to the hearing examiner under chapter 2.58 SMC. KindKey will not decide whether you are a person the section allows to appeal, will not file the appeal, and will not pay the fee. If the notice has a hearing or a fine, talk with a Washington attorney before you rely on a sale to solve it.',
+          'SMC 15.06.040 is the voluntary-correction path. The section says the city may enter an agreement with the person responsible for the violation. It says that by entering the agreement the person waives the right to an appeal of the violation and of the required corrective action, except that an appeal may be pursued about compliance with the corrective action. The agreement can include a date for the work, consent to an inspection, an agreement that the city may abate the violation and recover costs and a monetary penalty if the terms are not met, and an administrative fee in an amount the code enforcement officer determines. KindKey will not tell you to sign that agreement or to refuse it. That conversation belongs with your attorney. Asking for a cash offer does not extend the date written in the agreement.',
+        ],
+      },
+      {
+        heading: 'A stop-work order, an unfit building, and a shop are different facts',
+        paragraphs: [
+          'SMC 15.06.080 says the code enforcement officer may issue a stop-work or stop-use order, besides any other remedy, when use or activity is happening without a valid permit or in violation of permit conditions, when it violates the Sumner Municipal Code or any design standards, when it is under a permit issued on erroneous information from the applicant, or when it has become a hazard to life or property because of weather or other conditions. The order identifies the property by address or parcel number, states the basis by reference to the regulation or permit, and names a city contact. It may be issued with, or incorporated in, a notice of violation. The section says notice is served by posting it conspicuously on the property or structure and is effective immediately. It says violation of a stop-work or stop-use order is a misdemeanor, punishable by imprisonment for a maximum term fixed by the court of not more than 90 days, or by a fine in an amount fixed by the court of not more than $1,000, or by both. It also says a stop-work order may not be appealed to the hearing examiner. SMC 15.06.095 says removing a posted stop-work or stop-use order without authorization of the code enforcement officer or the hearing examiner is a misdemeanor with those same maximums. Leave the posting where the city put it. KindKey will not take it down and will not tell you that your order is that offense. Talk with a Washington attorney. SMC 15.06.110 says a repeat violation or an ongoing violation, using the definitions in SMC 15.06.015, is a misdemeanor, and that charges under that section are filed in Sumner Municipal Court and bear the signature of the city attorney or a designee. KindKey will not decide whether a file meets those definitions and will not appear in that court.',
+          'SMC 15.06.020 names chapter 15.14 SMC, unfit dwellings, buildings, and structures, as one of the regulations the enforcement chapter applies to. KindKey will not decide whether a house meets chapter 15.14. If the paper orders you to vacate, or sets a hearing, talk with a Washington attorney before you rely on a sale to solve it. Do not walk a house that is not safe to enter. Photos of the posting and an exterior look can start the conversation. If the letter follows a fire, East Pierce Fire & Rescue’s stations page lists Sumner among the communities it serves and lists Station 113 at 800 Harrison St., Sumner, WA 98390. The same page lists Station 118 at 10105 24th Street E in Edgewood. KindKey is not the fire department and does not interpret a run report. The insurance claim stays with your insurer. KindKey does not give insurance advice. The King and Pierce County fire guide is that overlap. The Edgewood fire-damage guide is the neighboring city, for a house that is actually in Edgewood. Chapter 15.52 SMC, flood damage prevention, is a different line on the same enforcement list. A floodplain letter and a junk-vehicle letter are different papers. KindKey will not interpret chapter 15.52. On the seller disclosure in RCW 64.06.020, question 7.A asks about flooding, standing water, or drainage problems, and question 7.D asks whether there are shorelines, wetlands, floodplains, or critical areas. KindKey will not tell you how to mark them.',
+          'Tell KindKey what the letter describes, in plain words, before anyone schedules a visit. A downtown house close to the street, an East Sumner house, and a valley-edge lot with a shop are different properties. The notice may be an unpermitted addition, a garage used as a room, a yard on the city’s list, or a shop built without a final inspection. A retail lender often will not close while that file is open. You do not need a contractor bid or a permit in hand before KindKey looks. The city’s code-violations page lists building without a permit among the common issues. The Edgewood unpermitted-work guide is that city’s version of a room or a shop that never had a final inspection. Use this page when the header says City of Sumner. Furniture and shop contents you do not want can stay. Take papers and what you want to keep before the closing date you agree to. If someone still lives in the house, say so. Do not force an occupant out so the yard looks empty for a photograph. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does. The Sumner tenants page is that file. The Edgewood tenants guide is the neighboring city.',
+        ],
+      },
+      {
+        heading: 'Finish the city’s list, or sell the house as it sits',
+        paragraphs: [
+          'Curing a small yard notice can fit if you want to keep the house and the work is actually small. A listing can fit after the case is one a broker will take, and you can host the showings. A financed buyer may still stall on an open permit or a posted order. Commission is negotiated in the listing agreement with that broker and is not set by KindKey. Hire a licensed broker in Pierce County if you want the listing. KindKey will not run it, will not choose your contractor, and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive from Sumner does not add a repair. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need a relative with a key, or time to take belongings, can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a utility balance, or a city assessment. The offer reflects the house as it sits, including the open case, so it can be less than a retail price for a house with the violations already closed. You see the payoffs on the settlement statement before you close. You can say no. The Sumner as-is page is that direct sale.',
+          'SMC 15.06.130 says costs the city incurs to correct the violation, including incidental expenses, are billed to the person responsible for the violation and/or the owner, lessor, tenant, or other person entitled to control, use, or occupy the property, and that owners and tenants are jointly and severally liable except where prohibited by law. KindKey will not tell you whether that exception applies. The section says that if the responsible party fails to pay costs under that section, the city may, after abating a nuisance, file with the Pierce County auditor a claim of lien for the civil penalties, fees, and costs assessed that are reasonably related to the property, in accordance with lien provisions authorized by state law. It says any lien filed is subject to priority under state law, including RCW 35A.21.405. KindKey does not interpret that statute and does not promise that every Sumner fine disappears when you sign. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. SMC 15.06.120 says that, except for the summary-abatement circumstance in that section, an abatement action is commenced by a complaint for a warrant of abatement in Pierce County Superior Court. The summary path in that section is for a violation that causes a condition posing an immediate or imminent threat to the safety of persons or property, or significant environmental damage, and it says the city acts on the advice of the city attorney. KindKey will not decide that your house meets that sentence, will not file that case, and will not defend it. Until the deed records, deadlines on the notice are still yours. After recording, the house is KindKey’s to deal with. That includes repairs, permits KindKey chooses to pull, and the open case that came with the property. KindKey handles that as the new owner. KindKey does not clear the citation as your representative and does not guarantee what a hearing examiner, an inspector, or a code official will do.',
+          'Washington’s seller disclosure law is chapter 64.06 RCW. RCW 64.06.020 sets out the seller disclosure statement. Question 1.G asks whether there is any study, survey project, or notice that would adversely affect the property. Question 1.H asks about pending or existing assessments. Question 1.I asks whether there are zoning violations, nonconforming uses, or unusual restrictions that would affect future construction or remodeling. Question 4.C asks whether there have been conversions, additions, or remodeling. Question 4.C(1) asks, if so, whether all building permits were obtained. Question 4.C(2) asks whether all final inspections were obtained. KindKey will not tell you how to mark the boxes, whether an exemption in RCW 64.06.010 applies, or what you should have told an earlier buyer. Ask a Washington real estate attorney if you are unsure. The closing agent handles the form that applies to your file. Answer with what you actually know. If you do not know whether a past owner pulled a permit, say that. Selling to a cash buyer is not a reason to leave a known notice off the form.',
+          'If a foreclosure notice is in the file with the city letter, you have a clock the code case does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. The statewide foreclosure guide is that file. The Edgewood foreclosure guide is the neighboring city’s version. A Sumner notice does not use Edgewood’s dates. If the owner has died, who can sign is a probate question, separate from the code letter. A Sumner probate is commonly a Pierce County matter in Tacoma, not a King County filing in Kent, even though Auburn is close. KindKey will not file the probate and will not guess which relative can sign. The Sumner inherited-house page is that question. The Pierce County estate guide and the Edgewood probate guide are the neighboring writeups. Do not sign a deed before the authority exists. If the house is already titled in a living trust, the Edgewood living-trust guide is the neighboring city’s writeup of that signature question. KindKey will not read the trust. If a divorce is open, who may sign is a question for the spouses’ attorneys. The Edgewood divorce guide is the neighboring city. A Pierce County property-tax bill is a different account from a city penalty. KindKey will not calculate the treasurer’s number. The Washington tax-delinquent guide is the treasurer’s sale. The Edgewood property-tax guide is the neighboring city’s version of a Pierce County bill. A house in Port Orchard, Bremerton, Silverdale, or Poulsbo is a Kitsap County file. Do not use this Sumner page for those cities, or for a house in Edgewood, Puyallup, Bonney Lake, Fife, or Milton. Reach out, and KindKey will help you through the whole process from start to finish, from the letter through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do I have to fix Sumner code violations before KindKey will look?',
+        answer:
+          'No. KindKey buys Sumner houses with open violations, stop-work orders, and unpermitted work as they sit. You do not have to finish the city’s list, hire the contractor named in the notice, or clear the yard first. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'How long is a Sumner appeal, and can I appeal a stop-work order?',
+        answer:
+          'SMC 15.06.100 says an appeal of a notice of violation is filed with the city clerk within 10 calendar days following service, with a filing fee set by the department director. If the last day is a Saturday, Sunday, or a federal or city holiday, the period runs until 5:00 p.m. the next business day. The section says filing does not change the time to comply unless the hearing examiner modifies it. SMC 15.06.080 says a stop-work order may not be appealed to the hearing examiner. KindKey will not count the days or file the paper. Talk with a Washington attorney. You can still request a cash offer. You can say no.',
+      },
+      {
+        question: 'Will Sumner fines or a lien disappear when the house sells?',
+        answer:
+          'KindKey does not promise that. SMC 15.06.070 says paying a penalty does not relieve the duty to correct. SMC 15.06.130 says that if the responsible party fails to pay costs under that section, the city may, after abating a nuisance, file a lien claim with the Pierce County auditor for the civil penalties, fees, and costs assessed that are reasonably related to the property. The section says lien priority follows state law, including RCW 35A.21.405. KindKey does not interpret that statute. Amounts that must be paid can reduce proceeds. The settlement statement shows them before you close.',
+      },
+      {
+        question:
+          'The header is another city, or a foreclosure notice came with the letter. Can I still ask?',
+        answer:
+          'Read the header. Edgewood, Puyallup, Bonney Lake, Pacific, Auburn, and Pierce County are different cases from a City of Sumner letter. Sumner Municipal Court sits in Bonney Lake, and that address does not turn a Bonney Lake code letter into a Sumner letter. If a foreclosure notice is also in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not stop a trustee. You can still request a cash offer while you get that advice. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/sumner',
+        label: 'Sell a house in Sumner',
+        description: 'Downtown, East Sumner, and the valley edge.',
+      },
+      {
+        href: '/areas/sumner/sell-house-with-code-violations',
+        label: 'Code violations in Sumner',
+        description: 'The Sumner situation page for an open city case.',
+      },
+      {
+        href: '/areas/sumner/sell-house-as-is',
+        label: 'Sell a house as-is in Sumner',
+        description: 'The repair list does not have to be finished first.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/sumner/sell-my-house-fast',
+        label: 'Sell my house fast in Sumner',
+        description: 'A direct sale without a permit on the calendar.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-washington',
+        label: 'Code violations in Washington',
+        description: 'King and Pierce County, when the notice is not only a Sumner letter.',
+      },
+      {
+        href: '/areas/sumner/sell-hoarder-house',
+        label: 'Heavy-repair houses in Sumner',
+        description: 'When the notice is one part of a larger repair.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents, a shop, and deferred work can stay.',
+      },
+      {
+        href: '/areas/sumner/sell-vacant-house',
+        label: 'Vacant houses in Sumner',
+        description: 'When the yard case started because nobody was there.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/sumner/sell-house-with-tenants',
+        label: 'Houses with tenants in Sumner',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'Do not make an occupant leave so the yard looks empty.',
+      },
+      {
+        href: '/areas/sumner/sell-inherited-probate-house',
+        label: 'Inherited houses in Sumner',
+        description: 'When the notice and the signer are both open questions.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the condition.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-pierce-county',
+        label: 'Estate houses in Pierce County',
+        description: 'A Sumner probate is commonly filed in Pierce County.',
+      },
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'The Pierce County city between Milton, Fife, Puyallup, and Sumner.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'A City of Edgewood letter uses Edgewood’s code.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell a house as-is in Edgewood',
+        description: 'The neighboring city’s direct sale.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-edgewood-wa',
+        label: 'Code violations in Edgewood',
+        description: 'The long guide for an Edgewood header.',
+      },
+      {
+        href: '/blog/sell-house-with-unpermitted-work-edgewood-wa',
+        label: 'Unpermitted work in Edgewood',
+        description: 'A room or a shop in Edgewood that never had a final inspection.',
+      },
+      {
+        href: '/blog/sell-house-with-tenants-edgewood-wa',
+        label: 'Tenants in Edgewood',
+        description: 'The neighboring city, when someone still lives there.',
+      },
+      {
+        href: '/areas/edgewood/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Edgewood',
+        description: 'East Pierce Station 118, for a house that is actually in Edgewood.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The insurance claim stays with your insurer.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-edgewood-wa',
+        label: 'Fire damage in Edgewood',
+        description: 'The neighboring East Pierce city, not a Sumner letter.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-king-pierce-county',
+        label: 'Fire damage in King and Pierce County',
+        description: 'When a Sumner code letter follows a fire.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Foreclosure in Edgewood',
+        description: 'The neighboring city, when a trustee’s notice is in the file.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'A loan deadline is separate from a Sumner code case.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Selling before foreclosure in Washington',
+        description: 'Talk with a Washington attorney about the trustee’s date.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Probate houses in Edgewood',
+        description: 'Who can sign, when the house is in Edgewood.',
+      },
+      {
+        href: '/blog/sell-house-in-a-living-trust-edgewood-wa',
+        label: 'Living trusts in Edgewood',
+        description: 'When a neighboring house is already titled in a trust.',
+      },
+      {
+        href: '/blog/selling-a-house-during-divorce-edgewood-wa',
+        label: 'Divorce sales in Edgewood',
+        description: 'Who can sign is a question for the attorneys.',
+      },
+      {
+        href: '/blog/behind-on-property-taxes-edgewood-wa',
+        label: 'Property taxes in Edgewood',
+        description: 'A Pierce County tax bill is a different account from a city penalty.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'The treasurer’s sale is not a city code case.',
+      },
+      {
+        href: '/areas/puyallup',
+        label: 'Sell a house in Puyallup',
+        description: 'The city to the south, if the parcel is actually there.',
+      },
+      {
+        href: '/areas/puyallup/sell-house-with-code-violations',
+        label: 'Code violations in Puyallup',
+        description: 'A City of Puyallup letter is a different case.',
+      },
+      {
+        href: '/areas/bonney-lake',
+        label: 'Sell a house in Bonney Lake',
+        description: 'The plateau city up SR-410. Sumner Municipal Court sits there.',
+      },
+      {
+        href: '/areas/bonney-lake/sell-house-with-code-violations',
+        label: 'Code violations in Bonney Lake',
+        description: 'Read the header. The court address is not the code.',
+      },
+      {
+        href: '/areas/auburn',
+        label: 'Sell a house in Auburn',
+        description: 'KindKey’s office city. Most of Auburn is in King County.',
+      },
+      {
+        href: '/areas/auburn/sell-house-with-code-violations',
+        label: 'Code violations in Auburn',
+        description: 'A City of Auburn letter, not a Sumner letter.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-auburn-wa',
+        label: 'Code violations in Auburn',
+        description: 'The guide for KindKey’s home city.',
+      },
+      {
+        href: '/areas/fife',
+        label: 'Sell a house in Fife',
+        description: 'A different Pierce County city in the valley.',
+      },
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description: 'Milton can sit in King County or Pierce County.',
+      },
+      {
+        href: '/areas/port-orchard',
+        label: 'Sell a house in Port Orchard',
+        description: 'Kitsap County. Do not use the Sumner page for this parcel.',
+      },
+      {
+        href: '/areas/bremerton',
+        label: 'Sell a house in Bremerton',
+        description: 'Kitsap County. A different courthouse and a different code.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what the Sumner letter says. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for a Sumner offer with the violations still open',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to finish the city’s list first. You can say no.',
   }),
 ];
