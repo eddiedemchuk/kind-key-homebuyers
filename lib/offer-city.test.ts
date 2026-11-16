@@ -51,17 +51,11 @@ describe('offer city headline', () => {
   });
 
   it('keeps a foreclosure headline about selling before the sale', () => {
-    assert.equal(
-      offerForeclosureHeadline(null),
-      'Stop foreclosure. Sell your house before the sale'
-    );
-    assert.equal(
-      offerForeclosureHeadline('Tacoma'),
-      'Stop foreclosure in Tacoma. Sell your house before the sale'
-    );
+    assert.equal(offerForeclosureHeadline(null), 'Sell Your House Before Foreclosure');
+    assert.equal(offerForeclosureHeadline('Tacoma'), 'Sell Your Tacoma House Before Foreclosure');
     assert.equal(
       offerDisplayedHeadline(offerForeclosureHeadline('Tacoma'), '?utm_term=tacoma', true),
-      'Stop foreclosure in Tacoma. Sell your house before the sale'
+      'Sell Your Tacoma House Before Foreclosure'
     );
     assert.equal(
       offerDisplayedHeadline('We buy houses for cash', '?utm_term=tacoma'),

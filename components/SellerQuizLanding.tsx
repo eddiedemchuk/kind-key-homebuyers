@@ -4,8 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import LeadConnectorChat from '@/components/LeadConnectorChat';
+import OfferHowItWorks from '@/components/OfferHowItWorks';
 import OfferMobileBar, { OfferPhoneLink } from '@/components/OfferMobileBar';
+import OfferPageFooter from '@/components/OfferPageFooter';
 import SellerQuiz from '@/components/SellerQuiz';
+import { offerHowItWorks } from '@/data/offerLandings';
 import { isActivePath, siteNavLinks } from '@/components/siteNav';
 import { offerDisplayPhone, type DisplayPhone } from '@/lib/phones';
 import { BUSINESS, localBusinessJsonLd } from '@/lib/site';
@@ -55,7 +58,7 @@ export default function SellerQuizLanding({
           <Link href="/" className="flex min-w-0 items-center gap-2">
             <Image
               src="/logo-header.avif"
-              alt="KindKey Home Buyers"
+              alt="KindKey Home Buyers LLC logo"
               width={36}
               height={36}
               priority
@@ -129,31 +132,15 @@ export default function SellerQuizLanding({
       </header>
 
       <div className="mx-auto max-w-xl px-5 pb-[calc(81px+env(safe-area-inset-bottom,0px))] pt-4 md:pb-16 md:pt-8">
-        <p className="text-sm font-semibold text-text-primary">Close in 7 Days</p>
+        <p className="text-sm font-semibold text-text-primary">Close in as little as 7 days</p>
         <p className="mt-1 text-sm leading-snug text-text-secondary">
           KindKey Home Buyers LLC is a local cash home buyer in King, Pierce, and Kitsap County.
         </p>
         <div className="mt-4">
           <SellerQuiz pathname={pathname} callPhone={phone} />
         </div>
-        <footer className="mt-12 border-t border-gray-200 py-8 text-sm leading-relaxed text-text-secondary">
-          <p>{address}</p>
-          <p className="mt-3">
-            <OfferPhoneLink
-              phone={phone}
-              location="footer"
-              className="text-base font-semibold text-divider"
-            />
-          </p>
-          <p className="mt-3">
-            KindKey Home Buyers LLC buys houses for cash in King, Pierce, and Kitsap County.
-          </p>
-          <p className="mt-3">
-            <Link href="/" className="font-medium text-divider underline">
-              KindKey Home Buyers
-            </Link>
-          </p>
-        </footer>
+        <OfferHowItWorks steps={offerHowItWorks} />
+        <OfferPageFooter address={address} phone={phone} />
       </div>
       <OfferMobileBar phone={phone} />
       <LeadConnectorChat mobileOnly suppressGreeting />

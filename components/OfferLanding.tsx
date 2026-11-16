@@ -1,11 +1,12 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import LeadConnectorChat from '@/components/LeadConnectorChat';
 import { MobileNavButton, MobileNavPanel, MobileNavProvider } from '@/components/MobileNav';
 import HousesBought from '@/components/HousesBought';
 import OfferCityHeadline from '@/components/OfferCityHeadline';
+import OfferHowItWorks from '@/components/OfferHowItWorks';
 import OfferLeadForm from '@/components/OfferLeadForm';
 import OfferMobileBar, { OfferJumpButton, OfferPhoneLink } from '@/components/OfferMobileBar';
+import OfferPageFooter from '@/components/OfferPageFooter';
 import type { OfferLandingContent } from '@/data/offerLandings';
 import { BBB_TRUST_LINE, GOOGLE_REVIEWS_URL, shortGoogleReviews } from '@/data/offerCredibility';
 import type { FormOrigin } from '@/lib/form-origin';
@@ -14,31 +15,19 @@ import { BUSINESS, localBusinessJsonLd } from '@/lib/site';
 
 const AGENT_COMPARISON = [
   {
-    label: 'Commissions',
-    kindkey: '$0 commissions',
-    agent: '~6% agent commissions',
+    label: 'Fees',
+    kindkey: 'No fees',
+    agent: 'An agent commission',
   },
   {
-    label: 'Repairs & Cleanout',
-    kindkey: 'Buy as-is — take what you want and leave the rest',
-    agent: 'You pay for repairs, cleaning, and staging',
+    label: 'Repairs and cleaning',
+    kindkey: 'No repairs and no cleaning. Cash offer, as-is.',
+    agent: 'Repairs and cleaning',
   },
   {
-    label: 'Showings',
-    kindkey: 'No open houses or strangers walking through',
-    agent: 'Weeks of showings and open houses',
-  },
-  {
-    label: 'Timeline & Certainty',
-    kindkey:
-      'Cash offer (close as fast as 7 days) or seller-financed terms for a higher price — you pick the date',
-    agent: '60–90+ days, and buyer financing can fall through',
-  },
-  {
-    label: 'Back Taxes, Liens & Code Cases',
-    kindkey:
-      'Paid out of the sale at closing, not out of your pocket first; open code cases & tenants in place OK',
-    agent: "Often must be resolved before a buyer's lender will close",
+    label: 'Timeline',
+    kindkey: 'Close in as little as 7 days, or you pick the closing date',
+    agent: 'A listing timeline',
   },
 ] as const;
 
@@ -51,8 +40,12 @@ const DISTRESS_NOTES = [
 /** Search phrases the Situations ad group sends to /offer. The house and the sale only. */
 const OFFER_SITUATIONS = [
   {
+    title: 'Inherited and probate',
+    body: 'You can ask for a cash offer on an inherited or probate house. You do not have to empty the house first. KindKey does not give legal advice about the estate.',
+  },
+  {
     title: 'Divorce',
-    body: 'You can ask for a cash offer on the house during a divorce. KindKey does not give legal advice about the divorce.',
+    body: 'You can ask for a cash offer on the house during a divorce. KindKey does not give legal advice about the divorce. You pick the closing date.',
   },
   {
     title: 'Stop foreclosure',
@@ -60,11 +53,15 @@ const OFFER_SITUATIONS = [
   },
   {
     title: 'House with tenants',
-    body: 'Tenants can stay in place. You do not have to end a rental before you ask for an offer.',
+    body: 'Tenants can stay in place. You do not have to end a rental before you ask for an offer. Cash offer, as-is.',
+  },
+  {
+    title: 'Major repairs and fire damage',
+    body: 'A house that needs work, including fire damage, can still get a cash offer, as-is. No fees, repairs, or cleaning. Cash offer within 24 hours.',
   },
   {
     title: 'Tax delinquent, back taxes, and liens',
-    body: 'Back taxes and liens are paid out of the sale at closing, not out of your pocket first.',
+    body: 'Back taxes and liens are paid out of the sale at closing, not out of your pocket first. Tell us about them when you tell us about the house.',
   },
 ] as const;
 
@@ -97,34 +94,6 @@ function OfferAgentComparison() {
   );
 }
 
-function OfferBuyOptions() {
-  return (
-    <section className="mt-8" aria-labelledby="two-ways-heading">
-      <h2 id="two-ways-heading" className="text-xl font-bold">
-        Two Ways We Can Buy Your House
-      </h2>
-      <p className="mt-2 text-base leading-snug text-text-secondary">
-        Pick the option that fits you best.
-      </p>
-      <div className="mt-4 space-y-3">
-        <div className="rounded-xl border border-gray-200 p-3">
-          <p className="text-sm font-bold">Option 1: Fast All-Cash Offer</p>
-          <p className="mt-1 text-base leading-snug text-text-secondary">
-            Close in as little as 7 days (or on your date) and walk away with cash at closing.
-          </p>
-        </div>
-        <div className="rounded-xl border border-gray-200 p-3">
-          <p className="text-sm font-bold">Option 2: Seller Financing (Terms) for a Higher Price</p>
-          <p className="mt-1 text-base leading-snug text-text-secondary">
-            If you don&apos;t need all your cash at once and want a higher total price or steady
-            monthly payments, we can buy on seller-financed terms secured by the property.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 function OfferCountyBuyers({ includeKitsap = false }: { includeKitsap?: boolean }) {
   const area = includeKitsap
     ? 'Pierce County, South King County, and Kitsap County'
@@ -138,27 +107,31 @@ function OfferCountyBuyers({ includeKitsap = false }: { includeKitsap?: boolean 
           : 'Cash Home Buyers in Pierce & South King County'}
       </h2>
       <div className="mt-3 space-y-3 text-base leading-snug text-text-secondary">
+        {includeKitsap ? (
+          <p className="font-semibold text-text-primary" data-offer-service-area>
+            Pierce County, South King County, and Kitsap County.
+          </p>
+        ) : null}
         <p>
-          Thinking &ldquo;I need to sell my house fast&rdquo; but don&apos;t want to deal with
-          repairs, showings or agents? KindKey Home Buyers is a small, family-owned business. We buy
-          houses for cash across {area}.{includeKitsap ? ' We buy homes for cash.' : ''}
+          KindKey Home Buyers is a small, family-owned business. Cash home buyers. Sell your
+          property for cash, as-is. We buy houses for cash across {area}.
+          {includeKitsap ? ' We buy homes for cash.' : ''}
         </p>
         <p>
-          <span className="font-semibold text-text-primary">We buy houses as-is.</span> No repairs,
-          no cleaning, no staging. Leave behind anything you don&apos;t want.
+          <span className="font-semibold text-text-primary">We buy houses as-is.</span> No fees,
+          repairs, or cleaning.
         </p>
         <p>
           <span className="font-semibold text-text-primary">Cash offer within 24 hours.</span> Tell
-          us about the property and we&apos;ll get back to you with a no-obligation cash offer,
-          usually within one day.
+          us about the property.
         </p>
         <p>
           <span className="font-semibold text-text-primary">You pick the closing date.</span> Close
-          quickly, or take more time if you need it to move. You set the timeline.
+          in as little as 7 days, or choose a later date.
         </p>
         <p>
-          <span className="font-semibold text-text-primary">Local and family-owned.</span> As local
-          cash home buyers, we work with you directly, not through a call center.
+          <span className="font-semibold text-text-primary">A solution for any situation.</span>{' '}
+          Cash for houses from a small, family-owned business in Auburn.
         </p>
       </div>
       <OfferJumpButton
@@ -265,7 +238,7 @@ export default function OfferLanding({
             <div className="flex min-w-0 items-center gap-2">
               <Image
                 src="/logo-header.avif"
-                alt="KindKey Home Buyers"
+                alt="KindKey Home Buyers LLC logo"
                 width={36}
                 height={36}
                 priority
@@ -305,14 +278,21 @@ export default function OfferLanding({
           <p className="mt-1 text-base leading-snug text-text-secondary md:mt-2">
             {content.subhead}
           </p>
-          {showServiceArea ? (
-            <p className="mt-1 text-sm font-semibold leading-snug" data-offer-service-area>
-              Pierce County, South King County, and Kitsap County.
-            </p>
-          ) : null}
+          <div
+            data-offer-form
+            className="mt-3 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-3 shadow-sm md:mt-6 md:scroll-mt-20 md:p-4"
+          >
+            <OfferLeadForm
+              idPrefix="hero"
+              formOrigin={formOrigin}
+              trackMetaLead={trackMetaLead}
+              src={src}
+              stepped={steppedForm}
+            />
+          </div>
           {trustStrip && trustStrip.length > 0 ? (
             <ul
-              className="mt-3 grid grid-cols-2 gap-2"
+              className="mt-32 grid grid-cols-2 gap-2 md:mt-6"
               aria-label="Why ask for an offer"
               data-offer-trust-strip
             >
@@ -326,22 +306,29 @@ export default function OfferLanding({
               ))}
             </ul>
           ) : (
-            <p className="mt-1 inline-flex items-center rounded-full border-2 border-divider bg-secondary px-4 py-1 text-sm font-bold text-text-primary md:mt-4 md:py-2">
+            <p className="mt-32 inline-flex items-center rounded-full border-2 border-divider bg-secondary px-4 py-1 text-sm font-bold text-text-primary md:mt-6">
               {BBB_TRUST_LINE}
             </p>
           )}
-          <div
-            data-offer-form
-            className="mt-0 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-3 shadow-sm md:mt-6 md:scroll-mt-20 md:p-4"
-          >
-            <OfferLeadForm
-              idPrefix="hero"
-              formOrigin={formOrigin}
-              trackMetaLead={trackMetaLead}
-              src={src}
-              stepped={steppedForm}
-            />
-          </div>
+          {content.pageSituations && content.pageSituations.length > 0 ? (
+            <section
+              className="mt-8"
+              aria-labelledby="page-situations-heading"
+              data-page-situations
+            >
+              <h2 id="page-situations-heading" className="text-xl font-bold">
+                About this situation
+              </h2>
+              <ul className="mt-4 space-y-4">
+                {content.pageSituations.map((item) => (
+                  <li key={item.title}>
+                    <h3 className="font-semibold">{item.title}</h3>
+                    <p className="mt-1 text-sm leading-relaxed text-text-secondary">{item.body}</p>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
           <OfferCountyBuyers includeKitsap={showServiceArea} />
           {showSituations ? <OfferSituations /> : null}
           <HousesBought />
@@ -358,7 +345,6 @@ export default function OfferLanding({
                   <p>We leave a fair margin, and we walk you through every number.</p>
                 </div>
               </section>
-              <OfferBuyOptions />
             </>
           ) : null}
           {showDistressNotes ? <OfferDistressNotes /> : null}
@@ -394,27 +380,11 @@ export default function OfferLanding({
             </a>
           </p>
           <p className="text-base leading-relaxed text-text-primary">
-            We&apos;re a local Auburn family business. We buy homes as-is for cash and keep most of
-            them as long-term rentals; sometimes we renovate and resell them.
+            KindKey Home Buyers LLC is a small, family-owned business in Auburn. Cash offer, as-is.
           </p>
         </section>
 
-        <section className="mt-12">
-          <h2 className="text-xl font-bold">How it works</h2>
-          <ol className="mt-5 space-y-5">
-            {content.steps.map((step, index) => (
-              <li key={step.title} className="flex gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-divider text-sm font-bold text-white">
-                  {index + 1}
-                </span>
-                <div>
-                  <h3 className="font-semibold">{step.title}</h3>
-                  <p className="mt-1 text-sm leading-relaxed text-text-secondary">{step.body}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
-        </section>
+        <OfferHowItWorks steps={content.steps} />
 
         <section className="mt-12">
           <OfferJumpButton
@@ -423,21 +393,7 @@ export default function OfferLanding({
           />
         </section>
 
-        <footer className="mt-12 border-t border-gray-200 py-8 text-sm leading-relaxed text-text-secondary">
-          <p>{address}</p>
-          <p className="mt-3">
-            <OfferPhoneLink
-              phone={phone}
-              location="footer"
-              className="text-base font-semibold text-divider"
-            />
-          </p>
-          <p className="mt-3">
-            <Link href="/" className="font-medium text-divider underline">
-              KindKey Home Buyers
-            </Link>
-          </p>
-        </footer>
+        <OfferPageFooter address={address} phone={phone} />
       </div>
       <OfferMobileBar phone={stickyPhone ?? phone} />
       <LeadConnectorChat mobileOnly suppressGreeting mountDelayMs={8000} />

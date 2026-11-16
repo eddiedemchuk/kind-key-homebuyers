@@ -26,6 +26,7 @@ export default async function AsIsOfferPage({
     <OfferLanding
       content={{ ...asIsOffer, headline: offerPageHeadline(asIsOffer.headline, params) }}
       formOrigin={asIsOffer.formOrigin}
+      showServiceArea
     />
   );
 }

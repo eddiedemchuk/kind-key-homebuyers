@@ -3,14 +3,37 @@
  * bytes a phone downloads. Native lazy load keeps them off the first paint.
  */
 const HOUSES_BOUGHT = [
-  { src: '/houses/house-01.webp', width: 400, height: 300 },
-  { src: '/houses/house-02.webp', width: 400, height: 460 },
-  { src: '/houses/house-03.webp', width: 400, height: 534 },
-  { src: '/houses/house-04.webp', width: 400, height: 442 },
-  { src: '/houses/house-05.webp', width: 400, height: 300 },
+  {
+    src: '/houses/house-01.webp',
+    width: 400,
+    height: 300,
+    alt: 'House KindKey Home Buyers LLC bought as-is, photo 1',
+  },
+  {
+    src: '/houses/house-02.webp',
+    width: 400,
+    height: 460,
+    alt: 'House KindKey Home Buyers LLC bought as-is, photo 2',
+  },
+  {
+    src: '/houses/house-03.webp',
+    width: 400,
+    height: 534,
+    alt: 'House KindKey Home Buyers LLC bought as-is, photo 3',
+  },
+  {
+    src: '/houses/house-04.webp',
+    width: 400,
+    height: 442,
+    alt: 'House KindKey Home Buyers LLC bought as-is, photo 4',
+  },
+  {
+    src: '/houses/house-05.webp',
+    width: 400,
+    height: 300,
+    alt: 'House KindKey Home Buyers LLC bought as-is, photo 5',
+  },
 ] as const;
-
-const HOUSE_ALT = 'House KindKey bought in the Puget Sound area';
 
 export default function HousesBought() {
   return (
@@ -31,7 +54,7 @@ export default function HousesBought() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={house.src}
-              alt={HOUSE_ALT}
+              alt={house.alt}
               width={house.width}
               height={house.height}
               loading="lazy"

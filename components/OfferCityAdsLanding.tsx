@@ -1,15 +1,15 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import LeadConnectorChat from '@/components/LeadConnectorChat';
 import { MobileNavButton, MobileNavPanel, MobileNavProvider } from '@/components/MobileNav';
 import OfferCityHeadline from '@/components/OfferCityHeadline';
+import OfferHowItWorks from '@/components/OfferHowItWorks';
 import OfferLeadForm from '@/components/OfferLeadForm';
 import OfferMobileBar, { OfferJumpButton, OfferPhoneLink } from '@/components/OfferMobileBar';
+import OfferPageFooter from '@/components/OfferPageFooter';
 import {
   OFFER_CITY_ADS_COMPARISON,
   OFFER_CITY_ADS_FAQS,
   OFFER_CITY_ADS_FORM_ORIGIN,
-  OFFER_CITY_ADS_SITUATIONS,
   OFFER_CITY_ADS_STEPS,
   OFFER_CITY_ADS_TRUST,
   type OfferCityAdsPage,
@@ -50,7 +50,7 @@ export default function OfferCityAdsLanding({
             <div className="flex min-w-0 items-center gap-2">
               <Image
                 src="/logo-header.avif"
-                alt="KindKey Home Buyers"
+                alt="KindKey Home Buyers LLC logo"
                 width={36}
                 height={36}
                 priority
@@ -85,8 +85,15 @@ export default function OfferCityAdsLanding({
             <OfferCityHeadline headline={headline} />
           </h1>
           <p className="mt-2 text-base leading-snug text-text-secondary">{content.subhead}</p>
+          <div
+            data-offer-form
+            data-form-origin={OFFER_CITY_ADS_FORM_ORIGIN}
+            className="mt-3 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-3 shadow-sm md:scroll-mt-20 md:p-4"
+          >
+            <OfferLeadForm idPrefix="hero" formOrigin={OFFER_CITY_ADS_FORM_ORIGIN} />
+          </div>
           <ul
-            className="mt-3 grid grid-cols-2 gap-2"
+            className="mt-32 grid grid-cols-2 gap-2 md:mt-6"
             aria-label="Why ask for an offer"
             data-offer-trust-strip
           >
@@ -99,16 +106,9 @@ export default function OfferCityAdsLanding({
               </li>
             ))}
           </ul>
-          <div
-            data-offer-form
-            data-form-origin={OFFER_CITY_ADS_FORM_ORIGIN}
-            className="mt-4 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-3 shadow-sm md:scroll-mt-20 md:p-4"
-          >
-            <OfferLeadForm idPrefix="hero" formOrigin={OFFER_CITY_ADS_FORM_ORIGIN} />
-          </div>
         </section>
 
-        <section className="mt-10" aria-labelledby="offer-city-area-heading">
+        <section className="mt-10" aria-labelledby="offer-city-area-heading" data-areas-we-buy>
           <h2 id="offer-city-area-heading" className="text-xl font-bold">
             {content.areaHeading}
           </h2>
@@ -120,11 +120,11 @@ export default function OfferCityAdsLanding({
             Situations we buy
           </h2>
           <p className="mt-2 text-base leading-snug text-text-secondary">
-            We have a solution for any situation. These pages are for houses that are not already
-            listed.
+            A solution for any situation. These pages are for an off-market house that is not listed
+            with an agent.
           </p>
           <ul className="mt-4 space-y-4">
-            {OFFER_CITY_ADS_SITUATIONS.map((item) => (
+            {content.situations.map((item) => (
               <li key={item.title}>
                 <h3 className="font-semibold">{item.title}</h3>
                 <p className="mt-1 text-sm leading-relaxed text-text-secondary">{item.body}</p>
@@ -158,24 +158,7 @@ export default function OfferCityAdsLanding({
           </div>
         </section>
 
-        <section className="mt-10" aria-labelledby="how-it-works-heading">
-          <h2 id="how-it-works-heading" className="text-xl font-bold">
-            How it works
-          </h2>
-          <ol className="mt-5 space-y-5" data-offer-steps>
-            {OFFER_CITY_ADS_STEPS.map((step, index) => (
-              <li key={step.title} className="flex gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-divider text-sm font-bold text-white">
-                  {index + 1}
-                </span>
-                <div>
-                  <h3 className="font-semibold">{step.title}</h3>
-                  <p className="mt-1 text-sm leading-relaxed text-text-secondary">{step.body}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
-        </section>
+        <OfferHowItWorks steps={OFFER_CITY_ADS_STEPS} />
 
         <section className="mt-10" aria-labelledby="offer-city-faq-heading" data-offer-faq>
           <h2 id="offer-city-faq-heading" className="text-xl font-bold">
@@ -198,21 +181,7 @@ export default function OfferCityAdsLanding({
           />
         </section>
 
-        <footer className="mt-12 border-t border-gray-200 py-8 text-sm leading-relaxed text-text-secondary">
-          <p>{address}</p>
-          <p className="mt-3">
-            <OfferPhoneLink
-              phone={phone}
-              location="footer"
-              className="text-base font-semibold text-divider"
-            />
-          </p>
-          <p className="mt-3">
-            <Link href="/" className="font-medium text-divider underline">
-              KindKey Home Buyers
-            </Link>
-          </p>
-        </footer>
+        <OfferPageFooter address={address} phone={phone} />
       </div>
       <OfferMobileBar phone={phone} />
       <LeadConnectorChat mobileOnly suppressGreeting mountDelayMs={8000} />

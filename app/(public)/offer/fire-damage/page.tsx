@@ -29,6 +29,7 @@ export default async function FireDamageOfferPage({
         headline: offerPageHeadline(fireDamageOffer.headline, params),
       }}
       formOrigin={fireDamageOffer.formOrigin}
+      showServiceArea
     />
   );
 }
