@@ -192,6 +192,8 @@ describe('lead schemas', () => {
       '/offer/tacoma-puyallup',
       '/offer/kitsap-bremerton',
       '/offer/kent-auburn',
+      '/offer/seattle-king-county',
+      '/offer/everett-snohomish',
     ]) {
       assert.equal(isOfferHeroPath(path), false, path);
       assert.equal(

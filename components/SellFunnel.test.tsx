@@ -75,7 +75,7 @@ describe('sell funnel screen', () => {
     });
     assert.match(html, /Step 1 of 6/);
     assert.match(html, /10 Oak St, Olympia, WA/);
-    assert.match(html, /King, Pierce, and Kitsap County/);
+    assert.match(html, /King, Pierce, Kitsap, and Snohomish County/);
     assert.match(html, /That&#x27;s correct/);
     assert.match(html, /Edit address/);
     assert.match(html, />Back</);

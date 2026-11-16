@@ -49,6 +49,9 @@ describe('isAlwaysGoogleAdsPhonePath', () => {
       '/offer/tacoma-puyallup',
       '/offer/kitsap-bremerton',
       '/offer/kent-auburn',
+      '/offer/seattle-king-county',
+      '/offer/everett-snohomish',
+      '/offer/cash-offer-fell-through',
     ]) {
       assert.equal(isAlwaysGoogleAdsPhonePath(path), true, path);
       assert.equal(offerLandingPhone(path).tel, GOOGLE_ADS_PHONE.tel, path);
@@ -78,6 +81,8 @@ describe('isAlwaysGoogleAdsPhonePath', () => {
       '/offer/tacoma-puyallup',
       '/offer/kitsap-bremerton',
       '/offer/kent-auburn',
+      '/offer/seattle-king-county',
+      '/offer/everett-snohomish',
     ]) {
       assert.equal(offerDisplayPhone(path, '?src=fb').tel, GOOGLE_ADS_PHONE.tel, path);
       assert.equal(offerDisplayPhone(path, '?src=fb').display, '(253) 352-4379', path);
@@ -100,6 +105,8 @@ describe('isAlwaysGoogleAdsPhonePath', () => {
       '/offer/tacoma-puyallup',
       '/offer/kitsap-bremerton',
       '/offer/kent-auburn',
+      '/offer/seattle-king-county',
+      '/offer/everett-snohomish',
     ]) {
       assert.equal(offerDisplayPhone(path, '?src=youtube').tel, '+12533524379', path);
       assert.equal(offerDisplayPhone(path, '?utm_source=youtube').tel, GOOGLE_ADS_PHONE.tel, path);

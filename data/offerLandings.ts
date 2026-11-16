@@ -27,6 +27,8 @@ export interface OfferLandingContent {
   faqs: OfferFaq[];
   /** Situation-specific copy. The general /offer block is separate. */
   pageSituations?: readonly OfferSituation[];
+  /** Heading for pageSituations. Defaults to "About this situation". */
+  situationHeading?: string;
 }
 
 /** Same three steps on every paid offer page. */
@@ -52,7 +54,7 @@ export const offerHowItWorks: OfferStep[] = [
 export const generalOffer: OfferLandingContent = {
   title: 'We Buy Houses for Cash | Cash for Houses',
   description:
-    'Cash for houses in Pierce County, South King County, and Kitsap County. We buy houses for cash, as-is, including divorce, foreclosure, tenants, an inherited or probate house, or fire damage. No fees, repairs, or cleaning. Cash offer within 24 hours. You pick the closing date.',
+    'Cash for houses in Pierce County, South King County, Kitsap County, and Snohomish County. We buy houses for cash, as-is, including divorce, foreclosure, tenants, an inherited or probate house, or fire damage. No fees, repairs, or cleaning. Cash offer within 24 hours. You pick the closing date.',
   headline: 'We Buy Houses for Cash',
   subhead:
     'Cash for Houses. Cash offer, as-is. No fees, repairs, or cleaning. You pick the closing date.',
@@ -273,6 +275,50 @@ export const asIsOffer: OfferLandingContent = {
     {
       question: 'How soon is the cash offer?',
       answer: 'Cash offer within 24 hours after you tell us about the house.',
+    },
+    {
+      question: 'Who picks the closing date?',
+      answer: 'You pick the closing date. Close in as little as 7 days, or choose a later date.',
+    },
+  ],
+};
+
+export const fellThroughOffer: OfferLandingContent = {
+  title: 'Had a Cash Offer Fall Through?',
+  description:
+    "Some buyers make an offer they can't close on. We don't. When we make a cash offer, we close on the date you pick. Cash offer, as-is. No fees, repairs, or cleaning. Cash offer within 24 hours.",
+  headline: 'Had a Cash Offer Fall Through?',
+  subhead:
+    "Some buyers make an offer they can't close on. We don't. When we make a cash offer, we close on the date you pick.",
+  cta: 'Get a cash offer',
+  formOrigin: 'google_ads_landing',
+  trustPoints: [
+    'BBB A- rated',
+    'Bought 100+ homes',
+    'Close in as little as 7 days',
+    'You pick the closing date',
+  ],
+  steps: offerHowItWorks,
+  situationHeading: 'Why offers fall through',
+  pageSituations: [
+    {
+      title: 'The buyer could not fund the purchase',
+      body: 'Some buyers write a cash offer before the money is actually available. If the funds are not there, the closing date passes and the sale does not happen. When we make a cash offer, we close on the date you pick.',
+    },
+    {
+      title: 'The buyer was trying to tie the house up',
+      body: 'A buyer can put a house under contract and then keep it tied up while they look for someone else to complete the purchase. That can leave you waiting. KindKey closes on the date you pick. Cash offer, as-is. No fees, repairs, or cleaning.',
+    },
+  ],
+  faqs: [
+    {
+      question: 'What if another cash offer already fell through?',
+      answer:
+        'Tell us about the house. Cash offer within 24 hours. When we make a cash offer, we close on the date you pick.',
+    },
+    {
+      question: 'Do I have to repair the house first?',
+      answer: 'No. Cash offer, as-is. No fees, repairs, or cleaning.',
     },
     {
       question: 'Who picks the closing date?',

@@ -3,12 +3,18 @@ import { describe, it } from 'node:test';
 import { type ReactElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import sitemap from '../app/sitemap';
+import EverettSnohomishOfferPage, {
+  metadata as everettMetadata,
+} from '../app/(public)/offer/everett-snohomish/page';
 import KentAuburnOfferPage, {
   metadata as kentMetadata,
 } from '../app/(public)/offer/kent-auburn/page';
 import KitsapBremertonOfferPage, {
   metadata as kitsapMetadata,
 } from '../app/(public)/offer/kitsap-bremerton/page';
+import SeattleKingCountyOfferPage, {
+  metadata as seattleMetadata,
+} from '../app/(public)/offer/seattle-king-county/page';
 import TacomaPuyallupOfferPage, {
   metadata as tacomaMetadata,
 } from '../app/(public)/offer/tacoma-puyallup/page';
@@ -17,9 +23,11 @@ import {
   OFFER_CITY_ADS_FORM_ORIGIN,
   OFFER_CITY_ADS_STEPS,
   OFFER_CITY_ADS_TRUST,
+  everettSnohomishOffer,
   kentAuburnOffer,
   kitsapBremertonOffer,
   offerCityAdsPages,
+  seattleKingCountyOffer,
   tacomaPuyallupOffer,
 } from '../data/offerCityAds';
 import { GOOGLE_ADS_PHONE } from '../lib/phones';
@@ -104,6 +112,68 @@ const PAGES = [
       'Kennydale',
       'Fairwood',
       'Lake Wilderness',
+    ],
+  },
+  {
+    content: seattleKingCountyOffer,
+    page: SeattleKingCountyOfferPage,
+    metadata: seattleMetadata,
+    places: [
+      'Seattle',
+      'Burien',
+      'SeaTac',
+      'Tukwila',
+      'Des Moines',
+      'White Center',
+      'Shoreline',
+      'Bellevue',
+      'Kirkland',
+      'Redmond',
+      'Issaquah',
+      'Maple Valley',
+      'Covington',
+      'Enumclaw',
+      'King County',
+      'Ballard',
+      'Capitol Hill',
+      'Beacon Hill',
+      'Rainier Valley',
+      'West Seattle',
+      'Georgetown',
+      'Redondo',
+      'Richmond Beach',
+      'Crossroads',
+      'Juanita',
+      'Issaquah Highlands',
+      'Lake Wilderness',
+    ],
+  },
+  {
+    content: everettSnohomishOffer,
+    page: EverettSnohomishOfferPage,
+    metadata: everettMetadata,
+    places: [
+      'Everett',
+      'Lynnwood',
+      'Edmonds',
+      'Mountlake Terrace',
+      'Mukilteo',
+      'Marysville',
+      'Lake Stevens',
+      'Snohomish',
+      'Monroe',
+      'Arlington',
+      'Mill Creek',
+      'Snohomish County',
+      'Silver Lake',
+      'Delta',
+      'Riverside',
+      'Alderwood',
+      'Perrinville',
+      'Harbour Pointe',
+      'Smokey Point',
+      'Blackmans Lake',
+      'Town Center',
     ],
   },
 ] as const;
@@ -201,7 +271,7 @@ describe('Google Ads city offer pages', () => {
     }
   });
 
-  it('lists the three city paths in the sitemap and leaves the noindex offer pages out', () => {
+  it('lists each city ad path in the sitemap and leaves the noindex offer pages out', () => {
     const urls = sitemap().map((item) => item.url);
     for (const content of offerCityAdsPages) {
       assert.equal(
@@ -210,7 +280,13 @@ describe('Google Ads city offer pages', () => {
         content.path
       );
     }
-    for (const path of ['/offer', '/offer/inherited', '/offer/facebook', '/offer/foreclosure']) {
+    for (const path of [
+      '/offer',
+      '/offer/inherited',
+      '/offer/facebook',
+      '/offer/foreclosure',
+      '/offer/cash-offer-fell-through',
+    ]) {
       assert.equal(urls.includes(`https://kindkeyhomebuyers.com${path}`), false, path);
     }
   });
@@ -321,5 +397,27 @@ describe('Google Ads city offer pages', () => {
       keyword: 'we buy houses edgewood',
     });
     assert.match(edgewood, /data-offer-headline[^>]*>We Buy Houses in Edgewood for Cash/);
+
+    const seattle = await pageHtml(SeattleKingCountyOfferPage, {
+      utm_term: 'we buy houses seattle',
+    });
+    assert.match(seattle, /data-offer-headline[^>]*>We Buy Houses in Seattle for Cash/);
+    const bellevue = await pageHtml(SeattleKingCountyOfferPage, {
+      keyword: 'sell my house bellevue',
+    });
+    assert.match(bellevue, /data-offer-headline[^>]*>We Buy Houses in Bellevue for Cash/);
+    const whiteCenter = await pageHtml(SeattleKingCountyOfferPage, {
+      kw: 'white center cash home buyer',
+    });
+    assert.match(whiteCenter, /data-offer-headline[^>]*>We Buy Houses in White Center for Cash/);
+
+    const everett = await pageHtml(EverettSnohomishOfferPage, {
+      utm_term: 'sell your everett house as-is',
+    });
+    assert.match(everett, /data-offer-headline[^>]*>We Buy Houses in Everett for Cash/);
+    const snohomish = await pageHtml(EverettSnohomishOfferPage, {
+      keyword: 'we buy houses snohomish',
+    });
+    assert.match(snohomish, /data-offer-headline[^>]*>We Buy Houses in Snohomish for Cash/);
   });
 });

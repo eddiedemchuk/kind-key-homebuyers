@@ -193,7 +193,7 @@ describe('seller quiz phone links', () => {
       assert.equal(html.includes('info@kindkeyhomebuyers.com'), true, pathname);
       assert.match(
         html,
-        /KindKey Home Buyers LLC is a local cash home buyer in King, Pierce, and Kitsap County/
+        /KindKey Home Buyers LLC is a local cash home buyer in King, Pierce, Kitsap, and Snohomish County/
       );
       assert.match(html, /Close in as little as 7 days/);
       assert.equal(html.includes('we pay closing costs'), false);

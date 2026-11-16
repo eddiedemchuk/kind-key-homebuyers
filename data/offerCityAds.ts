@@ -214,10 +214,108 @@ export const kentAuburnOffer: OfferCityAdsPage = {
   ],
 };
 
+export const seattleKingCountyOffer: OfferCityAdsPage = {
+  path: '/offer/seattle-king-county',
+  title:
+    'Sell Your Seattle House As-Is | King County: Burien, SeaTac, Tukwila, Bellevue, Kirkland, Shoreline',
+  description:
+    'Cash offer, as-is, for an off-market Seattle or King County house, including Burien, SeaTac, Tukwila, Bellevue, Kirkland, and Shoreline. No fees, repairs, or cleaning. Cash offer within 24 hours. You pick the closing date.',
+  headline: 'Sell Your Seattle House As-Is',
+  subhead:
+    'Seattle, Burien, SeaTac, Tukwila, Bellevue, Kirkland, and Shoreline. Cash offer, as-is. No fees, repairs, or cleaning.',
+  areaHeading: 'Areas we buy in',
+  areaBody:
+    'King County. KindKey buys off-market houses in Seattle, Burien, SeaTac, Tukwila, Des Moines, White Center, Shoreline, Bellevue, Kirkland, Redmond, Issaquah, Maple Valley, Covington, and Enumclaw. In Seattle, that includes Ballard, Capitol Hill, Beacon Hill, Rainier Valley, West Seattle, and Georgetown. White Center is in unincorporated King County, between Seattle and Burien. Burien includes downtown. SeaTac and Tukwila sit south of Seattle. Des Moines includes downtown and Redondo. Shoreline includes Richmond Beach. Bellevue includes downtown and Crossroads. Kirkland includes downtown and Juanita. Redmond includes downtown. Issaquah includes the Issaquah Highlands. Maple Valley includes Lake Wilderness. Covington and Enumclaw are in southeast King County. The house should not be listed with an agent.',
+  situations: [
+    {
+      title: 'Inherited and probate homes',
+      body: 'An inherited or probate house in Seattle, Burien, Shoreline, or Bellevue can be sold as-is. You do not have to empty the house first. KindKey does not give legal advice about the estate.',
+    },
+    {
+      title: 'Divorce',
+      body: 'You can ask for a cash offer on a Seattle, Kirkland, Redmond, or Issaquah house during a divorce. KindKey does not give legal advice about the divorce. You pick the closing date.',
+    },
+    {
+      title: 'Tenant-occupied rentals',
+      body: 'A tenant-occupied house in King County, including SeaTac, Tukwila, or White Center, can be sold with tenants in place. You do not have to end a rental before you ask for an offer. Cash offer, as-is.',
+    },
+    {
+      title: 'Fire or water damage',
+      body: 'Fire or water damage in Seattle, Burien, or Des Moines does not have to be cleaned up first. No fees, repairs, or cleaning. Cash offer within 24 hours.',
+    },
+    {
+      title: 'Foreclosure',
+      body: 'Tell us the foreclosure sale date if you have one for a house in Seattle, Shoreline, or Enumclaw. You can ask for a cash offer before the sale. Asking for an offer does not stop a foreclosure.',
+    },
+    {
+      title: 'Behind on payments',
+      body: 'You can request a cash offer on a King County house when payments are behind. What you receive depends on the payoff and the other amounts the title company lists. You pick the closing date.',
+    },
+    {
+      title: 'Short sale',
+      body: 'If the loan on a Seattle or Bellevue house is more than the house can sell for, tell us. A short sale still depends on the lender. We do not promise an approval.',
+    },
+    {
+      title: 'Houses that need major repairs',
+      body: 'A Burien, Des Moines, or Maple Valley house that needs major repairs can be sold as-is. Roof, foundation, or fire damage can stay as they are. No fees, repairs, or cleaning.',
+    },
+  ],
+};
+
+export const everettSnohomishOffer: OfferCityAdsPage = {
+  path: '/offer/everett-snohomish',
+  title:
+    'Sell Your Everett House As-Is | Snohomish County: Lynnwood, Edmonds, Mukilteo, Marysville, Lake Stevens',
+  description:
+    'Cash offer, as-is, for an off-market Everett or Snohomish County house, including Lynnwood, Edmonds, Mukilteo, Marysville, and Lake Stevens. No fees, repairs, or cleaning. Cash offer within 24 hours. You pick the closing date.',
+  headline: 'Sell Your Everett House As-Is',
+  subhead:
+    'Everett, Lynnwood, Edmonds, Marysville, and Lake Stevens. Cash offer, as-is. No fees, repairs, or cleaning.',
+  areaHeading: 'Areas we buy in',
+  areaBody:
+    'Snohomish County. KindKey buys off-market houses in Everett, Lynnwood, Edmonds, Mountlake Terrace, Mukilteo, Marysville, Lake Stevens, Snohomish, Monroe, Arlington, and Mill Creek. In Everett, that includes downtown, Silver Lake, the Everett Mall area, Delta, and Riverside. Lynnwood includes Alderwood. Edmonds includes downtown and Perrinville. Mountlake Terrace includes downtown. Mukilteo includes Harbour Pointe. Marysville includes downtown and Smokey Point. Lake Stevens includes downtown. The city of Snohomish includes downtown and Blackmans Lake. Monroe and Arlington include their downtowns. Mill Creek includes the Town Center. The house should not be listed with an agent.',
+  situations: [
+    {
+      title: 'Inherited and probate homes',
+      body: 'An inherited or probate house in Everett, Lynnwood, Edmonds, or Marysville can be sold as-is. You do not have to empty the house first. KindKey does not give legal advice about the estate.',
+    },
+    {
+      title: 'Divorce',
+      body: 'You can ask for a cash offer on an Everett, Mukilteo, Monroe, or Arlington house during a divorce. KindKey does not give legal advice about the divorce. You pick the closing date.',
+    },
+    {
+      title: 'Tenant-occupied rentals',
+      body: 'A tenant-occupied house in Snohomish County, including Everett, Lynnwood, or Mill Creek, can be sold with tenants in place. You do not have to end a rental before you ask for an offer. Cash offer, as-is.',
+    },
+    {
+      title: 'Fire or water damage',
+      body: 'Fire or water damage in Everett, Marysville, or Lake Stevens does not have to be cleaned up first. No fees, repairs, or cleaning. Cash offer within 24 hours.',
+    },
+    {
+      title: 'Foreclosure',
+      body: 'Tell us the foreclosure sale date if you have one for a house in Everett, Edmonds, or Mountlake Terrace. You can ask for a cash offer before the sale. Asking for an offer does not stop a foreclosure.',
+    },
+    {
+      title: 'Behind on payments',
+      body: 'You can request a cash offer on a Snohomish County house when payments are behind. What you receive depends on the payoff and the other amounts the title company lists. You pick the closing date.',
+    },
+    {
+      title: 'Short sale',
+      body: 'If the loan on an Everett or Lynnwood house is more than the house can sell for, tell us. A short sale still depends on the lender. We do not promise an approval.',
+    },
+    {
+      title: 'Houses that need major repairs',
+      body: 'A Mukilteo, Mill Creek, or Snohomish house that needs major repairs can be sold as-is. Roof, foundation, or fire damage can stay as they are. No fees, repairs, or cleaning.',
+    },
+  ],
+};
+
 export const offerCityAdsPages = [
   tacomaPuyallupOffer,
   kitsapBremertonOffer,
   kentAuburnOffer,
+  seattleKingCountyOffer,
+  everettSnohomishOffer,
 ] as const;
 
 /** Indexable city ad pages. Other /offer routes stay noindex and off the sitemap. */

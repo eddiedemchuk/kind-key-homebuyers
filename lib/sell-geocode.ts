@@ -1,9 +1,9 @@
 /**
- * County check for the /sell funnel. King, Pierce, and Kitsap stay in area.
+ * County check for the /sell funnel. King, Pierce, Kitsap, and Snohomish stay in area.
  * A missing county is unknown, not out of area, so a geocoder miss does not tag the lead.
  */
 
-export const SELL_SERVICE_COUNTIES = ['king', 'pierce', 'kitsap'] as const;
+export const SELL_SERVICE_COUNTIES = ['king', 'pierce', 'kitsap', 'snohomish'] as const;
 
 export type ServiceAreaStatus = 'in_area' | 'out_of_area' | 'unknown';
 
