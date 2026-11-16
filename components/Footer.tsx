@@ -192,7 +192,7 @@ export default function Footer() {
           </div>
           <p className="mt-4 text-sm">
             <Link href="/areas" className="text-text-secondary hover:text-divider">
-              All areas in King, Pierce, and Kitsap County
+              All areas in King, Pierce, Kitsap, and Snohomish County
             </Link>
           </p>
         </div>

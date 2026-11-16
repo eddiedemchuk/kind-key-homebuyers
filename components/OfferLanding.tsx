@@ -96,20 +96,20 @@ function OfferAgentComparison() {
 
 function OfferCountyBuyers({ includeKitsap = false }: { includeKitsap?: boolean }) {
   const area = includeKitsap
-    ? 'Pierce County, South King County, and Kitsap County'
+    ? 'Pierce County, South King County, Kitsap County, and Snohomish County'
     : 'Pierce and South King County';
 
   return (
     <section className="mt-8" aria-labelledby="county-buyers-heading">
       <h2 id="county-buyers-heading" className="text-xl font-bold">
         {includeKitsap
-          ? 'Cash Home Buyers in Pierce, South King, and Kitsap County'
+          ? 'Cash Home Buyers in Pierce, South King, Kitsap, and Snohomish County'
           : 'Cash Home Buyers in Pierce & South King County'}
       </h2>
       <div className="mt-3 space-y-3 text-base leading-snug text-text-secondary">
         {includeKitsap ? (
           <p className="font-semibold text-text-primary" data-offer-service-area>
-            Pierce County, South King County, and Kitsap County.
+            Pierce County, South King County, Kitsap County, and Snohomish County.
           </p>
         ) : null}
         <p>
@@ -317,7 +317,7 @@ export default function OfferLanding({
               data-page-situations
             >
               <h2 id="page-situations-heading" className="text-xl font-bold">
-                About this situation
+                {content.situationHeading ?? 'About this situation'}
               </h2>
               <ul className="mt-4 space-y-4">
                 {content.pageSituations.map((item) => (

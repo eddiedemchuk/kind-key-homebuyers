@@ -8,10 +8,11 @@ import {
 } from './sell-geocode';
 
 describe('sell service area', () => {
-  it('keeps King, Pierce, and Kitsap in area', () => {
+  it('keeps King, Pierce, Kitsap, and Snohomish in area', () => {
     assert.equal(serviceAreaStatus({ county: 'King County', state: 'WA' }), 'in_area');
     assert.equal(serviceAreaStatus({ county: 'Pierce', state: 'Washington' }), 'in_area');
     assert.equal(serviceAreaStatus({ county: 'Kitsap County', state: 'WA' }), 'in_area');
+    assert.equal(serviceAreaStatus({ county: 'Snohomish County', state: 'WA' }), 'in_area');
   });
 
   it('tags another Washington county and another state as out of area', () => {

@@ -23,7 +23,8 @@ describe('offer city headline', () => {
   it('keeps the default headline when the query has no known city', () => {
     assert.equal(offerCityFromSearch(''), null);
     assert.equal(offerCityFromSearch('?gclid=abc&utm_source=google'), null);
-    assert.equal(offerCityFromSearch('?utm_term=sell+my+house+seattle'), null);
+    assert.equal(offerCityFromSearch('?utm_term=sell+my+house+olympia'), null);
+    assert.equal(offerCityFromSearch('?utm_term=sell+my+house+seattle'), 'Seattle');
     assert.equal(offerCityFromSearch('?utm_term=kenton'), null);
     assert.equal(offerCityFromSearch('?keyword=hamilton'), null);
   });
@@ -37,7 +38,8 @@ describe('offer city headline', () => {
 
   it('prefers city, then keyword, then utm_term', () => {
     assert.equal(offerCityFromSearch('?city=Tacoma&keyword=bremerton&utm_term=auburn'), 'Tacoma');
-    assert.equal(offerCityFromSearch('?city=seattle&keyword=gig-harbor'), 'Gig Harbor');
+    assert.equal(offerCityFromSearch('?city=seattle&keyword=gig-harbor'), 'Seattle');
+    assert.equal(offerCityFromSearch('?city=olympia&keyword=gig-harbor'), 'Gig Harbor');
     assert.equal(offerCityFromSearch('?keyword=not-a-city&utm_term=port+orchard'), 'Port Orchard');
   });
 

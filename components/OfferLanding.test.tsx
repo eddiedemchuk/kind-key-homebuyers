@@ -4,9 +4,11 @@ import { createElement, type ReactElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import OfferGeneralLanding from './OfferGeneralLanding';
 import OfferLanding from './OfferLanding';
+import CashOfferFellThroughPage from '../app/(public)/offer/cash-offer-fell-through/page';
 import ForeclosureOfferPage from '../app/(public)/offer/foreclosure/page';
 import {
   asIsOffer,
+  fellThroughOffer,
   fireDamageOffer,
   foreclosureOffer,
   foreclosureTrustStrip,
@@ -82,9 +84,9 @@ describe('/offer landing', () => {
     assert.equal(html.toLowerCase().includes('closing cost'), false);
     assert.match(
       html,
-      /data-offer-service-area[^>]*>Pierce County, South King County, and Kitsap County/
+      /data-offer-service-area[^>]*>Pierce County, South King County, Kitsap County, and Snohomish County/
     );
-    assert.match(html, /Cash Home Buyers in Pierce, South King, and Kitsap County/);
+    assert.match(html, /Cash Home Buyers in Pierce, South King, Kitsap, and Snohomish County/);
     assert.match(html, /data-offer-situations/);
     assert.match(html, /Divorce/);
     assert.match(html, /does not give legal advice about the divorce/);
@@ -229,5 +231,41 @@ describe('foreclosure offer landing', () => {
 
     assert.match(html, /Sell Your Tacoma House Before Foreclosure/);
     assert.equal(html.includes('We Buy Houses in Tacoma'), false);
+  });
+});
+
+describe('cash offer fell through landing', () => {
+  it('keeps the fell-through headline, the approved close message, and the ads form', () => {
+    const html = renderToStaticMarkup(createElement(CashOfferFellThroughPage) as ReactElement);
+    const lower = html.toLowerCase();
+
+    assert.match(html, /data-offer-headline[^>]*>Had a Cash Offer Fall Through\?/);
+    assert.match(html, /Some buyers make an offer they can&#x27;t close on\. We don&#x27;t\./);
+    assert.match(html, /When we make a cash offer, we close on the date you pick\./);
+    assert.match(html, /Why offers fall through/);
+    assert.match(html, /The buyer could not fund the purchase/);
+    assert.match(html, /The buyer was trying to tie the house up/);
+    assert.match(html, /data-how-it-works/);
+    assert.equal(fellThroughOffer.formOrigin, 'google_ads_landing');
+    assert.equal(html.includes('name="name"'), true);
+    assert.equal(html.includes('name="phone"'), true);
+    assert.equal(html.includes('name="email"'), true);
+    assert.equal(html.includes('name="propertyAddress"'), true);
+    assert.equal(html.includes('name="listed_with_agent"'), true);
+    assert.equal(html.includes('(253) 352-4379'), true);
+    assert.equal(html.match(/<h1\b/g)?.length, 1);
+    for (const phrase of [
+      'closing cost',
+      'showings',
+      'no obligation',
+      'commit you',
+      'wholesaler',
+      'guaranteed',
+      'guarantee',
+    ]) {
+      assert.equal(lower.includes(phrase), false, phrase);
+    }
+    assert.equal(html.includes('253-518-3638'), false);
+    assert.equal(html.includes('(253) 518-3638'), false);
   });
 });

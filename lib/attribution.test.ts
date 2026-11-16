@@ -428,6 +428,8 @@ describe('buildGhlPayload', () => {
       '/offer/tacoma-puyallup',
       '/offer/kitsap-bremerton',
       '/offer/kent-auburn',
+      '/offer/seattle-king-county',
+      '/offer/everett-snohomish',
     ]) {
       const cityPayload = buildGhlPayload({
         name: 'Ada Lovelace',

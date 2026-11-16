@@ -7,9 +7,9 @@ import { faqJsonLd, pageMetadata } from '@/lib/seo';
 import { localBusinessJsonLd } from '@/lib/site';
 
 const content = {
-  title: 'Areas We Buy in King, Pierce, and Kitsap County',
+  title: 'Areas We Buy in King, Pierce, Kitsap, and Snohomish County',
   description:
-    'KindKey Home Buyers LLC buys houses as-is in King County, Pierce County, and Kitsap County. Find your city and request a cash offer from an Auburn principal buyer.',
+    'KindKey Home Buyers LLC buys houses as-is in King County, Pierce County, Kitsap County, and Snohomish County. Find your city and request a cash offer from an Auburn principal buyer.',
   path: '/areas',
 };
 
@@ -17,7 +17,12 @@ const areaFaqs = [
   {
     question: 'Which counties does KindKey buy in?',
     answer:
-      'KindKey Home Buyers LLC buys houses in King County, Pierce County, and Kitsap County, Washington. The company is based at 640 1st St SW in Auburn. KindKey is a principal buyer, not a real estate agent or brokerage.',
+      'KindKey Home Buyers LLC buys houses in King County, Pierce County, Kitsap County, and Snohomish County, Washington. The company is based at 640 1st St SW in Auburn. KindKey is a principal buyer, not a real estate agent or brokerage.',
+  },
+  {
+    question: 'Do you buy in Everett and Snohomish County?',
+    answer:
+      'Yes. KindKey buys houses in Everett, Lynnwood, Edmonds, Mountlake Terrace, Mukilteo, Marysville, Lake Stevens, the city of Snohomish, Monroe, Arlington, and Mill Creek. Cash offer, as-is. You pick the closing date.',
   },
   {
     question: 'Are Spanaway and Silverdale cities?',
@@ -46,8 +51,9 @@ export default function AreasPage() {
           </h1>
           <p className="mb-6 max-w-3xl text-lg text-text-secondary">
             KindKey Home Buyers LLC buys houses directly from owners in King County, Pierce County,
-            and Kitsap County. The office is at 640 1st St SW, Auburn, WA 98001. KindKey is a
-            principal buyer and is not a real estate agent. Choose a city for local detail, or{' '}
+            Kitsap County, and Snohomish County. The office is at 640 1st St SW, Auburn, WA 98001.
+            KindKey is a principal buyer and is not a real estate agent. Choose a city for local
+            detail, or{' '}
             <Link href="/cash-offer" className="font-semibold text-divider hover:underline">
               request a cash offer
             </Link>

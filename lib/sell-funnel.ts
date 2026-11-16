@@ -22,7 +22,7 @@ export const SELL_ADDRESS_BUTTON = 'See My Offer Options';
 export const SELL_CONFIRM_OK = "That's correct";
 export const SELL_CONFIRM_EDIT = 'Edit address';
 export const SELL_OUT_OF_AREA_MESSAGE =
-  'We mostly buy in King, Pierce, and Kitsap County. We can still take your info and tell you if this address is a fit.';
+  'We mostly buy in King, Pierce, Kitsap, and Snohomish County. We can still take your info and tell you if this address is a fit.';
 export const SELL_LISTED_NOW_MESSAGE =
   "We'll check in. A home that's listed right now is a different conversation. Leave your name and mobile, and Eddie or Angie will follow up.";
 export const SELL_TIMELINE_NOTE = 'Any timeline works.';

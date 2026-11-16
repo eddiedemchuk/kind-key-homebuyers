@@ -26,6 +26,7 @@ const COUNTY_AREAS = [
   'King County, Washington',
   'Pierce County, Washington',
   'Kitsap County, Washington',
+  'Snohomish County, Washington',
 ] as const;
 
 export function localBusinessJsonLd(telephone: string = BUSINESS.telephone) {
@@ -34,7 +35,7 @@ export function localBusinessJsonLd(telephone: string = BUSINESS.telephone) {
     '@type': 'LocalBusiness',
     name: BUSINESS.legalName,
     description:
-      'KindKey Home Buyers LLC is a principal buyer based in Auburn, Washington. KindKey purchases houses directly from homeowners in King County, Pierce County, and Kitsap County and is not a real estate agent or broker.',
+      'KindKey Home Buyers LLC is a principal buyer based in Auburn, Washington. KindKey purchases houses directly from homeowners in King County, Pierce County, Kitsap County, and Snohomish County and is not a real estate agent or broker.',
     url: BUSINESS.url,
     image: BUSINESS.logo,
     logo: BUSINESS.logo,
