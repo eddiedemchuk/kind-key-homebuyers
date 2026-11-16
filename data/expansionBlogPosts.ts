@@ -5785,4 +5785,312 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to finish the city’s list first. You can say no.',
   }),
+  post('sell-house-with-mold-edgewood-wa', {
+    breadcrumbName: 'Mold in Edgewood',
+    title: 'Selling a House with Mold in Edgewood, WA',
+    description:
+      'How Edgewood owners sell a house with visible mold, a musty smell, or a mold report without testing or remediating first. KindKey buys as a principal. Not a mold inspection.',
+    h1: 'Selling a House with Mold in Edgewood, WA',
+    publishedAt: '2026-11-16',
+    intro: [
+      'You can sell an Edgewood house with mold, a musty smell, or a report that names mold, without testing every room, tearing out the drywall, or finishing a cleanup first. ' +
+        office +
+        ' KindKey is not a mold inspector, a remediation contractor, the Tacoma-Pierce County Health Department, or a physician. This article is not a mold test, not cleanup instructions, and not legal or medical advice.',
+      'Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. It incorporated on February 28, 1996. Most residents live on North Hill: longer driveways, and shops set back from the street. A smaller share of the city sits in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. A North Hill bathroom, a valley crawlspace, and a shop wall someone called black mold are different properties. Bring the address.',
+    ],
+    callout:
+      'You do not have to test the air, scrape the wall, or hire a remediation crew before you ask. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'A bathroom, a crawlspace, and a shop wall are different facts',
+        paragraphs: [
+          'Tell KindKey what you have seen, in plain words, before anyone schedules a visit. It may be spots on a bathroom ceiling, a musty smell in a closet, growth on the back of a dresser against an outside wall, staining in a crawlspace, a shop that stayed wet, or a report a home inspector already wrote. Some of these houses are still lived in. Some are not. The Tacoma-Pierce County Health Department’s mold page says molds grow in homes because of too much water, and that leaky plumbing or a hole in the roof can let that water in. It also says humid air from cooking, breathing, or showering can lead to growth unless damp air is let out. Those are the department’s sentences about how growth starts. They are not a finding about your house. A single Edgewood number, guessed before anyone sees the wall, is not an offer.',
+          'People use the words black mold for a dark stain. KindKey will not name a species, will not tell you a stain is mold, and will not tell you that it is not. The department’s page says that if you see or smell mold, or a musty odor, you have a mold problem, and that testing is not usually needed unless you need documentation for medical or legal reasons. That is the department’s sentence. It is not a clearance of your house, and it is not an order from KindKey to buy a test. You do not have to sample the air, open a wall, or pay for a lab before KindKey looks. If a report already exists, bring it. If you do not believe the house is safe to walk, say so. Photos of the ceiling, the closet, the crawlspace access, and any report you already have are enough to start. An exterior look can begin the conversation. Do not scrape, sand, or break material so a buyer can see it. If opening a ceiling would disturb other material, the Edgewood asbestos guide is that file. KindKey does not require you to open the wall. Furniture and shop contents you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to.',
+          'North Hill lots are often larger than a Tacoma city lot, with a shop or a shed set back from Meridian or Jovita. Tell us whether the growth is in the house, the shop, or both. A valley house at the base of the hill is usually a smaller lot, and a wet crawlspace there is a different fact from a hill bathroom. Do not describe them as the same house. Milton, next door, can fall in King County or Pierce County. Edgewood does not. A mailing address that says Edgewood is not always inside the city. The closing agent confirms the parcel. An Edgewood deed records with the Pierce County Auditor in Tacoma, at 2401 S 35th St, Room 200, Tacoma, WA 98409. The phone that office publishes for questions about requesting recorded documents is (253) 798-7440. The auditor does not test a wall. Do not record a Pierce County deed at the Kitsap County Auditor in Port Orchard, or at the King County Recorder, because someone in the family takes a ferry or because KindKey’s office is in Auburn.',
+          'The water that started the growth is a different page when that is the question you are asking. A roof leak, a burst pipe, and a wet shop are the Edgewood water-damage guide. A crack, a soft floor, or standing water under the house is the Edgewood foundation guide. A failing drainfield or a private well is the Edgewood septic guide. A musty crawlspace is not, by itself, a finding that the drainfield failed, and a stain on a ceiling is not, by itself, a finding that the roof has to be replaced before a sale. This page is the growth, the smell, or the report. You can have more than one of those problems. Say which ones you know about. KindKey prices the property in front of us.',
+        ],
+      },
+      {
+        heading: 'The health department does not test it, and the city writes about the building',
+        paragraphs: [
+          'On-site sewage questions in Pierce County go to the Tacoma-Pierce County Health Department. Household mold is not that program. The department’s mold page says it does not provide mold inspections, testing, cleaning, or repairs, and it tells people to search for those services. The same page publishes a mold phone line for recorded information at (253) 649-1420, option 6. The department’s published address is 3629 S. D St., Tacoma, WA 98418-6813, and the main line on that page is (253) 649-1500. The page says the office is open 8 a.m. to 4:30 p.m., Monday through Friday, except holidays, and that some programs have different hours. Confirm the hours before you go. KindKey is not that office, will not call the line for you, and will not turn a recording into a test of your house.',
+          'The department’s cleanup page says to consider hiring a professional if the area is larger than 10 square feet. It also describes washing small areas and drying them, and it says bleach is not necessary and that bleach can be harmful. Those are the department’s instructions for people who choose to clean. KindKey will not measure the wall, will not tell you that your room is over or under that size, will not tell you what to mix, and will not walk you through a cleanup. The Washington State Department of Health page for renters and landlords says mold problems in buildings are a result of water and moisture problems, and that a county or city building official may act on a building problem and will not treat a call as a mold complaint, so the water source is the fact to name. KindKey will not decide which sentence fits your house. KindKey is not a physician. The health department’s page says persons most at risk include young children, elderly people, those with compromised immune systems, and people with respiratory conditions such as asthma or chronic obstructive pulmonary disease. That page is not a diagnosis. Ask a doctor if someone in the house is sick. Do not ask KindKey whether the house is safe to sleep in.',
+          'Inside the city limits, the building file is the City of Edgewood, not the health department. Chapter 15.80 EMC adopts the 2021 International Property Maintenance Code, as that code is adopted by reference in the state building code and the state residential code, with the local amendments in that chapter. EMC 15.80.010 says chapter 15.10 EMC is used in place of IPMC Chapter 1, Administration, and that IPMC Appendix A, the Boarding Standard, is adopted. EMC 15.80.030 says the owner or the owner’s authorized agent is responsible for the maintenance of buildings, structures, building service equipment, and premises. The local amendments published in chapter 15.80 do not replace the model code’s sections on exterior walls, roofs and drainage, or interior surfaces. In the 2021 IPMC, Section 304.6 says exterior walls shall be free from holes, breaks, and loose or rotting materials, and maintained weatherproof and properly surface coated where required to prevent deterioration. Section 304.7 says the roof and flashing shall be sound, tight, and not have defects that admit rain, and that roof drainage shall be adequate to prevent dampness or deterioration in the walls or interior portion of the structure. It also says roof drains, gutters, and downspouts shall be maintained in good repair and free from obstructions, and that roof water shall not be discharged in a manner that creates a public nuisance. Section 305.3 says interior surfaces, including windows and doors, shall be maintained in good, clean, and sanitary condition, and that cracked or loose plaster, decayed wood, and other defective surface conditions shall be corrected. KindKey will not tell you that the copy the city enforces is word for word those sentences, because the adoption runs through the state codes and a code can be amended. KindKey will not decide whether your ceiling, your siding, or your gutter meets them. You do not have to correct them before KindKey looks.',
+          'If the house is vacant, EMC 15.80.301.4 adds a security rule. It says vacant buildings must be secured against outside entry, doors and windows must remain locked, there must be at least one operable door into every building and housing unit, and exterior walls and roofs must remain intact without holes. A hole that let water in, and growth that followed, does not have to be patched before KindKey looks. Until the deed records, that duty stays with the owner. Requesting an offer does not board a window or close a roof. KindKey will not perform that work as your contractor. Chapter 7.50 EMC is the city’s unfit-dwellings chapter. It says it is an exercise of the city’s police power in addition to chapter 35.80 RCW, and that it does not replace other enforcement. EMC 7.50.040 lists conditions the code official considers, including dilapidation, inadequate ventilation, uncleanliness, inadequate drainage, and whether the premises contains a condition described in the property-maintenance code adopted in EMC Title 15. EMC 7.50.050 says that when those conditions exist to an extent dangerous or injurious to health or safety, the code official declares the premises unfit and issues an order. The section sorts that order by comparing an estimated repair cost with fair market value: repair when the estimate is 30 percent or less; repair together with vacating or closing when the estimate is greater than 30 percent and 50 percent or less; and demolition in the cases that section lists, including when the repair cost exceeds 50 percent of fair market value, or exceeds 30 percent and the property has been vacant for six months or more. EMC 7.50.050 says the fair market value used is the record of the Pierce County assessor-treasurer, and that the repair estimate uses the current edition of Building Valuation Data published by the International Code Council, or a cost publication the code official treats as comparable. KindKey will not run those numbers, will not tell you the city will order demolition, and will not decide that your house is unfit. If the paper orders you to vacate or sets a hearing, talk with a Washington attorney before you rely on a sale to solve it. Do not skip a hearing because a buyer is looking at the house.',
+          'Community Development is at Edgewood City Hall, 10440 Dom Calata Way E, Edgewood, WA 98372. The permit line the city publishes is (253) 952-3299. The city’s code-compliance page says owners can contact City Hall at (253) 952-3299 or email codeenforcement@cityofedgewood.org. KindKey does not require that visit. If a notice arrives about a roof, deteriorated siding, or an open building, read the header. KindKey will not answer the notice or appear at a hearing. The Edgewood code-violations guide is that letter. Until the deed records, deadlines on a city notice are still yours. KindKey will not interpret chapter 35.80 RCW.',
+        ],
+      },
+      {
+        heading: 'A rental, the disclosure form, and who can sign',
+        paragraphs: [
+          'If someone lives in the house, say so. Do not make an occupant leave so a contractor can open a wall. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does. The Edgewood tenants page is that file. RCW 59.18.060 says a landlord keeps the premises fit for human habitation. Subsection (2) includes maintaining roofs, floors, and walls in reasonably good repair so as to be usable. Subsection (8) includes maintaining electrical, plumbing, heating, and other facilities and appliances supplied by the landlord in reasonably good working order. Subsection (9) says the landlord maintains the dwelling unit in reasonably weathertight condition. The section also says no repair duty falls on the landlord, and no defense or remedy is available to the tenant, where the defective condition was caused by the tenant, the tenant’s family, an invitee, or another person acting under the tenant’s control, or where the tenant unreasonably fails to allow the landlord access to make a repair. KindKey will not decide who caused the water, and KindKey will not tell you to charge a tenant for it.',
+          'The current text of RCW 59.18.060 places the mold-information duty in subsection (14). That subsection says the landlord provides tenants with information provided or approved by the Department of Health about the health hazards associated with exposure to indoor mold. The information must detail how tenants can control mold growth in the dwelling unit. It may be given in writing to each tenant or posted in a visible, public location at the property, and it is provided to new tenants when the lease or rental agreement is signed. The Department of Health page for renters and landlords says its mold questions-and-answers material and the EPA brief guide to mold, moisture, and your home can fulfill that notice, and that a landlord is responsible for fixing building problems such as water leaks and ventilation or heating defects that may lead to moisture. KindKey will not draft the notice, will not tell you that a pamphlet closes a leak, and will not tell you that subsection (14) is a mold test. Subsection (13) of the current text is a different duty, a flood disclosure, and the statute says that disclosure applies to leases entered into after December 31, 2026. Older summaries still number the mold duty as subsection (13). Read the section in front of you. A statute can be amended. KindKey will not tell you which subsection your lease is under. Ask a Washington attorney if a tenant has already written about the water.',
+          'Washington’s seller disclosure law is chapter 64.06 RCW. RCW 64.06.020 sets out the seller disclosure statement. The form does not use the word mold. Question 4.A asks whether the roof has leaked within the last five years. Question 4.B asks whether the basement has flooded or leaked. Question 4.F asks about defects and lists, among other items, ceilings, interior walls, foundations, and outbuildings. In the systems section, question 5.A asks whether there are defects in the plumbing system, including pipes, faucets, fixtures, and toilets, and in the heating and cooling systems, when those systems are included in the sale. Question 7.A asks whether there have been flooding, standing water, or drainage problems on the property that affect the property or access to it. Question 7.C asks whether there is any material damage to the property from fire, wind, floods, beach movements, earthquake, expansive soils, or landslides. Question 7.E asks whether there are substances, materials, or products in or on the property that may be environmental concerns, such as asbestos, formaldehyde, radon gas, lead-based paint, fuel or chemical storage tanks, or contaminated soil or water. Mold is not one of those examples. Question 9.A asks whether there are any other existing material defects affecting the property that a prospective buyer should know about. KindKey will not tell you how to mark the boxes, whether a stain is a material defect, or whether a mold fact makes an Environmental answer yes. Ask a Washington real estate attorney if you are unsure. The closing agent handles the form that applies to your file. Answer with what you actually know. If a report already found mold, say that. If you do not know, the form has a choice for that. Selling to a cash buyer is not a reason to leave a known problem off the form.',
+          'RCW 64.06.010(6) lists a transfer made by the personal representative of the estate of the decedent or by a trustee in bankruptcy among the transfers the chapter does not apply to. RCW 64.06.010(7) lists a transfer in which the buyer has expressly waived the disclosure, and it says that if the answer to any question in the section entitled Environmental would be yes, the buyer may not waive receipt of the Environmental section. KindKey will not tell you that you are one of those signers. Question 7.E does not name mold, and KindKey will not tell you that a mold fact makes an Environmental answer yes. If the owner has died, who can sign is a probate or trust question, separate from the wall. KindKey will not file the probate and will not guess which relative can sign. Use the Edgewood probate page when a death is the reason the house is for sale, and the living-trust page if the house is already titled in a trust. The power-of-attorney page is the file when the owner is living and someone else is signing. Do not sign a deed before the authority exists.',
+        ],
+      },
+      {
+        heading: 'Clean it and relist, or sell the house as it sits',
+        paragraphs: [
+          'A cleanup can fit if you want to keep the house and you are willing to deal with the water source, the health department’s guidance, and a contractor you choose. A listing can fit after that, if a broker will take the house and you can host the access. A financed buyer may still stall on the same ceiling. Commission is negotiated in the listing agreement with that broker and is not set by KindKey. Hire a licensed broker in Pierce County if you want the listing. KindKey will not run it, will not choose your contractor, and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. The Edgewood expired-listing guide is the sale that already died after an inspection mentioned mold or moisture. You do not have to finish that inspector’s list before KindKey looks.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive from Edgewood does not add a remediation. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need a relative with a key can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a utility balance, or a city assessment. The offer reflects the house as it sits, including the ceiling, the crawlspace, and the shop, so it can be less than a retail price for a house where that work has already been done. You see the payoffs on the settlement statement before you close. You can say no. The Edgewood as-is page is that direct sale for the house in its current condition.',
+          'Your insurer is your relationship. You can ask KindKey for an offer while a claim is open, after a claim was denied, or when you never opened one. KindKey will not tell you whether to wait for a check or how to assign the proceeds. KindKey does not give insurance advice. If the water started as a fire, the Edgewood fire-damage guide is that file, including the claim. East Pierce Fire & Rescue covers the city. The city’s former Fire District 8 joined East Pierce in 2010. East Pierce’s 2022 standards of cover list Station 118 at 10105 24th Street E. KindKey is not the fire department. If a foreclosure notice is in the file with the inspection report, you have a clock the wall does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. The Edgewood foreclosure page is that file. A Pierce County property-tax bill is a different account from a cleanup bid. KindKey will not calculate the treasurer’s number. Parts of Edgewood lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary. A house in Port Orchard, Bremerton, Silverdale, or Poulsbo is a different city. Do not use this Edgewood page for a Kitsap house, for a Milton house that may sit in King County, or for a Fife, Puyallup, or Sumner parcel. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the ceiling, the crawlspace, or the report through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do I have to remove mold in an Edgewood house before KindKey will look?',
+        answer:
+          'No. KindKey buys Edgewood houses with visible mold, a musty smell, or an existing report as they sit. You do not have to test the air, tear out drywall, or finish a cleanup first. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Will KindKey test the air or tell me whether the stain is black mold?',
+        answer:
+          'No. KindKey does not take samples, name a species, or certify that a house is free of mold. The Tacoma-Pierce County Health Department’s mold page says the department does not provide inspections or testing, and that testing is not usually needed unless you need documentation for medical or legal reasons. Bring any report you already have. You can still request an offer.',
+      },
+      {
+        question: 'The house is a rental, or a tenant has complained. Do they have to leave first?',
+        answer:
+          'No. Tell us someone lives there. Do not end a tenancy so a contractor can open a wall. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. The current text of RCW 59.18.060(14) is an information duty about indoor-mold hazards. KindKey will not draft that notice or decide who caused the water. Ask a Washington attorney if a tenant has already written about it. You can still request a cash offer. You can say no.',
+      },
+      {
+        question: 'An inspection mentioned mold, or a foreclosure notice arrived. Can I still ask?',
+        answer:
+          'Yes. You do not have to finish the inspector’s list before KindKey looks. On the seller disclosure in RCW 64.06.020, the form does not use the word mold. KindKey will not tell you how to mark it. If a foreclosure notice is also in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, Meridian, and the valley.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell a house as-is in Edgewood',
+        description: 'The ceiling, the crawlspace, and the shop can stay as they are.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/edgewood/sell-my-house-fast',
+        label: 'Sell my house fast in Edgewood',
+        description: 'A direct sale without a cleanup on the calendar.',
+      },
+      {
+        href: '/blog/sell-water-damaged-house-edgewood-wa',
+        label: 'Water damage in Edgewood',
+        description: 'The leak, the wet drywall, or the wet shop. This page is the growth.',
+      },
+      {
+        href: '/blog/sell-house-with-foundation-problems-edgewood-wa',
+        label: 'Foundation problems in Edgewood',
+        description: 'A crack, a soft floor, or water under the house.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description: 'A failing drainfield is a different file from a musty room.',
+      },
+      {
+        href: '/blog/sell-house-needing-repairs-edgewood-wa',
+        label: 'Major repairs in Edgewood',
+        description: 'A roof or a stopped remodel on the same house.',
+      },
+      {
+        href: '/blog/sell-house-after-expired-listing-edgewood-wa',
+        label: 'Expired listings in Edgewood',
+        description: 'When an inspection mentioned mold and the buyer walked.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'When the city has written about the roof, the siding, or the building.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-edgewood-wa',
+        label: 'Code violations in Edgewood',
+        description: 'The city letter, separate from a mold report.',
+      },
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Vacant houses in Edgewood',
+        description: 'When nobody is there to watch a hole in the roof.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-edgewood-wa',
+        label: 'Vacant houses in Edgewood',
+        description: 'The security rule stays with the owner until the deed records.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-tenants',
+        label: 'Houses with tenants in Edgewood',
+        description: 'Do not make an occupant leave so a contractor can open a wall.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/blog/sell-house-with-tenants-edgewood-wa',
+        label: 'Tenants in Edgewood',
+        description: 'The rental file, including who still lives there.',
+      },
+      {
+        href: '/blog/sell-house-with-asbestos-edgewood-wa',
+        label: 'Asbestos in Edgewood',
+        description: 'Opening a ceiling can disturb a different material.',
+      },
+      {
+        href: '/areas/edgewood/sell-hoarder-house',
+        label: 'Heavy-repair houses in Edgewood',
+        description: 'When the growth is one part of a larger repair.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents can stay. You do not have to empty the house.',
+      },
+      {
+        href: '/areas/edgewood/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Edgewood',
+        description: 'When the water started as a fire.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The insurance claim stays with your insurer.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-edgewood-wa',
+        label: 'Fire damage in Edgewood',
+        description: 'East Pierce Fire & Rescue, and the claim, are that page.',
+      },
+      {
+        href: '/areas/edgewood/sell-inherited-probate-house',
+        label: 'Inherited houses in Edgewood',
+        description: 'When the growth and the signer are both open questions.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the condition.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Probate houses in Edgewood',
+        description: 'Who can sign, when the owner has died.',
+      },
+      {
+        href: '/blog/sell-house-in-a-living-trust-edgewood-wa',
+        label: 'Living trusts in Edgewood',
+        description: 'When the house is already titled in a trust.',
+      },
+      {
+        href: '/blog/sell-house-with-power-of-attorney-edgewood-wa',
+        label: 'Power of attorney in Edgewood',
+        description: 'When someone else is signing while the owner is in care.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Foreclosure in Edgewood',
+        description: 'When a trustee’s notice is in the file with the report.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'A loan deadline is separate from the wall.',
+      },
+      {
+        href: '/blog/behind-on-property-taxes-edgewood-wa',
+        label: 'Property taxes in Edgewood',
+        description: 'A Pierce County tax bill is a different account from a cleanup bid.',
+      },
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description: 'The next city west. Milton can sit in King County or Pierce County.',
+      },
+      {
+        href: '/areas/fife',
+        label: 'Sell a house in Fife',
+        description: 'West of Edgewood. Confirm the parcel before you use this page.',
+      },
+      {
+        href: '/areas/puyallup',
+        label: 'Sell a house in Puyallup',
+        description: 'The city to the south, if the parcel is actually there.',
+      },
+      {
+        href: '/areas/sumner',
+        label: 'Sell a house in Sumner',
+        description: 'The valley city to the east.',
+      },
+      {
+        href: '/areas/auburn',
+        label: 'Sell a house in Auburn',
+        description: 'KindKey’s office city. Most of Auburn is in King County.',
+      },
+      {
+        href: '/areas/port-orchard',
+        label: 'Sell a house in Port Orchard',
+        description: 'Kitsap County. Do not use the Edgewood page for this parcel.',
+      },
+      {
+        href: '/areas/bremerton',
+        label: 'Sell a house in Bremerton',
+        description: 'Kitsap County. A different city from Edgewood.',
+      },
+      {
+        href: '/areas/silverdale',
+        label: 'Sell a house in Silverdale',
+        description: 'Unincorporated Kitsap County. Confirm the address.',
+      },
+      {
+        href: '/areas/poulsbo',
+        label: 'Sell a house in Poulsbo',
+        description: 'Kitsap County. A different city from Edgewood.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what the ceiling, the crawlspace, or the report shows. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood offer with the mold left in place',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to test it or remove it first. You can say no.',
+  }),
 ];
