@@ -126,10 +126,6 @@ const PAGES = [
       'Des Moines',
       'White Center',
       'Shoreline',
-      'Bellevue',
-      'Kirkland',
-      'Redmond',
-      'Issaquah',
       'Maple Valley',
       'Covington',
       'Enumclaw',
@@ -142,9 +138,6 @@ const PAGES = [
       'Georgetown',
       'Redondo',
       'Richmond Beach',
-      'Crossroads',
-      'Juanita',
-      'Issaquah Highlands',
       'Lake Wilderness',
     ],
   },
@@ -405,7 +398,12 @@ describe('Google Ads city offer pages', () => {
     const bellevue = await pageHtml(SeattleKingCountyOfferPage, {
       keyword: 'sell my house bellevue',
     });
-    assert.match(bellevue, /data-offer-headline[^>]*>We Buy Houses in Bellevue for Cash/);
+    assert.match(bellevue, /data-offer-headline[^>]*>Sell Your Seattle House As-Is/);
+    assert.equal(bellevue.includes('Bellevue'), false);
+    assert.equal(bellevue.includes('Kirkland'), false);
+    assert.equal(bellevue.includes('Redmond'), false);
+    assert.equal(bellevue.includes('Issaquah'), false);
+    assert.equal(bellevue.includes('Sammamish'), false);
     const whiteCenter = await pageHtml(SeattleKingCountyOfferPage, {
       kw: 'white center cash home buyer',
     });
