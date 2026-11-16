@@ -217,23 +217,23 @@ export const kentAuburnOffer: OfferCityAdsPage = {
 export const seattleKingCountyOffer: OfferCityAdsPage = {
   path: '/offer/seattle-king-county',
   title:
-    'Sell Your Seattle House As-Is | King County: Burien, SeaTac, Tukwila, Bellevue, Kirkland, Shoreline',
+    'Sell Your Seattle House As-Is | King County: Shoreline, Burien, SeaTac, Tukwila, Des Moines',
   description:
-    'Cash offer, as-is, for an off-market Seattle or King County house, including Burien, SeaTac, Tukwila, Bellevue, Kirkland, and Shoreline. No fees, repairs, or cleaning. Cash offer within 24 hours. You pick the closing date.',
+    'Cash offer, as-is, for an off-market Seattle or King County house, including Shoreline, Burien, SeaTac, Tukwila, and Des Moines. No fees, repairs, or cleaning. Cash offer within 24 hours. You pick the closing date.',
   headline: 'Sell Your Seattle House As-Is',
   subhead:
-    'Seattle, Burien, SeaTac, Tukwila, Bellevue, Kirkland, and Shoreline. Cash offer, as-is. No fees, repairs, or cleaning.',
+    'Seattle, Shoreline, Burien, SeaTac, Tukwila, and Des Moines. Cash offer, as-is. No fees, repairs, or cleaning.',
   areaHeading: 'Areas we buy in',
   areaBody:
-    'King County. KindKey buys off-market houses in Seattle, Burien, SeaTac, Tukwila, Des Moines, White Center, Shoreline, Bellevue, Kirkland, Redmond, Issaquah, Maple Valley, Covington, and Enumclaw. In Seattle, that includes Ballard, Capitol Hill, Beacon Hill, Rainier Valley, West Seattle, and Georgetown. White Center is in unincorporated King County, between Seattle and Burien. Burien includes downtown. SeaTac and Tukwila sit south of Seattle. Des Moines includes downtown and Redondo. Shoreline includes Richmond Beach. Bellevue includes downtown and Crossroads. Kirkland includes downtown and Juanita. Redmond includes downtown. Issaquah includes the Issaquah Highlands. Maple Valley includes Lake Wilderness. Covington and Enumclaw are in southeast King County. The house should not be listed with an agent.',
+    'King County. KindKey buys off-market houses in Seattle, Shoreline, Burien, SeaTac, Tukwila, Des Moines, White Center, Maple Valley, Covington, and Enumclaw. In Seattle, that includes Ballard, Capitol Hill, Beacon Hill, Rainier Valley, West Seattle, and Georgetown. White Center is in unincorporated King County, between Seattle and Burien. Shoreline includes Richmond Beach. Burien includes downtown. SeaTac and Tukwila sit south of Seattle. Des Moines includes downtown and Redondo. Maple Valley includes Lake Wilderness. Covington and Enumclaw are in southeast King County. The house should not be listed with an agent.',
   situations: [
     {
       title: 'Inherited and probate homes',
-      body: 'An inherited or probate house in Seattle, Burien, Shoreline, or Bellevue can be sold as-is. You do not have to empty the house first. KindKey does not give legal advice about the estate.',
+      body: 'An inherited or probate house in Seattle, Burien, Shoreline, or Enumclaw can be sold as-is. You do not have to empty the house first. KindKey does not give legal advice about the estate.',
     },
     {
       title: 'Divorce',
-      body: 'You can ask for a cash offer on a Seattle, Kirkland, Redmond, or Issaquah house during a divorce. KindKey does not give legal advice about the divorce. You pick the closing date.',
+      body: 'You can ask for a cash offer on a Seattle, Shoreline, Burien, or Des Moines house during a divorce. KindKey does not give legal advice about the divorce. You pick the closing date.',
     },
     {
       title: 'Tenant-occupied rentals',
@@ -253,7 +253,7 @@ export const seattleKingCountyOffer: OfferCityAdsPage = {
     },
     {
       title: 'Short sale',
-      body: 'If the loan on a Seattle or Bellevue house is more than the house can sell for, tell us. A short sale still depends on the lender. We do not promise an approval.',
+      body: 'If the loan on a Seattle or Burien house is more than the house can sell for, tell us. A short sale still depends on the lender. We do not promise an approval.',
     },
     {
       title: 'Houses that need major repairs',
