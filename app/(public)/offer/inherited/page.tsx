@@ -29,6 +29,7 @@ export default async function InheritedOfferPage({
         headline: offerPageHeadline(inheritedOffer.headline, params),
       }}
       formOrigin={inheritedOffer.formOrigin}
+      showServiceArea
     />
   );
 }

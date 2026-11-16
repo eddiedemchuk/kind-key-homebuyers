@@ -65,8 +65,8 @@ export function offerCityFromParams(
 
 /** Foreclosure ads keep a foreclosure headline, including when the keyword names a city. */
 export function offerForeclosureHeadline(city: OfferCity | null): string {
-  if (!city) return 'Stop foreclosure. Sell your house before the sale';
-  return `Stop foreclosure in ${city}. Sell your house before the sale`;
+  if (!city) return 'Sell Your House Before Foreclosure';
+  return `Sell Your ${city} House Before Foreclosure`;
 }
 
 /**

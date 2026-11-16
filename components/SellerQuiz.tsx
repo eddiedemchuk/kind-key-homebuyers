@@ -444,9 +444,6 @@ export function SellerQuizScreen({
             </div>
           ) : null}
 
-          <p className="text-center text-xs leading-tight text-text-secondary">
-            Filling this out doesn&apos;t commit you to sell.
-          </p>
           <button
             type="submit"
             disabled={isSubmitting}

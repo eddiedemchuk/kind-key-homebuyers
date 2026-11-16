@@ -30,6 +30,7 @@ export default async function ForeclosureOfferPage({
       }}
       formOrigin={foreclosureOffer.formOrigin}
       showDistressNotes
+      showServiceArea
       lockHeadline
       trustStrip={foreclosureTrustStrip}
     />

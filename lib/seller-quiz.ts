@@ -419,7 +419,7 @@ export function buildSellerQuizLeadBody(input: SellerQuizLeadInput): Record<stri
 export const sellerQuizMetadata: Metadata = {
   title: 'Get Your Cash Offer | KindKey Home Buyers',
   description:
-    'Answer five quick questions for a cash offer from KindKey Home Buyers LLC, a local cash home buyer in King, Pierce, and Kitsap County. Close in 7 Days.',
+    'Answer five quick questions for a cash offer from KindKey Home Buyers LLC, a local cash home buyer in King, Pierce, and Kitsap County. Close in as little as 7 days.',
   robots: {
     index: false,
     follow: true,

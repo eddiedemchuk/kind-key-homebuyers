@@ -448,9 +448,6 @@ function FullOfferLeadForm({
         <span className="h-2 w-2 shrink-0 rounded-full bg-divider" aria-hidden />
         You pick the closing date.
       </p>
-      <p className="text-center text-xs leading-tight text-text-secondary">
-        Filling this out doesn&apos;t commit you to sell.
-      </p>
       {stepped && step === 1 ? (
         <button
           type="submit"
@@ -477,11 +474,6 @@ function FullOfferLeadForm({
         </svg>
         100% confidential — we never share your info
       </p>
-      {stepped && step === 1 ? null : (
-        <p className="text-center text-xs font-medium text-text-secondary">
-          Free, no obligation, we never share your info
-        </p>
-      )}
     </form>
   );
 }

@@ -15,7 +15,6 @@ import TacomaPuyallupOfferPage, {
 import {
   OFFER_CITY_ADS_FAQS,
   OFFER_CITY_ADS_FORM_ORIGIN,
-  OFFER_CITY_ADS_SITUATIONS,
   OFFER_CITY_ADS_STEPS,
   OFFER_CITY_ADS_TRUST,
   kentAuburnOffer,
@@ -112,6 +111,7 @@ const PAGES = [
 const SITUATION_PHRASES = [
   'Inherited',
   'probate',
+  'Divorce',
   'Tenant-occupied',
   'Fire or water damage',
   'Foreclosure',
@@ -123,6 +123,10 @@ const SITUATION_PHRASES = [
 const BLOCKED_PHRASES = [
   'closing cost',
   'we pay closing',
+  'showings',
+  'no obligation',
+  'no-obligation',
+  'commit you',
   'guarantee',
   'guaranteed',
   'hundreds',
@@ -220,6 +224,18 @@ describe('Google Ads city offer pages', () => {
       const lower = html.toLowerCase();
 
       assert.match(html, new RegExp(`data-offer-headline[^>]*>${entry.content.headline}`));
+      assert.equal(html.includes('Areas we buy in'), true, entry.content.path);
+      assert.equal(html.includes('data-how-it-works'), true, entry.content.path);
+      assert.equal(html.includes('Tell us about the house'), true, entry.content.path);
+      assert.equal(html.includes('Get a cash offer within 24 hours'), true, entry.content.path);
+      assert.equal(html.includes('You pick the closing date'), true, entry.content.path);
+      assert.equal(html.includes('href="/about"'), true, entry.content.path);
+      assert.equal(html.includes('href="/contact"'), true, entry.content.path);
+      assert.equal(html.includes('href="/privacy"'), true, entry.content.path);
+      assert.equal(html.includes('KindKey Home Buyers LLC'), true, entry.content.path);
+      assert.equal(html.includes('640 1st St SW'), true, entry.content.path);
+      assert.equal(html.includes('BBB A- rated'), true, entry.content.path);
+      assert.equal(html.match(/<h1\b/g)?.length, 1, entry.content.path);
       assert.equal(html.includes(entry.content.areaBody), true, entry.content.path);
       for (const place of entry.places) {
         assert.equal(html.includes(place), true, `${entry.content.path} ${place}`);
@@ -234,7 +250,7 @@ describe('Google Ads city offer pages', () => {
         html.match(/data-offer-steps[\s\S]*?<\/ol>/)?.[0].match(/<li\b/g)?.length,
         OFFER_CITY_ADS_STEPS.length
       );
-      assert.equal(OFFER_CITY_ADS_SITUATIONS.length, 7);
+      assert.equal(entry.content.situations.length, 8, entry.content.path);
       assert.equal(OFFER_CITY_ADS_FAQS.length >= 3, true);
       assert.equal(html.includes('data-offer-faq'), true);
       for (const claim of OFFER_CITY_ADS_TRUST) {

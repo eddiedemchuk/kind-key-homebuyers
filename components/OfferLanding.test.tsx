@@ -61,10 +61,25 @@ describe('/offer landing', () => {
 
     assert.equal(html.includes('Situations we help with'), false);
     assert.equal(html.includes('Behind on payments'), false);
-    assert.match(html, /We buy houses for cash/);
+    assert.match(html, /We Buy Houses for Cash/);
+    assert.match(html, /Cash for Houses/);
     assert.match(html, /Cash home buyers/);
     assert.match(html, /Sell your property for cash/);
     assert.match(html, /We buy homes for cash/);
+    assert.match(html, /data-how-it-works/);
+    assert.match(html, /Tell us about the house/);
+    assert.match(html, /Get a cash offer within 24 hours/);
+    assert.match(html, /You pick the closing date/);
+    assert.match(html, /href="\/about"/);
+    assert.match(html, /href="\/contact"/);
+    assert.match(html, /KindKey Home Buyers LLC/);
+    assert.match(html, /640 1st St SW/);
+    assert.match(html, /BBB A- rated/);
+    assert.equal(html.match(/<h1\b/g)?.length, 1);
+    assert.equal(html.toLowerCase().includes('showings'), false);
+    assert.equal(html.toLowerCase().includes('no obligation'), false);
+    assert.equal(html.toLowerCase().includes('commit you'), false);
+    assert.equal(html.toLowerCase().includes('closing cost'), false);
     assert.match(
       html,
       /data-offer-service-area[^>]*>Pierce County, South King County, and Kitsap County/
@@ -146,8 +161,13 @@ describe('/offer landing', () => {
       assert.equal(html.toLowerCase().includes('hundreds'), false, content.formOrigin);
       assert.equal(html.toLowerCase().includes('we pay closing costs'), false, content.formOrigin);
       assert.equal(html.includes('data-offer-situations'), false, content.formOrigin);
+      assert.equal(html.includes('data-page-situations'), true, content.formOrigin);
+      assert.equal(html.includes('data-how-it-works'), true, content.formOrigin);
       assert.equal(html.includes('House with tenants'), false, content.formOrigin);
       assert.equal(html.includes('Tax delinquent'), false, content.formOrigin);
+      assert.equal(html.toLowerCase().includes('showings'), false, content.formOrigin);
+      assert.equal(html.toLowerCase().includes('no obligation'), false, content.formOrigin);
+      assert.equal(html.toLowerCase().includes('commit you'), false, content.formOrigin);
     }
   });
 
@@ -159,6 +179,8 @@ describe('/offer landing', () => {
       }) as ReactElement
     );
 
+    assert.match(html, /Sell a House That Needs Work As-Is/);
+    assert.match(html, /needs work/);
     assert.equal(html.includes('Bought 100+ homes'), true);
     assert.equal(html.toLowerCase().includes('hundreds'), false);
   });
@@ -170,7 +192,7 @@ describe('foreclosure offer landing', () => {
     const html = renderToStaticMarkup(page as ReactElement);
     const bar = stickyBar(html);
 
-    assert.match(html, /Stop foreclosure\. Sell your house before the sale/);
+    assert.match(html, /Sell Your House Before Foreclosure/);
     assert.match(html, /Asking does not stop the foreclosure/);
     assert.equal(html.includes('data-offer-trust-strip'), true);
     for (const item of foreclosureTrustStrip) {
@@ -205,7 +227,7 @@ describe('foreclosure offer landing', () => {
     });
     const html = renderToStaticMarkup(page as ReactElement);
 
-    assert.match(html, /Stop foreclosure in Tacoma\. Sell your house before the sale/);
+    assert.match(html, /Sell Your Tacoma House Before Foreclosure/);
     assert.equal(html.includes('We Buy Houses in Tacoma'), false);
   });
 });

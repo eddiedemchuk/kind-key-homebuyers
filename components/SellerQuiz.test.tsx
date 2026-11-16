@@ -195,7 +195,7 @@ describe('seller quiz phone links', () => {
         html,
         /KindKey Home Buyers LLC is a local cash home buyer in King, Pierce, and Kitsap County/
       );
-      assert.match(html, /Close in 7 Days/);
+      assert.match(html, /Close in as little as 7 days/);
       assert.equal(html.includes('we pay closing costs'), false);
       assert.equal(html.includes('no closing costs'), false);
     }

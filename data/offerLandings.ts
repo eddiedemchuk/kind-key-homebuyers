@@ -10,6 +10,11 @@ export interface OfferFaq {
   answer: string;
 }
 
+export interface OfferSituation {
+  title: string;
+  body: string;
+}
+
 export interface OfferLandingContent {
   title: string;
   description: string;
@@ -20,20 +25,23 @@ export interface OfferLandingContent {
   trustPoints: string[];
   steps: OfferStep[];
   faqs: OfferFaq[];
+  /** Situation-specific copy. The general /offer block is separate. */
+  pageSituations?: readonly OfferSituation[];
 }
 
-const sharedSteps: OfferStep[] = [
+/** Same three steps on every paid offer page. */
+export const offerHowItWorks: OfferStep[] = [
   {
     title: 'Tell us about the house',
-    body: 'Share your name, phone, and the property address. It takes about a minute.',
+    body: 'Share the address and how to reach you.',
   },
   {
-    title: 'Get a cash offer',
-    body: 'Get your cash offer within 24 hours. No obligation.',
+    title: 'Get a cash offer within 24 hours',
+    body: 'Cash offer within 24 hours. Cash offer, as-is. No fees, repairs, or cleaning.',
   },
   {
-    title: 'Pick your closing date',
-    body: 'You choose when to close. No repairs, and no agent commission.',
+    title: 'You pick the closing date',
+    body: 'You pick the closing date. Close in as little as 7 days, or choose a later date.',
   },
 ];
 
@@ -42,80 +50,76 @@ const sharedSteps: OfferStep[] = [
  * A whitelist city in the ad URL replaces it with "We Buy Houses in {City} for Cash".
  */
 export const generalOffer: OfferLandingContent = {
-  title: 'We Buy Houses for Cash',
+  title: 'We Buy Houses for Cash | Cash for Houses',
   description:
-    'Cash home buyers in Pierce County, South King County, and Kitsap County. We buy homes for cash. Sell your property for cash, as-is, including a divorce, a foreclosure, tenants, a tax delinquent house, or liens. No repairs. You choose the closing date.',
-  headline: 'We buy houses for cash',
+    'Cash for houses in Pierce County, South King County, and Kitsap County. We buy houses for cash, as-is, including divorce, foreclosure, tenants, an inherited or probate house, or fire damage. No fees, repairs, or cleaning. Cash offer within 24 hours. You pick the closing date.',
+  headline: 'We Buy Houses for Cash',
   subhead:
-    'Cash home buyers. Sell your property for cash, as-is. No repairs. You choose the closing date.',
-  cta: 'Get your no-obligation cash offer: takes 30 seconds',
+    'Cash for Houses. Cash offer, as-is. No fees, repairs, or cleaning. You pick the closing date.',
+  cta: 'Get your cash offer',
   formOrigin: 'google_ads_landing',
-  trustPoints: [
-    'Bought 100+ homes',
-    'Any condition, no cleaning or repairs',
-    'Local Auburn, WA company',
-  ],
-  steps: sharedSteps,
+  trustPoints: ['Bought 100+ homes', 'No fees, repairs, or cleaning', 'You pick the closing date'],
+  steps: offerHowItWorks,
   faqs: [
     {
       question: 'Do I need to clean or repair anything?',
-      answer: 'No. We buy the house as-is, in any condition. Leave the cleaning and repairs to us.',
+      answer: 'No. Cash offer, as-is. No fees, repairs, or cleaning.',
     },
     {
-      question: 'Are there commissions or fees?',
-      answer:
-        'No. KindKey buys the house directly. We do not charge the seller an agent commission or a separate service or assignment fee.',
+      question: 'Are there fees?',
+      answer: 'No fees. KindKey buys the house directly.',
     },
     {
       question: 'Who picks the closing date?',
-      answer: 'You do. Close in a few days, or pick a later date that works for you.',
+      answer: 'You pick the closing date. Close in as little as 7 days, or choose a later date.',
     },
     {
-      question: 'Am I obligated if I ask for an offer?',
-      answer: 'No. The cash offer is free, and you can say no.',
+      question: 'How soon is the cash offer?',
+      answer: 'Cash offer within 24 hours.',
     },
   ],
 };
 
-/** Same copy as /offer. The form origin is the only difference. */
+/** Same hero as /offer, with its own title. The form origin is the other difference. */
 export const facebookEddieOffer: OfferLandingContent = {
   ...generalOffer,
+  title: 'Cash for Houses from KindKey Home Buyers',
+  description:
+    'Cash for houses. Cash offer, as-is. No fees, repairs, or cleaning. Cash offer within 24 hours. You pick the closing date.',
   formOrigin: 'facebook_ads_eddie',
 };
 
-/** Short claims under the foreclosure headline. No extra stats or testimonials. */
+/** Short claims under the foreclosure headline. Approved claims only. */
 export const foreclosureTrustStrip = [
   'BBB A- Rated',
   'Bought 100+ homes',
   'Close in as little as 7 days',
-  'No obligation offer',
+  'Cash offer, as-is',
 ] as const;
 
 export const foreclosureOffer: OfferLandingContent = {
-  title: 'Stop Foreclosure. Sell Your House Before the Sale',
+  title: 'Sell Your House Before Foreclosure',
   description:
-    'Sell a King or Pierce County house before foreclosure. Request a cash offer. No repairs. Asking does not stop the foreclosure.',
-  headline: 'Stop foreclosure. Sell your house before the sale',
-  subhead: 'As-is, no repairs. Asking does not stop the foreclosure.',
+    'Sell a house before foreclosure in King County, Pierce County, or Kitsap County. Cash offer, as-is. Asking does not stop the foreclosure. No fees, repairs, or cleaning. Cash offer within 24 hours. You pick the closing date.',
+  headline: 'Sell Your House Before Foreclosure',
+  subhead:
+    'Stop foreclosure before the sale. Cash offer, as-is. Asking does not stop the foreclosure.',
   cta: 'Get a cash offer before the foreclosure sale',
   formOrigin: 'google_ads_foreclosure',
   trustPoints: [
-    'No repairs before you sell',
-    'Tell us the foreclosure sale date',
-    'You choose the closing date',
+    'No fees, repairs, or cleaning',
+    'Cash offer within 24 hours',
+    'You pick the closing date',
   ],
-  steps: [
+  steps: offerHowItWorks,
+  pageSituations: [
     {
-      title: 'Tell us the situation',
-      body: 'Share the address, your phone number, and the foreclosure sale date if you have one.',
+      title: 'Foreclosure',
+      body: 'Tell us the foreclosure sale date if you have one. You can ask for a cash offer before the sale. Asking for an offer does not stop a foreclosure.',
     },
     {
-      title: 'Get a cash offer',
-      body: 'Get your cash offer within 24 hours. No obligation.',
-    },
-    {
-      title: 'Close on a date you pick',
-      body: 'You pick the date. We do not promise to stop the foreclosure.',
+      title: 'A house that needs work',
+      body: 'A house heading toward foreclosure can still need work. Cash offer, as-is. No fees, repairs, or cleaning, and you pick the closing date.',
     },
   ],
   faqs: [
@@ -126,7 +130,8 @@ export const foreclosureOffer: OfferLandingContent = {
     },
     {
       question: 'Do I have to repair the house first?',
-      answer: 'No. We buy houses as-is, including houses that need work.',
+      answer:
+        'No. Cash offer, as-is, including a house that needs work. No fees, repairs, or cleaning.',
     },
     {
       question: 'Will this stop the foreclosure?',
@@ -134,54 +139,55 @@ export const foreclosureOffer: OfferLandingContent = {
         'No. A cash offer is not a promise to stop a foreclosure or an auction. Tell us the date, and we will say whether a closing can be scheduled before it.',
     },
     {
-      question: 'Am I obligated if I ask?',
-      answer: 'No. The offer is free, and you can say no.',
+      question: 'Who picks the closing date?',
+      answer: 'You pick the closing date. Close in as little as 7 days, or choose a later date.',
     },
   ],
 };
 
 export const inheritedOffer: OfferLandingContent = {
-  title: 'Sell an Inherited House As-Is for Cash',
+  title: 'Sell an Inherited or Probate House for Cash',
   description:
-    'Sell an inherited or probate house in King or Pierce County as-is. No clean-out required. KindKey works with probate timelines and out-of-state heirs.',
-  headline: 'Sell an inherited house for cash',
-  subhead: 'No clean-out. We can work with a probate timeline.',
+    'Sell an inherited or probate house as-is in King County, Pierce County, or Kitsap County. Cash offer, as-is. No fees, repairs, or cleaning. Cash offer within 24 hours. You pick the closing date.',
+  headline: 'Sell an Inherited or Probate House for Cash',
+  subhead:
+    'Inherited or probate. Cash offer, as-is. No fees, repairs, or cleaning. You pick the closing date.',
   cta: 'Get a cash offer on the inherited house',
   formOrigin: 'google_ads_inherited',
-  trustPoints: ['No clean-out', 'Works with a probate timeline', 'Out-of-state heirs can call'],
-  steps: [
+  trustPoints: [
+    'No fees, repairs, or cleaning',
+    'Cash offer within 24 hours',
+    'You pick the closing date',
+  ],
+  steps: offerHowItWorks,
+  pageSituations: [
     {
-      title: 'Tell us about the house',
-      body: 'Share the address and where the estate stands. You do not have to empty the house first.',
+      title: 'Inherited and probate',
+      body: 'You can ask for a cash offer on an inherited house while probate is still open. Tell us the address and where the estate stands. KindKey does not give legal advice about the estate.',
     },
     {
-      title: 'Get a cash offer',
-      body: 'Get your cash offer within 24 hours. No obligation.',
-    },
-    {
-      title: "Close on the estate's timeline",
-      body: 'You pick a date that fits probate. We do not give legal advice about the estate.',
+      title: 'When the inherited house needs work',
+      body: 'An inherited or probate house that needs work, including fire damage, can still get a cash offer, as-is. No fees, repairs, or cleaning. You pick the closing date.',
     },
   ],
   faqs: [
     {
       question: 'Do I have to clean the house out?',
-      answer: 'No. We can buy the house with belongings still inside.',
+      answer:
+        'No fees, repairs, or cleaning. Cash offer, as-is, including belongings still inside.',
     },
     {
       question: 'What if probate is still open?',
       answer:
-        'Tell us where it stands. Closing can be timed with the estate. KindKey does not advise you on probate.',
+        'Tell us where the probate stands. You pick the closing date. KindKey does not give legal advice about the estate.',
     },
     {
-      question: 'I live out of state. Can I still sell?',
-      answer:
-        'Yes. Share the address and a phone number. You do not have to be at the house to ask for an offer.',
+      question: 'How soon is the cash offer?',
+      answer: 'Cash offer within 24 hours after you tell us about the house.',
     },
     {
-      question: 'Are there commissions?',
-      answer:
-        'KindKey buys directly and does not charge the seller an agent commission or a separate service fee.',
+      question: 'Are there fees?',
+      answer: 'No fees. KindKey buys the house directly.',
     },
   ],
 };
@@ -189,91 +195,88 @@ export const inheritedOffer: OfferLandingContent = {
 export const fireDamageOffer: OfferLandingContent = {
   title: 'Sell a Fire-Damaged House As-Is for Cash',
   description:
-    'Sell a fire- or smoke-damaged house in King or Pierce County as-is. No cleanup or repairs. KindKey can work with an open insurance claim.',
-  headline: 'Sell a fire-damaged house for cash',
-  subhead: 'As-is. No cleanup or repairs. We can work with an open insurance claim.',
+    'Sell a fire-damaged house as-is in King County, Pierce County, or Kitsap County. Cash offer, as-is. No fees, repairs, or cleaning. Cash offer within 24 hours. You pick the closing date.',
+  headline: 'Sell a Fire-Damaged House As-Is',
+  subhead:
+    'Fire damage, as-is. No fees, repairs, or cleaning. Cash offer within 24 hours. You pick the closing date.',
   cta: 'Get a cash offer on the fire-damaged house',
   formOrigin: 'google_ads_fire_damage',
   trustPoints: [
-    'Fire or smoke damage, bought as-is',
-    'Local King and Pierce County buyer',
-    'We keep most homes as rentals',
+    'No fees, repairs, or cleaning',
+    'Cash offer within 24 hours',
+    'You pick the closing date',
   ],
-  steps: [
+  steps: offerHowItWorks,
+  pageSituations: [
     {
-      title: 'Tell us about the house',
-      body: 'Share the address. You do not need to clean up or repair the fire or smoke damage.',
+      title: 'Fire damage',
+      body: 'A fire-damaged house can be sold as-is. Tell us the address and what the fire did. No fees, repairs, or cleaning before you ask.',
     },
     {
-      title: 'Get a cash offer',
-      body: 'Get your cash offer within 24 hours. No obligation. An open insurance claim is fine.',
-    },
-    {
-      title: 'Pick your closing date',
-      body: 'You choose the date. No cleanup and no repairs before closing.',
+      title: 'Major repairs',
+      body: 'Smoke, water, or other major repairs do not have to be finished first. Cash offer within 24 hours. You pick the closing date.',
     },
   ],
   faqs: [
     {
       question: 'Do I need to clean up or repair the damage?',
-      answer: 'No. We buy fire- and smoke-damaged houses as-is. Leave the cleanup and repairs.',
+      answer: 'No. Cash offer, as-is, on a fire-damaged house. No fees, repairs, or cleaning.',
     },
     {
-      question: 'Can you work with an open insurance claim?',
-      answer: 'Yes. Tell us the claim is open. You do not have to finish repairs before you ask.',
+      question: 'What if an insurance claim is open?',
+      answer:
+        'Tell us the claim is open when you tell us about the house. You pick the closing date.',
     },
     {
       question: 'Where do you buy?',
-      answer: 'King and Pierce County. We keep most of the houses as rentals.',
+      answer: 'King County, Pierce County, and Kitsap County.',
     },
     {
-      question: 'Am I obligated if I ask for an offer?',
-      answer: 'No. The cash offer is free, and you can say no.',
+      question: 'How soon is the cash offer?',
+      answer: 'Cash offer within 24 hours.',
     },
   ],
 };
 
 export const asIsOffer: OfferLandingContent = {
-  title: 'Sell a Damaged House As-Is for Cash',
+  title: 'Sell a House That Needs Work As-Is for Cash',
   description:
-    'Sell a house that needs major work in King or Pierce County. Fire, water, mold, hoarder houses, foundation issues, and code violations. No repairs first.',
-  headline: 'Sell a damaged house for cash',
-  subhead: 'Fire, water, mold, or major repairs. No fix-up first.',
-  cta: 'Get a cash offer without making repairs',
+    'Sell a house that needs work, as-is, in King County, Pierce County, or Kitsap County. Fire damage and other major repairs included. No fees, repairs, or cleaning. Cash offer within 24 hours. You pick the closing date.',
+  headline: 'Sell a House That Needs Work As-Is',
+  subhead:
+    'A house that needs work. Cash offer, as-is. No fees, repairs, or cleaning. You pick the closing date.',
+  cta: 'Get a cash offer on a house that needs work',
   formOrigin: 'google_ads_as_is',
-  trustPoints: ['Any condition', 'No repairs required', 'Bought 100+ homes'],
-  steps: [
+  trustPoints: ['Bought 100+ homes', 'No fees, repairs, or cleaning', 'Cash offer within 24 hours'],
+  steps: offerHowItWorks,
+  pageSituations: [
     {
-      title: 'Tell us the condition',
-      body: 'Share the address and what is wrong with the house. Photos help, and they are optional.',
+      title: 'A house that needs work',
+      body: 'Sell a house that needs work as-is. Roof, foundation, mold, fire damage, or an open code notice can stay as they are. No fees, repairs, or cleaning.',
     },
     {
-      title: 'Get a cash offer',
-      body: 'Get your cash offer within 24 hours. No obligation.',
-    },
-    {
-      title: 'Close without a fix-up list',
-      body: 'You pick the date. Leave the repairs to us after closing.',
+      title: 'Fire damage and major repairs',
+      body: 'Fire damage is one kind of house that needs work. Leave the cleanup. Cash offer within 24 hours, and you pick the closing date.',
     },
   ],
   faqs: [
     {
-      question: 'Do you buy fire, water, or mold damage?',
+      question: 'Do you buy a house that needs work?',
       answer:
-        'Yes. We buy those houses as-is. You do not have to remediate them before you ask for an offer.',
+        'Yes. Cash offer, as-is, including fire damage, water, mold, and other major repairs. No fees, repairs, or cleaning.',
     },
     {
       question: 'What about code violations?',
       answer:
-        'You can request an offer without clearing the notice first. KindKey does not give legal advice about a city notice.',
+        'You can request a cash offer without clearing the notice first. KindKey does not give legal advice about a city notice.',
     },
     {
-      question: 'Foundation or a hoarder house?',
-      answer: 'Yes. Major repairs and houses full of belongings are situations we buy as-is.',
+      question: 'How soon is the cash offer?',
+      answer: 'Cash offer within 24 hours after you tell us about the house.',
     },
     {
-      question: 'Am I obligated?',
-      answer: 'No. The cash offer is free, and you can say no.',
+      question: 'Who picks the closing date?',
+      answer: 'You pick the closing date. Close in as little as 7 days, or choose a later date.',
     },
   ],
 };
