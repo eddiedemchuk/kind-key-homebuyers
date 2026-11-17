@@ -3,7 +3,9 @@ import LeadConnectorChat from '@/components/LeadConnectorChat';
 import { MobileNavButton, MobileNavPanel, MobileNavProvider } from '@/components/MobileNav';
 import HousesBought from '@/components/HousesBought';
 import OfferCityHeadline from '@/components/OfferCityHeadline';
+import OfferCityTrustBar from '@/components/OfferCityTrustBar';
 import OfferHowItWorks from '@/components/OfferHowItWorks';
+import OfferHowWeFigure from '@/components/OfferHowWeFigure';
 import OfferLeadForm from '@/components/OfferLeadForm';
 import OfferMobileBar, { OfferJumpButton, OfferPhoneLink } from '@/components/OfferMobileBar';
 import OfferPageFooter from '@/components/OfferPageFooter';
@@ -35,7 +37,6 @@ const AGENT_COMPARISON = [
 const DISTRESS_NOTES = [
   'Back taxes and liens are paid out of the sale at closing, not out of your pocket first.',
   'Open code violations, unpermitted work, or tenants in place? We still buy without asking you to fix or evict first.',
-  'Take what you want and leave the rest — no cleanout needed.',
 ] as const;
 
 /** Search phrases the Situations ad group sends to /offer. The house and the sale only. */
@@ -146,7 +147,7 @@ function OfferCountyBuyers({ includeKitsap = false }: { includeKitsap?: boolean 
 
 function OfferDistressNotes() {
   return (
-    <section className="mt-8" aria-label="Taxes, code cases, and cleanout">
+    <section className="mt-8" aria-label="Taxes and code cases">
       <ul className="space-y-3">
         {DISTRESS_NOTES.map((note) => (
           <li key={note} className="flex gap-3 text-base leading-snug">
@@ -187,6 +188,7 @@ export default function OfferLanding({
   phone = GOOGLE_ADS_PHONE,
   src,
   showOfferMath = false,
+  showTrustBar = false,
   showAgentComparison = false,
   showDistressNotes = false,
   showServiceArea = false,
@@ -206,11 +208,13 @@ export default function OfferLanding({
   stickyPhone?: DisplayPhone;
   /** Query src for a Facebook /offer visit. Empty when only utm_source=facebook matched. */
   src?: string;
-  /** Short offer-math note shown under the form on /offer only. */
+  /** Short offer-math note shown under the form. */
   showOfferMath?: boolean;
+  /** Prominent trust bar under the headline. */
+  showTrustBar?: boolean;
   /** KindKey vs. agent comparison, shown on /offer. */
   showAgentComparison?: boolean;
-  /** Taxes, code cases, and cleanout notes on /offer and /offer/foreclosure. */
+  /** Taxes and code-case notes on /offer and /offer/foreclosure. */
   showDistressNotes?: boolean;
   /** Names Kitsap next to Pierce and South King. /offer only. */
   showServiceArea?: boolean;
@@ -279,6 +283,7 @@ export default function OfferLanding({
           <p className="mt-1 text-base leading-snug text-text-secondary md:mt-2">
             {content.subhead}
           </p>
+          {showTrustBar ? <OfferCityTrustBar /> : null}
           <div
             data-offer-form
             className="mt-3 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-3 shadow-sm md:mt-6 md:scroll-mt-20 md:p-4"
@@ -311,7 +316,7 @@ export default function OfferLanding({
               {BBB_TRUST_LINE}
             </p>
           )}
-          <OfferReviewsSlot />
+          {showTrustBar ? null : <OfferReviewsSlot />}
           {content.pageSituations && content.pageSituations.length > 0 ? (
             <section
               className="mt-8"
@@ -334,21 +339,7 @@ export default function OfferLanding({
           <OfferCountyBuyers includeKitsap={showServiceArea} />
           {showSituations ? <OfferSituations /> : null}
           <HousesBought />
-          {showOfferMath ? (
-            <>
-              <section className="mt-8" aria-labelledby="how-we-figure-heading">
-                <h2 id="how-we-figure-heading" className="text-xl font-bold">
-                  How we figure your offer
-                </h2>
-                <div className="mt-3 space-y-2 text-base leading-snug text-text-secondary">
-                  <p>We buy and hold most houses as rentals, and sometimes we fix and sell them.</p>
-                  <p>We start with what the house would be worth after repairs.</p>
-                  <p>We subtract the repair costs and our costs to buy and sell.</p>
-                  <p>We leave a fair margin, and we walk you through every number.</p>
-                </div>
-              </section>
-            </>
-          ) : null}
+          {showOfferMath ? <OfferHowWeFigure /> : null}
           {showDistressNotes ? <OfferDistressNotes /> : null}
           {showAgentComparison ? <OfferAgentComparison /> : null}
         </section>

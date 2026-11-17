@@ -84,6 +84,8 @@ describe('/offer landing', () => {
     assert.equal(html.toLowerCase().includes('no obligation'), false);
     assert.equal(html.toLowerCase().includes('commit you'), false);
     assert.equal(html.toLowerCase().includes('closing cost'), false);
+    assert.equal(html.toLowerCase().includes('cleanout'), false);
+    assert.equal(html.toLowerCase().includes('leave the rest'), false);
     assert.match(
       html,
       /data-offer-service-area[^>]*>Pierce County, South King County, Kitsap County, and Snohomish County/
