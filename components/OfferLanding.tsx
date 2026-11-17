@@ -7,6 +7,7 @@ import OfferHowItWorks from '@/components/OfferHowItWorks';
 import OfferLeadForm from '@/components/OfferLeadForm';
 import OfferMobileBar, { OfferJumpButton, OfferPhoneLink } from '@/components/OfferMobileBar';
 import OfferPageFooter from '@/components/OfferPageFooter';
+import OfferReviewsSlot from '@/components/OfferReviewsSlot';
 import type { OfferLandingContent } from '@/data/offerLandings';
 import { BBB_TRUST_LINE, GOOGLE_REVIEWS_URL, shortGoogleReviews } from '@/data/offerCredibility';
 import type { FormOrigin } from '@/lib/form-origin';
@@ -310,6 +311,7 @@ export default function OfferLanding({
               {BBB_TRUST_LINE}
             </p>
           )}
+          <OfferReviewsSlot />
           {content.pageSituations && content.pageSituations.length > 0 ? (
             <section
               className="mt-8"

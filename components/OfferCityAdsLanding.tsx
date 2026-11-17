@@ -6,6 +6,7 @@ import OfferHowItWorks from '@/components/OfferHowItWorks';
 import OfferLeadForm from '@/components/OfferLeadForm';
 import OfferMobileBar, { OfferJumpButton, OfferPhoneLink } from '@/components/OfferMobileBar';
 import OfferPageFooter from '@/components/OfferPageFooter';
+import OfferReviewsSlot from '@/components/OfferReviewsSlot';
 import {
   OFFER_CITY_ADS_COMPARISON,
   OFFER_CITY_ADS_FAQS,
@@ -106,6 +107,7 @@ export default function OfferCityAdsLanding({
               </li>
             ))}
           </ul>
+          <OfferReviewsSlot />
         </section>
 
         <section className="mt-10" aria-labelledby="offer-city-area-heading" data-areas-we-buy>
