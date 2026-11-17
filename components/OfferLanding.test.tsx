@@ -77,6 +77,8 @@ describe('/offer landing', () => {
     assert.match(html, /KindKey Home Buyers LLC/);
     assert.match(html, /640 1st St SW/);
     assert.match(html, /BBB A- rated/);
+    assert.match(html, /4\.6★ on Google \(18 reviews\)/);
+    assert.equal(html.includes('aggregateRating'), false);
     assert.equal(html.match(/<h1\b/g)?.length, 1);
     assert.equal(html.toLowerCase().includes('showings'), false);
     assert.equal(html.toLowerCase().includes('no obligation'), false);
