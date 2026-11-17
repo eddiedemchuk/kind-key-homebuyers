@@ -6093,4 +6093,343 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to test it or remove it first. You can say no.',
   }),
+  post('sell-house-with-galvanized-or-polybutylene-plumbing-edgewood-wa', {
+    breadcrumbName: 'Plumbing pipes in Edgewood',
+    title: 'Selling a House with Galvanized or Polybutylene Plumbing in Edgewood, WA',
+    description:
+      'How Edgewood owners sell a house with galvanized supply lines or polybutylene pipe without a repipe first. KindKey buys as a principal. Not a plumbing inspection.',
+    h1: 'Selling a House with Galvanized or Polybutylene Plumbing in Edgewood, WA',
+    publishedAt: '2026-11-17',
+    intro: [
+      'You can sell an Edgewood house with galvanized water lines, polybutylene pipe, low pressure, or a leak you have not repaired, without opening the walls or finishing a repipe first. ' +
+        office +
+        ' KindKey is not a plumber, a water utility, the Tacoma-Pierce County Health Department, or the City of Edgewood building counter. This article is not a pipe identification, not a repair plan, and not legal advice.',
+      'Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. It incorporated on February 28, 1996. Most residents live on North Hill: longer driveways, and shops set back from the street. A smaller share of the city sits in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. A North Hill crawlspace with threaded steel, a valley house with gray plastic to the water heater, and a shop with a leak under the sink are different properties. Bring the address.',
+    ],
+    callout:
+      'You do not have to repipe the house, replace the water heater, or pass an inspection before you ask. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'A supply line, a drain, and a well are not the same pipe',
+        paragraphs: [
+          'Tell KindKey what you have seen, in plain words, before anyone schedules a visit. It may be threaded metal under a sink, gray plastic running to a water heater, a stamp you could read, rust-colored water, pressure that drops when two fixtures run, a pinhole that stained a ceiling, or a report a home inspector already wrote. Some of these houses are still lived in. Some are not. People often use the word galvanized for older steel water pipe with a zinc coating, and polybutylene for a plastic water pipe from a later period. A color is not an identification. KindKey will not tell you that the pipe in a photo is either one, and KindKey will not tell you that it is safe to keep using. A photo of the pipe, the water heater, the crawlspace, and any report you already have is enough to start. If you do not believe the house is safe to walk, say so. An exterior look can begin the conversation. Do not open a wall, cut a pipe, or scrape insulation so a buyer can see the material. If opening a ceiling would disturb other material, the Edgewood asbestos guide is that file. Furniture and shop contents you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to.',
+          'A supply pipe brings water to a faucet. A drain carries used water away. They can both be metal, and they are still different facts. Galvanized steel was used for both jobs in older houses. White plastic, black plastic, and cast iron are common drain materials, and a drain is not, by itself, a polybutylene supply line. A gray flexible plastic line inside the house is the fact people often mean by polybutylene. A blue or black plastic line outside, between a meter and the house, can be a different product. KindKey will not sort those from a description over the phone. The leak that already soaked a ceiling is the Edgewood water-damage guide. Growth that followed the leak is the Edgewood mold guide. A soft floor or water sitting under the house is the Edgewood foundation guide. Old wiring on the same inspection is the Edgewood knob-and-tube guide. This page is the pipe, the pressure, or the inspector’s note about the material. You can have more than one of those problems. Say which ones you know about. KindKey prices the property in front of us.',
+          'The water source is a different question from the pipe in the wall. The City of Edgewood’s published utilities list names three water providers: Mt. View Edgewood Water Company, City of Milton Water, and Lakehaven Water and Sewer District along Countyline Road. The city’s community page describes that water company as serving most of Edgewood and the Meridian Avenue Corridor. The company publishes its name as Mt. View-Edgewood Water Company. Its site says it is a private, non-profit, member-owned utility, that it has served this area since 1925, and that it provides a non-chlorinated Group A community water system to an area comprising the majority of the City of Edgewood, north of Puyallup and east of Milton. The office it publishes is 11610 32nd Street E, Edgewood, WA 98372. The main line it publishes is (253) 863-7348. The after-hours number it publishes for on-call field staff is (253) 620-4006. KindKey is not that company. KindKey will not shut off a meter, transfer a membership, or call the after-hours line for you. The company’s site tells members not to shut the water off at the meter and says tampering with the meter is a federal offense. Do not ask KindKey to touch the meter. A bill from the water company is the member’s account. KindKey does not pay it for you before closing, and a balance can show on the settlement statement the same way another utility can.',
+          'A private well is still a fact on some North Hill lots, and a house on public water can sit next to one that is not. The city name does not decide it. Many older North Hill and Jovita lots also use a septic system. Others are on public sewer. A supply line inside the house is not a drainfield, and a sewer plan is not a repipe. The city’s utilities list names Lakehaven Water and Sewer District for sewer, and the City of Fife for sewer west of 86th Avenue E. On-site sewage questions in Pierce County go to the Tacoma-Pierce County Health Department, at 3629 S D St, Tacoma, WA 98418, main line (253) 649-1500. That department is not the water company, and it is not KindKey. You do not have to pump a tank, locate a drainfield, or connect to a sewer before KindKey looks. KindKey does not inspect, pump, or certify a septic system or a well. The Edgewood septic guide is that page.',
+          'Milton, next door, can fall in King County or Pierce County. Edgewood does not. A mailing address that says Edgewood is not always inside the city. The closing agent confirms the parcel. An Edgewood deed records with the Pierce County Auditor in Tacoma, at 2401 S 35th St, Room 200, Tacoma, WA 98409. The phone that office publishes for questions about requesting recorded documents is (253) 798-7440. The auditor does not identify a pipe. Do not record a Pierce County deed at the Kitsap County Auditor in Port Orchard, or at the King County Recorder, because someone in the family takes a ferry or because KindKey’s office is in Auburn.',
+        ],
+      },
+      {
+        heading: 'The plumbing code is about the work you choose to do',
+        paragraphs: [
+          'Inside the city limits, plumbing work you choose to permit is the City of Edgewood. Chapter 15.60 EMC is the plumbing code. EMC 15.60.010 adopts the 2021 Uniform Plumbing Code and standards published by the International Association of Plumbing and Mechanical Officials, as amended by the Washington State Building Code Council and published in chapter 51-56 WAC, with the local exceptions in that section. Those exceptions include using chapter 15.10 EMC in place of UPC Chapter 1, Administration. They also say the portions of the UPC addressing building sewers are not adopted, and that UPC Chapters 12 and 14 are not adopted. The section does adopt UPC Appendix A, Recommended Rules for Sizing the Water Supply, and UPC Appendix M, Peak Water Demand Calculator, among the appendices it names. EMC 15.60.020 says the chapter applies to the erection, installation, alteration, repair, relocation, replacement, addition to, use, or maintenance of plumbing systems, including where they connect to a water or sewage system. KindKey will not tell you that an old pipe already in the wall fails that chapter. KindKey will not size a water line with Appendix A. You do not have to replace the pipe before KindKey looks.',
+          'EMC 15.60.030 is the permit-exemption section. It says an exemption from the permit is not permission to violate the code, and that an exemption under one technical code does not exempt the work from another. EMC 15.60.030(C)(1) exempts stopping or repairing leaks in drains, water, soil, waste, or vent pipe, and then says that if a concealed trap, drain pipe, water, soil, waste, or vent pipe becomes defective and it becomes necessary to remove and replace it with new material, that replacement is new work and is not exempt. EMC 15.60.030(C)(2) exempts clearing stoppages or repairing leaks in pipes, valves, or fixtures, and removing and reinstalling water closets, and then says repairs involving or requiring the replacement or rearrangement of valves, pipes, or fixtures are not exempt. A clamp on a pinhole is a different fact from a whole-house repipe. KindKey will not tell you which sentence your job is under, and KindKey will not pull the permit. If the pipe was moved as part of a kitchen or a bathroom that never received a final inspection, the Edgewood stalled-remodel guide and the Edgewood unpermitted-work guide are those files. You do not have to close the permit before KindKey looks.',
+          'Community Development is at Edgewood City Hall, 10440 Dom Calata Way E, Edgewood, WA 98372. The permit line the city publishes is (253) 952-3299. City Hall’s posted hours are Monday through Thursday, 8:30 a.m. to 5:00 p.m. KindKey does not require that visit. If a notice arrives about an open building or deteriorated work, read the header. The city’s code-compliance page says owners can contact City Hall at (253) 952-3299 or email codeenforcement@cityofedgewood.org. KindKey will not answer the notice or appear at a hearing. The Edgewood code-violations guide is that letter. Until the deed records, deadlines on a city notice are still yours.',
+          'Chapter 51-56 WAC is the state’s amendment package for the plumbing code Edgewood adopts. In the sanitary-drainage chapter, the amendment of UPC Section 701.2 says materials for drainage piping follow the referenced standards, except that no galvanized wrought-iron or galvanized steel pipe shall be used underground and shall be kept not less than 6 inches above ground. That sentence is about drainage piping. It is not a finding that a galvanized cold-water line in a wall is the same pipe, and it is not an order from KindKey to dig up a yard. The materials used for building supply and water distribution piping are a different part of the code, in Table 604.1 of the adopted plumbing code. KindKey will not read that table against your house and will not tell you a current materials list forces you to open the walls before a sale. WAC 51-51-2103 amends section M2103.3 of the state residential code. That section addresses piping joints that are embedded, and one listed method is a socket-type heat-fused joint for polybutylene pipe and tubing. KindKey will not tell you that sentence approves a gray line to a sink, and KindKey will not tell you it bans the pipe already in the wall. A code can be amended. Read the section in front of you, or ask the building counter. KindKey will not make the call.',
+          'Two local amendments are easy to mix up with a supply line. EMC 15.60.713.2 adds a private-sewage subsection to UPC Section 713.2. It says that in areas not served by sanitary sewers as specified by Section 305 of the UPC, septic tanks and drain fields conforming to the most currently adopted rules of the Tacoma-Pierce County Health Department shall be installed, that approval must be obtained from that department prior to installation, and that all on-site systems must conform to EMC Chapter 11.55. That is a sentence about installation of a private sewage system. KindKey will not tell you your existing tank fails it, and KindKey will not send you to install a drainfield so the supply pipe can be sold. EMC 15.60.1101.6 amends the subsoil-drain section. It says subsoil drains shall be provided around the perimeter of all buildings having basements, cellars, or crawl spaces or floors below grade, and it describes perforated pipe not less than four inches in diameter, laid outside the footing. That is a footing drain. It is not the galvanized line to the kitchen, and it is not polybutylene. A wet crawlspace can be a foundation fact, a roof fact, or a drain fact. Say what you have seen.',
+          'If someone lives in the house, say so. Do not make an occupant leave so a plumber can open a wall. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does. The Edgewood tenants page is that file. RCW 59.18.060 says a landlord keeps the premises fit for human habitation. Subsection (8) includes maintaining electrical, plumbing, heating, and other facilities and appliances supplied by the landlord in reasonably good working order. The section also says no repair duty falls on the landlord, and no defense or remedy is available to the tenant, where the defective condition was caused by the tenant, the tenant’s family, an invitee, or another person acting under the tenant’s control, or where the tenant unreasonably fails to allow the landlord access to make a repair. KindKey will not decide who caused a leak. Ask a Washington attorney if a tenant has already written about the water. You can still ask for an offer while that conversation happens.',
+        ],
+      },
+      {
+        heading: 'The disclosure form asks about pipes, and someone still has to sign',
+        paragraphs: [
+          'Washington’s seller disclosure law is chapter 64.06 RCW. RCW 64.06.020 sets out the seller disclosure statement. In section 5, Systems and Fixtures, question 5.A asks whether, if any of the following systems or fixtures are included with the transfer, there are any defects, and it says to explain a yes. The list under that question includes the plumbing system, including pipes, faucets, fixtures, and toilets. It lists the hot water tank on its own line, and it lists the electrical system and the heating and cooling systems on their own lines. A pipe material and a water heater that leaks are two facts, not one. Section 2 is household water. Question 2.A(7) asks whether there are any defects in the operation of the water system, and the form gives pipes, tank, and pump as examples. That question sits with the water source. It is easy to confuse with question 5.A. Section 3 asks whether the property is served by a public sewer system or an on-site sewage system. KindKey will not tell you how to mark the boxes, whether gray plastic is a defect, or whether low pressure is a yes. Ask a Washington real estate attorney if you are unsure. The closing agent handles the form that applies to your file. Answer with what you actually know. If an inspector already named the pipe, say that. If you do not know the material, the form has a choice for that. Selling to a cash buyer is not a reason to leave a known problem off the form.',
+          'The same statute includes a notice: if the residential real property disclosure statement is being completed for new construction which has never been occupied, the seller is not required to complete the questions listed in item 4, Structural, or item 5, Systems and Fixtures. An older Edgewood house someone has lived in is a different file from that notice. KindKey will not tell you the notice applies to your sale.',
+          'Question 7.E, in the environmental section, asks whether there are any substances, materials, or products in or on the property that may be environmental concerns, such as asbestos, formaldehyde, radon gas, lead-based paint, fuel or chemical storage tanks, or contaminated soil or water. Galvanized pipe and polybutylene are not in that list of examples. A lead-based-paint fact is the example that names paint. KindKey will not tell you that a steel supply line is a lead pipe, and KindKey will not tell you that a pipe material makes an Environmental answer yes. A heating-oil tank is a different object from a water line. The Edgewood heating-oil guide is that file. Knob-and-tube wiring is the electrical line on question 5.A, and it has its own Edgewood page. Do not treat the wiring and the water pipe as one repair. KindKey will not tell you whether any older national settlement about plastic pipe still pays a claim, and KindKey will not file one.',
+          'RCW 64.06.010(6) lists a transfer made by the personal representative of the estate of the decedent or by a trustee in bankruptcy among the transfers the chapter does not apply to. RCW 64.06.010(7) lists a transfer in which the buyer has expressly waived the disclosure, and it says that if the answer to any question in the section entitled Environmental would be yes, the buyer may not waive receipt of the Environmental section. KindKey will not tell you that you are one of those signers. If the owner has died, who can sign is a probate or trust question, separate from the pipe. KindKey will not file the probate and will not guess which relative can sign. Use the Edgewood probate page when a death is the reason the house is for sale, and the living-trust page if the house is already titled in a trust. The power-of-attorney page is the file when the owner is living and someone else is signing. Do not sign a deed before the authority exists.',
+        ],
+      },
+      {
+        heading: 'Repipe and relist, or sell the house as it sits',
+        paragraphs: [
+          'A repipe can fit if you want to keep the house and you are willing to open walls, deal with a permit, and live with the work. A listing can fit after that, if a broker will take the house and you can host the access. A financed buyer may still stall on the same pipes, or on a different item in the same report. Commission is negotiated in the listing agreement with that broker and is not set by KindKey. Hire a licensed broker in Pierce County if you want the listing. KindKey will not run it, will not choose your plumber, and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. The Edgewood expired-listing guide is the sale that already died after an inspection named the plumbing. You do not have to finish that inspector’s list before KindKey looks. The Edgewood major-repairs page is the broader file when the pipes are one item on a longer list.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive from Edgewood does not add a repipe. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need a relative with a key can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a water-company balance, a tax bill, or a city assessment. The offer reflects the house as it sits, including the pipe you know about, so it can be less than a retail price for a house where that work has already been done. You see the payoffs on the settlement statement before you close. You can say no. The Edgewood as-is page is that direct sale for the house in its current condition.',
+          'Your insurer is your relationship. You can ask KindKey for an offer while a claim is open, after a claim was denied, or when a company has asked about the pipe and you have not decided what to do. KindKey will not tell you whether to wait for a check, whether a policy will renew, or how to assign the proceeds. KindKey does not give insurance advice. If the water on the floor started as a fire, the Edgewood fire-damage guide is that file. If a foreclosure notice is in the file with the inspection report, you have a clock the pipe does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. The Edgewood foreclosure page is that file. A Pierce County property-tax bill is a different account from a plumber’s bid. KindKey will not calculate the treasurer’s number. The Edgewood property-tax page is that bill. Parts of Edgewood lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary.',
+          'A house in Port Orchard, Bremerton, Silverdale, or Poulsbo is a different city. Do not use this Edgewood page for a Kitsap house, for a Milton house that may sit in King County, or for a Fife, Puyallup, or Sumner parcel. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the pipe, the pressure, or the report through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do I have to repipe an Edgewood house before KindKey will look?',
+        answer:
+          'No. KindKey buys Edgewood houses with galvanized supply lines, polybutylene, low pressure, or an existing plumbing note as they sit. You do not have to open the walls, pull a plumbing permit, or finish a repipe first. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Will KindKey tell me whether the pipe is galvanized or polybutylene?',
+        answer:
+          'No. KindKey does not identify pipe, test water, or certify a plumbing system. A color is not an identification. Bring any inspector’s note or photo you already have. The Mt. View-Edgewood Water Company office line is (253) 863-7348. KindKey will not call that line for you. You can still request an offer.',
+      },
+      {
+        question:
+          'A tenant lives there, or the house is also on septic. Do I have to solve that first?',
+        answer:
+          'No. Tell us what you know. Do not make an occupant leave so a plumber can open a wall. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. A drainfield question goes to the Tacoma-Pierce County Health Department at (253) 649-1500. KindKey does not certify a septic system or a well. You can still request a cash offer. You can say no.',
+      },
+      {
+        question:
+          'An inspection named the plumbing, or a foreclosure notice arrived. Can I still ask?',
+        answer:
+          'Yes. You do not have to finish the inspector’s list before KindKey looks. On the seller disclosure in RCW 64.06.020, question 5.A asks about defects in the plumbing system, including pipes, when that system is included in the sale. KindKey will not tell you how to mark it. If a foreclosure notice is also in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, Meridian, and the valley.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell a house as-is in Edgewood',
+        description: 'The pipe can stay as it is.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/edgewood/sell-my-house-fast',
+        label: 'Sell my house fast in Edgewood',
+        description: 'A direct sale without a repipe on the calendar.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description:
+          'A drainfield or a private well is a different pipe from the line to the sink.',
+      },
+      {
+        href: '/blog/sell-water-damaged-house-edgewood-wa',
+        label: 'Water damage in Edgewood',
+        description: 'A leak that already soaked a ceiling or a shop.',
+      },
+      {
+        href: '/blog/sell-house-with-mold-edgewood-wa',
+        label: 'Mold in Edgewood',
+        description: 'Growth that followed a leak, rather than the pipe material itself.',
+      },
+      {
+        href: '/blog/sell-house-with-foundation-problems-edgewood-wa',
+        label: 'Foundation problems in Edgewood',
+        description: 'A soft floor or water under the house.',
+      },
+      {
+        href: '/blog/sell-house-with-knob-and-tube-wiring-edgewood-wa',
+        label: 'Knob-and-tube wiring in Edgewood',
+        description: 'The electrical line on the same inspection.',
+      },
+      {
+        href: '/blog/sell-house-with-heating-oil-tank-edgewood-wa',
+        label: 'Heating oil tanks in Edgewood',
+        description: 'A fuel tank is not a water line.',
+      },
+      {
+        href: '/blog/sell-house-needing-repairs-edgewood-wa',
+        label: 'Major repairs in Edgewood',
+        description: 'When the pipes are one item on a longer list.',
+      },
+      {
+        href: '/blog/sell-house-with-stalled-remodel-edgewood-wa',
+        label: 'Stalled remodels in Edgewood',
+        description: 'A kitchen or bathroom that moved plumbing and never finished.',
+      },
+      {
+        href: '/blog/sell-house-with-unpermitted-work-edgewood-wa',
+        label: 'Unpermitted work in Edgewood',
+        description: 'When the pipe was changed and the permit was not closed.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'When the city has written about the building.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-edgewood-wa',
+        label: 'Code violations in Edgewood',
+        description: 'The city letter, separate from an inspector’s plumbing note.',
+      },
+      {
+        href: '/blog/sell-house-after-expired-listing-edgewood-wa',
+        label: 'Expired listings in Edgewood',
+        description: 'When an inspection named the plumbing and the buyer walked.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-tenants',
+        label: 'Houses with tenants in Edgewood',
+        description: 'Do not make an occupant leave so a plumber can open a wall.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/blog/sell-house-with-tenants-edgewood-wa',
+        label: 'Tenants in Edgewood',
+        description: 'The rental file, including who still lives there.',
+      },
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Vacant houses in Edgewood',
+        description: 'When nobody is there to watch a leak.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-edgewood-wa',
+        label: 'Vacant houses in Edgewood',
+        description: 'An empty house can still have the old pipe.',
+      },
+      {
+        href: '/areas/edgewood/sell-hoarder-house',
+        label: 'Heavy-repair houses in Edgewood',
+        description: 'When the plumbing is one part of a larger repair.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents can stay. You do not have to empty the house.',
+      },
+      {
+        href: '/blog/sell-house-with-asbestos-edgewood-wa',
+        label: 'Asbestos in Edgewood',
+        description: 'Opening a wall or a ceiling can disturb a different material.',
+      },
+      {
+        href: '/areas/edgewood/sell-inherited-probate-house',
+        label: 'Inherited houses in Edgewood',
+        description: 'When the pipe and the signer are both open questions.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the condition.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Probate houses in Edgewood',
+        description: 'Who can sign, when the owner has died.',
+      },
+      {
+        href: '/blog/sell-house-in-a-living-trust-edgewood-wa',
+        label: 'Living trusts in Edgewood',
+        description: 'When the house is already titled in a trust.',
+      },
+      {
+        href: '/blog/sell-house-with-power-of-attorney-edgewood-wa',
+        label: 'Power of attorney in Edgewood',
+        description: 'When someone else is signing while the owner is in care.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Foreclosure in Edgewood',
+        description: 'When a trustee’s notice is in the file with the report.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'A loan deadline is separate from the pipe.',
+      },
+      {
+        href: '/blog/behind-on-property-taxes-edgewood-wa',
+        label: 'Property taxes in Edgewood',
+        description: 'A Pierce County tax bill is a different account from a plumber’s bid.',
+      },
+      {
+        href: '/areas/edgewood/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Edgewood',
+        description: 'When the water on the floor started as a fire.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The insurance claim stays with your insurer.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-edgewood-wa',
+        label: 'Fire damage in Edgewood',
+        description: 'The claim, separate from a plumbing note.',
+      },
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description: 'The next city west. Milton can sit in King County or Pierce County.',
+      },
+      {
+        href: '/areas/fife',
+        label: 'Sell a house in Fife',
+        description: 'West of Edgewood. Confirm the parcel before you use this page.',
+      },
+      {
+        href: '/areas/puyallup',
+        label: 'Sell a house in Puyallup',
+        description: 'The city to the south, if the parcel is actually there.',
+      },
+      {
+        href: '/areas/sumner',
+        label: 'Sell a house in Sumner',
+        description: 'The valley city to the east.',
+      },
+      {
+        href: '/areas/auburn',
+        label: 'Sell a house in Auburn',
+        description: 'KindKey’s office city. Most of Auburn is in King County.',
+      },
+      {
+        href: '/areas/port-orchard',
+        label: 'Sell a house in Port Orchard',
+        description: 'Kitsap County. Do not use the Edgewood page for this parcel.',
+      },
+      {
+        href: '/areas/bremerton',
+        label: 'Sell a house in Bremerton',
+        description: 'Kitsap County. A different city from Edgewood.',
+      },
+      {
+        href: '/areas/silverdale',
+        label: 'Sell a house in Silverdale',
+        description: 'Unincorporated Kitsap County. Confirm the address.',
+      },
+      {
+        href: '/areas/poulsbo',
+        label: 'Sell a house in Poulsbo',
+        description: 'Kitsap County. A different city from Edgewood.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what the pipe, the pressure, or the report shows. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood offer with the old pipes left in place',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to repipe first. You can say no.',
+  }),
 ];
