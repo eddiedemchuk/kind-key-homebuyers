@@ -3,6 +3,7 @@ import { blogPosts } from '@/data/blogPosts';
 import { cities } from '@/data/cities';
 import { citySituations } from '@/data/citySituations';
 import { offerCityAdsPages } from '@/data/offerCityAds';
+import { offerCityPagePath, offerCityPages } from '@/data/offerCityPages';
 import { situations } from '@/data/situations';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -35,7 +36,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     intentTypes.map((intent) => `/areas/${city.slug}/${intent}`)
   );
 
-  const offerCityRoutes: string[] = offerCityAdsPages.map((page) => page.path);
+  const offerCityRoutes: string[] = [
+    ...offerCityAdsPages.map((page) => page.path),
+    ...offerCityPages.map((city) => offerCityPagePath(city)),
+  ];
   const situationRoutes = situations.map((page) => page.path);
   const citySituationRoutes = citySituations.map((page) => page.path);
   const blogRoutes = blogPosts.map((post) => post.path);
