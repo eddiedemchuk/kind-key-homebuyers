@@ -15,7 +15,7 @@ export const OFFER_CITY_ADS_FORM_ORIGIN = 'google_ads_landing' as const;
 
 export const OFFER_CITY_ADS_TRUST = [
   'BBB A- Rated',
-  'Bought 100+ homes',
+  '500+ homes bought',
   'Close in as little as 7 days',
   'A solution for any situation',
 ] as const;

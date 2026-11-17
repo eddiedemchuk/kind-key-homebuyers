@@ -110,7 +110,7 @@ describe('/offer landing', () => {
     assert.equal(html.includes('Reply STOP to opt out'), true);
     assert.equal(html.includes('Consent is not a condition of purchase'), true);
     assert.equal(html.includes('we pay closing costs'), false);
-    assert.equal(html.includes('Bought 100+ homes'), true);
+    assert.equal(html.includes('500+ homes bought'), true);
     assert.equal(html.toLowerCase().includes('hundreds'), false);
     assert.equal(bar.includes(ADS_TEL), true);
     assert.equal(bar.includes('Call (253) 352-4379'), true);
@@ -183,7 +183,7 @@ describe('/offer landing', () => {
 
     assert.match(html, /Sell a House That Needs Work As-Is/);
     assert.match(html, /needs work/);
-    assert.equal(html.includes('Bought 100+ homes'), true);
+    assert.equal(html.includes('500+ homes bought'), true);
     assert.equal(html.toLowerCase().includes('hundreds'), false);
   });
 });

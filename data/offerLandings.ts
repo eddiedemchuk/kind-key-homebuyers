@@ -60,7 +60,7 @@ export const generalOffer: OfferLandingContent = {
     'Cash for Houses. Cash offer, as-is. No fees, repairs, or cleaning. You pick the closing date.',
   cta: 'Get your cash offer',
   formOrigin: 'google_ads_landing',
-  trustPoints: ['Bought 100+ homes', 'No fees, repairs, or cleaning', 'You pick the closing date'],
+  trustPoints: ['500+ homes bought', 'No fees, repairs, or cleaning', 'You pick the closing date'],
   steps: offerHowItWorks,
   faqs: [
     {
@@ -94,7 +94,7 @@ export const facebookEddieOffer: OfferLandingContent = {
 /** Short claims under the foreclosure headline. Approved claims only. */
 export const foreclosureTrustStrip = [
   'BBB A- Rated',
-  'Bought 100+ homes',
+  '500+ homes bought',
   'Close in as little as 7 days',
   'Cash offer, as-is',
 ] as const;
@@ -249,7 +249,7 @@ export const asIsOffer: OfferLandingContent = {
     'A house that needs work. Cash offer, as-is. No fees, repairs, or cleaning. You pick the closing date.',
   cta: 'Get a cash offer on a house that needs work',
   formOrigin: 'google_ads_as_is',
-  trustPoints: ['Bought 100+ homes', 'No fees, repairs, or cleaning', 'Cash offer within 24 hours'],
+  trustPoints: ['500+ homes bought', 'No fees, repairs, or cleaning', 'Cash offer within 24 hours'],
   steps: offerHowItWorks,
   pageSituations: [
     {
@@ -294,7 +294,7 @@ export const fellThroughOffer: OfferLandingContent = {
   formOrigin: 'google_ads_landing',
   trustPoints: [
     'BBB A- rated',
-    'Bought 100+ homes',
+    '500+ homes bought',
     'Close in as little as 7 days',
     'You pick the closing date',
   ],
