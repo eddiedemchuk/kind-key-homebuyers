@@ -2,11 +2,12 @@ import Image from 'next/image';
 import LeadConnectorChat from '@/components/LeadConnectorChat';
 import { MobileNavButton, MobileNavPanel, MobileNavProvider } from '@/components/MobileNav';
 import OfferCityHeadline from '@/components/OfferCityHeadline';
+import OfferCityTrustBar from '@/components/OfferCityTrustBar';
 import OfferHowItWorks from '@/components/OfferHowItWorks';
+import OfferHowWeFigure from '@/components/OfferHowWeFigure';
 import OfferLeadForm from '@/components/OfferLeadForm';
 import OfferMobileBar, { OfferJumpButton, OfferPhoneLink } from '@/components/OfferMobileBar';
 import OfferPageFooter from '@/components/OfferPageFooter';
-import OfferReviewsSlot from '@/components/OfferReviewsSlot';
 import {
   OFFER_CITY_ADS_COMPARISON,
   OFFER_CITY_ADS_FAQS,
@@ -86,6 +87,7 @@ export default function OfferCityAdsLanding({
             <OfferCityHeadline headline={headline} />
           </h1>
           <p className="mt-2 text-base leading-snug text-text-secondary">{content.subhead}</p>
+          <OfferCityTrustBar />
           <div
             data-offer-form
             data-form-origin={OFFER_CITY_ADS_FORM_ORIGIN}
@@ -107,8 +109,9 @@ export default function OfferCityAdsLanding({
               </li>
             ))}
           </ul>
-          <OfferReviewsSlot />
         </section>
+
+        <OfferHowWeFigure />
 
         <section className="mt-10" aria-labelledby="offer-city-area-heading" data-areas-we-buy>
           <h2 id="offer-city-area-heading" className="text-xl font-bold">

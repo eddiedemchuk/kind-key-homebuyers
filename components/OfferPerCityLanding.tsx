@@ -3,10 +3,10 @@ import LeadConnectorChat from '@/components/LeadConnectorChat';
 import { MobileNavButton, MobileNavPanel, MobileNavProvider } from '@/components/MobileNav';
 import OfferCityTrustBar from '@/components/OfferCityTrustBar';
 import OfferHowItWorks from '@/components/OfferHowItWorks';
+import OfferHowWeFigure from '@/components/OfferHowWeFigure';
 import OfferLeadForm from '@/components/OfferLeadForm';
 import OfferMobileBar, { OfferJumpButton, OfferPhoneLink } from '@/components/OfferMobileBar';
 import OfferPageFooter from '@/components/OfferPageFooter';
-import OfferReviewsSlot from '@/components/OfferReviewsSlot';
 import {
   offerCityHeadline,
   offerCityLocalCopy,
@@ -75,7 +75,6 @@ export default function OfferPerCityLanding({ city }: { city: OfferCityPage }) {
             {offerCitySubhead(city)}
           </p>
           <OfferCityTrustBar />
-          <OfferReviewsSlot />
           <div
             data-offer-form
             data-form-origin={OFFER_CITY_ADS_FORM_ORIGIN}
@@ -95,6 +94,7 @@ export default function OfferPerCityLanding({ city }: { city: OfferCityPage }) {
           </p>
         </section>
 
+        <OfferHowWeFigure />
         <OfferHowItWorks steps={offerHowItWorks} />
         <OfferPageFooter address={address} phone={phone} />
       </div>

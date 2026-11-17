@@ -22,6 +22,8 @@ export default function CashOfferFellThroughPage() {
       formOrigin={fellThroughOffer.formOrigin}
       lockHeadline
       showServiceArea
+      showOfferMath
+      showTrustBar
       trustStrip={fellThroughOffer.trustPoints}
     />
   );
