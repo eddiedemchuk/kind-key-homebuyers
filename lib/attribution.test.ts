@@ -229,6 +229,30 @@ describe('mergeAttribution', () => {
     assert.equal(survived.landing_page, replaced.landing_page);
   });
 
+  it('lets a new gbraid or wbraid replace an earlier click and keeps the same id', () => {
+    const gclid = landing('?gclid=click-1&utm_source=google&utm_medium=cpc');
+    const gbraid = landing('?gbraid=gb-2&utm_source=google&utm_medium=cpc&utm_campaign=ios');
+    const replaced = mergeAttribution(gclid, gbraid, NOW);
+    assert.equal(replaced.gclid, '');
+    assert.equal(replaced.gbraid, 'gb-2');
+    assert.equal(replaced.utm_campaign, 'ios');
+
+    const sameBraid = landing('?gbraid=gb-2');
+    const kept = mergeAttribution(replaced, sameBraid, NOW + 1000);
+    assert.equal(kept.gbraid, 'gb-2');
+    assert.equal(kept.landing_page, replaced.landing_page);
+    assert.equal(kept.utm_campaign, 'ios');
+
+    const wbraid = landing('?wbraid=wb-3&utm_campaign=web');
+    const web = mergeAttribution(kept, wbraid, NOW + 2000);
+    assert.equal(web.wbraid, 'wb-3');
+    assert.equal(web.gbraid, '');
+    assert.equal(web.utm_campaign, 'web');
+
+    const laterDirect = landing('');
+    assert.equal(mergeAttribution(web, laterDirect, NOW + 3000).wbraid, 'wb-3');
+  });
+
   it('lets a later paid click replace an earlier unpaid visit', () => {
     const direct = landing('');
     const paid = landing('?gclid=later&utm_source=google&utm_medium=cpc');
