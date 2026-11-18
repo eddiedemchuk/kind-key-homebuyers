@@ -366,14 +366,23 @@ export function touchFromRequestBody(
   );
 }
 
-function hasNewGclid(existing: AttributionTouch, incoming: AttributionTouch): boolean {
-  const next = incoming.gclid.trim();
-  return next !== '' && next !== existing.gclid.trim();
+function clickIdChanged(existing: string, incoming: string): boolean {
+  const next = incoming.trim();
+  return next !== '' && next !== existing.trim();
+}
+
+/** A new gclid, gbraid, or wbraid is a new Google click. */
+function hasNewGoogleClick(existing: AttributionTouch, incoming: AttributionTouch): boolean {
+  return (
+    clickIdChanged(existing.gclid, incoming.gclid) ||
+    clickIdChanged(existing.gbraid, incoming.gbraid) ||
+    clickIdChanged(existing.wbraid, incoming.wbraid)
+  );
 }
 
 /**
- * A new gclid replaces the stored touch. The same gclid keeps the original
- * landing page. Organic and direct visits never replace a stored click.
+ * A new gclid, gbraid, or wbraid replaces the stored touch. The same click id
+ * keeps the original landing page. Organic and direct visits never replace a stored click.
  */
 export function mergeAttribution(
   existing: AttributionTouch | null,
@@ -381,7 +390,7 @@ export function mergeAttribution(
   now = Date.now()
 ): AttributionTouch {
   if (!existing || isAttributionExpired(existing, now)) return incoming;
-  if (hasNewGclid(existing, incoming)) return incoming;
+  if (hasNewGoogleClick(existing, incoming)) return incoming;
   if (hasPaidClick(existing)) return existing;
   if (hasPaidClick(incoming)) return incoming;
   return existing;
@@ -396,7 +405,10 @@ export function preferStoredTouch(
   const right = second && !isAttributionExpired(second, now) ? second : null;
   if (!left) return right;
   if (!right) return left;
-  if (left.gclid && right.gclid && left.gclid !== right.gclid) {
+  const clickDisagrees = (['gclid', 'gbraid', 'wbraid'] as const).some(
+    (key) => left[key] && right[key] && left[key] !== right[key]
+  );
+  if (clickDisagrees) {
     return Date.parse(left.captured_at) >= Date.parse(right.captured_at) ? left : right;
   }
   const leftPaid = hasPaidClick(left);

@@ -29,9 +29,6 @@ export function updateGoogleConsent(state: GoogleConsentState): void {
   window.gtag('set', 'ads_data_redaction', state === 'denied');
 }
 
-/** Page-view conversion for a /thank-you visit. Not gated on the cookie banner. */
-export const GOOGLE_ADS_THANK_YOU_CONVERSION_SEND_TO = 'AW-17766515185/hcQZCKrs2swbEPGD3pdC';
-
 /** Fired after a successful lead submit. Thank-you repeats it with the same transaction id. */
 export const GOOGLE_ADS_SUBMIT_CONVERSION_SEND_TO = 'AW-17766515185/IeBJCKCujPIbEPGD3pdC';
 

@@ -50,8 +50,9 @@ tracking, and responsive layouts require targeted manual testing.
 5. Confirm repeated requests are limited when both Upstash variables are set.
 6. Confirm reCAPTCHA verification when both reCAPTCHA keys are set.
 7. Confirm GA4 waits for accepted consent when a measurement ID is configured.
-8. Confirm the thank-you flow emits both Google Ads conversion events: the original thank-you
-   conversion and `AW-17766515185/IeBJCKCujPIbEPGD3pdC` after a successful submit.
+8. Confirm a successful submit emits Google Ads conversion
+   `AW-17766515185/IeBJCKCujPIbEPGD3pdC` with a transaction id, and that `/thank-you` repeats
+   only that conversion. It does not fire a page-load conversion.
 9. Review server logs for adapter, SMTP, CAPTCHA, and Redis warnings.
 
 ## Canonical host

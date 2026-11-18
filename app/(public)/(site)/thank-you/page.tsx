@@ -4,7 +4,6 @@ import Script from 'next/script';
 import {
   GOOGLE_ADS_SUBMIT_CONVERSION_SEND_TO,
   GOOGLE_ADS_SUBMIT_CONVERSION_STORAGE_KEY,
-  GOOGLE_ADS_THANK_YOU_CONVERSION_SEND_TO,
 } from '@/lib/analytics';
 
 export const metadata: Metadata = {
@@ -28,25 +27,18 @@ export default function ThankYouPage() {
             if (pendingRaw) pending = JSON.parse(pendingRaw);
           } catch (e) {}
 
-          var userData = {};
-          if (pending && pending.email) userData.email = pending.email;
-          if (pending && pending.phone_number) userData.phone_number = pending.phone_number;
-          if (userData.email || userData.phone_number) {
-            gtag('set', 'user_data', userData);
-          }
-
-          gtag('event', 'conversion', {
-            'send_to': '${GOOGLE_ADS_THANK_YOU_CONVERSION_SEND_TO}',
-            'value': 1.0,
-            'currency': 'USD'
-          });
-
           try {
             if (
               pending &&
               pending.sendTo === '${GOOGLE_ADS_SUBMIT_CONVERSION_SEND_TO}' &&
               pending.transactionId
             ) {
+              var userData = {};
+              if (pending.email) userData.email = pending.email;
+              if (pending.phone_number) userData.phone_number = pending.phone_number;
+              if (userData.email || userData.phone_number) {
+                gtag('set', 'user_data', userData);
+              }
               gtag('event', 'conversion', {
                 'send_to': pending.sendTo,
                 'value': 1.0,

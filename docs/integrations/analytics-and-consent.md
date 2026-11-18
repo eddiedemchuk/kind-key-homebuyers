@@ -49,14 +49,12 @@ granted either way, so GA4 still loads when the banner is absent.
   `AW-17766515185/IeBJCKCujPIbEPGD3pdC` with a transaction id. Before that event, and again on
   `/thank-you` before either conversion event, the tag runs `gtag('set', 'user_data', …)` with
   `email` when the form collected one and `phone_number` in E.164.
-- The thank-you route always fires the page conversion `AW-17766515185/hcQZCKrs2swbEPGD3pdC`.
-  That hit is not gated on the cookie banner. Consent Mode v2 defaults `ad_storage`,
-  `ad_user_data`, `ad_personalization`, and `analytics_storage` to granted, so a pending banner
-  still counts the visit. A stored rejection updates those four flags to denied and turns on
-  `ads_data_redaction`; Google can then model the hit. `url_passthrough` stays on.
-- The thank-you route also repeats `AW-17766515185/IeBJCKCujPIbEPGD3pdC` with the stored
+- `/thank-you` does not fire a page-load conversion. It repeats
+  `AW-17766515185/IeBJCKCujPIbEPGD3pdC` only when a lead submit stored that label with a
   transaction id, so Google Ads counts that submit conversion once if the first hit was lost
-  during navigation.
+  during navigation. Consent Mode v2 defaults `ad_storage`, `ad_user_data`,
+  `ad_personalization`, and `analytics_storage` to granted. A stored rejection updates those four
+  flags to denied and turns on `ads_data_redaction`. `url_passthrough` stays on.
 - Meta pixel `1352513176647290` is an inline script in the document `<head>` on `/offer/facebook`
   and on `/offer` when `src` is `fb` or `fb_static` (any case). The browser runs `fbq('init')` and
   `fbq('track', 'PageView')` while parsing that HTML. The same response includes the noscript
