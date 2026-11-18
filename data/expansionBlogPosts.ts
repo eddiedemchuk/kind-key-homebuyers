@@ -6432,4 +6432,346 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to repipe first. You can say no.',
   }),
+  post('sell-house-with-steep-slope-or-failing-retaining-wall-edgewood-wa', {
+    breadcrumbName: 'Steep slopes in Edgewood',
+    title: 'Selling a House on a Steep Slope or with a Failing Retaining Wall in Edgewood, WA',
+    description:
+      'How Edgewood owners sell a house with a failing retaining wall, a dropped driveway, or a steep-slope letter without a geotechnical report first. KindKey buys as a principal. Not engineering advice.',
+    h1: 'Selling a House on a Steep Slope or with a Failing Retaining Wall in Edgewood, WA',
+    publishedAt: '2026-11-18',
+    intro: [
+      'You can sell an Edgewood house on a steep slope, with a failing retaining wall, a driveway that has dropped, or a letter that uses the word landslide, without hiring a geotechnical professional, rebuilding the wall, or waiting for the city to call the lot stable. ' +
+        office +
+        ' KindKey is not a geotechnical engineer, a surveyor, the City of Edgewood Public Works Department, or the building counter. This article is not engineering advice, not a slope determination, and not legal advice.',
+      'Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. It incorporated on February 28, 1996. Most residents live on North Hill: longer driveways, and shops set back from the street. A smaller share of the city sits in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. A timber wall along a North Hill driveway, a bank that moved above a shop pad, and a valley lot with a crack in a sidewalk are different properties. Bring the address.',
+    ],
+    callout:
+      'You do not have to stabilize the slope, rebuild the wall, or pay for a new geotechnical report before you ask. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'A wall, a bank, and a letter are not the same fact',
+        paragraphs: [
+          'Tell KindKey what you have seen, in plain words, before anyone schedules a visit. It may be a timber wall that leans, a concrete wall with a crack, soil piled against a fence, a driveway that has dropped or opened a gap, a yard with a crack in the ground, a shop pad that is no longer level, water coming out of a bank, or a report a buyer’s inspector or a geotechnical professional already wrote. Some of these houses are still lived in. Some are not. People use the words settling, landslide, and retaining wall for different things. A crack in the house foundation, a pier, or water under the house is the Edgewood foundation guide. A roof leak or water that soaked a room is the Edgewood water-damage guide. This page is the slope, the wall that holds soil, the driveway or yard that moved, and a letter or report that talks about a landslide hazard, a steep slope, or a geotechnical assessment. You can have more than one of those problems. Say which ones you know about. KindKey prices the property in front of us. KindKey will not tell you the wall is cosmetic, that the bank is stable, or that the house is unsafe. A photo of the wall, the driveway, the yard, and any pages you already have is enough to start. If you do not believe the slope or the house is safe to walk, say so. An exterior look can begin the conversation. Do not walk a bank, a wall, or a floor that is not safe just to satisfy a buyer. Furniture and shop contents you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to.',
+          'A retail inspection is a common reason this sale starts. The buyer’s inspector wrote up the wall, the driveway, or movement on a hill lot. The buyer asked for a geotechnical letter or a new wall, the lender would not close, and the sale died. You do not have to complete that list, hire the engineer the report named, or relist the house before KindKey looks. KindKey will not quote a percentage off the price in that failed contract. Anyone who does that without seeing the property is guessing. The Edgewood expired-listing guide is the sale that already died. Cash, in this sale, means KindKey is not waiting on that buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a Pierce County tax bill, a city cost, or a contractor’s bill for a wall you already started.',
+          'North Hill lots are often larger than a Tacoma city lot, with a shop or a shed set back from Meridian or Jovita and a driveway that climbs or drops between the street and the house. The walkthrough has to include the house, the wall, and the outbuildings. Tell us which structure moved, and whether the wall holds the driveway, the shop pad, a neighbor’s yard, or the street. A valley house at the base of the hill is usually a smaller lot. Standing water after rain, a sidewalk crack, and a canyon slope are not the same fact. Do not describe them as the same property. If the wall sits on or near a line you share with a neighbor, say that. KindKey will not survey the line, decide whose wall it is, or draft an easement. The closing agent orders the title report.',
+          'The City of Edgewood’s stormwater materials describe Jovita Creek, in the northeast of the city. They say the drainage basin is approximately 3.1 square miles, that the majority of it extends north of Edgewood into King County, and that approximately 0.97 square mile, 31 percent, of the basin lies within the northeast section of the city. They say that within the city the main stem flows in a steep-sided canyon, that at the mouth of the canyon the stream flows adjacent to Jovita Creek Boulevard before its confluence with the White River, and that the adjacent hill slopes in that canyon are subject to frequent slides caused by runoff from the plateau above, tree falls, unstable slopes, and high flows in the creek. That describes the basin. It is not a finding that your wall failed, that your driveway cracked, or that your lot is a landslide hazard area. If your house is along Jovita Boulevard, say what you have seen in the yard and at the wall. KindKey prices the property in front of us.',
+          'Milton, next door, can fall in King County or Pierce County. Edgewood does not. A mailing address that says Edgewood is not always inside the city. The closing agent confirms the parcel. An Edgewood deed records with the Pierce County Auditor in Tacoma, at 2401 S 35th St, Room 200, Tacoma, WA 98409. The phone that office publishes for questions about requesting recorded documents is (253) 798-7440. The auditor does not decide whether a slope is a landslide hazard area. Do not record a Pierce County deed at the Kitsap County Auditor in Port Orchard, or at the King County Recorder, because someone in the family takes a ferry or because KindKey’s office is in Auburn.',
+        ],
+      },
+      {
+        heading: 'What the landslide chapter says, and what KindKey will not decide',
+        paragraphs: [
+          'Chapter 14.90 EMC is the city’s landslide-hazard chapter. EMC 14.90.010 says the purpose includes protecting human life and health, regulating uses of land in order to avoid damage to structures and property being developed and damage to neighboring land and structures, identifying and mapping active landslide hazard areas, minimizing the ill effects on wetlands and critical fish and wildlife habitat that can result from landslides, and establishing permit requirement and review procedures for development proposals in areas with potential landslides. EMC 14.90.030(A)(1) says that, for the purposes of regulating that chapter, "director" means the Public Works Director or their designee, and "department" means the Public Works Department. KindKey is not that department. KindKey will not map your lot, accept a report, or tell you the city has closed a file. The history note published with EMC 14.90.020, EMC 14.90.030, EMC 14.90.040, and EMC 14.90.050 includes Ord. 17-513 and Ord. 25-0695, 12/23/2025. A code can be amended after that note. Read the section in front of you, or ask the city. KindKey will not tell you what either ordinance did to your parcel.',
+          'EMC 14.90.020(A) says landslide hazard areas are areas potentially subject to mass movement due to a combination of geologic, seismic, topographic, hydrologic, or manmade factors, and that they are identified by the presence of indicators the subsection lists. One listed indicator, in EMC 14.90.020(A)(1), is areas of historic failures, including areas of unstable, old and recent landslides or landslide debris within a head scarp. Another, in EMC 14.90.020(A)(4), is any area with a slope of 40 percent or steeper and with a vertical relief of 15 or more feet. That subsection says that, for the purpose of determining whether a slope is considered a landslide hazard area, the horizontal and vertical distance between the top of slope and the toe of slope are utilized. It also says slopes may be exempted if a qualified geotechnical professional demonstrates that the exemption does not result in an increased risk of landsliding or damage to the subject site, nearby properties, and existing structures, and that any associated hazards to proposed structures must be suitably mitigated. EMC 14.90.020(A)(6) lists areas potentially unstable as a result of rapid stream incision, streambank erosion, including stream channel migration zones. KindKey will not measure a slope, find the top or the toe, or tell you that your bank is or is not one of those indicators. You do not have to hire that professional before KindKey looks.',
+          'EMC 14.90.020(B) describes potential landslide hazard areas, as depicted on the city’s Critical Area GIS database, as areas where the suspected risk of slope instability and landslide is sufficient to require a geological assessment. The criteria include areas that possess one or more of the indicators in subsection A and any adjacent area within a distance of 65 feet. The subsection says these areas include, but are not necessarily limited to, those designated on the database as moderate or steep slope areas. They also include areas shown on the Washington Geological Information Portal, as prepared and maintained by the Washington Department of Natural Resources, that are shown under "WGS-Protocol Landslide Mapping." EMC 14.90.030(A)(2) says the database provides an indication of where potential landslide hazard areas are located, and that the actual presence or location of landslide hazard areas that have not been mapped, but may be present on or adjacent to a site, shall be determined using the geological assessment procedures in the chapter. A screen capture of a map is not a determination. KindKey will not read the database for you and will not tell you a pin on a portal makes the house unsellable or safe. Bring the map or the letter if you already have it. You do not have to order a new one first.',
+          'EMC 14.90.030(B) says a geological assessment is a site investigation process to evaluate the on-site geology affecting a subject property. EMC 14.90.030(B)(1) says a geotechnical professional shall complete that assessment to determine whether a landslide hazard area or potential landslide area exists on or within 65 feet of the site. EMC 14.90.030(B)(1)(a) points to a geotechnical verification, under EMC 14.90.060(A), when a geotechnical professional finds that there is no landslide hazard area within or within 65 feet of the site. That repeated word is the section’s wording. KindKey will not turn it into a measurement of your lot. EMC 14.90.030(B)(1)(b) points to a geotechnical report, under EMC 14.90.060(B), when a geotechnical professional finds that a landslide hazard area exists on or within 65 feet of the proposed project area, or determines that mitigation measures are necessary to construct or develop within a potential landslide hazard area. EMC 14.90.030(B)(3) says a geological assessment of a specific site may be valid for a period of up to five years when the proposed land use activity and surrounding site conditions are unchanged, and that if any environmental conditions associated with the site change during that five-year period, the director may require the applicant to submit an amendment. An old letter in a drawer is not something KindKey will treat as a current city acceptance. KindKey also will not require a new letter before a walkthrough. Acceptance or rejection of an assessment is the department’s work under EMC 14.90.030(B)(4). KindKey will not file the assessment.',
+          'EMC 14.90.050(A) says the buffer width shall be measured on a horizontal plane from a perpendicular line established at the edge of the landslide hazard area limits, both from the top and the toe of the slope, and that a buffer of undisturbed vegetation shall be required. EMC 14.90.050(A)(2) says the required buffer width is the greater amount of the distances described in that chapter: 50 feet from all edges of the active landslide hazard area limits, or the distance from edge of the landslide hazard area as recommended by the geotechnical professional in a geotechnical assessment based on the site-specific conditions. EMC 14.90.050(B) says the department may require a larger buffer width than that distance if any of the cases it lists are identified, including where the adjacent land is susceptible to severe erosion and erosion control measures will not effectively prevent adverse impacts, and where the area has a severe risk of slope failure or downslope stormwater drainage impacts. EMC 14.10.070(D)(1) says that, unless otherwise provided in that title, buildings and other structures shall be set back a minimum of 15 feet from the edge of critical area buffers, or from the edge of the critical area itself where no buffers are required, for wetlands, fish and wildlife habitats, landslide, seismic and erosion hazards. KindKey will not measure a buffer, apply the 15-foot sentence to your house, or tell you a shop is inside it. Chapter 14.80 EMC is flood hazard areas. Chapter 14.100 EMC is seismic hazard areas. Chapter 14.110 EMC is erosion hazard areas. Those chapters are different from chapter 14.90 EMC. A flood question and a slope question can sit on the same lot. KindKey will not tell you which chapter a letter is under. Read the header.',
+          'Two sentences in the performance standards are easy to mix up with a sale. EMC 14.90.040(A)(1) says the removal and disturbance of vegetation and grading activities shall be limited to the area of the approved development and shall not be allowed during the wet season from November 1st until May 1st unless adequate provisions for wet season erosion have been addressed in the geotechnical report and approved by the department. Asking KindKey to look at a house is not grading, and KindKey will not tell you that sentence applies to a walkthrough or to a sale. You do not have to wait until May to request an offer. EMC 14.90.040(A)(2) says surface drainage from developed areas, including downspouts and runoff from paved or unpaved surfaces upslope, shall not be directed through a landslide hazard area or its associated buffer unless it is conveyed in conformance with the provisions that subsection names. A downspout pointed at a bank is a fact to mention. It is not, by itself, a landslide determination. EMC 14.90.040(A)(6) says on-site sewage disposal systems, including drain fields, shall be prohibited within landslide hazard areas and related buffers unless compliant with subsection B of that section. KindKey will not decide whether an existing tank or drainfield is inside that sentence. Many older North Hill and Jovita lots use a septic system, and some use a private well. Others are on public sewer and public water. The city name does not decide it, and a leaning wall does not decide it. On-site sewage questions in Pierce County go to the Tacoma-Pierce County Health Department, at 3629 S D St, Tacoma, WA 98418, main line (253) 649-1500. KindKey does not inspect, pump, or certify a septic system or a well. You do not have to move a drainfield before KindKey looks. The Edgewood septic guide is that page.',
+          'EMC 14.90.020(C)(2) describes stable areas that have been identified as potential landslide hazard areas and then, through the geological assessment process, meet conditions that subsection lists. One of those conditions, in EMC 14.90.020(C)(2)(c), is that adequate engineering or structural measures have been provided in a geotechnical report that mitigates the potential for a future landslide to occur as a result of proposed, current, or past development activity, and that also complies with criteria the subsection lists. EMC 14.90.020(C)(2)(c)(i) says the engineering or structural measures must provide a minimum factor of safety of 1.5 static conditions and 1.1 for dynamic conditions, and that analysis of dynamic (seismic) conditions shall be based on a minimum horizontal acceleration as established by the current version of the International Building Code. EMC 14.90.020(C)(2)(c)(v) says the engineering or structural measures must be completed, inspected and accepted by the city for the area to be deemed stable. KindKey will not calculate a factor of safety, design a wall, or tell you the city has accepted one. A proposal in a report is a different fact from a wall the city has inspected. You do not have to finish that path before you ask for an offer.',
+        ],
+      },
+      {
+        heading: 'A permit, a maintenance sentence, and the disclosure form',
+        paragraphs: [
+          'EMC 18.90.060 is the citywide section on fences, retaining walls, and electric security alarm systems. EMC 18.90.060(B) says that unless exempt pursuant to EMC 15.20.030, a building permit is required for fences and retaining walls, and that for the purposes of permit exemption a free-standing wall is regulated as a fence. EMC 18.90.060(D)(1) says retaining walls may be erected anywhere on a project site not otherwise restricted by critical areas, critical area buffers, areas to remain clear for adequate vehicle sight distance, easements, or other legal instruments, and that if a fill wall is constructed within five feet of any lot line, a fill easement must be granted by the property owner to the abutting parcel or right-of-way prior to final acceptance of said wall. EMC 18.90.060(D)(2) says individual retaining walls may be up to six feet in height, with the exceptions stated there. When located within five feet of the front lot line or within the front setback, whichever is greater, the wall must be no greater than four feet in height. Retaining walls abutting public right-of-way in the Town Center (TC) and Mixed-Use Residential (MUR) zoning districts shall not exceed two feet in height. EMC 18.90.060(D)(3) says the minimum distance between two individual retaining walls shall be two feet, measured from the face of the toe of the upper wall to the back of the top of the lower wall, and that the space shall be landscaped to soften the view of the wall. EMC 18.90.060(C)(2)(b) says that in the case of a fence located on or within two horizontal feet of a retaining wall, the total height shall be measured from the lowest side of the retaining wall to the top of the fence, and that in this case the maximum combined height shall not exceed 10 feet. KindKey will not measure your wall, your fence, or your setback, will not draft a fill easement, and will not tell you the lot is in the Town Center. A fence sitting on a leaning wall is a fact to mention. You do not have to take the fence down before KindKey looks.',
+          'The permit-exemption lists are easy to misread. EMC 15.20.030(C)(2)(h), in the building code, lists retaining walls that comply with the standards in EMC 18.90.060 and do not exceed four feet in height measured from the bottom of the footing to the top of the wall, unless supporting a surcharge or impounding Class I, II or IIIA liquids. It says those walls shall not obstruct the clear line of vision of vehicular traffic approaching the location from any street or driveway. EMC 15.20.030(C)(2)(i) is a different item. It lists roads, bridges, sidewalks, drainage structures, retaining walls, street lighting poles, traffic signal poles, and similar structures regulated, approved, and inspected by the city’s public works department. A wall on a house lot is not that public-works list just because it holds a driveway. EMC 15.30.030(C)(2)(g), in the residential code, lists retaining walls that comply with EMC 18.90.060 and do not exceed four feet in height measured from the bottom of the footing to the top of the wall, unless supporting a surcharge. It includes the same sight-line sentence. It does not use the liquids phrase that EMC 15.20.030(C)(2)(h) uses. EMC 15.20.020(A) says detached one- and two-family dwellings, adult family homes, and townhouses three stories or less in height above grade plane with a separate means of egress, and accessory structures associated with those buildings not more than three stories above grade plane in height, may comply with chapter 15.20 EMC or chapter 15.30 EMC. EMC 15.20.030(B) and EMC 15.30.030(B) both say the exemptions listed in those sections shall not apply when the proposed work is located in any of the critical areas the subsections list, including chapter 14.90 EMC, landslide hazard areas. EMC 15.20.030(A) says an exemption from permit requirements shall not be deemed to grant authorization for any work to be done in violation of other applicable rules, and that an exemption from the building permit requirements of one technical code does not exempt work from the building permit requirements of other technical codes. KindKey will not tell you which chapter your house is under, whether your wall is under four feet, whether it supports a surcharge, what Class I, II or IIIA liquids means for your wall, or whether an exemption survives the critical-area sentence. You do not have to pull a permit, rebuild the wall, or prove an exemption before KindKey looks.',
+          'If you choose to rebuild and then try a listing, Community Development is at Edgewood City Hall, 10440 Dom Calata Way E, Edgewood, WA 98372. The permit line the city publishes is (253) 952-3299. City Hall’s posted hours are Monday through Thursday, 8:30 a.m. to 5:00 p.m. KindKey does not require that visit and will not pull the permit or appear for an inspection. Review under the landslide chapter sits with the Public Works Director or designee, under EMC 14.90.030(A)(1). That is a different desk from a question about who may sign a deed. KindKey will not walk a file between the two.',
+          'A wall that already exists is also a maintenance fact. EMC 15.80.302.7 says accessory structures, including detached garages, storage buildings, carports, fences, and retaining walls, shall be maintained structurally sound and in good repair. KindKey will not decide whether your wall meets that sentence, and KindKey will not apply that sentence to the house foundation. Until the deed records, a city duty that is still yours stays yours. Requesting an offer does not rebuild a wall or answer a notice. If a notice arrives, read the header. The city’s code-compliance page says owners can contact City Hall at (253) 952-3299 or email codeenforcement@cityofedgewood.org. KindKey will not answer the notice or appear at a hearing. The Edgewood code-violations guide is that letter. If the house is empty and the letter is about an open building or a yard, the Edgewood vacant-house guide covers the rest of that maintenance chapter. You do not have to board a window or haul a failed wall away before KindKey looks.',
+          'Washington’s seller disclosure law is chapter 64.06 RCW. RCW 64.06.020 sets out the seller disclosure statement. In section 4, Structural, question 4.E asks whether there has been any settling, slippage, or sliding of the property or its improvements. Question 4.F asks whether there are any defects with the items it lists, and that list includes foundations, driveways, outbuildings, walkways, and exterior walls, among others. A wall that holds a driveway and a crack in the house foundation are two facts. The foundation guide is the house. This page is the slope and the wall. In section 7, Environmental, question 7.A asks whether there have been any flooding, standing water, or drainage problems on the property that affect the property or access to the property. Question 7.C asks whether there is any material damage to the property from fire, wind, floods, beach movements, earthquake, expansive soils, or landslides. Question 7.D asks whether there are any shorelines, wetlands, floodplains, or critical areas on the property. KindKey will not tell you how to mark the boxes, whether a leaning wall is sliding, whether the Jovita Creek basin makes question 7.D a yes, or whether a layer on the city’s database is a critical area on your parcel. Ask a Washington real estate attorney if you are unsure. The closing agent handles the form that applies to your file. Answer with what you actually know. If you do not know whether a past owner built the wall, say that. Selling to a cash buyer is not a reason to leave a known problem off the form.',
+          'The same statute includes a notice. If the residential real property disclosure statement is being completed for new construction which has never been occupied, the seller is not required to complete the questions listed in item 4, Structural, or item 5, Systems and Fixtures. An older Edgewood house someone has lived in is a different file from that notice. KindKey will not tell you the notice applies to your sale. RCW 64.06.010(6) lists a transfer made by the personal representative of the estate of the decedent or by a trustee in bankruptcy among the transfers the chapter does not apply to. RCW 64.06.010(7) lists a transfer in which the buyer has expressly waived the disclosure, and it says that if the answer to any question in the section entitled Environmental would be yes, the buyer may not waive receipt of the Environmental section. KindKey will not tell you that you are one of those signers. If the owner has died, who can sign is a probate or trust question, separate from the wall. KindKey will not file the probate and will not guess which relative can sign. Use the Edgewood probate page when a death is the reason the house is for sale, and the living-trust page if the house is already titled in a trust. The power-of-attorney page is the file when the owner is living and someone else is signing. Do not sign a deed before the authority exists.',
+          'If someone lives in the house, say so. Do not make an occupant leave so a contractor can tear out a wall. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does. The Edgewood tenants page is that file. Ask a Washington attorney if a tenant has already written about the driveway, the wall, or access. You can still ask for an offer while that conversation happens.',
+        ],
+      },
+      {
+        heading: 'Rebuild the wall and relist, or sell the slope as it sits',
+        paragraphs: [
+          'Rebuilding a wall, hiring a geotechnical professional, and seeking a city acceptance can fit if you want to keep the house and you are willing to fund the work. A listing can fit after that, if a broker will take the property and you can host the access. A financed buyer may still stall on the same slope, the same wall, or a different item in the same report. Commission is negotiated in the listing agreement with that broker and is not set by KindKey. Hire a licensed broker in Pierce County if you want the listing. KindKey will not run it, will not choose your engineer or your wall contractor, and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. You do not have to finish the inspector’s list before KindKey looks. The Edgewood major-repairs page is the broader file when the wall is one item on a longer list. The Edgewood acreage guide is the file when the wall sits with a shop, a barn, or more than one parcel. KindKey will not assume the shop is on the same parcel as the house.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house and the slope are safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive from Edgewood does not add a geotechnical report. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need a relative with a key can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, or an assessment. The offer reflects the property as it sits, including the wall and the slope you know about, so it can be less than a retail price for a lot where that work has already been done and accepted. You see the payoffs on the settlement statement before you close. You can say no. The Edgewood as-is page is that direct sale for the house in its current condition.',
+          'Your insurer is your relationship. You can ask KindKey for an offer while a claim is open, after a claim was denied, or when a company has asked about the slope or the wall and you have not decided what to do. KindKey will not tell you whether to wait for a check, whether a policy will renew, or how to assign the proceeds. KindKey does not give insurance advice. If the movement of the ground is sitting next to fire damage, the Edgewood fire-damage guide is that file. The insurance claim stays with your insurer. If a foreclosure notice is in the file with the inspection report, you have a clock the wall does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. The Edgewood foreclosure page is that file. A Pierce County property-tax bill is a different account from a wall bid. KindKey will not calculate the treasurer’s number. The Edgewood property-tax page is that bill. Parts of Edgewood lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary.',
+          'A house in Port Orchard, Bremerton, Silverdale, or Poulsbo is a different city, and a slope in Bainbridge Island, Kingston, Olalla, or Seabeck is a Kitsap County file. Do not use this Edgewood page for a Kitsap house, for a Milton house that may sit in King County, or for a Fife, Puyallup, or Sumner parcel. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the wall, the driveway, or the letter through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question:
+          'Do I have to rebuild a retaining wall or stabilize a slope before KindKey will look?',
+        answer:
+          'No. KindKey buys Edgewood houses with leaning walls, dropped driveways, and steep-slope or landslide letters as they sit. You do not have to hire a geotechnical professional, pull a City of Edgewood permit, or finish an inspection list first. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Will KindKey tell me whether my lot is a landslide hazard area?',
+        answer:
+          'No. Chapter 14.90 EMC is the city’s landslide-hazard chapter, and EMC 14.90.030 assigns review of that chapter to the Public Works Director or designee. KindKey does not measure slopes, read the city’s Critical Area GIS database for you, or decide whether a wall meets EMC 15.80.302.7. Bring any letter or report you already have. You can still request an offer.',
+      },
+      {
+        question:
+          'The house is also on septic, or a tenant still lives there. Do I have to solve that first?',
+        answer:
+          'No. Tell us what you know. EMC 14.90.040(A)(6) contains a sentence about on-site sewage systems, including drain fields, in landslide hazard areas and related buffers. KindKey will not decide whether it applies to your tank. A drainfield question goes to the Tacoma-Pierce County Health Department at (253) 649-1500. Do not make an occupant leave so a contractor can tear out a wall. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. You can still request a cash offer. You can say no.',
+      },
+      {
+        question: 'An inspection named the wall, or a foreclosure notice arrived. Can I still ask?',
+        answer:
+          'Yes. You do not have to finish the inspector’s list before KindKey looks. On the seller disclosure in RCW 64.06.020, question 4.E asks about settling, slippage, or sliding, and question 7.C asks about material damage from landslides, among other causes. KindKey will not tell you how to mark them. If a foreclosure notice is also in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, Meridian, and the valley.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell a house as-is in Edgewood',
+        description: 'The wall and the slope can stay as they are.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/edgewood/sell-my-house-fast',
+        label: 'Sell my house fast in Edgewood',
+        description: 'A direct sale without a geotechnical report on the calendar.',
+      },
+      {
+        href: '/blog/sell-my-house-fast-for-cash-edgewood',
+        label: 'Sell fast for cash in Edgewood',
+        description: 'The direct-sale steps once you decide to sell as-is.',
+      },
+      {
+        href: '/blog/sell-house-with-foundation-problems-edgewood-wa',
+        label: 'Foundation problems in Edgewood',
+        description: 'A crack in the house, a pier, or water under the floor.',
+      },
+      {
+        href: '/blog/sell-water-damaged-house-edgewood-wa',
+        label: 'Water damage in Edgewood',
+        description: 'A roof leak or a soaked room, rather than the bank itself.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description: 'A drainfield question is a different file from the wall.',
+      },
+      {
+        href: '/blog/sell-house-needing-repairs-edgewood-wa',
+        label: 'Major repairs in Edgewood',
+        description: 'When the wall is one item on a longer list.',
+      },
+      {
+        href: '/blog/sell-house-after-expired-listing-edgewood-wa',
+        label: 'Expired listings in Edgewood',
+        description: 'When an inspection named the slope and the buyer walked.',
+      },
+      {
+        href: '/blog/sell-hoarder-house-on-acreage-edgewood-wa',
+        label: 'Heavy-fixer houses on acreage in Edgewood',
+        description: 'A shop, a yard, and a wall on the same North Hill lot.',
+      },
+      {
+        href: '/blog/sell-inherited-acreage-with-outbuildings-edgewood-wa',
+        label: 'Inherited acreage in Edgewood',
+        description: 'When the wall sits with a shop or more than one parcel.',
+      },
+      {
+        href: '/areas/edgewood/sell-hoarder-house',
+        label: 'Heavy-repair houses in Edgewood',
+        description: 'Contents can stay. You do not have to empty the yard.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'The overview for houses that need more than a cleaning.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'When the city has written about the wall or the building.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-edgewood-wa',
+        label: 'Code violations in Edgewood',
+        description: 'The city letter, separate from a geotechnical report.',
+      },
+      {
+        href: '/blog/sell-house-with-unpermitted-work-edgewood-wa',
+        label: 'Unpermitted work in Edgewood',
+        description: 'When a wall or a pad was built and the permit was not closed.',
+      },
+      {
+        href: '/blog/sell-house-with-stalled-remodel-edgewood-wa',
+        label: 'Stalled remodels in Edgewood',
+        description: 'A project that stopped, including work on a shop pad.',
+      },
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Vacant houses in Edgewood',
+        description: 'When nobody is there to watch a wall or a driveway.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-edgewood-wa',
+        label: 'Vacant houses in Edgewood',
+        description: 'An empty house can still have a wall that moved.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-tenants',
+        label: 'Houses with tenants in Edgewood',
+        description: 'Do not make an occupant leave so a wall can be rebuilt.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/blog/sell-house-with-tenants-edgewood-wa',
+        label: 'Tenants in Edgewood',
+        description: 'The rental file, including who still lives there.',
+      },
+      {
+        href: '/areas/edgewood/sell-inherited-probate-house',
+        label: 'Inherited houses in Edgewood',
+        description: 'When the slope and the signer are both open questions.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the condition.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Probate houses in Edgewood',
+        description: 'Who can sign, when the owner has died.',
+      },
+      {
+        href: '/blog/sell-house-in-a-living-trust-edgewood-wa',
+        label: 'Living trusts in Edgewood',
+        description: 'When the house is already titled in a trust.',
+      },
+      {
+        href: '/blog/sell-house-with-power-of-attorney-edgewood-wa',
+        label: 'Power of attorney in Edgewood',
+        description: 'When someone else is signing while the owner is in care.',
+      },
+      {
+        href: '/blog/selling-a-house-during-divorce-edgewood-wa',
+        label: 'Divorce sales in Edgewood',
+        description: 'When both names are on the title and the wall still needs a decision.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Foreclosure in Edgewood',
+        description: 'When a trustee’s notice is in the file with the report.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'A loan deadline is separate from the wall.',
+      },
+      {
+        href: '/blog/behind-on-property-taxes-edgewood-wa',
+        label: 'Property taxes in Edgewood',
+        description: 'A Pierce County tax bill is a different account from a wall bid.',
+      },
+      {
+        href: '/areas/edgewood/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Edgewood',
+        description: 'When fire damage is in the file with the slope.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The insurance claim stays with your insurer.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-edgewood-wa',
+        label: 'Fire damage in Edgewood',
+        description: 'The claim, separate from a retaining wall.',
+      },
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description: 'The next city west. Milton can sit in King County or Pierce County.',
+      },
+      {
+        href: '/areas/fife',
+        label: 'Sell a house in Fife',
+        description: 'West of Edgewood. Confirm the parcel before you use this page.',
+      },
+      {
+        href: '/areas/puyallup',
+        label: 'Sell a house in Puyallup',
+        description: 'The city to the south, if the parcel is actually there.',
+      },
+      {
+        href: '/areas/sumner',
+        label: 'Sell a house in Sumner',
+        description: 'The valley city to the east.',
+      },
+      {
+        href: '/areas/auburn',
+        label: 'Sell a house in Auburn',
+        description: 'KindKey’s office city. Most of Auburn is in King County.',
+      },
+      {
+        href: '/areas/port-orchard',
+        label: 'Sell a house in Port Orchard',
+        description: 'Kitsap County. Do not use the Edgewood page for this parcel.',
+      },
+      {
+        href: '/areas/bremerton',
+        label: 'Sell a house in Bremerton',
+        description: 'Kitsap County. A different city from Edgewood.',
+      },
+      {
+        href: '/areas/silverdale',
+        label: 'Sell a house in Silverdale',
+        description: 'Unincorporated Kitsap County. Confirm the address.',
+      },
+      {
+        href: '/areas/poulsbo',
+        label: 'Sell a house in Poulsbo',
+        description: 'Kitsap County. A different city from Edgewood.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what the wall, the driveway, or the letter shows. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood offer with the wall and the slope left as they are',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to rebuild the wall first. You can say no.',
+  }),
 ];
