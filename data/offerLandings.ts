@@ -31,6 +31,12 @@ export interface OfferLandingContent {
   situationHeading?: string;
 }
 
+/** Approved closing benefits. Exact wording only. */
+export const offerApprovedBenefits = [
+  'The number we offer is the number we close on',
+  'We help with moving',
+] as const;
+
 /** Same three steps on every paid offer page. */
 export const offerHowItWorks: OfferStep[] = [
   {

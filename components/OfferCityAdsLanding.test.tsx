@@ -307,6 +307,14 @@ describe('Google Ads city offer pages', () => {
       assert.equal(html.includes('Tell us about the house'), true, entry.content.path);
       assert.equal(html.includes('Get a cash offer within 24 hours'), true, entry.content.path);
       assert.equal(html.includes('You pick the closing date'), true, entry.content.path);
+      assert.equal(
+        html.includes('The number we offer is the number we close on'),
+        true,
+        entry.content.path
+      );
+      assert.equal(html.includes('We help with moving'), true, entry.content.path);
+      assert.equal(lower.includes('rent-back'), false, entry.content.path);
+      assert.equal(lower.includes('market snapshot'), false, entry.content.path);
       assert.equal(html.includes('href="/about"'), true, entry.content.path);
       assert.equal(html.includes('href="/contact"'), true, entry.content.path);
       assert.equal(html.includes('href="/privacy"'), true, entry.content.path);

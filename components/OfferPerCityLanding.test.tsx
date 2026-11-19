@@ -75,6 +75,10 @@ describe('per-city offer pages', () => {
       assert.match(html, /500\+ homes bought/);
       assert.match(html, /BBB A- rated/);
       assert.match(html, /We close on the date you pick/);
+      assert.match(html, /The number we offer is the number we close on/);
+      assert.match(html, /We help with moving/);
+      assert.equal(lower.includes('rent-back'), false, city.slug);
+      assert.equal(lower.includes('market snapshot'), false, city.slug);
       assert.match(html, /data-offer-trust-bar/);
       assert.match(html, /How we figure your offer/);
       assert.match(html, /4\.6 Stars on Google \(18 reviews\)/);

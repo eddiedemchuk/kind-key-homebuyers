@@ -72,6 +72,10 @@ describe('/offer landing', () => {
     assert.match(html, /Tell us about the house/);
     assert.match(html, /Get a cash offer within 24 hours/);
     assert.match(html, /You pick the closing date/);
+    assert.match(html, /The number we offer is the number we close on/);
+    assert.match(html, /We help with moving/);
+    assert.equal(html.toLowerCase().includes('rent-back'), false);
+    assert.equal(html.toLowerCase().includes('market snapshot'), false);
     assert.match(html, /href="\/about"/);
     assert.match(html, /href="\/contact"/);
     assert.match(html, /KindKey Home Buyers LLC/);
@@ -176,6 +180,12 @@ describe('/offer landing', () => {
       assert.equal(html.includes('data-offer-situations'), false, content.formOrigin);
       assert.equal(html.includes('data-page-situations'), true, content.formOrigin);
       assert.equal(html.includes('data-how-it-works'), true, content.formOrigin);
+      assert.equal(
+        html.includes('The number we offer is the number we close on'),
+        true,
+        content.formOrigin
+      );
+      assert.equal(html.includes('We help with moving'), true, content.formOrigin);
       assert.equal(html.includes('House with tenants'), false, content.formOrigin);
       assert.equal(html.includes('Tax delinquent'), false, content.formOrigin);
       assert.equal(html.toLowerCase().includes('showings'), false, content.formOrigin);
