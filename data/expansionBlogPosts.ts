@@ -6774,4 +6774,273 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to rebuild the wall first. You can say no.',
   }),
+  post('sell-fire-damaged-house-port-orchard-wa', {
+    breadcrumbName: 'Fire damage in Port Orchard',
+    title: 'Selling a Fire-Damaged House in Port Orchard, WA',
+    description:
+      'How Port Orchard owners sell a fire-damaged or smoke-damaged house as-is. South Kitsap Fire and Rescue responds. City and county permits differ. KindKey buys as a principal. Not insurance advice.',
+    h1: 'Selling a Fire-Damaged House in Port Orchard, WA',
+    publishedAt: '2026-11-19',
+    intro: [
+      'You can sell a fire-damaged house in Port Orchard without rebuilding the kitchen, replacing smoke-stained drywall, boarding the windows, pulling a reconstruction permit, or waiting for an insurance check. ' +
+        office +
+        ' KindKey is not South Kitsap Fire and Rescue, the City of Port Orchard Department of Community Development, the Kitsap County permit counter, or an insurance adjuster. This article is not insurance advice.',
+      'Port Orchard is an incorporated city and the Kitsap County seat, on Sinclair Inlet. Downtown and Bay Street, Annapolis, Mile Hill, the Bethel and Sedgwick corridors, and McCormick Woods are names people use. Manchester, Southworth, and Olalla are nearby and unincorporated. A Port Orchard mailing address is not the city limit. Bremerton is across the inlet and is a different city. A fire in Edgewood is a Pierce County file. Do not use this page for that house.',
+    ],
+    callout:
+      'You do not have to rebuild, pull a permit, or wait for the insurance check before you ask. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'Who responded, and which counter the letter belongs to',
+        paragraphs: [
+          'Tell KindKey what burned before anyone schedules a visit. It may be a kitchen, a garage, a detached shop, smoke pulled through the ducts, a roof with a tarp, a boarded window, or water the hoses left in the floors. Some of these houses are still lived in. Some are not. A fire the family already put out, with no city letter, is still a house KindKey will look at. You do not need a notice, a contractor bid, or a cleared certificate of occupancy before you ask. Photos of the room, the roof, and any posting are enough to start. If you do not believe the floor or the roof is safe to walk, say so. An exterior look can begin the conversation. Do not go inside a structure that is not safe just to satisfy a buyer. Furniture and belongings you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to.',
+          'South Kitsap Fire and Rescue publishes its stations on its stations page. That page lists headquarters, Station 8, at 1974 Fircrest Drive SE, Port Orchard, WA 98366, and labels it a career station. The same page publishes the business line (360) 871-2411 and info@skfr.org, with business hours of Monday through Thursday, 9:00 a.m. to 4:00 p.m., and Friday, 9:00 a.m. to 12:00 p.m. Station 9 is at 7433 SE Mile Hill Drive, Port Orchard, WA 98366, and is also labeled a career station. Station 11 is at 6249 Bethel RD SE, Port Orchard, WA 98367. Station 31 is at 200 Tremont ST, Port Orchard, WA 98366. Station 17 is at 7990 McCormick Woods DR SW, Port Orchard, WA 98367. Station 12 is at 8696 Olalla Valley RD SE, Port Orchard, WA 98367. Station 16 is at 4058 W. State Hwy 3, with a Bremerton mailing address, 98312. KindKey is not that department and does not interpret a run report. A station address with a Port Orchard ZIP is not a finding that your parcel is inside the city.',
+          'The district’s own descriptions name the City of Port Orchard among the places it serves, and they also name communities outside a single city hall. The 2025 operating budget’s district-map section lists the City of Port Orchard, Orchard Heights, Retsil, Manchester, Olalla, Burley, Glenwood, Sunnyslope, Navy Yard City, and Gorst, and it places the headquarters station in the Orchard Heights neighborhood. A levy sheet on the same site names the city and parts of unincorporated Kitsap County, including Olalla, Burley, Glenwood, McCormick Woods, Manchester, and Rocky Point. Those lists are not identical, and neither list is a survey of your lot. KindKey will not tell you from a neighborhood name whether the parcel is inside the city. Manchester, Southworth, Olalla, Navy Yard City, and Gorst are unincorporated. Southworth is not on those two lists. Kingston, Seabeck, and Silverdale are not Port Orchard. Read who responded, and read the header on any letter that followed.',
+          'Inside the city, a rebuild permit is a City of Port Orchard matter. The Department of Community Development is responsible for building and fire permits, and the permit center publishes a physical address of 720 Prospect Street, Port Orchard, WA 98366, a mailing address of 216 Prospect Street, and the phone (360) 874-5533, email permitcenter@portorchardwa.gov. The city’s published hours for that counter are Monday through Friday, 8 a.m. to 4:30 p.m. The footer on the city’s pages also lists 216 Prospect Street and (360) 876-4407, with the same weekday hours. Those are two published numbers. Use the number printed on the letter you have. KindKey will not pull the permit, meet a reviewer, or appear for an inspection. You do not need a reconstruction permit before KindKey looks.',
+          'A fire outside the city limits, including a house in Manchester, Southworth, Olalla, Kingston, Seabeck, or Silverdale, is not a City of Port Orchard permit. Unincorporated Kitsap County permits go through the Kitsap County Department of Community Development, at 619 Division Street, 2nd Floor, Port Orchard, WA 98366, phone (360) 337-5777. That office sits in Port Orchard because Port Orchard is the county seat. The street address does not make the parcel a city parcel. The Silverdale fire guide is the Central Kitsap page. Central Kitsap Fire and Rescue is a different department from South Kitsap Fire and Rescue. A fire inside the City of Bremerton is a Bremerton Fire Department call, not this page. A fire in Poulsbo or on Bainbridge Island is a different city. A fire in Edgewood is East Pierce Fire & Rescue. East Pierce’s 2022 standards of cover list Station 118 at 10105 24th Street E in Edgewood. Do not take an Edgewood letter to the Prospect Street counter, and do not take a Port Orchard letter to Edgewood City Hall at 10440 Dom Calata Way E.',
+        ],
+      },
+      {
+        heading: 'What the unfit-building chapter says about a fire',
+        paragraphs: [
+          'Chapter 20.212 of the Port Orchard Municipal Code is the dangerous and unfit dwellings, buildings, and structures chapter. It applies when the city uses it. A kitchen fire with no letter is not, by itself, a case under that chapter. POMC 20.212.020 defines "director" as the director of the department of community development or public works and their designee or designees. KindKey is not that director. The city’s code-enforcement page says an investigation begins only after a written complaint, and it publishes codeenforcement@portorchardwa.gov with the Prospect Street addresses and (360) 874-5533. That page says code enforcement does not handle landlord-tenant conflicts, foreclosure, trespass, or a septic or well question. It points septic, well, sanitation, and rodent questions to the Kitsap Public Health District at (360) 728-2235, and electrical permits to the Washington Department of Labor and Industries at (360) 902-5800. A fire can leave an electrical question and a sewage question on the same lot. KindKey is none of those offices and will not open the complaint for you.',
+          'POMC 20.212.040 says the director may determine that a building is dangerous or unfit for occupancy or other use if conditions exist that the section describes, and that the conditions may include the listed items, without limitations. POMC 20.212.040(4) lists any portion damaged by fire, earthquake, wind, flood, deterioration, neglect, or any other cause, to such an extent that the structural strength or stability is materially less than it was before the damage and is less than the minimum requirements of the building code for new buildings of similar structure, purpose, or location. POMC 20.212.040(15) lists a building the fire authority determines to be a fire hazard because of damage, a lack of fire-resistive construction or fire-protection systems, faulty electric wiring or gas connections or mechanical systems, or another cause that subsection names. POMC 20.212.040(17) lists roofing, siding, vents, or other protective components that are damaged or otherwise not functioning to keep moisture out of interior materials that are not meant to be wet. POMC 20.212.040(11) includes a building damaged by fire, among other causes, when the result meets conditions that subsection lists, including an attractive nuisance dangerous to children. KindKey will not measure strength, decide that the fire authority has made a determination, or tell you the house meets any of those sentences. Water from putting the fire out is a fact to mention. It is not, by itself, a city determination.',
+          'If the director does open a case, the timeline in the chapter is the city’s, not KindKey’s. POMC 20.212.050 says that if a preliminary investigation finds the place dangerous or unfit, the director issues a complaint, and that the complaint contains notice of a hearing before the director not less than 10 days nor more than 30 days after service. It says the complaint is served, posted on the property, and filed with the Kitsap County auditor, and that the filing has the same force and effect as other lis pendens notices provided by law. POMC 20.212.060 says the order can require repair, alteration, improvement, vacation, or closure, or removal or demolition, on the standards in POMC 20.212.040. If no appeal is filed, the order is final and a copy is filed with the auditor. POMC 20.212.080 says that, in accordance with RCW 35.80.030(1)(g), an owner or other party in interest may file a notice of appeal with the city clerk within 30 days from service and posting of the findings and order, for a hearing before the hearing officer. It also says enforcement of the order is suspended during that appeal, except emergency measures. The same section says that, in accordance with RCW 35.80.030(2), a person affected by the hearing officer’s decision may petition the superior court within 30 days after posting and service of that decision. KindKey will not count any of those days, file the appeal, record the complaint, or appear at the hearing. If the paper has a hearing, a fine, or an order to vacate, talk with a Washington attorney before you rely on a sale to solve it. This article is not legal advice. The Kitsap vacant-house guide walks the same hearing path for an empty house. A fire and a vacancy can be the same building. They are still your letter to read.',
+          'Two later sections are easy to mix up with a sale. POMC 20.212.070 says the director may order the building, or a portion of it, demolished and not repaired in circumstances that section lists. One, in POMC 20.212.070(1)(a), is an estimated repair cost of more than 50 percent of the appraised or estimated replacement value. Another, in POMC 20.212.070(1)(b), is damage or deterioration, exclusive of the foundation, to 33 percent or more of its supporting members, or 50 percent of its nonsupporting members, enclosing or outside walls or coverings. POMC 20.212.070(2) says the director uses the square-foot method in the Marshall and Swift Residential Cost Handbook, latest edition, or a method the director deems comparable, when estimating replacement value. POMC 20.212.070(4)(c) says that if the extent of damage cannot be ascertained from a visual inspection, the director shall assume the relative extent of damage in the observable portion exists in the unobserved portions. KindKey will not run that estimate, apply those percentages, or tell you the city has ordered demolition. A number in a contractor’s bid is not that determination. You do not have to demolish the house before KindKey looks.',
+          'POMC 20.212.110 says that when the director finds an imminent hazard, the director may, without a prior notice and order, take immediate action to vacate, stabilize, or secure the building, and shall issue a complaint within five working days after that work is completed. The same section says a notice the director posts, declaring a building unsafe or unfit to enter or occupy, may be removed only by the director or designee, or with the director’s express approval, and that a person who removes, alters, defaces, covers, or otherwise renders that notice ineffective without that approval shall be guilty of a misdemeanor. Leave the posting where the city put it. KindKey will not tell you to pull it down and will not remove it. POMC 20.212.180(1) states a civil-infraction penalty of $250, not including statutory penalties, per violation. POMC 20.212.170(2) says each day a violation continues is a separate offense. POMC 20.212.180(2) says a violation may also be a misdemeanor punishable by a fine of not more than $1,000, or by imprisonment for not more than 90 days, or by both. KindKey will not tell you that any of those amounts is what you owe, will not count the days, and will not tell you which sentence applies. Ask a Washington attorney if a notice is in the file.',
+          'POMC 20.212.130 says the cost of repairs, alterations, vacating and closing, removal, demolition, or other correction the director causes is assessed against the real property unless it is paid first. It cites RCW 35.80.030(1)(h) for a lien of equal rank with state, county, and municipal taxes, and it says that after the director certifies the amount, the county treasurer enters it on the tax rolls. KindKey does not promise that a Port Orchard cost disappears when you sign. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement, prepared by the closing agent, is where you see them. POMC 20.212.030(1)(d) says the director may direct a utility to suspend service to a building deemed dangerous or unfit under the chapter. If the power or the water is already off, say so. KindKey will not call the utility to turn it back on as a condition of looking. Until the deed records, a city duty that is still yours stays yours. Asking for an offer does not rebuild the house, remove a posting, or answer a complaint.',
+        ],
+      },
+      {
+        heading: 'Insurance, a tenant, a death, or a trustee’s date',
+        paragraphs: [
+          'Your insurer is your relationship. You can ask KindKey for an offer while a claim is open, paused, denied, or already settled. KindKey will not tell you whether to wait for the check, whether to cash it, how to assign the proceeds, or what the policy requires while the house sits empty or without power. KindKey does not give insurance advice. Talk with your insurer. If the paperwork is unclear, talk with a Washington attorney. A retail buyer using a mortgage often cannot close while the fire damage is still open. Cash, in this sale, means KindKey is not waiting on that buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a Kitsap County tax bill, a city cost, or a contractor’s bill for work you already started.',
+          'Washington’s seller disclosure law is chapter 64.06 RCW. RCW 64.06.020 sets out the seller disclosure statement. In section 7, Environmental, question 7.C asks whether there is any material damage to the property from fire, wind, floods, beach movements, earthquake, expansive soils, or landslides. Question 7.E asks whether there are any substances, materials, or products in or on the property that may be environmental concerns, such as asbestos, formaldehyde, radon gas, lead-based paint, fuel or chemical storage tanks, or contaminated soil or water. KindKey will not tell you how to mark either box, whether smoke in the ducts is material damage, whether a shop fire that did not reach the house is a yes, or whether an older ceiling is one of the materials in question 7.E. Ask a Washington real estate attorney if you are unsure. The closing agent handles the form that applies to your file. Answer with what you actually know. Selling to a cash buyer is not a reason to leave a known fire off the form.',
+          'If someone still lives in the house, say so. Do not make an occupant leave so the house looks empty or so a contractor can start a tear-out. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does. The Port Orchard tenants page is that file. The city’s code-enforcement page says landlord-tenant conflicts are outside its work. Ask a Washington attorney if a tenant has already written about the fire, the heat, or a place to stay. You can still ask for an offer while that conversation happens.',
+          'If the owner died, the person who can sign is a probate question, whether the fire came before the death or after it. KindKey will not file the probate and will not guess which relative can sign. A decedent who lived in Port Orchard lived in Kitsap County. The superior court sits in Port Orchard, at 614 Division Street. The Kitsap County Clerk publishes the clerk’s office at 614 Division Street, Room 202, Port Orchard, WA 98366, phone (360) 337-7164, with mailing address 614 Division Street, MS-34. Do not open the estate at the Tacoma or Seattle courthouse because the family takes the ferry. Ask a Washington attorney before anyone signs a deed. The Bremerton and Kitsap probate guide is the signature page for this county. Accept an offer only when your attorney says the signer is clear.',
+          'If a trustee’s notice arrived with the fire, you have a clock the insurance claim does not pause. Asking for an offer does not postpone the trustee. Read the Kitsap foreclosure guide, and talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. Deeds for a Kitsap house record with the Kitsap County Auditor in Port Orchard. The auditor’s mailing address is 614 Division St., MS-31, Port Orchard, WA 98366. The physical address the auditor publishes is 619 Division St., Port Orchard, WA 98366. Recording’s published phone is (360) 337-4935. The auditor’s published hours are Monday through Friday, 8:00 a.m. to 4:30 p.m. The auditor does not close an insurance claim and does not decide a fire-hazard question. Do not record a Kitsap deed at the Pierce County Auditor in Tacoma, or at the King County Recorder, because KindKey’s office is in Auburn. An Edgewood deed records in Pierce County. The closing agent confirms the parcel.',
+        ],
+      },
+      {
+        heading: 'Rebuild and list, or sell the fire damage as it sits',
+        paragraphs: [
+          'Rebuilding can fit if you want to keep the house and you can fund the work. A listing can fit after the house is safe to show and someone local can host the access. A financed buyer may still stall on the same fire, the same roof, or a different item in the same report. Commission is negotiated in the listing agreement with that broker and is not set by KindKey. Hire a licensed broker in Kitsap County if you want the listing. KindKey will not run it, will not choose your contractor, and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. You do not have to finish an inspector’s list, or relist a sale that already died, before KindKey looks.',
+          'Some older and edge lots in and around Port Orchard use a septic system, and some use a private well. Others are on public sewer and public water. The city name does not decide it, and water from the fire hoses does not make KindKey the health department. On-site sewage questions in Kitsap County go to the Kitsap Public Health District at 345 6th Street, Suite 300, Bremerton, WA 98337, phone (360) 728-2235. KindKey does not inspect, pump, or certify a septic system or a well. You do not have to repair a tank or a drainfield before KindKey looks. The Kitsap septic guide is that page. A detached garage or a shop that burned, with the house still standing, is still a property to describe. Tell us which structure burned. You do not have to demolish the outbuilding first.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The ferry and the Tacoma Narrows do not add a repair requirement. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need a relative with a key, or who are waiting on an attorney for authority to sign, can ask for longer. ' +
+            closing +
+            ' The offer reflects the house as it sits, including the fire, the smoke, and the water you know about, so it can be less than a retail price for a house where that work has already been done. You see the payoffs on the settlement statement before you close. You can say no. The Port Orchard as-is page is that direct sale for the house in its current condition.',
+          'A house in Silverdale is a Central Kitsap Fire and Rescue call. A house in Bremerton is a Bremerton Fire Department call. Poulsbo, Kingston, Seabeck, and Bainbridge Island are not this page. Olalla is named in the South Kitsap district, and it is still unincorporated, so a permit there is the county’s and not the City of Port Orchard’s. A house in Edgewood, Fife, or Sumner is a Pierce County file. Milton can sit in King County or Pierce County. A house in Auburn, where KindKey’s office is, is mostly King County and is covered in the Auburn fire guide and the King and Pierce County fire guide. Do not use this Port Orchard page for those parcels. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of what burned through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell my Port Orchard house before the insurance claim is paid?',
+        answer:
+          'Yes. You can ask KindKey for a cash offer while a claim is open, paused, denied, or already settled. KindKey does not advise you on the claim. Talk with your insurer, and with a Washington attorney if you are assigning claim rights. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Do I need a City of Port Orchard rebuild permit before KindKey will look?',
+        answer:
+          'No. You do not have to pull a reconstruction permit, finish repairs, or clear a certificate of occupancy first. If the parcel is inside the city and you choose to rebuild, the permit center publishes 720 Prospect Street and (360) 874-5533. A house outside the city limits is a Kitsap County permit, at 619 Division Street, phone (360) 337-5777. KindKey will not pull either permit.',
+      },
+      {
+        question:
+          'The mailbox says Port Orchard, but the house is in Olalla or Manchester. Is this the right page?',
+        answer:
+          'Not for the permit or the code letter. Olalla and Manchester are unincorporated Kitsap County. A Port Orchard ZIP does not put the parcel inside the city. The stations page lists Station 12 at 8696 Olalla Valley RD SE, with a Port Orchard mailing address. Manchester is named in the district’s published service area. KindKey will not draw the city limit from the mailbox. Read the header. A city case uses chapter 20.212 of the Port Orchard Municipal Code. A county case does not. You can still request a cash offer. Call (206) 519-5463 or use the cash-offer form.',
+      },
+      {
+        question:
+          'A notice is posted on the house, or a foreclosure letter arrived. Can I still ask?',
+        answer:
+          'Yes. Leave a city posting where it is. POMC 20.212.110 says a notice the director posts may be removed only with the director’s approval, and it describes removal without that approval as a misdemeanor. KindKey will not tell you the posted house meets the chapter, and KindKey will not count a fine. If a foreclosure notice is also in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. You can say no.',
+      },
+      {
+        question: 'Is KindKey a real estate agent?',
+        answer:
+          'No. KindKey Home Buyers LLC buys houses directly as a principal. It does not list houses or represent sellers. If you want a listing, hire a licensed broker in Kitsap County.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/port-orchard',
+        label: 'Sell a house in Port Orchard',
+        description: 'Kitsap County seat. Downtown, Annapolis, Mile Hill, and McCormick Woods.',
+      },
+      {
+        href: '/areas/port-orchard/sell-house-as-is',
+        label: 'Sell a house as-is in Port Orchard',
+        description: 'The fire damage can stay as it is.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/port-orchard/sell-my-house-fast',
+        label: 'Sell my house fast in Port Orchard',
+        description: 'A direct sale without a rebuild on the calendar.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The overview. The insurance claim stays with your insurer.',
+      },
+      {
+        href: '/areas/port-orchard/sell-vacant-house',
+        label: 'Vacant houses in Port Orchard',
+        description: 'Many fire-damaged houses are empty.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-kitsap-county',
+        label: 'Vacant houses in Kitsap County',
+        description: 'The hearing path under Port Orchard chapter 20.212, and the county rules.',
+      },
+      {
+        href: '/areas/port-orchard/sell-house-with-code-violations',
+        label: 'Code violations in Port Orchard',
+        description: 'When the city has already written about the building.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-port-orchard',
+        label: 'Code violations in Port Orchard',
+        description: 'City, county, and health-district letters are different.',
+      },
+      {
+        href: '/areas/port-orchard/sell-inherited-probate-house',
+        label: 'Inherited houses in Port Orchard',
+        description: 'When the fire and the signer are both open questions.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the condition.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-bremerton',
+        label: 'Probate in Bremerton and Kitsap County',
+        description: 'The court sits in Port Orchard. Ask an attorney who can sign.',
+      },
+      {
+        href: '/areas/port-orchard/sell-house-with-tenants',
+        label: 'Houses with tenants in Port Orchard',
+        description: 'Do not make an occupant leave because of the fire.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/blog/sell-house-with-tenants-bremerton-wa',
+        label: 'Tenants in Bremerton',
+        description: 'A different city across Sinclair Inlet.',
+      },
+      {
+        href: '/areas/port-orchard/sell-hoarder-house',
+        label: 'Heavy-repair houses in Port Orchard',
+        description: 'Contents can stay. You do not have to empty the house.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'The overview for houses that need more than a cleaning.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-kitsap-county',
+        label: 'Foreclosure in Kitsap County',
+        description: 'When a trustee’s date is in the file with the fire.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-kitsap-county',
+        label: 'Septic or well issues in Kitsap County',
+        description: 'A tank or a well is a different file from the fire.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-silverdale-wa',
+        label: 'Fire damage in Silverdale',
+        description: 'Unincorporated Central Kitsap. A different fire department.',
+      },
+      {
+        href: '/areas/silverdale',
+        label: 'Sell a house in Silverdale',
+        description: 'No city hall. Do not use the Port Orchard permit counter for this parcel.',
+      },
+      {
+        href: '/areas/bremerton',
+        label: 'Sell a house in Bremerton',
+        description: 'Across Sinclair Inlet. A different city fire department.',
+      },
+      {
+        href: '/areas/poulsbo',
+        label: 'Sell a house in Poulsbo',
+        description: 'North Kitsap. A different city from Port Orchard.',
+      },
+      {
+        href: '/areas/edgewood/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house in Edgewood',
+        description: 'Pierce County. East Pierce Fire & Rescue, not South Kitsap.',
+      },
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, and the valley. Not Port Orchard.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-edgewood-wa',
+        label: 'Fire damage in Edgewood',
+        description: 'A Pierce County city. Do not use this Port Orchard page.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-king-pierce-county',
+        label: 'Fire damage in King or Pierce County',
+        description: 'The guide for the other side of the water.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-auburn-wa',
+        label: 'Fire damage in Auburn',
+        description: 'KindKey’s office city. Most of Auburn is in King County.',
+      },
+      {
+        href: '/areas/auburn',
+        label: 'Sell a house in Auburn',
+        description: '640 1st St SW. A different county from Port Orchard.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what burned. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for a Port Orchard offer on the fire-damaged house',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to finish the insurance repair first. You can say no.',
+  }),
 ];
