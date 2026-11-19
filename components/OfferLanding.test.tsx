@@ -115,6 +115,12 @@ describe('/offer landing', () => {
     assert.equal(html.includes('Consent is not a condition of purchase'), true);
     assert.equal(html.includes('we pay closing costs'), false);
     assert.equal(html.includes('500+ homes bought'), true);
+    assert.equal(html.includes('Small family-owned business'), true);
+    assert.equal(html.includes('data-offer-next'), true);
+    assert.equal(html.toLowerCase().includes('tenants in place'), false);
+    assert.equal(html.toLowerCase().includes('empty the house'), false);
+    assert.equal(html.toLowerCase().includes('belongings'), false);
+    assert.equal(html.toLowerCase().includes('insurance claim'), false);
     assert.equal(html.toLowerCase().includes('hundreds'), false);
     assert.equal(bar.includes(ADS_TEL), true);
     assert.equal(bar.includes('Call (253) 352-4379'), true);
@@ -174,6 +180,10 @@ describe('/offer landing', () => {
       assert.equal(html.toLowerCase().includes('showings'), false, content.formOrigin);
       assert.equal(html.toLowerCase().includes('no obligation'), false, content.formOrigin);
       assert.equal(html.toLowerCase().includes('commit you'), false, content.formOrigin);
+      assert.equal(html.toLowerCase().includes('tenants in place'), false, content.formOrigin);
+      assert.equal(html.toLowerCase().includes('insurance claim'), false, content.formOrigin);
+      assert.equal(html.toLowerCase().includes('belongings'), false, content.formOrigin);
+      assert.equal(html.includes('data-offer-next'), true, content.formOrigin);
     }
   });
 

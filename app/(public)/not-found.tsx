@@ -1,22 +1,26 @@
 import Link from 'next/link';
-import SiteChrome from '@/components/SiteChrome';
 
+/**
+ * Shared by every route under the public layout, including the Google Ads
+ * landings. Keep it free of the marketing chrome. prefetch is off so this
+ * boundary does not download the homepage bundle on every offer page.
+ */
 export default function NotFound() {
   return (
-    <SiteChrome>
-      <section className="flex min-h-screen items-center bg-primary py-20">
-        <div className="container mx-auto px-4 text-center sm:px-6 lg:px-8">
-          <h1 className="mb-4 text-6xl font-bold text-text-primary">404</h1>
-          <h2 className="mb-6 text-3xl font-semibold text-text-primary">Page Not Found</h2>
-          <p className="mb-8 text-text-secondary">The page you're looking for doesn't exist.</p>
-          <Link
-            href="/"
-            className="inline-block rounded-lg bg-divider px-6 py-3 font-semibold text-white transition-colors hover:bg-divider/90"
-          >
-            Return to Home
-          </Link>
-        </div>
-      </section>
-    </SiteChrome>
+    <main className="flex min-h-screen items-center justify-center bg-white px-6 py-16 text-center text-text-primary">
+      <div>
+        <h1 className="text-3xl font-bold" style={{ marginBottom: 0 }}>
+          Page not found
+        </h1>
+        <p className="mt-3 text-base text-text-secondary">This page is not on the site.</p>
+        <Link
+          href="/"
+          prefetch={false}
+          className="mt-6 inline-flex min-h-12 items-center justify-center rounded-lg bg-divider px-5 font-bold text-white"
+        >
+          KindKey Home Buyers
+        </Link>
+      </div>
+    </main>
   );
 }

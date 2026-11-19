@@ -11,7 +11,7 @@ import OfferMobileBar, { OfferJumpButton, OfferPhoneLink } from '@/components/Of
 import OfferPageFooter from '@/components/OfferPageFooter';
 import OfferReviewsSlot from '@/components/OfferReviewsSlot';
 import type { OfferLandingContent } from '@/data/offerLandings';
-import { BBB_TRUST_LINE, GOOGLE_REVIEWS_URL, shortGoogleReviews } from '@/data/offerCredibility';
+import { GOOGLE_REVIEWS_URL, shortGoogleReviews } from '@/data/offerCredibility';
 import type { FormOrigin } from '@/lib/form-origin';
 import { GOOGLE_ADS_PHONE, type DisplayPhone } from '@/lib/phones';
 import { BUSINESS, localBusinessJsonLd } from '@/lib/site';
@@ -35,15 +35,15 @@ const AGENT_COMPARISON = [
 ] as const;
 
 const DISTRESS_NOTES = [
-  'Back taxes and liens are paid out of the sale at closing, not out of your pocket first.',
-  'Open code violations, unpermitted work, or tenants in place? We still buy without asking you to fix or evict first.',
+  'Tell us about back taxes or liens when you tell us about the house. KindKey does not give tax advice.',
+  'Open code violations or unpermitted work can stay as they are. Cash offer, as-is. No fees, repairs, or cleaning.',
 ] as const;
 
 /** Search phrases the Situations ad group sends to /offer. The house and the sale only. */
 const OFFER_SITUATIONS = [
   {
     title: 'Inherited and probate',
-    body: 'You can ask for a cash offer on an inherited or probate house. You do not have to empty the house first. KindKey does not give legal advice about the estate.',
+    body: 'You can ask for a cash offer on an inherited or probate house. No fees, repairs, or cleaning. KindKey does not give legal advice about the estate.',
   },
   {
     title: 'Divorce',
@@ -55,7 +55,7 @@ const OFFER_SITUATIONS = [
   },
   {
     title: 'House with tenants',
-    body: 'Tenants can stay in place. You do not have to end a rental before you ask for an offer. Cash offer, as-is.',
+    body: 'Tell us if someone lives in the house. Cash offer, as-is. No fees, repairs, or cleaning.',
   },
   {
     title: 'Major repairs and fire damage',
@@ -63,7 +63,7 @@ const OFFER_SITUATIONS = [
   },
   {
     title: 'Tax delinquent, back taxes, and liens',
-    body: 'Back taxes and liens are paid out of the sale at closing, not out of your pocket first. Tell us about them when you tell us about the house.',
+    body: 'Tell us about back taxes or liens when you tell us about the house. You pick the closing date. KindKey does not give tax advice.',
   },
 ] as const;
 
@@ -255,7 +255,7 @@ export default function OfferLanding({
               <OfferPhoneLink
                 phone={phone}
                 location="header"
-                className="text-base font-semibold text-divider"
+                className="inline-flex h-9 shrink-0 items-center whitespace-nowrap rounded-lg bg-accent px-2.5 text-[13px] font-bold leading-none text-white"
               />
               <OfferJumpButton
                 location="header"
@@ -264,29 +264,36 @@ export default function OfferLanding({
               <MobileNavButton />
             </div>
           </div>
-          <MobileNavPanel className="mx-auto max-w-xl px-5" phone={phone} />
+          <MobileNavPanel className="mx-auto max-w-xl px-5" phone={phone} prefetch={false} />
         </MobileNavProvider>
       </header>
 
       <div className="mx-auto max-w-xl px-5 pb-[calc(65px+env(safe-area-inset-bottom,0px))] pt-0 md:pb-16 md:pt-8">
         <section>
           <h1
-            className="text-balance text-3xl font-bold leading-tight"
+            className="text-balance text-[1.625rem] font-bold leading-[1.15] md:text-3xl"
             style={{ marginBottom: 0 }}
             data-offer-headline
           >
             <OfferCityHeadline headline={content.headline} lockHeadline={lockHeadline} />
           </h1>
-          <p className="mt-0.5 text-lg font-bold leading-tight" data-offer-speed>
-            Get your cash offer within 24 hours
+          <p className="mt-1 text-sm font-semibold leading-tight" data-offer-speed>
+            Cash offer within 24 hours
           </p>
-          <p className="mt-1 text-base leading-snug text-text-secondary md:mt-2">
-            {content.subhead}
-          </p>
-          {showTrustBar ? <OfferCityTrustBar /> : null}
+          <p className="mt-1 text-sm leading-snug text-text-secondary">{content.subhead}</p>
+          {showTrustBar ? (
+            <OfferCityTrustBar />
+          ) : (
+            <div className="mt-2" data-offer-trust-inline>
+              <p className="text-center text-xs font-semibold leading-tight">
+                BBB A- rated · 500+ homes bought · Small family-owned business
+              </p>
+              <OfferReviewsSlot />
+            </div>
+          )}
           <div
             data-offer-form
-            className="mt-3 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-3 shadow-sm md:mt-6 md:scroll-mt-20 md:p-4"
+            className="mt-2 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-3 shadow-sm md:mt-6 md:scroll-mt-20 md:p-4"
           >
             <OfferLeadForm
               idPrefix="hero"
@@ -294,11 +301,12 @@ export default function OfferLanding({
               trackMetaLead={trackMetaLead}
               src={src}
               stepped={steppedForm}
+              callPhone={stickyPhone ?? phone}
             />
           </div>
           {trustStrip && trustStrip.length > 0 ? (
             <ul
-              className="mt-32 grid grid-cols-2 gap-2 md:mt-6"
+              className="mt-3 grid grid-cols-2 gap-2"
               aria-label="Why ask for an offer"
               data-offer-trust-strip
             >
@@ -311,12 +319,8 @@ export default function OfferLanding({
                 </li>
               ))}
             </ul>
-          ) : (
-            <p className="mt-32 inline-flex items-center rounded-full border-2 border-divider bg-secondary px-4 py-1 text-sm font-bold text-text-primary md:mt-6">
-              {BBB_TRUST_LINE}
-            </p>
-          )}
-          {showTrustBar ? null : <OfferReviewsSlot />}
+          ) : null}
+          <OfferHowItWorks steps={content.steps} compact />
           {content.pageSituations && content.pageSituations.length > 0 ? (
             <section
               className="mt-8"
@@ -377,8 +381,6 @@ export default function OfferLanding({
           </p>
         </section>
 
-        <OfferHowItWorks steps={content.steps} />
-
         <section className="mt-12">
           <OfferJumpButton
             location="bottom"
@@ -389,7 +391,7 @@ export default function OfferLanding({
         <OfferPageFooter address={address} phone={phone} />
       </div>
       <OfferMobileBar phone={stickyPhone ?? phone} />
-      <LeadConnectorChat mobileOnly suppressGreeting mountDelayMs={8000} />
+      <LeadConnectorChat mobileOnly suppressGreeting mountDelayMs={12000} />
     </main>
   );
 }

@@ -5,7 +5,7 @@ export const OFFER_GOOGLE_RATING_TEXT = '4.6★ on Google (18 reviews)';
 
 export default function OfferReviewsSlot() {
   return (
-    <p className="mt-1 text-center text-sm font-semibold leading-tight" data-offer-reviews-slot>
+    <p className="mt-0.5 text-center text-sm font-semibold leading-tight" data-offer-reviews-slot>
       <a href={GOOGLE_REVIEWS_URL} className="text-text-primary underline">
         {OFFER_GOOGLE_RATING_TEXT}
       </a>

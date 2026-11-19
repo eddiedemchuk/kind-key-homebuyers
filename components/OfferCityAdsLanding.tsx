@@ -64,7 +64,7 @@ export default function OfferCityAdsLanding({
               <OfferPhoneLink
                 phone={phone}
                 location="header"
-                className="text-base font-semibold text-divider"
+                className="inline-flex h-9 shrink-0 items-center whitespace-nowrap rounded-lg bg-accent px-2.5 text-[13px] font-bold leading-none text-white"
               />
               <OfferJumpButton
                 location="header"
@@ -73,30 +73,34 @@ export default function OfferCityAdsLanding({
               <MobileNavButton />
             </div>
           </div>
-          <MobileNavPanel className="mx-auto max-w-xl px-5" phone={phone} />
+          <MobileNavPanel className="mx-auto max-w-xl px-5" phone={phone} prefetch={false} />
         </MobileNavProvider>
       </header>
 
       <div className="mx-auto max-w-xl px-5 pb-[calc(65px+env(safe-area-inset-bottom,0px))] pt-0 md:pb-16 md:pt-8">
         <section>
           <h1
-            className="text-balance text-3xl font-bold leading-tight"
+            className="text-balance text-[1.625rem] font-bold leading-[1.15] md:text-3xl"
             style={{ marginBottom: 0 }}
             data-offer-headline
           >
             <OfferCityHeadline headline={headline} />
           </h1>
-          <p className="mt-2 text-base leading-snug text-text-secondary">{content.subhead}</p>
+          <p className="mt-1 text-sm leading-snug text-text-secondary">{content.subhead}</p>
           <OfferCityTrustBar />
           <div
             data-offer-form
             data-form-origin={OFFER_CITY_ADS_FORM_ORIGIN}
-            className="mt-3 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-3 shadow-sm md:scroll-mt-20 md:p-4"
+            className="mt-2 scroll-mt-4 rounded-xl border border-gray-200 bg-white p-3 shadow-sm md:scroll-mt-20 md:p-4"
           >
-            <OfferLeadForm idPrefix="hero" formOrigin={OFFER_CITY_ADS_FORM_ORIGIN} />
+            <OfferLeadForm
+              idPrefix="hero"
+              formOrigin={OFFER_CITY_ADS_FORM_ORIGIN}
+              callPhone={phone}
+            />
           </div>
           <ul
-            className="mt-32 grid grid-cols-2 gap-2 md:mt-6"
+            className="mt-3 grid grid-cols-2 gap-2"
             aria-label="Why ask for an offer"
             data-offer-trust-strip
           >
@@ -110,6 +114,8 @@ export default function OfferCityAdsLanding({
             ))}
           </ul>
         </section>
+
+        <OfferHowItWorks steps={OFFER_CITY_ADS_STEPS} compact />
 
         <OfferHowWeFigure />
 
@@ -163,8 +169,6 @@ export default function OfferCityAdsLanding({
           </div>
         </section>
 
-        <OfferHowItWorks steps={OFFER_CITY_ADS_STEPS} />
-
         <section className="mt-10" aria-labelledby="offer-city-faq-heading" data-offer-faq>
           <h2 id="offer-city-faq-heading" className="text-xl font-bold">
             FAQ
@@ -189,7 +193,7 @@ export default function OfferCityAdsLanding({
         <OfferPageFooter address={address} phone={phone} />
       </div>
       <OfferMobileBar phone={phone} />
-      <LeadConnectorChat mobileOnly suppressGreeting mountDelayMs={8000} />
+      <LeadConnectorChat mobileOnly suppressGreeting mountDelayMs={12000} />
     </main>
   );
 }

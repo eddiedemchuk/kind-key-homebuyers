@@ -7,11 +7,13 @@ interface OfferPhone {
   tel: string;
 }
 
-type OfferLinkLocation = 'header' | 'sticky_bar' | 'footer' | 'bottom';
+type OfferLinkLocation = 'header' | 'sticky_bar' | 'footer' | 'bottom' | 'form';
 
 interface OfferMobileBarProps {
   phone: OfferPhone;
 }
+
+export type { OfferPhone };
 
 export function focusOfferForm(): void {
   const card = document.querySelector<HTMLElement>('[data-offer-form]');

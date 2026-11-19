@@ -30,6 +30,7 @@ export default function RouteError({
           </button>
           <Link
             href="/"
+            prefetch={false}
             className="rounded-lg border-2 border-divider bg-transparent px-6 py-3 font-semibold text-divider transition-colors hover:bg-divider/10"
           >
             Return to Home
