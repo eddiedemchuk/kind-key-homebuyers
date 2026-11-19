@@ -80,10 +80,13 @@ export function MobileNavButton({ className = '' }: { className?: string }) {
 export function MobileNavPanel({
   className = '',
   phone,
+  prefetch = true,
 }: {
   className?: string;
   /** Offer pages pass the same number used in the header and sticky bar. */
   phone?: DisplayPhone;
+  /** Offer landings turn this off so the menu does not download the rest of the site. */
+  prefetch?: boolean;
 }) {
   const { open, setOpen, panelId } = useMobileNav();
   const pathname = usePathname();
@@ -96,6 +99,7 @@ export function MobileNavPanel({
           <Link
             key={link.href}
             href={link.href}
+            prefetch={prefetch}
             onClick={close}
             className={`flex min-h-11 items-center text-base font-medium transition-colors ${
               isActivePath(pathname, link.href)
@@ -129,6 +133,7 @@ export function MobileNavPanel({
         </a>
         <Link
           href="/contact"
+          prefetch={prefetch}
           onClick={close}
           className="mt-2 flex min-h-11 items-center justify-center rounded-lg bg-divider px-4 font-medium text-white transition-colors hover:bg-divider/90"
         >

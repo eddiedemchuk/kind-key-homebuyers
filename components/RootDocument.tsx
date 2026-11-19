@@ -67,9 +67,9 @@ export default function RootDocument({
         </Script>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-tag-config" strategy="afterInteractive">
+        <Script id="google-tag-config" strategy="lazyOnload">
           {`
             gtag('config', '${googleAdsId}');
             gtag('config', '${gaMeasurementId}', {
@@ -102,8 +102,6 @@ export default function RootDocument({
           `,
           }}
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.google.com" />
         <link rel="preconnect" href="https://www.gstatic.com" crossOrigin="anonymous" />
       </head>

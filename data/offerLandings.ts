@@ -175,8 +175,7 @@ export const inheritedOffer: OfferLandingContent = {
   faqs: [
     {
       question: 'Do I have to clean the house out?',
-      answer:
-        'No fees, repairs, or cleaning. Cash offer, as-is, including belongings still inside.',
+      answer: 'No fees, repairs, or cleaning. Cash offer, as-is.',
     },
     {
       question: 'What if probate is still open?',
@@ -225,9 +224,9 @@ export const fireDamageOffer: OfferLandingContent = {
       answer: 'No. Cash offer, as-is, on a fire-damaged house. No fees, repairs, or cleaning.',
     },
     {
-      question: 'What if an insurance claim is open?',
+      question: 'What if the house still shows the damage?',
       answer:
-        'Tell us the claim is open when you tell us about the house. You pick the closing date.',
+        'Tell us what the fire did when you tell us about the house. Cash offer, as-is. No fees, repairs, or cleaning. You pick the closing date.',
     },
     {
       question: 'Where do you buy?',
@@ -258,7 +257,7 @@ export const asIsOffer: OfferLandingContent = {
     },
     {
       title: 'Fire damage and major repairs',
-      body: 'Fire damage is one kind of house that needs work. Leave the cleanup. Cash offer within 24 hours, and you pick the closing date.',
+      body: 'Fire damage is one kind of house that needs work. Cash offer within 24 hours, and you pick the closing date.',
     },
   ],
   faqs: [

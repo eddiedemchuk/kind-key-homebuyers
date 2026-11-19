@@ -87,7 +87,7 @@ export const tacomaPuyallupOffer: OfferCityAdsPage = {
   situations: [
     {
       title: 'Inherited and probate homes',
-      body: 'An inherited or probate house in Tacoma, Puyallup, Lakewood, Spanaway, or University Place can be sold as-is. You do not have to empty the house first. KindKey does not give legal advice about the estate.',
+      body: 'An inherited or probate house in Tacoma, Puyallup, Lakewood, Spanaway, or University Place can be sold as-is. KindKey does not give legal advice about the estate.',
     },
     {
       title: 'Divorce',
@@ -95,11 +95,11 @@ export const tacomaPuyallupOffer: OfferCityAdsPage = {
     },
     {
       title: 'Tenant-occupied rentals',
-      body: 'A tenant-occupied house in Pierce County can be sold with tenants in place. You do not have to end a rental in Tacoma, Lakewood, or Spanaway before you ask for an offer. Cash offer, as-is.',
+      body: 'A tenant-occupied house in Pierce County can be sold as-is. Tell us if someone lives in the Tacoma, Lakewood, or Spanaway house. Cash offer, as-is.',
     },
     {
       title: 'Fire or water damage',
-      body: 'Fire or water damage in Tacoma, Lakewood, or another Pierce County town does not have to be cleaned up first. No fees, repairs, or cleaning. Cash offer within 24 hours.',
+      body: 'Fire or water damage in Tacoma, Lakewood, or another Pierce County town can stay as it is. No fees, repairs, or cleaning. Cash offer within 24 hours.',
     },
     {
       title: 'Foreclosure',
@@ -134,7 +134,7 @@ export const kitsapBremertonOffer: OfferCityAdsPage = {
   situations: [
     {
       title: 'Inherited and probate homes',
-      body: 'An inherited or probate house in Bremerton, Port Orchard, Poulsbo, Silverdale, or Gig Harbor can be sold as-is. You do not have to empty the house first. KindKey does not give legal advice about the estate.',
+      body: 'An inherited or probate house in Bremerton, Port Orchard, Poulsbo, Silverdale, or Gig Harbor can be sold as-is. KindKey does not give legal advice about the estate.',
     },
     {
       title: 'Divorce',
@@ -142,11 +142,11 @@ export const kitsapBremertonOffer: OfferCityAdsPage = {
     },
     {
       title: 'Tenant-occupied rentals',
-      body: 'A tenant-occupied house in Kitsap County, or in Gig Harbor in Pierce County, can be sold with tenants in place. You do not have to end a rental before you ask for an offer. Cash offer, as-is.',
+      body: 'A tenant-occupied house in Kitsap County, or in Gig Harbor in Pierce County, can be sold as-is. Tell us if someone lives there. Cash offer, as-is.',
     },
     {
       title: 'Fire or water damage',
-      body: 'Fire or water damage in Bremerton, Silverdale, or Port Orchard does not have to be cleaned up first. No fees, repairs, or cleaning. Cash offer within 24 hours.',
+      body: 'Fire or water damage in Bremerton, Silverdale, or Port Orchard can stay as it is. No fees, repairs, or cleaning. Cash offer within 24 hours.',
     },
     {
       title: 'Foreclosure',
@@ -181,7 +181,7 @@ export const kentAuburnOffer: OfferCityAdsPage = {
   situations: [
     {
       title: 'Inherited and probate homes',
-      body: 'An inherited or probate house in Kent, Auburn, Federal Way, or Renton can be sold as-is. You do not have to empty the house first. KindKey does not give legal advice about the estate.',
+      body: 'An inherited or probate house in Kent, Auburn, Federal Way, or Renton can be sold as-is. KindKey does not give legal advice about the estate.',
     },
     {
       title: 'Divorce',
@@ -189,11 +189,11 @@ export const kentAuburnOffer: OfferCityAdsPage = {
     },
     {
       title: 'Tenant-occupied rentals',
-      body: 'A tenant-occupied house in South King County can be sold with tenants in place. You do not have to end a rental in Kent, Auburn, or Federal Way before you ask for an offer. Cash offer, as-is.',
+      body: 'A tenant-occupied house in South King County can be sold as-is. Tell us if someone lives in the Kent, Auburn, or Federal Way house. Cash offer, as-is.',
     },
     {
       title: 'Fire or water damage',
-      body: 'Fire or water damage in Kent, Auburn, or Federal Way does not have to be cleaned up first. No fees, repairs, or cleaning. Cash offer within 24 hours.',
+      body: 'Fire or water damage in Kent, Auburn, or Federal Way can stay as it is. No fees, repairs, or cleaning. Cash offer within 24 hours.',
     },
     {
       title: 'Foreclosure',
@@ -229,7 +229,7 @@ export const seattleKingCountyOffer: OfferCityAdsPage = {
   situations: [
     {
       title: 'Inherited and probate homes',
-      body: 'An inherited or probate house in Seattle, Burien, Shoreline, or Enumclaw can be sold as-is. You do not have to empty the house first. KindKey does not give legal advice about the estate.',
+      body: 'An inherited or probate house in Seattle, Burien, Shoreline, or Enumclaw can be sold as-is. KindKey does not give legal advice about the estate.',
     },
     {
       title: 'Divorce',
@@ -237,11 +237,11 @@ export const seattleKingCountyOffer: OfferCityAdsPage = {
     },
     {
       title: 'Tenant-occupied rentals',
-      body: 'A tenant-occupied house in King County, including SeaTac, Tukwila, or White Center, can be sold with tenants in place. You do not have to end a rental before you ask for an offer. Cash offer, as-is.',
+      body: 'A tenant-occupied house in King County, including SeaTac, Tukwila, or White Center, can be sold as-is. Tell us if someone lives there. Cash offer, as-is.',
     },
     {
       title: 'Fire or water damage',
-      body: 'Fire or water damage in Seattle, Burien, or Des Moines does not have to be cleaned up first. No fees, repairs, or cleaning. Cash offer within 24 hours.',
+      body: 'Fire or water damage in Seattle, Burien, or Des Moines can stay as it is. No fees, repairs, or cleaning. Cash offer within 24 hours.',
     },
     {
       title: 'Foreclosure',
@@ -277,7 +277,7 @@ export const everettSnohomishOffer: OfferCityAdsPage = {
   situations: [
     {
       title: 'Inherited and probate homes',
-      body: 'An inherited or probate house in Everett, Lynnwood, Edmonds, or Marysville can be sold as-is. You do not have to empty the house first. KindKey does not give legal advice about the estate.',
+      body: 'An inherited or probate house in Everett, Lynnwood, Edmonds, or Marysville can be sold as-is. KindKey does not give legal advice about the estate.',
     },
     {
       title: 'Divorce',
@@ -285,11 +285,11 @@ export const everettSnohomishOffer: OfferCityAdsPage = {
     },
     {
       title: 'Tenant-occupied rentals',
-      body: 'A tenant-occupied house in Snohomish County, including Everett, Lynnwood, or Mill Creek, can be sold with tenants in place. You do not have to end a rental before you ask for an offer. Cash offer, as-is.',
+      body: 'A tenant-occupied house in Snohomish County, including Everett, Lynnwood, or Mill Creek, can be sold as-is. Tell us if someone lives there. Cash offer, as-is.',
     },
     {
       title: 'Fire or water damage',
-      body: 'Fire or water damage in Everett, Marysville, or Lake Stevens does not have to be cleaned up first. No fees, repairs, or cleaning. Cash offer within 24 hours.',
+      body: 'Fire or water damage in Everett, Marysville, or Lake Stevens can stay as it is. No fees, repairs, or cleaning. Cash offer within 24 hours.',
     },
     {
       title: 'Foreclosure',

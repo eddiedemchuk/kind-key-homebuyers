@@ -205,6 +205,11 @@ const BLOCKED_PHRASES = [
   'disability',
   'handicap',
   'veteran',
+  'tenants in place',
+  'empty the house',
+  'belongings',
+  'insurance claim',
+  'cleanout',
   ORGANIC_DISPLAY,
   ORGANIC_TEL,
   '(206) 519-5463',
@@ -296,7 +301,8 @@ describe('Google Ads city offer pages', () => {
       assert.equal(html.includes('Areas we buy in'), true, entry.content.path);
       assert.equal(html.includes('data-offer-trust-bar'), true, entry.content.path);
       assert.equal(html.includes('How we figure your offer'), true, entry.content.path);
-      assert.equal(html.includes('4.6★ on Google (18 reviews)'), true, entry.content.path);
+      assert.equal(html.includes('4.6 Stars on Google (18 reviews)'), true, entry.content.path);
+      assert.equal(html.includes('★'), false, entry.content.path);
       assert.equal(html.includes('data-how-it-works'), true, entry.content.path);
       assert.equal(html.includes('Tell us about the house'), true, entry.content.path);
       assert.equal(html.includes('Get a cash offer within 24 hours'), true, entry.content.path);

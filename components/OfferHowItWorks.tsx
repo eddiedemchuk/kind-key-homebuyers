@@ -1,12 +1,22 @@
 import type { OfferStep } from '@/data/offerLandings';
 
-export default function OfferHowItWorks({ steps }: { steps: readonly OfferStep[] }) {
+export default function OfferHowItWorks({
+  steps,
+  compact = false,
+}: {
+  steps: readonly OfferStep[];
+  compact?: boolean;
+}) {
   return (
-    <section className="mt-10" aria-labelledby="how-it-works-heading" data-how-it-works>
-      <h2 id="how-it-works-heading" className="text-xl font-bold">
+    <section
+      className={compact ? 'mt-6' : 'mt-10'}
+      aria-labelledby="how-it-works-heading"
+      data-how-it-works
+    >
+      <h2 id="how-it-works-heading" className={compact ? 'text-lg font-bold' : 'text-xl font-bold'}>
         How it works
       </h2>
-      <ol className="mt-5 space-y-5" data-offer-steps>
+      <ol className={compact ? 'mt-3 space-y-3' : 'mt-5 space-y-5'} data-offer-steps>
         {steps.map((step, index) => (
           <li key={step.title} className="flex gap-3">
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-divider text-sm font-bold text-white">

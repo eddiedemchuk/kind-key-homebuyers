@@ -14,6 +14,7 @@ import { useRecaptcha } from '@/lib/useRecaptcha';
 import { formatPhoneChange, toE164 } from '@/lib/phone';
 import { FACEBOOK_OFFER_PATH, persistThankYouPhoneSource, thankYouHref } from '@/lib/phones';
 import { SMS_CONSENT_TEXT_VERSION } from '@/lib/sms-consent';
+import { OfferPhoneLink, type OfferPhone } from '@/components/OfferMobileBar';
 
 interface OfferLeadFormProps {
   formOrigin: FormOrigin;
@@ -22,15 +23,25 @@ interface OfferLeadFormProps {
   trackMetaLead?: boolean;
   /** Passed through to the webhook when this submit is a Facebook /offer visit. */
   src?: string;
-  /** Address first, then contact details. Used on /offer/facebook. */
+  /** Address first, then contact details. Used on /offer/facebook. Unmounts the other step. */
   stepped?: boolean;
+  /** Tap-to-call shown with the form on a narrow screen. */
+  callPhone?: OfferPhone;
 }
 
 const fieldClass =
-  'w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-base text-text-primary placeholder-text-secondary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent';
+  'min-h-11 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-base text-text-primary placeholder-text-secondary focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent';
 
 const submitButtonClass =
-  'flex min-h-14 w-full touch-manipulation items-center justify-center rounded-lg bg-divider px-6 py-3 text-lg font-bold text-white shadow-md transition-colors hover:bg-divider/90 disabled:cursor-not-allowed disabled:opacity-50';
+  'min-h-14 w-full touch-manipulation items-center justify-center rounded-lg bg-divider px-6 py-3 text-lg font-bold text-white shadow-md transition-colors hover:bg-divider/90 disabled:cursor-not-allowed disabled:opacity-50';
+
+function isNarrowViewport(): boolean {
+  return (
+    typeof window !== 'undefined' &&
+    typeof window.matchMedia === 'function' &&
+    window.matchMedia('(max-width: 767px)').matches
+  );
+}
 
 async function deliverOfferLead(input: {
   body: Record<string, unknown>;
@@ -95,6 +106,7 @@ function FullOfferLeadForm({
   trackMetaLead: shouldTrackMetaLead = false,
   src,
   stepped = false,
+  callPhone,
 }: OfferLeadFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -167,6 +179,10 @@ function FullOfferLeadForm({
 
   const showProperty = !stepped || step === 1;
   const showContact = !stepped || step === 2;
+  // Google Ads keeps every field mounted so a desktop submit still posts them.
+  // A phone shows the address first, then name, phone, email, and consent.
+  const propertyClass = !stepped && step === 2 ? 'hidden space-y-1 md:block' : 'space-y-1';
+  const contactClass = !stepped && step === 1 ? 'hidden space-y-1 md:block' : 'space-y-1';
 
   const goToContactStep = async () => {
     const addressOk = await trigger('propertyAddress');
@@ -180,9 +196,9 @@ function FullOfferLeadForm({
   };
 
   useEffect(() => {
-    if (!stepped || step !== 2) return;
+    if (step !== 2) return;
     nameInputRef.current?.focus({ preventScroll: true });
-  }, [step, stepped]);
+  }, [step]);
 
   useEffect(() => {
     if (step !== 1 || !returnToAddress.current) return;
@@ -241,7 +257,9 @@ function FullOfferLeadForm({
     <form
       ref={formRef}
       onSubmit={(event) => {
-        if (stepped && step === 1) {
+        const advanceFirst =
+          (stepped && step === 1) || (!stepped && step === 1 && isNarrowViewport());
+        if (advanceFirst) {
           event.preventDefault();
           void goToContactStep();
           return;
@@ -250,16 +268,18 @@ function FullOfferLeadForm({
       }}
       className="scroll-mb-[calc(65px+env(safe-area-inset-bottom,0px))] space-y-1 md:scroll-mb-0"
       noValidate
-      data-offer-step={stepped ? step : undefined}
+      data-offer-step={step}
     >
-      {stepped ? (
-        <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
-          Step {step} of 2
-        </p>
-      ) : null}
+      <p
+        className={`text-xs font-semibold uppercase tracking-wide text-text-secondary ${stepped ? '' : 'md:hidden'}`}
+      >
+        Step {step} of 2
+      </p>
 
-      {stepped && step === 2 ? (
-        <div className="flex items-start justify-between gap-3 rounded-lg bg-secondary px-3 py-2">
+      {step === 2 ? (
+        <div
+          className={`flex items-start justify-between gap-3 rounded-lg bg-secondary px-3 py-2 ${stepped ? '' : 'md:hidden'}`}
+        >
           <p className="min-w-0 text-sm font-medium leading-snug text-text-primary">
             {addressValue}
           </p>
@@ -273,168 +293,175 @@ function FullOfferLeadForm({
         </div>
       ) : null}
 
-      {showContact ? (
-        <div>
-          <label htmlFor={ids.name} className="mb-0.5 block text-sm font-medium text-text-primary">
-            Name
-          </label>
-          <input
-            type="text"
-            id={ids.name}
-            {...nameField}
-            ref={(element) => {
-              nameInputRef.current = element;
-              nameRef(element);
-            }}
-            className={fieldClass}
-            placeholder="Your name"
-            autoComplete="name"
-          />
-          {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>}
-        </div>
-      ) : null}
-
-      {showContact ? (
-        <div>
-          <label htmlFor={ids.phone} className="mb-0.5 block text-sm font-medium text-text-primary">
-            Phone
-          </label>
-          <input
-            type="tel"
-            id={ids.phone}
-            {...phoneField}
-            ref={(element) => {
-              phoneInputRef.current = element;
-              phoneRef(element);
-            }}
-            value={phoneValue}
-            onChange={handlePhoneChange}
-            className={fieldClass}
-            placeholder="(253) 555-0100"
-            autoComplete="tel"
-            inputMode="tel"
-            required
-          />
-          {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p>}
-        </div>
-      ) : null}
-
-      {showContact ? (
-        <div>
-          <label htmlFor={ids.email} className="mb-0.5 block text-sm font-medium text-text-primary">
-            Email
-            {stepped ? <span className="font-normal text-text-secondary"> (optional)</span> : null}
-          </label>
-          <input
-            type="email"
-            id={ids.email}
-            {...register('email')}
-            className={fieldClass}
-            placeholder="you@example.com"
-            autoComplete="email"
-            inputMode="email"
-            required={!stepped}
-          />
-          {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>}
-        </div>
-      ) : null}
-
       {showProperty ? (
-        <div>
-          <label
-            htmlFor={ids.address}
-            className="mb-0.5 block text-sm font-medium text-text-primary"
-          >
-            Property Address
-          </label>
-          <input
-            type="text"
-            id={ids.address}
-            {...addressField}
-            ref={(element) => {
-              addressInputRef.current = element;
-              addressRef(element);
-            }}
-            className={fieldClass}
-            placeholder="123 Main St, Auburn, WA"
-            autoComplete="street-address"
-          />
-          {errors.propertyAddress && (
-            <p className="mt-1 text-sm text-red-600">{errors.propertyAddress.message}</p>
-          )}
-        </div>
-      ) : null}
-
-      {showProperty ? (
-        <fieldset>
-          <legend className="mb-0.5 text-sm font-medium text-text-primary">
-            {stepped ? 'Listed with an agent?' : 'Is your house currently listed with an agent?'}
-          </legend>
-          <div className="flex gap-4">
+        <div className={propertyClass}>
+          <div>
             <label
-              htmlFor={ids.listedYes}
-              className="flex items-center gap-2 text-sm text-text-primary"
+              htmlFor={ids.address}
+              className="mb-0.5 block text-sm font-medium text-text-primary"
             >
-              <input
-                type="radio"
-                id={ids.listedYes}
-                value="yes"
-                {...register('listed_with_agent')}
-                className="h-4 w-4 border-gray-300 text-divider focus:ring-divider"
-              />
-              Yes
+              Property Address
             </label>
-            <label
-              htmlFor={ids.listedNo}
-              className="flex items-center gap-2 text-sm text-text-primary"
-            >
-              <input
-                type="radio"
-                id={ids.listedNo}
-                value="no"
-                {...register('listed_with_agent')}
-                className="h-4 w-4 border-gray-300 text-divider focus:ring-divider"
-              />
-              No
-            </label>
-          </div>
-          {errors.listed_with_agent && (
-            <p className="mt-1 text-sm text-red-600">{errors.listed_with_agent.message}</p>
-          )}
-        </fieldset>
-      ) : null}
-
-      {showContact ? (
-        <div className="scroll-mb-[calc(80px+env(safe-area-inset-bottom,0px))]">
-          <div className="flex items-start gap-2">
             <input
-              type="checkbox"
-              id={ids.smsConsent}
-              {...register('sms_consent')}
-              className="mt-0.5 h-5 w-5 shrink-0 rounded border-gray-300 bg-white text-divider focus:ring-divider"
+              type="text"
+              id={ids.address}
+              {...addressField}
+              ref={(element) => {
+                addressInputRef.current = element;
+                addressRef(element);
+              }}
+              className={fieldClass}
+              placeholder="123 Main St, Auburn, WA"
+              autoComplete="street-address"
+              enterKeyHint="next"
             />
-            <p className="text-[11px] leading-tight text-text-secondary">
-              <label htmlFor={ids.smsConsent}>I agree to the</label>{' '}
-              <Link href="/terms" className="font-medium text-divider underline">
-                Terms of Service
-              </Link>{' '}
-              <label htmlFor={ids.smsConsent}>and</label>{' '}
-              <Link href="/privacy" className="font-medium text-divider underline">
-                Privacy Policy
-              </Link>{' '}
-              <label htmlFor={ids.smsConsent}>
-                and consent to receive calls and text messages from KindKey Home Buyers at the
-                number provided, including automated messages. Consent is not a condition of
-                purchase. Msg &amp; data rates may apply. Msg frequency varies. Reply STOP to opt
-                out, HELP for help.
-              </label>
-            </p>
+            {errors.propertyAddress && (
+              <p className="mt-1 text-sm text-red-600">{errors.propertyAddress.message}</p>
+            )}
           </div>
-          {errors.sms_consent && (
-            <p className="mt-1 text-sm text-red-600" role="alert">
-              {errors.sms_consent.message}
-            </p>
-          )}
+          <fieldset>
+            <legend className="mb-0.5 text-sm font-medium text-text-primary">
+              Listed with an agent?
+            </legend>
+            <div className="grid grid-cols-2 gap-2">
+              <label
+                htmlFor={ids.listedNo}
+                className="flex min-h-12 items-center justify-center gap-2 rounded-lg border border-gray-300 text-base font-semibold text-text-primary"
+              >
+                <input
+                  type="radio"
+                  id={ids.listedNo}
+                  value="no"
+                  {...register('listed_with_agent')}
+                  className="h-5 w-5 border-gray-300 text-divider focus:ring-divider"
+                />
+                No
+              </label>
+              <label
+                htmlFor={ids.listedYes}
+                className="flex min-h-12 items-center justify-center gap-2 rounded-lg border border-gray-300 text-base font-semibold text-text-primary"
+              >
+                <input
+                  type="radio"
+                  id={ids.listedYes}
+                  value="yes"
+                  {...register('listed_with_agent')}
+                  className="h-5 w-5 border-gray-300 text-divider focus:ring-divider"
+                />
+                Yes
+              </label>
+            </div>
+            {errors.listed_with_agent && (
+              <p className="mt-1 text-sm text-red-600">{errors.listed_with_agent.message}</p>
+            )}
+          </fieldset>
+        </div>
+      ) : null}
+
+      {showContact ? (
+        <div className={contactClass}>
+          <div>
+            <label
+              htmlFor={ids.name}
+              className="mb-0.5 block text-sm font-medium text-text-primary"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              id={ids.name}
+              {...nameField}
+              ref={(element) => {
+                nameInputRef.current = element;
+                nameRef(element);
+              }}
+              className={fieldClass}
+              placeholder="Your name"
+              autoComplete="name"
+              enterKeyHint="next"
+            />
+            {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>}
+          </div>
+          <div>
+            <label
+              htmlFor={ids.phone}
+              className="mb-0.5 block text-sm font-medium text-text-primary"
+            >
+              Phone
+            </label>
+            <input
+              type="tel"
+              id={ids.phone}
+              {...phoneField}
+              ref={(element) => {
+                phoneInputRef.current = element;
+                phoneRef(element);
+              }}
+              value={phoneValue}
+              onChange={handlePhoneChange}
+              className={fieldClass}
+              placeholder="(253) 555-0100"
+              autoComplete="tel"
+              inputMode="tel"
+              enterKeyHint="next"
+              required
+            />
+            {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p>}
+          </div>
+          <div>
+            <label
+              htmlFor={ids.email}
+              className="mb-0.5 block text-sm font-medium text-text-primary"
+            >
+              Email
+              {stepped ? (
+                <span className="font-normal text-text-secondary"> (optional)</span>
+              ) : null}
+            </label>
+            <input
+              type="email"
+              id={ids.email}
+              {...register('email')}
+              className={fieldClass}
+              placeholder="you@example.com"
+              autoComplete="email"
+              inputMode="email"
+              enterKeyHint="next"
+              required={!stepped}
+            />
+            {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>}
+          </div>
+          <div className="scroll-mb-[calc(80px+env(safe-area-inset-bottom,0px))]">
+            <div className="flex items-start gap-2">
+              <input
+                type="checkbox"
+                id={ids.smsConsent}
+                {...register('sms_consent')}
+                className="mt-0.5 h-5 w-5 shrink-0 rounded border-gray-300 bg-white text-divider focus:ring-divider"
+              />
+              <p className="text-[11px] leading-tight text-text-secondary">
+                <label htmlFor={ids.smsConsent}>I agree to the</label>{' '}
+                <Link href="/terms" className="font-medium text-divider underline">
+                  Terms of Service
+                </Link>{' '}
+                <label htmlFor={ids.smsConsent}>and</label>{' '}
+                <Link href="/privacy" className="font-medium text-divider underline">
+                  Privacy Policy
+                </Link>{' '}
+                <label htmlFor={ids.smsConsent}>
+                  and consent to receive calls and text messages from KindKey Home Buyers at the
+                  number provided, including automated messages. Consent is not a condition of
+                  purchase. Msg &amp; data rates may apply. Msg frequency varies. Reply STOP to opt
+                  out, HELP for help.
+                </label>
+              </p>
+            </div>
+            {errors.sms_consent && (
+              <p className="mt-1 text-sm text-red-600" role="alert">
+                {errors.sms_consent.message}
+              </p>
+            )}
+          </div>
         </div>
       ) : null}
 
@@ -451,19 +478,39 @@ function FullOfferLeadForm({
       {stepped && step === 1 ? (
         <button
           type="submit"
-          className={`${submitButtonClass} text-balance text-center leading-snug`}
+          className={`flex ${submitButtonClass} text-balance text-center leading-snug`}
         >
           Continue →
         </button>
       ) : (
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className={`${submitButtonClass} scroll-mb-[calc(80px+env(safe-area-inset-bottom,0px))]`}
-        >
-          {isSubmitting ? 'Submitting...' : 'Get My Free Cash Offer'}
-        </button>
+        <>
+          {!stepped && step === 1 ? (
+            <button
+              type="submit"
+              data-offer-next
+              className={`flex md:hidden ${submitButtonClass} text-balance text-center leading-snug`}
+            >
+              Get My Cash Offer
+            </button>
+          ) : null}
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className={`${!stepped && step === 1 ? 'hidden md:flex' : 'flex'} ${submitButtonClass} scroll-mb-[calc(80px+env(safe-area-inset-bottom,0px))]`}
+          >
+            {isSubmitting ? 'Submitting...' : 'Get My Free Cash Offer'}
+          </button>
+        </>
       )}
+      {callPhone ? (
+        <OfferPhoneLink
+          phone={callPhone}
+          location="form"
+          className="flex min-h-12 w-full items-center justify-center rounded-lg border-2 border-accent text-base font-bold text-divider md:hidden"
+        >
+          Call {callPhone.display}
+        </OfferPhoneLink>
+      ) : null}
       <p className="flex items-center justify-center gap-1.5 text-center text-xs font-medium leading-tight text-text-primary">
         <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden className="h-3.5 w-3.5 shrink-0">
           <path
