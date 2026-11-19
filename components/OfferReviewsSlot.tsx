@@ -1,7 +1,7 @@
 import { GOOGLE_REVIEWS_URL } from '@/data/offerCredibility';
 
 /** Verified Google Maps rating as of Nov 17, 2026. No review quotes or schema. */
-export const OFFER_GOOGLE_RATING_TEXT = '4.6★ on Google (18 reviews)';
+export const OFFER_GOOGLE_RATING_TEXT = '4.6 Stars on Google (18 reviews)';
 
 export default function OfferReviewsSlot() {
   return (

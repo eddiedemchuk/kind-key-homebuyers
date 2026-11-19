@@ -77,7 +77,8 @@ describe('per-city offer pages', () => {
       assert.match(html, /We close on the date you pick/);
       assert.match(html, /data-offer-trust-bar/);
       assert.match(html, /How we figure your offer/);
-      assert.match(html, /4\.6★ on Google \(18 reviews\)/);
+      assert.match(html, /4\.6 Stars on Google \(18 reviews\)/);
+      assert.equal(html.includes('★'), false, city.slug);
       assert.equal(html.includes('aggregateRating'), false, city.slug);
       assert.equal(lower.includes('testimonial'), false, city.slug);
       assert.equal(lower.includes('star rating'), false, city.slug);
