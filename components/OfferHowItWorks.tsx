@@ -1,4 +1,4 @@
-import type { OfferStep } from '@/data/offerLandings';
+import { offerApprovedBenefits, type OfferStep } from '@/data/offerLandings';
 
 export default function OfferHowItWorks({
   steps,
@@ -29,6 +29,14 @@ export default function OfferHowItWorks({
           </li>
         ))}
       </ol>
+      <ul className="mt-4 space-y-2" data-offer-benefits>
+        {offerApprovedBenefits.map((item) => (
+          <li key={item} className="flex gap-3 text-sm font-semibold leading-snug">
+            <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-divider" aria-hidden />
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
