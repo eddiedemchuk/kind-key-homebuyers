@@ -30,12 +30,12 @@ import {
   seattleKingCountyOffer,
   tacomaPuyallupOffer,
 } from '../data/offerCityAds';
-import { GOOGLE_ADS_PHONE } from '../lib/phones';
+import { GOOGLE_ADS_PHONE, ORGANIC_PHONE } from '../lib/phones';
 import { BUSINESS } from '../lib/site';
 
 const ADS_TEL = `tel:${GOOGLE_ADS_PHONE.tel}`;
-const ORGANIC_DISPLAY = '(253) 518-3638';
-const ORGANIC_TEL = 'tel:+12535183638';
+const ORGANIC_DISPLAY = ORGANIC_PHONE.display;
+const ORGANIC_TEL = `tel:${ORGANIC_PHONE.tel}`;
 const MAIN_OFFICE_TEL = `tel:${BUSINESS.telephone}`;
 
 const PAGES = [
@@ -301,7 +301,8 @@ describe('Google Ads city offer pages', () => {
       assert.equal(html.includes('Areas we buy in'), true, entry.content.path);
       assert.equal(html.includes('data-offer-trust-bar'), true, entry.content.path);
       assert.equal(html.includes('How we figure your offer'), true, entry.content.path);
-      assert.equal(html.includes('4.6 Stars on Google (18 reviews)'), true, entry.content.path);
+      assert.equal(html.includes('4.6 Stars on Google (18 reviews)'), false, entry.content.path);
+      assert.equal(html.includes('#1'), false, entry.content.path);
       assert.equal(html.includes('★'), false, entry.content.path);
       assert.equal(html.includes('data-how-it-works'), true, entry.content.path);
       assert.equal(html.includes('Tell us about the house'), true, entry.content.path);

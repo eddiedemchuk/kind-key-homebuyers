@@ -1,5 +1,3 @@
-import OfferReviewsSlot from '@/components/OfferReviewsSlot';
-
 const SUPPORTING = ['500+ homes bought', 'BBB A- rated', 'We close on the date you pick'] as const;
 
 /** Compact claims under the H1. The closing-speed line is the prominent one. */
@@ -14,7 +12,6 @@ export default function OfferCityTrustBar() {
           <li key={item}>{item}</li>
         ))}
       </ul>
-      <OfferReviewsSlot />
     </div>
   );
 }

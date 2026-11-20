@@ -2,11 +2,8 @@
 
 import { useLayoutEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { isGoogleAdsTouch } from '@/lib/attribution';
-import { captureAttribution } from '@/lib/attribution-client';
 import {
   GOOGLE_ADS_PHONE,
-  GOOGLE_ADS_PHONE_PATHS,
   isAlwaysGoogleAdsPhonePath,
   isFacebookOfferDocumentPath,
   isFacebookOfferThankYou,
@@ -20,8 +17,6 @@ import {
 export { GOOGLE_ADS_PHONE, ORGANIC_PHONE };
 export type { DisplayPhone };
 
-const trackingPaths = new Set<string>(GOOGLE_ADS_PHONE_PATHS);
-
 function phoneBeforeAttribution(pathname: string): DisplayPhone {
   return offerDisplayPhone(pathname);
 }
@@ -31,8 +26,7 @@ function phoneBeforeAttribution(pathname: string): DisplayPhone {
  * seller quiz (/quiz, /offer/quiz) show (253) 453-8597 unless the quiz URL sets a
  * non-Facebook src. A plain /offer visit shows the Google Ads number.
  * /thank-you shows the Facebook offer number only after a submit from a Facebook offer page.
- * /sell-house-as-is and /cash-offer switch to the Google Ads number after a paid Google visit.
- * Every other page stays on the organic number.
+ * Every other page, including /sell-house-as-is and /cash-offer, stays on the main office line.
  */
 export function useTrackingPhone(): DisplayPhone {
   const pathname = usePathname() ?? '';
@@ -58,16 +52,7 @@ export function useTrackingPhone(): DisplayPhone {
       setPhone(offerDisplayPhone(pathname, window.location.search));
       return;
     }
-    if (!trackingPaths.has(pathname)) {
-      setPhone(ORGANIC_PHONE);
-      return;
-    }
-    try {
-      const touch = captureAttribution();
-      setPhone(isGoogleAdsTouch(touch) ? GOOGLE_ADS_PHONE : ORGANIC_PHONE);
-    } catch (error) {
-      console.error('Tracking phone attribution failed:', error);
-    }
+    setPhone(ORGANIC_PHONE);
   }, [pathname]);
 
   return phone;

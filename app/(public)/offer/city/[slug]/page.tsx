@@ -34,9 +34,9 @@ export async function generateMetadata({
     description,
     alternates: { canonical },
     robots: {
-      index: true,
+      index: false,
       follow: true,
-      googleBot: { index: true, follow: true },
+      googleBot: { index: false, follow: true },
     },
     openGraph: {
       title,

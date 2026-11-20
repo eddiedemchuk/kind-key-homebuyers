@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { APPROVED_TRANSACTION_DISCLOSURE, BUSINESS_MODEL_DISCLOSURE } from '@/data/disclosures';
+import { ORGANIC_PHONE } from '@/lib/phones';
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
@@ -12,8 +13,8 @@ export const metadata: Metadata = {
 
 const BUSINESS_NAME = 'KindKey Home Buyers LLC';
 const BUSINESS_EMAIL = 'info@kindkeyhomebuyers.com';
-const BUSINESS_PHONE_DISPLAY = '(253) 518-3638';
-const BUSINESS_PHONE_TEL = '+12535183638';
+const BUSINESS_PHONE_DISPLAY = ORGANIC_PHONE.display;
+const BUSINESS_PHONE_TEL = ORGANIC_PHONE.tel;
 
 export default function TermsPage() {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://kindkeyhomebuyers.com';

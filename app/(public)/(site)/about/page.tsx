@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import CTASection from '@/components/CTASection';
 import CityGrid from '@/components/CityGrid';
+import { ORGANIC_PHONE } from '@/lib/phones';
 import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -106,10 +107,10 @@ export default function AboutPage() {
             <div className="mb-4">
               <p className="mb-2 text-text-secondary">Call or text us:</p>
               <a
-                href="tel:+12535183638"
+                href={`tel:${ORGANIC_PHONE.tel}`}
                 className="mb-2 block text-xl font-semibold text-divider hover:underline"
               >
-                (253) 518-3638
+                {ORGANIC_PHONE.display}
               </a>
               <p className="mb-2 text-text-secondary">Email us:</p>
               <a

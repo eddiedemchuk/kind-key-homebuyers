@@ -9,7 +9,6 @@ import OfferHowWeFigure from '@/components/OfferHowWeFigure';
 import OfferLeadForm from '@/components/OfferLeadForm';
 import OfferMobileBar, { OfferJumpButton, OfferPhoneLink } from '@/components/OfferMobileBar';
 import OfferPageFooter from '@/components/OfferPageFooter';
-import OfferReviewsSlot from '@/components/OfferReviewsSlot';
 import type { OfferLandingContent } from '@/data/offerLandings';
 import { GOOGLE_REVIEWS_URL, shortGoogleReviews } from '@/data/offerCredibility';
 import type { FormOrigin } from '@/lib/form-origin';
@@ -288,7 +287,6 @@ export default function OfferLanding({
               <p className="text-center text-xs font-semibold leading-tight">
                 BBB A- rated · 500+ homes bought · Small family-owned business
               </p>
-              <OfferReviewsSlot />
             </div>
           )}
           <div

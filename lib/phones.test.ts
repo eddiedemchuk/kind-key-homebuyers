@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
+import { BUSINESS } from './site';
 import {
   FACEBOOK_OFFER_PHONE,
   FACEBOOK_OFFER_THANK_YOU_KEY,
@@ -164,8 +165,9 @@ describe('isAlwaysGoogleAdsPhonePath', () => {
     ]) {
       assert.equal(isAlwaysGoogleAdsPhonePath(path), false, path);
     }
-    assert.equal(ORGANIC_PHONE.display, '(253) 518-3638');
-    assert.equal(ORGANIC_PHONE.tel, '+12535183638');
+    assert.equal(ORGANIC_PHONE.display, '(206) 519-5463');
+    assert.equal(ORGANIC_PHONE.tel, '+12065195463');
+    assert.equal(ORGANIC_PHONE.tel, BUSINESS.telephone);
   });
 });
 

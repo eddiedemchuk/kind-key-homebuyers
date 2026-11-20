@@ -14,11 +14,11 @@ import {
   foreclosureTrustStrip,
   inheritedOffer,
 } from '../data/offerLandings';
-import { GOOGLE_ADS_PHONE } from '../lib/phones';
+import { GOOGLE_ADS_PHONE, ORGANIC_PHONE } from '../lib/phones';
 
 const MAIN_OFFICE_TEL = 'tel:+12065195463';
-const ORGANIC_DISPLAY = '(253) 518-3638';
-const ORGANIC_TEL = 'tel:+12535183638';
+const ORGANIC_DISPLAY = ORGANIC_PHONE.display;
+const ORGANIC_TEL = `tel:${ORGANIC_PHONE.tel}`;
 const ADS_TEL = `tel:${GOOGLE_ADS_PHONE.tel}`;
 
 function stickyBar(html: string): string {
@@ -81,7 +81,8 @@ describe('/offer landing', () => {
     assert.match(html, /KindKey Home Buyers LLC/);
     assert.match(html, /640 1st St SW/);
     assert.match(html, /BBB A- rated/);
-    assert.match(html, /4\.6 Stars on Google \(18 reviews\)/);
+    assert.equal(html.includes('4.6 Stars on Google (18 reviews)'), false);
+    assert.equal(html.includes('#1'), false);
     assert.equal(html.includes('★'), false);
     assert.equal(html.includes('aggregateRating'), false);
     assert.equal(html.match(/<h1\b/g)?.length, 1);
