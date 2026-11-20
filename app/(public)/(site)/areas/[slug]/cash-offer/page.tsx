@@ -2,7 +2,9 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import { getCityBySlug, cities } from '@/data/cities';
+import { getExpansionIntent } from '@/data/expansionCityIntent';
 import { intentFAQs } from '@/data/intentFAQs';
+import CityIntentBody from '@/components/CityIntentBody';
 import IntentPageTemplate from '@/components/IntentPageTemplate';
 
 export async function generateStaticParams() {
@@ -25,8 +27,11 @@ export async function generateMetadata({
   }
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://kindkeyhomebuyers.com';
+  const local = getExpansionIntent(city.slug, 'cash-offer');
   const title = `Get a Cash Offer in ${city.name}, WA — Fair & Transparent`;
-  const description = `Get a fair cash offer for your house in ${city.name}, WA. No obligation. Transparent process. Receive your offer within 24 hours. We buy houses as-is.`;
+  const description =
+    local?.description ??
+    `Get a fair cash offer for your house in ${city.name}, WA. No obligation. Transparent process. Receive your offer within 24 hours. We buy houses as-is.`;
 
   return {
     title,
@@ -56,6 +61,9 @@ export default async function CashOfferPage({ params }: { params: Promise<{ slug
     notFound();
   }
 
+  const local = getExpansionIntent(city.slug, 'cash-offer');
+  const faqs = local?.faqs ?? intentFAQs['cash-offer'];
+
   return (
     <>
       <Script
@@ -65,7 +73,7 @@ export default async function CashOfferPage({ params }: { params: Promise<{ slug
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
-            mainEntity: intentFAQs['cash-offer'].map((faq) => ({
+            mainEntity: faqs.map((faq) => ({
               '@type': 'Question',
               name: faq.question,
               acceptedAnswer: {
@@ -90,8 +98,10 @@ export default async function CashOfferPage({ params }: { params: Promise<{ slug
           'No Agent Commission Charged by KindKey',
         ]}
         intentSpecificSection={{
-          title: `Fair Cash Offer in ${city.name} - No Obligation`,
-          content: (
+          title: local?.title ?? `Fair Cash Offer in ${city.name} - No Obligation`,
+          content: local ? (
+            <CityIntentBody block={local} nearby={city.nearby} />
+          ) : (
             <div className="prose prose-lg max-w-none text-text-secondary">
               <p className="mb-4 text-lg">
                 Get a fair, transparent cash offer for your house in {city.name}. Our offers are
@@ -112,7 +122,9 @@ export default async function CashOfferPage({ params }: { params: Promise<{ slug
             </div>
           ),
         }}
-        faqs={intentFAQs['cash-offer']}
+        faqs={faqs}
+        phoneLabel={local ? '(206) 519-5463' : undefined}
+        phoneHref={local ? 'tel:+12065195463' : undefined}
       />
     </>
   );

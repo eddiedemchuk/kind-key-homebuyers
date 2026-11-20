@@ -4,6 +4,7 @@ import Script from 'next/script';
 import { getCityBySlug, cities } from '@/data/cities';
 import { getCitySituationLinks } from '@/data/citySituations';
 import CityPageClient from '@/components/CityPageClient';
+import { getRelatedBlogPosts } from '@/lib/cityBlog';
 import { faqJsonLd } from '@/lib/seo';
 import { BUSINESS, cityRealEstateServiceJsonLd, localBusinessJsonLd } from '@/lib/site';
 
@@ -136,6 +137,8 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
         companyName="KindKey Home Buyers"
         siteUrl={siteUrl}
         situationLinks={getCitySituationLinks(city.slug)}
+        nearby={city.nearby}
+        blogLinks={getRelatedBlogPosts(city)}
       />
     </>
   );

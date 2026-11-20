@@ -1,5 +1,6 @@
 import type { CitySituationKind, CitySituationPage } from '@/data/cityFirePages';
 import { cities } from '@/data/cities';
+import { expansionCityProfiles } from '@/data/expansionCityProfiles';
 
 const home = { name: 'Home', path: '/' };
 
@@ -9,7 +10,7 @@ const closingSentence =
 const notAgent =
   'KindKey Home Buyers LLC is a principal buyer at 640 1st St SW in Auburn. KindKey is not a real estate agent or broker and does not list the house.';
 
-interface DistressedCityProfile {
+export interface DistressedCityProfile {
   slug: string;
   name: string;
   where: string;
@@ -386,6 +387,7 @@ const profiles: DistressedCityProfile[] = [
       relation: 'the unincorporated community to the south',
     },
   },
+  ...expansionCityProfiles,
 ];
 
 const covered = new Set(profiles.map((profile) => profile.slug));

@@ -19,9 +19,9 @@ export default function BlogMoneyLinks() {
           Cities and situations KindKey buys
         </h2>
         <p className="mb-8 text-text-secondary">
-          KindKey Home Buyers LLC is a principal buyer in King County, Pierce County, and Kitsap
-          County, based at 640 1st St SW in Auburn. KindKey is not a real estate agent. Start with
-          the city or the situation that matches the house, or{' '}
+          KindKey Home Buyers LLC is a principal buyer in King County, Pierce County, Kitsap County,
+          Snohomish County, and Thurston County, based at 640 1st St SW in Auburn. KindKey is not a
+          real estate agent. Start with the city or the situation that matches the house, or{' '}
           <Link href="/cash-offer" className="font-semibold text-divider hover:underline">
             request a cash offer
           </Link>

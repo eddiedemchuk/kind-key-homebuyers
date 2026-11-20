@@ -24,6 +24,18 @@ interface SituationLink {
   description: string;
 }
 
+interface NearbyLink {
+  slug: string;
+  name: string;
+  relation: string;
+}
+
+interface BlogLink {
+  href: string;
+  title: string;
+  description: string;
+}
+
 function CityLocalContext({ city }: { city: CityPageClientProps['city'] }) {
   return (
     <section className="bg-primary py-16">
@@ -45,6 +57,69 @@ function CityLocalContext({ city }: { city: CityPageClientProps['city'] }) {
         <Link href="/cash-offer" className="font-semibold text-divider hover:underline">
           Request a cash offer in {city.name}
         </Link>
+      </div>
+    </section>
+  );
+}
+
+function CityNearbyLinks({ cityName, nearby }: { cityName: string; nearby: NearbyLink[] }) {
+  if (nearby.length === 0) {
+    return null;
+  }
+
+  return (
+    <section className="bg-secondary py-16">
+      <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <h2 className="mb-4 text-3xl font-bold text-text-primary">Cities near {cityName}</h2>
+        <ul className="space-y-3 text-lg text-text-secondary">
+          {nearby.map((place) => (
+            <li key={place.slug}>
+              <Link
+                href={`/areas/${place.slug}`}
+                className="font-semibold text-divider hover:underline"
+              >
+                Sell a house in {place.name}
+              </Link>
+              {': '}
+              {place.relation}
+            </li>
+          ))}
+        </ul>
+        <p className="mt-6 text-lg text-text-secondary">
+          Call{' '}
+          <a href="tel:+12065195463" className="font-semibold text-divider hover:underline">
+            (206) 519-5463
+          </a>{' '}
+          or{' '}
+          <Link href="/cash-offer" className="font-semibold text-divider hover:underline">
+            request a cash offer
+          </Link>
+          . KindKey is a principal buyer in Auburn, not a real estate agent.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+function CityBlogLinks({ cityName, links }: { cityName: string; links: BlogLink[] }) {
+  if (links.length === 0) {
+    return null;
+  }
+
+  return (
+    <section className="bg-white py-16">
+      <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <h2 className="mb-4 text-3xl font-bold text-text-primary">Guides related to {cityName}</h2>
+        <ul className="space-y-4">
+          {links.map((post) => (
+            <li key={post.href}>
+              <Link href={post.href} className="font-semibold text-divider hover:underline">
+                {post.title}
+              </Link>
+              <p className="mt-1 text-text-secondary">{post.description}</p>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
@@ -94,6 +169,8 @@ interface CityPageClientProps {
     faq: Array<{ question: string; answer: string }>;
   };
   situationLinks?: SituationLink[];
+  nearby?: NearbyLink[];
+  blogLinks?: BlogLink[];
   heroVideoSrc?: string;
   heroPosterSrc: string;
   backgroundImageSrc: string;
@@ -111,6 +188,8 @@ export default function CityPageClient({
   companyName,
   siteUrl,
   situationLinks = [],
+  nearby = [],
+  blogLinks = [],
 }: CityPageClientProps) {
   const [adsMode, setAdsMode] = useState(false);
 
@@ -138,6 +217,10 @@ export default function CityPageClient({
         <CityLocalContext city={city} />
 
         <CitySituationLinks cityName={city.name} links={situationLinks} />
+
+        <CityNearbyLinks cityName={city.name} nearby={nearby} />
+
+        <CityBlogLinks cityName={city.name} links={blogLinks} />
 
         <CTASection
           title={`Ready to Sell Your ${city.name} Home?`}
@@ -273,6 +356,10 @@ export default function CityPageClient({
       <CityLocalContext city={city} />
 
       <CitySituationLinks cityName={city.name} links={situationLinks} />
+
+      <CityNearbyLinks cityName={city.name} nearby={nearby} />
+
+      <CityBlogLinks cityName={city.name} links={blogLinks} />
 
       <section className="bg-secondary py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

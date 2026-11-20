@@ -726,7 +726,7 @@ export const blogPosts: BlogPost[] = [
         heading: 'Where a King County notice lives',
         paragraphs: [
           'RCW 61.24.040 records the notice of sale where the deed of trust is of record. For a King County deed, that is the King County Recorder. Kent, Federal Way, Renton, and Seattle are King County. Most of Auburn is too. Part of southern Auburn is Pierce County, and Milton can fall in either county. The notice names the county. Do not guess from the neighborhood, and do not search the Pierce County Auditor just because Tacoma is nearby.',
-          'Closer guides on this site cover Auburn, Federal Way, and Kent. Renton has a city page and does not have a separate foreclosure page. Seattle does not have a city page or a foreclosure page here. The statute does not change at the city line, and KindKey buys in those cities from Auburn. The auction is held at the time and place on the notice. A lawsuit to restrain a sale under RCW 61.24.130 is filed in superior court. KindKey will not prepare it.',
+          'Closer guides on this site cover Auburn, Federal Way, and Kent. Renton and Seattle each have a city page. Neither has a separate foreclosure page here. The statute does not change at the city line, and KindKey buys in those cities from Auburn. The auction is held at the time and place on the notice. A lawsuit to restrain a sale under RCW 61.24.130 is filed in superior court. KindKey will not prepare it.',
         ],
       },
       {
@@ -760,7 +760,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: 'Does KindKey buy in Renton and Seattle, or only in Auburn?',
         answer:
-          'KindKey buys houses across King County, including Renton and the Seattle area, from the Auburn office. Call (206) 519-5463 or use the cash-offer form. There is no separate Renton or Seattle foreclosure page on this site. The notice is what controls the date.',
+          'KindKey buys houses across King County, including Renton and Seattle, from the Auburn office. Seattle has a city page at /areas/seattle. Call (206) 519-5463 or use the cash-offer form. There is no separate Renton or Seattle foreclosure page on this site. The notice is what controls the date.',
       },
       {
         question: 'Can I reinstate a King County loan instead of selling?',

@@ -32,7 +32,9 @@ export default function OfferPerCityLanding({ city }: { city: OfferCityPage }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(localBusinessJsonLd(phone.tel)).replace(/</g, '\\u003c'),
+          __html: JSON.stringify(
+            localBusinessJsonLd(phone.tel, { includeExpansionCities: false })
+          ).replace(/</g, '\\u003c'),
         }}
       />
       <header className="z-40 border-b border-gray-200 bg-white md:sticky md:top-0">

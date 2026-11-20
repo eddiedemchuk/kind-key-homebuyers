@@ -1,4 +1,12 @@
-export type CountyGroup = 'king' | 'pierce' | 'kitsap' | 'split';
+import { expansionCities } from '@/data/expansionCities';
+
+export type CountyGroup = 'king' | 'pierce' | 'kitsap' | 'split' | 'snohomish' | 'thurston';
+
+export interface CityNearby {
+  slug: string;
+  name: string;
+  relation: string;
+}
 
 export interface CityInfo {
   name: string;
@@ -10,6 +18,10 @@ export interface CityInfo {
   neighborhoods: string[];
   marketContext: string;
   faq: Array<{ question: string; answer: string }>;
+  /** Other KindKey city hubs to link from this page. */
+  nearby?: CityNearby[];
+  /** Extra phrases for matching related blog posts. The city name is always included. */
+  blogTerms?: string[];
 }
 
 export const cities: CityInfo[] = [
@@ -695,6 +707,7 @@ export const cities: CityInfo[] = [
       },
     ],
   },
+  ...expansionCities,
 ];
 
 const countyGroupLabels: Record<CountyGroup, string> = {
@@ -702,10 +715,12 @@ const countyGroupLabels: Record<CountyGroup, string> = {
   pierce: 'Pierce County',
   split: 'King and Pierce Counties',
   kitsap: 'Kitsap County',
+  snohomish: 'Snohomish County',
+  thurston: 'Thurston County',
 };
 
 export function citiesByCounty() {
-  const order: CountyGroup[] = ['king', 'pierce', 'split', 'kitsap'];
+  const order: CountyGroup[] = ['king', 'pierce', 'split', 'kitsap', 'snohomish', 'thurston'];
   return order
     .map((group) => ({
       group,

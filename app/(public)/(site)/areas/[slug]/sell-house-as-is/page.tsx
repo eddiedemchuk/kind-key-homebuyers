@@ -2,7 +2,9 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import { getCityBySlug, cities } from '@/data/cities';
+import { getExpansionIntent } from '@/data/expansionCityIntent';
 import { intentFAQs } from '@/data/intentFAQs';
+import CityIntentBody from '@/components/CityIntentBody';
 import IntentPageTemplate from '@/components/IntentPageTemplate';
 
 export async function generateStaticParams() {
@@ -25,8 +27,11 @@ export async function generateMetadata({
   }
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://kindkeyhomebuyers.com';
+  const local = getExpansionIntent(city.slug, 'as-is');
   const title = `Sell Your House As-Is in ${city.name}, WA — No Repairs Needed`;
-  const description = `Sell your house as-is in ${city.name}, WA. No repairs needed. We buy houses in any condition. Water damage, fire damage, structural issues - we buy them all. Get a fair cash offer today.`;
+  const description =
+    local?.description ??
+    `Sell your house as-is in ${city.name}, WA. No repairs needed. We buy houses in any condition. Water damage, fire damage, structural issues - we buy them all. Get a fair cash offer today.`;
 
   return {
     title,
@@ -56,6 +61,9 @@ export default async function SellAsIsPage({ params }: { params: Promise<{ slug:
     notFound();
   }
 
+  const local = getExpansionIntent(city.slug, 'as-is');
+  const faqs = local?.faqs ?? intentFAQs['as-is'];
+
   return (
     <>
       <Script
@@ -65,7 +73,7 @@ export default async function SellAsIsPage({ params }: { params: Promise<{ slug:
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
-            mainEntity: intentFAQs['as-is'].map((faq) => ({
+            mainEntity: faqs.map((faq) => ({
               '@type': 'Question',
               name: faq.question,
               acceptedAnswer: {
@@ -90,8 +98,10 @@ export default async function SellAsIsPage({ params }: { params: Promise<{ slug:
           'Fair Cash Offer',
         ]}
         intentSpecificSection={{
-          title: `We Buy Houses in Any Condition in ${city.name}`,
-          content: (
+          title: local?.title ?? `We Buy Houses in Any Condition in ${city.name}`,
+          content: local ? (
+            <CityIntentBody block={local} nearby={city.nearby} />
+          ) : (
             <div className="prose prose-lg max-w-none text-text-secondary">
               <p className="mb-4 text-lg">
                 We truly buy houses as-is in {city.name}. No matter what condition your house is in,
@@ -121,7 +131,9 @@ export default async function SellAsIsPage({ params }: { params: Promise<{ slug:
             </div>
           ),
         }}
-        faqs={intentFAQs['as-is']}
+        faqs={faqs}
+        phoneLabel={local ? '(206) 519-5463' : undefined}
+        phoneHref={local ? 'tel:+12065195463' : undefined}
       />
     </>
   );

@@ -27,15 +27,47 @@ const COUNTY_AREAS = [
   'Pierce County, Washington',
   'Kitsap County, Washington',
   'Snohomish County, Washington',
+  'Thurston County, Washington',
 ] as const;
 
-export function localBusinessJsonLd(telephone: string = BUSINESS.telephone) {
+const EXPANSION_CITY_NAMES = new Set([
+  'Seattle',
+  'Bellevue',
+  'Shoreline',
+  'Maple Valley',
+  'Covington',
+  'Enumclaw',
+  'Gig Harbor',
+  'University Place',
+  'South Hill',
+  'Everett',
+  'Lynnwood',
+  'Olympia',
+]);
+
+const FULL_AREA_DESCRIPTION =
+  'KindKey Home Buyers LLC is a principal buyer based in Auburn, Washington. KindKey purchases houses directly from homeowners in King County, Pierce County, Kitsap County, Snohomish County, and Thurston County and is not a real estate agent or broker.';
+
+const PRE_EXPANSION_AREA_DESCRIPTION =
+  'KindKey Home Buyers LLC is a principal buyer based in Auburn, Washington. KindKey purchases houses directly from homeowners in King County, Pierce County, Kitsap County, and Snohomish County and is not a real estate agent or broker.';
+
+export function localBusinessJsonLd(
+  telephone: string = BUSINESS.telephone,
+  options?: { includeExpansionCities?: boolean }
+) {
+  const includeExpansion = options?.includeExpansionCities ?? true;
+  const cityNames = includeExpansion
+    ? SERVICE_AREA_CITIES
+    : SERVICE_AREA_CITIES.filter((name) => !EXPANSION_CITY_NAMES.has(name));
+  const counties = includeExpansion
+    ? COUNTY_AREAS
+    : COUNTY_AREAS.filter((name) => name !== 'Thurston County, Washington');
+
   return {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: BUSINESS.legalName,
-    description:
-      'KindKey Home Buyers LLC is a principal buyer based in Auburn, Washington. KindKey purchases houses directly from homeowners in King County, Pierce County, Kitsap County, and Snohomish County and is not a real estate agent or broker.',
+    description: includeExpansion ? FULL_AREA_DESCRIPTION : PRE_EXPANSION_AREA_DESCRIPTION,
     url: BUSINESS.url,
     image: BUSINESS.logo,
     logo: BUSINESS.logo,
@@ -50,11 +82,11 @@ export function localBusinessJsonLd(telephone: string = BUSINESS.telephone) {
       addressCountry: BUSINESS.addressCountry,
     },
     areaServed: [
-      ...COUNTY_AREAS.map((name) => ({
+      ...counties.map((name) => ({
         '@type': 'AdministrativeArea',
         name,
       })),
-      ...SERVICE_AREA_CITIES.map((name) => ({
+      ...cityNames.map((name) => ({
         '@type': 'City',
         name,
         addressRegion: 'WA',

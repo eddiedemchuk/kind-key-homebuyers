@@ -51,14 +51,14 @@ export const metadata: Metadata = {
     absolute: 'Sell Your House Fast for Cash in Auburn and South Puget Sound | KindKey Home Buyers',
   },
   description:
-    'Request a cash offer from KindKey Home Buyers LLC, a principal buyer based in Auburn. We buy houses as-is in King County, Pierce County, and Kitsap County.',
+    'Request a cash offer from KindKey Home Buyers LLC, a principal buyer based in Auburn. We buy houses as-is in King County, Pierce County, Kitsap County, Snohomish County, and Thurston County.',
   alternates: {
     canonical: SITE_URL,
   },
   openGraph: {
     title: 'Sell Your House Fast for Cash in Auburn and South Puget Sound | KindKey Home Buyers',
     description:
-      'Request a cash offer from KindKey Home Buyers LLC, a principal buyer based in Auburn. We buy houses as-is in King County, Pierce County, and Kitsap County.',
+      'Request a cash offer from KindKey Home Buyers LLC, a principal buyer based in Auburn. We buy houses as-is in King County, Pierce County, Kitsap County, Snohomish County, and Thurston County.',
     url: SITE_URL,
     images: [
       {
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Sell Your House Fast for Cash in Auburn and South Puget Sound | KindKey Home Buyers',
     description:
-      'Request a cash offer from KindKey Home Buyers LLC, a principal buyer based in Auburn. We buy houses as-is in King County, Pierce County, and Kitsap County.',
+      'Request a cash offer from KindKey Home Buyers LLC, a principal buyer based in Auburn. We buy houses as-is in King County, Pierce County, Kitsap County, Snohomish County, and Thurston County.',
     images: [`${SITE_URL}${defaultHeroImage}`],
   },
 };
@@ -186,7 +186,7 @@ export default function HomePage() {
           <p className="mb-4 text-center text-xl text-text-secondary">
             We buy houses throughout Washington State, with local pages for{' '}
             <Link href="/areas" className="font-semibold text-divider hover:underline">
-              King County, Pierce County, and Kitsap County
+              King, Pierce, Kitsap, Snohomish, and Thurston County
             </Link>
             . Auburn is home. The cities below are where most of our sellers are.
           </p>

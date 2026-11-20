@@ -6,7 +6,7 @@ import { SITE_URL } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'About KindKey Home Buyers, Based in Auburn, WA',
   description:
-    'KindKey Home Buyers LLC is a principal cash home buyer based at 640 1st St SW, Auburn, WA 98001, serving homeowners in King, Pierce, Kitsap, and Snohomish County.',
+    'KindKey Home Buyers LLC is a principal cash home buyer based at 640 1st St SW, Auburn, WA 98001, serving homeowners in King, Pierce, Kitsap, Snohomish, and Thurston County.',
   alternates: { canonical: `${SITE_URL}/about` },
 };
 
@@ -22,9 +22,10 @@ export default function AboutPage() {
                 KindKey Home Buyers LLC is based in Auburn, Washington, at 640 1st St SW, Auburn, WA
                 98001. We are a local real estate investment company and a principal buyer. We
                 purchase houses directly from homeowners in King County, Pierce County, Kitsap
-                County, and Snohomish County, including Auburn, Kent, Tacoma, Everett, Edgewood,
-                Bremerton, and Port Orchard. KindKey enters into purchase and sale agreements as the
-                buyer and is not acting as the seller's real estate agent or broker.
+                County, Snohomish County, and Thurston County, including Auburn, Seattle, Bellevue,
+                Tacoma, Everett, Olympia, Lacey, and Bremerton. KindKey enters into purchase and
+                sale agreements as the buyer and is not acting as the seller's real estate agent or
+                broker.
               </p>
 
               <p>

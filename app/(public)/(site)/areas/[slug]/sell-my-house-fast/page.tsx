@@ -2,7 +2,9 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import { getCityBySlug, cities } from '@/data/cities';
+import { getExpansionIntent } from '@/data/expansionCityIntent';
 import { intentFAQs } from '@/data/intentFAQs';
+import CityIntentBody from '@/components/CityIntentBody';
 import IntentPageTemplate from '@/components/IntentPageTemplate';
 
 export async function generateStaticParams() {
@@ -25,8 +27,11 @@ export async function generateMetadata({
   }
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://kindkeyhomebuyers.com';
+  const local = getExpansionIntent(city.slug, 'sell-fast');
   const title = `Sell My House Fast in ${city.name}, WA — Close in 7-14 Days`;
-  const description = `Sell your house fast in ${city.name}, WA. Close in as little as 7 days. Pick your closing date. No repairs needed. Get a fair cash offer today.`;
+  const description =
+    local?.description ??
+    `Sell your house fast in ${city.name}, WA. Close in as little as 7 days. Pick your closing date. No repairs needed. Get a fair cash offer today.`;
 
   return {
     title,
@@ -56,7 +61,8 @@ export default async function SellFastPage({ params }: { params: Promise<{ slug:
     notFound();
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://kindkeyhomebuyers.com';
+  const local = getExpansionIntent(city.slug, 'sell-fast');
+  const faqs = local?.faqs ?? intentFAQs['sell-fast'];
 
   return (
     <>
@@ -67,7 +73,7 @@ export default async function SellFastPage({ params }: { params: Promise<{ slug:
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
-            mainEntity: intentFAQs['sell-fast'].map((faq) => ({
+            mainEntity: faqs.map((faq) => ({
               '@type': 'Question',
               name: faq.question,
               acceptedAnswer: {
@@ -92,8 +98,10 @@ export default async function SellFastPage({ params }: { params: Promise<{ slug:
           'No Agent Commission Charged by KindKey',
         ]}
         intentSpecificSection={{
-          title: `Close Fast in ${city.name} - Pick Your Date`,
-          content: (
+          title: local?.title ?? `Close Fast in ${city.name} - Pick Your Date`,
+          content: local ? (
+            <CityIntentBody block={local} nearby={city.nearby} />
+          ) : (
             <div className="prose prose-lg max-w-none text-text-secondary">
               <p className="mb-4 text-lg">
                 Need to sell your house fast in {city.name}? We can close in as little as 7 days,
@@ -115,7 +123,9 @@ export default async function SellFastPage({ params }: { params: Promise<{ slug:
             </div>
           ),
         }}
-        faqs={intentFAQs['sell-fast']}
+        faqs={faqs}
+        phoneLabel={local ? '(206) 519-5463' : undefined}
+        phoneHref={local ? 'tel:+12065195463' : undefined}
       />
     </>
   );

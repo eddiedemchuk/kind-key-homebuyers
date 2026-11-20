@@ -26,7 +26,7 @@ export default function SellerQuizLanding({
   const [menuOpen, setMenuOpen] = useState(false);
   const address = `${BUSINESS.streetAddress}, ${BUSINESS.addressLocality}, ${BUSINESS.addressRegion} ${BUSINESS.postalCode}`;
   const jsonLd = {
-    ...localBusinessJsonLd(phone.tel),
+    ...localBusinessJsonLd(phone.tel, { includeExpansionCities: false }),
     description:
       'KindKey Home Buyers LLC is a local cash home buyer in King, Pierce, Kitsap, and Snohomish County, Washington.',
   };

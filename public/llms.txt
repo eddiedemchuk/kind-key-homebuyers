@@ -10,7 +10,7 @@ KindKey Home Buyers LLC is a local principal buyer (a real estate investor), not
 
 ## Service area
 
-King County, Pierce County, and Kitsap County, Washington. Primary cities include Auburn (home office; most of the city is in King County, and some southern parcels are in Pierce County), Kent, Federal Way, Milton, Tacoma, Edgewood, Puyallup, Renton, Burien, SeaTac, Des Moines, Tukwila, Sumner, Bonney Lake, Spanaway (unincorporated Pierce County), Lakewood, Fife, Port Orchard, Bremerton, Silverdale (unincorporated Kitsap County), and Poulsbo. The full list is at https://kindkeyhomebuyers.com/areas.
+King County, Pierce County, Kitsap County, Snohomish County, and Thurston County, Washington. Primary cities include Auburn (home office; most of the city is in King County, and some southern parcels are in Pierce County), Kent, Federal Way, Milton, Tacoma, Edgewood, Puyallup, Renton, Burien, SeaTac, Des Moines, Tukwila, Sumner, Bonney Lake, Spanaway (unincorporated Pierce County), Lakewood, Fife, Port Orchard, Bremerton, Silverdale (unincorporated Kitsap County), Poulsbo, Seattle, Bellevue, Shoreline, Maple Valley, Covington, Enumclaw, Gig Harbor (Pierce County, not Kitsap), University Place, South Hill (unincorporated Pierce County, not the City of Puyallup), Everett (Snohomish County seat), Lynnwood, and Olympia and Lacey (separate cities in Thurston County, covered together at the Olympia page). The full list is at https://kindkeyhomebuyers.com/areas.
 
 ## What KindKey does
 
@@ -50,7 +50,19 @@ KindKey buys houses as-is for cash, including houses that need repairs. KindKey 
 - Blog: https://kindkeyhomebuyers.com/blog
 - City hubs: https://kindkeyhomebuyers.com/areas and https://kindkeyhomebuyers.com/areas/auburn, with the same pattern for every city on the areas index
 - Edgewood situation pages: https://kindkeyhomebuyers.com/areas/edgewood/sell-fire-damaged-house, /sell-house-before-foreclosure, /sell-inherited-probate-house, /sell-house-with-code-violations, /sell-house-with-tenants, /sell-hoarder-house, and /sell-vacant-house
-- Every city hub also has /sell-inherited-probate-house, /sell-house-with-code-violations, /sell-house-with-tenants, /sell-hoarder-house, and /sell-vacant-house
+- Every city hub also has /sell-my-house-fast, /cash-offer, /sell-house-as-is, /sell-inherited-probate-house, /sell-house-with-code-violations, /sell-house-with-tenants, /sell-hoarder-house, and /sell-vacant-house
+- Seattle: https://kindkeyhomebuyers.com/areas/seattle
+- Bellevue: https://kindkeyhomebuyers.com/areas/bellevue
+- Shoreline: https://kindkeyhomebuyers.com/areas/shoreline
+- Maple Valley: https://kindkeyhomebuyers.com/areas/maple-valley
+- Covington: https://kindkeyhomebuyers.com/areas/covington
+- Enumclaw: https://kindkeyhomebuyers.com/areas/enumclaw
+- Gig Harbor: https://kindkeyhomebuyers.com/areas/gig-harbor
+- University Place: https://kindkeyhomebuyers.com/areas/university-place
+- South Hill: https://kindkeyhomebuyers.com/areas/south-hill
+- Everett: https://kindkeyhomebuyers.com/areas/everett
+- Lynnwood: https://kindkeyhomebuyers.com/areas/lynnwood
+- Olympia and Lacey: https://kindkeyhomebuyers.com/areas/olympia
 
 ## Guides
 

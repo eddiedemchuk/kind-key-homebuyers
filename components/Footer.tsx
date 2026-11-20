@@ -16,7 +16,7 @@ export default function Footer() {
             </h3>
             <p className="mb-4 text-text-secondary">
               {process.env.NEXT_PUBLIC_BRAND_TAGLINE ||
-                'Principal cash home buyer in King County, Pierce County, and Kitsap County, based in Auburn'}
+                'Principal cash home buyer in King, Pierce, Kitsap, Snohomish, and Thurston County, based in Auburn'}
             </p>
             <p className="mt-4 text-sm text-text-secondary">{APPROVED_TRANSACTION_DISCLOSURE}</p>
           </div>
@@ -192,7 +192,7 @@ export default function Footer() {
           </div>
           <p className="mt-4 text-sm">
             <Link href="/areas" className="text-text-secondary hover:text-divider">
-              All areas in King, Pierce, Kitsap, and Snohomish County
+              All areas in King, Pierce, Kitsap, Snohomish, and Thurston County
             </Link>
           </p>
         </div>

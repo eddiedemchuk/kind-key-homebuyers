@@ -37,7 +37,9 @@ export default function OfferCityAdsLanding({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(localBusinessJsonLd(phone.tel)).replace(/</g, '\\u003c'),
+          __html: JSON.stringify(
+            localBusinessJsonLd(phone.tel, { includeExpansionCities: false })
+          ).replace(/</g, '\\u003c'),
         }}
       />
       <script
