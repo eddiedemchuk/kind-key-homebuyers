@@ -141,7 +141,7 @@ export function offerCityPagePath(city: OfferCityPage): string {
 }
 
 export function offerCityHeadline(city: OfferCityPage): string {
-  return `#1 Cash Home Buyer in ${city.name}, WA`;
+  return `Cash Home Buyer in ${city.name}, WA`;
 }
 
 export function offerCitySubhead(city: OfferCityPage): string {
@@ -149,7 +149,7 @@ export function offerCitySubhead(city: OfferCityPage): string {
 }
 
 export function offerCityTitle(city: OfferCityPage): string {
-  return `#1 Cash Home Buyer ${city.name} WA | Sell As-Is | KindKey Home Buyers`;
+  return `Cash Home Buyer ${city.name} WA | Sell As-Is | KindKey Home Buyers`;
 }
 
 export function offerCityDescription(city: OfferCityPage): string {

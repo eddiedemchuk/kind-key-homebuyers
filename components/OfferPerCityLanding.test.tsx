@@ -15,7 +15,7 @@ import {
   offerCityPagePath,
   offerCityTitle,
 } from '../data/offerCityPages';
-import { GOOGLE_ADS_PHONE } from '../lib/phones';
+import { GOOGLE_ADS_PHONE, ORGANIC_PHONE } from '../lib/phones';
 
 const BANNED = [
   'closing cost',
@@ -45,17 +45,41 @@ describe('per-city offer pages', () => {
     }
   });
 
-  it('puts each city in the sitemap and keeps the noindex offer routes out', () => {
+  it('noindexes every city page and keeps those URLs out of the sitemap', async () => {
     const urls = sitemap().map((item) => item.url);
     for (const city of offerCityPages) {
       assert.equal(
         urls.includes(`https://kindkeyhomebuyers.com${offerCityPagePath(city)}`),
-        true,
+        false,
         city.slug
       );
+      const metadata = await generateMetadata({ params: Promise.resolve({ slug: city.slug }) });
+      const robots = metadata.robots;
+      assert.ok(robots && typeof robots !== 'string', city.slug);
+      if (!robots || typeof robots === 'string') continue;
+      assert.equal(robots.index, false, city.slug);
+      assert.equal(robots.follow, true, city.slug);
+      const googleBot = robots.googleBot;
+      if (googleBot && typeof googleBot !== 'string') {
+        assert.equal(googleBot.index, false, city.slug);
+        assert.equal(googleBot.follow, true, city.slug);
+      }
+      const title = metadata.title;
+      const absolute =
+        title && typeof title === 'object' && 'absolute' in title ? title.absolute : '';
+      assert.equal(String(absolute).includes('#1'), false, city.slug);
     }
     for (const path of ['/offer', '/offer/inherited', '/offer/cash-offer-fell-through']) {
       assert.equal(urls.includes(`https://kindkeyhomebuyers.com${path}`), false, path);
+    }
+    for (const path of [
+      'https://kindkeyhomebuyers.com',
+      'https://kindkeyhomebuyers.com/contact',
+      'https://kindkeyhomebuyers.com/areas/auburn',
+      'https://kindkeyhomebuyers.com/areas/kent',
+      'https://kindkeyhomebuyers.com/offer/seattle-king-county',
+    ]) {
+      assert.equal(urls.includes(path), true, path);
     }
   });
 
@@ -74,6 +98,8 @@ describe('per-city offer pages', () => {
       assert.match(html, /Close in as little as 7 days/);
       assert.match(html, /500\+ homes bought/);
       assert.match(html, /BBB A- rated/);
+      assert.equal(html.includes('#1'), false, city.slug);
+      assert.equal(html.includes('4.6 Stars on Google (18 reviews)'), false, city.slug);
       assert.match(html, /We close on the date you pick/);
       assert.match(html, /The number we offer is the number we close on/);
       assert.match(html, /We help with moving/);
@@ -81,7 +107,6 @@ describe('per-city offer pages', () => {
       assert.equal(lower.includes('market snapshot'), false, city.slug);
       assert.match(html, /data-offer-trust-bar/);
       assert.match(html, /How we figure your offer/);
-      assert.match(html, /4\.6 Stars on Google \(18 reviews\)/);
       assert.equal(html.includes('★'), false, city.slug);
       assert.equal(html.includes('aggregateRating'), false, city.slug);
       assert.equal(lower.includes('testimonial'), false, city.slug);
@@ -94,6 +119,8 @@ describe('per-city offer pages', () => {
       assert.match(html, /name="listed_with_agent"/);
       assert.equal(html.includes(`tel:${GOOGLE_ADS_PHONE.tel}`), true, city.slug);
       assert.match(html, /\(253\) 352-4379/);
+      assert.equal(html.includes(ORGANIC_PHONE.display), false, city.slug);
+      assert.equal(html.includes(ORGANIC_PHONE.tel), false, city.slug);
       assert.equal(html.includes('(253) 518-3638'), false, city.slug);
       assert.equal(html.includes('253-518-3638'), false, city.slug);
       for (const phrase of BANNED) {

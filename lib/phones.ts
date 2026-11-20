@@ -1,13 +1,12 @@
 import { normalizeOfferSrc, offerFacebookVisitFromSearch } from '@/lib/offer-facebook-visit';
 
-export const ORGANIC_PHONE = { display: '(253) 518-3638', tel: '+12535183638' } as const;
+/** Main office line. Every organic page shows this number. */
+export const ORGANIC_PHONE = { display: '(206) 519-5463', tel: '+12065195463' } as const;
 export const GOOGLE_ADS_PHONE = { display: '(253) 352-4379', tel: '+12533524379' } as const;
+/** Caller ID for outbound calls. Same digits as the main office line. Not a page display number. */
 export const FACEBOOK_ADS_PHONE = { display: '(206) 519-5463', tel: '+12065195463' } as const;
 /** Number shown on Facebook offer pages and on /thank-you after that form is submitted. */
 export const FACEBOOK_OFFER_PHONE = { display: '(253) 453-8597', tel: '+12534538597' } as const;
-
-/** Organic pages that swap to the Google Ads number after a paid Google visit. */
-export const GOOGLE_ADS_PHONE_PATHS = ['/sell-house-as-is', '/cash-offer'] as const;
 
 export const FACEBOOK_OFFER_PATH = '/offer/facebook';
 /** Internal document for /offer?src=fb and /offer?src=fb_static. The browser URL stays /offer. */

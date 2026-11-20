@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import LeadForm from '@/components/LeadForm';
+import { ORGANIC_PHONE } from '@/lib/phones';
 import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -38,10 +39,10 @@ export default function ContactPage() {
                   <div>
                     <p className="mb-1 font-medium text-text-primary">Phone Call</p>
                     <a
-                      href="tel:+12535183638"
+                      href={`tel:${ORGANIC_PHONE.tel}`}
                       className="mb-1 block text-sm text-divider hover:underline"
                     >
-                      (253) 518-3638
+                      {ORGANIC_PHONE.display}
                     </a>
                     <p className="text-sm">
                       Prefer to talk? We'll call you at your preferred time after you submit your
@@ -51,10 +52,10 @@ export default function ContactPage() {
                   <div>
                     <p className="mb-1 font-medium text-text-primary">Text</p>
                     <a
-                      href="tel:+12535183638"
+                      href={`tel:${ORGANIC_PHONE.tel}`}
                       className="mb-1 block text-sm text-divider hover:underline"
                     >
-                      (253) 518-3638
+                      {ORGANIC_PHONE.display}
                     </a>
                     <p className="text-sm">
                       Text us at the number above. We respond quickly to text inquiries.

@@ -3,7 +3,6 @@ import { blogPosts } from '@/data/blogPosts';
 import { cities } from '@/data/cities';
 import { citySituations } from '@/data/citySituations';
 import { offerCityAdsPages } from '@/data/offerCityAds';
-import { offerCityPagePath, offerCityPages } from '@/data/offerCityPages';
 import { situations } from '@/data/situations';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -13,7 +12,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // /offer, /offer/facebook, /offer/foreclosure, /offer/inherited, /offer/as-is,
   // /offer/fire-damage, /quiz, /offer/quiz, and /sell are paid landing pages.
   // They are noindex and must stay off this list.
-  // The city Google Ads pages are indexable and are listed below.
+  // /offer/city/* pages are near-duplicate Google Ads landings. They stay live
+  // for ads, are noindex, and must stay off this list.
+  // The five regional Google Ads pages stay indexable and are listed below.
   const routes = [
     '',
     '/how-it-works',
@@ -36,10 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     intentTypes.map((intent) => `/areas/${city.slug}/${intent}`)
   );
 
-  const offerCityRoutes: string[] = [
-    ...offerCityAdsPages.map((page) => page.path),
-    ...offerCityPages.map((city) => offerCityPagePath(city)),
-  ];
+  const offerCityRoutes: string[] = offerCityAdsPages.map((page) => page.path);
   const situationRoutes = situations.map((page) => page.path);
   const citySituationRoutes = citySituations.map((page) => page.path);
   const blogRoutes = blogPosts.map((post) => post.path);
