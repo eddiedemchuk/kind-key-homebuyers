@@ -7043,4 +7043,357 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to finish the insurance repair first. You can say no.',
   }),
+  post('sell-house-with-failed-side-sewer-edgewood-wa', {
+    breadcrumbName: 'Side sewers in Edgewood',
+    title: 'Selling a House with a Failed Side Sewer or Sewer Backup in Edgewood, WA',
+    description:
+      'How Edgewood owners sell a house with a sewer backup, a blocked building sewer, or a failed septic the health department says must connect, without digging the line first. KindKey buys as a principal. Not a sewer inspection.',
+    h1: 'Selling a House with a Failed Side Sewer or Sewer Backup in Edgewood, WA',
+    publishedAt: '2026-11-20',
+    intro: [
+      'You can sell an Edgewood house with a sewer backup, a blocked line in the yard, or a health-department letter that says a failed septic system has to connect to a public sewer, without excavating the yard, replacing the pipe, or finishing that connection first. ' +
+        office +
+        ' KindKey is not a plumber, the Tacoma-Pierce County Health Department, Lakehaven Water and Sewer District, the City of Fife, or the City of Edgewood Public Works Department. This article is not a sewer inspection, not a connection determination, and not legal advice.',
+      'Edgewood is entirely in Pierce County, between Milton, Fife, Puyallup, and Sumner. It incorporated on February 28, 1996. Most residents live on North Hill: longer driveways, and shops set back from the street. A smaller share of the city sits in the Puyallup River valley. Meridian Avenue E is State Route 161. Jovita Boulevard is the other everyday road. Jovita is not a separate city. A backup under a North Hill house, sewage in a valley bathroom, and a letter about a septic tank are different facts. Bring the address.',
+    ],
+    callout:
+      'You do not have to dig up the line, camera it, or connect to a sewer main before you ask. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading:
+          'A backup in the house, a pipe in the yard, and a septic tank are not the same fact',
+        paragraphs: [
+          'Tell KindKey what you have seen, in plain words, before anyone schedules a visit. It may be a toilet that will not flush, sewage in a tub or a basement, a wet spot in the yard, a cleanout that overflowed, a camera report a plumber or a buyer’s inspector already wrote, or a letter that uses the words septic, side sewer, or connection. Some of these houses are still lived in. Some are not. People use the word lateral for more than one pipe. KindKey will not sort that word, and KindKey will not tell you from a description which pipe failed. A photo of the backup, the cleanout, the yard, and any pages you already have is enough to start. If you do not believe the floor is safe to walk, say so. An exterior look can begin the conversation. Do not open a cleanout, dig a trench, or walk a floor that is not safe just to satisfy a buyer. Furniture and shop contents you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to.',
+          'The city’s sewer title draws a line the word lateral does not. EMC 11.30.020 defines "side sewer" as that sewer, located within a city right-of-way or easement, between the city’s sewer main and the right-of-way or easement line, connecting to the building sewer and regulated by the public works department and that title. The same section defines "connection" as the physical connection of the building sewer to the side sewer. It also says that if a portion of the building sewer has been constructed with the side sewer, connection is deemed to occur when the two separate portions of the building sewer are connected. EMC 11.45.130(A) says the owner of the property served by a building sewer shall construct, pay for, own, operate, and maintain the building sewer, and that if a building sewer becomes restricted or blocked, it is the owner’s responsibility to restore service. EMC 11.45.010(A) says the owner constructs and pays for the side sewer, and that upon the city’s approval and acceptance the owner transfers that side sewer to the city through an agreement and bill of sale in a form approved by the city attorney. The same subsection says the city shall thereafter own, operate, maintain, and retain full rights of access to the side sewer. EMC 11.45.030(B) says the city or its designee is responsible for maintenance of the side sewer and for an as-built record of its location, and that if the side sewer becomes restricted or blocked, it is the owner’s responsibility to promptly notify the city. Those are different sentences. KindKey will not tell you which pipe is blocked, who has to pay for a dig, or whether the city has accepted a line. The history note published with EMC 11.30.020 and EMC 11.45.030 includes Ord. 26-0709, dated May 12, 2026. A code can be amended after that note. Read the section in front of you, or ask the city. KindKey will not make the call.',
+          'A septic tank is a third fact. EMC 11.30.020 defines "OSS" as a private on-site sewage system, also called a septic system, and it defines "TPCHD" as the Tacoma - Pierce County Health Department. Many older North Hill and Jovita lots use a septic system, and some use a private well. Others are on a public sewer. The city name does not decide it, and a smell in the yard does not decide it. You do not have to pump a tank, locate a drainfield, or prove which one you have before KindKey looks. KindKey does not inspect, pump, or certify a septic system or a well. The Edgewood septic guide is that page. This page is the pipe that carries wastewater away from the house toward a public main, a backup from that pipe, or a letter that says a failed septic system has to be replaced by a connection. You can have more than one of those problems. Say which ones you know about. Sewage that already entered a room is also the Edgewood water-damage guide. Growth that followed it is the Edgewood mold guide. A soft floor is the Edgewood foundation guide. A supply line to a faucet is the Edgewood plumbing guide. KindKey prices the property in front of us.',
+          'Who sends the bill is a separate question from which pipe failed. The City of Edgewood’s utilities page lists Lakehaven Water and Sewer District for sewer, and the City of Fife for sewer west of 86th Avenue E. It lists City Hall at 10440 Dom Calata Way E, Edgewood, WA 98372, with hours of Monday through Thursday, 8:30 a.m. to 5:00 p.m., and the phone (253) 952-3299. Lakehaven’s Edgewood sewer FAQ, with a form update dated July 6, 2026, says the City of Edgewood owns the public sewer system facilities within Edgewood’s corporate boundaries, and that Lakehaven operates and maintains that system under an interlocal agreement. The same FAQ says only properties in what it calls the Phase One sewer service area are eligible for sewer service by Lakehaven under that agreement, and that all other Edgewood properties should contact the health department about an on-site system. The FAQ says to contact the city at (253) 952-3299 about whether a property in that Phase One area is required to connect. The city’s General Sewer Plan Update page says the City Council passed Ordinance 24-0670 on December 10, 2024, with an effective date of January 1, 2025, and that instead of phases the updated plan identifies which areas are routed to four proposed receiving sewer utilities: Lakehaven, Fife, Pierce County, and Puyallup. KindKey will not tell you which of those sentences describes your parcel. Read the header on the bill and on the letter. EMC 11.30.020 defines a "receiving jurisdiction" as another city, county, or sewer district that receives wastewater from a portion of Edgewood, and the examples in that definition are the city of Puyallup, the city of Fife, the city of Sumner, the city of Tacoma, Pierce County, and Lakehaven. An example in a definition is not a map of your lot.',
+          'On-site sewage questions in Pierce County go to the Tacoma-Pierce County Health Department, at 3629 S D St, Tacoma, WA 98418, main line (253) 649-1500. Lakehaven’s Development Engineering section publishes DE@LakehavenWSD.gov and the telephone numbers (253) 945-1580 and (253) 945-1581. KindKey is not either office and will not call them for you. Milton, next door, can fall in King County or Pierce County. Edgewood does not. A mailing address that says Edgewood is not always inside the city. The closing agent confirms the parcel. An Edgewood deed records with the Pierce County Auditor in Tacoma, at 2401 S 35th St, Room 200, Tacoma, WA 98409. The phone that office publishes for questions about requesting recorded documents is (253) 798-7440. The auditor does not decide whether a pipe is a side sewer. Do not record a Pierce County deed at the Kitsap County Auditor in Port Orchard, or at the King County Recorder, because someone in the family takes a ferry or because KindKey’s office is in Auburn.',
+        ],
+      },
+      {
+        heading: 'What the sewer title says about a connection, and what KindKey will not measure',
+        paragraphs: [
+          'Chapter 11.35 EMC is the extensions-and-connections chapter. EMC 11.35.010(A) says all new or proposed structures and uses that are located on property within 300 feet of an existing available sanitary sewer main and generate wastewater shall be required to extend the sanitary sewer main and connect to the sanitary sewer utility in a manner consistent with the general sewer plan. It says the horizontal distance shall be measured along a straight line from the existing sanitary sewer to the subject structure’s closest property line. If the property is not fully fronted by a sewer, the owner, as a condition of sewer service, shall be required to extend the city’s sewer to and across one full side of the property in accordance with that plan. Nonrectangular and corner lots may be required to extend the sewer along two or more full sides as determined by the director. EMC 11.35.010(B) says all existing structures that are located within 300 feet of an existing available sanitary sewer main served by an OSS that has failed, as defined by the health department, or requires a permit from the health department to repair the OSS for continued operations, shall be required to extend the main and connect. That subsection uses the same straight-line measurement to the closest property line. KindKey will not measure 300 feet, find the closest property line, or tell you that your tank has failed. You do not have to hire a surveyor or a civil engineer before KindKey looks.',
+          'Two later subsections are easy to mix up with a sale of a house that is already standing. EMC 11.35.010(C) is about a new sanitary sewer main installed by a private developer that fronts a parcel with an existing structure served by an on-site system. It lists times when that existing structure shall be required to connect, including before certain city permit approvals, if the system requires a health-department repair permit, or if the system is failing as defined by the health department. EMC 11.35.010(D) is about a new main the city proposes to install. It says the city must conduct a public noticing and engagement process with impacted property owners before construction. Upon installation, it says an existing on-site system is assigned an age based on the date of the last permitted activity in the health department’s records, such as evidence of a completed installation or repair permit, and that the structure will not be required to connect to that new main until the system’s age is at least 15 years. Once that age reaches 15 years, it says existing structures must connect within 180 days. EMC 11.35.010(D)(4) says that regardless of those conditions, existing structures must connect to the new sanitary sewer if the conditions in subsection B are met. KindKey will not count the years, read the health department’s permit file, or tell you the 15-year sentence applies to a backup you already have. Asking for an offer is not a city permit and it is not construction of a main.',
+          'EMC 11.55.010(A) says a structure may connect to an on-site system only when it is not required to connect to the city’s sewer utility under EMC 11.35.010, and that an application and plans for a private disposal system have to be approved by the health department and supplied to the city before that connection. EMC 11.55.010(B) says private disposal systems must be located on the same lot as the building they are designed to serve, except as provided in EMC 16.01.120(B) and EMC 16.01.125, and that no offsite septic tank, drainfield, or related easements shall be permitted. The same subsection then says that the extension of this public health regulation shall not apply to single-family residences that are under order from the health department to replace a failed system, a replacement on-site system is permissible under EMC 11.35.010, and there are not on-site alternatives available to do so. EMC 11.55.030 says the owner shall operate and maintain the private disposal system in compliance with health-department regulations, and the section cites WAC 246-272-15501. KindKey will not tell you that any of those sentences applies to your tank, and KindKey will not tell you what the cited WAC section requires. A drainfield on a neighbor’s lot is a fact to mention. The closing agent orders the title report. KindKey will not draft an easement.',
+          'EMC 11.45.020 says a new side sewer and building sewer, constructed with new materials as approved by the city, shall be required for new connections and when modifications are made to an existing side sewer or building sewer, except that a connection may be made to an existing side sewer, an existing building sewer, or both, provided that the existing side sewer is examined by video camera and shown to be sound and the building sewer, if any, successfully passes a pressure test. A camera report you already have is useful. KindKey will not require a new video or a pressure test before a walkthrough, and KindKey will not tell you the existing pipe is sound. The same section says that if a side sewer is deemed abandoned by the director, the building sewer shall be disconnected from the cleanout at the right-of-way line and replaced with a nipple and cap, the joints shall be gasketed, the cap blocked, and the cleanout kept in good condition or replaced. KindKey will not decide that a line is abandoned and will not pull a cap. EMC 11.45.130(C) says a check valve shall be required at the connection of the building drain to the building sewer when plumbing fixtures are in the basement, or on any floor less than four feet above the crown of the sewer to which its side sewer is connected, unless otherwise approved by the director. A toilet in a basement that backed up is a fact to mention. It is not, by itself, a finding that a check valve is missing. EMC 11.45.130(B) says pipes that become broken, or joints that permit infiltration of groundwater or surface water, shall be replaced or repaired by the owner, and that if the city determines an unacceptable quantity of ground or surface water is entering the city’s system from the building sewer, the owner shall immediately eliminate that inflow or infiltration. KindKey will not make that determination.',
+          'EMC 11.45.060 says side sewer construction or connection shall not begin until a connection permit and agreement, as described in EMC 11.40.050 or otherwise administered by the receiving jurisdiction on the city’s behalf, and a right-of-way permit for construction, have been obtained. EMC 11.40.050(A) says a connection permit and agreement is required before connection to the city’s sewer system. Lakehaven’s Edgewood FAQ says a property owner first obtains a Letter of Sewer Availability from Edgewood, then a sewer service connection permit from Lakehaven, and that if work in the public right-of-way is required, the property owner or the contractor secures that right-of-way permit before Lakehaven can issue its permit. The FAQ also says a connection may require additional sewer facilities, such as mainline or manholes, under what it calls an extend-to-far-edge practice, and that a developer extension agreement then takes longer than a service connection. For work in the public right-of-way or an Edgewood easement, the FAQ says the owner must employ a sewer service contractor authorized by Lakehaven. For work on private property, it says the owner can use any party, and that Lakehaven and Edgewood recommend a competent contractor. The FAQ says that at least two business days before any digging, underground utilities have to be located by calling 811. KindKey will not get the letter, pull either permit, choose the contractor, or call 811. You do not have to dig, camera the line, or start a permit before you ask for an offer.',
+          'EMC 11.65.010 lists civil infractions of the sewer title, enforceable under chapter 1.10 EMC. The list includes, in EMC 11.65.010(D), connecting pipes carrying surface water or groundwater to a side sewer or to a plumbing system that drains to the side sewer. EMC 11.65.010(F) lists connecting a septic tank or drainfield discharge line to the sewer system. EMC 11.65.010(G) lists failure to connect to the sewer when required under the title, and it says the penalty is as provided in EMC 11.65.020. EMC 11.65.010(K) lists discharging wastewater or septic tank effluent to any storm drain, natural outlet, or upon the land within the city. EMC 11.65.020 says that if a property is required and fails to connect pursuant to EMC 11.35.010, the owner shall be required to pay a civil penalty equal to normal monthly charges pursuant to RCW 35.67.190, and that all other properties failing to connect as required are subject to civil penalties as otherwise may be set by the council. EMC 11.65.040(A) says it is unlawful and a misdemeanor to make or maintain any sewer connection with any sewer of the city, or with any sewer connected directly or indirectly with a city sewer, without obtaining a permit and paying the connection charge, and it cites RCW 35.67.350. EMC 11.65.040(B) says a person who commits certain listed infractions, upon a second violation, shall be charged with a misdemeanor and, on conviction, punished by a fine not to exceed $1,000 and/or by imprisonment for not more than 90 days, and that any subsequent violation shall be charged as a gross misdemeanor and, on conviction, punished by a fine not to exceed $5,000 and/or by imprisonment for not more than 364 days. KindKey will not tell you that any of those sentences is what you owe, will not count a violation, and will not tell you which letter applies. This article is not legal advice. If a notice has a hearing, a fine, or an order, talk with a Washington attorney. EMC 11.65.050 says that except as otherwise specified, violations of the sewer title are civil violations subject to title 7 EMC and chapter 1.10 EMC. A letter about the building can also be a code-compliance file. The city’s code-compliance page says owners can contact City Hall at (253) 952-3299 or email codeenforcement@cityofedgewood.org. KindKey will not answer the notice or appear at a hearing. The Edgewood code-violations guide is that letter. Until the deed records, a city duty that is still yours stays yours.',
+        ],
+      },
+      {
+        heading: 'A bill, the disclosure form, a tenant, and who can sign',
+        paragraphs: [
+          'EMC 11.60.020 says all bills for the city’s sanitary sewer utility will be prepared by Lakehaven and consist of two charges: the city sewer charge and the Lakehaven sewer charge. That sentence is about the city’s sewer utility. A bill from the City of Fife is a different account. Chapter 11.70 EMC says its purpose is to authorize Fife’s sewer service inside Edgewood under the November 5, 2013 interlocal agreement between the two cities, and any amendments, and that the chapter applies exclusively to the area served by Fife as defined by the city’s general sewer plan, including sewer infrastructure Fife owns, operates, and maintains. EMC 11.70.020 adopts chapters 13.08, 13.09, 13.12, and 13.14 of the Fife Municipal Code, including future amendments, for that area, and it says Fife has the authority to enforce those regulations and to collect rates and delinquent accounts there, subject to the interlocal agreement. The utilities page names Fife west of 86th Avenue E. KindKey will not draw that boundary and will not tell you chapter 11.70 is the chapter on your bill. Read the header.',
+          'EMC 11.30.030(C) says the authority to lien property for delinquent and unpaid rates and other charges for sewer service shall be in accordance with RCW 35.67.200. EMC 11.60.050 says delinquent and unpaid rates and charges for sanitary sewer services, including interest, shall be a lien upon the property to which the sanitary sewer is furnished, superior to all other liens and encumbrances except those for general taxes and local and special assessments. The same section says that pursuant to RCW 35.67.215, the city’s sewerage lien shall be effective for a total not to exceed one year’s delinquent service charges without the necessity of any writing or recording of the lien with the county auditor. KindKey does not promise that a sewer bill or a sewer lien disappears when you sign. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement, prepared by the closing agent, is where you see them. KindKey will not calculate the year in that statute, will not interpret RCW 35.67.200 or RCW 35.67.215, and will not tell you which sentence applies to a balance. A Pierce County property-tax bill is a different account from a sewer charge. The Edgewood property-tax page is that bill.',
+          'Washington’s seller disclosure law is chapter 64.06 RCW. The legislature’s text of RCW 64.06.020 carries a header that says the section is effective until January 1, 2027. A statute can be amended. KindKey will not tell you a later version applies to your sale. RCW 64.06.020 sets out the seller disclosure statement. In section 3, Sewer/On-Site Sewage System, question 3.A asks whether the property is served by a public sewer system, an on-site sewage system, including pipes, tanks, drainfields, and all other component parts, or another disposal system. Question 3.B asks, if public sewer system service is available to the property, whether the house is connected to the sewer main, and it says to explain a no. Question 3.C asks whether the property is subject to any sewage system fees or charges in addition to those covered in the regularly billed sewer or on-site sewage system maintenance service. If the property is connected to an on-site system, question 3.D(3) asks whether there are any defects in the operation of that system. Question 3.E asks whether all plumbing fixtures, including the laundry drain, are connected to the sewer or on-site sewage system, and it says to explain a no. In section 4, Structural, question 4.B asks whether the basement has flooded or leaked. In section 5, Systems and Fixtures, question 5.A asks about defects in systems that are included with the transfer, and the list includes the plumbing system, including pipes, faucets, fixtures, and toilets. A backup from a drain and a galvanized supply line are two facts. The plumbing guide is the supply pipe. This page is the wastewater line. KindKey will not tell you how to mark the boxes, whether a backup is a defect, or whether sewer is available at the street. Ask a Washington real estate attorney if you are unsure. The closing agent handles the form that applies to your file. Answer with what you actually know. If you do not know whether the house is on a public sewer, the form has a choice for that. Selling to a cash buyer is not a reason to leave a known backup off the form.',
+          'The same statute includes a notice. If the residential real property disclosure statement is being completed for new construction which has never been occupied, the seller is not required to complete the questions listed in item 4, Structural, or item 5, Systems and Fixtures. An older Edgewood house someone has lived in is a different file from that notice. KindKey will not tell you the notice applies to your sale. RCW 64.06.010(6) lists a transfer made by the personal representative of the estate of the decedent or by a trustee in bankruptcy among the transfers the chapter does not apply to. RCW 64.06.010(7) lists a transfer in which the buyer has expressly waived the disclosure, and it says that if the answer to any question in the section entitled Environmental would be yes, the buyer may not waive receipt of the Environmental section. KindKey will not tell you that you are one of those signers. If the owner has died, who can sign is a probate or trust question, separate from the pipe. KindKey will not file the probate and will not guess which relative can sign. Use the Edgewood probate page when a death is the reason the house is for sale, and the living-trust page if the house is already titled in a trust. The power-of-attorney page is the file when the owner is living and someone else is signing. Do not sign a deed before the authority exists.',
+          'If someone lives in the house, say so. Do not make an occupant leave so a plumber can dig or so the house looks empty. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does. The Edgewood tenants page is that file. RCW 59.18.060 says a landlord keeps the premises fit for human habitation. Subsection (8) includes maintaining electrical, plumbing, heating, and other facilities and appliances supplied by the landlord in reasonably good working order. The section also says no repair duty falls on the landlord, and no defense or remedy is available to the tenant, where the defective condition was caused by the tenant, the tenant’s family, an invitee, or another person acting under the tenant’s control, or where the tenant unreasonably fails to allow the landlord access to make a repair. KindKey will not decide who caused a backup. Ask a Washington attorney if a tenant has already written about the sewage. You can still ask for an offer while that conversation happens. A shop bathroom, a floor drain, or a second building on the same line is a fact to mention. The Edgewood acreage guide is the file when the line may cross a second parcel. KindKey will not assume the shop is on the same parcel as the house.',
+        ],
+      },
+      {
+        heading: 'Replace the line and relist, or sell the backup as it sits',
+        paragraphs: [
+          'Replacing a building sewer, connecting a failed septic system, or extending a main can fit if you want to keep the house and you are willing to fund the work, the permits, and the time. A listing can fit after that, if a broker will take the house and you can host the access. A financed buyer may still stall on the same backup, the same camera report, or a different item in the same inspection. Commission is negotiated in the listing agreement with that broker and is not set by KindKey. Hire a licensed broker in Pierce County if you want the listing. KindKey will not run it, will not choose your plumber or your contractor, and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. The Edgewood expired-listing guide is the sale that already died after an inspection or a sewer scope. You do not have to finish that inspector’s list before KindKey looks. The Edgewood major-repairs page is the broader file when the line is one item on a longer list. The Edgewood stalled-remodel guide is the kitchen or bathroom that moved a drain and never received a final inspection. The Edgewood unpermitted-work guide is the file when the pipe was changed and the permit was not closed.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive from Edgewood does not add a trench. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need a relative with a key can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a sewer bill, a tax bill, or a contractor’s bill for a dig you already started. The offer reflects the house as it sits, including the backup or the connection letter you know about, so it can be less than a retail price for a house where that work has already been done. You see the payoffs on the settlement statement before you close. You can say no. The Edgewood as-is page is that direct sale for the house in its current condition.',
+          'Your insurer is your relationship. You can ask KindKey for an offer while a claim is open, after a claim was denied, or when a company has asked about a sewage backup and you have not decided what to do. KindKey will not tell you whether to wait for a check, whether a policy covers a backup, or how to assign the proceeds. KindKey does not give insurance advice. If a foreclosure notice is in the file with the plumber’s report, you have a clock the pipe does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. The Edgewood foreclosure page is that file. Parts of Edgewood lie inside the Puyallup Indian Reservation boundary. That can change a title report. KindKey does not interpret tribal jurisdiction. Tell the closing agent if you already know the parcel is inside the boundary.',
+          'A house in Port Orchard, Bremerton, Silverdale, or Poulsbo is a different city, and a sewer or septic question in Bainbridge Island, Kingston, Olalla, or Seabeck is a Kitsap County file. Do not use this Edgewood page for a Kitsap house, for a Milton house that may sit in King County, or for a Fife, Puyallup, or Sumner parcel. A house west of 86th Avenue E that is actually served by Fife is still an Edgewood address, and chapter 11.70 EMC is the Fife chapter, not a reason to use a Fife city page for the parcel. Read the bill. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the backup, the camera report, or the health-department letter through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question:
+          'Do I have to replace a sewer line or connect to the main before KindKey will look?',
+        answer:
+          'No. KindKey buys Edgewood houses with a sewer backup, a blocked building sewer, or a connection letter as they sit. You do not have to excavate the yard, camera the line, call 811, or finish a City of Edgewood or Lakehaven permit first. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Will KindKey tell me whether the backup is my pipe or the city’s side sewer?',
+        answer:
+          'No. EMC 11.30.020 defines a side sewer as the pipe in a city right-of-way or easement between the sewer main and the right-of-way or easement line. EMC 11.45.130(A) says the owner maintains the building sewer and restores service if that pipe is blocked. EMC 11.45.030(B) says the city or its designee maintains an accepted side sewer, and that the owner notifies the city if that side sewer is blocked. KindKey will not decide which sentence fits your backup. Lakehaven’s Development Engineering line is (253) 945-1581. The city permit line is (253) 952-3299. KindKey will not call either one for you. You can still request an offer.',
+      },
+      {
+        question:
+          'The health department says the septic failed and I may have to connect. Do I have to finish that first?',
+        answer:
+          'No. Tell us what the letter says. EMC 11.35.010(B) is the city’s section about existing structures within 300 feet of an available sewer main when an on-site system has failed, as defined by the Tacoma-Pierce County Health Department, or needs a repair permit from that department. KindKey will not measure the distance or decide that the section applies. Health-department questions go to (253) 649-1500. The Edgewood septic guide is the drainfield file. You can still request a cash offer. You can say no.',
+      },
+      {
+        question:
+          'A tenant still lives there, or a foreclosure notice arrived with the plumber’s report. Can I still ask?',
+        answer:
+          'Yes. Do not make an occupant leave so a line can be dug. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. On the seller disclosure in RCW 64.06.020, section 3 asks whether the house is on a public sewer or an on-site system, and whether it is connected to the main if sewer is available. KindKey will not tell you how to mark it. If a foreclosure notice is also in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. You can say no.',
+      },
+      {
+        question: 'Is KindKey a real estate agent?',
+        answer:
+          'No. KindKey Home Buyers LLC buys houses directly as a principal. It does not list houses or represent sellers. If you want a listing, hire a licensed broker in Pierce County.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill, Jovita, Meridian, and the valley.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-as-is',
+        label: 'Sell a house as-is in Edgewood',
+        description: 'The backup can stay as it is.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/edgewood/sell-my-house-fast',
+        label: 'Sell my house fast in Edgewood',
+        description: 'A direct sale without a trench on the calendar.',
+      },
+      {
+        href: '/blog/sell-my-house-fast-for-cash-edgewood',
+        label: 'Sell fast for cash in Edgewood',
+        description: 'The direct-sale steps once you decide to sell as-is.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description:
+          'A drainfield or a private well is a different system from the line to the main.',
+      },
+      {
+        href: '/blog/sell-house-with-galvanized-or-polybutylene-plumbing-edgewood-wa',
+        label: 'Galvanized or polybutylene plumbing in Edgewood',
+        description: 'A supply line to a faucet is not the wastewater pipe.',
+      },
+      {
+        href: '/blog/sell-water-damaged-house-edgewood-wa',
+        label: 'Water damage in Edgewood',
+        description: 'Sewage that already entered a room.',
+      },
+      {
+        href: '/blog/sell-house-with-mold-edgewood-wa',
+        label: 'Mold in Edgewood',
+        description: 'Growth that followed a backup.',
+      },
+      {
+        href: '/blog/sell-house-with-foundation-problems-edgewood-wa',
+        label: 'Foundation problems in Edgewood',
+        description: 'A soft floor under a wet room.',
+      },
+      {
+        href: '/blog/sell-house-needing-repairs-edgewood-wa',
+        label: 'Major repairs in Edgewood',
+        description: 'When the line is one item on a longer list.',
+      },
+      {
+        href: '/blog/sell-house-after-expired-listing-edgewood-wa',
+        label: 'Expired listings in Edgewood',
+        description: 'When a sewer scope or an inspection killed the sale.',
+      },
+      {
+        href: '/blog/sell-house-with-stalled-remodel-edgewood-wa',
+        label: 'Stalled remodels in Edgewood',
+        description: 'A kitchen or bathroom that moved a drain and never finished.',
+      },
+      {
+        href: '/blog/sell-house-with-unpermitted-work-edgewood-wa',
+        label: 'Unpermitted work in Edgewood',
+        description: 'When the pipe was changed and the permit was not closed.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-code-violations',
+        label: 'Code violations in Edgewood',
+        description: 'When the city has written about the property.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-edgewood-wa',
+        label: 'Code violations in Edgewood',
+        description: 'The city letter, separate from a plumber’s camera report.',
+      },
+      {
+        href: '/areas/edgewood/sell-vacant-house',
+        label: 'Vacant houses in Edgewood',
+        description: 'When nobody is there to notice a backup.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-edgewood-wa',
+        label: 'Vacant houses in Edgewood',
+        description: 'An empty house can still have a blocked line.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-with-tenants',
+        label: 'Houses with tenants in Edgewood',
+        description: 'Do not make an occupant leave so a line can be dug.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/blog/sell-house-with-tenants-edgewood-wa',
+        label: 'Tenants in Edgewood',
+        description: 'The rental file, including who still lives there.',
+      },
+      {
+        href: '/areas/edgewood/sell-hoarder-house',
+        label: 'Heavy-repair houses in Edgewood',
+        description: 'Contents can stay. You do not have to empty the house.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'The overview for houses that need more than a cleaning.',
+      },
+      {
+        href: '/blog/sell-hoarder-house-on-acreage-edgewood-wa',
+        label: 'Heavy-fixer houses on acreage in Edgewood',
+        description: 'A shop bathroom can be on the same line as the house.',
+      },
+      {
+        href: '/blog/sell-inherited-acreage-with-outbuildings-edgewood-wa',
+        label: 'Inherited acreage in Edgewood',
+        description: 'When the line may cross more than one parcel.',
+      },
+      {
+        href: '/areas/edgewood/sell-inherited-probate-house',
+        label: 'Inherited houses in Edgewood',
+        description: 'When the pipe and the signer are both open questions.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the condition.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-edgewood',
+        label: 'Probate houses in Edgewood',
+        description: 'Who can sign, when the owner has died.',
+      },
+      {
+        href: '/blog/sell-house-in-a-living-trust-edgewood-wa',
+        label: 'Living trusts in Edgewood',
+        description: 'When the house is already titled in a trust.',
+      },
+      {
+        href: '/blog/sell-house-with-power-of-attorney-edgewood-wa',
+        label: 'Power of attorney in Edgewood',
+        description: 'When someone else is signing while the owner is in care.',
+      },
+      {
+        href: '/blog/selling-a-house-during-divorce-edgewood-wa',
+        label: 'Divorce sales in Edgewood',
+        description: 'When both names are on the title and the line still needs a decision.',
+      },
+      {
+        href: '/areas/edgewood/sell-house-before-foreclosure',
+        label: 'Foreclosure in Edgewood',
+        description: 'When a trustee’s notice is in the file with the report.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'A loan deadline is separate from the pipe.',
+      },
+      {
+        href: '/blog/behind-on-property-taxes-edgewood-wa',
+        label: 'Property taxes in Edgewood',
+        description: 'A Pierce County tax bill is a different account from a sewer charge.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-drainfield-puyallup-wa',
+        label: 'Septic or drainfield trouble in Puyallup',
+        description: 'The city to the south. Confirm the parcel before you use that page.',
+      },
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description: 'The next city west. Milton can sit in King County or Pierce County.',
+      },
+      {
+        href: '/areas/fife',
+        label: 'Sell a house in Fife',
+        description: 'West of Edgewood. A Fife bill is not an Edgewood title 11 bill.',
+      },
+      {
+        href: '/areas/puyallup',
+        label: 'Sell a house in Puyallup',
+        description: 'The city to the south, if the parcel is actually there.',
+      },
+      {
+        href: '/areas/sumner',
+        label: 'Sell a house in Sumner',
+        description: 'The valley city to the east.',
+      },
+      {
+        href: '/areas/auburn',
+        label: 'Sell a house in Auburn',
+        description: 'KindKey’s office city. Most of Auburn is in King County.',
+      },
+      {
+        href: '/areas/port-orchard',
+        label: 'Sell a house in Port Orchard',
+        description: 'Kitsap County. Do not use the Edgewood page for this parcel.',
+      },
+      {
+        href: '/areas/bremerton',
+        label: 'Sell a house in Bremerton',
+        description: 'Kitsap County. A different city from Edgewood.',
+      },
+      {
+        href: '/areas/silverdale',
+        label: 'Sell a house in Silverdale',
+        description: 'Unincorporated Kitsap County. Confirm the address.',
+      },
+      {
+        href: '/areas/poulsbo',
+        label: 'Sell a house in Poulsbo',
+        description: 'Kitsap County. A different city from Edgewood.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-kitsap-county',
+        label: 'Septic or well issues in Kitsap County',
+        description:
+          'Port Orchard, Bremerton, Silverdale, and Poulsbo. A different health district.',
+      },
+      {
+        href: '/blog/sell-house-as-is-kitsap-county',
+        label: 'Selling as-is in Kitsap County',
+        description: 'Do not use this Edgewood sewer page for a Kitsap house.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what the backup, the camera report, or the letter shows. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for an Edgewood offer with the sewer line left as it is',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to dig the line or connect to the main first. You can say no.',
+  }),
 ];
