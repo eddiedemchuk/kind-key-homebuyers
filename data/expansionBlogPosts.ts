@@ -7396,4 +7396,466 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to dig the line or connect to the main first. You can say no.',
   }),
+  post('sell-house-with-code-violations-burien-wa', {
+    breadcrumbName: 'Code violations in Burien',
+    title: 'Selling a House with Code Violations in Burien, WA',
+    description:
+      'How Burien owners sell a house with an open code case without finishing the city’s list first. KindKey buys as a principal. Not legal advice.',
+    h1: 'Selling a House with Code Violations in Burien, WA',
+    publishedAt: '2026-11-21',
+    intro: [
+      'You can ask KindKey to buy a Burien house with an open code case without finishing the city’s repair list, pulling the missing permit, or clearing the yard first. ' +
+        office +
+        ' KindKey is not code enforcement, a permit expediter, the hearing examiner, or a real estate agent or broker. This article is not legal advice.',
+      'Burien is an incorporated city in King County, on Puget Sound, between Seattle and SeaTac. Downtown Burien, Seahurst, Three Tree Point, Lake Burien, Gregory Heights, and Shorewood are local areas. Three Tree Point is part of Burien. Normandy Park, next door, is its own city. Boulevard Park sits on the north edge, where a mailing name and the city limit do not always match. SeaTac, Des Moines, and Tukwila are separate cities. A mailing address that says Burien is not always inside the city. Bring the letter and the address.',
+    ],
+    callout:
+      'You do not have to fix the violations, pull the permit, or clear the yard before you ask. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'Read the header before you treat it as a Burien case',
+        paragraphs: [
+          'The City of Burien’s code-compliance page says the Code Compliance Officer enforces Burien Municipal Code regulations related to building, zoning, land use, and nuisance code violations, generally through a complaint-generated system. The complaints it lists are junk vehicles and residential parking on private property, graffiti, accumulation of trash, junk, or abandoned materials, zoning and land use violations, and construction without a permit. A complaint can be filed online, faxed to (206) 248-5539, or dropped off at Burien City Hall. The page says forms may also be picked up at City Hall. Questions about the complaint process go to the Code Compliance Officer at (206) 248-5507. City Hall is at 400 SW 152nd St, Suite 300, Burien, WA 98166. The page publishes the main line as (206) 241-4647, and it says the page was updated July 26, 2024. The code publisher shows the Burien Municipal Code current through Ordinance 905, and legislation passed through July 27, 2026. Read the section you were cited, not an old printout. KindKey is not that desk and will not file the complaint or answer it.',
+          'The same page describes a sequence. A report is received. The property is scheduled for inspection. If a violation exists, the person is notified first by personal contact and/or a letter giving a reasonable period of time to correct it. The property is re-inspected when that time expires. If it has not been corrected, a notice of civil violation may be issued, and failure to correct may be subject to fines. When the violation is resolved, the case is closed. The page does not print a number of days for that first letter. Do not borrow a deadline from a Federal Way notice, a Des Moines notice, or a King County notice. Read the paper you were served. KindKey will not count the days.',
+          'Burien is in King County. Unincorporated King County, including White Center to the north, is a county case. Normandy Park is a different city. If the letterhead says King County, SeaTac, Des Moines, Tukwila, or Normandy Park, this Burien chapter is not the file. A Boulevard Park address can sit on the line. The closing agent confirms the parcel. A Burien deed records with the King County Recorder at King Street Center, 201 S. Jackson St., Suite 204, Seattle, WA 98104. That office publishes customer service at (206) 477-6620. Its page lists in-person hours of Monday through Friday, 8:30 a.m. to 4:30 p.m., and says recording ends at 3:30 p.m. Confirm the hours before you go. Do not record a King County deed at the Pierce County Auditor in Tacoma because you drive through Federal Way, or at the Kitsap County Auditor in Port Orchard.',
+        ],
+      },
+      {
+        heading: 'What the nuisance list and the notice of civil violation actually say',
+        paragraphs: [
+          'Chapter 8.45 BMC is the nuisance chapter. BMC 8.45.015 says all violations of city of Burien ordinances are declared detrimental to the public health, safety, and welfare and are declared to be nuisances, and that each day a person allows or fails to abate a nuisance after notice is a separate violation. BMC 8.45.070 says the chapter is enforced as provided in chapter 1.15 BMC, and that those provisions are not exclusive. KindKey will not decide whether your yard meets the chapter.',
+          'BMC 8.45.020(5)(c) lists conditions the chapter calls a nuisance. Trash-covered premises are premises containing trash or abandoned materials, except trash kept in garbage cans or containers maintained for regular collection. Dangerous structures are any dangerous, decaying, unkempt, falling, or damaged dwelling, fence, or other structure. The vermin-habitat and fire-hazard sentence covers an accumulation of material the section lists, including furniture, appliances, lumber that is not properly stored or neatly piled, and yard waste, when it endangers property or public safety or is a fire hazard or vermin habitat. The junk-vehicle sentence covers a wrecked, inoperable, abandoned, or disassembled trailer, boat, tractor, or vehicle, or parts of one, and it gives examples of inoperability, including a flat tire, a missing wheel, and missing license plates. It also says nothing in that sentence prevents keeping a junk vehicle on private property when it is screened from view, as long as that storage does not violate any other part of the Burien Municipal Code. Vegetation includes a noxious or toxic weed, an uncultivated plant, weeds or tall grass that may be a fire hazard, any nonnative herbaceous plant with growth exceeding 12 inches, or a tree in danger of falling and creating a substantial risk of damage or injury. That vegetation sentence says the definition and the related enforcement do not apply to Burien-owned or maintained property, critical areas, or stormwater facilities. KindKey will not measure the grass, decide what is nonnative, or tell you a tree meets the falling-tree sentence.',
+          'The city’s code-compliance page, which is not the same document as chapter 8.45, lists common issues its staff handles. Besides junk vehicles, trash, graffiti, zoning, and construction without a permit, the page describes residential parking: no more than four vehicles on a residential lot unless more than four licensed drivers live at the address, with the additional conditions the page prints, including that the vehicles must be licensed and operable. KindKey will not count the cars or read a driver’s license. The page is a description of what staff says it sees. It is not a finding about your house.',
+          'Chapter 1.15 BMC is the enforcement chapter. BMC 1.15.120 says that when the city determines a violation has occurred or is occurring, the code enforcement officer may issue a notice of civil violation. Unless a more specific code sets a different amount, the section says the maximum penalty and the default amount are $125 for the first violation and $250 for a second or subsequent violation of the same nature, or a continuing violation past a deadline set by a notice of violation, not including fees, costs, and assessments. It says the city may waive the monetary penalty if corrective action is completed by the date in the notice or in a voluntary correction agreement, and that the city has discretion to impose a lower amount. It also says payment of a monetary penalty does not relieve the person named of the duty to abate. KindKey will not ask for a waiver and will not calculate the invoice. A code can be amended. Read the notice.',
+          'BMC 1.15.120 says the notice tells the person to respond within 14 days of the date of issuance, or within another time the notice itself specifies, by paying any fine and correcting the violation, entering a voluntary correction agreement, requesting a mitigation hearing and correcting the violation, or requesting a hearing to contest the violation. BMC 1.15.130 says a person who has been served must respond within 14 days of the date the notice is served, or within another time the notice specifies. A mailed response has to be received no later than that day. A hand-delivered response goes to the city clerk no later than 4:00 p.m. that day, and if that day is a weekend or holiday the deadline runs to the next regular business day. The section says a telephone, facsimile, electronic, or email response does not satisfy it. A mitigation request under that section is sent with a $100 filing fee. BMC 1.15.050 is the computation-of-time rule, including how a last day that falls on a Saturday, Sunday, or legal holiday is treated. KindKey will not count those days, will not file the response, and will not pay the fee. If the notice has a hearing or a fine, talk with a Washington attorney before you rely on a sale to solve it. Do not skip a hearing because a buyer is looking at the house. BMC 1.15.180 says that if the person who requested a hearing fails to appear after notice, the hearing examiner issues a default order finding the violations committed and assessing the full penalty in the notice.',
+        ],
+      },
+      {
+        heading: 'A stop-work order, a voluntary agreement, and a transfer are different papers',
+        paragraphs: [
+          'BMC 1.15.100 is the voluntary-correction path. The section says the city may try to secure a correction by contact, and that it may enter a written voluntary correction agreement. It says that by entering the agreement the person waives the right to a hearing before the hearing examiner under that chapter regarding the violation, any penalty, and the required corrective action. It also says the city may inspect, and that if the terms are not met the city may enter, abate, and recover costs, or issue a notice of civil violation. KindKey will not tell you to sign that agreement or to refuse it. That conversation belongs with your attorney. Asking for a cash offer does not extend the date written in the agreement.',
+          'BMC 1.15.110 says a code enforcement officer may issue a stop-work order when work, use, activity, or conduct is a violation and creates an imminent threat of injury to the health, safety, or welfare of any member of the public, or will damage property or make existing damage worse. Service is generally by posting under BMC 1.15.070. The order takes effect immediately upon service. The section says it may be appealed under the procedures in the chapter, and that during any appeal the order remains in effect. It says it is unlawful for a person to whom the order is directed, or a person with actual or constructive knowledge of the order, to do the work covered by the order until the officer has removed a posted copy and issued written authorization to resume. Removing a posted order without authorization of the city, or of the hearing examiner if that examiner has heard the matter, is a violation. Leave the posting where the city put it. KindKey will not take it down. If the structure is not safe to enter, say so. Photos of the posting and an exterior look can start the conversation. Do not walk a house that is not safe just to satisfy a buyer.',
+          'BMC 1.15.120(5) is the transfer sentence owners miss. It says it is unlawful for the owner of real property who has received a judgment or order regarding that property to sell, transfer, mortgage, lease, or otherwise dispose of it until the judgment or order has been complied with, or until the owner first furnishes the grantee, transferee, mortgagee, or lessee a true copy and furnishes the code enforcement officer a signed and notarized statement from that person acknowledging receipt and accepting responsibility, without condition, for the corrections. The subsection defines “judgment or order” to include a judgment, a civil violation, a compliance order, a court order, a notice of civil violation, or any equivalent. It lists transfers the subsection does not apply to, including a transfer by the personal representative of a decedent’s estate. It says the repairs must be completed within 30 calendar days unless the code enforcement officer permits more time in writing before that period expires. It says filing the judgment or order with the King County recorder’s office is adequate notice. KindKey will not tell you whether your paper is one of those documents, whether an exception applies, or whether the acknowledgment the section describes has been done. Talk with a Washington attorney before you sign. KindKey will not prepare that statement.',
+          'Tell KindKey what the letter describes, in plain words, before anyone schedules a visit. A Seahurst house, a Three Tree Point house, a rambler east of downtown, and a house on a steep street toward the water are different properties. The notice may be an unpermitted addition, a garage used as a room, a yard on the city’s list, or a vehicle the page calls a junk vehicle. A retail lender often will not close while that file is open. You do not need a contractor bid or a permit in hand before KindKey looks. Furniture you do not want can stay. Take papers and what you want to keep before the closing date you agree to. If someone still lives in the house, say so. Do not force an occupant out so the yard looks empty. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does.',
+        ],
+      },
+      {
+        heading: 'Finish the city’s list, or sell the house as it sits',
+        paragraphs: [
+          'Curing a small yard notice can fit if you want to keep the house and the work is actually small. A listing can fit after the case is one a broker will take, and you can host the showings. A financed buyer may still stall on an open permit or a posted order. Commission is negotiated in the listing agreement with that broker and is not set by KindKey. Hire a licensed broker in King County if you want the listing. KindKey will not run it, will not choose your contractor, and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive from Burien does not add a repair. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need a relative with a key, or time to take belongings, can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a utility balance, or a city assessment. The offer reflects the house as it sits, including the open case, so it can be less than a retail price for a house with the violations already closed. You see the payoffs on the settlement statement before you close. You can say no.',
+          'BMC 1.15.200 says monetary penalties or costs assessed under that chapter are a personal obligation of the person responsible for the violation, and that they may also be assessed against the property. It says any monetary penalty must be paid in full within 30 days from service of an uncontested notice of civil violation or an order of the hearing examiner that assesses penalties. It says that if penalties or costs assessed against a property are not paid within 30 days, the city clerk certifies the confirmed amount to the county treasurer for assessment on the tax rolls. For a Burien parcel that county is King County. The section says the treasurer enters the amount on the tax rolls against the property for the current year, that it becomes part of the general taxes for that year, and that the lien is of equal rank with the state, county, and municipal taxes. It cites interest at the rates provided in RCW 84.56.020, as now or later amended, for delinquent taxes. KindKey does not interpret that statute and does not promise that every Burien fine disappears when you sign. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The section also says the validity of an assessment is not contested unless the action is commenced within 15 calendar days after the assessment is placed on the assessment roll. KindKey will not count that period or file that case. Until the deed records, deadlines on the notice are still yours. After recording, the house is KindKey’s to deal with, including repairs and permits KindKey chooses to pull, and the open case that came with the property. KindKey handles that as the new owner. KindKey does not clear the citation as your representative and does not guarantee what a hearing examiner, an inspector, or a code official will do.',
+          'BMC 1.15.140 says that after a timely request, a hearing to contest or to mitigate is scheduled for the next available appearance of the hearing examiner that is at least 14 and no later than 60 calendar days after the city receives the request. BMC 1.15.170 says that where the person asked to mitigate, the hearing examiner may reduce the monetary penalty for each violation found committed, but not below $100 for each such violation. BMC 1.15.190 says judicial review of a hearing-examiner decision on an ordinance regulating the improvement, development, modification, maintenance, or use of real property may be sought under the Land Use Petition Act, chapter 36.70C RCW, if that act applies, when the petition is filed and served within 21 days of the date of the decision. KindKey will not decide whether that act applies, will not file the petition, and will not appear at the hearing for you. The hearing examiner is established under chapter 2.15 BMC. KindKey is not that office.',
+          'Washington’s seller disclosure law is chapter 64.06 RCW. KindKey will not tell you how to mark the form, whether an exemption in RCW 64.06.010 applies, or what you should have told an earlier buyer. Ask a Washington real estate attorney if you are unsure. The closing agent handles the form that applies to your file. Answer with what you actually know. If you do not know whether a past owner pulled a permit, say that. Selling to KindKey is not a reason to leave a known notice off the form. If a foreclosure notice is in the file with the city letter, you have a clock the code case does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. The King County foreclosure guide and the statewide foreclosure guide are that file. Burien does not have a separate city foreclosure page on this site. A King County property-tax bill is a different account from a city penalty. KindKey will not calculate the treasurer’s number. The Washington tax-delinquent guide is the treasurer’s sale. If the owner has died, who can sign is a probate question, separate from the code letter. A Burien probate is commonly a King County matter, in Seattle or at the Maleng Regional Justice Center in Kent, not a Pierce County filing in Tacoma. KindKey will not file the probate and will not guess which relative can sign. The Burien inherited-house page is that question. The King County estate guide is the county writeup. Do not sign a deed before the authority exists. A house in Port Orchard, Bremerton, Silverdale, or Poulsbo is a Kitsap County file. Do not use this Burien page for those cities, or for a house in SeaTac, Des Moines, Tukwila, Federal Way, or Normandy Park. Reach out, and KindKey will help you through the whole process from start to finish, from the letter through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do I have to fix Burien code violations before KindKey will look?',
+        answer:
+          'No. KindKey buys Burien houses with open violations, stop-work orders, and unpermitted work as they sit. You do not have to finish the city’s list, hire a contractor, or clear the yard first. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'How do I respond to a Burien notice of civil violation?',
+        answer:
+          'BMC 1.15.130 says a response goes to the city clerk by mail or by hand, within 14 days of service or within the time the notice specifies. It says a phone, fax, or email response does not count. A mitigation request on that path includes a $100 filing fee. KindKey will not count the days, file the paper, or pay the fee. Talk with a Washington attorney. You can still request a cash offer.',
+      },
+      {
+        question: 'Can I sell while a Burien notice or order is still open?',
+        answer:
+          'You can ask for an offer without finishing the repairs. BMC 1.15.120(5) limits some transfers after a judgment or order, and it defines those words to include a notice of civil violation. It also describes a copy-and-acknowledgment path and lists transfers the subsection does not apply to, including a transfer by an estate’s personal representative. KindKey will not tell you which sentence fits your paper. Talk with a Washington attorney before you sign. You can say no.',
+      },
+      {
+        question:
+          'The header is another city, or a foreclosure notice came with the letter. Can I still ask?',
+        answer:
+          'Read the header. SeaTac, Des Moines, Tukwila, Normandy Park, and unincorporated King County are different cases from a City of Burien letter. If a foreclosure notice is also in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not stop a trustee. You can still request a cash offer while you get that advice. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/burien',
+        label: 'Sell a house in Burien',
+        description: 'Downtown, Seahurst, Three Tree Point, and Shorewood.',
+      },
+      {
+        href: '/areas/burien/sell-house-with-code-violations',
+        label: 'Code violations in Burien',
+        description: 'The Burien situation page for an open city case.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-washington',
+        label: 'Code violations in Washington',
+        description: 'King and Pierce County, when the notice is not only a Burien letter.',
+      },
+      {
+        href: '/areas/burien/sell-house-as-is',
+        label: 'Sell a house as-is in Burien',
+        description: 'The repair list does not have to be finished first.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/burien/sell-my-house-fast',
+        label: 'Sell my house fast in Burien',
+        description: 'A direct sale without a permit on the calendar.',
+      },
+      {
+        href: '/areas/burien/sell-hoarder-house',
+        label: 'Heavy-repair houses in Burien',
+        description: 'When the notice is one part of a larger repair.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents and heavy repairs can stay.',
+      },
+      {
+        href: '/areas/burien/sell-vacant-house',
+        label: 'Vacant houses in Burien',
+        description: 'When nobody is there to meet the inspector.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/burien/sell-house-with-tenants',
+        label: 'Houses with tenants in Burien',
+        description: 'Do not make an occupant leave so the yard looks empty.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/burien/sell-inherited-probate-house',
+        label: 'Inherited houses in Burien',
+        description: 'When the notice and the signer are both open questions.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the code letter.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-king-county',
+        label: 'Estate houses in King County',
+        description: 'The clerk is in Seattle or Kent, not in Tacoma.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/foreclosure-in-king-county-washington',
+        label: 'Foreclosure in King County',
+        description: 'A trustee’s notice is a different deadline from a code case.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A King County tax bill is a different account from a city penalty.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-king-pierce-county',
+        label: 'Fire-damaged houses in King and Pierce County',
+        description: 'A dangerous-structure letter can follow a fire.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The service page. The insurance claim stays with your insurer.',
+      },
+      {
+        href: '/areas/seatac',
+        label: 'Sell a house in SeaTac',
+        description: 'The next city east. A different permit counter.',
+      },
+      {
+        href: '/areas/des-moines',
+        label: 'Sell a house in Des Moines',
+        description: 'South along the Sound. Redondo is not Burien.',
+      },
+      {
+        href: '/areas/tukwila',
+        label: 'Sell a house in Tukwila',
+        description: 'A different city. Do not use a Burien letter there.',
+      },
+      {
+        href: '/areas/federal-way',
+        label: 'Sell a house in Federal Way',
+        description: 'King County, farther south. A different city’s code.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-federal-way',
+        label: 'Code violations in Federal Way',
+        description: 'Do not copy a Federal Way deadline onto a Burien notice.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what the letter says. You do not have to finish the list first.',
+      },
+    ],
+    ctaTitle: 'Ask for a Burien offer with the code case left open',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to finish the city’s list before you ask. Talk with a Washington attorney before you sign. You can say no.',
+  }),
+  post('selling-an-inherited-or-probate-house-bonney-lake-wa', {
+    breadcrumbName: 'Probate houses in Bonney Lake',
+    title: 'Selling an Inherited or Probate House in Bonney Lake, WA',
+    description:
+      'How Bonney Lake families sell an inherited plateau house in a Pierce County probate. The clerk is in Tacoma. Confirm who can sign with an attorney. Not legal advice.',
+    h1: 'Selling an Inherited or Probate House in Bonney Lake, WA',
+    publishedAt: '2026-11-21',
+    intro: [
+      'You sell an inherited Bonney Lake house by confirming who has authority to sign, then transferring the house as it sits. You do not have to empty it, repair it, replace a septic system, or finish a permit before you ask for a number. ' +
+        office +
+        ' KindKey is not a probate attorney, a tax advisor, or a real estate agent or broker. This article is not legal or tax advice.',
+      'Bonney Lake is an incorporated city in Pierce County, on the plateau above Sumner, along State Route 410. Downtown, Falling Water, Mountain Creek, and parts of Tehaleh are associated with the city. Much of the Lake Tapps shoreline, and parts of Tehaleh, are unincorporated Pierce County even when people say Bonney Lake. Buckley is the city to the east. Sumner is the valley city below the hill. A mailing city is not the city limit. Bring the address on the tax bill.',
+    ],
+    callout:
+      'You can ask for a number while your attorney confirms who can sign. Do not sign a deed before that authority exists. KindKey buys the house as it sits. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'The court is in Tacoma, not at Bonney Lake City Hall',
+        paragraphs: [
+          'If the decedent lived in the City of Bonney Lake, or on an unincorporated Pierce County parcel people call Bonney Lake, Lake Tapps, or Tehaleh, the residence county is Pierce County. Pierce County probate is opened with the Clerk of the Superior Court at the County-City Building, 930 Tacoma Ave S, Room 110, Tacoma, WA 98402. The clerk’s phone is (253) 798-7455. The clerk’s page lists the public counter as Monday through Friday, 8:30 a.m. to 4:30 p.m., and phone service as Monday through Friday, 8:30 a.m. to 3:30 p.m. Confirm the hours before you go. KindKey will not file the case or stand in line for you.',
+          'Pierce County’s probate page says a case is needed when the decedent’s assets exceed $100,000 and/or include any real property. A house is real property. Do not assume a small-estate affidavit can take the place of a deed. The same page, for a self-represented filing, lists a petition, an order, the original will if there is one, a notarized oath, one set of copies, and a filing fee of $290 by cash, debit, money order, or cashier’s check. It lists the better hours to file as 8:30 a.m. to 11:00 a.m. and 1:30 p.m. to 3:00 p.m. Confirm the current fee and the current list with the clerk before you go, because both can change. KindKey will not choose the forms.',
+          'RCW 11.96A.050, in the Washington Trust and Estate Dispute Resolution Act, lets a petitioner begin in a Washington county they select and lets another party ask the court to move the case. If the decedent lived on this plateau, the residence county under that transfer rule is Pierce County. King County Superior Court, in Seattle or at the Maleng Regional Justice Center in Kent, is the wrong residence county for that decedent, even though KindKey’s office is in Auburn and most of Auburn is in King County. Kitsap County Superior Court in Port Orchard is also the wrong courthouse. Buckley City Hall is not the superior court either. The City of Bonney Lake does not appoint a personal representative. The city clerk’s office is at 9002 Main St E, Suite 300, Bonney Lake, WA 98391, phone (253) 862-8602. The clerk’s page lists hours of Monday through Thursday, 8:30 a.m. to 4:30 p.m., and Friday by appointment. That office keeps ordinances and the municipal code. It does not open a probate.',
+        ],
+      },
+      {
+        heading: 'Letters, a trust, and a deed are not the same signature',
+        paragraphs: [
+          'The closing agent will ask for letters testamentary or letters of administration, and for the order that says whether the personal representative has nonintervention powers. A will may say “executor.” Washington law uses “personal representative” for the appointed person. If the powers were granted, RCW 11.68.090 gives that person authority to sell the decedent’s real property without a further court order, and without following chapter 11.56 RCW, subject to the will and the representative’s duties. The duties include good faith, honest judgment, and the interests of the beneficiaries. The will can restrict the sale. RCW 11.68.011 is the grant statute. If the powers were not granted, a sale may have to follow the court process in chapter 11.56 RCW. KindKey will not read the letters and tell you which path you are on. Your attorney does that.',
+          'An agreement among siblings, including siblings in Sumner, Puyallup, Auburn, King County, or another state, is not a substitute for the signature title requires. One heir’s enthusiasm does not create letters. One heir’s objection does not, by itself, rewrite letters that are already in effect. If someone has filed a petition, ask your attorney whether the personal representative may still sign. Do not accept an offer and sign in the middle of that question because a buyer is ready. You can request a written number so the family can see it. Accepting it is a different step.',
+          'Some parents put the house in a living trust. Some recorded a transfer-on-death deed under chapter 64.80 RCW. Those paths are not a probate while the owner is alive, and a transfer-on-death deed is not letters. A Washington attorney, and then the title company, reads the document that is actually on title. KindKey will not interpret the trust. The deed, once the right person can sign, records with the Pierce County Auditor at 2401 S 35th St, Room 200, Tacoma, WA 98409. That office publishes (253) 798-7427, and its page lists hours of Monday through Friday, 8:30 a.m. to noon and 1:00 p.m. to 4:30 p.m. Confirm the hours. Do not record a Pierce County deed at the King County Recorder because the family lives in Kent, or at the Kitsap County Auditor because someone takes a ferry.',
+        ],
+      },
+      {
+        heading: 'Plateau houses, Lake Tapps, and what you do not have to finish',
+        paragraphs: [
+          'A newer house in Falling Water or Mountain Creek, an older house near the original town, and a Lake Tapps lot are different properties. Parts of Tehaleh are inside the city and parts are not. Many Lake Tapps shoreline parcels are unincorporated Pierce County. The Pierce County Assessor-Treasurer’s record is the tax map. The closing agent orders the title report. KindKey will not draw the city limit from a subdivision name. You do not have to empty the rooms, mow the lot to a listing standard, or fly home for showings before KindKey looks. Take what the family wants. Leave the rest. If a relative still lives in the house, do not force that person out so the house looks vacant. Occupancy belongs with your attorney.',
+          'Some older and outlying lots use a septic system or a well. Others are on public utilities. The city name does not decide it. You do not have to pump, locate, replace, or certify a system before an offer. On-site sewage questions in Pierce County go to the Tacoma-Pierce County Health Department. That department is not the city permit counter, and it is not KindKey. KindKey does not inspect or certify a septic system or a well. The Puyallup septic guide is the neighboring city’s writeup of a failing drainfield. Use it only after you confirm the parcel is not this plateau file.',
+          'You also do not need a building permit before the visit. The City of Bonney Lake Permit Center is not on Main Street. The city’s permit page lists it at the Public Services Center, 21719 96th St E, 2nd Floor, Buckley, WA 98321, phone (253) 447-4356, with an inspection line of (253) 447-4357 and the email permit@bonneylake.gov. The page lists hours of Monday through Thursday, 9:00 a.m. to 4:00 p.m., and Friday by appointment. Buckley is a different city. A permit question for a house inside Bonney Lake can still be that counter. An unincorporated Lake Tapps or Tehaleh parcel can be a Pierce County permit instead. Pierce County’s code-enforcement page says it covers unincorporated Pierce County, lists its office at 2401 S 35th St, Room 2, Tacoma, WA 98409, phone (253) 798-4636, and lists the City of Bonney Lake at (253) 862-8602. Read the header. KindKey will not pull the permit and will not tell you which counter is yours.',
+          'If someone still lives there under a rental agreement, say so. Chapter 59.18 RCW is Washington’s Residential Landlord-Tenant Act. Selling the house does not, by itself, end a tenancy. KindKey will not serve a notice and will not tell you that it does. The Bonney Lake tenants page is that file. A city code letter is a different paper from the probate. The Bonney Lake code-violations page is the city situation page. KindKey will not match your letter to an ordinance. If the house has been empty since the funeral, the Bonney Lake vacant-house page is the maintenance question. This page is about who can sign.',
+        ],
+      },
+      {
+        heading: 'A loan, a tax bill, and a direct sale',
+        paragraphs: [
+          'If the estate is also behind on the mortgage, there are two clocks: the court file and the lender’s notice. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and does not claim an estate sale is exempt. KindKey will not take a deed outside escrow. The Pierce County foreclosure guide and the statewide foreclosure guide are that file. Bonney Lake does not have a separate city foreclosure page on this site. A Pierce County property-tax bill is a different account from a mortgage and from a city utility. KindKey will not calculate the Assessor-Treasurer’s number and will not give tax advice about basis or a gain. Take those questions to a tax professional.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn, down the hill from the plateau. KindKey does not promise a specific number of days. Heirs who already live somewhere else often want a shorter window. A family that still needs to take belongings can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, or a lien. The offer reflects the house as it sits, so it can be less than a retail price for a repaired, empty house. You see the payoffs on the settlement statement before you close. You can say no. Sign only after your attorney says the signer is clear.',
+          'A listing can fit a plateau house that is in good condition if the person with authority can cooperate on showings and a broker will take it. Hire a licensed broker in Pierce County. Commission is negotiated with that broker and is not set by KindKey. KindKey will not run the listing and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. The comparison of an estate sale and an as-is house sale is the belongings question. KindKey buys the house. KindKey does not run a tag sale.',
+          'A Sumner house in the valley, a Puyallup house, an Edgewood house, and a Buckley house are different cities. An Auburn house can be King County or Pierce County. A Port Orchard, Bremerton, Silverdale, or Poulsbo house is a Kitsap County probate, filed in Port Orchard, not in Tacoma. Do not use this Bonney Lake page for those files. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the house through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Where is a Bonney Lake probate filed?',
+        answer:
+          'If the decedent lived in Bonney Lake, or on a Pierce County parcel people call Lake Tapps or Tehaleh, Pierce County is the residence county. Filings go to the Clerk of the Superior Court at 930 Tacoma Ave S, Room 110, Tacoma, phone (253) 798-7455. Bonney Lake City Hall does not open the estate. Ask a Washington attorney before you file. KindKey will not file.',
+      },
+      {
+        question: 'Can the family sell before probate is finished?',
+        answer:
+          'Sometimes, if the personal representative can sign and any court step your attorney identifies is done. With nonintervention powers, RCW 11.68.090 allows a sale of real property without a further court order, subject to the will and the representative’s duties. Without those powers, chapter 11.56 RCW may apply. This is not legal advice. Call (206) 519-5463 or use the cash-offer form if you want a number to review. Do not sign before the authority exists.',
+      },
+      {
+        question: 'Do heirs have to empty the house or fix the septic first?',
+        answer:
+          'No. Belongings can stay. A septic system or a well does not have to be pumped, replaced, or certified before KindKey looks. On-site sewage questions in Pierce County go to the Tacoma-Pierce County Health Department. KindKey does not certify a system. You can say no after you see the offer.',
+      },
+      {
+        question: 'What if a foreclosure notice arrived while the estate is open?',
+        answer:
+          'Talk with a Washington attorney before you sign. Asking for an offer does not postpone a trustee. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. You can still request a cash offer while you get that advice. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/bonney-lake',
+        label: 'Sell a house in Bonney Lake',
+        description: 'The plateau, Falling Water, and Lake Tapps-area parcels.',
+      },
+      {
+        href: '/areas/bonney-lake/sell-inherited-probate-house',
+        label: 'Inherited houses in Bonney Lake',
+        description: 'The Bonney Lake probate sale page.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'The Washington overview for estate sales.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-pierce-county',
+        label: 'Estate houses in Pierce County',
+        description: 'The Tacoma clerk, letters, and nonintervention powers.',
+      },
+      {
+        href: '/blog/how-to-sell-an-estate-house-in-washington',
+        label: 'How to sell an estate house in Washington',
+        description: 'The step-by-step guide for the person who can sign.',
+      },
+      {
+        href: '/blog/selling-a-house-in-probate-washington',
+        label: 'Probate sales in Washington',
+        description: 'What to expect before anyone signs a deed.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-when-heirs-disagree',
+        label: 'When heirs disagree',
+        description: 'An objection is not the same thing as authority to sign.',
+      },
+      {
+        href: '/blog/estate-sale-vs-selling-the-house-as-is',
+        label: 'Estate sale versus selling the house as-is',
+        description: 'Belongings can stay. KindKey does not run a tag sale.',
+      },
+      {
+        href: '/areas/bonney-lake/sell-house-as-is',
+        label: 'Sell a house as-is in Bonney Lake',
+        description: 'The repair list does not have to be finished first.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/bonney-lake/sell-my-house-fast',
+        label: 'Sell my house fast in Bonney Lake',
+        description: 'A direct sale once the signer is clear.',
+      },
+      {
+        href: '/areas/bonney-lake/sell-vacant-house',
+        label: 'Vacant houses in Bonney Lake',
+        description: 'When the house has been empty since the funeral.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/bonney-lake/sell-house-with-tenants',
+        label: 'Houses with tenants in Bonney Lake',
+        description: 'Do not make an occupant leave so the house looks vacant.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/bonney-lake/sell-house-with-code-violations',
+        label: 'Code violations in Bonney Lake',
+        description: 'A city letter is a different file from the probate.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/areas/bonney-lake/sell-hoarder-house',
+        label: 'Heavy-repair houses in Bonney Lake',
+        description: 'Contents and heavy repairs can stay.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'The overview for houses that need more than a cleaning.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Your notice still controls.',
+      },
+      {
+        href: '/blog/foreclosure-in-pierce-county-washington',
+        label: 'Foreclosure in Pierce County',
+        description: 'A trustee’s notice is a different clock from the court file.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Selling before foreclosure in Washington',
+        description: 'Talk with an attorney about RCW 61.34 before you sign.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A Pierce County tax bill is a different account from the mortgage.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-drainfield-puyallup-wa',
+        label: 'Septic or drainfield trouble in Puyallup',
+        description: 'The valley city. Confirm the parcel before you use that page.',
+      },
+      {
+        href: '/areas/sumner',
+        label: 'Sell a house in Sumner',
+        description:
+          'The valley city below the plateau. A different probate address is still Tacoma.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-sumner-wa',
+        label: 'Code violations in Sumner',
+        description: 'A Sumner letter is not a Bonney Lake probate.',
+      },
+      {
+        href: '/areas/puyallup',
+        label: 'Sell a house in Puyallup',
+        description: 'Pierce County. Do not assume a South Hill address is Bonney Lake.',
+      },
+      {
+        href: '/areas/auburn',
+        label: 'Sell a house in Auburn',
+        description: 'KindKey’s office city. Most of Auburn is in King County.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-king-county',
+        label: 'Estate houses in King County',
+        description: 'The other courthouse, if the decedent did not live in Pierce County.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Ask while your attorney confirms who can sign. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for a Bonney Lake number once you know who can sign',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. Your attorney confirms authority. You do not have to empty the house first. You can say no.',
+  }),
 ];
