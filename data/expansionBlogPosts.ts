@@ -7858,4 +7858,435 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. Your attorney confirms authority. You do not have to empty the house first. You can say no.',
   }),
+  post('behind-on-payments-kent-wa', {
+    breadcrumbName: 'Behind on payments in Kent',
+    title: 'Behind on Payments in Kent, WA: Selling Before Foreclosure',
+    description:
+      'How Kent owners who are behind on the mortgage ask for a cash offer before a trustee sale. King County recording. Talk with an attorney. Not legal advice.',
+    h1: 'Behind on Payments in Kent, WA: Selling Before Foreclosure',
+    publishedAt: '2026-11-22',
+    intro: [
+      'You can ask KindKey to buy a Kent house while you are behind on the mortgage, without catching the loan up and without repairing the house first. A written offer is a purchase offer. It does not stop a trustee, and it does not require you to sell. ' +
+        office +
+        ' KindKey is not a trustee, a housing counselor, a foreclosure consultant, or a real estate agent or broker. This article is not legal advice. Talk with a Washington attorney before you sign.',
+      'Kent is an incorporated city in King County, split by the Green River valley. East Hill, West Hill, downtown, and the streets around Kent Station are the local map. Panther Lake and Lake Meridian are East Hill areas, not separate counties. Renton is north. Auburn is south. Federal Way and Des Moines are west. Covington, to the east, is its own city. A Kent mailing address is not the city limit, and it is not the recording office. Bring the notice and the address on the tax bill.',
+    ],
+    callout:
+      'You do not have to catch up the payments or finish repairs before you ask. KindKey is the buyer. Asking does not postpone a trustee. Talk with a Washington attorney before you sign. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'City Hall is not the office that runs the sale',
+        paragraphs: [
+          'The City of Kent does not hold a trustee sale and does not reinstate a deed of trust. City Hall is at 220 Fourth Ave. S., Kent, WA 98032. The city publishes the main line as (253) 856-5200. The city clerk’s page lists hours of Monday through Friday, 8:00 a.m. to 5:00 p.m. Confirm the hours before you go. A letter from Kent code compliance, a water bill, and a notice from a trustee are three different papers. Read the header. KindKey is none of those offices and will not call the city, the servicer, or the trustee for you.',
+          'A Kent deed records with the King County Recorder at King Street Center, 201 S. Jackson St., Suite 204, Seattle, WA 98104. That office publishes customer service at (206) 477-6620. Its page lists in-person hours of Monday through Friday, 8:30 a.m. to 4:30 p.m., and says recording ends at 3:30 p.m. Confirm the hours before you go. Do not record a King County deed at the Pierce County Auditor in Tacoma because you drive through Auburn, or at the Kitsap County Auditor in Port Orchard. Most of Auburn is King County. A southern slice of Auburn can be Pierce County. Milton can fall in either county. Kent, when the house is inside the city, is King County. The closing agent confirms the parcel. If the notice names Pierce County, this Kent page is the wrong file. Use the Pierce County foreclosure guide.',
+          'The auction is held at the time and place the notice prints. KindKey will not tell you that place is City Hall. A case to restrain a sale under RCW 61.24.130 is filed in superior court. For a King County deed, that court is King County Superior Court, in Seattle or at the Maleng Regional Justice Center in Kent. The courthouse being in Kent does not make the City of Kent a party, and it does not make KindKey your lawyer. KindKey will not prepare that case, will not appear for you, and will not tell you whether to file.',
+        ],
+      },
+      {
+        heading: 'Read your notice before you borrow a number of days',
+        paragraphs: [
+          'Washington foreclosures on a deed of trust are mostly nonjudicial. Unless you were served with a summons, the file is chapter 61.24 RCW, the Deed of Trust Act, not a judicial foreclosure under chapter 61.12 RCW. KindKey will not tell you which caption you have. Read the paper. The King County foreclosure guide on this site walks the same statute for Kent, Auburn, Federal Way, Renton, and the Seattle area. Your notice still controls. KindKey will not count the days on it.',
+          'For the loans RCW 61.24.030(8) covers, a notice of default goes out at least 30 days before a notice of sale. Many loans also get a contact letter under RCW 61.24.031 first. The notice-of-sale form describes what silence can bring, and it describes a minimum period of notice of the auction. The recording rule in RCW 61.24.040 is at least 90 days before the sale, or at least 120 days if that contact letter was required. A trustee can postpone. RCW 61.24.090 lets a borrower cure until the eleventh day before the sale, or the eleventh day before a continued sale, by paying the trustee the amount the trustee states. A 190-day floor runs from the date of default. Do not count any of those periods from a missed payment, from a conversation, or from this article. The printed date on your notice is the fact. A housing counselor or a Washington attorney should read it with you.',
+          'Foreclosure Fairness Act mediation is RCW 61.24.163. A referral comes from a housing counselor or a Washington attorney, after the notice of default and no later than 90 days before the sale date. You do not refer yourself. Some loans and some smaller servicers are outside it. A proper referral can hold a notice of sale, or the sale, until mediation is done. It does not guarantee you keep the house. KindKey does not attend mediation and does not call your servicer. The Washington State Department of Commerce publishes a free counseling line at 1-877-894-HOME (4663). Use that line, or the hotline printed on your notice, if you still want to keep the house. Bring the sale date and the eleventh-day cure date. KindKey will not collect a reinstatement.',
+          'Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not tell you whether it applies to your sale. Do not deed the house to anyone outside escrow. Do not sign a contract in a parking lot because a date is close. Take the offer to a Washington attorney. Asking for a cash offer does not pause the trustee, and it does not extend a cure date.',
+        ],
+      },
+      {
+        heading: 'East Hill, West Hill, and the valley are the same county and different houses',
+        paragraphs: [
+          'Tell KindKey the address, what the notice says, and the condition, before anyone schedules a visit. An East Hill rambler near Panther Lake, a West Hill house with a roof that has waited, and a valley house near Kent Station are not the same repair and not the same drive. Photos can start the file. If the house is not safe to enter, say so. An exterior look is enough to begin. Do not walk a house that is not safe just to satisfy a buyer.',
+          'You do not have to catch up a payment, clear a yard, or replace a roof before KindKey looks. If someone still lives there, say so. Do not force an occupant out so the house looks empty for a buyer. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does. The Kent tenants page is that question. If the house is already empty, say that too. The Kent vacant-house page is the empty house. A fire, a code letter, or an open permit is a condition fact, not a reason KindKey refuses to look. The Kent fire-damage page and the Kent code-violations page are those letters. KindKey does not clear a city case as your representative.',
+          'If the owner has died, who can sign is a separate question from the mortgage. A Kent probate is commonly a King County matter, in Seattle or at the Maleng Regional Justice Center in Kent, not a Pierce County filing in Tacoma. KindKey will not file the probate and will not guess which relative can sign. You can ask for an offer while an attorney answers that. Do not sign a deed before the authority exists. The Kent inherited-house page is that file.',
+        ],
+      },
+      {
+        heading: 'A counselor, a listing, or a direct sale are different paths',
+        paragraphs: [
+          'If you want to keep the house, the counselor and your attorney are the first calls, not a buyer. Reinstatement, a repayment plan, and mediation are their conversation. KindKey will not tell you to skip them. If the house is updated and your attorney says the calendar still allows showings and a financed buyer, a listing can fit. Hire a licensed broker in King County for that path. Commission is negotiated with that broker and is not set by KindKey. KindKey will not run the listing and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn, south of Kent through the valley. The drive does not add a repair, and it does not add days to the trustee’s clock. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need a relative with a key, or time for an attorney to read the notice, can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase the loan, a tax bill, a utility balance, or a judgment. If the payoff and the other amounts title requires are higher than the price, the lender has to agree before a sale can close. You see those numbers on the settlement statement before you close. The offer reflects the house as it sits, so it can be less than a retail price for a house that is current and repaired. You can say no.',
+          'A King County property-tax bill is a different account from the mortgage. KindKey will not calculate the treasurer’s number. The Washington tax-delinquent guide is that sale. Renton, north of Kent, has a city page and does not have a separate foreclosure page on this site. Auburn and Federal Way do. Covington and Maple Valley are not this page. A house in Tacoma, Puyallup, Lakewood, or Edgewood is a Pierce County file. Reach out, and KindKey will help you through the whole process from start to finish, from the notice through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell my Kent house if I am behind on payments?',
+        answer:
+          'You can ask for a cash offer without catching the loan up or repairing the house. Whether a sale can still close depends on the notice, the payoff, and the date. Talk with a Washington attorney. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Does asking KindKey for an offer stop the trustee sale?',
+        answer:
+          'No. A finished sale might pay what title requires if the price and the date work. The request itself does not postpone the trustee, and it does not extend a cure date. KindKey will not call your servicer. This article is not legal advice.',
+      },
+      {
+        question: 'Is a Kent foreclosure recorded in Pierce County because Auburn is close?',
+        answer:
+          'No. A house inside the City of Kent is a King County recording. The notice of sale is recorded where the deed of trust is of record. Do not use the Pierce County Auditor in Tacoma for that deed. If the notice names a different county, follow the notice.',
+      },
+      {
+        question: 'What if I also have tenants, a code letter, or a relative who died?',
+        answer:
+          'Say so. KindKey buys the house as it sits and will not make an occupant leave. A city letter is not a trustee notice. Who can sign after a death is a question for a Washington attorney. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. You can still request a cash offer while you get that advice.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/kent',
+        label: 'Sell a house in Kent',
+        description: 'East Hill, West Hill, and the valley.',
+      },
+      {
+        href: '/areas/kent/sell-house-before-foreclosure',
+        label: 'Sell before foreclosure in Kent',
+        description: 'The Kent situation page. Your notice still controls the date.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide for a direct sale.',
+      },
+      {
+        href: '/blog/foreclosure-in-king-county-washington',
+        label: 'Foreclosure in King County',
+        description: 'Kent, Auburn, Federal Way, Renton, and the Seattle area.',
+      },
+      {
+        href: '/blog/behind-on-mortgage-payments-washington',
+        label: 'Behind on mortgage payments in Washington',
+        description: 'When the cause is a job, a divorce, or medical bills.',
+      },
+      {
+        href: '/blog/notice-of-default-washington',
+        label: 'Notice of default in Washington',
+        description: 'The paper that often comes before a sale notice.',
+      },
+      {
+        href: '/blog/notice-of-trustee-sale-washington',
+        label: 'Notice of trustee sale in Washington',
+        description: 'The sale date and the cure window. Read your notice.',
+      },
+      {
+        href: '/blog/washington-foreclosure-mediation-vs-selling',
+        label: 'Mediation or a sale',
+        description: 'A counselor refers you. KindKey does not attend.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Sell before foreclosure in Washington',
+        description: 'What a direct sale can pay at closing, and what it cannot pause.',
+      },
+      {
+        href: '/areas/kent/sell-house-as-is',
+        label: 'Sell a house as-is in Kent',
+        description: 'Repairs are not a precondition of an offer.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/kent/sell-my-house-fast',
+        label: 'Sell my house fast in Kent',
+        description: 'One walkthrough and a closing date you help choose.',
+      },
+      {
+        href: '/areas/kent/sell-house-with-tenants',
+        label: 'Houses with tenants in Kent',
+        description: 'Do not make an occupant leave so the house looks empty.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/kent/sell-vacant-house',
+        label: 'Vacant houses in Kent',
+        description: 'When you already live somewhere else.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/kent/sell-inherited-probate-house',
+        label: 'Inherited houses in Kent',
+        description: 'Who can sign is separate from the mortgage.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, confirmed with an attorney.',
+      },
+      {
+        href: '/areas/kent/sell-house-with-code-violations',
+        label: 'Code violations in Kent',
+        description: 'A city letter is not a trustee notice.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/areas/kent/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Kent',
+        description: 'Condition and the loan can both be in the file.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The service page. The insurance claim stays with your insurer.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A King County tax bill is a different account from the mortgage.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-auburn-wa',
+        label: 'Avoiding foreclosure in Auburn',
+        description: 'The next city south. Most of Auburn is King County.',
+      },
+      {
+        href: '/areas/federal-way/sell-house-before-foreclosure',
+        label: 'Federal Way before foreclosure',
+        description: 'King County, west of Kent. A different city.',
+      },
+      {
+        href: '/areas/renton',
+        label: 'Sell a house in Renton',
+        description: 'North of Kent. No separate foreclosure page on this site.',
+      },
+      {
+        href: '/blog/foreclosure-in-pierce-county-washington',
+        label: 'Foreclosure in Pierce County',
+        description: 'Use this if the notice is Tacoma, not Kent.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what the notice says. You do not have to catch up first.',
+      },
+    ],
+    ctaTitle: 'Ask for a Kent offer while you are behind, and review it with an attorney',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to catch up the payments before you ask. Asking does not stop a trustee. Talk with a Washington attorney before you sign. You can say no.',
+  }),
+  post('sell-house-with-tenants-lakewood-wa', {
+    breadcrumbName: 'Tenants in Lakewood',
+    title: 'Selling a House with Tenants in Lakewood, WA',
+    description:
+      'How Lakewood owners sell a house with tenants in place, including a rental license or an open inspection. KindKey buys as a principal. Not legal advice.',
+    h1: 'Selling a House with Tenants in Lakewood, WA',
+    publishedAt: '2026-11-22',
+    intro: [
+      'You can sell a Lakewood house with the tenants still living there. You do not have to evict them, renew the city’s rental license, pass a rental inspection, or deliver the house vacant first. ' +
+        office +
+        ' KindKey is not a property manager, a landlord-tenant lawyer, the city’s Rental Housing Safety Program, or a real estate agent or broker. This article is not legal advice.',
+      'Lakewood is an incorporated city in Pierce County, south of Tacoma along I-5. Tillicum, Lakeview, Oakbrook, Springbrook, Lake City, and Bridgeport are neighborhoods. American Lake, Gravelly Lake, and Lake Steilacoom are part of the geography. Joint Base Lewis-McChord is next door. It is not city hall, and a base address is not a Lakewood parcel. Steilacoom and University Place are separate cities. Spanaway, to the east, is unincorporated Pierce County. A Lakewood mailing address is not always inside the city. Bring the address.',
+    ],
+    callout:
+      'You do not have to deliver the house vacant, or finish the rental license, before you ask. KindKey is the buyer. The tenant can stay. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'Say who lives there before anyone treats this as a city rental',
+        paragraphs: [
+          'Tell KindKey who is in the house before anyone schedules a visit. It may be one household on a written lease, a month-to-month tenant, a person in a room, or someone who was never given a written agreement. Rent may be current. It may have stopped. You may still be holding a deposit, or you may not remember the amount. KindKey prices the house you describe. Photos of the house and a plain description can start the conversation if a walkthrough has to wait. If a floor or a room is not safe to enter, say so. An exterior look can begin it. Do not walk a house that is not safe just to satisfy a buyer. Do not change the locks so the house looks empty.',
+          'LMC 5.60.010 defines “tenant” as a person occupying or holding possession of a building or premises pursuant to a rental agreement. The same section defines “owner” to include a person who, as agent, executor, administrator, trustee, or guardian of an estate, has charge, care, or control of a building. KindKey will not decide whether a relative, a person who stopped paying, or an heir meets those sentences. The city’s Rental Housing Safety Program page asks, in its FAQ, whether an owner who lives in the property and rents bedrooms must register. The answer printed there is no, not as long as you are living at the property, and it says that if you move out and rent the entire property you will be required to register. LMC 5.60.025(A)(1) exempts rental housing units occupied by the owner, or by a parent or child of the owner, from the licensing requirement in LMC 5.60.020 and from the inspection requirement in LMC 5.60.080. KindKey will not tell you that the FAQ and that subsection are the same rule, and KindKey will not decide whether a cousin, a roommate, or a bedroom meets either one. Say what you know. If you do not know, say that.',
+          'Lakewood City Hall is at 6000 Main St. SW, Lakewood, WA 98499. The city publishes the main line as (253) 589-2489. The Rental Housing Safety Program page lists City Hall hours of Monday through Friday, 8:30 a.m. to 5:00 p.m., and Permit Center hours of Monday through Friday, 8:30 a.m. to 4:00 p.m. The same page’s contact section lists the program at rentals@cityoflakewood.us or (253) 512-2261. A FAQ on that page, about reporting a rental that is not registered, publishes (253) 983-7850. KindKey will not tell you which number fits your question. KindKey is not that desk and will not register the house for you. The Lakewood Municipal Code publisher shows the code current through Ordinance 852, passed June 15, 2026, and it says the city clerk’s office has the official version. Read the section you were cited, not an old printout.',
+          'The closing agent confirms the parcel. A Lakewood deed records with the Pierce County Auditor at 2401 S 35th St, Room 200, Tacoma, WA 98409. The phone that office publishes for questions about requesting recorded documents is (253) 798-7440. The auditor’s published counter hours are Monday through Friday, 8:30 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m. Confirm the hours. The auditor does not inspect a rental and does not decide a tenancy. Do not record a Pierce County deed at the King County Recorder because KindKey’s office is in Auburn, or at the Kitsap County Auditor in Port Orchard. A Spanaway address is unincorporated Pierce County, not a Lakewood city rental file. University Place, Steilacoom, and Tacoma are different cities. Parkland is unincorporated. Read the header.',
+        ],
+      },
+      {
+        heading:
+          'The rental license and the inspection are city files, not a condition of an offer',
+        paragraphs: [
+          'LMC 5.60.020 says each residential housing unit in the city, as that chapter defines it, shall obtain and maintain a rental housing license issued by the city. It says the fee is in accordance with LMC 3.20.010, the fee schedule, at least one copy of which is kept on file in the office of the Lakewood city clerk. KindKey will not quote a fee from a schedule that can change, and KindKey will not look it up for you. LMC 5.60.020(B) says each license is valid for the current year of issuance, January 1 through December 31, and expires on December 31 of that year. It says a renewal is valid for an additional year from the date of expiration unless the license is suspended, revoked, closed, or invalidated by a change in business as defined in LMC 5.02.040. The city’s program page says a rental business license is issued to a specific property and does not transfer because of a sale or other transfer of ownership, and that a license is valid only in the year it was issued. KindKey will not tell you whether your sale is the “change in business” in LMC 5.02.040, and KindKey will not reconcile that webpage sentence with the code. You do not have to obtain or renew the license before KindKey looks. KindKey will not apply for it.',
+          'LMC 5.60.025(A) lists residential housing units that are exempt from the licensing requirement in LMC 5.60.020 and from the inspection and certificate-of-compliance requirements in LMC 5.60.080. The list includes units occupied by the owner or by a parent or child of the owner, units unavailable for rent, certain short-stay lodging, retirement or nursing homes, specified care facilities and religious-order housing, rental units a government owns, operates, or manages, an accessory dwelling unit on the same lot where the owner still lives in the primary residence or in the accessory unit, and housing units otherwise exempt from inspection as provided by law. LMC 5.60.025(A)(3) is the short-stay sentence. It names a hotel, motel, condominium, resort, or similar place offering three or more lodging units to guests for periods of less than 30 days, and it says that if any guest resides for 30 days or more, the facility is subject to the chapter. That is not a finding that every Lakewood condominium is outside the program. The city’s page also lists condominiums and townhouses in a multi-unit structure under multiple ownership among its exemptions, and it says a condominium or townhouse owned by a single owner or ownership group is required to comply. KindKey will not tell you which sentence fits your unit.',
+          'LMC 5.60.025(B) is a narrower list. It exempts some units from the inspection and certificate-of-compliance requirements in LMC 5.60.080, not from the license. One sentence covers legally permitted, newly constructed rental units with a satisfactory certificate of occupancy and no code violations, for five years from the date of that certificate. Another covers rental units that receive government funding or subsidies, are inspected at least every three years because of that funding, provide a copy of the inspection to the city, and are found by the director to have an inspection substantially equivalent to the city’s. The program page, in a note under exemptions, cites RCW 59.18.125(4)(a) for a five-year inspection exemption and then says units will not be chosen for inspection until at least ten years after the certificate of occupancy. The same page still lists exemptions, including manufactured homes, shelters, and a ten-year new-construction sentence, that Ordinance 849’s text of LMC 5.60.025 does not print the same way. KindKey will not reconcile the webpage with the code, and KindKey does not interpret RCW 59.18.125. Ask the program, or a Washington attorney, which sentence the city is applying to your house. You can ask KindKey for an offer while you do that.',
+        ],
+      },
+      {
+        heading:
+          'A certificate, a self-certification, and a notice about occupancy are different papers',
+        paragraphs: [
+          'LMC 5.60.080(A) says rental housing owners are required to provide a certificate of inspection as a business-license condition during the year the city requires it, and that a certificate of inspection shall be required no more than once every five years. LMC 5.60.080(B) says proof of an inspection by a government agency or other qualified inspector within the previous 24 months will satisfy the requirement for a certificate of inspection. LMC 5.60.080(C) says a rental housing owner may provide a self-certification that the rental property is in compliance with the requirements of that title, in lieu of a certificate of inspection, on a form the city provides and approves. LMC 5.60.010 defines “qualified inspector” with a list of credentials, including a HUD-certified inspector, a Washington-licensed home inspector, an American Society of Home Inspectors certified inspector, a private inspector certified by a professional association the municipality approves, a municipal code enforcement officer, a Washington-licensed structural engineer, and a Washington-licensed architect. The city’s program page still describes an initial inspection by a city inspector or a qualified private inspector, says re-inspections are made by city inspectors, and publishes its own credential list and a list of private inspectors. KindKey will not tell you the webpage and LMC 5.60.080 are the same instruction. KindKey will not choose an inspector, will not hire one, and does not require you to finish an inspection before an offer.',
+          'The program page says a certificate of compliance and a rental business license are not the same, and that a certificate of compliance is valid for five years. LMC 5.60.100 says it shall be unlawful to rent a rental unit, or to allow a tenant to continue to occupy a rental unit, that does not satisfy the requirements of LMC 5.60.080. It says the director may notify the owner that until a certificate of compliance is provided, it is unlawful to rent or to allow a tenant to continue to occupy the unit. KindKey will not tell you that a certificate of inspection and a certificate of compliance are the same paper. KindKey will not tell you that LMC 5.60.100 means the tenant must leave before you can sell, will not serve a notice, and will not change the locks. If you received a notice, read it and talk with a Washington attorney before you rely on a sale to solve it. Do not skip a hearing because a buyer is looking at the house. You can still ask for an offer.',
+          'LMC 5.60.150(A) says a person who violates the chapter, or rules the director adopts under it, may be punished by an infraction of $150 per day for the first 10 days the violation exists and $500 per day for each day thereafter, and that each day is a separate violation. It says no part of that fine may be reduced, modified, or suspended except upon a showing that the violation has been remedied or with the consent of the director. LMC 5.60.150(B) says a person who knowingly submits or assists in submitting a falsified certificate of compliance, or knowingly submits falsified information upon which a certificate of compliance is issued, is guilty of a gross misdemeanor, in addition to the subsection A penalties, and must be punished by a fine of not more than $5,000. Do not sign a certificate you know is false so the house is easier to sell. KindKey will not prepare the form and will not calculate the fine. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement, prepared by the closing agent, is where you see them. LMC 5.60.130 says the chapter does not limit the city’s other remedies for a condition that may be an immediate health or safety threat. LMC 5.60.140 says that by enforcing the chapter the city does not warrant the safety, fitness, or suitability of any dwelling. LMC 5.60.160 says the chapter shall be interpreted in a manner consistent with chapter 59.18 RCW, and in particular RCW 59.18.125. KindKey does not interpret those statutes.',
+        ],
+      },
+      {
+        heading: 'A sale does not end the tenancy',
+        paragraphs: [
+          'Chapter 59.18 RCW is Washington’s Residential Landlord-Tenant Act. Selling the house does not, by itself, cancel a lease or a month-to-month tenancy. KindKey will not tell you that it does. The tenant can still be in the house on the day the deed records. The offer can assume the tenant stays. You do not have to stage the rooms or promise vacant possession at closing. A walkthrough is one visit, not a string of showings. Arrange it with whatever notice your attorney says the lease and chapter 59.18 RCW require. The city’s program page says that when a rental is scheduled for a safety inspection, the owner or manager must provide written notice per RCW 59.18.150(6), and that a tenant who denies access after that notice is subject to the penalties in RCW 59.18.150(8). KindKey will not tell you that sentence is the notice for a buyer’s walkthrough, and KindKey will not tell you to enter without the notice your attorney says is required. If access will take time, photos and a description can start the file. Bring the lease if you have it, the rent, whether rent is current, and the deposit amount. Unpaid rent, a deposit you still hold, and prepaid rent can show on the settlement statement. KindKey does not calculate what the tenant is owed.',
+          'An inherited Lakewood rental often means heirs somewhere else, a tenant who was already there, and a house nobody in the family has walked since the death. LMC 5.60.010’s definition of owner includes an executor, administrator, trustee, or guardian who has charge of the building. That definition does not, by itself, tell you who may sign the deed. If the decedent lived in Lakewood, Pierce County is the residence county. The superior court clerk is in Tacoma, not at the King County courthouse in Seattle and not at the Maleng Regional Justice Center in Kent. Ask a Washington attorney before you file. KindKey will not file the probate and will not guess which relative can sign. You can ask for an offer while the attorney finishes that question. Do not sign a deed before the authority exists. Do not force the tenant, or a relative who still lives there, to leave so the house looks vacant. The Lakewood inherited-house page is that signature question.',
+          'If a foreclosure notice is also in the file, you have a clock the tenancy does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. Lakewood does not have a separate foreclosure page on this site. The Pierce County foreclosure guide is that file. A Pierce County property-tax bill is a different account from a city penalty and from the rent. KindKey will not calculate the treasurer’s number. The Washington tax-delinquent guide is the treasurer’s sale. A move connected to the base is a reason some owners stop managing a rental. It is not a separate legal process, and it does not move the house onto the base.',
+          'If nobody lives in the house, this is the wrong page. The Lakewood vacant-house page is that file. A house with a tenant is not a vacant delivery. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a deposit, or a city fine. The offer reflects the house as it sits, with the tenant in place and the work that remains, so it can be less than a retail price for a vacant house with a current license and a passed inspection. You see the payoffs on the settlement statement before you close. You can say no. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need the tenant’s schedule for a walkthrough can ask for longer.',
+          'Keeping the rental and catching up a small city file can be the right path if you want to stay the landlord and the work is actually small. A listing can fit a house the occupants will allow buyers to see. Hire a licensed broker in Pierce County for that listing. Commission is negotiated with the broker and is not set by KindKey. KindKey will not run the listing and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. A tenant in Tacoma, University Place, Steilacoom, Spanaway, Parkland, or Fife is a different city’s file, or a county file, and this Lakewood chapter is not theirs. A Milton rental can sit in King County or Pierce County. A Bremerton rental is Kitsap County. Do not copy a notice from either article onto a Lakewood lease. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of who lives there through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do Lakewood tenants have to move out before KindKey buys the house?',
+        answer:
+          'No. KindKey buys Lakewood houses with tenants in place. A sale does not, by itself, end the tenancy. Call (206) 519-5463 or use the cash-offer form and say who lives there. You can say no.',
+      },
+      {
+        question: 'Do I need a current Lakewood rental license before KindKey will look?',
+        answer:
+          'No. LMC 5.60.020 describes a rental housing license that runs on a calendar year. KindKey does not require you to obtain or renew it before an offer, and KindKey will not apply for you. Whether the license applies to your house is a question for the city’s Rental Housing Safety Program, at rentals@cityoflakewood.us or (253) 512-2261, or for a Washington attorney. You can still request a cash offer.',
+      },
+      {
+        question:
+          'The city says the unit cannot be occupied until there is a certificate. Can I still ask?',
+        answer:
+          'Yes. You can ask while that notice is open. LMC 5.60.100 is the unlawful-to-rent sentence, and it uses the words “certificate of compliance.” KindKey will not tell you it requires the tenant to leave before a sale, will not serve a notice, and will not calculate a fine under LMC 5.60.150. Talk with a Washington attorney. Do not skip a hearing because a buyer is looking.',
+      },
+      {
+        question: 'What if the rental is an estate, or a foreclosure notice arrived too?',
+        answer:
+          'Talk with a Washington attorney before you sign. KindKey will not file a probate or guess who can sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not stop a trustee. Lakewood does not have a separate foreclosure page on this site. You can still request a cash offer while you get that advice. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/lakewood/sell-house-with-tenants',
+        label: 'Sell a house with tenants in Lakewood',
+        description: 'The Lakewood rental page.',
+      },
+      {
+        href: '/areas/lakewood',
+        label: 'Sell a house in Lakewood',
+        description: 'Tillicum, Lakeview, Oakbrook, and the lakes.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/lakewood/sell-house-as-is',
+        label: 'Sell a house as-is in Lakewood',
+        description: 'The license and the repairs do not have to be finished first.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/lakewood/sell-my-house-fast',
+        label: 'Sell my house fast in Lakewood',
+        description: 'One walkthrough. The tenant can stay.',
+      },
+      {
+        href: '/areas/lakewood/sell-vacant-house',
+        label: 'Vacant houses in Lakewood',
+        description: 'Use this when nobody lives there.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/lakewood/sell-inherited-probate-house',
+        label: 'Inherited houses in Lakewood',
+        description: 'Who can sign is separate from the lease.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, confirmed with an attorney.',
+      },
+      {
+        href: '/areas/lakewood/sell-house-with-code-violations',
+        label: 'Code violations in Lakewood',
+        description: 'A city notice is not the same paper as a lease.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/areas/lakewood/sell-hoarder-house',
+        label: 'Heavy-repair houses in Lakewood',
+        description: 'When the rental also needs more work than a coat of paint.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents and heavy repairs can stay.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Lakewood has no separate foreclosure page.',
+      },
+      {
+        href: '/blog/foreclosure-in-pierce-county-washington',
+        label: 'Foreclosure in Pierce County',
+        description: 'A trustee’s notice is a different deadline from a rental license.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A Pierce County tax bill is a different account from the rent.',
+      },
+      {
+        href: '/areas/tacoma/sell-house-with-tenants',
+        label: 'Houses with tenants in Tacoma',
+        description: 'The next city north. A different city’s file.',
+      },
+      {
+        href: '/areas/spanaway/sell-house-with-tenants',
+        label: 'Houses with tenants in Spanaway',
+        description: 'Unincorporated Pierce County, east of Lakewood.',
+      },
+      {
+        href: '/areas/fife/sell-house-with-tenants',
+        label: 'Houses with tenants in Fife',
+        description: 'A different Pierce County city. Do not use the Lakewood chapter.',
+      },
+      {
+        href: '/blog/sell-rental-property-with-tenants-milton-wa',
+        label: 'Tenants in Milton',
+        description:
+          'Milton can be King County or Pierce County. This Lakewood chapter is not that file.',
+      },
+      {
+        href: '/blog/sell-house-with-tenants-bremerton-wa',
+        label: 'Tenants in Bremerton',
+        description: 'Kitsap County. Do not copy a Bremerton license rule onto a Lakewood lease.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say who lives there. You do not have to deliver the house vacant.',
+      },
+    ],
+    ctaTitle: 'Ask for a Lakewood offer with the tenants still in the house',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to evict anyone or finish the rental license before you ask. You can say no.',
+  }),
 ];
