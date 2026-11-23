@@ -8289,4 +8289,456 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to evict anyone or finish the rental license before you ask. You can say no.',
   }),
+  post('selling-an-inherited-or-probate-house-renton-wa', {
+    breadcrumbName: 'Probate houses in Renton',
+    title: 'Selling an Inherited or Probate House in Renton, WA',
+    description:
+      'How Renton families sell an inherited house in a King County probate. The clerk is in Seattle or Kent, not at City Hall. Confirm who can sign with an attorney. Not legal advice.',
+    h1: 'Selling an Inherited or Probate House in Renton, WA',
+    publishedAt: '2026-11-23',
+    intro: [
+      'You sell an inherited Renton house by confirming who has authority to sign, then transferring the house as it sits. You do not have to empty it, repair it, clear a code case, or finish probate paperwork before you ask for a number. Do not sign a deed before that authority exists. ' +
+        office +
+        ' KindKey is not a probate attorney, the superior court clerk, or a real estate agent or broker. This article is not legal or tax advice.',
+      'Renton is an incorporated city in King County, at the south end of Lake Washington, north of Kent. Downtown, the Highlands, Kennydale, Talbot Hill, Benson Hill, Cascade, and Renton Hill are local areas. Fairwood uses many Renton mailing addresses and is largely unincorporated King County. The Cedar River runs through the valley. Tukwila is to the west. A Renton mailing address is not the city limit, and it is not the courthouse. Bring the address on the tax bill.',
+    ],
+    callout:
+      'You can ask for a number while your attorney confirms who can sign. Do not sign a deed before that authority exists. KindKey buys the house as it sits. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'The estate is opened in Seattle or in Kent, not at Renton City Hall',
+        paragraphs: [
+          'If the decedent lived in the City of Renton, or on an unincorporated King County parcel people call Fairwood, the residence county is King County. Probate is a superior court case. King County Superior Court Clerk counters are at the King County Courthouse, 516 Third Avenue, Room E-609, Seattle, WA 98104, and at the Norm Maleng Regional Justice Center, 401 Fourth Avenue N, Room 2C, Kent, WA 98032. The clerk’s locations page lists both counters as 8:30 a.m. to 4:30 p.m., Monday through Friday, with limited services from 8:30 a.m. to 9:00 a.m. and from 12:15 p.m. to 1:15 p.m. The same page publishes customer service at (206) 296-9300, from 9:00 a.m. to 4:30 p.m., Monday through Friday, and the email clerksofficecustomerservice@kingcounty.gov. The superior court’s contact page lists an Ex Parte and Probate Department line at (206) 477-2517. Confirm the hours and which counter applies before you go. KindKey will not file the case, choose the courthouse, or stand in line for you.',
+          'Renton City Hall does not appoint a personal representative. The city’s contact block lists City Hall at 1055 S. Grady Way, Renton, WA 98057, and the main line (425) 430-6400. The city clerk is on the first-floor lobby. That office publishes (425) 430-6510, cityclerk@rentonwa.gov, and hours of Monday through Friday, 8 a.m. to 5 p.m. It keeps ordinances and the municipal code. It does not open a probate. Renton Municipal Court is on the third-floor lobby of the same building, at (425) 430-6550. Its page lists clerk-window hours of Monday through Friday, 8:30 a.m. to 12 p.m. and 12:30 p.m. to 4 p.m. Phone hours on that page are Monday through Thursday, 8:30 a.m. to 12 p.m. and 1 p.m. to 4 p.m., and Friday, 8:30 a.m. to 12 p.m. Municipal court hears city cases. It does not issue letters testamentary. The location block on both the clerk page and the municipal-court page prints “Renton, Washington, 98507.” The footer on those same pages, and a records-request form the court publishes, print 1055 S. Grady Way, Renton, WA 98057. Use the street address at City Hall. Do not navigate by the 98507 ZIP alone. 98507 is not the ZIP on the city’s own footer.',
+          'The superior court’s probate procedures page says probate is not always necessary, and that it may be preferable when you must pay debts, claims, or taxes, or if you anticipate disagreement over division of the estate. KindKey will not tell you which of those sentences fits a Renton house. A house on the title is a question for a Washington attorney and for the title company. Do not assume a small-estate affidavit can take the place of a deed. The same page says probate matters should be noted at least 14 days in advance, and that probates with wills must have the original will delivered or mailed to the clerk, for delivery to the commissioner, at the same time as the petition. KindKey will not deliver the will or note the hearing. The clerk’s will-repository brochure says RCW 11.20.010 requires the will to be filed whether or not it is offered for probate. Confirm the current instruction with the clerk or an attorney. KindKey will not file the will.',
+          'RCW 11.96A.050, in the Washington Trust and Estate Dispute Resolution Act, lets a petitioner begin in a Washington county they select and lets another party ask the court to move the case. If the decedent lived in Washington, the transfer rule points to the county of residence. A person who lived in Renton, or in unincorporated Fairwood, resided in King County. Pierce County Superior Court, at the County-City Building in Tacoma, is the wrong residence county for that decedent. Kitsap County Superior Court in Port Orchard is also the wrong courthouse. Do not file in Tacoma because KindKey’s office is in Auburn, or because the drive south is familiar. Most of Auburn is King County. A southern slice of Auburn can be Pierce County. The Auburn address does not move a Renton decedent.',
+        ],
+      },
+      {
+        heading: 'Letters, nonintervention powers, and the King County deed',
+        paragraphs: [
+          'The closing agent will ask for letters testamentary or letters of administration, and for the order on nonintervention powers. Washington uses “personal representative” for the person the court appoints. A will may call that person an executor. If the court granted nonintervention powers, RCW 11.68.090 lets the personal representative sell the decedent’s real property without a further court order and without the sale procedures in chapter 11.56 RCW, subject to the will and the representative’s duties. Those duties include using discretionary power in good faith, with honest judgment, and in line with the will and the interests of the beneficiaries. KindKey cannot waive that because the house is in Renton. This article is not legal advice. Talk with a Washington probate attorney about the letters before anyone signs.',
+          'RCW 11.68.011 is the statute on granting the powers. Unless the will tells the court not to grant them, the court grants them when it finds the estate is solvent, counting probate and nonprobate assets, and the petitioner fits a path in the statute. If the powers were not granted, or if a later order restricts them, chapter 11.56 RCW may apply. An agreement among heirs in the Highlands and heirs out of state is not a substitute for the signature title requires. The step-by-step guide for executors on this site walks the petition in more detail. The King County estate guide is the county picture those families share with Kent, Federal Way, and Seattle. This page is the Renton house.',
+          'Some houses are already titled in a living trust, or had a transfer-on-death deed recorded under chapter 64.80 RCW. Those paths are not a probate. A Washington attorney, and then the title company, reads the document that is actually on title. KindKey will not decide which document controls. You can ask for an offer while that reading happens. Do not sign before the person with authority is identified.',
+          'A Renton deed, and an unincorporated Fairwood deed, records with the King County Recorder at King Street Center, 201 S. Jackson St., Suite 204, Seattle, WA 98104. That office publishes customer service at (206) 477-6620. Its page lists in-person hours of Monday through Friday, 8:30 a.m. to 4:30 p.m., and says recording ends at 3:30 p.m. Phone service on that page is 9 a.m. to 2 p.m. on weekdays. Confirm the hours. The recorder does not appoint a personal representative and does not decide who can sign. Do not record a King County deed at the Pierce County Auditor in Tacoma, or at the Kitsap County Auditor in Port Orchard. The closing agent confirms the parcel. A Fairwood mailing city of Renton can still be unincorporated King County. The county of recording is King County either way. The city limit matters for a building permit or a code letter. It does not turn the probate into a City of Renton case.',
+        ],
+      },
+      {
+        heading: 'Kennydale, the Highlands, and the valley are different houses',
+        paragraphs: [
+          'Tell KindKey the address, who can sign, and the condition, before anyone schedules a visit. A Kennydale house near the lake, a Highlands rambler, a Talbot Hill or Benson Hill house, and a valley house along the Cedar River are not the same repair and not the same drive. Photos can start the file. If the house is not safe to enter, say so. An exterior look is enough to begin. Do not walk a house that is not safe just to satisfy a buyer. Furniture and a lifetime of belongings can stay. Take papers, photos, and what you want to keep before the closing date you agree to. You do not have to hold an estate sale of the contents before KindKey looks. The guide that compares an estate sale of belongings with an as-is sale of the house is that choice.',
+          'If someone still lives there, say so. It may be a relative, a tenant, or a person who was never given a written lease. Do not change the locks so the house looks empty. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does. The Renton tenants page is that question. If the house is already empty, say that too. The Renton vacant-house page is the empty house. A code letter, an open permit, or a yard the city has written about is a condition fact, not a reason KindKey refuses to look. The Renton code-violations page is that letter. KindKey does not clear a city case as your representative. A heavy clean-out or a failed roof can stay. The Renton hoarder page is that repair. Renton does not have a separate fire-damage page on this site. If a fire is why the house is for sale, say what burned. The statewide fire-damage page is that condition. The insurance claim stays with the insurer.',
+          'You do not have to catch up a mortgage, replace a roof, or make the house show-ready before an offer. The offer reflects the house as it sits, so it can be less than a retail price for a house that has been emptied and repaired. You can say no. If you do not know whether a past owner pulled a permit, say that. Washington’s seller disclosure law is chapter 64.06 RCW. KindKey will not tell you how to mark the form, whether an exemption in RCW 64.06.010 applies, or what a prior owner should have disclosed. Ask a Washington real estate attorney if you are unsure. Answer with what you actually know.',
+        ],
+      },
+      {
+        heading: 'A listing, a direct sale, and the other papers in the file',
+        paragraphs: [
+          'If the signer has authority, the house can be shown, and your attorney says the calendar allows a financed buyer, a listing can fit. Hire a licensed broker in King County for that path. Commission is negotiated with that broker and is not set by KindKey. KindKey will not run the listing and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. KindKey is the buyer on a direct sale. KindKey is not your agent.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn, south of Renton through the valley. The drive does not add a repair, and it does not create authority to sign. KindKey does not promise a specific number of days. Families who already live somewhere else often want a shorter window. Families who still need a relative with a key, or time for an attorney to issue letters, can ask for longer. Accept and sign only after your attorney says the signer has authority. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a utility balance, or a judgment. If the payoff and the other amounts title requires are higher than the price, the lender has to agree before a sale can close. You see those numbers on the settlement statement before you close. You can say no.',
+          'If a foreclosure notice is also in the file, you have a clock the probate does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. Renton does not have a separate foreclosure page on this site. The King County foreclosure guide and the statewide foreclosure guide are that notice. A King County property-tax bill is a different account from the mortgage and from a city penalty. KindKey will not calculate the treasurer’s number. The Washington tax-delinquent guide is that sale. Heirs who disagree, or who live out of state, are a separate question from the condition of the house. KindKey will not guess which relative can sign. The guide on heirs who disagree is that file.',
+          'Kent, immediately south, has its own city page and a foreclosure article. It does not replace this probate page. Tukwila, SeaTac, and Newcastle-area addresses people still call Renton can be a different city or unincorporated King County. Read the tax bill. A house in Bonney Lake, Tacoma, or Puyallup is a Pierce County probate, opened in Tacoma, not at the Maleng Regional Justice Center. A house in Bremerton or Port Orchard is a Kitsap County probate. Do not use this Renton page for those counties. Reach out, and KindKey will help you through the whole process from start to finish, from the question of who can sign through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I ask for an offer on a Renton house before probate is finished?',
+        answer:
+          'Yes. You can ask while a Washington attorney confirms who can sign. Do not sign a deed before that authority exists. You do not have to empty the house or finish repairs first. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Do I open a Renton probate at City Hall or at Renton Municipal Court?',
+        answer:
+          'No. If the decedent lived in Renton or in unincorporated Fairwood, King County is the residence county. The superior court clerk is at 516 Third Avenue, Room E-609, in Seattle, and at 401 Fourth Avenue N, Room 2C, in Kent. City Hall at 1055 S. Grady Way keeps city records. Municipal court, on the third floor, is not the probate court. KindKey will not file the case.',
+      },
+      {
+        question: 'The mail says Renton, but the house may be in Fairwood. Does the court change?',
+        answer:
+          'The residence county is still King County if the decedent lived there. Fairwood is often unincorporated King County rather than the City of Renton. That split can change which office wrote a permit or a code letter. It does not move the probate to Pierce County. The closing agent confirms the parcel. You can still request a cash offer.',
+      },
+      {
+        question: 'What if heirs disagree, or a foreclosure notice arrived too?',
+        answer:
+          'Talk with a Washington attorney before you sign. KindKey will not guess who can sign and will not stop a trustee. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. Renton does not have a separate foreclosure page on this site. You can still request a cash offer while you get that advice. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/renton/sell-inherited-probate-house',
+        label: 'Inherited houses in Renton',
+        description: 'The Renton situation page. Your attorney confirms who can sign.',
+      },
+      {
+        href: '/areas/renton',
+        label: 'Sell a house in Renton',
+        description: 'Downtown, the Highlands, Kennydale, and Fairwood addresses.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'The statewide page on authority to sign.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-king-county',
+        label: 'Estate houses in King County',
+        description: 'The clerk is in Seattle or at the Maleng Regional Justice Center in Kent.',
+      },
+      {
+        href: '/blog/how-to-sell-an-estate-house-in-washington',
+        label: 'Step-by-step for executors',
+        description: 'Letters, RCW 11.68, and the order of work.',
+      },
+      {
+        href: '/blog/selling-a-house-in-probate-washington',
+        label: 'Probate houses in Washington',
+        description: 'The statewide guide. Your attorney confirms authority.',
+      },
+      {
+        href: '/areas/renton/sell-house-as-is',
+        label: 'Sell a house as-is in Renton',
+        description: 'The contents and the repairs do not have to be finished first.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/renton/sell-my-house-fast',
+        label: 'Sell my house fast in Renton',
+        description: 'One walkthrough and a closing date you help choose.',
+      },
+      {
+        href: '/areas/renton/sell-vacant-house',
+        label: 'Vacant houses in Renton',
+        description: 'When the house has been empty since the funeral.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/renton/sell-house-with-tenants',
+        label: 'Houses with tenants in Renton',
+        description: 'Do not make an occupant leave so the house looks empty.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/renton/sell-hoarder-house',
+        label: 'Heavy-repair houses in Renton',
+        description: 'A long occupancy can stay in the house.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents and heavy repairs can stay.',
+      },
+      {
+        href: '/areas/renton/sell-house-with-code-violations',
+        label: 'Code violations in Renton',
+        description: 'A city letter is separate from who can sign.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/blog/estate-sale-vs-selling-the-house-as-is',
+        label: 'Estate sale or an as-is sale',
+        description: 'Belongings are a different project from the deed.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-when-heirs-disagree',
+        label: 'When heirs disagree',
+        description: 'A family vote is not the signature title requires.',
+      },
+      {
+        href: '/blog/estate-house-repairs-mortgage-taxes-liens',
+        label: 'Repairs, a mortgage, taxes, or liens',
+        description: 'Those amounts show on the settlement statement.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'Renton has no separate fire page. The claim stays with your insurer.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Renton has no separate foreclosure page.',
+      },
+      {
+        href: '/blog/foreclosure-in-king-county-washington',
+        label: 'Foreclosure in King County',
+        description: 'A trustee’s notice is a different deadline from the probate.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A King County tax bill is a different account from the estate.',
+      },
+      {
+        href: '/areas/kent',
+        label: 'Sell a house in Kent',
+        description: 'The next city south. A different house.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-auburn',
+        label: 'Inherited houses in Auburn',
+        description: 'Most of Auburn is King County. The south end can be Pierce.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-bonney-lake-wa',
+        label: 'Inherited houses in Bonney Lake',
+        description: 'Pierce County. The clerk is in Tacoma, not in Kent.',
+      },
+      {
+        href: '/areas/tukwila',
+        label: 'Sell a house in Tukwila',
+        description: 'West of Renton. Confirm the parcel before you assume the city.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say who can sign, or that an attorney is still confirming it.',
+      },
+    ],
+    ctaTitle: 'Ask for a Renton offer while the attorney confirms who can sign',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to empty the house first. Do not sign a deed before the authority exists. You can say no.',
+  }),
+  post('sell-fire-damaged-house-des-moines-wa', {
+    breadcrumbName: 'Fire damage in Des Moines',
+    title: 'Selling a Fire-Damaged House in Des Moines, WA',
+    description:
+      'How Des Moines, Washington owners sell a fire-damaged or smoke-damaged house as-is. South King Fire responds. The building permit is the city’s. KindKey buys as a principal. Not insurance advice.',
+    h1: 'Selling a Fire-Damaged House in Des Moines, WA',
+    publishedAt: '2026-11-23',
+    intro: [
+      'You can sell a fire-damaged house in Des Moines, Washington, without rebuilding the kitchen, replacing smoke-stained drywall, boarding the windows, pulling a reconstruction permit, or waiting for an insurance check. ' +
+        office +
+        ' KindKey is not South King Fire, the Des Moines building official, or an insurance adjuster. This article is not insurance advice and not legal advice.',
+      'This is Des Moines, Washington, on Puget Sound in King County, between SeaTac and Federal Way. It is not Des Moines, Iowa. The marina district, Redondo, Zenith, North Hill, Woodmont, and Pacific Ridge are the local areas. Saltwater State Park is on the water. North Hill in Des Moines is not North Hill in Edgewood. Those are different counties. Redondo is in Des Moines. Federal Way is the city to the south. A Des Moines mailing address is not the city limit. Bring the address.',
+    ],
+    callout:
+      'You do not have to rebuild, pull a permit, or wait for the insurance check before you ask. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'Who responded, and which counter the letter belongs to',
+        paragraphs: [
+          'Tell KindKey what burned before anyone schedules a visit. It may be a kitchen, a garage, smoke pulled through the ducts, a roof with a tarp, a boarded window, or water the hoses left in the floors. Some of these houses are still lived in. Some are not. A fire the family already put out, with no city letter, is still a house KindKey will look at. You do not need a notice, a contractor bid, or a certificate of occupancy before you ask. Photos of the room, the roof, and any posting are enough to start. If you do not believe the floor or the roof is safe to walk, say so. An exterior look can begin the conversation. Do not go inside a structure that is not safe just to satisfy a buyer. Furniture and belongings you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to.',
+          'South King Fire’s about page says the district serves the cities of Des Moines and Federal Way. It publishes the phone (253) 839-6234. Headquarters is Station 62, at 31617 1st Ave S, Federal Way, WA 98003. The same page lists a fire administration building at 720 S 333rd St, Federal Way. Inside Des Moines, that page lists Station 66 at 27010 15th Ave S, Des Moines, and Station 67 at 2238 S 223rd St, Des Moines. The station list also prints addresses in Auburn and in Federal Way. A station address is not a finding that your parcel is in that city. KindKey is not the fire department and does not interpret a run report. The city’s schedule-an-inspection page publishes (253) 946-7348 for fire department inspections. That is a permit-inspection line, not a substitute for 911, and it is not the district’s main number. Use the number printed on the paper you have.',
+          'DMMC 14.01.040(5)(a) says the Chief of South King Fire and Rescue shall be deemed the chief, the chief of the fire department, or the fire code official for enforcing and administering the fire code, under the direction of the building official. DMMC 14.01.040(5)(b) uses the name “South King County Fire and Rescue” for the fire marshal, also under the direction of the building official. The district’s own site uses “South King Fire.” KindKey will not tell you those three names are the same office, and KindKey will not call any of them for you. A fire-code question and a building-permit question can both follow a fire. They are still two papers. Read the header.',
+          'City Hall’s published address, on the city’s own footer, is 21630 11th Avenue S, Suite A, Des Moines, WA 98198, phone (206) 878-4595. The building division page publishes (206) 870-7576, building@desmoineswa.gov, and 21630 11th Ave. S, Suite D, Des Moines, WA 98198, with a fax of (206) 870-6544. The community development page publishes the same phone, the same email, and the same Suite D address. Confirm the hours before you go. KindKey will not pull a permit, meet a reviewer, or appear for an inspection. You do not need a reconstruction permit before KindKey looks. A house outside the city limits is not a City of Des Moines permit, even when the mail says Des Moines. Unincorporated King County is a county case. Federal Way, Burien, SeaTac, and Normandy Park are different cities. The same fire district covers Federal Way and Des Moines. The permit counter does not. Do not take a Des Moines letter to Federal Way City Hall, and do not take a Federal Way letter to Suite D.',
+        ],
+      },
+      {
+        heading: 'What Title 14 adopts, and what a section number on a notice is doing',
+        paragraphs: [
+          'DMMC 14.01.030 says Title 14 and the technical codes it adopts are meant to safeguard health and safety, including safety to life and property from fire, and safety to firefighters and emergency responders. DMMC 14.01.050 adopts listed codes by reference, as they are now or as they are later amended. The list includes chapter 51-50 WAC, the International Building Code, and chapter 51-54A WAC, the International Fire Code, with appendices the section names. The list in 14.01.050 does not, as its own numbered line, name the International Property Maintenance Code. DMMC 14.05.120 is the section that does. It says all references to the International Property Maintenance Code in that chapter refer to the current edition of the IPMC as adopted by the International Building Code. KindKey will not tell you which edition that sentence points to on the day you read this, and KindKey will not decide that a kitchen fire has opened a case under either code.',
+          'DMMC 14.05.120(2) removes listed IPMC sections in their entirety, “or the corresponding section of any updated or amended version of the IPMC.” The table labels section 111 as “Means of appeal.” It also removes sections it labels grading and drainage, rodent harborage, motor vehicles, defacement, and several interior and overcrowding sections. KindKey will not tell you that a section number printed on your notice is one of those deleted sections, or that it is a different section that survived. Editions renumber. A notice can cite a number the amendment table describes with different words. Read the words on the paper you were served. KindKey will not reconcile the notice with the table, and KindKey will not tell you the house meets an unsafe-structure test. If the notice has a hearing, a fine, or an order to vacate, talk with a Washington attorney before you rely on a sale to solve it. Do not skip a hearing because a buyer is looking at the house. Leave a posting where the city put it. KindKey will not take it down.',
+          'DMMC 14.05.110(1) says a permit becomes invalid unless the work is commenced within 180 days after issuance, or if the work is suspended or abandoned for 180 days after it is commenced. It says the building official may grant, in writing, one or more extensions of not more than 180 days each, if the request is in writing and justifiable cause is shown. KindKey will not ask for that extension and will not tell you a half-started rebuild is still alive. You do not have to keep a permit open before an offer. DMMC 14.05.110(3) says no building or structure shall be used or occupied, and no change in the existing occupancy classification shall be made, until the building official has issued a certificate of occupancy, with an exception for Group U occupancies. KindKey will not tell you that a fire automatically voids occupancy of a house people were already living in, and KindKey will not tell you the exception applies. If a notice says the house cannot be occupied, read it with a Washington attorney or with the building official. You can still ask KindKey for an offer. KindKey does not require a new certificate before it looks.',
+          'DMMC 14.01.120 says a violation of Title 14 is a civil infraction under chapter 1.24 DMMC and a civil violation that may be penalized or abated under chapter 1.28 DMMC. It also says a person convicted of a violation of Title 14 is guilty of a gross misdemeanor, and that the city may file a civil action in King County Superior Court. KindKey will not tell you which of those paths a letter is using, and KindKey will not calculate a penalty. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement, prepared by the closing agent, is where you see them. DMMC 14.01.140 says a person aggrieved by a city employee’s decision under Title 14 may appeal to the hearing examiner under the sections that sentence cites, and that references to a “board of appeals” in the adopted codes mean the hearing examiner. KindKey will not file that appeal and will not appear for you.',
+          'A yard letter is a different chapter from a burned structure. DMMC 7.44.060 says the owner, occupant, or other person in control of real property in the city shall remove or destroy vegetation, and debris, that are a fire hazard or a menace to public health, safety, or welfare. DMMC 7.44.080 says that if property is kept in violation of that chapter, the city manager or the city manager’s designee may serve a notice that describes the condition, gives a time to correct it, and says that if it is not corrected, a resolution will be presented to the city council on a date the notice specifies. KindKey will not count those days, and KindKey will not tell you a kitchen fire is this vegetation chapter. Read the header. The Des Moines code-violations page is the open city case. This article is the fire.',
+        ],
+      },
+      {
+        heading: 'Insurance, a tenant, a death, or a trustee’s date',
+        paragraphs: [
+          'Your insurer is your relationship. You can ask KindKey for an offer while a claim is open, paused, denied, or already settled. KindKey will not tell you whether to wait for the check, whether to cash it, how to assign the proceeds, or what the policy requires while the house sits empty or without power. KindKey does not give insurance advice. Talk with your insurer. If the paperwork is unclear, talk with a Washington attorney. A retail buyer using a mortgage often cannot close while the fire damage is still open. Cash, in this sale, means KindKey is not waiting on that buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a King County tax bill, a city cost, or a contractor’s bill for work you already started.',
+          'Washington’s seller disclosure law is chapter 64.06 RCW. The form asks about the property, including damage and materials. KindKey will not tell you how to mark it, whether smoke in the ducts is something you must disclose, or whether an exemption applies. Ask a Washington real estate attorney if you are unsure. The closing agent handles the form that applies to your file. Answer with what you actually know. Selling to KindKey is not a reason to leave a known fire off the form.',
+          'If someone still lives in the house, say so. Do not make an occupant leave so the house looks empty or so a contractor can start a tear-out. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does. The Des Moines tenants page is that file. You can still ask for an offer while an attorney reads a letter the tenant already sent about the fire, the heat, or a place to stay.',
+          'If the owner died, the person who can sign is a probate question, whether the fire came before the death or after it. KindKey will not file the probate and will not guess which relative can sign. A decedent who lived in Des Moines lived in King County. The superior court clerk is in Seattle, at 516 Third Avenue, Room E-609, and at the Norm Maleng Regional Justice Center in Kent, at 401 Fourth Avenue N, Room 2C. Do not open that estate at the Pierce County courthouse in Tacoma because Federal Way is on the way south. Ask a Washington attorney before anyone signs a deed. The King County estate guide is the county file. The Des Moines inherited-house page is the signature question for this city. Accept an offer only when your attorney says the signer is clear.',
+          'If a trustee’s notice arrived with the fire, you have a clock the insurance claim does not pause. Asking for an offer does not postpone the trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. Des Moines does not have a separate foreclosure page on this site. The King County foreclosure guide and the statewide foreclosure guide are that notice. A Des Moines deed records with the King County Recorder at King Street Center, 201 S. Jackson St., Suite 204, Seattle, WA 98104. That office publishes customer service at (206) 477-6620. In-person hours are Monday through Friday, 8:30 a.m. to 4:30 p.m., and recording ends at 3:30 p.m. The recorder does not close an insurance claim and does not decide a fire-hazard question. Do not record a King County deed at the Pierce County Auditor in Tacoma. The closing agent confirms the parcel.',
+        ],
+      },
+      {
+        heading: 'Rebuild and list, or sell the fire damage as it sits',
+        paragraphs: [
+          'Rebuilding can fit if you want to keep the house and you can fund the work. A listing can fit after the house is safe to show and someone local can host the access. A financed buyer may still stall on the same fire, the same roof, or an open permit. Commission is negotiated in the listing agreement with that broker and is not set by KindKey. Hire a licensed broker in King County if you want the listing. KindKey will not run it, will not choose your contractor, and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. You do not have to finish an inspector’s list, or relist a sale that already died, before KindKey looks.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive from Des Moines does not add a repair requirement. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need a relative with a key, or who are waiting on an attorney for authority to sign, can ask for longer. ' +
+            closing +
+            ' The offer reflects the house as it sits, including the fire, the smoke, and the water you know about, so it can be less than a retail price for a house where that work has already been done. You see the payoffs on the settlement statement before you close. You can say no. The Des Moines as-is page is that direct sale for the house in its current condition.',
+          'A marina or Redondo house and an inland North Hill, Zenith, Woodmont, or Pacific Ridge house are different properties. Tell us which one burned, and whether the damage is the house, a garage, or both. A King County property-tax bill is a different account from a city cost. KindKey will not calculate the treasurer’s number. The Washington tax-delinquent guide is that sale. If nobody lives in the house, the Des Moines vacant-house page is that fact. A fire and a vacancy can be the same building. They are still your letter to read.',
+          'A fire in Federal Way can be the same fire district and a different city’s permit. The Federal Way fire-damage page is that city. A fire in Auburn is the Auburn fire guide, and most of Auburn records in King County. The King and Pierce County fire guide is the wider page when the house is not only a Des Moines letter. A fire in Burien or SeaTac is a different city. A fire in Edgewood, Tacoma, or Puyallup is a Pierce County file. Do not use an Iowa municipal code on a Des Moines, Washington house. The names match. The codes do not. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of what burned through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell my Des Moines house before the insurance claim is paid?',
+        answer:
+          'Yes. You can ask KindKey for a cash offer while a claim is open, paused, denied, or already settled. KindKey does not advise you on the claim. Talk with your insurer, and with a Washington attorney if the paperwork is unclear. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Do I need a City of Des Moines rebuild permit before KindKey will look?',
+        answer:
+          'No. You do not have to pull a reconstruction permit, finish repairs, or clear a certificate of occupancy first. If the parcel is inside the city and you choose to rebuild, the building division publishes (206) 870-7576 and building@desmoineswa.gov. KindKey will not pull the permit. A house outside the city limits is not this city’s counter.',
+      },
+      {
+        question: 'South King Fire also covers Federal Way. Is the permit a Federal Way permit?',
+        answer:
+          'Not when the house is inside the City of Des Moines. The district’s about page says it serves both cities. The permit counter follows the parcel. Federal Way City Hall is a different city. Redondo is in Des Moines. Read the header on the letter. You can still request a cash offer either way. Call (206) 519-5463 or use the cash-offer form.',
+      },
+      {
+        question: 'A notice is posted, or a foreclosure letter arrived. Can I still ask?',
+        answer:
+          'Yes. Leave a city posting where it is. DMMC 14.05.120 removes the IPMC section it labels “111 Means of appeal,” or the corresponding section of a later edition. KindKey will not tell you that the number on your notice is that section, and KindKey will not calculate a penalty under DMMC 14.01.120. If a foreclosure notice is also in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. Des Moines does not have a separate foreclosure page on this site. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/des-moines',
+        label: 'Sell a house in Des Moines',
+        description: 'Marina, Redondo, North Hill, and Zenith. Washington, not Iowa.',
+      },
+      {
+        href: '/areas/des-moines/sell-house-as-is',
+        label: 'Sell a house as-is in Des Moines',
+        description: 'The fire damage can stay as it is.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/des-moines/sell-my-house-fast',
+        label: 'Sell my house fast in Des Moines',
+        description: 'A direct sale without a rebuild on the calendar.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The overview. The insurance claim stays with your insurer.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-king-pierce-county',
+        label: 'Fire-damaged houses in King and Pierce County',
+        description: 'When the house is not only a Des Moines letter.',
+      },
+      {
+        href: '/areas/des-moines/sell-vacant-house',
+        label: 'Vacant houses in Des Moines',
+        description: 'Many fire-damaged houses are empty.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/des-moines/sell-house-with-code-violations',
+        label: 'Code violations in Des Moines',
+        description: 'An open city case after the fire, or a yard letter under another chapter.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/areas/des-moines/sell-inherited-probate-house',
+        label: 'Inherited houses in Des Moines',
+        description: 'Who can sign is separate from what burned.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, confirmed with an attorney.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-king-county',
+        label: 'Estate houses in King County',
+        description: 'The clerk is in Seattle or Kent, not in Tacoma.',
+      },
+      {
+        href: '/areas/des-moines/sell-house-with-tenants',
+        label: 'Houses with tenants in Des Moines',
+        description: 'Do not make an occupant leave so the house looks empty.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/des-moines/sell-hoarder-house',
+        label: 'Heavy-repair houses in Des Moines',
+        description: 'When the fire is one part of a larger repair.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents and heavy repairs can stay.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Des Moines has no separate foreclosure page.',
+      },
+      {
+        href: '/blog/foreclosure-in-king-county-washington',
+        label: 'Foreclosure in King County',
+        description: 'A trustee’s notice is a different deadline from the insurance claim.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A King County tax bill is a different account from a city cost.',
+      },
+      {
+        href: '/areas/federal-way/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Federal Way',
+        description: 'The same fire district. A different city’s permit.',
+      },
+      {
+        href: '/areas/federal-way',
+        label: 'Sell a house in Federal Way',
+        description: 'South of Des Moines. Redondo is not Federal Way.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-auburn-wa',
+        label: 'Fire-damaged houses in Auburn',
+        description: 'KindKey’s home city. Mostly King County.',
+      },
+      {
+        href: '/areas/burien',
+        label: 'Sell a house in Burien',
+        description: 'North along the Sound. A different city.',
+      },
+      {
+        href: '/areas/seatac',
+        label: 'Sell a house in SeaTac',
+        description: 'The next city north. A different permit counter.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what burned. You do not have to rebuild first.',
+      },
+    ],
+    ctaTitle: 'Ask for a Des Moines offer with the fire damage left as it is',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to rebuild or wait for the insurance check before you ask. You can say no.',
+  }),
 ];
