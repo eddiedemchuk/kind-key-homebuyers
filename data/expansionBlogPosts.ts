@@ -8741,4 +8741,455 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to rebuild or wait for the insurance check before you ask. You can say no.',
   }),
+  post('selling-a-vacant-house-seatac-wa', {
+    breadcrumbName: 'Vacant houses in SeaTac',
+    title: 'Selling a Vacant House in SeaTac, WA',
+    description:
+      'How SeaTac owners sell a vacant house as-is without boarding it to the city’s spec or moving back in. KindKey buys as a principal. Not legal advice.',
+    h1: 'Selling a Vacant House in SeaTac, WA',
+    publishedAt: '2026-11-24',
+    intro: [
+      'You can sell a vacant house in SeaTac without moving back in, boarding every opening to the city’s panel spec, turning the utilities back on, or clearing the yard first. ' +
+        office +
+        ' KindKey is not code compliance, Puget Sound Regional Fire Authority, the Port of Seattle, or a real estate agent or broker. This article is not legal advice.',
+      'SeaTac is an incorporated city in King County. The city’s name is one word. The airport is the neighbor, not a neighborhood you own. Angle Lake, McMicken Heights, Riverton, and Bow Lake are residential areas. Tukwila, Burien, and Des Moines are separate cities on the edges. Riverton is also a name used in Tukwila. A SeaTac mailing address, and a 98188 or 98198 ZIP, are not the city limit. Bring the address on the tax bill.',
+    ],
+    callout:
+      'You do not have to reoccupy the house, board it, or restore the utilities before you ask. KindKey buys the vacant house as it sits. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'The city, the airport, and the fire authority are three different desks',
+        paragraphs: [
+          'City Hall’s published address, on the city’s municipal-code page, is 4800 South 188th Street, SeaTac, WA 98188-8605. That page publishes the City Hall line as (206) 973-4800. The city’s code-compliance page says the desk covers public-health and safety issues including rubbish, garbage, attractive nuisances, overgrown vegetation, vacant buildings, abandoned houses, and inoperable vehicles on private property. It publishes codecompliance@seatacwa.gov and (206) 973-4567. A staff directory on the city’s contact page has also listed code compliance at (206) 973-4750, the same number that directory lists for building services. Use the number and the email printed on the paper you have. KindKey is not that desk and will not file a complaint or answer one.',
+          'The same code-compliance page lists common complaints as overgrown vegetation, property-maintenance trash and junk, vehicles parked on an unapproved surface, storage of inoperable vehicles, and graffiti. It says a request needs your name, phone, and address, the street address of the property, and specifics about the condition, and that code compliance will not investigate without that. KindKey will not fill out the form. If nobody is at the house to meet an inspector, say that when you call KindKey. Photos of the front, the yard, any boarding, and any posting are enough to start. If you do not believe the floor or the roof is safe, say so. An exterior look can begin the conversation. Do not go inside a structure that is not safe just to satisfy a buyer.',
+          'SMC 13.100.020 says the fire marshal is the person charged with administration and enforcement of the fire code, and that the authority of that position is held by the Division Chief of the Puget Sound Regional Fire Community Risk Reduction Department. SMC 13.100.050 says the building official enforces the technical codes except the fire code, and the fire chief or a designee enforces and interprets the fire code. Puget Sound Regional Fire Authority’s station list publishes Station 45 at 3011 S 200 St, SeaTac, WA 98198, and Station 46 at 3521 S 170 St, SeaTac, WA 98188. The authority’s contact block publishes administration at 20811 84th Avenue S, Kent, WA 98032, (253) 856-4300, and a fire-prevention and new-construction inspection line at (253) 856-4400. A station address is not City Hall. A fire-code inspection is not a property-maintenance letter. KindKey is not the fire authority and does not interpret a run report or an inspection.',
+          'SMC 13.100.010(C) says that under a 2018 interlocal agreement with the Port of Seattle, authorized by Resolution No. 17-021, the city recognizes concurrent authority of the Port to administer the technical codes on Port-owned property inside the city for airport uses, as that term is defined in the February 17, 2018 agreement, and defers to the Port’s exercise of that jurisdiction. KindKey will not decide whether a parcel is Port property or an airport use. A house on a residential street is not the terminal. The City of SeaTac and the Port of Seattle are not the same entity. Read the header. If the letter is from King County, Tukwila, Burien, or Des Moines, this SeaTac chapter is not the file. The closing agent confirms the parcel. A SeaTac deed records with the King County Recorder at King Street Center, 201 S. Jackson St., Suite 204, Seattle, WA 98104. That office publishes customer service at (206) 477-6620. Its page lists in-person hours of Monday through Friday, 8:30 a.m. to 4:30 p.m., and says recording ends at 3:30 p.m. Confirm the hours. Do not record a King County deed at the Pierce County Auditor in Tacoma.',
+        ],
+      },
+      {
+        heading: 'What the vacant-structure replacement actually says',
+        paragraphs: [
+          'SMC 13.210.010 adopts the current edition of the International Property Maintenance Code, as now or later amended, as the city’s property-maintenance code, with the local changes that section lists. Subsection (G) says IPMC subsection 301.3, vacant structures and land, is repealed and replaced. The replacement, 301.3, says all vacant structures and premises must comply with the code, and that vacant structures shall be maintained in a clean, safe, secure, and sanitary condition so as not to cause a blighting problem or otherwise adversely affect public health, safety, or quality of life. KindKey will not decide that your house meets that sentence. An empty house is still a house KindKey will look at.',
+          'The replacement’s security sentences say vacant structures must appear occupied or be secured as specified, must be secured against outside entry at all times, and that security is by the normal building amenities, with doors and windows locked and exterior walls and roofs intact without holes. Architectural panels may be used on openings if they are cut to fit and match the building, and the sentence names exterior-grade finished plywood or medium-density overlaid plywood. Temporary construction fencing shall not be used to secure a structure from entry for a period exceeding 30 days. Weather protection points at section 304 for exterior roofing and siding. KindKey will not tell you a sheet of plywood meets the panel sentence, will not count the 30 days, and will not require you to board the house before a visit. Leave a city posting where it is. KindKey will not take it down.',
+          'The fire-safety sentences in that replacement say fire suppression and alarm systems shall be maintained and inspected as required by the fire department, that a vacant structure shall not be used to store flammable liquids or other materials that constitute a safety or fire hazard, and that debris, combustible materials, litter, and garbage shall be removed from the structure, accessory buildings, and adjoining yard. They also say periodic fire-department inspections may be required at intervals set by the fire chief or a designee. Plumbing, electrical, and heating sentences say those systems shall be maintained under the applicable codes or removed and the service terminated in the manner those codes prescribe, and that water systems shall be protected from freezing. A floor-hole sentence says a hazardous hole shall be covered with three-quarter-inch plywood, or a material of equivalent strength, overlapping the hole by at least six inches. KindKey will not inspect an alarm, winterize a pipe, or cover a hole as your contractor. Tell us if the water is off, the power is off, or the floor is open. You do not have to turn anything back on before you ask.',
+          'The same replacement says the code official may, by written notice to the owner and to the water, electricity, or gas utility, request that service to a vacant structure be terminated. A later sentence in the published replacement, 301.3.10, says that when the code official has reason to believe a structure is vacant, the official may inspect, and if the official determines a violation of the section, the official shall notify the owner or other person responsible in writing of the violations, the corrections, and a time frame to comply. 301.3.11 says violations of the section are enforced under the procedures of chapter 10.05 SMC and are subject to the monetary penalties in that chapter. An abatement sentence says a structure, or an accessory structure, that remains vacant and open to entry after the required compliance date is declared a public nuisance, and that the code official may summarily abate by securing it, with the costs collected from the owner in the manner provided by law. KindKey will not secure the house for the city and will not tell you the compliance date has passed. Chapter 1.15 SMC, the older code-enforcement chapter, is repealed by Ordinance 26-1003. Do not answer a current SeaTac notice by following a printout of chapter 1.15. Read the chapter number on the paper.',
+        ],
+      },
+      {
+        heading: 'A warning, a notice and order, and a voluntary agreement are different papers',
+        paragraphs: [
+          'Title 10 SMC is the code-compliance title. SMC 10.05.010 says its purpose is to secure compliance, to provide an appeal and a hearing, and to establish civil penalties and their collection. It also says the title places the obligation for compliance on the person responsible and does not impose a duty on the city that would subject city officers to damages. SMC 10.05.030 says all code violations are detrimental to public health, safety, welfare, and the environment and are declared public nuisances. KindKey will not decide that an empty house is that nuisance. SMC 10.05.020 defines the director as the Community and Economic Development Department director or a designee, and the hearing examiner as the office in chapter 1.20 SMC.',
+          'SMC 10.05.070 describes a sequence the director may use. A warning may be verbal or written and sets a time to correct or to enter a voluntary correction agreement. If a warning is issued, it shall be logged, a courtesy notice shall be issued within two weeks, and the site shall be reinspected within 30 days or as the director determines. No warning is required in an emergency that poses an imminent threat. A courtesy notice describes the violation and allows a chance to correct it. A notice and order shall be issued if the violation is not corrected, and it may be issued without a warning or a courtesy notice. It sets a correction date. The section says that determination is final unless timely appealed as the title provides. KindKey will not count those weeks or those 30 days, and KindKey will not tell you a missing warning makes the later paper void. The paper you were served controls. If it has a hearing or a fine, talk with a Washington attorney before you rely on a sale to solve it. Do not skip a hearing because a buyer is looking at the house.',
+          'The voluntary-correction paragraph says a person may enter that agreement after a warning, a courtesy notice, a notice and order, or a stop-work order, before an appeal is decided. The required contents include an acknowledgment that entering the agreement admits the described conditions were a violation and waives the right to appeal them, and that civil penalties continue to accrue during the agreement unless the director later suspends or waives them after full compliance. KindKey will not tell you to sign that agreement or to refuse it. That conversation belongs with your attorney. Asking for a cash offer does not extend the date written in the agreement and does not stop a penalty from accruing.',
+          'SMC 10.05.100 prints two civil-penalty columns. The commercial column prints $100 per violation on the first day, $200 on the second day, $300 on the third day, and $500 for each additional day beyond four days, with a stated maximum of $1,000,000. The non-commercial column prints $100 per day per violation on the first day, $250 per day per violation after 30 days, and $500 per day per violation after 60 days, with a stated maximum of $50,000. The section says a repeat within 36 months is double those amounts the first and second time, and five times those amounts the third or later time in that period. SMC 10.05.020 defines a commercial violation as one that results from or is related to business activity or operations, and a non-commercial violation as one that is not. KindKey will not tell you which column a rental house, a vacant house, or your notice is using, and KindKey will not calculate the invoice. A code can be amended. Read the schedule printed on the notice.',
+          'SMC 10.05.090 says a notice and order may be recorded with the King County Recorder against the property, and that when the violations are corrected or abated a certificate of compliance shall also be recorded, stating whether unpaid penalties remain a lien. SMC 10.05.150 says an invoiced penalty is due within 14 calendar days of the invoice, or within 14 calendar days after the hearing examiner’s final decision if an appeal was filed, and that the director may record a lien when penalties or costs remain unpaid. It also says that when penalties or abatement costs assessed against a property remain unpaid for 90 days, the city may levy a special assessment after notice to the owner and identifiable mortgage holders by regular mail as provided in RCW 35A.21.405. It says that assessment is a lien from the date it is recorded with the county auditor, that up to $2,000 of the lien is of equal rank with state, county, and municipal taxes, and that collection may be through a contract with the county treasurer under RCW 84.56.035. SMC 10.05.160 says no lien created under the title binds the property for more than 10 years after recording unless an action to enforce it is started in that period. KindKey does not interpret those statutes, does not promise that a SeaTac penalty disappears when you sign, and will not calculate the treasurer’s number. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement is where you see them. Until the deed records, deadlines on the notice are still yours.',
+        ],
+      },
+      {
+        heading: 'Leave it vacant and sell it, or fix it and list it',
+        paragraphs: [
+          'Reoccupying the house, or paying to board it and restart the utilities, can fit if you want to keep it and the work is actually small. A listing can fit after the house is one a broker will show. A financed buyer may still stall on an open notice, a recorded order, or a house with no power. Commission is negotiated in the listing agreement with that broker and is not set by KindKey. Hire a licensed broker in King County if you want the listing. KindKey will not run it and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive from SeaTac does not add a repair. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need a relative with a key, or time to take belongings, can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a King County tax bill, a utility balance, or a city assessment. The offer reflects the house as it sits, including the vacancy and the open case, so it can be less than a retail price for a house that has been secured and repaired. You can say no.',
+          'If someone still has a right to be there, say so. Do not change the locks so the house looks empty. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does. The SeaTac tenants page is that file. A vacant-structure letter and a tenant are different facts. You can still ask for an offer while an attorney reads a letter the occupant already sent. If the owner died, who can sign is a probate question. A person who lived in SeaTac lived in King County. The superior court clerk is at the King County Courthouse, 516 Third Avenue, Room E-609, Seattle, and at the Norm Maleng Regional Justice Center, 401 Fourth Avenue N, Room 2C, Kent. KindKey will not file the probate and will not guess which relative can sign. Do not sign a deed before that authority exists. The SeaTac inherited-house page is that question. The King County estate guide is the county writeup.',
+          'If a trustee’s notice arrived while the house sat empty, you have a clock the vacancy does not pause. Asking for an offer does not postpone the trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. SeaTac does not have a separate foreclosure page on this site. The King County foreclosure guide and the statewide foreclosure guide are that notice. A King County property-tax bill is a different account from a city penalty. The Washington tax-delinquent guide is the treasurer’s sale. Washington’s seller disclosure law is chapter 64.06 RCW. KindKey will not tell you how to mark the form or whether an exemption applies. Answer with what you actually know. SeaTac does not have a separate fire-damage page on this site. If a fire is why the house is empty, say what burned. The insurance claim stays with your insurer. The statewide fire-damage page is that condition. An Angle Lake house, a McMicken Heights rambler, a Bow Lake house, and a house people call Riverton are different properties. Tukwila’s Riverton is a different city. Burien is west. Des Moines is south. Do not use this page for those cities. Reach out, and KindKey will help you through the whole process from start to finish, from the empty house through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question:
+          'Do I have to board a vacant SeaTac house or turn the utilities back on before KindKey will look?',
+        answer:
+          'No. KindKey buys vacant SeaTac houses as they sit. You do not have to reoccupy the house, install the city’s panel spec, or restore water, power, or heat first. If the house is not safe to enter, say so. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Who writes a vacant-building letter in SeaTac, the city or the airport?',
+        answer:
+          'A City of SeaTac property-maintenance case is the city’s. City Hall is at 4800 South 188th Street, and the published main line is (206) 973-4800. Code-compliance materials have published (206) 973-4567 and codecompliance@seatacwa.gov. A staff directory has also listed (206) 973-4750. Use the number on your letter. The Port of Seattle is not City Hall. Puget Sound Fire is not that desk either. KindKey will not call them for you.',
+      },
+      {
+        question: 'Chapter 1.15 used to be the enforcement chapter. Do I follow that printout?',
+        answer:
+          'No. Chapter 1.15 SMC is repealed by Ordinance 26-1003. Current civil code compliance is Title 10, including chapter 10.05. SMC 13.210.010(G) points vacant-structure violations at chapter 10.05. KindKey will not tell you a penalty number or count the days. If the notice has a hearing or a fine, talk with a Washington attorney. You can still request a cash offer.',
+      },
+      {
+        question:
+          'A tenant, a probate, or a foreclosure notice is also in the file. Can I still ask?',
+        answer:
+          'Yes. Do not change the locks so the house looks empty. A sale does not end a tenancy by itself. Do not sign a deed before a Washington attorney confirms who can sign. If a foreclosure notice is in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. SeaTac does not have a separate foreclosure page on this site. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/seatac/sell-vacant-house',
+        label: 'Vacant houses in SeaTac',
+        description: 'The SeaTac situation page for an empty house.',
+      },
+      {
+        href: '/areas/seatac',
+        label: 'Sell a house in SeaTac',
+        description: 'Angle Lake, McMicken Heights, Riverton, and Bow Lake.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/seatac/sell-house-as-is',
+        label: 'Sell a house as-is in SeaTac',
+        description: 'The boarding and the utilities do not have to be finished first.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/seatac/sell-my-house-fast',
+        label: 'Sell my house fast in SeaTac',
+        description: 'One walkthrough and a closing date you help choose.',
+      },
+      {
+        href: '/areas/seatac/sell-house-with-code-violations',
+        label: 'Code violations in SeaTac',
+        description: 'When the vacancy and a city notice are the same file.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-washington',
+        label: 'Code violations in Washington',
+        description: 'When the notice is not only a SeaTac letter.',
+      },
+      {
+        href: '/areas/seatac/sell-hoarder-house',
+        label: 'Heavy-repair houses in SeaTac',
+        description: 'When the empty house is also a heavy repair.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents and heavy repairs can stay.',
+      },
+      {
+        href: '/areas/seatac/sell-house-with-tenants',
+        label: 'Houses with tenants in SeaTac',
+        description: 'Do not change the locks so the house looks empty.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/seatac/sell-inherited-probate-house',
+        label: 'Inherited houses in SeaTac',
+        description: 'Who can sign is separate from the house being empty.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, confirmed with an attorney.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-king-county',
+        label: 'Estate houses in King County',
+        description: 'The clerk is in Seattle or at the Maleng Regional Justice Center in Kent.',
+      },
+      {
+        href: '/blog/selling-a-vacant-or-inherited-house',
+        label: 'Vacant or inherited houses',
+        description: 'The statewide writeup when both facts are in the file.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. SeaTac has no separate foreclosure page.',
+      },
+      {
+        href: '/blog/foreclosure-in-king-county-washington',
+        label: 'Foreclosure in King County',
+        description: 'A trustee’s notice is a different deadline from a vacant-house letter.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A King County tax bill is a different account from a city penalty.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'SeaTac has no separate fire page. The claim stays with your insurer.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-king-pierce-county',
+        label: 'Fire-damaged houses in King and Pierce County',
+        description: 'When a fire is why the house is empty.',
+      },
+      {
+        href: '/areas/tukwila',
+        label: 'Sell a house in Tukwila',
+        description: 'Riverton is a name on both sides of the line. Confirm the parcel.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-tukwila-wa',
+        label: 'Code violations in Tukwila',
+        description: 'A different city’s notice. Do not use a SeaTac deadline there.',
+      },
+      {
+        href: '/areas/burien',
+        label: 'Sell a house in Burien',
+        description: 'The city on the Sound to the west.',
+      },
+      {
+        href: '/areas/des-moines',
+        label: 'Sell a house in Des Moines',
+        description: 'South of SeaTac. A different permit counter.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say the house is vacant. You do not have to board it first.',
+      },
+    ],
+    ctaTitle: 'Ask for a SeaTac offer while the house stays vacant',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to board the house or move back in before you ask. You can say no.',
+  }),
+  post('sell-house-with-code-violations-tukwila-wa', {
+    breadcrumbName: 'Code violations in Tukwila',
+    title: 'Selling a House with Code Violations in Tukwila, WA',
+    description:
+      'How Tukwila owners sell a house with an open code case without finishing the city’s list first. KindKey buys as a principal. Not legal advice.',
+    h1: 'Selling a House with Code Violations in Tukwila, WA',
+    publishedAt: '2026-11-24',
+    intro: [
+      'You can ask KindKey to buy a Tukwila house with an open code case without finishing the city’s list, pulling the missing permit, or clearing the yard first. ' +
+        office +
+        ' KindKey is not code enforcement, the hearing examiner, the improvement officer, or a real estate agent or broker. This article is not legal advice.',
+      'Tukwila is an incorporated city in King County, where I-5, I-405, the Duwamish River, and the Green River meet. Foster, Allentown, Riverton, Thorndyke, and Cascade View are residential pockets. Southcenter is the commercial district, not a neighborhood of houses. Renton, SeaTac, and Seattle’s south end are minutes away and are not Tukwila. Riverton is also a name used in SeaTac. A mailing address that says Tukwila is not always inside the city. Bring the letter and the address.',
+    ],
+    callout:
+      'You do not have to fix the violations, pull the permit, or clear the yard before you ask. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'Read the header, then match the desk to the letter',
+        paragraphs: [
+          'City Hall is at 6200 Southcenter Blvd, Tukwila, WA 98188. The city’s contact page publishes (206) 433-1800, tukwila@tukwilawa.gov, and hours of 8:30 to 5:00. The city clerk’s page, at that same 6200 address, publishes TukwilaCityClerk@tukwilawa.gov and (206) 433-1800. It lists phone, email, and virtual-appointment hours of Monday through Friday, 8:30 a.m. to 4:00 p.m., and in-person hours of Monday through Thursday, 8:30 a.m. to 4:00 p.m. The clerk keeps the municipal code. The clerk does not decide whether your yard is a violation. Confirm the hours before you go.',
+          'Code enforcement is a different counter from the clerk’s window. The city’s code-enforcement page publishes CodeEnforcement@TukwilaWA.gov and (206) 431-3671, with hours of Monday through Thursday, 8:30 a.m. to 4:00 p.m., at 6300 Southcenter Blvd., #100, Tukwila, WA 98188. That is not the 6200 City Hall address. The page says private-property parking on grass or dirt, construction without permits, tree removal without a permit, graffiti, trash and debris, illegal signs, junk vehicles, roosters, and weed overgrowth go to that desk. It says graffiti, trash, and weeds in the public right of way go to Tukwila Public Works at (206) 433-0179. The contact page lists public works at 6300 Southcenter Blvd. KindKey is neither desk. KindKey will not file the complaint and will not answer it. A report the city receives is a public record under the Public Records Act, RCW 42.56. The city’s own page says that. KindKey does not interpret that statute.',
+          'The page also says that when a complaint is received, an officer investigates, and if a violation is found a case is opened. It says compliance is typically reached through communication. It does not print a number of days for a first letter. Do not borrow a deadline from a SeaTac notice, a Renton notice, or a King County notice. Read the paper you were served. If the header says King County, SeaTac, Renton, or Burien, this Tukwila chapter is not the file. Some nearby mailing addresses are unincorporated King County. The closing agent confirms the parcel. A Tukwila deed records with the King County Recorder at King Street Center, 201 S. Jackson St., Suite 204, Seattle, WA 98104. That office publishes customer service at (206) 477-6620. In-person hours are Monday through Friday, 8:30 a.m. to 4:30 p.m., and recording ends at 3:30 p.m. Confirm the hours. Do not record a King County deed at the Pierce County Auditor in Tacoma. Puget Sound Regional Fire Authority’s station list publishes Station 51 at 17951 Southcenter Pkwy, Tukwila, WA 98188. A fire station is not the code-enforcement counter. KindKey is not the fire authority.',
+        ],
+      },
+      {
+        heading: 'Nuisance, junk vehicles, weeds, and an unfit-building complaint',
+        paragraphs: [
+          'TMC 8.28.010 says violations of development, land-use, licensing, and public-health ordinances are declared nuisances, and that violations of that chapter are enforced under chapter 8.45, including a notice of violation under TMC 8.45.070. It also declares a public nuisance where the building official determines a building is vacant and so old, dilapidated, or out of repair as to be dangerous, unsafe, unsanitary, or otherwise unfit, and such that it is unreasonable to repair. KindKey will not make that determination. TMC 8.28.020 adopts the 2015 edition of the International Property Maintenance Code, with the local changes in that section, as the property-maintenance code. It says a copy is on file at the Department of Community Development. KindKey will not tell you a later edition replaced the one the section names. Read the section you were cited.',
+          'The local changes include a replacement of the first sentence of IPMC 302.4. The sentence the city adopted says all premises and exterior property shall be maintained free from weeds or plant growth in excess of 12 inches. An added IPMC 305.7 says interior and exterior surfaces and coverings shall have no signs of visible mold growth or chronic or persistent excessive dampness or moisture, and it names cleanup references, including New York City’s fungi guidelines, EPA mold guidelines, or another approved method. KindKey will not measure the grass, will not decide that a stain meets 305.7, and will not choose a cleanup method. You do not have to finish that work before KindKey looks. The same section repeals IPMC 111 and says a person affected by a code-official decision, a notice of violation and order, a civil infraction, or another order may appeal to the hearing examiner or to municipal court as chapter 8.45 sets out. It also says the city treasurer may, under RCW 35.80.030(1)(h), certify abatement costs and associated penalties to the King County Treasurer for the tax rolls, with interest at the rates and in the manner provided in RCW 84.56.020. KindKey does not interpret those statutes and will not calculate the treasurer’s number.',
+          'TMC 8.24 is the junk-vehicle chapter. TMC 8.24.010 says a junk vehicle meets three or more of these: it is three years old or older; it is extensively damaged, and the examples include a broken window or windshield or a missing wheel, tire, motor, or transmission; it is apparently inoperable; it is without valid current plates or is unregistered; or its approximate fair market value equals only the approximate scrap value. The definition also includes a partially disassembled vehicle or individual parts no longer attached. TMC 8.24.020 says it is unlawful to keep a junk vehicle on privately owned property in the city. The exceptions it prints are a vehicle completely enclosed in a building in a lawful manner where it is not visible from the street or other public or private property, and a vehicle stored in connection with a licensed dismantler or licensed vehicle dealer and fenced pursuant to RCW 46.80.130. KindKey will not count the tests, will not price the scrap, and will not tell you a car in a driveway meets an exception. The code-enforcement page, which is not the ordinance, lists junk vehicles among the private-property issues that desk handles. A vehicle in the street is a different call. Read the header.',
+          'TMC 8.48 is an additional path for unfit dwellings, buildings, and structures. TMC 8.48.010 adopts chapter 35.80 RCW as it exists or is later amended. TMC 8.48.020 designates the code enforcement officer, and that officer’s designee, as the city’s improvement officer, and the hearing examiner as the appeals commission. TMC 8.48.030 says that if, after a preliminary investigation, the improvement officer finds a dwelling, building, structure, or premises unfit for human habitation or other use, the officer may issue a complaint conforming to RCW 35.80.030, and that the officer is guided by the Tukwila code and in particular the most recent edition of the International Property Maintenance Code. KindKey will not decide that your house is unfit and will not reconcile “2015 edition” in chapter 8.28 with “most recent edition” in this sentence. TMC 8.48.040 says the complaint is served, posted, and filed with the King County Auditor, and that posted documents remain until the complaint is resolved. TMC 8.48.050 says the improvement officer holds a hearing not less than 10 days and not more than 30 days after service. TMC 8.48.060 says a determination, findings, and order issue within 10 days of that hearing and, if no appeal is filed, a copy is filed with the King County Auditor. KindKey will not count those days, will not appear, and will not prepare an answer. If that complaint is in the file, talk with a Washington attorney. Do not skip the hearing because a buyer is looking at the house. Leave the posting where the city put it.',
+        ],
+      },
+      {
+        heading: 'The notice of violation, the 10-day appeal, and what a fine does not erase',
+        paragraphs: [
+          'TMC 8.45.050 says the code enforcement officer may send a written request for compliance, by mail, email, or posting, and may send more than one, and that nothing in the section prohibits issuing a civil infraction or a notice of violation and order without that request when the circumstances warrant faster correction or the person is a repeat offender. KindKey will not tell you a missing courtesy letter voids the later paper. TMC 8.45.060 says a civil infraction may be issued under chapter 7.80 RCW, which the section incorporates. TMC 8.45.120 prints the infraction amounts as $100 for a first violation, $175 for a second violation of the same nature or a continuing violation, and $250 for a third or subsequent violation of the same nature or a continuing violation. Those are not the same numbers as the notice-of-violation daily penalty in the same section. Read which paper you were served.',
+          'TMC 8.45.070 says that for other civil violations, the officer may serve a notice of violation and order. The notice cites the provision, describes the violation, states the corrective action, states a compliance date, and explains the appeal. Service may be personal, by posting, by first-class mail, by overnight service, or by publication under RCW 4.28.100 and 4.28.110. Mail service is deemed complete two days after the mailing. The section says failure to observe a posted or published document does not invalidate service. A copy of the notice may be filed with the King County Recorder. Unless an appeal is filed, the notice becomes the final administrative order. KindKey will not count the two mailing days and will not record or release anything at the recorder.',
+          'TMC 8.45.110 says the person named may appeal by requesting the appeal in writing within 10 calendar days after being served, including the appeal fee in the city’s fee schedule adopted by council resolution. If the last day is a Saturday, Sunday, or a federal or city holiday, the period runs until 4:30 p.m. the next business day. The hearing examiner may sustain, withdraw, or modify the notice, including an extension of the compliance date, and issues a written decision within 14 days of the completion of the review. An appeal of that decision must be filed with superior court within 21 calendar days from the date the decision was mailed, or it is barred. The section says the appellant bears the cost of a transcription the court orders certified. KindKey will not count those days, will not pay the fee, and will not file the appeal. The fee amount is whatever the current resolution prints. KindKey will not quote a dollar figure the code does not print.',
+          'TMC 8.45.120 says a notice of violation and order carries a cumulative monetary penalty of $250 per day for each violation from the compliance date until compliance. TMC 8.45.120(C) says payment of a monetary penalty does not relieve the duty to correct. TMC 8.45.080 says that for repeat violations within two years of a previous violation, the officer or the hearing examiner may impose up to $1,000 per day for the first repeat, and up to $2,000, $3,000, $4,000, and then $5,000 per day for later repeats on the schedule that section prints. KindKey will not decide that your case is a repeat and will not calculate the product. The same penalty section says that within 30 days of the compliance date, set by the notice or by a later hearing-examiner order, whichever is later, the officer shall issue a notice of assessment for remaining penalties and costs. That assessment has its own 10-calendar-day appeal. TMC 8.45.090 says the officer may issue a stop-work order when a continuing violation will materially impair the ability to secure compliance or threatens the health or safety of the public, and that a violation of the order may be prosecuted with a notice of violation and is declared a public nuisance. Leave a posted order where it is. KindKey will not take it down. If the structure is not safe to enter, say so. Photos and an exterior look can start the conversation.',
+          'The lien sentence in chapter 8.45 says the city has a lien for a monetary penalty, the cost of abatement, and related costs including attorney and expert-witness fees, against the real property where the penalty was imposed or the abatement was performed. KindKey does not promise that every Tukwila fine disappears when you sign. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement, prepared by the closing agent, is where you see them. Until recording, deadlines on the notice are still yours. After recording, the house is KindKey’s to deal with, including repairs and permits KindKey chooses to pull. KindKey handles that as the new owner. KindKey does not clear the citation as your representative and does not guarantee what a hearing examiner or a code officer will do.',
+        ],
+      },
+      {
+        heading: 'Finish the list, or sell the house as it sits',
+        paragraphs: [
+          'Curing a small yard notice can fit if you want to keep the house and the work is actually small. A listing can fit after the case is one a broker will take. A financed buyer may still stall on an open permit, a posted order, or a notice recorded with the county. Commission is negotiated with that broker and is not set by KindKey. Hire a licensed broker in King County if you want the listing. KindKey will not run it, will not choose your contractor, and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. You do not need a contractor bid or a permit in hand before KindKey looks.',
+          'Tell KindKey what the letter describes, in plain words, before anyone schedules a visit. A Foster house, an Allentown house, a Thorndyke or Cascade View house, and a house on the valley floor are different properties. Southcenter frontage is not the house. The notice may be an unpermitted addition, a yard on the city’s list, a vehicle the junk-vehicle chapter describes, or a heavier unfit-building complaint. Furniture you do not want can stay. Take papers and what you want to keep before the closing date you agree to. If someone still lives there, say so. Do not force an occupant out so the yard looks empty. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does. The Tukwila tenants page is that file.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn, up the valley from Tukwila. The drive does not add a repair. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need a relative with a key can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, a utility balance, or a city assessment. The offer reflects the house as it sits, including the open case, so it can be less than a retail price for a house with the violations already closed. You can say no.',
+          'Washington’s seller disclosure law is chapter 64.06 RCW. KindKey will not tell you how to mark the form, whether an exemption in RCW 64.06.010 applies, or what a prior owner should have disclosed. Ask a Washington real estate attorney if you are unsure. Answer with what you actually know. If you do not know whether a past owner pulled a permit, say that. If a foreclosure notice is in the file with the city letter, you have a clock the code case does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. Tukwila does not have a separate foreclosure page on this site. The King County foreclosure guide and the statewide foreclosure guide are that notice. A King County property-tax bill is a different account from a city penalty. The Washington tax-delinquent guide is the treasurer’s sale. If the owner has died, who can sign is a probate question. A Tukwila probate is commonly a King County matter, in Seattle or at the Maleng Regional Justice Center in Kent, not a Pierce County filing in Tacoma. KindKey will not file it and will not guess which relative can sign. The Tukwila inherited-house page is that question. Do not sign before the authority exists. A house in SeaTac, Renton, or Burien is a different city’s code. Do not use this page for those cities. Reach out, and KindKey will help you through the whole process from start to finish, from the letter through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do I have to fix Tukwila code violations before KindKey will look?',
+        answer:
+          'No. KindKey buys Tukwila houses with open violations, stop-work orders, and unpermitted work as they sit. You do not have to finish the city’s list, hire a contractor, or clear the yard first. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Where do I take a Tukwila code letter, City Hall or the 6300 building?',
+        answer:
+          'Read the header. City Hall and the city clerk are at 6200 Southcenter Blvd, (206) 433-1800. The code-enforcement page publishes (206) 431-3671, CodeEnforcement@TukwilaWA.gov, and 6300 Southcenter Blvd., #100, Monday through Thursday, 8:30 a.m. to 4:00 p.m. Weeds and trash in the street, rather than on private property, are directed to public works at (206) 433-0179. KindKey is not those desks. Use the number on your letter.',
+      },
+      {
+        question: 'How long do I have to appeal a Tukwila notice of violation?',
+        answer:
+          'TMC 8.45.110 says a written appeal, with the fee in the city’s fee schedule, is requested within 10 calendar days after service. Mail service under TMC 8.45.070 is deemed complete two days after mailing. If the last day is a weekend or a holiday, the section runs the period to 4:30 p.m. the next business day. KindKey will not count the days or pay the fee. Talk with a Washington attorney. You can still request a cash offer.',
+      },
+      {
+        question:
+          'The header is another city, or a foreclosure notice came with the letter. Can I still ask?',
+        answer:
+          'Read the header. SeaTac, Renton, Burien, and unincorporated King County are different cases from a City of Tukwila letter. Riverton is a name on both the SeaTac and Tukwila sides of the line. If a foreclosure notice is also in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not stop a trustee. Tukwila does not have a separate foreclosure page on this site. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/tukwila/sell-house-with-code-violations',
+        label: 'Code violations in Tukwila',
+        description: 'The Tukwila situation page for an open city case.',
+      },
+      {
+        href: '/areas/tukwila',
+        label: 'Sell a house in Tukwila',
+        description: 'Foster, Allentown, Riverton, Thorndyke, and Cascade View.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-washington',
+        label: 'Code violations in Washington',
+        description: 'King and Pierce County, when the notice is not only a Tukwila letter.',
+      },
+      {
+        href: '/areas/tukwila/sell-house-as-is',
+        label: 'Sell a house as-is in Tukwila',
+        description: 'The repair list does not have to be finished first.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/tukwila/sell-my-house-fast',
+        label: 'Sell my house fast in Tukwila',
+        description: 'A direct sale without a permit on the calendar.',
+      },
+      {
+        href: '/areas/tukwila/sell-hoarder-house',
+        label: 'Heavy-repair houses in Tukwila',
+        description: 'When the notice is one part of a larger repair.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents and heavy repairs can stay.',
+      },
+      {
+        href: '/areas/tukwila/sell-vacant-house',
+        label: 'Vacant houses in Tukwila',
+        description: 'When nobody is there to meet the inspector.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/tukwila/sell-house-with-tenants',
+        label: 'Houses with tenants in Tukwila',
+        description: 'Do not make an occupant leave so the yard looks empty.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/tukwila/sell-inherited-probate-house',
+        label: 'Inherited houses in Tukwila',
+        description: 'When the notice and the signer are both open questions.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the code letter.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-king-county',
+        label: 'Estate houses in King County',
+        description: 'The clerk is in Seattle or Kent, not in Tacoma.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Tukwila has no separate foreclosure page.',
+      },
+      {
+        href: '/blog/foreclosure-in-king-county-washington',
+        label: 'Foreclosure in King County',
+        description: 'A trustee’s notice is a different deadline from a code case.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A King County tax bill is a different account from a city penalty.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'Tukwila has no separate fire page. The claim stays with your insurer.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-king-pierce-county',
+        label: 'Fire-damaged houses in King and Pierce County',
+        description: 'A dangerous-structure letter can follow a fire.',
+      },
+      {
+        href: '/areas/seatac',
+        label: 'Sell a house in SeaTac',
+        description: 'The next city. Riverton is a name on both sides of the line.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-seatac-wa',
+        label: 'Vacant houses in SeaTac',
+        description:
+          'A different city’s vacant-structure rules. Do not copy them onto a Tukwila notice.',
+      },
+      {
+        href: '/areas/renton',
+        label: 'Sell a house in Renton',
+        description: 'Up the valley. A different permit counter.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-burien-wa',
+        label: 'Code violations in Burien',
+        description: 'Do not copy a Burien deadline onto a Tukwila notice.',
+      },
+      {
+        href: '/areas/burien',
+        label: 'Sell a house in Burien',
+        description: 'A different King County city.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what the letter says. You do not have to finish the list first.',
+      },
+    ],
+    ctaTitle: 'Ask for a Tukwila offer with the code case left open',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to finish the city’s list before you ask. Talk with a Washington attorney before you sign. You can say no.',
+  }),
 ];
