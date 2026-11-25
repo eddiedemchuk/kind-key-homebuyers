@@ -9192,4 +9192,490 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to finish the city’s list before you ask. Talk with a Washington attorney before you sign. You can say no.',
   }),
+  post('sell-house-with-septic-or-well-issues-spanaway-wa', {
+    breadcrumbName: 'Septic or well issues in Spanaway',
+    title: 'Selling a House with Septic Failure or Well Issues in Spanaway, WA',
+    description:
+      'How Spanaway owners sell a house with a failing septic system, a failed drainfield, or a troubled well without replacing it first. KindKey buys as a principal. Not a health-department opinion.',
+    h1: 'Selling a House with Septic Failure or Well Issues in Spanaway, WA',
+    publishedAt: '2026-11-25',
+    intro: [
+      'You can sell a Spanaway house with a failing septic system, a failed drainfield, a tank nobody has pumped, or a troubled private well without pumping the tank, replacing the field, connecting to public sewer, or passing a health-department inspection first. ' +
+        office +
+        ' KindKey does not inspect, pump, design, or certify a septic system or a well. This article is not a health-department opinion, not engineering advice, and not legal advice.',
+      'Spanaway is an unincorporated community in Pierce County. There is no City of Spanaway and no city hall to take a septic letter to. Spanaway Lake, the Pacific Avenue corridor along State Route 7, and the streets between Parkland and Joint Base Lewis-McChord are the local map. Parkland is the neighboring unincorporated community. Lakewood, to the west, is an incorporated city. A Spanaway mailing address is not the city limit, and it does not tell you whether the house is on septic, public sewer, public water, or a private well. The parcel does. Bring the address.',
+    ],
+    callout:
+      'You do not have to pump the tank, replace the drainfield, or hook the house to sewer before you ask. KindKey is the buyer. Reach out, and KindKey will help you through the whole process from start to finish. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'A health-department file, a county permit, and a code letter are three desks',
+        paragraphs: [
+          'On-site sewage in Pierce County is handled by the Tacoma-Pierce County Health Department, at 3629 S. D St., Tacoma, WA 98418. The department’s septic pages publish the main line as (253) 649-1500 and say the office is open 8 a.m. to 4:30 p.m., Monday through Friday, except holidays. The homeowner septic page says questions go to ehsepticsystems@tpchd.org or (253) 649-1925. The department’s contact directory also lists a septic-systems line at (253) 649-1420 and an on-site septic compliance line at (253) 649-1868. Use the number and the email printed on the paper you have. The applications page says in-person applications are accepted until 4 p.m., and that a stub-out or final-inspection request for a system someone is installing can also be made at (253) 649-1422. KindKey does not require that call, will not submit an application, and will not order a record drawing for you. You do not have to find an as-built before an offer. If you already have one, it can come with the photos.',
+          'The department’s regulations page lists local Chapter 2, On-Site Sewage, local Chapter 3, Water Regulations, chapter 246-272A WAC for on-site sewage systems, and chapter 173-160 WAC for minimum standards for construction and maintenance of wells. The Chapter 2 PDF the department publishes is Environmental Health Code, Chapter 2, On-Site Sewage, Board of Health Resolution 2018-4560, adopted July 18, 2018. Section 2 of that chapter says chapter 246-272A WAC is adopted and incorporated by reference, and that when state and local regulations conflict, the more stringent shall apply. KindKey will not decide which sentence is more stringent, will not apply the chapter to your yard, and will not tell you a wet spot is a failure. The chapter’s definition of failure includes sewage discharged upon the surface of the ground and other conditions that section lists. KindKey will not decide that your house meets them. Leave any posting where the department put it.',
+          'Pierce County Planning and Public Works is a different counter. The Development Center, for building permits, land use, site development, and sewer utility permits in unincorporated Pierce County, publishes its location as the Pierce County Annex, East Entrance, 2401 S. 35th St., Tacoma, WA 98409. The published phone is (253) 798-3739, and the published email is PCPermits@PierceCountyWa.gov, Monday through Friday, 8:00 a.m. to 4:00 p.m. The same page lists lobby hours of 9 a.m. to 2 p.m. It says Monday, Wednesday, and Friday are full in-person services, and Tuesday and Thursday are basic services only, with no in-person technical support. It also says technical support is unavailable Monday, Wednesday, and Friday from 12 to 12:30 p.m. Confirm the hours before you go. That visit is for an owner who chooses to permit work and keep the house. KindKey does not require it and will not pull a permit.',
+          'Code enforcement is a third desk, and it is not the septic desk. Pierce County’s code-enforcement page says the service is for unincorporated Pierce County, and that public-health concerns, including wells and septic systems, are outside what that office does. The page also says foreclosure issues and landlord-tenant conflicts are outside it. The published counter is 2401 S. 35th St., Room 2, Tacoma, WA 98409, phone (253) 798-4636, email PCResponds@piercecountywa.gov, Monday through Friday, 7 a.m. to 2:30 p.m., closed major holidays. A yard letter, a junk-vehicle letter, or a building-without-a-permit letter can still arrive. Read the header. KindKey will not file the complaint and will not answer it. A Lakewood letter, a Tacoma letter, or a City of Puyallup letter is a different city’s file. Do not use this page for those cities. The closing agent confirms the parcel. A Spanaway deed records with the Pierce County Auditor at 2401 S. 35th St., Room 200, Tacoma, WA 98409. The recorded-documents page publishes (253) 798-7440 and lists Monday through Friday, 8:30 a.m. to 4:30 p.m. The auditor’s office page publishes (253) 798-7427 and lists a midday closure from noon to 1:00. Confirm the hours. Do not record a Pierce County deed at the King County Recorder in Seattle because KindKey’s office is in Auburn.',
+        ],
+      },
+      {
+        heading: 'A sewer map, a dry line, and a well are not the same fact',
+        paragraphs: [
+          'Pierce County’s sewer page says to check the sewer service-area map, and that a property in the mapped area is in the service area. A place on that map is not the same fact as a side sewer already connected to your house. The same page says all septic systems must be approved by the Tacoma-Pierce County Health Department, and that new on-site septic systems are not allowed in urban areas where sewer service is available. KindKey will not decide whether your parcel is in that category, and KindKey will not tell you that an old tank has to be abandoned before anyone looks. The page also describes houses built where sewer service was not yet available: an interim on-site system, plus pipes the page calls dry lines, which are not yet connected to the public system. Say if someone told you the house has dry lines. KindKey will not look that up for you and will not tell you that you must connect.',
+          'The Sewer Division’s published office, on the county’s contact page, is the Environmental Services Building, 9850 64th St. W., University Place, WA 98467, phone (253) 798-4050. The county also publishes a 24-hour sewer line at (253) 798-7000. University Place is a city. Spanaway is not. A sewer account with Pierce County does not turn Spanaway into University Place, and it does not turn a health-department order into a city code case. KindKey is none of those offices.',
+          'A private well is a separate fact from the drainfield. Some Spanaway houses are on public water. Some use a well. The community name does not decide it, and a failed drainfield does not decide it. KindKey will not test the water, will not interpret Chapter 3 or chapter 173-160 WAC, and will not tell you the well is safe. You can ask the health department or a licensed well professional. You can also ask KindKey to price the house as it sits while you do that. Tell us which one you have, including if you do not know where the tank is or whether anyone has ever found the field.',
+        ],
+      },
+      {
+        heading: 'What owners are looking at in the yard',
+        paragraphs: [
+          'Tell KindKey what you have seen, in plain words, before anyone schedules a visit. It may be a wet spot that does not dry, sewage at the surface, a backup into the house, a smell in the yard, a tank nobody has pumped, a drainfield a buyer’s inspector failed, or a system with no drawing in the file. Some of those houses are still lived in. Some have been empty long enough that the system has not been used. A Spanaway Lake house, a house on the Pacific Avenue corridor, a larger lot with a shop between Parkland and the base, and a manufactured home on land you own are different properties. KindKey does not diagnose the cause, and KindKey will not tell you the field has failed or that the wet spot is only rain.',
+          'You do not have to locate the drainfield, pump the tank, replace a line, or install a new system before a walkthrough. Photos of the yard, the tank lid if you can see it, the shop, and any pages from the inspection that killed the last deal are enough to start. If the yard or a floor is not safe to walk, say so. An exterior look can begin the conversation. Do not walk a house that is not safe just to satisfy a buyer. Furniture and shop contents you do not want can stay. Take papers, photos, and what you want to keep before the closing date you agree to.',
+          'A shop bathroom, a garage converted to a room, or an extra living space can be tied into the same system. KindKey will not decide whether a bathroom was connected without a permit, and KindKey will not make you disconnect it before an offer. Say what is out there. If someone still lives in the house, or in a room over the shop, say that too. Do not force an occupant out so the yard can be dug up. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does. The Spanaway tenants page is that file. Joint Base Lewis-McChord is next door. KindKey buys private houses you have the right to sell. The base is not a permit counter, and a base address is not a Spanaway parcel.',
+        ],
+      },
+      {
+        heading: 'Sell the house as it sits',
+        paragraphs: [
+          'A retail buyer using a mortgage often wants a passed septic inspection, a known water source, and a record of the system. A failed drainfield, a tank with no drawing, or a well the buyer’s lender will not finance is a reason that sale dies. You do not have to complete that repair list, hire the contractor the report named, or relist the house before KindKey looks. Cash, in this sale, means KindKey is not waiting on that buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a sewer charge, a tax bill, or a lien. Washington’s seller disclosure law is chapter 64.06 RCW. KindKey will not tell you how to mark the form, whether an exemption applies, or what a prior owner should have disclosed. Ask a Washington real estate attorney if you are unsure. Answer with what you actually know. If you do not know where the drainfield is, say that.',
+          'Replacing the system, or connecting to a public sewer where the county will allow it, can fit if you want to keep the house and you can fund the work. A listing can fit after that, if a broker will take the condition and you can host the access. Commission is negotiated in the listing agreement with that broker and is not set by KindKey. Hire a licensed broker in Pierce County if you want the listing. KindKey will not run it, will not choose your designer, and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive from Spanaway does not add a repair. KindKey does not promise a specific number of days. ' +
+            closing +
+            ' The offer reflects the house as it sits, so it can be less than a retail price for a house on a working public sewer with a passed inspection. You can say no. The Spanaway as-is page is that direct sale.',
+          'If a foreclosure notice is in the file with the septic letter, you have a clock the drainfield does not pause. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. Spanaway does not have a separate foreclosure page on this site. The Pierce County foreclosure guide and the statewide foreclosure guide are that notice. If the owner has died, who can sign is a probate question. A person who lived in Spanaway lived in Pierce County. The Clerk of the Superior Court is at the County-City Building, 930 Tacoma Ave. S., Room 110, Tacoma. That office publishes (253) 798-7455, office hours of Monday through Friday, 8:30 a.m. to 4:30 p.m., and phone-service hours of 8:30 a.m. to 3:30 p.m. KindKey will not file the probate and will not guess which relative can sign. Do not sign a deed before that authority exists. The Spanaway inherited-house page is that question.',
+          'A Pierce County property-tax bill is a different account from a health-department file and from a sewer charge. KindKey does not calculate the treasurer’s number. The Washington tax-delinquent guide is that clock. A septic or well problem in Puyallup or on South Hill, including a Puyallup mailing address that is actually unincorporated Pierce County, is the Puyallup septic guide. An Edgewood house is the Edgewood septic guide. Port Orchard, Bremerton, Silverdale, and Poulsbo are Kitsap County, and a different health district. Lakewood is an incorporated city to the west. Do not use this page for those places. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the yard through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question:
+          'Do I have to replace a failed drainfield, or pass a septic inspection, before KindKey will look at a Spanaway house?',
+        answer:
+          'No. KindKey buys Spanaway houses with failing septic systems, failed drainfields, and troubled wells as they sit. You do not have to pump the tank, connect to sewer, or finish an inspection repair list first. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'My address says Spanaway. Which office has the septic file?',
+        answer:
+          'There is no City of Spanaway. An on-site system in Pierce County is a Tacoma-Pierce County Health Department file. The published address is 3629 S. D St., Tacoma, and the septic page publishes (253) 649-1925 and ehsepticsystems@tpchd.org. Pierce County code enforcement, at (253) 798-4636, says wells and septic systems are outside that office. A public-sewer question is Pierce County’s Sewer Division, (253) 798-4050. KindKey will not decide which desk controls your parcel. Use the header on your letter.',
+      },
+      {
+        question: 'What if I do not know whether the house is on septic, public sewer, or a well?',
+        answer:
+          'Say that. KindKey does not require you to locate the drainfield or become the well expert before an offer. A later title report or a record drawing may still identify the system. You can decline the offer after you see it.',
+      },
+      {
+        question:
+          'What if a foreclosure notice, a tenant, or an estate is in the file with the septic letter?',
+        answer:
+          'Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute, will not stop a trustee, and will not file a probate or guess who can sign. A sale does not end a tenancy by itself. Spanaway does not have a separate foreclosure page on this site. You can still request a cash offer while you get that advice. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/spanaway',
+        label: 'Sell a house in Spanaway',
+        description: 'Spanaway Lake, Pacific Avenue, and the streets toward Parkland.',
+      },
+      {
+        href: '/areas/spanaway/sell-house-as-is',
+        label: 'Sell a house as-is in Spanaway',
+        description: 'The drainfield does not have to be replaced before a direct sale.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/spanaway/sell-my-house-fast',
+        label: 'Sell my house fast in Spanaway',
+        description: 'One walkthrough, without a new septic system first.',
+      },
+      {
+        href: '/areas/spanaway/sell-vacant-house',
+        label: 'Vacant houses in Spanaway',
+        description: 'When the system has sat because nobody lives there.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/spanaway/sell-inherited-probate-house',
+        label: 'Inherited houses in Spanaway',
+        description: 'When the tank and the signer are both open questions.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the condition of the system.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-pierce-county',
+        label: 'Estate houses in Pierce County',
+        description: 'The clerk is at the County-City Building in Tacoma.',
+      },
+      {
+        href: '/blog/selling-a-house-in-probate-washington',
+        label: 'Probate houses in Washington',
+        description: 'The statewide guide. Your attorney confirms who can sign.',
+      },
+      {
+        href: '/areas/spanaway/sell-house-with-code-violations',
+        label: 'Code violations in Spanaway',
+        description: 'A Pierce County yard or permit letter, rather than the drainfield.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/areas/spanaway/sell-house-with-tenants',
+        label: 'Houses with tenants in Spanaway',
+        description: 'When someone still lives there and the yard needs work.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/spanaway/sell-hoarder-house',
+        label: 'Heavy-repair houses in Spanaway',
+        description: 'When the septic system is one part of a larger repair.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents and heavy repairs can stay.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Spanaway has no separate foreclosure page.',
+      },
+      {
+        href: '/blog/foreclosure-in-pierce-county-washington',
+        label: 'Foreclosure in Pierce County',
+        description: 'A trustee’s notice is a different deadline from a septic letter.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A Pierce County tax bill is a different account from a sewer charge.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'Spanaway has no separate fire page. The claim stays with your insurer.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-drainfield-puyallup-wa',
+        label: 'Septic or drainfield problems in Puyallup',
+        description: 'Downtown and South Hill. A different map from Spanaway.',
+      },
+      {
+        href: '/areas/puyallup',
+        label: 'Sell a house in Puyallup',
+        description: 'Use this if the parcel is in the city, not Spanaway.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-edgewood-wa',
+        label: 'Septic or well issues in Edgewood',
+        description: 'An incorporated Pierce County city. A different lot.',
+      },
+      {
+        href: '/areas/lakewood',
+        label: 'Sell a house in Lakewood',
+        description: 'The incorporated city to the west. Do not mix the counters.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-kitsap-county',
+        label: 'Septic or well issues in Kitsap County',
+        description: 'Port Orchard, Bremerton, Silverdale, and Poulsbo. A different county.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description:
+          'Say septic, drainfield, sewer, well, or that you do not know. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for a Spanaway offer with the system as it sits',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to replace the drainfield first. You can say no.',
+  }),
+  post('behind-on-payments-fife-wa', {
+    breadcrumbName: 'Behind on payments in Fife',
+    title: 'Behind on Payments in Fife, WA: Selling Before Foreclosure',
+    description:
+      'How Fife owners who are behind on the mortgage ask for a cash offer before a trustee sale. Pierce County recording. Talk with an attorney. Not legal advice.',
+    h1: 'Behind on Payments in Fife, WA: Selling Before Foreclosure',
+    publishedAt: '2026-11-25',
+    intro: [
+      'You can ask KindKey to buy a Fife house while you are behind on the mortgage, without catching the loan up and without repairing the house first. A written offer is a purchase offer. It does not stop a trustee, and it does not require you to sell. ' +
+        office +
+        ' KindKey is not a trustee, a housing counselor, a foreclosure consultant, or a real estate agent or broker. This article is not legal advice. Talk with a Washington attorney before you sign.',
+      'Fife is an incorporated city in Pierce County, in the Puyallup River valley along I-5, between Tacoma and the Milton and Edgewood side of the valley. Much of the city is commercial and industrial. Residential streets are a smaller part of the map. The Port of Tacoma is adjacent, not the same city. A Fife mailing address is not the city limit, and it is not the recording office. Bring the notice and the address on the tax bill.',
+    ],
+    callout:
+      'You do not have to catch up the payments or finish repairs before you ask. KindKey is the buyer. Asking does not postpone a trustee. Talk with a Washington attorney before you sign. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'City Hall is not the office that runs the sale',
+        paragraphs: [
+          'The City of Fife does not hold a trustee sale and does not reinstate a deed of trust. City Hall is at 5411 23rd Street E, Fife, WA 98424. The city publishes the main line as (253) 922-2489 and hours of Monday through Friday, 8:30 a.m. to 5 p.m. The utility-billing page uses that same phone, press 1, and that same mailing address. A water or sewer bill is not a notice from a trustee. The city’s map gallery publishes Community Development at comdev@cityoffife.org and (253) 922-9625 for questions about city maps. That counter is not the trustee, and KindKey will not call it for you. Confirm the hours before you go. Read the header on every paper. KindKey is none of those offices and will not call the city, the servicer, or the trustee for you.',
+          'A Fife deed records with the Pierce County Auditor at 2401 S. 35th St., Room 200, Tacoma, WA 98409. The recorded-documents page publishes (253) 798-7440 and lists Monday through Friday, 8:30 a.m. to 4:30 p.m. The auditor’s office page publishes (253) 798-7427 and lists a midday closure from noon to 1:00. Confirm the hours before you go. Do not record a Pierce County deed at the King County Recorder in Seattle because you drive through Auburn, or at the Kitsap County Auditor in Port Orchard. Fife is Pierce County. Milton, next door, can fall in King County or Pierce County. Most of Auburn is King County, and a southern slice of Auburn can be Pierce County. The closing agent confirms the parcel. If the notice names King County, this Fife page is the wrong file. Use the King County foreclosure guide.',
+          'The auction is held at the time and place the notice prints. KindKey will not tell you that place is City Hall, and KindKey will not tell you it is the Port of Tacoma. A case to restrain a sale under RCW 61.24.130 is filed in superior court. For a Pierce County deed, that court is Pierce County Superior Court. The Clerk of the Superior Court is at the County-City Building, 930 Tacoma Ave. S., Room 110, Tacoma. That office publishes (253) 798-7455, office hours of Monday through Friday, 8:30 a.m. to 4:30 p.m., and phone-service hours of 8:30 a.m. to 3:30 p.m. The courthouse being in Tacoma does not make the City of Tacoma a party, and it does not make KindKey your lawyer. KindKey will not prepare that case, will not appear for you, and will not tell you whether to file.',
+        ],
+      },
+      {
+        heading: 'Read your notice before you borrow a number of days',
+        paragraphs: [
+          'Washington foreclosures on a deed of trust are mostly nonjudicial. Unless you were served with a summons, the file is chapter 61.24 RCW, the Deed of Trust Act, not a judicial foreclosure under chapter 61.12 RCW. KindKey will not tell you which caption you have. Read the paper. The Pierce County foreclosure guide on this site walks the same statute for Tacoma, Puyallup, and the rest of the county. Your notice still controls. KindKey will not count the days on it.',
+          'For the loans RCW 61.24.030(8) covers, a written notice of default goes out at least 30 days before a notice of sale is recorded, transmitted, or served. The form that subsection requires says that failure to cure within 30 days of the mailing, or of personal service, may lead to a notice of sale, and that the property may be sold at a date no less than 120 days in the future, or no less than 150 days in the future if the borrower received a letter under RCW 61.24.031. Many loans also get that contact letter first. RCW 61.24.040 says the trustee records the notice of sale at least 90 days before the sale, or at least 120 days before the sale if a letter under RCW 61.24.031 is required. The same section says the sale shall not take place less than 190 days from the date of default. A trustee can postpone. RCW 61.24.090 lets a borrower cure until the eleventh day before the sale date in the recorded notice, or the eleventh day before the actual sale if the trustee continues it, by paying the trustee the amount the trustee states. Do not count any of those periods from a missed payment, from a conversation, or from this article. The printed date on your notice is the fact. A housing counselor or a Washington attorney should read it with you.',
+          'Foreclosure Fairness Act mediation is RCW 61.24.163. The program applies to borrowers referred by a housing counselor or an attorney. You do not refer yourself. For a deed of trust, a referral may be made after the notice of default and no later than 90 days before the sale date in the notice of trustee’s sale. The section also describes a shorter window when an amended notice is recorded after a stay. Some loans and some smaller servicers are outside the program. A referral is not a promise that you keep the house. KindKey does not attend mediation and does not call your servicer. The Washington State Department of Commerce publishes a free counseling line at 1-877-894-HOME (4663). Commerce’s program page also points low- and moderate-income homeowners to the statewide civil legal aid line at 1-800-606-4819. Use the number printed on your notice if it differs. Bring the sale date and the eleventh-day cure date. KindKey will not collect a reinstatement.',
+          'Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not tell you whether it applies to your sale. Do not deed the house to anyone outside escrow. Do not sign a contract in a parking lot because a date is close. Take the offer to a Washington attorney. Asking for a cash offer does not pause the trustee, and it does not extend a cure date.',
+        ],
+      },
+      {
+        heading: 'A valley house and a highway address are the same county and different files',
+        paragraphs: [
+          'The city’s land-use element names residential areas in the southern part of Fife, including Circle Drive, David Court, Berry Lane, Harry Smith Road, Dale Lane, Holm Drive, and Valley Haven, and planned residential developments including Radiance, Sheffield Place, Wapato Pointe, Kelsey Lane, and Saddle Creek. It also names a residential community north of Pacific Highway East in the 48th Street East area, and it names Fife Heights as a residential community in the Fife urban growth area. A name in a planning document is not the city limit. A 2024 city survey used neighborhood labels that include Benthien Loop, Pacific Highway, 20th/62nd, Central Fife, Radiance/Saddle Creek, and Firwood. Tell KindKey the street address. KindKey will not decide from a neighborhood nickname whether the parcel is inside the city.',
+          'Tell KindKey what the notice says and the condition, before anyone schedules a visit. An older valley house, a house on a residential street south of the highway, and an address people still call Fife that is actually Milton, Tacoma, or unincorporated Pierce County are not the same repair and not the same government. Photos can start the file. If the house is not safe to enter, say so. An exterior look is enough to begin. Do not walk a house that is not safe just to satisfy a buyer. You do not have to catch up a payment, clear a yard, or replace a roof before KindKey looks.',
+          'If someone still lives there, say so. Do not force an occupant out so the house looks empty for a buyer. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does. The Fife tenants page is that question. If the house is already empty, say that too. The Fife vacant-house page is the empty house. A code letter or an open permit is a condition fact, not a reason KindKey refuses to look. Inside the city, that letter is a City of Fife matter. Pierce County code enforcement’s page says its service is for unincorporated Pierce County. Read the header. The Fife code-violations page is a city letter. KindKey does not clear a code case as your representative. The city’s community profile says Fife sits on the traditional homelands of the Puyallup People. A parcel near tribal land, or inside a reservation boundary, is a title question. KindKey does not interpret tribal jurisdiction. Tell the closing agent what you already know.',
+          'If the owner has died, who can sign is a separate question from the mortgage. A Fife probate is commonly a Pierce County matter, at the clerk’s office in Tacoma, not a King County filing in Seattle or Kent and not a Kitsap County filing in Port Orchard. KindKey will not file the probate and will not guess which relative can sign. You can ask for an offer while an attorney answers that. Do not sign a deed before the authority exists. The Fife inherited-house page is that file.',
+        ],
+      },
+      {
+        heading: 'A counselor, a listing, or a direct sale are different paths',
+        paragraphs: [
+          'If you want to keep the house, the counselor and your attorney are the first calls, not a buyer. Reinstatement, a repayment plan, and mediation are their conversation. KindKey will not tell you to skip them. If the house is updated and your attorney says the calendar still allows showings and a financed buyer, a listing can fit. Hire a licensed broker in Pierce County for that path. Commission is negotiated with that broker and is not set by KindKey. KindKey will not run the listing and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn, a short drive up the valley. The drive does not add a repair, and it does not add days to the trustee’s clock. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need a relative with a key, or time for an attorney to read the notice, can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase the loan, a tax bill, a utility balance, or a judgment. If the payoff and the other amounts title requires are higher than the price, the lender has to agree before a sale can close. You see those numbers on the settlement statement before you close. The offer reflects the house as it sits, so it can be less than a retail price for a house that is current and repaired. You can say no.',
+          'A Pierce County property-tax bill is a different account from the mortgage. KindKey will not calculate the treasurer’s number. The Washington tax-delinquent guide is that sale. Fife does not have a separate foreclosure page on this site. Tacoma and Puyallup do. Edgewood and Milton have their own foreclosure articles. A house in Kent, Federal Way, or most of Auburn is a King County file. If a fire is why the house is hard to show, say what burned. Fife does not have a separate fire page. The insurance claim stays with your insurer. The statewide fire-damage page is that condition. Washington’s seller disclosure law is chapter 64.06 RCW. KindKey will not tell you how to mark the form. Answer with what you actually know. Reach out, and KindKey will help you through the whole process from start to finish, from the notice through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell my Fife house if I am behind on payments?',
+        answer:
+          'You can ask for a cash offer without catching the loan up or repairing the house. Whether a sale can still close depends on the notice, the payoff, and the date. Talk with a Washington attorney. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Does asking KindKey for an offer stop the trustee sale in Fife?',
+        answer:
+          'No. A finished sale might pay what title requires if the price and the date work. The request itself does not postpone the trustee, and it does not extend a cure date. KindKey will not call your servicer. This article is not legal advice.',
+      },
+      {
+        question: 'Is a Fife foreclosure recorded in King County because Auburn is close?',
+        answer:
+          'No. A house inside the City of Fife is a Pierce County recording. The notice of sale is recorded where the deed of trust is of record. Do not use the King County Recorder in Seattle for that deed. Milton, next door, can be either county. If the notice names a different county, follow the notice.',
+      },
+      {
+        question: 'What if I also have tenants, a code letter, or a relative who died?',
+        answer:
+          'Say so. KindKey buys the house as it sits and will not make an occupant leave. A city letter is not a trustee notice. Who can sign after a death is a question for a Washington attorney. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. You can still request a cash offer while you get that advice.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/fife',
+        label: 'Sell a house in Fife',
+        description: 'The valley city between Tacoma, Milton, and Edgewood.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Fife has no separate foreclosure page.',
+      },
+      {
+        href: '/blog/foreclosure-in-pierce-county-washington',
+        label: 'Foreclosure in Pierce County',
+        description:
+          'Tacoma, Puyallup, Fife, and the rest of the county. Your notice still controls.',
+      },
+      {
+        href: '/blog/behind-on-mortgage-payments-washington',
+        label: 'Behind on mortgage payments in Washington',
+        description: 'When the cause is a job, a divorce, or medical bills.',
+      },
+      {
+        href: '/blog/notice-of-default-washington',
+        label: 'Notice of default in Washington',
+        description: 'The paper that often comes before a sale notice.',
+      },
+      {
+        href: '/blog/notice-of-trustee-sale-washington',
+        label: 'Notice of trustee sale in Washington',
+        description: 'The sale date and the cure window. Read your notice.',
+      },
+      {
+        href: '/blog/washington-foreclosure-mediation-vs-selling',
+        label: 'Mediation or a sale',
+        description: 'A counselor or an attorney refers you. KindKey does not attend.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Sell before foreclosure in Washington',
+        description: 'What a direct sale can pay at closing, and what it cannot pause.',
+      },
+      {
+        href: '/areas/fife/sell-house-as-is',
+        label: 'Sell a house as-is in Fife',
+        description: 'Repairs are not a precondition of an offer.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/fife/sell-my-house-fast',
+        label: 'Sell my house fast in Fife',
+        description: 'One walkthrough and a closing date you help choose.',
+      },
+      {
+        href: '/areas/fife/sell-house-with-tenants',
+        label: 'Houses with tenants in Fife',
+        description: 'Do not make an occupant leave so the house looks empty.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/fife/sell-vacant-house',
+        label: 'Vacant houses in Fife',
+        description: 'When you already live somewhere else.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/fife/sell-inherited-probate-house',
+        label: 'Inherited houses in Fife',
+        description: 'Who can sign is separate from the mortgage.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, confirmed with an attorney.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-pierce-county',
+        label: 'Estate houses in Pierce County',
+        description: 'The clerk is in Tacoma, not in Seattle.',
+      },
+      {
+        href: '/areas/fife/sell-house-with-code-violations',
+        label: 'Code violations in Fife',
+        description: 'A city letter is not a trustee notice.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/areas/fife/sell-hoarder-house',
+        label: 'Heavy-repair houses in Fife',
+        description: 'When the loan and the condition are both in the file.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'Contents and heavy repairs can stay.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'Fife has no separate fire page. The claim stays with your insurer.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-king-pierce-county',
+        label: 'Fire-damaged houses in King and Pierce County',
+        description: 'When a fire is why the house is hard to show.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A Pierce County tax bill is a different account from the mortgage.',
+      },
+      {
+        href: '/blog/sell-house-during-divorce-without-listing-washington',
+        label: 'Selling during a divorce in Washington',
+        description: 'Who can sign is a question for your attorney.',
+      },
+      {
+        href: '/areas/tacoma/sell-house-before-foreclosure',
+        label: 'Sell before foreclosure in Tacoma',
+        description: 'The next city west. A different city page.',
+      },
+      {
+        href: '/areas/tacoma',
+        label: 'Sell a house in Tacoma',
+        description: 'West of Fife. The Port of Tacoma is not the City of Fife.',
+      },
+      {
+        href: '/areas/puyallup/sell-house-before-foreclosure',
+        label: 'Sell before foreclosure in Puyallup',
+        description: 'Up the valley. A different city’s notice.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-milton-wa',
+        label: 'Avoiding foreclosure in Milton',
+        description: 'The neighbor that can be King County or Pierce County.',
+      },
+      {
+        href: '/areas/milton',
+        label: 'Sell a house in Milton',
+        description: 'East of Fife. Confirm the parcel before you use a Fife page.',
+      },
+      {
+        href: '/blog/avoiding-foreclosure-in-edgewood-wa',
+        label: 'Avoiding foreclosure in Edgewood',
+        description: 'The city on the hill. Entirely Pierce County.',
+      },
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'North Hill and the valley edge. Not a Fife neighborhood.',
+      },
+      {
+        href: '/blog/behind-on-payments-kent-wa',
+        label: 'Behind on payments in Kent',
+        description: 'A King County file. Do not record a Fife deed there.',
+      },
+      {
+        href: '/blog/foreclosure-in-king-county-washington',
+        label: 'Foreclosure in King County',
+        description: 'Use this if the notice is Kent or Auburn, not Fife.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what the notice says. You do not have to catch up first.',
+      },
+    ],
+    ctaTitle: 'Ask for a Fife offer while you are behind, and review it with an attorney',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to catch up the payments before you ask. Asking does not stop a trustee. Talk with a Washington attorney before you sign. You can say no.',
+  }),
 ];
