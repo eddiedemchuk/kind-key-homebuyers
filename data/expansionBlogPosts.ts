@@ -9678,4 +9678,557 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. You do not have to catch up the payments before you ask. Asking does not stop a trustee. Talk with a Washington attorney before you sign. You can say no.',
   }),
+  post('behind-on-payments-tacoma-wa', {
+    breadcrumbName: 'Behind on payments in Tacoma',
+    title: 'Behind on Payments in Tacoma, WA: Selling Before Foreclosure',
+    description:
+      'How Tacoma owners who are behind on the mortgage ask for a cash offer before a trustee sale. Pierce County recording. Talk with an attorney. Not legal advice.',
+    h1: 'Behind on Payments in Tacoma, WA: Selling Before Foreclosure',
+    publishedAt: '2026-11-26',
+    intro: [
+      'You can ask KindKey to buy a Tacoma house while you are behind on the mortgage, without catching the loan up and without repairing the house first. A written offer is a purchase offer. It does not stop a trustee, and it does not require you to sell. ' +
+        office +
+        ' KindKey is not a trustee, a housing counselor, a foreclosure consultant, or a real estate agent or broker. This article is not legal advice. Talk with a Washington attorney before you sign.',
+      'The Tacoma Municipal Building and the Pierce County courthouse are both downtown, and they are not the same office. A house in the North End, Proctor, the Stadium District, Hilltop, the Eastside, or South Tacoma is a Pierce County recording even though KindKey’s office is in Auburn. University Place, Fircrest, Ruston, and Fife are separate cities. Bring the notice and the address on the tax bill.',
+    ],
+    callout:
+      'You do not have to catch up the payments or finish repairs before you ask. KindKey is the buyer. Asking does not postpone a trustee. Talk with a Washington attorney before you sign. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'City Hall does not hold the sale',
+        paragraphs: [
+          'The City of Tacoma does not hold a trustee sale and does not reinstate a deed of trust. The Tacoma Municipal Building is at 747 Market Street, Tacoma, WA 98402. The city’s published main line is (253) 591-5000. Tacoma FIRST 311, the customer support center, is on the second floor in Room 220. The city’s contact page lists that counter as Monday through Friday, 8 a.m. to 5 p.m. Confirm the hours before you go. A conversation at 311 does not stop a sale. KindKey is not that desk and will not call the city, the servicer, or the trustee for you.',
+          'A Tacoma Public Utilities bill is not a notice from a trustee. The city’s contact page lists Tacoma Public Utilities at 3628 South 35th Street, Tacoma, WA 98409, phone (253) 502-8600. Planning and Development Services, for building and land-use permits, is on the 3rd floor of 747 Market Street. That page lists the phone as (253) 591-5030 and says limited in-person service is by appointment only, 9 a.m. to 1 p.m., Monday through Thursday. You do not need that appointment before KindKey looks. A permit counter is not the trustee.',
+          'A Tacoma deed records with the Pierce County Auditor at 2401 S. 35th St., Room 200, Tacoma, WA 98409. The recorded-documents page publishes (253) 798-7440 and lists Monday through Friday, 8:30 a.m. to 4:30 p.m. The auditor’s office page publishes (253) 798-7427 and lists a midday closure from noon to 1:00. Confirm the hours before you go. The auditor’s building is on South 35th Street, near the utilities address, and it is still not City Hall. Do not record a Pierce County deed at the King County Recorder in Seattle or Kent because KindKey’s office is in Auburn. Most of Auburn is King County. Tacoma is not. If the notice names King County, this Tacoma page is the wrong file. Use the King County foreclosure guide.',
+          'The auction is held at the time and place the notice prints. KindKey will not tell you that place is 747 Market Street, and KindKey will not tell you it is the Tacoma Dome or the Port of Tacoma. A case to restrain a sale under RCW 61.24.130 is filed in superior court. For a Pierce County deed, that court is Pierce County Superior Court. The Clerk of the Superior Court is at the County-City Building, 930 Tacoma Ave. S., Room 110, Tacoma, WA 98402. That office publishes (253) 798-7455, counter hours of Monday through Friday, 8:30 a.m. to 4:30 p.m., and phone-service hours of 8:30 a.m. to 3:30 p.m. The courthouse is in Tacoma. That does not make the City of Tacoma a party, and it does not make KindKey your lawyer. Tacoma Municipal Court is a city court. It is not the court that opens that case. KindKey will not prepare the case, will not appear for you, and will not tell you whether to file.',
+        ],
+      },
+      {
+        heading: 'Read your notice before you borrow a number of days',
+        paragraphs: [
+          'Washington foreclosures on a deed of trust are mostly nonjudicial. Unless you were served with a summons, the file is chapter 61.24 RCW, the Deed of Trust Act, not a judicial foreclosure under chapter 61.12 RCW. KindKey will not tell you which caption you have. Read the paper. The Pierce County foreclosure guide on this site walks the same statute for the county. Your notice still controls. KindKey will not count the days on it. This site does not publish a Tacoma foreclosure rate, and KindKey will not invent one.',
+          'For the loans RCW 61.24.030(8) covers, a written notice of default goes out at least 30 days before a notice of sale is recorded, transmitted, or served. The form that subsection requires says that failure to cure within 30 days of the mailing, or of personal service, may lead to a notice of sale, and that the property may be sold at a date no less than 120 days in the future, or no less than 150 days in the future if the borrower received a letter under RCW 61.24.031. Many loans also get that contact letter first. RCW 61.24.040 says the trustee records the notice of sale at least 90 days before the sale, or at least 120 days before the sale if a letter under RCW 61.24.031 is required. The same section says the sale shall not take place less than 190 days from the date of default. A trustee can postpone. RCW 61.24.090 lets a borrower cure until the eleventh day before the sale date in the recorded notice, or the eleventh day before the actual sale if the trustee continues it, by paying the trustee the amount the trustee states. Do not count any of those periods from a missed payment, from a conversation at 311, or from this article. The printed date on your notice is the fact. A housing counselor or a Washington attorney should read it with you.',
+          'Foreclosure Fairness Act mediation is RCW 61.24.163. The program applies to borrowers referred by a housing counselor or an attorney. You do not refer yourself. For a deed of trust, a referral may be made after the notice of default and no later than 90 days before the sale date in the notice of trustee’s sale. The section also describes a shorter window when an amended notice is recorded after a stay. Some loans and some smaller servicers are outside the program. A referral is not a promise that you keep the house. KindKey does not attend mediation and does not call your servicer. The Washington State Department of Commerce publishes a free counseling line at 1-877-894-HOME (4663). Commerce’s program page also points low- and moderate-income homeowners to the statewide civil legal aid line at 1-800-606-4819. Use the number printed on your notice if it differs. Bring the sale date and the eleventh-day cure date. KindKey will not collect a reinstatement.',
+          'Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not tell you whether it applies to your sale. Do not deed the house to anyone outside escrow. Do not sign a contract in a parking lot off I-5 because a date is close. Take the offer to a Washington attorney. Asking for a cash offer does not pause the trustee, and it does not extend a cure date.',
+        ],
+      },
+      {
+        heading: 'A North End house and a South Tacoma house are the same county',
+        paragraphs: [
+          'Tacoma is Pierce County’s largest city. Older houses in the North End, Proctor, and the Stadium District are not the same product as Hilltop lots, Eastside houses, or South Tacoma houses. The Port of Tacoma and the Tideflats are not a residential neighborhood. University Place, Fircrest, and Ruston are separate cities beside Tacoma. Fife is the valley city to the east. A mailing city is not the city limit. Tell KindKey the street address. KindKey will not decide from a neighborhood name whether the parcel is inside Tacoma.',
+          'Tell KindKey what the notice says and the condition, before anyone schedules a visit. Photos can start the file. If the house is not safe to enter, say so. An exterior look is enough to begin. Do not walk a house that is not safe just to satisfy a buyer. You do not have to catch up a payment, clear a yard, or replace a roof before KindKey looks. A house that has already been left empty is hard to watch. Break-ins and a city letter can continue while the payment default continues. Selling the house as it sits can move the property. It does not, by itself, stop the foreclosure.',
+          'If someone still lives there, say so. Do not force an occupant out so the house looks empty for a buyer. A sale does not, by itself, end a tenancy under chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that it does. The Tacoma tenants page is that question. If the house is already empty, say that too. The Tacoma vacant-house page is the empty house. A City of Tacoma code letter is a condition fact, not a reason KindKey refuses to look, and it is not a trustee notice. The Tacoma code-violations page and the Tacoma code-violations guide are that letter. KindKey does not clear a code case as your representative. If a fire is why the payments stopped or why the house is hard to show, say what burned. The city’s contact page lists the Tacoma Fire Department at 901 Fawcett Ave., Tacoma, WA 98402, phone (253) 591-5737. KindKey is not the fire department and does not interpret a run report. If the report names a different department, follow the report. The insurance claim stays with your insurer. The Tacoma fire-damage page is that condition.',
+          'If the owner has died, who can sign is a separate question from the mortgage. A Tacoma probate is commonly a Pierce County matter, at the clerk’s office in the County-City Building, not a King County filing in Seattle or Kent. KindKey will not file the probate and will not guess which relative can sign. You can ask for an offer while an attorney answers that. Do not sign a deed before the authority exists. The Tacoma inherited-house page is that file. The Sumner probate guide is the valley city to the east, still a Pierce County filing in the same clerk’s office, and still a different city.',
+        ],
+      },
+      {
+        heading: 'A counselor, a listing, or a direct sale are different paths',
+        paragraphs: [
+          'If you want to keep the house, the counselor and your attorney are the first calls, not a buyer. Reinstatement, a repayment plan, and mediation are their conversation. KindKey will not tell you to skip them. If the house is updated and your attorney says the calendar still allows showings and a financed buyer, a listing can fit. Hire a licensed broker in Pierce County for that path. Commission is negotiated with that broker and is not set by KindKey. KindKey will not run the listing and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive does not add a repair, and it does not add days to the trustee’s clock. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need a relative with a key, or time for an attorney to read the notice, can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase the loan, a tax bill, a utility balance, or a judgment. If the payoff and the other amounts title requires are higher than the price, the lender has to agree before a sale can close. You see those numbers on the settlement statement before you close. The offer reflects the house as it sits, so it can be less than a retail price for a house that is current and repaired. You can say no. The Tacoma foreclosure page is the city situation page for this notice. The Tacoma as-is page is the direct sale.',
+          'A Pierce County property-tax bill is a different account from the mortgage and from a Tacoma Public Utilities bill. KindKey will not calculate the treasurer’s number. The Washington tax-delinquent guide is that sale. Fife, Puyallup, and Lakewood are other Pierce County cities. Kent, Federal Way, and most of Auburn are King County files. If the notice names a different county, follow the notice. Washington’s seller disclosure law is chapter 64.06 RCW. KindKey will not tell you how to mark the form. Answer with what you actually know. Reach out, and KindKey will help you through the whole process from start to finish, from the notice through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I sell my Tacoma house if I am behind on payments?',
+        answer:
+          'You can ask for a cash offer without catching the loan up or repairing the house. Whether a sale can still close depends on the notice, the payoff, and the date. Talk with a Washington attorney. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Does asking KindKey for an offer stop the trustee sale in Tacoma?',
+        answer:
+          'No. A finished sale might pay what title requires if the price and the date work. The request itself does not postpone the trustee, and it does not extend a cure date. KindKey will not call your servicer. This article is not legal advice.',
+      },
+      {
+        question: 'Is a Tacoma foreclosure recorded in King County because KindKey is in Auburn?',
+        answer:
+          'No. A house inside the City of Tacoma is a Pierce County recording. The notice of sale is recorded where the deed of trust is of record. The Pierce County Auditor is at 2401 S. 35th St. in Tacoma. Do not use the King County Recorder in Seattle or Kent for that deed. If the notice names a different county, follow the notice.',
+      },
+      {
+        question: 'What if I also have tenants, a code letter, or a relative who died?',
+        answer:
+          'Say so. KindKey buys the house as it sits and will not make an occupant leave. A City of Tacoma letter is not a trustee notice. Who can sign after a death is a question for a Washington attorney. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. You can still request a cash offer while you get that advice.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/tacoma',
+        label: 'Sell a house in Tacoma',
+        description: 'North End, Proctor, Stadium District, Hilltop, Eastside, and South Tacoma.',
+      },
+      {
+        href: '/areas/tacoma/sell-house-before-foreclosure',
+        label: 'Sell before foreclosure in Tacoma',
+        description: 'The Tacoma situation page. Your notice still controls.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide for a trustee’s notice.',
+      },
+      {
+        href: '/blog/foreclosure-in-pierce-county-washington',
+        label: 'Foreclosure in Pierce County',
+        description: 'Tacoma, Puyallup, Fife, and the rest of the county. Read your notice.',
+      },
+      {
+        href: '/blog/behind-on-mortgage-payments-washington',
+        label: 'Behind on mortgage payments in Washington',
+        description: 'When the cause is a job, a divorce, or medical bills.',
+      },
+      {
+        href: '/blog/notice-of-default-washington',
+        label: 'Notice of default in Washington',
+        description: 'The paper that often comes before a sale notice.',
+      },
+      {
+        href: '/blog/notice-of-trustee-sale-washington',
+        label: 'Notice of trustee sale in Washington',
+        description: 'The sale date and the cure window. Read your notice.',
+      },
+      {
+        href: '/blog/washington-foreclosure-mediation-vs-selling',
+        label: 'Mediation or a sale',
+        description: 'A counselor or an attorney refers you. KindKey does not attend.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Sell before foreclosure in Washington',
+        description: 'What a direct sale can pay at closing, and what it cannot pause.',
+      },
+      {
+        href: '/areas/tacoma/sell-house-as-is',
+        label: 'Sell a house as-is in Tacoma',
+        description: 'Repairs are not a precondition of an offer.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/tacoma/sell-my-house-fast',
+        label: 'Sell my house fast in Tacoma',
+        description: 'One walkthrough and a closing date you help choose.',
+      },
+      {
+        href: '/areas/tacoma/sell-vacant-house',
+        label: 'Vacant houses in Tacoma',
+        description: 'When the house is already empty and hard to watch.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/tacoma/sell-house-with-tenants',
+        label: 'Houses with tenants in Tacoma',
+        description: 'Do not make an occupant leave so the house looks empty.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/tacoma/sell-inherited-probate-house',
+        label: 'Inherited houses in Tacoma',
+        description: 'Who can sign is a separate question from the mortgage.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'Authority to sign, separate from the trustee’s date.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-pierce-county',
+        label: 'Estate houses in Pierce County',
+        description: 'The clerk is at the County-City Building in Tacoma.',
+      },
+      {
+        href: '/areas/tacoma/sell-house-with-code-violations',
+        label: 'Code violations in Tacoma',
+        description: 'A city letter is not a trustee notice.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-tacoma',
+        label: 'Code violations in Tacoma',
+        description: 'The guide for an open City of Tacoma letter.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/areas/tacoma/sell-fire-damaged-house',
+        label: 'Fire-damaged houses in Tacoma',
+        description: 'The claim stays with your insurer.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The statewide page. Tacoma has its own fire page too.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-king-pierce-county',
+        label: 'Fire-damaged houses in King and Pierce County',
+        description: 'When a fire is why the house is hard to show.',
+      },
+      {
+        href: '/areas/tacoma/sell-hoarder-house',
+        label: 'Heavy-repair houses in Tacoma',
+        description: 'Contents and deferred repairs can stay.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A Pierce County tax bill is a different account from the mortgage.',
+      },
+      {
+        href: '/blog/behind-on-payments-fife-wa',
+        label: 'Behind on payments in Fife',
+        description: 'The valley city to the east. A different city, the same county.',
+      },
+      {
+        href: '/areas/fife',
+        label: 'Sell a house in Fife',
+        description: 'Next to the Port of Tacoma, and not the City of Tacoma.',
+      },
+      {
+        href: '/areas/puyallup/sell-house-before-foreclosure',
+        label: 'Sell before foreclosure in Puyallup',
+        description: 'Another Pierce County city with its own page.',
+      },
+      {
+        href: '/areas/puyallup',
+        label: 'Sell a house in Puyallup',
+        description: 'Up the valley. Do not use a Tacoma page for that parcel.',
+      },
+      {
+        href: '/areas/lakewood',
+        label: 'Sell a house in Lakewood',
+        description: 'South of Tacoma. A different city hall.',
+      },
+      {
+        href: '/blog/behind-on-payments-kent-wa',
+        label: 'Behind on payments in Kent',
+        description: 'A King County file. Do not record a Tacoma deed there.',
+      },
+      {
+        href: '/blog/foreclosure-in-king-county-washington',
+        label: 'Foreclosure in King County',
+        description: 'Use this if the notice is Kent or Auburn, not Tacoma.',
+      },
+      {
+        href: '/areas/sumner',
+        label: 'Sell a house in Sumner',
+        description: 'The valley city east of Tacoma. A different city, the same clerk.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-sumner-wa',
+        label: 'Probate houses in Sumner',
+        description: 'When the signer, not the trustee, is the open question.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what the notice says. You do not have to catch up first.',
+      },
+    ],
+    ctaTitle: 'Ask for a Tacoma offer while you are behind, and review it with an attorney',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to catch up the payments before you ask. Asking does not stop a trustee. Talk with a Washington attorney before you sign. You can say no.',
+  }),
+  post('selling-an-inherited-or-probate-house-sumner-wa', {
+    breadcrumbName: 'Probate houses in Sumner',
+    title: 'Selling an Inherited or Probate House in Sumner, WA',
+    description:
+      'How Sumner families sell an inherited valley house in a Pierce County probate. The clerk is in Tacoma, not at Sumner City Hall. Confirm who can sign with an attorney. Not legal advice.',
+    h1: 'Selling an Inherited or Probate House in Sumner, WA',
+    publishedAt: '2026-11-26',
+    intro: [
+      'You sell an inherited Sumner house by confirming who has authority to sign, then transferring the house as it sits. You do not have to empty it, repair it, clear a code case, or finish a permit before you ask for a number. ' +
+        office +
+        ' KindKey is not a probate attorney, a tax advisor, or a real estate agent or broker. This article is not legal or tax advice.',
+      'Sumner is an incorporated city in Pierce County, in the White River and Puyallup River valley, between Auburn, Pacific, Puyallup, and the hill up to Bonney Lake. Downtown Sumner is a small historic grid. East Sumner and the valley edges mix houses with larger lots and shops. Bonney Lake, up State Route 410, is a different city on the plateau. Pacific and Edgewood are separate cities. A mailing city is not the city limit. Bring the address on the tax bill.',
+    ],
+    callout:
+      'You can ask for a number while your attorney confirms who can sign. Do not sign a deed before that authority exists. KindKey buys the house as it sits. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'The court is in Tacoma, not at Sumner City Hall',
+        paragraphs: [
+          'If the decedent lived in the City of Sumner, the residence county is Pierce County. Pierce County probate is opened with the Clerk of the Superior Court at the County-City Building, 930 Tacoma Ave. S., Room 110, Tacoma, WA 98402. The clerk’s phone is (253) 798-7455. The clerk’s page lists the public counter as Monday through Friday, 8:30 a.m. to 4:30 p.m., and phone service as Monday through Friday, 8:30 a.m. to 3:30 p.m. Confirm the hours before you go. KindKey will not file the case or stand in line for you.',
+          'Pierce County’s probate page says a case is needed when the decedent’s assets exceed $100,000 and/or include any real property. A house is real property. Do not assume a small-estate affidavit can take the place of a deed. The same page, for a self-represented filing, lists a petition, an order, the original will if there is one, a notarized oath, one set of copies, and a filing fee of $290 by cash, debit, money order, or cashier’s check. It lists the better hours to file as 8:30 a.m. to 11:00 a.m. and 1:30 p.m. to 3:00 p.m. Confirm the current fee and the current list with the clerk before you go, because both can change. KindKey will not choose the forms. This article is not a set of instructions for filing. Talk with a Washington attorney before you open a case.',
+          'RCW 11.96A.050, in the Washington Trust and Estate Dispute Resolution Act, lets a petitioner begin in a Washington county they select and lets another party ask the court to move the case. If the decedent lived in Sumner, the residence county under that transfer rule is Pierce County. King County Superior Court, in Seattle or at the Maleng Regional Justice Center in Kent, is the wrong residence county for that decedent, even though KindKey’s office is in Auburn and most of Auburn is in King County. A southern slice of Auburn records in Pierce County. That slice is not Sumner. Kitsap County Superior Court in Port Orchard is also the wrong courthouse. The City of Sumner does not appoint a personal representative.',
+          'Sumner City Hall is at 1104 Maple Street, Sumner, WA 98390. The city’s contact page lists the main line as (253) 863-8300. It says the lobby is open for in-person visits Monday through Thursday, 8 a.m. to 5 p.m., and that phone and email service is Monday through Thursday, 7:30 a.m. to 5:30 p.m., and Friday, 7:30 a.m. to noon. The city’s public-records page lists the city clerk at (253) 299-5590. That clerk keeps city records. That office does not open a probate. Sumner Municipal Court is a different desk again. The city’s contact page lists it at the Justice & Municipal Center, 9002 Main St E, Suite 100, Bonney Lake, WA 98391, phone (253) 862-6606. The courtroom is in Bonney Lake. A municipal-court address does not move a Pierce County probate out of Tacoma, and it does not turn a Bonney Lake house into a Sumner house. Confirm the hours before you go. KindKey will not appear in that court.',
+        ],
+      },
+      {
+        heading: 'Letters, a trust, and a deed are not the same signature',
+        paragraphs: [
+          'The closing agent will ask for letters testamentary or letters of administration, and for the order that says whether the personal representative has nonintervention powers. A will may say “executor.” Washington law uses “personal representative” for the appointed person. If the powers were granted, RCW 11.68.090 gives that person authority to sell the decedent’s real property without a further court order, and without following chapter 11.56 RCW, subject to the will and the representative’s duties. The duties include good faith, honest judgment, and the interests of the beneficiaries. The will can restrict the sale. RCW 11.68.011 is the grant statute. If the powers were not granted, a sale may have to follow the court process in chapter 11.56 RCW. KindKey will not read the letters and tell you which path you are on. Your attorney does that. This is not legal advice.',
+          'An agreement among siblings, including siblings in Bonney Lake, Puyallup, Auburn, King County, or another state, is not a substitute for the signature title requires. One heir’s enthusiasm does not create letters. One heir’s objection does not, by itself, rewrite letters that are already in effect. If someone has filed a petition, ask your attorney whether the personal representative may still sign. Do not accept an offer and sign in the middle of that question because a buyer is ready. You can request a written number so the family can see it. Accepting it is a different step.',
+          'Some parents put the house in a living trust. Some recorded a transfer-on-death deed under chapter 64.80 RCW. Those paths are not a probate while the owner is alive, and a transfer-on-death deed is not letters. A Washington attorney, and then the title company, reads the document that is actually on title. KindKey will not interpret the trust. The deed, once the right person can sign, records with the Pierce County Auditor at 2401 S. 35th St., Room 200, Tacoma, WA 98409. The recorded-documents page publishes (253) 798-7440 and lists Monday through Friday, 8:30 a.m. to 4:30 p.m. The auditor’s office page publishes (253) 798-7427 and lists a midday closure from noon to 1:00. Confirm the hours. Do not record a Pierce County deed at the King County Recorder because the family lives in Auburn or Kent.',
+        ],
+      },
+      {
+        heading: 'Downtown, East Sumner, and what you do not have to finish',
+        paragraphs: [
+          'A downtown house close to the street, an East Sumner house, and a valley-edge lot with a shop are different properties. Bonney Lake is up the hill. Puyallup is the next city in the valley. Pacific is its own city. Edgewood sits between Milton, Fife, Puyallup, and Sumner. KindKey will not draw the city limit from a subdivision name or from a Sumner mailing address. The closing agent orders the title report. You do not have to empty the rooms, mow the lot to a listing standard, or fly home for showings before KindKey looks. Take what the family wants. Leave the rest. If a relative still lives in the house, do not force that person out so the house looks vacant. Occupancy belongs with your attorney.',
+          'You also do not need a building permit before the visit. The city’s Development Services line, published on the contact page, is (253) 299-5530. That visit is for an owner who chooses to permit work and keep the house. KindKey does not require it and will not pull a permit. If the letterhead is Pierce County rather than the City of Sumner, the parcel may be outside the limits even when the mailing city says Sumner. Read the header. The Sumner code-violations page is a city letter. KindKey will not match your letter to an ordinance.',
+          'If someone still lives there under a rental agreement, say so. Chapter 59.18 RCW is Washington’s Residential Landlord-Tenant Act. Selling the house does not, by itself, end a tenancy. KindKey will not serve a notice and will not tell you that it does. The Sumner tenants page is that file. If the house has been empty since the funeral, the Sumner vacant-house page is the maintenance question. This page is about who can sign. Furniture, a shop, and deferred repairs can stay. The Sumner heavy-repair page is that condition. The White River and the Puyallup River are the valley. A floodplain, standing water, or a drainage question is a disclosure fact, not a diagnosis KindKey will make. On the seller disclosure in RCW 64.06.020, question 7.A asks about flooding, standing water, or drainage problems, and question 7.D asks whether there are shorelines, wetlands, floodplains, or critical areas. KindKey will not tell you how to mark them, whether an exemption applies, or what a prior owner should have disclosed. Ask a Washington real estate attorney if you are unsure. Answer with what you actually know.',
+        ],
+      },
+      {
+        heading: 'A loan, a tax bill, and a direct sale',
+        paragraphs: [
+          'If the estate is also behind on the mortgage, there are two clocks: the court file and the lender’s notice. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and does not claim an estate sale is exempt. KindKey will not take a deed outside escrow. Sumner does not have a separate foreclosure page on this site. The Pierce County foreclosure guide and the statewide foreclosure guide are that notice. A Pierce County property-tax bill is a different account from a mortgage and from a city utility. KindKey will not calculate the Assessor-Treasurer’s number and will not give tax advice about basis or a gain. Take those questions to a tax professional. The Washington tax-delinquent guide is that bill.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn, a short drive from the valley. KindKey does not promise a specific number of days. Heirs who already live somewhere else often want a shorter window. A family that still needs to take belongings can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, or a lien. The offer reflects the house as it sits, so it can be less than a retail price for a repaired, empty house. You see the payoffs on the settlement statement before you close. You can say no. Sign only after your attorney says the signer is clear. The Sumner inherited-house page is the city situation page. The Sumner as-is page is the direct sale.',
+          'A listing can fit a valley house that is in good condition if the person with authority can cooperate on showings and a broker will take it. Hire a licensed broker in Pierce County. Commission is negotiated with that broker and is not set by KindKey. KindKey will not run the listing and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. The comparison of an estate sale and an as-is house sale is the belongings question. KindKey buys the house. KindKey does not run a tag sale. If a fire is why the house is hard to show, say what burned. East Pierce Fire & Rescue’s stations page lists Sumner among the communities it serves and lists Station 113 at 800 Harrison St., Sumner, WA 98390. KindKey is not the fire department and does not interpret a run report. The insurance claim stays with your insurer. Sumner does not have a separate fire page on this site. The statewide fire-damage page is that condition.',
+          'A Bonney Lake house on the plateau, a Puyallup house, an Edgewood house, and an Auburn house are different cities. An Auburn probate can be King County or Pierce County. A Tacoma house uses the same Pierce County clerk and is still not Sumner. A Port Orchard, Bremerton, Silverdale, or Poulsbo house is a Kitsap County probate, filed in Port Orchard, not in Tacoma. Do not use this Sumner page for those files. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the house through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Where is a Sumner probate filed?',
+        answer:
+          'If the decedent lived in Sumner, Pierce County is the residence county. Filings go to the Clerk of the Superior Court at 930 Tacoma Ave. S., Room 110, Tacoma, phone (253) 798-7455. Sumner City Hall does not open the estate. Ask a Washington attorney before you file. KindKey will not file.',
+      },
+      {
+        question: 'Can the family sell before probate is finished?',
+        answer:
+          'Sometimes, if the personal representative can sign and any court step your attorney identifies is done. With nonintervention powers, RCW 11.68.090 allows a sale of real property without a further court order, subject to the will and the representative’s duties. Without those powers, chapter 11.56 RCW may apply. This is not legal advice. Call (206) 519-5463 or use the cash-offer form if you want a number to review. Do not sign before the authority exists.',
+      },
+      {
+        question: 'Do heirs have to empty the house or close a code case first?',
+        answer:
+          'No. Belongings can stay. An open City of Sumner letter does not have to be finished before KindKey looks. The city still controls its case. You can say no after you see the offer.',
+      },
+      {
+        question: 'What if a foreclosure notice arrived while the estate is open?',
+        answer:
+          'Talk with a Washington attorney before you sign. Asking for an offer does not postpone a trustee. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. Sumner does not have a separate foreclosure page on this site. You can still request a cash offer while you get that advice. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/sumner',
+        label: 'Sell a house in Sumner',
+        description: 'Downtown, East Sumner, and the valley edge.',
+      },
+      {
+        href: '/areas/sumner/sell-inherited-probate-house',
+        label: 'Inherited houses in Sumner',
+        description: 'The Sumner probate sale page.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'The Washington overview for estate sales.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-pierce-county',
+        label: 'Estate houses in Pierce County',
+        description: 'The Tacoma clerk, letters, and nonintervention powers.',
+      },
+      {
+        href: '/blog/how-to-sell-an-estate-house-in-washington',
+        label: 'How to sell an estate house in Washington',
+        description: 'The step-by-step guide for the person who can sign.',
+      },
+      {
+        href: '/blog/selling-a-house-in-probate-washington',
+        label: 'Probate sales in Washington',
+        description: 'What to expect before anyone signs a deed.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-when-heirs-disagree',
+        label: 'When heirs disagree',
+        description: 'An objection is not the same thing as authority to sign.',
+      },
+      {
+        href: '/blog/estate-sale-vs-selling-the-house-as-is',
+        label: 'Estate sale versus selling the house as-is',
+        description: 'Belongings can stay. KindKey does not run a tag sale.',
+      },
+      {
+        href: '/blog/estate-house-repairs-mortgage-taxes-liens',
+        label: 'Repairs, a mortgage, taxes, or liens',
+        description: 'Those amounts show on the settlement statement.',
+      },
+      {
+        href: '/areas/sumner/sell-house-as-is',
+        label: 'Sell a house as-is in Sumner',
+        description: 'The repair list does not have to be finished first.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/sumner/sell-my-house-fast',
+        label: 'Sell my house fast in Sumner',
+        description: 'A direct sale once the signer is clear.',
+      },
+      {
+        href: '/areas/sumner/sell-vacant-house',
+        label: 'Vacant houses in Sumner',
+        description: 'When the house has been empty since the funeral.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/sumner/sell-house-with-tenants',
+        label: 'Houses with tenants in Sumner',
+        description: 'Do not make an occupant leave so the house looks vacant.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/sumner/sell-house-with-code-violations',
+        label: 'Code violations in Sumner',
+        description: 'A city letter is a different file from the probate.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-sumner-wa',
+        label: 'Code violations in Sumner',
+        description: 'The guide for an open City of Sumner letter.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/areas/sumner/sell-hoarder-house',
+        label: 'Heavy-repair houses in Sumner',
+        description: 'Contents, a shop, and deferred work can stay.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'The overview for houses that need more than a cleaning.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Sumner has no separate foreclosure page.',
+      },
+      {
+        href: '/blog/foreclosure-in-pierce-county-washington',
+        label: 'Foreclosure in Pierce County',
+        description: 'A trustee’s notice is a different clock from the court file.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Selling before foreclosure in Washington',
+        description: 'Talk with an attorney about RCW 61.34 before you sign.',
+      },
+      {
+        href: '/blog/behind-on-payments-tacoma-wa',
+        label: 'Behind on payments in Tacoma',
+        description: 'The same county clerk, and a different city’s notice.',
+      },
+      {
+        href: '/areas/tacoma/sell-house-before-foreclosure',
+        label: 'Sell before foreclosure in Tacoma',
+        description: 'Tacoma has a city page. Sumner does not.',
+      },
+      {
+        href: '/areas/tacoma',
+        label: 'Sell a house in Tacoma',
+        description: 'Where the clerk sits. Not a Sumner neighborhood.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A Pierce County tax bill is a different account from the mortgage.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'Sumner has no separate fire page. The claim stays with your insurer.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-king-pierce-county',
+        label: 'Fire-damaged houses in King and Pierce County',
+        description: 'When a fire is why the house is hard to show.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-bonney-lake-wa',
+        label: 'Probate houses in Bonney Lake',
+        description: 'The plateau city up SR-410. A different city, the same clerk.',
+      },
+      {
+        href: '/areas/bonney-lake',
+        label: 'Sell a house in Bonney Lake',
+        description: 'Up the hill from Sumner. Do not mix the parcels.',
+      },
+      {
+        href: '/areas/puyallup',
+        label: 'Sell a house in Puyallup',
+        description: 'The next city in the valley. Confirm the parcel.',
+      },
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'The Pierce County city between Milton, Fife, Puyallup, and Sumner.',
+      },
+      {
+        href: '/areas/auburn',
+        label: 'Sell a house in Auburn',
+        description: 'KindKey’s office city. Most of Auburn is in King County.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-auburn',
+        label: 'Inherited houses in Auburn',
+        description: 'The neighboring city. Confirm which county the decedent lived in.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-in-king-county',
+        label: 'Estate houses in King County',
+        description: 'The other courthouse, if the decedent did not live in Pierce County.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-bremerton',
+        label: 'Probate houses in Bremerton',
+        description: 'A Kitsap County filing in Port Orchard, not in Tacoma.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Ask while your attorney confirms who can sign. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for a Sumner number once you know who can sign',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. Your attorney confirms authority. You do not have to empty the house first. You can say no.',
+  }),
 ];
