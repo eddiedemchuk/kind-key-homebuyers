@@ -10231,4 +10231,491 @@ export const expansionBlogPosts: BlogPost[] = [
     ctaSubtitle:
       'Call (206) 519-5463 or use the cash-offer form. Your attorney confirms authority. You do not have to empty the house first. You can say no.',
   }),
+  post('sell-hoarder-house-silverdale-wa', {
+    breadcrumbName: 'Heavy-repair houses in Silverdale',
+    title: 'Selling a Hoarder or Heavy-Repair House in Silverdale, WA',
+    description:
+      'How Silverdale owners sell a house full of belongings, a failed roof, or a yard of parts without cleaning it out first. Kitsap County writes the notice. KindKey buys as a principal. Not legal advice.',
+    h1: 'Selling a Hoarder or Heavy-Repair House in Silverdale, WA',
+    publishedAt: '2026-11-27',
+    intro: [
+      'You can sell a Silverdale house that is full of belongings, has a failed roof, or has a yard of parts and vehicles, without emptying it, hauling the yard, or pulling a permit first. ' +
+        office +
+        ' KindKey is not code compliance, a hauler, or a real estate agent or broker. This article is not legal advice.',
+      'Silverdale is an unincorporated community in Central Kitsap. There is no City of Silverdale and no city hall. Old Town, the Bucklin Hill and Kitsap Mall area, Ridgetop, and Clear Creek are local names. Dyes Inlet is the water. A heavy-repair house there is a Kitsap County file. Bremerton, to the south, and Poulsbo, to the north, are incorporated cities with their own codes. Chico is nearby and is not a Silverdale neighborhood. A Silverdale or 98383 mailing address is not the boundary. Some Central Kitsap houses use a Bremerton mailing address. Bring the address on the tax bill.',
+    ],
+    callout:
+      'You do not have to clean the house out, tow the vehicles, or finish the county’s list before you ask. KindKey buys the house as it sits. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'There is no City of Silverdale to write the letter',
+        paragraphs: [
+          'A building or nuisance letter for a Silverdale house comes from Kitsap County, because the community is unincorporated. The Department of Community Development publishes its office at 619 Division Street, 2nd Floor, Port Orchard, WA 98366, the line (360) 337-5777, and help@kitsap1.com. The contact page lists lobby hours of Monday through Friday, 9 a.m. to noon, and says Friday is limited service, without reviewers. It lists code compliance as walk-in only, Tuesday through Thursday. The mailing address on that page is 619 Division Street, MS-36. KindKey will not meet a reviewer, pull a permit, or stand in that lobby for you. You do not need the visit before KindKey looks.',
+          'The county’s Kitsap Nuisance Abatement Team page points readers at chapter 9.56 of the Kitsap County Code. The examples on that page include trash and junk outside approved receptacles, inoperable vehicles in public view, and dilapidated buildings. A code-compliance FAQ, revised October 2, 2026, says most actions start when someone makes a complaint, and that county staff may also refer a condition. The same FAQ describes three priority levels and prints goal timelines: as soon as possible when lives or property are in imminent danger or the environment faces irreparable harm; two weeks for a code violation without an immediate fire, life-safety, structural, or environmental hazard; and one month for other complaints. Those are the county’s goals. KindKey will not assign your house to a level, and KindKey will not tell you a goal replaced the date printed on a notice. If nobody is at the house to meet an inspector, say that when you call KindKey. Photos of the rooms, the yard, the shop, and any posting are enough to start. If you do not believe a floor or a roof is safe, say so. An exterior look can begin the conversation. Do not go inside a structure that is not safe just to satisfy a buyer.',
+          'Poulsbo’s nuisance chapter is PMC 9.50. Bremerton and Port Orchard have their own chapters. Do not answer a Kitsap County notice with a city code, and do not answer a Poulsbo letter with chapter 9.56. The Poulsbo code guide is that city’s letter. The Kitsap vacant-house guide separates the county from Port Orchard, Bremerton, and Poulsbo. Edgewood is entirely in Pierce County. East Pierce Fire & Rescue covers Edgewood. It does not cover Silverdale. Central Kitsap Fire and Rescue publishes Station 51 at 10955 Silverdale Way NW and Station 52 at 5328 NW Anderson Hill Rd NW, both in Silverdale, and its administration building at 5300 NW Newberry Hill Road, Suite 101, Silverdale, WA 98383, phone (360) 447-3550. That department points fire-code questions to the Kitsap County fire marshal. KindKey is not the fire department and does not interpret a run report. A fire-damaged Silverdale house has its own guide. Deeds record with the Kitsap County Auditor in Port Orchard. The auditor’s mailing address is 614 Division St., MS-31, Port Orchard, WA 98366. The physical address the auditor publishes is 619 Division St. Recording’s published phone is (360) 337-4935, and the published hours are Monday through Friday, 8:00 a.m. to 4:30 p.m. Confirm the hours. Do not record a Kitsap deed at the Pierce County Auditor in Tacoma because KindKey’s office is in Auburn.',
+        ],
+      },
+      {
+        heading: 'What the county’s nuisance list is actually describing',
+        paragraphs: [
+          'KCC 9.56.010 says the chapter provides for abatement where premises, structures, vehicles, or portions of them are unfit for human habitation or other uses because of dilapidation, disrepair, structural defects, defects that increase the hazards of fire, accidents, or other calamities, inadequate ventilation and uncleanliness, inadequate light or sanitary facilities, inadequate drainage, or other conditions inimical to the health and welfare of county residents. KindKey will not decide that your house meets that sentence. KCC 9.56.020(10)(b)(i) lists visible accumulations as a nuisance: trash, junk, litter, discarded lumber, building materials that are not properly stored or neatly piled, tires, mattresses or bedding, broken or discarded furniture, old appliances or parts, scrap metal, yard waste, and similar materials, except what is kept in garbage cans or containers maintained for regular collection. The same subsection says it does not prevent temporary retention of waste in approved, covered receptacles. A house you can still walk through, with rooms full of a parent’s belongings, is not a conclusion KindKey will draw. The director decides whether the chapter applies. KindKey will not.',
+          'KCC 9.56.020(10)(b)(ii) lists dangerous structures, including a dangerous, decaying, unkempt, falling, or damaged dwelling or other structure. A failed roof, a soft floor, an open wall, and a shop that has started to lean are different facts. Tell KindKey which one you have. KCC 9.56.020(9) defines a junk motor vehicle as a vehicle that meets at least three of four tests: it is three years old or older, it is extensively damaged, it is apparently inoperable, or its value is about the scrap in it. A vehicle stored entirely inside a building, in a lawful manner, where it is not visible from the street or from other property, is outside that definition. KCC 9.56.020(3) says a building, for this chapter, is a legally constructed structure with at least three sides and a roof. KindKey will not decide that a carport, a tarp shed, or a shop meets that sentence.',
+          'KCC 9.56.020(10)(b)(iii) is the outdoor-vehicle rule, with one exception. A property may store up to six junk motor vehicles outside a permitted building only if they are completely screened, to the director’s satisfaction, by a sight-obscuring fence or natural vegetation, or if they are more than 250 feet from all property lines. KCC 9.56.020(17) says screened means not visible from any portion or elevation of neighboring property, an easement, or a right-of-way. The same vehicle subsection says a tarp is not an acceptable visual barrier. The owner must also enter an environmental mitigation agreement under KCC 9.56.070. That section prints a one-time fee of $10 per vehicle and requires a preventative step the section describes, plus an initial inspection and later re-inspection. A vehicle stored outside without that agreement is a nuisance under the chapter. KindKey will not measure the 250 feet, will not tell you a fence qualifies, and will not sign the agreement. You do not have to tow anything before KindKey looks. KCC 9.56.020(10)(b)(v) lists attractive nuisances left where children can reach them, including unused refrigerators or freezers, unsound fences, and unsecured excavations, pits, wells, cisterns, or tanks. An old well and a pile of appliances are different facts. KindKey will not pick the subsection.',
+        ],
+      },
+      {
+        heading: 'A voluntary agreement, a notice, and a lien are different papers',
+        paragraphs: [
+          'KCC 9.56.030 says that when the director determines a violation has occurred or is occurring, the director shall attempt to secure voluntary correction. A person may enter a voluntary correction agreement. The section says that by entering it, the person waives the right to a hearing before the violations hearing examiner on the alleged violation and the required correction. It also says the county may abate and recover costs if the terms are not met, and it points the penalty at KCC 9.56.040(5) and the costs at KCC 9.56.060, including costs allowed by RCW 35.80.030. KindKey will not tell you to sign that agreement or to refuse it. KindKey does not interpret RCW 35.80.030. If the paper asks you to waive a hearing, talk with a Washington attorney before you sign it. Asking for a cash offer does not extend the date in the agreement.',
+          'KCC 9.56.035 says that, absent an immediate threat to public health, safety, welfare, or the environment, the county should use this abatement chapter only after it has tried the civil-infraction process in Title 17 and chapter 2.116. KindKey will not tell you that a missing infraction makes a later notice void. Read the paper you were served. KCC 9.56.040 lets the director issue a notice of abatement when voluntary correction has not been secured, and it lists cases where the director may issue that notice without the voluntary-correction attempt, including an emergency, a repeat violation, and a person who cannot be contacted. The notice includes the correction and a date, and it includes a hearing before the violations hearing examiner at least 20 days and no more than 60 days from the date of the notice, unless continued for good cause. KCC 9.56.040(5) states a monetary penalty of $250 per day, or portion of a day, for each violation. KCC 9.56.040(6) says paying the penalty does not relieve the duty to correct. KCC 9.56.040(7) says the penalty is a personal obligation, that it is due within 10 calendar days of the mailing of the examiner’s decision or of a default order, and that it is also a lien under KCC 9.56.060(6). KindKey will not count those days, appear at the hearing, or calculate the invoice. A code can be amended. Read the schedule printed on the notice.',
+          'KCC 9.56.050 says the examiner may assess the penalty from the notice date, from the correction date, at a lower amount, or at no penalty, using the factors in that section. It also says the examiner may double the schedule for a repeat violation. KCC 9.56.020(14) defines a repeat as the same regulation, by the same person, within the immediately preceding 12 months, after voluntary compliance was sought or a notice was issued. If the examiner affirms the notice, KCC 9.56.050(7) gives 30 days to correct before the county may abate and bill the costs. KCC 9.56.050(8) says a person with standing under chapter 36.70C RCW may seek review in superior court. That petition is a lawyer’s work. KindKey will not prepare it. KCC 9.56.110 says a person may appear or be represented by counsel. Do not skip a hearing because a buyer is looking at the house. KCC 9.56.060(6) gives the county a lien for the penalty, the abatement costs, and related costs. The lien runs with the land. It is subordinate to previously existing special-assessment liens and on a parity with state and county taxes. The claim is filed within 90 days from the later of the date the penalty is due, the work is completed, or the nuisance is abated. KindKey does not promise that a Kitsap County penalty or lien disappears when you sign. Amounts that must be paid can reduce proceeds the same way a mortgage payoff can. The settlement statement, prepared by the closing agent, is where you see them. Until the deed records, deadlines on the notice are still yours. KCC 9.56.020(13) defines the person responsible as any person who has an interest in the property or resides there, whether as owner, tenant, occupant, or otherwise. KindKey will not tell you who the county can cite.',
+        ],
+      },
+      {
+        heading: 'Empty it and list it, or sell the house as it sits',
+        paragraphs: [
+          'Cleaning a house out, towing the vehicles, and repairing the roof can fit if you want to keep it and the work is actually small. It is a poor fit when the contents fill the rooms, the shop is part of the problem, or you already live in King County, Pierce County, or another state. A listing still means showings and a buyer who may ask for the house to be emptied before a lender will close. Washington’s seller disclosure law is chapter 64.06 RCW. The form asks about the property’s condition and about work and permits. KindKey will not tell you how to mark it or whether an exemption applies. Answer with what you actually know. Ask a Washington real estate attorney if you are unsure. Hire a licensed broker in Kitsap County if you want the listing. KindKey will not run it and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The ferry and the Tacoma Narrows do not add a clean-out. KindKey does not promise a specific number of days. Owners who already live somewhere else often want a shorter window. Owners who still need to take photographs, papers, or particular belongings can ask for longer. Furniture, tools, and vehicles you do not want can stay. Take what you want to keep before the date you agree to. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a Kitsap County tax bill, a code penalty, or a lien. The offer reflects the house as it sits, including what you leave, so it can be less than a retail price for a cleaned and repaired house. You see the payoffs on the settlement statement before you close. You can say no.',
+          'If someone still lives there, say so. Do not force that person out so the house looks empty. A tenant’s rights come from the rental agreement and from Washington law, including chapter 59.18 RCW. KindKey will not serve a notice and will not tell you that a sale cancels a lease. The Silverdale tenants page is that file. If the owner has died, who can sign is a probate question. A person who lived in Silverdale lived in Kitsap County. The superior court sits in Port Orchard, not in a Silverdale city hall that does not exist, and not in Tacoma. KindKey will not file the probate and will not guess which relative can sign. Do not sign a deed before that authority exists. The Silverdale inherited-house page is the local page. The Bremerton and Kitsap probate guide is the county writeup. If a trustee’s notice is in the same stack as the county letter, you have two clocks. Asking for an offer does not postpone the trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. Silverdale does not have a separate foreclosure page on this site. The Kitsap foreclosure guide and the statewide foreclosure guide are that notice. A Kitsap County property-tax bill is a different account from a county penalty. The Washington tax-delinquent guide is the treasurer’s sale. KindKey will not calculate either number.',
+          'Some older and outlying Silverdale lots use a septic system. Some are on public sewer. The name Silverdale does not decide which. On-site sewage questions go to the Kitsap Public Health District at 345 6th Street, Suite 300, Bremerton, WA 98337, phone (360) 728-2235. You do not have to pump, repair, or certify a system before an offer. KindKey does not inspect or certify a septic system or a well. The Kitsap septic guide is that letter. Water in a crawlspace, a stained ceiling, or a smell you have not tested is a condition to describe, not a diagnosis KindKey will make. Say what you see. If a fire is why the house is full of debris or why a room is open, say what burned. The insurance claim stays with your insurer. The Silverdale fire guide is that condition. An Old Town house, a Clear Creek house, a Ridgetop house, and a house nearer Bucklin Hill are different properties. Poulsbo, Bremerton, and Port Orchard are different places. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the house through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do I have to clean out a Silverdale house before KindKey will look?',
+        answer:
+          'No. Belongings, shop contents, and vehicles you do not want can stay. You do not need a dumpster, a permit, or a finished repair first. If the house is not safe to enter, say so. Call (206) 519-5463 or use the cash-offer form. You can say no.',
+      },
+      {
+        question: 'Who writes a junk or heavy-repair letter in Silverdale?',
+        answer:
+          'Kitsap County, because Silverdale is unincorporated. The Department of Community Development is at 619 Division Street in Port Orchard, phone (360) 337-5777. Code compliance walk-ins on that contact page are Tuesday through Thursday. Poulsbo, Bremerton, and Port Orchard are different codes. KindKey will not call the county for you.',
+      },
+      {
+        question: 'Does the $250-a-day penalty disappear when I sell?',
+        answer:
+          'Do not assume that. KCC 9.56.040(5) states $250 per day, or portion of a day, for each violation. KCC 9.56.040(6) says payment does not relieve the duty to correct. KCC 9.56.060(6) describes a county lien. Amounts that must be paid show on the settlement statement. KindKey does not negotiate the citation. Read the notice. A code can be amended.',
+      },
+      {
+        question:
+          'A tenant, a probate, or a foreclosure notice is also in the file. Can I still ask?',
+        answer:
+          'Yes. Do not make an occupant leave so the house looks empty. A sale does not end a tenancy by itself. Do not sign a deed before a Washington attorney confirms who can sign. If a foreclosure notice is in the file, talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute. Silverdale does not have a separate foreclosure page on this site. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/silverdale/sell-hoarder-house',
+        label: 'Heavy-repair houses in Silverdale',
+        description: 'The Silverdale page for contents and deferred repairs.',
+      },
+      {
+        href: '/areas/silverdale',
+        label: 'Sell a house in Silverdale',
+        description: 'Unincorporated Central Kitsap. Old Town, Ridgetop, and Clear Creek.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'The Washington overview. Contents can stay.',
+      },
+      {
+        href: '/areas/silverdale/sell-house-as-is',
+        label: 'Sell a Silverdale house as-is',
+        description: 'The clean-out does not have to be finished first.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/silverdale/sell-vacant-house',
+        label: 'Vacant houses in Silverdale',
+        description: 'When nobody has lived there while the contents piled up.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/blog/selling-a-vacant-house-kitsap-county',
+        label: 'Vacant houses in Kitsap County',
+        description: 'How the county’s chapter 9.56 differs from the cities.',
+      },
+      {
+        href: '/areas/silverdale/sell-house-with-code-violations',
+        label: 'Code violations in Silverdale',
+        description: 'When Kitsap County has already opened a case.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-washington',
+        label: 'Code violations in Washington',
+        description: 'When the notice is not only a Kitsap County letter.',
+      },
+      {
+        href: '/areas/silverdale/sell-house-with-tenants',
+        label: 'Tenants in Silverdale',
+        description: 'Do not make an occupant leave so the house looks empty.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/silverdale/sell-inherited-probate-house',
+        label: 'Inherited houses in Silverdale',
+        description: 'When the person who can sign is a probate question.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'The Washington overview for estate sales.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-bremerton',
+        label: 'Probate in Bremerton and Kitsap County',
+        description: 'The court sits in Port Orchard. Ask an attorney who can sign.',
+      },
+      {
+        href: '/areas/silverdale/sell-my-house-fast',
+        label: 'Sell my house fast in Silverdale',
+        description: 'One walkthrough and a closing date you help choose.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Silverdale has no separate foreclosure page.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-kitsap-county',
+        label: 'Foreclosure in Kitsap County',
+        description: 'A trustee’s notice is a different clock from a county letter.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Selling before foreclosure in Washington',
+        description: 'Talk with an attorney about RCW 61.34 before you sign.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A Kitsap County tax bill is a different account from a penalty.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-kitsap-county',
+        label: 'Septic or well issues in Kitsap County',
+        description: 'When the letter is from the health district.',
+      },
+      {
+        href: '/blog/sell-fire-damaged-house-silverdale-wa',
+        label: 'Fire damage in Silverdale',
+        description: 'Central Kitsap Fire and Rescue. The claim stays with your insurer.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'The Washington overview. Silverdale has no separate fire page.',
+      },
+      {
+        href: '/areas/poulsbo',
+        label: 'Sell a house in Poulsbo',
+        description: 'The incorporated city to the north. A different code.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-poulsbo-wa',
+        label: 'Code violations in Poulsbo',
+        description: 'PMC 9.50, not Kitsap County chapter 9.56.',
+      },
+      {
+        href: '/areas/bremerton',
+        label: 'Sell a house in Bremerton',
+        description: 'The incorporated city to the south.',
+      },
+      {
+        href: '/areas/port-orchard',
+        label: 'Sell a house in Port Orchard',
+        description: 'The county seat, where the permit counter sits.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Say what is in the house. You do not have to empty it first.',
+      },
+    ],
+    ctaTitle: 'Ask for a Silverdale offer with the contents left as they are',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. You do not have to clean the house out or finish a county list first. You can say no.',
+  }),
+  post('selling-an-inherited-or-probate-house-poulsbo-wa', {
+    breadcrumbName: 'Probate houses in Poulsbo',
+    title: 'Selling an Inherited or Probate House in Poulsbo, WA',
+    description:
+      'How Poulsbo families sell an inherited house in a Kitsap County probate. The clerk is in Port Orchard, not at Poulsbo City Hall. Confirm who can sign with an attorney. Not legal advice.',
+    h1: 'Selling an Inherited or Probate House in Poulsbo, WA',
+    publishedAt: '2026-11-27',
+    intro: [
+      'You sell an inherited Poulsbo house by confirming who has authority to sign, then transferring the house as it sits. You do not have to empty it, repair it, clear a city notice, or finish a permit before you ask for a number. ' +
+        office +
+        ' KindKey is not a probate attorney, a tax advisor, or a real estate agent or broker. This article is not legal or tax advice.',
+      'Poulsbo is an incorporated city in North Kitsap, on Liberty Bay. Downtown along Front Street, Viking Avenue, Noll Road, and the Olhava area are not the same house. Kingston and the Kingston ferry are nearby and are not the city. A 98370 mailing address is not proof the parcel is inside Poulsbo. The city’s planning page says that zip code extends beyond the city limits. Silverdale, to the south, is unincorporated. Bainbridge Island is a different city. Bring the address on the tax bill.',
+    ],
+    callout:
+      'You can ask for a number while your attorney confirms who can sign. Do not sign a deed before that authority exists. KindKey buys the house as it sits. You can say no after you see the offer.',
+    sections: [
+      {
+        heading: 'The court is in Port Orchard, not at Poulsbo City Hall',
+        paragraphs: [
+          'If the decedent lived in the City of Poulsbo, the residence county is Kitsap County. Kitsap County probate is opened with the Kitsap County Clerk at 614 Division Street, Room 202, Port Orchard, WA 98366. The clerk’s phone is (360) 337-7164. The clerk’s page lists hours of Monday through Friday, 8:00 a.m. to 12:15 p.m. and 1:15 p.m. to 4:30 p.m., and says the office is closed for lunch from 12:15 to 1:15. The mailing address on that page is 614 Division Street, MS-34, Port Orchard, WA 98366. Confirm the hours before you go. KindKey will not file the case or stand in line for you.',
+          'The clerk’s probate page prints ex parte court as Monday through Friday at 8:30 a.m., and also Monday, Thursday, and Friday at 3:30 p.m. It asks you to arrive 20 minutes prior, at room 202, with the papers it lists and the filing fee. The page states a $290 filing fee, payable by cash, credit card, money order, or cashier’s check, and it says personal checks are not accepted. It says credit-card payments include a 2.4 percent processing fee. It says certified copies of letters are $5 each, and that the clerk’s office does not have a notary on site. An older probate PDF on the same site has printed a $240 fee. Use the current page, and confirm the fee and the calendar with the clerk before you go, because both can change. The page lists a case cover sheet, a petition, the original will if there is one, an order, a notarized oath, and letters, and it says the judge may require more. It says the page is only a guide and to consult an attorney. KindKey will not choose the forms. This article is not a set of instructions for filing. Talk with a Washington attorney before you open a case.',
+          'Do not assume a small-estate affidavit can stand in for a deed to a Poulsbo house. A house is real property. The clerk’s page points readers to outside sites for small-estate information and still says to consult an attorney. KindKey will not tell you whether an affidavit fits. RCW 11.96A.050, in the Washington Trust and Estate Dispute Resolution Act, lets a petitioner begin in a Washington county they select and lets another party ask the court to move the case. If the decedent lived in Poulsbo, the residence county under that transfer rule is Kitsap County. King County Superior Court, in Seattle or at the Maleng Regional Justice Center in Kent, is the wrong residence county, even if the family takes the ferry. Pierce County Superior Court in Tacoma is also the wrong courthouse. A Washington attorney decides where to file. KindKey will not.',
+          'Poulsbo City Hall is at 200 NE Moe Street, Poulsbo, WA 98370. The mayor’s office page publishes (360) 779-3901 at that building. The city’s contact page lists the city clerk at (360) 394-9880. That clerk keeps city records. That office does not open a probate. The same contact page lists Poulsbo Municipal Court at (360) 779-9846. Municipal court is a city court. It is not Kitsap County Superior Court, and it does not appoint a personal representative. If the decedent lived in Kingston, Keyport, Port Gamble, or Silverdale, the residence county can still be Kitsap County, and the clerk is still in Port Orchard, but the house is not a City of Poulsbo parcel. Your attorney confirms the residence. KindKey will not pick it from a zip code.',
+        ],
+      },
+      {
+        heading: 'Letters, a trust, and a deed are not the same signature',
+        paragraphs: [
+          'The closing agent will ask for letters testamentary or letters of administration, and for the order that says whether the personal representative has nonintervention powers. A will may say “executor.” Washington law uses “personal representative” for the appointed person. If the powers were granted, RCW 11.68.090 gives that person authority to sell the decedent’s real property without a further court order, and without following chapter 11.56 RCW, subject to the will and the representative’s duties. The duties include good faith, honest judgment, and the interests of the beneficiaries. The will can restrict the sale. RCW 11.68.011 is the grant statute. If the powers were not granted, a sale may have to follow the court process in chapter 11.56 RCW. KindKey will not read the letters and tell you which path you are on. Your attorney does that. This is not legal advice.',
+          'An agreement among siblings, including siblings in Silverdale, Bremerton, Kingston, King County, or another state, is not a substitute for the signature title requires. One heir’s enthusiasm does not create letters. One heir’s objection does not, by itself, rewrite letters that are already in effect. If someone has filed a petition, ask your attorney whether the personal representative may still sign. Do not accept an offer and sign in the middle of that question because a buyer is ready. You can request a written number so the family can see it. Accepting it is a different step.',
+          'Some parents put the house in a living trust. Some recorded a transfer-on-death deed under chapter 64.80 RCW. Those paths are not a probate while the owner is alive, and a transfer-on-death deed is not letters. A Washington attorney, and then the title company, reads the document that is actually on title. KindKey will not interpret the trust. The Kitsap County Treasurer’s deceased-party brochure says a deceased party cannot convey property and therefore cannot be a grantor or a grantee on a deed, and it tells you to get legal advice before you record a transfer. The brochure publishes the real estate excise group at 614 Division St., MS-32, Port Orchard, WA 98366, phone (360) 337-7135. Confirm the number. Updating a tax account is not a deed. The deed, once the right person can sign, records with the Kitsap County Auditor. The auditor’s mailing address is 614 Division St., MS-31, Port Orchard, WA 98366. The physical address the auditor publishes is 619 Division St. Recording’s published phone is (360) 337-4935, and the published hours are Monday through Friday, 8:00 a.m. to 4:30 p.m. Confirm the hours. Do not record a Kitsap deed at the Pierce County Auditor in Tacoma, or at Poulsbo City Hall, because the buyer is based in Auburn.',
+        ],
+      },
+      {
+        heading: 'Front Street, Viking Avenue, and what you do not have to finish',
+        paragraphs: [
+          'A downtown house near Front Street, a house along Viking Avenue, a house on Noll Road, and a newer house in the Olhava area are different properties. Liberty Bay is the water. Not every Poulsbo house is on the water. Kingston is not a Poulsbo neighborhood. Silverdale is south and has no city hall. Bainbridge Island is across the water and is its own city. KindKey will not draw the city limit from a subdivision name or from a 98370 mailing address. The closing agent orders the title report. You do not have to empty the rooms, mow to a listing standard, or take the ferry for a string of showings before KindKey looks. Take what the family wants. Leave the rest. If a relative still lives in the house, do not force that person out so the house looks vacant. Occupancy belongs with your attorney.',
+          'You also do not need a building permit before the visit. The building department is on the second floor of City Hall at 200 NE Moe Street, and it publishes (360) 394-9882. Planning and Economic Development publishes (360) 394-9748 in the same building. That visit is for an owner who chooses to permit work and keep the house. KindKey does not require it and will not pull a permit. If the letterhead is Kitsap County rather than the City of Poulsbo, the parcel may be outside the limits even when the mailing city says Poulsbo. Read the header. The Poulsbo code-violations page is a city letter. The Poulsbo code guide walks through PMC 9.50. KindKey will not match your letter to an ordinance, and KindKey will not appear at a hearing.',
+          'If someone still lives there under a rental agreement, say so. Chapter 59.18 RCW is Washington’s Residential Landlord-Tenant Act. Selling the house does not, by itself, end a tenancy. KindKey will not serve a notice and will not tell you that it does. The Poulsbo tenants page is that file. If the house has been empty since the funeral, the Poulsbo vacant-house page is the maintenance question. This page is about who can sign. Furniture, a shop, and deferred repairs can stay. The Poulsbo heavy-repair page is that condition. Some edge lots use septic or a well. Houses closer to downtown are often on city utilities. The name Poulsbo does not decide which. On-site sewage questions go to the Kitsap Public Health District at 345 6th Street, Suite 300, Bremerton, WA 98337, phone (360) 728-2235. The city’s contact page lists public works, including sewer and water questions, at (360) 779-4078. That number is not the health district. KindKey does not inspect or certify a septic system or a well. The Kitsap septic guide is that letter. On the seller disclosure in RCW 64.06.020, question 7.A asks about flooding, standing water, or drainage problems, and question 7.D asks whether there are shorelines, wetlands, floodplains, or critical areas. KindKey will not tell you how to mark them, whether an exemption applies, or what a prior owner should have disclosed. Ask a Washington real estate attorney if you are unsure. Answer with what you actually know.',
+        ],
+      },
+      {
+        heading: 'A loan, a tax bill, and a direct sale',
+        paragraphs: [
+          'If the estate is also behind on the mortgage, there are two clocks: the court file and the lender’s notice. Asking for an offer does not postpone a trustee. Talk with a Washington attorney before you sign. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and does not claim an estate sale is exempt. KindKey will not take a deed outside escrow. Poulsbo does not have a separate foreclosure page on this site. The Kitsap foreclosure guide and the statewide foreclosure guide are that notice. A Kitsap County property-tax bill is a different account from a mortgage and from a city utility. KindKey will not calculate the treasurer’s number and will not give tax advice about basis or a gain. Take those questions to a tax professional. The Washington tax-delinquent guide is that bill.',
+          'The direct-sale sequence is a call or the cash-offer form, one walkthrough when the house is safe to enter, a written offer, and a closing date you help choose with the closing agent. KindKey’s office is at 640 1st St SW in Auburn. The drive up the peninsula does not add a repair. KindKey does not promise a specific number of days. Heirs who already live somewhere else often want a shorter window. A family that still needs to take belongings can ask for longer. ' +
+            closing +
+            ' Cash means KindKey is not waiting on a retail buyer’s mortgage. It does not mean a suitcase of money, and it does not erase a mortgage, a tax bill, or a lien. The offer reflects the house as it sits, so it can be less than a retail price for a repaired, empty house. You see the payoffs on the settlement statement before you close. You can say no. Sign only after your attorney says the signer is clear. The Poulsbo inherited-house page is the city situation page. The Poulsbo as-is page is the direct sale.',
+          'A listing can fit a house that is in good condition if the person with authority can cooperate on showings and a broker will take it. Hire a licensed broker in Kitsap County. Commission is negotiated with that broker and is not set by KindKey. KindKey will not run the listing and will not tell you a listed sale is a mistake. Do not sign two conflicting contracts. The comparison of an estate sale and an as-is house sale is the belongings question. KindKey buys the house. KindKey does not run a tag sale. If a fire is why the house is hard to show, say what burned. Poulsbo Fire Department publishes its address at 911 NE Liberty Rd., Poulsbo, WA 98370, phone (360) 779-3997. KindKey is not that department and does not interpret a run report. The insurance claim stays with your insurer. Poulsbo does not have a separate fire page on this site. The statewide fire-damage page is that condition. A Silverdale house is a different parcel and the same Kitsap clerk. The Silverdale heavy-repair guide is that county file, not a Poulsbo city notice.',
+          'A Bremerton house, a Port Orchard house, a Silverdale house, and a Bainbridge Island house are different cities or, in Silverdale’s case, no city at all. An Edgewood house is a Pierce County probate, filed in Tacoma, not in Port Orchard. Do not use this Poulsbo page for those files. Reach out, and KindKey will help you through the whole process from start to finish, from the first description of the house through the walkthrough, the written offer, and closing. You can say no.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Where is a Poulsbo probate filed?',
+        answer:
+          'If the decedent lived in Poulsbo, Kitsap County is the residence county. Filings go to the Kitsap County Clerk at 614 Division Street, Room 202, Port Orchard, phone (360) 337-7164. Poulsbo City Hall does not open the estate. Ask a Washington attorney before you file. KindKey will not file.',
+      },
+      {
+        question: 'Can the family sell before probate is finished?',
+        answer:
+          'Sometimes, if the personal representative can sign and any court step your attorney identifies is done. With nonintervention powers, RCW 11.68.090 allows a sale of real property without a further court order, subject to the will and the representative’s duties. Without those powers, chapter 11.56 RCW may apply. This is not legal advice. Call (206) 519-5463 or use the cash-offer form if you want a number to review. Do not sign before the authority exists.',
+      },
+      {
+        question: 'Do heirs have to empty the house or close a code case first?',
+        answer:
+          'No. Belongings can stay. An open City of Poulsbo letter does not have to be finished before KindKey looks. The city still controls its case. You can say no after you see the offer.',
+      },
+      {
+        question: 'What if a foreclosure notice arrived while the estate is open?',
+        answer:
+          'Talk with a Washington attorney before you sign. Asking for an offer does not postpone a trustee. Washington has distressed-property rules under RCW 61.34. KindKey does not interpret that statute and will not take a deed outside escrow. Poulsbo does not have a separate foreclosure page on this site. You can still request a cash offer while you get that advice. You can say no.',
+      },
+    ],
+    related: [
+      {
+        href: '/areas/poulsbo',
+        label: 'Sell a house in Poulsbo',
+        description: 'Liberty Bay, Front Street, Viking Avenue, and Noll Road.',
+      },
+      {
+        href: '/areas/poulsbo/sell-inherited-probate-house',
+        label: 'Inherited houses in Poulsbo',
+        description: 'The Poulsbo probate sale page.',
+      },
+      {
+        href: '/sell-inherited-probate-house',
+        label: 'Sell an inherited or probate house',
+        description: 'The Washington overview for estate sales.',
+      },
+      {
+        href: '/blog/selling-an-inherited-or-probate-house-bremerton',
+        label: 'Probate in Bremerton and Kitsap County',
+        description: 'The same clerk in Port Orchard. A different city.',
+      },
+      {
+        href: '/blog/how-to-sell-an-estate-house-in-washington',
+        label: 'How to sell an estate house in Washington',
+        description: 'The guide for the person who can sign.',
+      },
+      {
+        href: '/blog/selling-a-house-in-probate-washington',
+        label: 'Probate sales in Washington',
+        description: 'What to expect before anyone signs a deed.',
+      },
+      {
+        href: '/blog/selling-an-estate-house-when-heirs-disagree',
+        label: 'When heirs disagree',
+        description: 'An objection is not the same thing as authority to sign.',
+      },
+      {
+        href: '/blog/estate-sale-vs-selling-the-house-as-is',
+        label: 'Estate sale versus selling the house as-is',
+        description: 'Belongings can stay. KindKey does not run a tag sale.',
+      },
+      {
+        href: '/blog/estate-house-repairs-mortgage-taxes-liens',
+        label: 'Repairs, a mortgage, taxes, or liens',
+        description: 'Those amounts show on the settlement statement.',
+      },
+      {
+        href: '/areas/poulsbo/sell-house-as-is',
+        label: 'Sell a house as-is in Poulsbo',
+        description: 'The repair list does not have to be finished first.',
+      },
+      {
+        href: '/sell-house-as-is',
+        label: 'Sell a house as-is',
+        description: 'The service page for houses sold in their current condition.',
+      },
+      {
+        href: '/areas/poulsbo/sell-my-house-fast',
+        label: 'Sell my house fast in Poulsbo',
+        description: 'A direct sale once the signer is clear.',
+      },
+      {
+        href: '/areas/poulsbo/sell-vacant-house',
+        label: 'Vacant houses in Poulsbo',
+        description: 'When the house has been empty since the funeral.',
+      },
+      {
+        href: '/sell-vacant-house',
+        label: 'Sell a vacant house',
+        description: 'The overview for empty houses.',
+      },
+      {
+        href: '/areas/poulsbo/sell-house-with-tenants',
+        label: 'Houses with tenants in Poulsbo',
+        description: 'Do not make an occupant leave so the house looks vacant.',
+      },
+      {
+        href: '/sell-house-with-tenants',
+        label: 'Sell a house with tenants',
+        description: 'A sale does not end a tenancy by itself.',
+      },
+      {
+        href: '/areas/poulsbo/sell-house-with-code-violations',
+        label: 'Code violations in Poulsbo',
+        description: 'A city letter is a different file from the probate.',
+      },
+      {
+        href: '/blog/sell-house-with-code-violations-poulsbo-wa',
+        label: 'Code violations in Poulsbo',
+        description: 'The guide for an open City of Poulsbo letter.',
+      },
+      {
+        href: '/sell-house-with-code-violations',
+        label: 'Sell a house with code violations',
+        description: 'Open notices that can travel with the house.',
+      },
+      {
+        href: '/areas/poulsbo/sell-hoarder-house',
+        label: 'Heavy-repair houses in Poulsbo',
+        description: 'Contents and deferred work can stay.',
+      },
+      {
+        href: '/sell-hoarder-house',
+        label: 'Sell a hoarder or heavy-repair house',
+        description: 'The overview for houses that need more than a cleaning.',
+      },
+      {
+        href: '/blog/sell-hoarder-house-silverdale-wa',
+        label: 'Heavy-repair houses in Silverdale',
+        description: 'The unincorporated neighbor. A Kitsap County letter, not Poulsbo’s.',
+      },
+      {
+        href: '/sell-house-before-foreclosure',
+        label: 'Sell a house before foreclosure',
+        description: 'The statewide guide. Poulsbo has no separate foreclosure page.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-kitsap-county',
+        label: 'Foreclosure in Kitsap County',
+        description: 'A trustee’s notice is a different clock from the court file.',
+      },
+      {
+        href: '/blog/sell-house-before-foreclosure-washington',
+        label: 'Selling before foreclosure in Washington',
+        description: 'Talk with an attorney about RCW 61.34 before you sign.',
+      },
+      {
+        href: '/blog/sell-tax-delinquent-house-washington',
+        label: 'Tax-delinquent houses in Washington',
+        description: 'A Kitsap County tax bill is a different account from the mortgage.',
+      },
+      {
+        href: '/blog/sell-house-with-septic-or-well-issues-kitsap-county',
+        label: 'Septic or well issues in Kitsap County',
+        description: 'When the letter is from the health district.',
+      },
+      {
+        href: '/sell-fire-damaged-house',
+        label: 'Sell a fire-damaged house',
+        description: 'Poulsbo has no separate fire page. The claim stays with your insurer.',
+      },
+      {
+        href: '/areas/silverdale',
+        label: 'Sell a house in Silverdale',
+        description: 'Unincorporated Central Kitsap. The same clerk, and no city hall.',
+      },
+      {
+        href: '/areas/silverdale/sell-inherited-probate-house',
+        label: 'Inherited houses in Silverdale',
+        description: 'A Kitsap residence that is not the City of Poulsbo.',
+      },
+      {
+        href: '/areas/bremerton',
+        label: 'Sell a house in Bremerton',
+        description: 'A different Kitsap city. The clerk is still in Port Orchard.',
+      },
+      {
+        href: '/areas/port-orchard',
+        label: 'Sell a house in Port Orchard',
+        description: 'The county seat, where the superior court sits.',
+      },
+      {
+        href: '/areas/edgewood',
+        label: 'Sell a house in Edgewood',
+        description: 'Pierce County. A Tacoma filing, not a Port Orchard filing.',
+      },
+      {
+        href: '/how-it-works',
+        label: 'How a KindKey sale works',
+        description: 'One walkthrough, a written offer, and a closing date you help choose.',
+      },
+      {
+        href: '/cash-offer',
+        label: 'Request a cash offer',
+        description: 'Ask while your attorney confirms who can sign. You can say no.',
+      },
+    ],
+    ctaTitle: 'Ask for a Poulsbo number once you know who can sign',
+    ctaSubtitle:
+      'Call (206) 519-5463 or use the cash-offer form. Your attorney confirms authority. You do not have to empty the house first. You can say no.',
+  }),
 ];
